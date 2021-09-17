@@ -17,8 +17,11 @@ steps:
 - script: |
     npm run build
   displayName: 'npm build'
+
 - task: Npm@1
   inputs:
-    command: 'install'
+    command: 'publish'
+    publishRegistry: 'useFeed'
+    publishFeed: '7d1f4f7f-c821-40f1-99a9-0a0b9db98964'
     workingDir: '/'
   displayName: 'Publishing package'
