@@ -30,6 +30,4 @@ export class CancellableRequestApi {
       prevent: cancelTokenSource.cancel
     };
   }
-
-  testForCI4() {}
 }
