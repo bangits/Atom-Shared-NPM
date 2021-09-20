@@ -12,8 +12,10 @@ steps:
 
 - task: Cache@2
   inputs:
-    key: '$(System.DefaultWorkingDirectory)/package-lock.json'
-    path: '$(System.DefaultWorkingDirectory)/node_modules'
+    key: 'npm | "$(Agent.OS)" | package-lock.json'
+    path: $(Pipeline.Workspace)/.npm
+    restoreKeys: |
+       npm | "$(Agent.OS)"
     cacheHitVar: 'CacheRestored'
 
 - script: |
