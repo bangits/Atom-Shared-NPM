@@ -17,10 +17,10 @@ steps:
     path: $(Build.SourcesDirectory)/node_modules
     cacheHitVar: 'CacheRestored'
 
-- script: |
-    npm install
-  displayName: 'npm install'
-  condition: ne(variables['CacheRestored'], 'true')
+- task: Npm@1
+  inputs:
+    command: 'install'
+  condition: ne('CacheRestored', 'true')
 
 - script: |
     npm run build
