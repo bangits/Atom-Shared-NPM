@@ -15,12 +15,15 @@ steps:
   inputs:
     key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)/package-lock.json'
     path: $(Build.SourcesDirectory)/node_modules
-    cacheHitVar: 'CacheRestored'
+    cacheHitVar: CACHE_RESTORED
 
 - task: Npm@1
+  displayName: 'Install the dependencies'
   inputs:
-    command: 'install'
-  condition: ne('CacheRestored', 'true')
+    command: custom
+    verbose: false
+    customCommand: 'install'
+  condition: ne(variables.CACHE_RESTORED, 'true')
 
 - script: |
     npm run build
