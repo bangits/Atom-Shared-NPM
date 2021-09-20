@@ -17,8 +17,8 @@ steps:
 
 - task: Cache@2
   inputs:
-    key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/atom/frontend/package-lock.json'
-    path: '$(Build.SourcesDirectory)/atom/frontend/node_modules'
+    key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/Common/FRONTEND/package-lock.json'
+    path: '$(Build.SourcesDirectory)/Common/FRONTEND/node_modules'
     cacheHitVar: 'CacheRestored'
   
 - script: |
