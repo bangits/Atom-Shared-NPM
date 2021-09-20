@@ -1,5 +1,5 @@
 trigger:
-- master
+- develop
 
 pool:
   vmImage: ubuntu-latest
@@ -22,7 +22,7 @@ steps:
   inputs:
     command: custom
     verbose: false
-    customCommand: 'install'
+    customCommand: 'run ci'
   condition: ne(variables.CACHE_RESTORED, 'true')
 
 - script: |
@@ -32,7 +32,7 @@ steps:
 - task: Npm@1
   inputs:
     command: 'custom'
-    customCommand: 'run ci'
+    customCommand: 'run cd'
     publishRegistry: 'useFeed'
     publishFeed: '9c247408-f345-4df7-a08b-aa453b780d6f/d757e11d-d717-451f-be0a-43e0be7d96f7'
   env:
