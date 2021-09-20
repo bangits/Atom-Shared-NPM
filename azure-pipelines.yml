@@ -17,8 +17,8 @@ steps:
 
 - task: Cache@2
   inputs:
-    key: 'npm | “$(Agent.OS)” | $(Build.SourcesDirectory)/Common/FRONTEND/package-lock.json'
-    path: '$(Build.SourcesDirectory)/Common/FRONTEND/node_modules'
+    key: '$(System.DefaultWorkingDirectory)/package-lock.json'
+    path: '$(System.DefaultWorkingDirectory)/node_modules'
     cacheHitVar: 'CacheRestored'
   
 - script: |
