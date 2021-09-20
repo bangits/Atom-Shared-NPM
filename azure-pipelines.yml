@@ -25,10 +25,6 @@ steps:
     customCommand: 'run ci'
   condition: ne(variables.CACHE_RESTORED, 'true')
 
-- script: |
-    npm run build
-  displayName: 'npm build'
-
 - task: Npm@1
   inputs:
     command: 'custom'
