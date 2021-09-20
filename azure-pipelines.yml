@@ -22,6 +22,5 @@ steps:
   inputs:
     command: 'publish'
     publishRegistry: 'useFeed'
-    publishFeed: '7d1f4f7f-c821-40f1-99a9-0a0b9db98964'
-    workingDir: '/'
+    publishFeed: '9c247408-f345-4df7-a08b-aa453b780d6f/d757e11d-d717-451f-be0a-43e0be7d96f7'
   displayName: 'Publishing package'
