@@ -31,5 +31,5 @@ export class CancellableRequestApi {
     };
   }
 
-  testForCI() {}
+  testForCI2() {}
 }
