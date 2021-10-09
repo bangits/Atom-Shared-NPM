@@ -1,65 +1,40 @@
-# Docker
-# Build a Docker image 
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
-pr:
- branches:
-   exclude:
-     - develop
-     
 trigger:
-  branches:
-    include:
-      - develop
-  batch: true
-  paths:
-    include:
-      - src/ResourceManager
+- develop
 
-resources:
-- repo: self
+pool:
+  vmImage: ubuntu-latest
 
-variables:
-  tag: '$(Build.BuildId)'
-  acr: 'bangits.azurecr.io/'
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '14.x'
+  displayName: 'Install Node.js'
 
-stages:
-- stage: Build
-  displayName: Build image
-  jobs:  
-  - job: Build
-    displayName: Build
-    pool:
-      vmImage: 'ubuntu-latest'
-    steps:
+- task: Cache@2
+  displayName: Cache node_modules
+  inputs:
+    key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)/package.json'
+    path: $(Build.SourcesDirectory)/node_modules
+    cacheHitVar: CACHE_RESTORED
 
-    - checkout:  self
-      submodules: false
-      persistCredentials: true
+- task: Npm@1
+  displayName: 'Install the dependencies'
+  inputs:
+    command: custom
+    verbose: false
+    customCommand: 'install'
+  condition: ne(variables.CACHE_RESTORED, 'true')
 
-    - task: DockerCompose@0
-      displayName: 'Build services'
-      inputs:
-        containerregistrytype: 'Container Registry'
-        dockerRegistryEndpoint: 'AtomContainerRegistration'
-        dockerComposeFileArgs: |
-          TAG=1.0.$(Build.BuildId)
-          PROJECT=enterprise-hub/$(Build.SourceBranchName)/
-          DOCKER_REGISTRY=$(acr)
-        projectName: '$(Build.Repository.Name)/$(Build.SourceBranchName)/'
-        action: 'Build services'
-        arguments: resourceManager.api
+- script: |
+    npm run build
+  displayName: 'npm build'
 
-    - task: DockerCompose@0
-      displayName: 'Publish services'
-      inputs:
-        containerregistrytype: 'Container Registry'
-        dockerRegistryEndpoint: 'AtomContainerRegistration'
-        dockerComposeFile: 'docker-compose.yml'
-        dockerComposeFileArgs: |
-          TAG=1.0.$(Build.BuildId)
-          PROJECT=atom/$(Build.SourceBranchName)/
-          DOCKER_REGISTRY=$(acr)
-        projectName: '$(Build.Repository.Name)/$(Build.SourceBranchName)/'
-        action: 'Run a Docker Compose command'
-        dockerComposeCommand: 'push resourceManager.api'
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    customCommand: 'run ci'
+    publishRegistry: 'useFeed'
+    publishFeed: '9c247408-f345-4df7-a08b-aa453b780d6f/d757e11d-d717-451f-be0a-43e0be7d96f7'
+  env:
+    GH_TOKEN: $(GH_TOKEN)
+  displayName: 'Publishing package'
