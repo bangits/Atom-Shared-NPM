@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  atom-common:
+    container_name: atom-common
+    stdin_open: true
+    tty: true
+    build: .
+    ports:
+      - '6001:6001'
+    volumes:
+      - ${PWD}/src:/app/src
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+      - COMPOSE_CONVERT_WINDOWS_PATHS=1

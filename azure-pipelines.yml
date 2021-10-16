@@ -1,40 +1,40 @@
 trigger:
-- develop
+  - develop
 
 pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+    displayName: 'Install Node.js'
 
-- task: Cache@2
-  displayName: Cache node_modules
-  inputs:
-    key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)/package.json'
-    path: $(Build.SourcesDirectory)/node_modules
-    cacheHitVar: CACHE_RESTORED
+  - task: Cache@2
+    displayName: Cache node_modules
+    inputs:
+      key: 'npm | "$(Agent.OS)" | $(Build.SourcesDirectory)/package.json'
+      path: $(Build.SourcesDirectory)/node_modules
+      cacheHitVar: CACHE_RESTORED
 
-- task: Npm@1
-  displayName: 'Install the dependencies'
-  inputs:
-    command: custom
-    verbose: false
-    customCommand: 'install'
-  condition: ne(variables.CACHE_RESTORED, 'true')
+  - task: Npm@1
+    displayName: 'Install the dependencies'
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'install'
+    condition: ne(variables.CACHE_RESTORED, 'true')
 
-- script: |
-    npm run build
-  displayName: 'npm build'
+  - script: |
+      npm run build
+    displayName: 'npm run build-declarations'
 
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'run ci'
-    publishRegistry: 'useFeed'
-    publishFeed: '9c247408-f345-4df7-a08b-aa453b780d6f/d757e11d-d717-451f-be0a-43e0be7d96f7'
-  env:
-    GH_TOKEN: $(GH_TOKEN)
-  displayName: 'Publishing package'
+  - task: Npm@1
+    inputs:
+      command: 'custom'
+      customCommand: 'run ci'
+      publishRegistry: 'useFeed'
+      publishFeed: '9c247408-f345-4df7-a08b-aa453b780d6f/d757e11d-d717-451f-be0a-43e0be7d96f7'
+    env:
+      GH_TOKEN: $(GH_TOKEN)
+    displayName: 'Publishing package'
