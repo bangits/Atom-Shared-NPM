@@ -1,16 +1,27 @@
+import { injectable } from 'inversify';
+import { ITranslationUseCase } from '../boundaries';
 import { TranslationEntity } from '../entities';
+import { LanguageType } from '../types';
 
-export class TranslationUseCase {
+@injectable()
+export class TranslationUseCase implements ITranslationUseCase {
+  private translationEntity = new TranslationEntity();
+
   getTranslations() {
-    const translationEntity = new TranslationEntity();
+    return this.translationEntity.getTranslations();
+  }
 
-    translationEntity.setTranslations({
-      save: 'Сохранить',
-      bannerSection: {
-        x: 'Х'
-      }
-    });
+  getTranslation(key: string): string {
+    return this.translationEntity.getTranslation(key);
+  }
 
-    translationEntity.getTranslation('save');
+  getTranslationsByLanguageId(languageId: LanguageType) {
+    const mockData = {
+      save: 'Save'
+    };
+
+    this.translationEntity.setTranslations(mockData);
+
+    return mockData;
   }
 }

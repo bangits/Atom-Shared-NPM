@@ -1,3 +1,4 @@
+import { getObjectValueByKey } from '@/helpers';
 import { TranslationModel } from '../models';
 
 export class TranslationEntity {
@@ -12,6 +13,6 @@ export class TranslationEntity {
   }
 
   getTranslation(translationKey: string) {
-    return this.translations[translationKey];
+    return getObjectValueByKey(this.translations, translationKey);
   }
 }

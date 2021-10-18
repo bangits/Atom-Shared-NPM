@@ -30,6 +30,7 @@ module.exports = (webpackConfigEnv, argv) => {
 
   const useCaseFiles = createDiConfig('domain/use-case');
   const repositoryFiles = createDiConfig('domain/data');
+  const serviceFiles = createDiConfig('services');
 
   return merge(defaultConfig, configureSharedWebpack(isDevelopment), {
     output: {
@@ -42,7 +43,7 @@ module.exports = (webpackConfigEnv, argv) => {
     externals: [/^@atom/, 'rxjs'],
     plugins: [
       new DefinePlugin({
-        diFiles: JSON.stringify([...useCaseFiles, ...repositoryFiles])
+        diFiles: JSON.stringify([...useCaseFiles, ...repositoryFiles, ...serviceFiles])
       })
     ]
   });
