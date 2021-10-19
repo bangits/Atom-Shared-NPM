@@ -1,1 +1,1 @@
-import './di/config';
+import 'reflect-metadata';

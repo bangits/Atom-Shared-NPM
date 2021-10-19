@@ -17,7 +17,7 @@ export class TranslationUseCase implements ITranslationUseCase {
 
   getTranslationsByLanguageId(languageId: LanguageType) {
     const mockData = {
-      save: 'Save'
+      save: languageId === 'en' ? 'Save' : 'Сохранить'
     };
 
     this.translationEntity.setTranslations(mockData);

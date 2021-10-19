@@ -1,19 +1,21 @@
-import { containerInstance } from '@/di/config';
+import { DiContainerContext } from '@/atom-common';
 import { TranslationModel } from '@/domain/models';
 import { LanguageType } from '@/domain/types';
 import { TranslationService } from '@/services';
-import { useEffect, useState } from 'react';
-
-const translationService: TranslationService = containerInstance.diContainer.get('TranslationService');
+import { useContext, useEffect, useState } from 'react';
 
 export interface UseTranslationReturnValue {
   init(defaultLanguageId: LanguageType): void;
   changeLanguage(language: LanguageType): void;
-  get(key: string): any;
+  get(key: string): string;
 }
 
 export const useTranslation = (): UseTranslationReturnValue => {
+  const containerInstance = useContext(DiContainerContext);
+
   const [currentTranslations, setCurrentTranslations] = useState<TranslationModel>({});
+
+  const [translationService] = useState<TranslationService>(containerInstance.diContainer.get('TranslationService'));
 
   useEffect(() => {
     const unsubscribe = translationService.subscribe(setCurrentTranslations);
@@ -24,8 +26,8 @@ export const useTranslation = (): UseTranslationReturnValue => {
   }, []);
 
   return {
-    init: (defaultLanguageId) => translationService.init(defaultLanguageId),
-    changeLanguage: translationService.changeLanguage,
-    get: translationService.get
+    init: (defaultLanguageId) => translationService?.init(defaultLanguageId),
+    changeLanguage: translationService?.changeLanguage,
+    get: translationService?.get
   };
 };
