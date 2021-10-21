@@ -21,7 +21,15 @@ export class DiContainer {
       defaultScope: 'Singleton'
     });
 
+    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(() => {
+      return new HttpService({
+        baseURL: 'http://52.151.228.248/api/v1'
+      });
+    });
+
     await asyncForeach(diConfigs, async ({ moduleName, modulePath }) => {
+      if (moduleName === 'HttpService') return;
+
       const module = await import(`../${modulePath}`);
 
       this.diContainer.bind(`I${moduleName}`).to(module[moduleName]);
@@ -29,12 +37,5 @@ export class DiContainer {
 
       this.diFiles.push({ name: moduleName, module: module });
     });
-
-    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
-      () =>
-        new HttpService({
-          baseURL: 'http://52.151.228.248/api/v1'
-        })
-    );
   };
 }

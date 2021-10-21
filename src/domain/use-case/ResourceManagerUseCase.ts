@@ -1,4 +1,4 @@
-import { inject } from 'inversify';
+import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
@@ -8,6 +8,7 @@ import {
   GetPhoneCodeResponseModel
 } from '../models';
 
+@injectable()
 export class ResourceManagerUseCase {
   @inject('IResourceManagerRepository')
   private readonly resourceManagerRepository: IResourceManagerRepository;

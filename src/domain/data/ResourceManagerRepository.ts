@@ -11,10 +11,10 @@ import {
 
 @injectable()
 export class ResourceManagerRepository implements IResourceManagerRepository {
-  private cachedCountries: GetCountriesResponseModel | null = null;
-
   @inject('IHttpService')
   private readonly httpService: IHttpService;
+
+  private cachedCountries: GetCountriesResponseModel | null = null;
 
   getCountries = async (getCountriesRequestModel: FilterRequestModel) => {
     if (this.cachedCountries) return this.cachedCountries;
