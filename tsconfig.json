@@ -13,8 +13,10 @@
     "types": ["reflect-metadata"],
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "allowJs": true
+    "allowJs": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true
   },
-  "include": ["src/**/*", "node_modules/@types"],
-  "exclude": ["src/**/*.test*"]
+  "exclude": ["node_modules"],
+  "include": ["src/index.ts"]
 }

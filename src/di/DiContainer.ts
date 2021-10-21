@@ -1,6 +1,5 @@
 import { asyncForeach } from '@/helpers';
-import { IHttpService } from '@/services';
-import HttpService from '@/services/HttpService';
+import { HttpService, IHttpService } from '@/services';
 import { Container } from 'inversify';
 
 export type DiConfig = {
