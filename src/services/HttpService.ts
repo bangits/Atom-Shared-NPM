@@ -15,20 +15,11 @@ export interface IHttpService {
   patch<T, K, D>(request: HttpRequest<K, D>): Promise<T>;
 }
 
-class HttpService implements IHttpService {
+export class HttpService implements IHttpService {
   private instance: AxiosInstance;
 
   constructor(config: AxiosRequestConfig) {
     this.instance = axios.create(config);
-  }
-
-  private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    return (
-      await this.instance[method](
-        `${httpRequest.url}${httpRequest.query ? `?${httpRequest.query}` : ''}`,
-        httpRequest.body
-      )
-    ).data;
   }
 
   async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
@@ -50,6 +41,13 @@ class HttpService implements IHttpService {
   async delete<T, K = {}>(request: HttpRequest<K>): Promise<T> {
     return this.fetch<T>('delete', request);
   }
-}
 
-export default HttpService;
+  private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
+    return (
+      await this.instance[method](
+        `${httpRequest.url}${httpRequest.query ? `?${httpRequest.query}` : ''}`,
+        httpRequest.body
+      )
+    ).data;
+  }
+}
