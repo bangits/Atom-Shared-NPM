@@ -1,7 +1,6 @@
 import { DiContainer } from '@/di';
-import React, { createContext, FC, useEffect, useState } from 'react';
-
-export const DiContainerContext = createContext<DiContainer>(null);
+import { FC, useEffect, useState } from 'react';
+import { AtomCommonContext } from './AtomCommonContext';
 
 export const AtomCommonProvider: FC = ({ children }) => {
   const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
@@ -18,5 +17,13 @@ export const AtomCommonProvider: FC = ({ children }) => {
 
   if (!containerInstance) return null;
 
-  return <DiContainerContext.Provider value={containerInstance}>{children}</DiContainerContext.Provider>;
+  return (
+    <AtomCommonContext.Provider
+      value={{
+        resourceManagerUseCase: containerInstance.diContainer.get('ResourceManagerUseCase'),
+        translationService: containerInstance.diContainer.get('TranslationService')
+      }}>
+      {children}
+    </AtomCommonContext.Provider>
+  );
 };

@@ -1,7 +1,6 @@
-import { DiContainerContext } from '@/atom-common';
+import { AtomCommonContext } from '@/adapter/react-context';
 import { TranslationModel } from '@/domain/models';
 import { LanguageType } from '@/domain/types';
-import { TranslationService } from '@/services';
 import { useContext, useEffect, useState } from 'react';
 
 export interface UseTranslationReturnValue {
@@ -11,11 +10,11 @@ export interface UseTranslationReturnValue {
 }
 
 export const useTranslation = (): UseTranslationReturnValue => {
-  const containerInstance = useContext(DiContainerContext);
+  const containerInstance = useContext(AtomCommonContext);
 
   const [currentTranslations, setCurrentTranslations] = useState<TranslationModel>({});
 
-  const [translationService] = useState<TranslationService>(containerInstance.diContainer.get('TranslationService'));
+  const [translationService] = useState(containerInstance.translationService);
 
   useEffect(() => {
     const unsubscribe = translationService.subscribe(setCurrentTranslations);
