@@ -5,9 +5,9 @@ FROM node:lts-alpine
 WORKDIR /app
 
 # First copy package.json and run yarn for caching
-COPY .npmrc .
 COPY package.json .
 COPY yarn.* .
+COPY .npmrc .
 RUN yarn
 
 # Copy all files to working directory
