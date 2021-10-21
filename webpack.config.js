@@ -40,7 +40,7 @@ module.exports = (webpackConfigEnv, argv) => {
       port: webpackConfigEnv.port || 6001,
       host: '0.0.0.0' // To accept connections from outside container
     },
-    externals: [/^@atom/, 'rxjs'],
+    externals: [/^@atom/],
     plugins: [
       new DefinePlugin({
         diFiles: JSON.stringify([...useCaseFiles, ...repositoryFiles, ...serviceFiles])
