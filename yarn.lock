@@ -2,16 +2,15 @@
 # yarn lockfile v1
 
 
-"@atom/design-system@1.0.2":
-  version "1.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.0.2.tgz#6b8d086591462e29159a70b81a16b9dc36c7d104"
-  integrity sha1-a40IZZFGLikVmnC4Gha53DbH0QQ=
+"@atom/design-system@^1.4.2":
+  version "1.4.2"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@atom/design-system/-/design-system-1.4.2.tgz#28717c9bab506df7129c90bc45e1136525b8750e"
+  integrity sha1-KHF8m6tQbfcSnJC8ReETZSW4dQ4=
   dependencies:
-    "@my-ui/core" "^2.3.3"
+    "@my-ui/core" "^2.4.3"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
-    single-spa-react "^4.2.0"
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -1032,55 +1031,55 @@
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.5.tgz#9283c9ce5b289a3c4f61c12757469e59377f81f3"
   integrity sha512-6nFkfkmSeV/rqSaS4oWHgmpnYw194f6hmWF5is6b0J1naJZoiD0NTc9AiUwPHvWsowkjuHErCZT1wa0jg+BLIA==
 
-"@emotion/cache@^11.4.0":
-  version "11.4.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/cache/-/cache-11.4.0.tgz#293fc9d9a7a38b9aad8e9337e5014366c3b09ac0"
-  integrity sha1-KT/J2aeji5qtjpM35QFDZsOwmsA=
+"@emotion/cache@^11.4.0", "@emotion/cache@^11.5.0":
+  version "11.5.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/cache/-/cache-11.5.0.tgz#a5eb78cbef8163939ee345e3ddf0af217b845e62"
+  integrity sha1-pet4y++BY5Oe40Xj3fCvIXuEXmI=
   dependencies:
     "@emotion/memoize" "^0.7.4"
-    "@emotion/sheet" "^1.0.0"
+    "@emotion/sheet" "^1.0.3"
     "@emotion/utils" "^1.0.0"
     "@emotion/weak-memoize" "^0.2.5"
-    stylis "^4.0.3"
+    stylis "^4.0.10"
 
 "@emotion/hash@^0.8.0":
   version "0.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha1-u7/2iXj+/b5ozLUzvIy+HRr7VBM=
 
 "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/is-prop-valid/-/is-prop-valid-0.7.3.tgz#a6bf4fa5387cbba59d44e698a4680f481a8da6cc"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/is-prop-valid/-/is-prop-valid-0.7.3.tgz#a6bf4fa5387cbba59d44e698a4680f481a8da6cc"
   integrity sha1-pr9PpTh8u6WdROaYpGgPSBqNpsw=
   dependencies:
     "@emotion/memoize" "0.7.1"
 
 "@emotion/memoize@0.7.1":
   version "0.7.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/memoize/-/memoize-0.7.1.tgz#e93c13942592cf5ef01aa8297444dc192beee52f"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/memoize/-/memoize-0.7.1.tgz#e93c13942592cf5ef01aa8297444dc192beee52f"
   integrity sha1-6TwTlCWSz17wGqgpdETcGSvu5S8=
 
 "@emotion/memoize@^0.7.4":
   version "0.7.5"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/memoize/-/memoize-0.7.5.tgz#2c40f81449a4e554e9fc6396910ed4843ec2be50"
   integrity sha1-LED4FEmk5VTp/GOWkQ7UhD7CvlA=
 
 "@emotion/react@^11.1.1":
-  version "11.4.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/react/-/react-11.4.1.tgz#a1b0b767b5bad57515ffb0cad9349614d27f4d57"
-  integrity sha1-obC3Z7W61XUV/7DK2TSWFNJ/TVc=
+  version "11.5.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/react/-/react-11.5.0.tgz#19b5771bbfbda5e8517e948a2d9064810f0022bd"
+  integrity sha1-GbV3G7+9pehRfpSKLZBkgQ8AIr0=
   dependencies:
     "@babel/runtime" "^7.13.10"
-    "@emotion/cache" "^11.4.0"
+    "@emotion/cache" "^11.5.0"
     "@emotion/serialize" "^1.0.2"
-    "@emotion/sheet" "^1.0.2"
+    "@emotion/sheet" "^1.0.3"
     "@emotion/utils" "^1.0.0"
     "@emotion/weak-memoize" "^0.2.5"
     hoist-non-react-statics "^3.3.1"
 
 "@emotion/serialize@^1.0.2":
   version "1.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/serialize/-/serialize-1.0.2.tgz#77cb21a0571c9f68eb66087754a65fa97bfcd965"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/serialize/-/serialize-1.0.2.tgz#77cb21a0571c9f68eb66087754a65fa97bfcd965"
   integrity sha1-d8shoFccn2jrZgh3VKZfqXv82WU=
   dependencies:
     "@emotion/hash" "^0.8.0"
@@ -1089,24 +1088,24 @@
     "@emotion/utils" "^1.0.0"
     csstype "^3.0.2"
 
-"@emotion/sheet@^1.0.0", "@emotion/sheet@^1.0.2":
-  version "1.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/sheet/-/sheet-1.0.2.tgz#1d9ffde531714ba28e62dac6a996a8b1089719d0"
-  integrity sha1-HZ/95TFxS6KOYtrGqZaosQiXGdA=
+"@emotion/sheet@^1.0.3":
+  version "1.0.3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/sheet/-/sheet-1.0.3.tgz#00c326cd7985c5ccb8fe2c1b592886579dcfab8f"
+  integrity sha1-AMMmzXmFxcy4/iwbWSiGV53Pq48=
 
 "@emotion/unitless@^0.7.5":
   version "0.7.5"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/unitless/-/unitless-0.7.5.tgz#77211291c1900a700b8a78cfafda3160d76949ed"
   integrity sha1-dyESkcGQCnALinjPr9oxYNdpSe0=
 
 "@emotion/utils@^1.0.0":
   version "1.0.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/utils/-/utils-1.0.0.tgz#abe06a83160b10570816c913990245813a2fd6af"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/utils/-/utils-1.0.0.tgz#abe06a83160b10570816c913990245813a2fd6af"
   integrity sha1-q+BqgxYLEFcIFskTmQJFgTov1q8=
 
 "@emotion/weak-memoize@^0.2.5":
   version "0.2.5"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha1-ju2YLi7m9/TkTCU+EpYpgHke/UY=
 
 "@eslint/eslintrc@^0.4.3":
@@ -1342,22 +1341,21 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.3.3":
-  version "2.3.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.3.3.tgz#73d879b0809b61e23f96d3bb2aed0609a115e9d4"
-  integrity sha1-c9h5sICbYeI/ltO7Ku0GCaEV6dQ=
+"@my-ui/core@^2.4.3":
+  version "2.4.3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.4.3.tgz#e0b19c437154ceee4e7ac5488eae55f921394e89"
+  integrity sha1-4LGcQ3FUzu5OesVIjq5V+SE5Tok=
   dependencies:
-    "@my-ui/react-datepicker" "1.1.0"
-    "@my-ui/react-select" "1.1.2"
-    "@my-ui/react-table" "^1.0.0"
+    "@my-ui/react-datepicker" "^1.3.0"
+    "@my-ui/react-select" "1.1.5"
+    "@my-ui/react-table" "1.3.0"
     classnames "^2.3.1"
     react-jss "^10.8.0"
-    single-spa-react "^4.2.0"
 
-"@my-ui/react-datepicker@1.1.0":
-  version "1.1.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-datepicker/-/react-datepicker-1.1.0.tgz#6b08c6b3988346e0dcc07ecd436561eef3a5833b"
-  integrity sha1-awjGs5iDRuDcwH7NQ2Vh7vOlgzs=
+"@my-ui/react-datepicker@^1.3.0":
+  version "1.3.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-datepicker/-/react-datepicker-1.3.0.tgz#0b86e7983de45aedeb5b45711fac301d8a2bdf79"
+  integrity sha1-C4bnmD3kWu3rW0VxH6wwHYor33k=
   dependencies:
     "@popperjs/core" "^2.9.2"
     classnames "^2.2.6"
@@ -1366,10 +1364,10 @@
     react-onclickoutside "^6.10.0"
     react-popper "^2.2.5"
 
-"@my-ui/react-select@1.1.2":
-  version "1.1.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-select/-/react-select-1.1.2.tgz#eadbf12fa5bea620eb21dc31a1de1ee58df5ed07"
-  integrity sha1-6tvxL6W+piDrIdwxod4e5Y317Qc=
+"@my-ui/react-select@1.1.5":
+  version "1.1.5"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-select/-/react-select-1.1.5.tgz#0da8d2953177756f741c26af0867fb68454816ef"
+  integrity sha1-DajSlTF3dW90HCavCGf7aEVIFu8=
   dependencies:
     "@babel/runtime" "^7.12.0"
     "@emotion/cache" "^11.4.0"
@@ -1379,10 +1377,10 @@
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
 
-"@my-ui/react-table@^1.0.0":
-  version "1.0.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-table/-/react-table-1.0.0.tgz#c1f31ebb04bd2535ef0c59a438417e85bc60518b"
-  integrity sha1-wfMeuwS9JTXvDFmkOEF+hbxgUYs=
+"@my-ui/react-table@1.3.0":
+  version "1.3.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/react-table/-/react-table-1.3.0.tgz#b1746c61b797781e45fb7bcc446949fbe71bcd41"
+  integrity sha1-sXRsYbeXeB5F+3vMRGlJ++cbzUE=
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1417,7 +1415,7 @@
 
 "@popperjs/core@^2.9.2":
   version "2.10.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
   integrity sha1-B5jAM1Hw3qGlpMq93yalWny+5ZA=
 
 "@sinonjs/commons@^1.7.0":
@@ -1651,7 +1649,7 @@
 
 "@types/react-transition-group@^4.4.0":
   version "4.4.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@types/react-transition-group/-/react-transition-group-4.4.3.tgz#b0994da0a7023d67dbb4a8910a62112bc00d5688"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@types/react-transition-group/-/react-transition-group-4.4.3.tgz#b0994da0a7023d67dbb4a8910a62112bc00d5688"
   integrity sha1-sJlNoKcCPWfbtKiRCmIRK8ANVog=
   dependencies:
     "@types/react" "*"
@@ -2718,7 +2716,7 @@ class-utils@^0.3.5:
 
 classnames@^2.2.6, classnames@^2.3.1:
   version "2.3.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha1-38+jiR4wbsHa0QXQ6I9EF7hTXo4=
 
 clean-css@^4.2.3:
@@ -2996,14 +2994,14 @@ cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-css-jss@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/css-jss/-/css-jss-10.8.0.tgz#fedd08854163a31f26324f46d566116c216ee772"
-  integrity sha1-/t0IhUFjox8mMk9G1WYRbCFu53I=
+css-jss@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/css-jss/-/css-jss-10.8.1.tgz#6246a5de2bc8606e90aa4ce161f5739d30f5b8ad"
+  integrity sha1-Ykal3ivIYG6QqkzhYfVznTD1uK0=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
-    jss-preset-default "10.8.0"
+    jss "10.8.1"
+    jss-preset-default "10.8.1"
 
 css-loader@^5.2.6:
   version "5.2.7"
@@ -3048,7 +3046,7 @@ css-select@^4.1.3:
 
 css-vendor@^2.0.8:
   version "2.0.8"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/css-vendor/-/css-vendor-2.0.8.tgz#e47f91d3bd3117d49180a3c935e62e3d9f7f449d"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/css-vendor/-/css-vendor-2.0.8.tgz#e47f91d3bd3117d49180a3c935e62e3d9f7f449d"
   integrity sha1-5H+R070xF9SRgKPJNeYuPZ9/RJ0=
   dependencies:
     "@babel/runtime" "^7.8.3"
@@ -3352,7 +3350,7 @@ dom-converter@^0.2.0:
 
 dom-helpers@^5.0.1:
   version "5.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/dom-helpers/-/dom-helpers-5.2.1.tgz#d9400536b2bf8225ad98fe052e029451ac40e902"
   integrity sha1-2UAFNrK/giWtmP4FLgKUUaxA6QI=
   dependencies:
     "@babel/runtime" "^7.8.7"
@@ -4479,7 +4477,7 @@ he@^1.2.0:
 
 hoist-non-react-statics@^3.2.0, hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1:
   version "3.3.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
   dependencies:
     react-is "^16.7.0"
@@ -4662,7 +4660,7 @@ husky@^6.0.0:
 
 hyphenate-style-name@^1.0.3:
   version "1.0.4"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz#691879af8e220aea5750e8827db4ef62a54e361d"
   integrity sha1-aRh5r44iCupXUOiCfbTvYqVONh0=
 
 iconv-lite@0.4.24:
@@ -4959,7 +4957,7 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
 
 is-in-browser@^1.0.2, is-in-browser@^1.1.3:
   version "1.1.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/is-in-browser/-/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/is-in-browser/-/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
   integrity sha1-Vv9NtoOgeMYILrldrX3GLh0E+DU=
 
 is-ip@^3.1.0:
@@ -5709,134 +5707,134 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jss-plugin-camel-case@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-camel-case/-/jss-plugin-camel-case-10.8.0.tgz#575fd849202d36713a6970796458e375754446c7"
-  integrity sha1-V1/YSSAtNnE6aXB5ZFjjdXVERsc=
+jss-plugin-camel-case@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-camel-case/-/jss-plugin-camel-case-10.8.1.tgz#342fd406c2e8781ecdc4ac298a78b892f75581ab"
+  integrity sha1-NC/UBsLoeB7NxKwpini4kvdVgas=
   dependencies:
     "@babel/runtime" "^7.3.1"
     hyphenate-style-name "^1.0.3"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-plugin-compose@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-compose/-/jss-plugin-compose-10.8.0.tgz#bbc455c700090a69f421f7f921f58f76ca0c41b6"
-  integrity sha1-u8RVxwAJCmn0Iff5IfWPdsoMQbY=
+jss-plugin-compose@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-compose/-/jss-plugin-compose-10.8.1.tgz#23c3f27fdd71b69aed0ddf635c90fd34a7c8be92"
+  integrity sha1-I8Pyf91xtprtDd9jXJD9NKfIvpI=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     tiny-warning "^1.0.2"
 
-jss-plugin-default-unit@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-default-unit/-/jss-plugin-default-unit-10.8.0.tgz#98db5962e62abbf43f1cc111e62cb70ffb09db59"
-  integrity sha1-mNtZYuYqu/Q/HMER5iy3D/sJ21k=
+jss-plugin-default-unit@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-default-unit/-/jss-plugin-default-unit-10.8.1.tgz#1c35b89cd70ca5b0e01c21d89d908e75c1ea80ad"
+  integrity sha1-HDW4nNcMpbDgHCHYnZCOdcHqgK0=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-plugin-expand@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-expand/-/jss-plugin-expand-10.8.0.tgz#c412161c4ee0ade00e616e406f2a719b91346053"
-  integrity sha1-xBIWHE7greAOYW5Abypxm5E0YFM=
+jss-plugin-expand@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-expand/-/jss-plugin-expand-10.8.1.tgz#a33e1bab6415b6b555c7c83dc6a7c02f4a949294"
+  integrity sha1-oz4bq2QVtrVVx8g9xqfAL0qUkpQ=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-plugin-extend@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-extend/-/jss-plugin-extend-10.8.0.tgz#46f6c2ff7ea09f0cf071cfc2171f358e7b674604"
-  integrity sha1-RvbC/36gnwzwcc/CFx81jntnRgQ=
+jss-plugin-extend@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-extend/-/jss-plugin-extend-10.8.1.tgz#eb76ddd27323505468526e944586e886f13377f5"
+  integrity sha1-63bd0nMjUFRoUm6URYbohvEzd/U=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     tiny-warning "^1.0.2"
 
-jss-plugin-global@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-global/-/jss-plugin-global-10.8.0.tgz#0c2b0c056087f5846d600f3332eeb7a1a8b9c9f2"
-  integrity sha1-DCsMBWCH9YRtYA8zMu63oai5yfI=
+jss-plugin-global@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-global/-/jss-plugin-global-10.8.1.tgz#992a14210c567178eb4cd385edcd267ae8cc6f28"
+  integrity sha1-mSoUIQxWcXjrTNOF7c0meujMbyg=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-plugin-nested@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-nested/-/jss-plugin-nested-10.8.0.tgz#7ef9a815e9c9fbede41a8f52ce75cffb4c3b86d5"
-  integrity sha1-fvmoFenJ++3kGo9SznXP+0w7htU=
+jss-plugin-nested@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-nested/-/jss-plugin-nested-10.8.1.tgz#ac9750f8185725a0fd6ea484860767c53ec3d3dc"
+  integrity sha1-rJdQ+BhXJaD9bqSEhgdnxT7D09w=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     tiny-warning "^1.0.2"
 
-jss-plugin-props-sort@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-props-sort/-/jss-plugin-props-sort-10.8.0.tgz#2a83e8ca80d72828495bad57b485f7d55a33543b"
-  integrity sha1-KoPoyoDXKChJW61XtIX31VozVDs=
+jss-plugin-props-sort@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-props-sort/-/jss-plugin-props-sort-10.8.1.tgz#ee07bebf8ebeab01f8d9369973c64891cca53af9"
+  integrity sha1-7ge+v46+qwH42TaZc8ZIkcylOvk=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-plugin-rule-value-function@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.8.0.tgz#e011ed180789229e7ea8f75c222d34810bcab520"
-  integrity sha1-4BHtGAeJIp5+qPdcIi00gQvKtSA=
+jss-plugin-rule-value-function@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-rule-value-function/-/jss-plugin-rule-value-function-10.8.1.tgz#40b19406f3cc027d9001de9026750e726c322993"
+  integrity sha1-QLGUBvPMAn2QAd6QJnUOcmwyKZM=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     tiny-warning "^1.0.2"
 
-jss-plugin-rule-value-observable@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-rule-value-observable/-/jss-plugin-rule-value-observable-10.8.0.tgz#ed02710675b57295f416db242235ba00b65e36f6"
-  integrity sha1-7QJxBnW1cpX0FtskIjW6ALZeNvY=
+jss-plugin-rule-value-observable@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-rule-value-observable/-/jss-plugin-rule-value-observable-10.8.1.tgz#669ad16c57960a22db7fe30054f34e94d0e5ed9c"
+  integrity sha1-ZprRbFeWCiLbf+MAVPNOlNDl7Zw=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     symbol-observable "^1.2.0"
 
-jss-plugin-template@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-template/-/jss-plugin-template-10.8.0.tgz#fb6873a98c2618a84e95e51444a74d6494f39f55"
-  integrity sha1-+2hzqYwmGKhOleUURKdNZJTzn1U=
+jss-plugin-template@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-template/-/jss-plugin-template-10.8.1.tgz#b12d74e3f4da4035fc28a921c5feda73d54313db"
+  integrity sha1-sS104/TaQDX8KKkhxf7ac9VDE9s=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
+    jss "10.8.1"
     tiny-warning "^1.0.2"
 
-jss-plugin-vendor-prefixer@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.8.0.tgz#024b6d77be50b68e5dfca2c75f68091d8b722d61"
-  integrity sha1-Akttd75Qto5d/KLHX2gJHYtyLWE=
+jss-plugin-vendor-prefixer@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-plugin-vendor-prefixer/-/jss-plugin-vendor-prefixer-10.8.1.tgz#362146c2b641aae1d29f279307aec0e2167c7ee2"
+  integrity sha1-NiFGwrZBquHSnyeTB67A4hZ8fuI=
   dependencies:
     "@babel/runtime" "^7.3.1"
     css-vendor "^2.0.8"
-    jss "10.8.0"
+    jss "10.8.1"
 
-jss-preset-default@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss-preset-default/-/jss-preset-default-10.8.0.tgz#eef88895a64670be35a33d02e342b819fa3d3e8d"
-  integrity sha1-7viIlaZGcL41oz0C40K4Gfo9Po0=
+jss-preset-default@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss-preset-default/-/jss-preset-default-10.8.1.tgz#b170fdc9cf6add389bc933f848906ac5075ffda9"
+  integrity sha1-sXD9yc9q3TibyTP4SJBqxQdf/ak=
   dependencies:
     "@babel/runtime" "^7.3.1"
-    jss "10.8.0"
-    jss-plugin-camel-case "10.8.0"
-    jss-plugin-compose "10.8.0"
-    jss-plugin-default-unit "10.8.0"
-    jss-plugin-expand "10.8.0"
-    jss-plugin-extend "10.8.0"
-    jss-plugin-global "10.8.0"
-    jss-plugin-nested "10.8.0"
-    jss-plugin-props-sort "10.8.0"
-    jss-plugin-rule-value-function "10.8.0"
-    jss-plugin-rule-value-observable "10.8.0"
-    jss-plugin-template "10.8.0"
-    jss-plugin-vendor-prefixer "10.8.0"
+    jss "10.8.1"
+    jss-plugin-camel-case "10.8.1"
+    jss-plugin-compose "10.8.1"
+    jss-plugin-default-unit "10.8.1"
+    jss-plugin-expand "10.8.1"
+    jss-plugin-extend "10.8.1"
+    jss-plugin-global "10.8.1"
+    jss-plugin-nested "10.8.1"
+    jss-plugin-props-sort "10.8.1"
+    jss-plugin-rule-value-function "10.8.1"
+    jss-plugin-rule-value-observable "10.8.1"
+    jss-plugin-template "10.8.1"
+    jss-plugin-vendor-prefixer "10.8.1"
 
-jss@10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/jss/-/jss-10.8.0.tgz#5063ee73aabd9f228ea3849df7962f0d2e213a42"
-  integrity sha1-UGPuc6q9nyKOo4Sd95YvDS4hOkI=
+jss@10.8.1:
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/jss/-/jss-10.8.1.tgz#375797c259ffce417e56ae1a7fe703acde8de9ee"
+  integrity sha1-N1eXwln/zkF+Vq4af+cDrN6N6e4=
   dependencies:
     "@babel/runtime" "^7.3.1"
     csstype "^3.0.2"
@@ -6062,7 +6060,7 @@ memfs@^3.1.2, memfs@^3.2.2:
 
 memoize-one@^5.0.0:
   version "5.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
   integrity sha1-gzeqPEM1WBg57AHD1ZQJDOvo8A4=
 
 meow@^9.0.0:
@@ -6938,7 +6936,7 @@ prompts@^2.0.1:
 
 prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
   dependencies:
     loose-envify "^1.4.0"
@@ -7025,13 +7023,13 @@ raw-body@2.4.0:
 
 react-display-name@^0.2.4:
   version "0.2.5"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-display-name/-/react-display-name-0.2.5.tgz#304c7cbfb59ee40389d436e1a822c17fe27936c6"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-display-name/-/react-display-name-0.2.5.tgz#304c7cbfb59ee40389d436e1a822c17fe27936c6"
   integrity sha1-MEx8v7We5AOJ1DbhqCLBf+J5NsY=
 
 react-dom@^17.0.2:
   version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
-  integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
+  integrity sha1-7P+2hF462Nv83EmPDQqTlzZQLCM=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7039,12 +7037,12 @@ react-dom@^17.0.2:
 
 react-fast-compare@^3.0.1:
   version "3.2.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-fast-compare/-/react-fast-compare-3.2.0.tgz#641a9da81b6a6320f270e89724fb45a0b39e43bb"
   integrity sha1-ZBqdqBtqYyDycOiXJPtFoLOeQ7s=
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
 react-is@^17.0.1:
@@ -7053,17 +7051,17 @@ react-is@^17.0.1:
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
 react-jss@^10.8.0:
-  version "10.8.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-jss/-/react-jss-10.8.0.tgz#bdb2f4d4c9fa81021945db4fc8114351d2574b8f"
-  integrity sha1-vbL01Mn6gQIZRdtPyBFDUdJXS48=
+  version "10.8.1"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-jss/-/react-jss-10.8.1.tgz#f8115b09bd3dd355471e06f592990c4fb59a4225"
+  integrity sha1-+BFbCb0901VHHgb1kpkMT7WaQiU=
   dependencies:
     "@babel/runtime" "^7.3.1"
     "@emotion/is-prop-valid" "^0.7.3"
-    css-jss "10.8.0"
+    css-jss "10.8.1"
     hoist-non-react-statics "^3.2.0"
     is-in-browser "^1.1.3"
-    jss "10.8.0"
-    jss-preset-default "10.8.0"
+    jss "10.8.1"
+    jss-preset-default "10.8.1"
     prop-types "^15.6.0"
     shallow-equal "^1.2.0"
     theming "^3.3.0"
@@ -7071,12 +7069,12 @@ react-jss@^10.8.0:
 
 react-onclickoutside@^6.10.0:
   version "6.12.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-onclickoutside/-/react-onclickoutside-6.12.0.tgz#c63db2e3c2c852b288160cdb6cff443604e28db4"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-onclickoutside/-/react-onclickoutside-6.12.0.tgz#c63db2e3c2c852b288160cdb6cff443604e28db4"
   integrity sha1-xj2y48LIUrKIFgzbbP9ENgTijbQ=
 
 react-popper@^2.2.5:
   version "2.2.5"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-popper/-/react-popper-2.2.5.tgz#1214ef3cec86330a171671a4fbcbeeb65ee58e96"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-popper/-/react-popper-2.2.5.tgz#1214ef3cec86330a171671a4fbcbeeb65ee58e96"
   integrity sha1-EhTvPOyGMwoXFnGk+8vutl7ljpY=
   dependencies:
     react-fast-compare "^3.0.1"
@@ -7084,7 +7082,7 @@ react-popper@^2.2.5:
 
 react-transition-group@^4.3.0:
   version "4.4.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/react-transition-group/-/react-transition-group-4.4.2.tgz#8b59a56f09ced7b55cbd53c36768b922890d5470"
   integrity sha1-i1mlbwnO17VcvVPDZ2i5IokNVHA=
   dependencies:
     "@babel/runtime" "^7.5.5"
@@ -7467,8 +7465,8 @@ saxes@^5.0.1:
 
 scheduler@^0.20.2:
   version "0.20.2"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
-  integrity sha512-2eWfGgAqqWFGqtdMmcL5zCMK1U8KlXv8SQFGglL3CEtd0aDVDWgeF/YoCmvln55m5zSk3J/20hTaSBeSObsQDQ==
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/scheduler/-/scheduler-0.20.2.tgz#4baee39436e34aa93b4874bddcbf0fe8b8b50e91"
+  integrity sha1-S67jlDbjSqk7SHS93L8P6Li1DpE=
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7625,7 +7623,7 @@ shallow-clone@^3.0.0:
 
 shallow-equal@^1.2.0:
   version "1.2.1"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/shallow-equal/-/shallow-equal-1.2.1.tgz#4c16abfa56043aa20d050324efa68940b0da79da"
   integrity sha1-TBar+lYEOqINBQMk76aJQLDaedo=
 
 shebang-command@^2.0.0:
@@ -7653,11 +7651,6 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.5.tgz#9e3e8cc0c75a99472b44321033a7702e7738252f"
   integrity sha512-KWcOiKeQj6ZyXx7zq4YxSMgHRlod4czeBQZrPb8OKcohcqAXShm7E20kEMle9WBt26hFcAf0qLOcp5zmY7kOqQ==
-
-single-spa-react@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/single-spa-react/-/single-spa-react-4.4.0.tgz#c28ccc0531d752745270bc1bb69126ba3d5686c1"
-  integrity sha512-tyvVayCqCWKL7dtv52f2Uzh7Iilu7+GB6upO/F1UMZcqa1+fUziIgkcofwwRE+HMZWCEl1KJW48VgrlK2HvMnQ==
 
 sirv@^1.0.7:
   version "1.0.17"
@@ -8043,9 +8036,9 @@ style-loader@^3.0.0, style-loader@^3.2.1:
   resolved "https://registry.yarnpkg.com/style-loader/-/style-loader-3.3.0.tgz#d66ea95fc50b22f8b79b69a9e414760fcf58d8d8"
   integrity sha512-szANub7ksJtQioJYtpbWwh1hUl99uK15n5HDlikeCRil/zYMZgSxucHddyF/4A3qJMUiAjPhFowrrQuNMA7jwQ==
 
-stylis@^4.0.3:
+stylis@^4.0.10:
   version "4.0.10"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/stylis/-/stylis-4.0.10.tgz#446512d1097197ab3f02fb3c258358c3f7a14240"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/stylis/-/stylis-4.0.10.tgz#446512d1097197ab3f02fb3c258358c3f7a14240"
   integrity sha1-RGUS0Qlxl6s/Avs8JYNYw/ehQkA=
 
 supports-color@^2.0.0:
@@ -8084,7 +8077,7 @@ supports-hyperlinks@^2.0.0:
 
 symbol-observable@^1.2.0:
   version "1.2.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
 
 symbol-tree@^3.2.4:
@@ -8185,7 +8178,7 @@ text-table@^0.2.0:
 
 theming@^3.3.0:
   version "3.3.0"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/theming/-/theming-3.3.0.tgz#dacabf04aa689edde35f1e1c117ec6de73fbf870"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/theming/-/theming-3.3.0.tgz#dacabf04aa689edde35f1e1c117ec6de73fbf870"
   integrity sha1-2sq/BKpont3jXx4cEX7G3nP7+HA=
   dependencies:
     hoist-non-react-statics "^3.3.0"
@@ -8205,7 +8198,7 @@ thunky@^1.0.2:
 
 tiny-warning@^1.0.2:
   version "1.0.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
   integrity sha1-lKMNtFPfTGQ9D9VmBg1gqHXYR1Q=
 
 tmpl@1.0.x:
@@ -8616,7 +8609,7 @@ warning@^3.0.0:
 
 warning@^4.0.2:
   version "4.0.3"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   integrity sha1-Fungd+uKhtavfWSqHgX9hbRnjKM=
   dependencies:
     loose-envify "^1.0.0"
