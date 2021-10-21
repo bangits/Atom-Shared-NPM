@@ -38,7 +38,8 @@ module.exports = (webpackConfigEnv, argv) => {
     },
     devServer: {
       port: webpackConfigEnv.port || 6001,
-      host: '0.0.0.0' // To accept connections from outside container
+      host: '0.0.0.0', // To accept connections from outside container
+      hot: false
     },
     externals: [/^@atom/],
     plugins: [
