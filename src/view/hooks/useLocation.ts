@@ -6,7 +6,7 @@ export const useLocation = () => {
   useEffect(() => {
     // @ts-ignore Ignoring typescript becuase in window events they're not single-spa:before-routing-event
     window.addEventListener('single-spa:before-routing-event', (evt: { detail: { newUrl: string } }) =>
-      setLocation(window.location)
+      setLocation({ ...window.location })
     );
   }, []);
 
