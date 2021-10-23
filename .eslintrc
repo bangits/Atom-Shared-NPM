@@ -16,6 +16,7 @@
     "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/prefer-interface": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/ban-types": "off",
     "no-console": "error",
     "sort-keys": "off"
   }

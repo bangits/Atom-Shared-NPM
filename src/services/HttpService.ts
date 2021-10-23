@@ -1,19 +1,21 @@
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 
-export interface HttpRequest<T, K = {}> {
+export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
   query?: T;
   url: string;
 }
 
 export interface IHttpService {
-  get<T, K>(request: HttpRequest<K>): Promise<T>;
-  delete<T, K>(request: HttpRequest<K>): Promise<T>;
+  get<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
+  delete<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
 
-  post<T, K, D>(request: HttpRequest<K, D>): Promise<T>;
-  put<T, K, D>(request: HttpRequest<K, D>): Promise<T>;
-  patch<T, K, D>(request: HttpRequest<K, D>): Promise<T>;
+  post<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
+  put<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
+  patch<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
 }
+
+export type QueryType = Record<string, string>;
 
 export class HttpService implements IHttpService {
   private instance: AxiosInstance;
@@ -22,30 +24,42 @@ export class HttpService implements IHttpService {
     this.instance = axios.create(config);
   }
 
-  async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
+  static buildQuery(data: QueryType): string {
+    const parsedString = Object.entries(data).reduce(
+      (prevQuery, [key, value], index) => prevQuery + `${index ? '&' : ''}${key}=${value}`,
+      ''
+    );
+
+    return `?${parsedString}`;
+  }
+
+  async get<T, K extends QueryType = QueryType>(request: HttpRequest<K>): Promise<T> {
     return this.fetch<T>('get', request);
   }
 
-  async post<T, K = {}, D = {}>(request: HttpRequest<K, D>): Promise<T> {
+  async post<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
     return this.fetch<T>('post', request);
   }
 
-  async put<T, K = {}, D = {}>(request: HttpRequest<K, D>): Promise<T> {
+  async put<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
     return this.fetch<T>('put', request);
   }
 
-  async patch<T, K = {}, D = {}>(request: HttpRequest<K, D>): Promise<T> {
+  async patch<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
     return this.fetch<T>('patch', request);
   }
 
-  async delete<T, K = {}>(request: HttpRequest<K>): Promise<T> {
+  async delete<T, K extends QueryType = QueryType>(request: HttpRequest<K>): Promise<T> {
     return this.fetch<T>('delete', request);
   }
 
-  private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
+  private async fetch<R, T extends QueryType = QueryType, K = {}>(
+    method: Method,
+    httpRequest: HttpRequest<T, K>
+  ): Promise<R> {
     return (
       await this.instance[method](
-        `${httpRequest.url}${httpRequest.query ? `?${httpRequest.query}` : ''}`,
+        `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
         httpRequest.body
       )
     ).data;
