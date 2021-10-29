@@ -1,12 +1,19 @@
-import { IHttpService } from '@/services';
+import { cachedFn } from '@/helpers';
+import { ICacheService, IHttpService } from '@/services';
 import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
+  CityVillageFilterRequestModel,
   FilterRequestModel,
+  GetCityVillageResponseModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
+  GetDocumentTypeResponseModel,
+  GetGenderResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel
+  GetPhoneCodeResponseModel,
+  GetRegionResponseModel,
+  RegionFilterRequestModel
 } from '../models';
 
 @injectable()
@@ -14,20 +21,18 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
   @inject('IHttpService')
   private readonly httpService: IHttpService;
 
-  private cachedCountries: GetCountriesResponseModel | null = null;
+  // Dont delete this part as it used in cachedFn
+  @inject('ICacheService')
+  private readonly cacheService: ICacheService;
 
-  getCountries = async (getCountriesRequestModel: FilterRequestModel) => {
-    if (this.cachedCountries) return this.cachedCountries;
-
+  getCountries = cachedFn('CachedCountries', async (getCountriesRequestModel: FilterRequestModel) => {
     const countries = await this.httpService.get<GetCountriesResponseModel, FilterRequestModel>({
       url: '/Countries',
       query: getCountriesRequestModel
     });
 
-    this.cachedCountries = countries;
-
     return countries;
-  };
+  }).bind(this);
 
   getCurrency = async (getCurrencyRequestModel: FilterRequestModel) => {
     const currency = await this.httpService.get<GetCurrencyResponseModel, FilterRequestModel>({
@@ -54,5 +59,40 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     });
 
     return phoneCode;
+  };
+
+  getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel) => {
+    const documentType = await this.httpService.get<GetDocumentTypeResponseModel, FilterRequestModel>({
+      url: '/DocumentType',
+      query: getDocumentTypeRequestModel
+    });
+
+    return documentType;
+  };
+
+  getGender = async () => {
+    const genderType = await this.httpService.get<GetGenderResponseModel, FilterRequestModel>({
+      url: '/Gender' // TO DO, need to correct after backend will add api
+    });
+
+    return genderType;
+  };
+
+  getRegion = async (getRegionRequestModel: RegionFilterRequestModel) => {
+    const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
+      url: '/Region', // TO DO, need to correct after backend will add api
+      query: getRegionRequestModel
+    });
+
+    return region;
+  };
+
+  getCityVillage = async (getCityVillageRequestModel: CityVillageFilterRequestModel) => {
+    const cityVillage = await this.httpService.get<GetCityVillageResponseModel, CityVillageFilterRequestModel>({
+      url: '/CityVillage', // TO DO, need to correct after backend will add api
+      query: getCityVillageRequestModel
+    });
+
+    return cityVillage;
   };
 }

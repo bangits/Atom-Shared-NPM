@@ -1,4 +1,4 @@
 import { Language } from '@/domain/entities';
-import { PagedResult } from '../models';
+import { PagedResult } from '../shared';
 
 export interface GetLanguageResponseModel extends PagedResult<Language> {}
