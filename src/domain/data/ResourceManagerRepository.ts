@@ -7,7 +7,8 @@ import {
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
-  GetDocumentTypeResponseModel
+  GetDocumentTypeResponseModel,
+  GetGenderResponseModel
 } from '../models';
 
 @injectable()
@@ -17,6 +18,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
   private cachedLanguages: GetLanguageResponseModel | null = null;
   private cachedPhoneCodes: GetPhoneCodeResponseModel | null = null;
   private cachedDocumentTypes: GetDocumentTypeResponseModel | null = null;
+  private cachedGenders: GetGenderResponseModel | null = null;
 
   @inject('IHttpService')
   private readonly httpService: IHttpService;
@@ -84,5 +86,18 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     this.cachedDocumentTypes = documentType;
 
     return documentType;
+  };
+
+  getGender = async (getGenderRequestModel: FilterRequestModel) => {
+    if (this.cachedGenders) return this.cachedGenders;
+
+    const genderType = await this.httpService.get<GetGenderResponseModel, FilterRequestModel>({
+      url: '/Gender',
+      query: getGenderRequestModel
+    });
+
+    this.cachedGenders = genderType;
+
+    return genderType;
   };
 }

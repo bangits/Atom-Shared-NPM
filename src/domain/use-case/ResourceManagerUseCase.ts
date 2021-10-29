@@ -6,7 +6,8 @@ import {
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
-  GetDocumentTypeResponseModel
+  GetDocumentTypeResponseModel,
+  GetGenderResponseModel
 } from '../models';
 
 export class ResourceManagerUseCase {
@@ -31,5 +32,9 @@ export class ResourceManagerUseCase {
 
   getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel> => {
     return this.resourceManagerRepository.getDocumentType(getDocumentTypeRequestModel);
+  };
+
+  getGender = async (getGenderRequestModel: FilterRequestModel): Promise<GetGenderResponseModel> => {
+    return this.resourceManagerRepository.getGender(getGenderRequestModel);
   };
 }

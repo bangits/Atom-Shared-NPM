@@ -3,3 +3,4 @@ export * from './GetCurrencyResponseModel';
 export * from './GetLanguageResponseModel';
 export * from './GetPhoneCodeResponseModel';
 export * from './GetDocumentTypeResponseModel';
+export * from './GetGenderResponseModel';
