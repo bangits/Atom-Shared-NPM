@@ -88,12 +88,11 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     return documentType;
   };
 
-  getGender = async (getGenderRequestModel: FilterRequestModel) => {
+  getGender = async () => {
     if (this.cachedGenders) return this.cachedGenders;
 
     const genderType = await this.httpService.get<GetGenderResponseModel, FilterRequestModel>({
-      url: '/Gender',
-      query: getGenderRequestModel
+      url: '/Gender'
     });
 
     this.cachedGenders = genderType;

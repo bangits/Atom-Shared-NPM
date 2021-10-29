@@ -34,7 +34,7 @@ export class ResourceManagerUseCase {
     return this.resourceManagerRepository.getDocumentType(getDocumentTypeRequestModel);
   };
 
-  getGender = async (getGenderRequestModel: FilterRequestModel): Promise<GetGenderResponseModel> => {
-    return this.resourceManagerRepository.getGender(getGenderRequestModel);
+  getGender = async (): Promise<GetGenderResponseModel> => {
+    return this.resourceManagerRepository.getGender();
   };
 }
