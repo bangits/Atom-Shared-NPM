@@ -1,4 +1,4 @@
 import { PhoneCode } from '@/domain/entities';
-import { PagedResult } from '../models';
+import { PagedResult } from '../shared';
 
 export interface GetPhoneCodeResponseModel extends PagedResult<PhoneCode> {}

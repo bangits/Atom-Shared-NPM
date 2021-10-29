@@ -1,15 +1,15 @@
 import { AtomCommonContext } from '@/adapter/react-context';
 import { MAX_PAGE_SIZE } from '@/configs';
-import { useContext, useEffect, useState, useMemo } from 'react';
-import { CustomSelect, CustomSelectProps } from './CustomSelect';
 import { Currency } from '@/domain/entities';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { CustomSelect, CustomSelectProps } from '../shared';
 
 export const CurrencySelect = (props: CustomSelectProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [currency, setCurrency] = useState<Currency[]>([]);
 
-  const selectOptions = useMemo(() => currency.map((c) => ({ id: c.id, label: c.name })), [currency]);
+  const selectOptions = useMemo(() => currency.map((c) => ({ value: c.id, label: c.name })), [currency]);
 
   useEffect(() => {
     resourceManagerUseCase

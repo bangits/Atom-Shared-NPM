@@ -1,15 +1,15 @@
 import { AtomCommonContext } from '@/adapter/react-context';
 import { MAX_PAGE_SIZE } from '@/configs';
-import { useContext, useEffect, useState, useMemo } from 'react';
-import { CustomSelect, CustomSelectProps } from './CustomSelect';
 import { Language } from '@/domain/entities';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { CustomSelect, CustomSelectProps } from '../shared';
 
 export const LanguageSelect = (props: CustomSelectProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [languages, setLanguages] = useState<Language[]>([]);
 
-  const selectOptions = useMemo(() => languages.map((c) => ({ id: c.id, label: c.name })), [languages]);
+  const selectOptions = useMemo(() => languages.map((c) => ({ value: c.id, label: c.name })), [languages]);
 
   useEffect(() => {
     resourceManagerUseCase

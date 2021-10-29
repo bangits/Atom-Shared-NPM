@@ -1,17 +1,27 @@
 import { DiContainer } from '@/di';
+import { LanguageType } from '@/domain';
+import { TranslationService } from '@/services';
 import { FC, useEffect, useState } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
 
-export const AtomCommonProvider: FC = ({ children }) => {
+export interface AtomCommonProviderProps {
+  initLanguage?: LanguageType;
+}
+
+export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, initLanguage }) => {
   const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
 
   useEffect(() => {
     const containerInstance = new DiContainer();
 
-    containerInstance.configure(diFiles).then(() => {
-      setTimeout(() => {
-        setContainerInstance(containerInstance);
-      }, 1000);
+    containerInstance.configure(diFiles).then(async () => {
+      if (initLanguage) {
+        const translationService: TranslationService = containerInstance.diContainer.get('TranslationService');
+
+        await translationService.init(initLanguage);
+      }
+
+      setContainerInstance(containerInstance);
     });
   }, []);
 

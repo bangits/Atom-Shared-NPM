@@ -1,4 +1,4 @@
 import { DocumentType } from '@/domain/entities';
-import { PagedResult } from '../models';
+import { PagedResult } from '../shared';
 
 export interface GetDocumentTypeResponseModel extends PagedResult<DocumentType> {}

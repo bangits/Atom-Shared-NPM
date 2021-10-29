@@ -1,4 +1,4 @@
 import { CityVillage } from '@/domain/entities';
-import { PagedResult } from '../models';
+import { PagedResult } from '../shared';
 
 export interface GetCityVillageResponseModel extends PagedResult<CityVillage> {}
