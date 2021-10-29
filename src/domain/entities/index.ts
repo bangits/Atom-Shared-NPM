@@ -6,3 +6,4 @@ export * from './PhoneCodeEntity';
 export * from './DocumentTypeEntity';
 export * from './GenderEntity';
 export * from './RegionEntity';
+export * from './CityVillageEntity';

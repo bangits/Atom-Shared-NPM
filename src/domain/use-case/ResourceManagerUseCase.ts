@@ -3,13 +3,15 @@ import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
   RegionFilterRequestModel,
+  CityVillageFilterRequestModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
-  GetRegionResponseModel
+  GetRegionResponseModel,
+  GetCityVillageResponseModel
 } from '../models';
 
 export class ResourceManagerUseCase {
@@ -42,5 +44,11 @@ export class ResourceManagerUseCase {
 
   getRegion = async (getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel> => {
     return this.resourceManagerRepository.getRegion(getRegionRequestModel);
+  };
+
+  getCityVillage = async (
+    getCityVillageRequestModel: CityVillageFilterRequestModel
+  ): Promise<GetCityVillageResponseModel> => {
+    return this.resourceManagerRepository.getCityVillage(getCityVillageRequestModel);
   };
 }

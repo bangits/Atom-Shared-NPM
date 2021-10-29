@@ -1,13 +1,15 @@
 import {
-  GetCountriesResponseModel,
   FilterRequestModel,
+  RegionFilterRequestModel,
+  CityVillageFilterRequestModel,
+  GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetRegionResponseModel,
-  RegionFilterRequestModel
+  GetCityVillageResponseModel
 } from '../models';
 
 export interface IResourceManagerRepository {
@@ -18,4 +20,5 @@ export interface IResourceManagerRepository {
   getDocumentType(getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel>;
   getGender(): Promise<GetGenderResponseModel>;
   getRegion(getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel>;
+  getCityVillage(getCityVillageRequestModel: CityVillageFilterRequestModel): Promise<GetCityVillageResponseModel>;
 }

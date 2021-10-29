@@ -4,13 +4,15 @@ import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
   RegionFilterRequestModel,
+  CityVillageFilterRequestModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
-  GetRegionResponseModel
+  GetRegionResponseModel,
+  GetCityVillageResponseModel
 } from '../models';
 
 @injectable()
@@ -22,6 +24,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
   private cachedDocumentTypes: GetDocumentTypeResponseModel | null = null;
   private cachedGenders: GetGenderResponseModel | null = null;
   private cachedRegions: GetRegionResponseModel | null = null;
+  private cachedCityVillage: GetCityVillageResponseModel | null = null;
 
   @inject('IHttpService')
   private readonly httpService: IHttpService;
@@ -95,7 +98,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     if (this.cachedGenders) return this.cachedGenders;
 
     const genderType = await this.httpService.get<GetGenderResponseModel, FilterRequestModel>({
-      url: '/Gender'
+      url: '/Gender' // TO DO, need to correct after backend will add api
     });
 
     this.cachedGenders = genderType;
@@ -107,12 +110,25 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     if (this.cachedRegions) return this.cachedRegions;
 
     const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
-      url: '/Region',
+      url: '/Region', // TO DO, need to correct after backend will add api
       query: getRegionRequestModel
     });
 
     this.cachedRegions = region;
 
     return region;
+  };
+
+  getCityVillage = async (getCityVillageRequestModel: CityVillageFilterRequestModel) => {
+    if (this.cachedCityVillage) return this.cachedCityVillage;
+
+    const cityVillage = await this.httpService.get<GetCityVillageResponseModel, CityVillageFilterRequestModel>({
+      url: '/CityVillage', // TO DO, need to correct after backend will add api
+      query: getCityVillageRequestModel
+    });
+
+    this.cachedCityVillage = cityVillage;
+
+    return cityVillage;
   };
 }
