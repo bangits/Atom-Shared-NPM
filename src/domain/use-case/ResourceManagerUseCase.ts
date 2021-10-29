@@ -2,12 +2,14 @@ import { inject } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
+  RegionFilterRequestModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
-  GetGenderResponseModel
+  GetGenderResponseModel,
+  GetRegionResponseModel
 } from '../models';
 
 export class ResourceManagerUseCase {
@@ -36,5 +38,9 @@ export class ResourceManagerUseCase {
 
   getGender = async (): Promise<GetGenderResponseModel> => {
     return this.resourceManagerRepository.getGender();
+  };
+
+  getRegion = async (getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel> => {
+    return this.resourceManagerRepository.getRegion(getRegionRequestModel);
   };
 }

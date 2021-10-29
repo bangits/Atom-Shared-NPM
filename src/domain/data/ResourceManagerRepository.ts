@@ -3,12 +3,14 @@ import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
+  RegionFilterRequestModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
-  GetGenderResponseModel
+  GetGenderResponseModel,
+  GetRegionResponseModel
 } from '../models';
 
 @injectable()
@@ -19,6 +21,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
   private cachedPhoneCodes: GetPhoneCodeResponseModel | null = null;
   private cachedDocumentTypes: GetDocumentTypeResponseModel | null = null;
   private cachedGenders: GetGenderResponseModel | null = null;
+  private cachedRegions: GetRegionResponseModel | null = null;
 
   @inject('IHttpService')
   private readonly httpService: IHttpService;
@@ -98,5 +101,18 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     this.cachedGenders = genderType;
 
     return genderType;
+  };
+
+  getRegion = async (getRegionRequestModel: RegionFilterRequestModel) => {
+    if (this.cachedRegions) return this.cachedRegions;
+
+    const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
+      url: '/Region',
+      query: getRegionRequestModel
+    });
+
+    this.cachedRegions = region;
+
+    return region;
   };
 }
