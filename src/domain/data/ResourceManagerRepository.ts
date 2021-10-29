@@ -6,12 +6,17 @@ import {
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel
+  GetPhoneCodeResponseModel,
+  GetDocumentTypeResponseModel
 } from '../models';
 
 @injectable()
 export class ResourceManagerRepository implements IResourceManagerRepository {
   private cachedCountries: GetCountriesResponseModel | null = null;
+  private cachedCurrencies: GetCurrencyResponseModel | null = null;
+  private cachedLanguages: GetLanguageResponseModel | null = null;
+  private cachedPhoneCodes: GetPhoneCodeResponseModel | null = null;
+  private cachedDocumentTypes: GetDocumentTypeResponseModel | null = null;
 
   @inject('IHttpService')
   private readonly httpService: IHttpService;
@@ -30,29 +35,54 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
   };
 
   getCurrency = async (getCurrencyRequestModel: FilterRequestModel) => {
+    if (this.cachedCurrencies) return this.cachedCurrencies;
+
     const currency = await this.httpService.get<GetCurrencyResponseModel, FilterRequestModel>({
       url: '/Currencies',
       query: getCurrencyRequestModel
     });
 
+    this.cachedCurrencies = currency;
+
     return currency;
   };
 
   getLanguage = async (getLanguageRequestModel: FilterRequestModel) => {
+    if (this.cachedLanguages) return this.cachedLanguages;
+
     const language = await this.httpService.get<GetLanguageResponseModel, FilterRequestModel>({
       url: '/Languages',
       query: getLanguageRequestModel
     });
 
+    this.cachedLanguages = language;
+
     return language;
   };
 
   getPhoneCode = async (getPhoneCodeRequestModel: FilterRequestModel) => {
+    if (this.cachedPhoneCodes) return this.cachedPhoneCodes;
+
     const phoneCode = await this.httpService.get<GetPhoneCodeResponseModel, FilterRequestModel>({
       url: '/PhoneCode',
       query: getPhoneCodeRequestModel
     });
 
+    this.cachedPhoneCodes = phoneCode;
+
     return phoneCode;
+  };
+
+  getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel) => {
+    if (this.cachedDocumentTypes) return this.cachedDocumentTypes;
+
+    const documentType = await this.httpService.get<GetDocumentTypeResponseModel, FilterRequestModel>({
+      url: '/DocumentType',
+      query: getDocumentTypeRequestModel
+    });
+
+    this.cachedDocumentTypes = documentType;
+
+    return documentType;
   };
 }

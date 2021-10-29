@@ -3,7 +3,8 @@ import {
   FilterRequestModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel
+  GetPhoneCodeResponseModel,
+  GetDocumentTypeResponseModel
 } from '../models';
 
 export interface IResourceManagerRepository {
@@ -11,4 +12,5 @@ export interface IResourceManagerRepository {
   getCurrency(getCurrencyRequestModel: FilterRequestModel): Promise<GetCurrencyResponseModel>;
   getLanguage(getLanguageRequestModel: FilterRequestModel): Promise<GetLanguageResponseModel>;
   getPhoneCode(getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel>;
+  getDocumentType(getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel>;
 }
