@@ -9,7 +9,7 @@ export interface CityVillageSelectProps extends CustomSelectProps {
   isCity: boolean;
 }
 
-export const CountriesSelect = ({ isCity, regionId, ...selectProps }: CityVillageSelectProps) => {
+export const CityVillageSelect = ({ isCity, regionId, ...selectProps }: CityVillageSelectProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [citiesVillages, setCitiesVillages] = useState<CityVillage[]>([]);
