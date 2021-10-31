@@ -1,5 +1,5 @@
 import { asyncForeach } from '@/helpers';
-import { CacheService, HttpService, ICacheService, IHttpService } from '@/services';
+import { CacheService, HttpService, ICacheService, IHttpService, LocalStorageService } from '@/services';
 import { Container } from 'inversify';
 
 export type DiConfig = {
@@ -48,3 +48,8 @@ export class DiContainer {
     this.diContainer.bind<ICacheService>('ICacheService').to(CacheService);
   };
 }
+
+const localStorageService = new LocalStorageService();
+
+    localStorageService.setItem('test', { a: 'as' });
+ console.log(localStorageService.getItem('test'));
