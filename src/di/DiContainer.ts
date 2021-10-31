@@ -1,5 +1,5 @@
 import { asyncForeach } from '@/helpers';
-import { CacheService, enviromentService, HttpService, ICacheService, IHttpService } from '@/services';
+import { enviromentService, HttpService, IHttpService } from '@/services';
 import { Container } from 'inversify';
 
 export type DiConfig = {
@@ -21,11 +21,12 @@ export class DiContainer {
       defaultScope: 'Singleton'
     });
 
-    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(() => {
-      return new HttpService({
-        baseURL: 'http://52.151.228.248/api/v1'
-      });
-    });
+    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
+      () =>
+        new HttpService({
+          baseURL: enviromentService.get<string>('apiUrl')
+        })
+    );
 
     await asyncForeach(diConfigs, async ({ moduleName, modulePath }) => {
       if (moduleName === 'HttpService') return;
@@ -37,14 +38,5 @@ export class DiContainer {
 
       this.diFiles.push({ name: moduleName, module: module });
     });
-
-    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
-      () =>
-        new HttpService({
-          baseURL: enviromentService.get<string>('apiUrl')
-        })
-    );
-
-    this.diContainer.bind<ICacheService>('ICacheService').to(CacheService);
   };
 }

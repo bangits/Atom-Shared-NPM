@@ -1,4 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
+import { injectable } from 'inversify';
 
 export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
@@ -17,6 +18,7 @@ export interface IHttpService {
 
 export type QueryType = {};
 
+@injectable()
 export class HttpService implements IHttpService {
   private instance: AxiosInstance;
 

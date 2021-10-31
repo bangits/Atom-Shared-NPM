@@ -1,3 +1,6 @@
+import { injectable } from 'inversify';
+
+@injectable()
 export abstract class StorageService implements Storage {
   protected abstract api: Storage;
 

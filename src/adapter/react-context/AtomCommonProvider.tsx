@@ -21,7 +21,9 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, init
         await translationService.init(initLanguage);
       }
 
-      setContainerInstance(containerInstance);
+      setTimeout(() => {
+        setContainerInstance(containerInstance);
+      }, 3000);
     });
   }, []);
 
