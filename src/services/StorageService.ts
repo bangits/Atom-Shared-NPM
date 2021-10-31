@@ -7,14 +7,6 @@ export abstract class StorageService implements Storage {
     return this.api.length;
   }
 
-  private prefixKey(plainKey: string): string {
-    if (this.prefix) {
-      return `[${this.prefix}]${plainKey}`;
-    }
-
-    return plainKey;
-  }
-
   public setItem(key: string, value: any): void {
     this.api.setItem(this.prefixKey(key), JSON.stringify({ value }));
   }
@@ -45,5 +37,13 @@ export abstract class StorageService implements Storage {
 
   public key(index: number): string {
     return this.api.key(index);
+  }
+
+  private prefixKey(plainKey: string): string {
+    if (this.prefix) {
+      return `[${this.prefix}]${plainKey}`;
+    }
+
+    return plainKey;
   }
 }
