@@ -26,6 +26,15 @@ export class HttpService implements IHttpService {
     this.instance = axios.create(config);
   }
 
+  static buildQuery(data: QueryType): string {
+    const parsedString = Object.entries(data).reduce(
+      (prevQuery, [key, value], index) => prevQuery + `${index ? '&' : ''}${key}=${value}`,
+      ''
+    );
+
+    return `?${parsedString}`;
+  }
+
   async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
     return this.fetch<T>('get', request);
   }
@@ -49,7 +58,7 @@ export class HttpService implements IHttpService {
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
     return (
       await this.instance[method](
-        `${httpRequest.url}${httpRequest.query ? `?${httpRequest.query}` : ''}`,
+        `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
         httpRequest.body
       )
     ).data;

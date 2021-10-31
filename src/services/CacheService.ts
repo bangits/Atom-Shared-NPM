@@ -10,8 +10,6 @@ export class CacheService implements ICacheService {
   private readonly cachedData = {};
 
   get<T>(key: string) {
-    if (!this.cachedData[key]) throw new Error('Invalid key, cannot found data in CacheService');
-
     return this.cachedData[key] as T;
   }
 
