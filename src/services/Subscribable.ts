@@ -1,5 +1,3 @@
-import { injectable } from 'inversify';
-@injectable()
 export class Subscribable<T> {
   private subscribers: Set<(msg: T) => void> = new Set();
 
