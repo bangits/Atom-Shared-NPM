@@ -1,5 +1,5 @@
 import { asyncForeach } from '@/helpers';
-import { CacheService, HttpService, ICacheService, IHttpService } from '@/services';
+import { CacheService, enviromentService, HttpService, ICacheService, IHttpService } from '@/services';
 import { Container } from 'inversify';
 
 export type DiConfig = {
@@ -41,7 +41,7 @@ export class DiContainer {
     this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://52.151.228.248/api/v1'
+          baseURL: enviromentService.get<string>('apiUrl')
         })
     );
 

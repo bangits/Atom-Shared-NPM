@@ -47,6 +47,7 @@ declare module '*.scss' {
 
 declare global {
   let diFiles: DiConfig[];
+  let env: {};
 }
 
 export default global;
