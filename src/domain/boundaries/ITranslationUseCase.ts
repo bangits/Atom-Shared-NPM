@@ -1,7 +1,7 @@
-import { TranslationModel } from "../models";
+import { TranslationModel } from '../models';
 
 export interface ITranslationUseCase {
-    getTranslations(): TranslationModel;
-    getTranslation(key: string): string
-    getTranslationsByLanguageId(languageId: string): TranslationModel
+  getTranslations(): TranslationModel;
+  getTranslation(key: string): string;
+  getTranslationsByLanguageId(languageId: string): TranslationModel;
 }

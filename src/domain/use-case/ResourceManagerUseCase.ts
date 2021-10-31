@@ -2,10 +2,16 @@ import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
   FilterRequestModel,
+  RegionFilterRequestModel,
+  CityVillageFilterRequestModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel
+  GetPhoneCodeResponseModel,
+  GetDocumentTypeResponseModel,
+  GetGenderResponseModel,
+  GetRegionResponseModel,
+  GetCityVillageResponseModel
 } from '../models';
 
 @injectable()
@@ -27,5 +33,23 @@ export class ResourceManagerUseCase {
 
   getPhoneCode = async (getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel> => {
     return this.resourceManagerRepository.getPhoneCode(getPhoneCodeRequestModel);
+  };
+
+  getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel> => {
+    return this.resourceManagerRepository.getDocumentType(getDocumentTypeRequestModel);
+  };
+
+  getGender = async (): Promise<GetGenderResponseModel> => {
+    return this.resourceManagerRepository.getGender();
+  };
+
+  getRegion = async (getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel> => {
+    return this.resourceManagerRepository.getRegion(getRegionRequestModel);
+  };
+
+  getCityVillage = async (
+    getCityVillageRequestModel: CityVillageFilterRequestModel
+  ): Promise<GetCityVillageResponseModel> => {
+    return this.resourceManagerRepository.getCityVillage(getCityVillageRequestModel);
   };
 }

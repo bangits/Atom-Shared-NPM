@@ -1,12 +1,11 @@
-// @ts-ignore
 import { Select, SelectProps } from '@atom/design-system';
 
-export type CustomSelectProps = SelectProps;
+export type CustomSelectProps = SelectProps<any, any, any>;
 
-export const CustomSelect = (props: SelectProps) => {
+export function CustomSelect(props: CustomSelectProps) {
   return (
     <>
       <Select {...props} />
     </>
   );
-};
+}

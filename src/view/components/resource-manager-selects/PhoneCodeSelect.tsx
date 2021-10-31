@@ -1,15 +1,15 @@
 import { AtomCommonContext } from '@/adapter/react-context';
 import { MAX_PAGE_SIZE } from '@/configs';
-import { useContext, useEffect, useMemo, useState } from 'react';
-import { CustomSelect, CustomSelectProps } from './CustomSelect';
 import { PhoneCode } from '@/domain/entities';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { CustomSelect, CustomSelectProps } from '../shared';
 
 export const PhoneCodeSelect = (props: CustomSelectProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [phoneCode, setPhoneCode] = useState<PhoneCode[]>([]);
 
-  const selectOption = useMemo(() => phoneCode.map((p) => ({ id: p.id, label: p.name })), [phoneCode]);
+  const selectOption = useMemo(() => phoneCode.map((p) => ({ value: p.id, label: p.name })), [phoneCode]);
 
   useEffect(() => {
     resourceManagerUseCase
@@ -23,7 +23,7 @@ export const PhoneCodeSelect = (props: CustomSelectProps) => {
 
   return (
     <>
-      <CustomSelect {...props} option={selectOption} />
+      <CustomSelect {...props} options={selectOption} />
     </>
   );
 };

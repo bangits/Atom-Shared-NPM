@@ -1,3 +1,4 @@
+import translations from '@/translations';
 import { injectable } from 'inversify';
 import { ITranslationUseCase } from '../boundaries';
 import { TranslationEntity } from '../entities';
@@ -16,15 +17,8 @@ export class TranslationUseCase implements ITranslationUseCase {
   }
 
   getTranslationsByLanguageId(languageId: LanguageType) {
-    const mockData = {
-      save: 'Save',
-      apply: 'Apply',
-      clear: 'Clear',
-      resultLabel: 'found n users'
-    };
+    this.translationEntity.setTranslations(translations);
 
-    this.translationEntity.setTranslations(mockData);
-
-    return mockData;
+    return translations;
   }
 }

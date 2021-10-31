@@ -3,8 +3,6 @@ import { injectable } from 'inversify';
 export class Subscribable<T> {
   private subscribers: Set<(msg: T) => void> = new Set();
 
-  constructor() {}
-
   subscribe(cb: (msg: T) => void): () => void {
     this.subscribers.add(cb);
     return () => {

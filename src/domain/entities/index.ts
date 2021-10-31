@@ -3,3 +3,7 @@ export * from './CountryEntity';
 export * from './CurrenciesEntity';
 export * from './LanguagesEntity';
 export * from './PhoneCodeEntity';
+export * from './DocumentTypeEntity';
+export * from './GenderEntity';
+export * from './RegionEntity';
+export * from './CityVillageEntity';
