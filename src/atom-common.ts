@@ -1,6 +1,7 @@
 import './index';
 
 export * from './adapter/react-context';
+export * from './adapter/redux';
 export * from './configs';
 export * from './domain';
 export * from './helpers';
