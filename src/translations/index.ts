@@ -1,10 +1,10 @@
 export default {
   login: {
-    username: 'Save',
-    password: 'Save',
-    title: 'Save',
-    subtitle: 'Save',
-    buttonText: 'Save',
-    'user-not-found': 'Save'
+    username: 'Email or Username',
+    password: 'Password',
+    title: 'Sign In',
+    subtitle: 'Login to manage your account',
+    buttonText: 'Login',
+    'user-not-found': 'Invalid account'
   }
 };

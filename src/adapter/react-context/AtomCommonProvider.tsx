@@ -6,16 +6,21 @@ import { AtomCommonContext } from './AtomCommonContext';
 
 export interface AtomCommonProviderProps {
   initLanguage?: LanguageType;
+  initializeLanguage?: boolean;
 }
 
-export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, initLanguage }) => {
+export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
+  children,
+  initLanguage = 'en',
+  initializeLanguage
+}) => {
   const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
 
   useEffect(() => {
     const containerInstance = new DiContainer();
 
     containerInstance.configure(diFiles).then(async () => {
-      if (initLanguage) {
+      if (initializeLanguage) {
         const translationService: TranslationService = containerInstance.diContainer.get('TranslationService');
 
         await translationService.init(initLanguage);
