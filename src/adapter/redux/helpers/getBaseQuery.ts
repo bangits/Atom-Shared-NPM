@@ -1,6 +1,6 @@
+import { DiContainer } from '@/di';
 import { BaseError } from '@/domain';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
-import { Container } from 'inversify';
 
 interface CreateBaseQueryArgument {
   useCaseName: string;
@@ -17,10 +17,10 @@ interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) =>
   > {}
 
 export const getBaseQuery =
-  (diContainer: Container) =>
+  (containerInstance: DiContainer) =>
   <T extends {}>({ useCaseName }: CreateBaseQueryArgument): CreateBaseQueryReturnType<T> =>
   async ({ methodName, methodArguments }) => {
-    const useCase = diContainer.get(useCaseName);
+    const useCase = containerInstance.diContainer.get(useCaseName);
 
     const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
 

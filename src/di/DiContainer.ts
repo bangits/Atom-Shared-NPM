@@ -1,5 +1,5 @@
 import { asyncForeach } from '@/helpers';
-import { enviromentService, HttpService, IHttpService } from '@/services';
+import { httpService, IHttpService } from '@/services';
 import { Container } from 'inversify';
 
 export type DiConfig = {
@@ -21,12 +21,7 @@ export class DiContainer {
       defaultScope: 'Singleton'
     });
 
-    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
-      () =>
-        new HttpService({
-          baseURL: enviromentService.get<string>('apiUrl')
-        })
-    );
+    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(() => httpService);
 
     await asyncForeach(diConfigs, async ({ moduleName, modulePath }) => {
       if (moduleName === 'HttpService') return;

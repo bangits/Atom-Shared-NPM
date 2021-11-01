@@ -1,0 +1,1 @@
+export const VALIDATION_CHANGED_VALUE = '$VALUE';

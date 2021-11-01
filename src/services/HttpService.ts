@@ -1,3 +1,4 @@
+import { enviromentService } from '@/atom-common';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
 
@@ -64,3 +65,7 @@ export class HttpService implements IHttpService {
     ).data;
   }
 }
+
+export const httpService = new HttpService({
+  baseURL: enviromentService.get<string>('apiUrl')
+});
