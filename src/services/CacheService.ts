@@ -1,7 +1,7 @@
 import { injectable } from 'inversify';
 
 export interface ICacheService {
-  get<T>(key: string): Promise<T>;
+  get<T>(key: string): T;
   set<T>(key: string, value: T): void;
 }
 
