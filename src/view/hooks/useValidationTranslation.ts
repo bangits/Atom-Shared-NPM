@@ -12,7 +12,7 @@ export const useValidationTranslation = (): UseValidationTranslationReturnValue 
 
   return {
     required: () => t.get('validations.required'),
-    min: (value: number) => t.get('validations.max').replace(VALIDATION_CHANGED_VALUE, value.toString()),
-    max: (value: number) => t.get('validations.min').replace(VALIDATION_CHANGED_VALUE, value.toString())
+    min: (value: number) => t.get('validations.min').replace(VALIDATION_CHANGED_VALUE, value.toString()),
+    max: (value: number) => t.get('validations.max').replace(VALIDATION_CHANGED_VALUE, value.toString())
   };
 };
