@@ -3,7 +3,7 @@ import { Gender } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const GenderSelect = (props: Omit<CustomSelectProps, 'options'>) => {
+export const GenderSelect = (props: Partial<CustomSelectProps>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [genders, setGenders] = useState<Gender[]>([]);
