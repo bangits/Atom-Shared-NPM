@@ -4,7 +4,7 @@ import { Country } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const CountriesSelect = (props: CustomSelectProps) => {
+export const CountriesSelect = (props: Omit<CustomSelectProps, 'options'>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [countries, setCountries] = useState<Country[]>([]);
