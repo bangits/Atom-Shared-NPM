@@ -1,6 +1,6 @@
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
-import querystring from 'querystring';
+import stringifyQuery from 'qs-stringify';
 import { enviromentService } from './EnviromentService';
 export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
@@ -28,7 +28,7 @@ export class HttpService implements IHttpService {
   }
 
   static buildQuery(data: QueryType): string {
-    return `/?${querystring.stringify(data)}`;
+    return `/?${stringifyQuery(data)}`;
   }
 
   async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
