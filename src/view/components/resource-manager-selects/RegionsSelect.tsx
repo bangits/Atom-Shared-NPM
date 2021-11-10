@@ -8,7 +8,7 @@ export interface RegionSelectProps extends CustomSelectProps {
   countryId?: number;
 }
 
-export const RegionSelect = ({ countryId, ...selectProps }: RegionSelectProps) => {
+export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelectProps>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [regions, setRegions] = useState<Region[]>([]);

@@ -4,7 +4,7 @@ import { PhoneCode } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const PhoneCodeSelect = (props: CustomSelectProps) => {
+export const PhoneCodeSelect = (props: Partial<CustomSelectProps>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [phoneCode, setPhoneCode] = useState<PhoneCode[]>([]);

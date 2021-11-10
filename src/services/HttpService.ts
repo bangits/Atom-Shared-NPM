@@ -28,10 +28,11 @@ export class HttpService implements IHttpService {
   }
 
   static buildQuery(data: QueryType): string {
-    const parsedString = Object.entries(data).reduce(
-      (prevQuery, [key, value], index) => prevQuery + `${index ? '&' : ''}${key}=${value}`,
-      ''
-    );
+    const parsedString = Object.entries(data).reduce((prevQuery, [key, value], index) => {
+      if (!value) return prevQuery;
+
+      return prevQuery + `${index ? '&' : ''}${key}=${value}`;
+    }, '');
 
     return `?${parsedString}`;
   }
