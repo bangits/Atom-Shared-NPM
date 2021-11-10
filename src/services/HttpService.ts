@@ -28,7 +28,7 @@ export class HttpService implements IHttpService {
   }
 
   static buildQuery(data: QueryType): string {
-    return `/${querystring.stringify(data)}`;
+    return `/?${querystring.stringify(data)}`;
   }
 
   async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
