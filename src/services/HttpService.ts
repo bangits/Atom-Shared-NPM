@@ -1,6 +1,6 @@
+import { stringifyQuery } from '@/helpers';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
-import stringifyQuery from 'qs-stringify';
 import { enviromentService } from './EnviromentService';
 export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
