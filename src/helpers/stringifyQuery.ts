@@ -24,6 +24,6 @@ export const stringifyQuery = (object: {}) => {
             : acc + stringifyNestedObject(value, key)
           : acc + `${key}=${value}&`
         : acc,
-    '?'
+    ''
   );
 };
