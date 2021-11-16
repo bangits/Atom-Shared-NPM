@@ -24,11 +24,11 @@ export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelect
         pageSize: MAX_PAGE_SIZE
       })
       .then((getRegionResponse) => setRegions(getRegionResponse.results));
-  }, []);
+  }, [countryId]);
 
   return (
     <>
       <CustomSelect {...selectProps} options={selectOption} />
     </>
-  );
+  ); 
 };
