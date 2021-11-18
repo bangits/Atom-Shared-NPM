@@ -26,9 +26,7 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         await translationService.init(initLanguage);
       }
 
-      setTimeout(() => {
-        setContainerInstance(containerInstance);
-      }, 3000);
+      setContainerInstance(containerInstance);
     });
   }, []);
 
@@ -38,7 +36,8 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
     <AtomCommonContext.Provider
       value={{
         resourceManagerUseCase: containerInstance.diContainer.get('ResourceManagerUseCase'),
-        translationService: containerInstance.diContainer.get('TranslationService')
+        translationService: containerInstance.diContainer.get('TranslationService'),
+        localStorageService: containerInstance.diContainer.get('LocalStorageService')
       }}>
       {children}
     </AtomCommonContext.Provider>

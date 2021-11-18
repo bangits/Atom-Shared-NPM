@@ -8,7 +8,11 @@ export default {
   },
   form: {
     save: 'Save',
-    cancel: 'Cancel'
+    cancel: 'Cancel',
+    continue: 'Continue'
+  },
+  statuses: {
+    name: 'Status'
   },
   login: {
     username: 'Email or Username',
@@ -32,6 +36,55 @@ export default {
       form: {
         title: 'Add Provider'
       }
+    }
+  },
+  player: {
+    details: {
+      userInfo: {
+        username: 'Username'
+      },
+      walletInfo: {
+        wallet: 'Wallet',
+        realBalance: {
+          realBalanceLabel: 'Real Balance',
+          subBalance: {
+            casino: 'Casino',
+            sport: 'Sport'
+          }
+        },
+        bonusBalance: 'Bonus Balance',
+        totalBalance: 'Total Balance'
+      },
+      lastActivity: {
+        title: 'Last Activity'
+      }
+    },
+    add: {
+      form: {
+        title: 'Add Player'
+      },
+      fields: {
+        project: 'Project',
+        username: 'Username',
+        email: 'Email',
+        password: 'Password',
+        currency: 'Currency',
+        bonusCode: 'Bonus Code',
+        firstName: 'First Name',
+        lastName: 'Last Name',
+        middleName: 'Middle Name',
+        dateOfBirth: 'Date of Birth',
+        gender: 'Gender',
+        country: 'Country',
+        region: 'Region',
+        city: 'City',
+        address: 'Address',
+        zipCode: 'Zip Code',
+        phoneNumber: 'Contact Number',
+        documentType: 'Document Type',
+        passportOrId: 'Passport/Id'
+      },
+      steps: { 'account-information': 'ACCOUNT INFORMATION', 'player-information': 'PLAYER INFORMATION' }
     }
   }
 };
