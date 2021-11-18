@@ -24,10 +24,16 @@
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "start-app": "docker-compose up --build",
     "kill-app": "docker-compose down",
-    "pre-commit": "yarn format",
+    "pre-commit": "yarn format && yarn lint",
     "pre-push": "yarn format"
   },
   "devDependencies": {
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-sonarjs": "^0.10.0",
     "@atom/design-system": "^1.5.3",
     "@babel/core": "^7.14.6",
     "@babel/eslint-parser": "^7.14.7",

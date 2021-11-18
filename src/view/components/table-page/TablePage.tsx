@@ -4,55 +4,24 @@ import { DataTable } from '@atom/design-system';
 import { DataTableProps } from '@atom/design-system/dist/components/templates/data-table/DataTable';
 import { useMemo } from 'react';
 
-export interface TablePageProps<T extends ObjectMock, K> {
-  defaultOpened?: boolean;
-  isShowedFilters?: boolean;
+export interface TablePageProps<T extends ObjectMock, K> extends DataTableProps<T, K> {}
 
-  fetchData: DataTableProps<T, K>['fetchData'];
-  data: DataTableProps<T, K>['tableProps']['data'];
-  columns: DataTableProps<T, K>['tableProps']['columns'];
-  filters: DataTableProps<T, K>['filterProps']['filters'];
-
-  checkboxFilters: DataTableProps<T, K>['filterProps']['checkboxFilters'];
-  initialFilterValues: DataTableProps<T, K>['filterProps']['initialValues'];
-}
-
-export const TablePage = <T extends ObjectMock, K>({
-  data,
-  columns,
-  filters,
-  checkboxFilters,
-  initialFilterValues,
-  isShowedFilters,
-  defaultOpened,
-}: TablePageProps<T, K>) => {
+export const TablePage = <T extends ObjectMock, K>(props: TablePageProps<T, K>) => {
   const translations = useTranslation();
-
-  const tableProps = useMemo(
-    () => ({
-      data,
-      columns
-    }),
-    [data, columns]
-  );
 
   const filtersProps = useMemo(
     () => ({
-      filters,
-      defaultOpened,
-      checkboxFilters,
-      initialValues: initialFilterValues,
+      ...props.filterProps,
       resultLabel: translations.get('resultLabel'),
       applyLabel: translations.get('apply'),
       clearLabel: translations.get('clear')
     }),
-    [translations, filters, defaultOpened, checkboxFilters, initialFilterValues]
+    [translations, props.filterProps]
   );
 
   return (
-    <div>
-      {/* @ts-ignore */}
-      <DataTable isShowedFilters={isShowedFilters} tableProps={tableProps} filtersProps={filtersProps} />
-    </div>
+    <>
+      <DataTable filterProps={filtersProps} {...props} />
+    </>
   );
 };

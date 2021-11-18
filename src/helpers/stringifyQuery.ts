@@ -20,7 +20,7 @@ export const stringifyQuery = (object: {}) => {
       value
         ? typeof value === 'object'
           ? Array.isArray(value)
-            ? stringifyArray(value, key)
+            ? acc + stringifyArray(value, key)
             : acc + stringifyNestedObject(value, key)
           : acc + `${key}=${value}&`
         : acc,
