@@ -1,6 +1,19 @@
 import { VALIDATION_CHANGED_VALUE } from '@/configs/constants';
 
 export default {
+  validations: {
+    required: 'Required field',
+    max: `The maximum length is ${VALIDATION_CHANGED_VALUE}!`,
+    min: `The minimum length is ${VALIDATION_CHANGED_VALUE}!`
+  },
+  form: {
+    save: 'Save',
+    cancel: 'Cancel',
+    continue: 'Continue'
+  },
+  statuses: {
+    name: 'Status'
+  },
   login: {
     username: 'Email or Username',
     password: 'Password',
@@ -9,35 +22,21 @@ export default {
     buttonText: 'Login',
     'user-not-found': 'Invalid account'
   },
-  validations: {
-    required: 'Required field',
-    max: `The maximum length is ${VALIDATION_CHANGED_VALUE}!`,
-    min: `The minimum length is ${VALIDATION_CHANGED_VALUE}!`
-  },
-  statuses: {
-    active: 'Active',
-    blocked: 'Blocked',
-    inActive: 'Inactive',
-    removed: 'Removed'
-  },
-  provider: {
-    providerList: {
-      title: 'Providers',
-      usersFound: 'users found',
+  providers: {
+    add: {
       fields: {
         providerName: 'Provider Name',
-        providerId: 'Provider ID',
-        gameCount: {
-          to: 'Game Count - From',
-          from: 'Game Count - To'
-        },
-        currency: 'Default currency',
-        status: 'Status'
+        targetMarkets: 'Target Markets',
+        certifiedCountries: 'Certified Countries',
+        restrictedCountries: 'Restricted Countries',
+        providerCurrencies: 'Provider Currencies',
+        defaultCurrency: 'Default currency',
+        logo: 'Logo'
+      },
+      form: {
+        title: 'Add Provider'
       }
-    },
-    addProvider: 'Add Provider',
-    applyLabel: 'Apply',
-    clearLabel: 'Clear'
+    }
   },
   player: {
     details: {
@@ -56,16 +55,14 @@ export default {
         bonusBalance: 'Bonus Balance',
         totalBalance: 'Total Balance'
       },
-      statusInfo: {
-        label: 'Status',
-        variant: 'active'
-      },
       lastActivity: {
         title: 'Last Activity'
       }
     },
     add: {
-      title: 'Add Player',
+      form: {
+        title: 'Add Player'
+      },
       fields: {
         project: 'Project',
         username: 'Username',
@@ -87,10 +84,6 @@ export default {
         documentType: 'Document Type',
         passportOrId: 'Passport/Id'
       },
-      close: 'Close',
-      continue: 'Continue',
-      save: 'Save',
-
       steps: { 'account-information': 'ACCOUNT INFORMATION', 'player-information': 'PLAYER INFORMATION' }
     }
   }

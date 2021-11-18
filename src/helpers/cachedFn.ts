@@ -6,5 +6,9 @@ export const cachedFn = <T extends (...args: any[]) => any>(cacheKey: string, fn
 
     if (cachedResult) return cachedResult;
 
-    return fn(...args) as ReturnType<T>;
+    const returnedResult = fn(...args) as ReturnType<T>;
+
+    (this as { cacheService: ICacheService }).cacheService.set(cacheKey, returnedResult);
+
+    return returnedResult;
   };

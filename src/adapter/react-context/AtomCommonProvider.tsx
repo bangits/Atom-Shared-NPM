@@ -37,7 +37,8 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
       value={{
         resourceManagerUseCase: containerInstance.diContainer.get('ResourceManagerUseCase'),
         translationService: containerInstance.diContainer.get('TranslationService'),
-        localStorageService: containerInstance.diContainer.get('LocalStorageService')
+        localStorageService: containerInstance.diContainer.get('LocalStorageService'),
+        loadingService: containerInstance.diContainer.get('LoadingService')
       }}>
       {children}
     </AtomCommonContext.Provider>
