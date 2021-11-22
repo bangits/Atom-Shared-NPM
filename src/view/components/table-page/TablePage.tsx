@@ -1,58 +1,32 @@
-import { ObjectMock } from '@/types';
+import { ObjectMock } from '@/common/types';
+import { VALIDATION_CHANGED_VALUE } from '@/configs/constants';
 import { useTranslation } from '@/view';
-import { DataTable } from '@atom/design-system';
-import { DataTableProps } from '@atom/design-system/dist/components/templates/data-table/DataTable';
+import { DataTable, DataTableProps } from '@atom/design-system';
 import { useMemo } from 'react';
 
-export interface TablePageProps<T extends ObjectMock, K> {
-  defaultOpened?: boolean;
-  isShowedFilters?: boolean;
-
-  fetchData: DataTableProps<T, K>['fetchData'];
-  data: DataTableProps<T, K>['tableProps']['data'];
-  columns: DataTableProps<T, K>['tableProps']['columns'];
-  filters: DataTableProps<T, K>['filterProps']['filters'];
-
-  checkboxFilters: DataTableProps<T, K>['filterProps']['checkboxFilters'];
-  initialFilterValues: DataTableProps<T, K>['filterProps']['initialValues'];
+export interface TablePageProps<T extends ObjectMock, K> extends DataTableProps<T, K> {
+  filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
+  rowCount?: number;
 }
 
-export const TablePage = <T extends ObjectMock, K>({
-  data,
-  columns,
-  filters,
-  checkboxFilters,
-  initialFilterValues,
-  isShowedFilters,
-  defaultOpened,
-}: TablePageProps<T, K>) => {
+export const TablePage = <T extends ObjectMock, K>(props: TablePageProps<T, K>) => {
   const translations = useTranslation();
 
-  const tableProps = useMemo(
+  const filterProps = useMemo(
     () => ({
-      data,
-      columns
+      ...props.filterProps,
+      resultLabel: props.rowCount
+        ? translations.get('tables.resultLabel').replace(VALIDATION_CHANGED_VALUE, props.rowCount.toString())
+        : null,
+      applyLabel: translations.get('tables.apply'),
+      clearLabel: translations.get('tables.clear')
     }),
-    [data, columns]
-  );
-
-  const filtersProps = useMemo(
-    () => ({
-      filters,
-      defaultOpened,
-      checkboxFilters,
-      initialValues: initialFilterValues,
-      resultLabel: translations.get('resultLabel'),
-      applyLabel: translations.get('apply'),
-      clearLabel: translations.get('clear')
-    }),
-    [translations, filters, defaultOpened, checkboxFilters, initialFilterValues]
+    [translations, props.filterProps, props.rowCount]
   );
 
   return (
-    <div>
-      {/* @ts-ignore */}
-      <DataTable isShowedFilters={isShowedFilters} tableProps={tableProps} filtersProps={filtersProps} />
-    </div>
+    <>
+      <DataTable {...props} filterProps={filterProps} />
+    </>
   );
 };

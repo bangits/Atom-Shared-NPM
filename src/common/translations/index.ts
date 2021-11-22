@@ -11,8 +11,17 @@ export default {
     cancel: 'Cancel',
     continue: 'Continue'
   },
+  tables: {
+    resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
+    clear: 'Clear',
+    apply: 'Apply'
+  },
   statuses: {
-    name: 'Status'
+    name: 'Status',
+    active: 'Active',
+    blocked: 'Blocked',
+    inActive: 'Inactive',
+    removed: 'Removed'
   },
   login: {
     username: 'Email or Username',
@@ -23,16 +32,24 @@ export default {
     'user-not-found': 'Invalid account'
   },
   providers: {
+    fields: {
+      providerId: 'Provider ID',
+      gameCount: 'Game Count',
+      gameCountFrom: 'Game Count From',
+      gameCountTo: 'Game Count To',
+      providerName: 'Provider Name',
+      targetMarkets: 'Target Markets',
+      certifiedCountries: 'Certified Countries',
+      restrictedCountries: 'Restricted Countries',
+      providerCurrencies: 'Provider Currencies',
+      defaultCurrency: 'Default currency',
+      logo: 'Logo'
+    },
+    list: {
+      title: 'Providers',
+      addProviderButton: 'Add Provider'
+    },
     add: {
-      fields: {
-        providerName: 'Provider Name',
-        targetMarkets: 'Target Markets',
-        certifiedCountries: 'Certified Countries',
-        restrictedCountries: 'Restricted Countries',
-        providerCurrencies: 'Provider Currencies',
-        defaultCurrency: 'Default currency',
-        logo: 'Logo'
-      },
       form: {
         title: 'Add Provider'
       }

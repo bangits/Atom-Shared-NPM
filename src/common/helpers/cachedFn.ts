@@ -1,4 +1,4 @@
-import { ICacheService } from '@/services';
+import { ICacheService } from '@/common/services';
 
 export const cachedFn = <T extends (...args: any[]) => any>(cacheKey: string, fn: T) =>
   function (...args: Parameters<T>): ReturnType<T> {

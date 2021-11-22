@@ -1,42 +1,41 @@
-import { asyncForeach } from '@/helpers';
-import { HttpService, IHttpService } from '@/services';
+import {
+  CacheService,
+  HttpService,
+  ICacheService,
+  IHttpService,
+  LocalStorageService,
+  SessionStorageService,
+  TranslationService
+} from '@/common/services';
+import { ResourceManagerRepository } from '@/data';
+import { ResourceManagerUseCase, TranslationUseCase } from '@/domain';
 import { Container } from 'inversify';
-
-export type DiConfig = {
-  modulePath: string;
-  moduleName: string;
-};
-
-export type DiFiles = {
-  module: any;
-  name: string;
-};
-
+import { DI_CONSTANTS } from './constants';
 export class DiContainer {
   public diContainer: Container;
-  public diFiles: DiFiles[] = [];
 
-  public configure = async (diConfigs: DiConfig[]) => {
+  public configure = () => {
     this.diContainer = new Container({
       defaultScope: 'Singleton'
     });
 
-    this.diContainer.bind<IHttpService>('IHttpService').toDynamicValue(
+    // Services
+    this.diContainer.bind<IHttpService>(DI_CONSTANTS.HttpService).toDynamicValue(
       () =>
         new HttpService({
           baseURL: 'http://52.151.228.248/api/v1'
         })
     );
+    this.diContainer.bind<ICacheService>(DI_CONSTANTS.CacheService).to(CacheService);
+    this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
+    this.diContainer.bind(DI_CONSTANTS.SessionStorageService).to(SessionStorageService);
+    this.diContainer.bind(DI_CONSTANTS.TranslationService).to(TranslationService);
 
-    await asyncForeach(diConfigs, async ({ moduleName, modulePath }) => {
-      if (moduleName === 'HttpService') return;
+    // Repositories
+    this.diContainer.bind(DI_CONSTANTS.ResourceManagerRepository).to(ResourceManagerRepository);
 
-      const module = await import(`../${modulePath}`);
-
-      this.diContainer.bind(`I${moduleName}`).to(module[moduleName]);
-      this.diContainer.bind(moduleName).to(module[moduleName]);
-
-      this.diFiles.push({ name: moduleName, module: module });
-    });
+    // Use Cases
+    this.diContainer.bind(DI_CONSTANTS.ResourceManagerUseCase).to(ResourceManagerUseCase);
+    this.diContainer.bind(DI_CONSTANTS.TranslationUseCase).to(TranslationUseCase);
   };
 }

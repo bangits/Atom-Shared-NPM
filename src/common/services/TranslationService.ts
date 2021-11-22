@@ -1,3 +1,4 @@
+import { DI_CONSTANTS } from '@/di/constants';
 import { ITranslationUseCase } from '@/domain/boundaries';
 import { TranslationModel } from '@/domain/models';
 import { LanguageType } from '@/domain/types';
@@ -6,7 +7,7 @@ import { Subscribable } from './Subscribable';
 
 @injectable()
 export class TranslationService extends Subscribable<TranslationModel> {
-  @inject('ITranslationUseCase')
+  @inject(DI_CONSTANTS.TranslationUseCase)
   private readonly translationUseCase: ITranslationUseCase;
 
   private initialized = false;
@@ -16,7 +17,7 @@ export class TranslationService extends Subscribable<TranslationModel> {
 
     const translations = this.translationUseCase.getTranslationsByLanguageId(defaultLanguage);
 
-    super.publish(translations);
+    this.publish(translations);
 
     this.initialized = true;
   };
@@ -24,7 +25,7 @@ export class TranslationService extends Subscribable<TranslationModel> {
   changeLanguage = (language: LanguageType): TranslationModel => {
     const translations = this.translationUseCase.getTranslationsByLanguageId(language);
 
-    super.publish(translations);
+    this.publish(translations);
 
     return translations;
   };

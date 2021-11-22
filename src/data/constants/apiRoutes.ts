@@ -1,4 +1,4 @@
-export const controllerNames = {
+export const API_ROUTES = {
   Countries: '/Countries',
   Currencies: '/Currencies',
   Languages: '/Languages',

@@ -1,4 +1,4 @@
-import { getObjectValueByKey } from '@/helpers';
+import { getObjectValueByKey } from '@/common/helpers';
 import { TranslationModel } from '../models';
 
 export class TranslationEntity {

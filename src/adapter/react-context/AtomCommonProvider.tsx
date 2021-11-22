@@ -1,6 +1,7 @@
+import { TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
+import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
-import { TranslationService } from '@/services';
 import { FC, useEffect, useState } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
 
@@ -19,15 +20,19 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   useEffect(() => {
     const containerInstance = new DiContainer();
 
-    containerInstance.configure(diFiles).then(async () => {
+    containerInstance.configure();
+
+    (async () => {
       if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get('TranslationService');
+        const translationService: TranslationService = containerInstance.diContainer.get(
+          DI_CONSTANTS.TranslationService
+        );
 
         await translationService.init(initLanguage);
       }
 
       setContainerInstance(containerInstance);
-    });
+    })();
   }, []);
 
   if (!containerInstance) return null;
@@ -35,10 +40,9 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   return (
     <AtomCommonContext.Provider
       value={{
-        resourceManagerUseCase: containerInstance.diContainer.get('ResourceManagerUseCase'),
-        translationService: containerInstance.diContainer.get('TranslationService'),
-        localStorageService: containerInstance.diContainer.get('LocalStorageService'),
-        loadingService: containerInstance.diContainer.get('LoadingService')
+        resourceManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ResourceManagerUseCase),
+        translationService: containerInstance.diContainer.get(DI_CONSTANTS.TranslationService),
+        localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService)
       }}>
       {children}
     </AtomCommonContext.Provider>

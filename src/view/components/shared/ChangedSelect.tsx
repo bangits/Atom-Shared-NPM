@@ -1,14 +1,26 @@
 import { CustomSelectProps, SelectOptionType } from '@/view';
-import { Field, FieldProps, FormikProps } from 'formik';
+import { FormikFieldTypes } from '@/view/types';
+import { FastField as FormikFastField, Field as FormikField, FieldProps, FormikProps } from 'formik';
 import { useState } from 'react';
 
 export interface ChangedSelectProps extends Partial<CustomSelectProps> {
+  field: FormikFieldTypes;
+  useFastField?: boolean;
   name: string;
   component(props: Partial<CustomSelectProps>): JSX.Element;
   onChangeOptions?(options: SelectOptionType[], form: FormikProps<any>): void;
 }
 
-export const ChangedSelect = ({ name, component: Component, onChangeOptions, ...props }: ChangedSelectProps) => {
+export const ChangedSelect = ({
+  name,
+  component: Component,
+  onChangeOptions,
+  field,
+  useFastField = true,
+  ...props
+}: ChangedSelectProps) => {
+  const Field = field || (useFastField ? FormikFastField : FormikField);
+
   const [selectedOptions, setSelecetedOptions] = useState<SelectOptionType[]>([]);
 
   return (
