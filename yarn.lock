@@ -22,6 +22,16 @@
     react "^17.0.2"
     react-dom "^17.0.2"
 
+"@automapper/classes@^7.0.2":
+  version "7.0.2"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@automapper/classes/-/classes-7.0.2.tgz#f50ce041938a23259f743d9e78c73c570a6deecd"
+  integrity sha1-9QzgQZOKIyWfdD2eeMc8Vwpt7s0=
+
+"@automapper/core@^7.0.2":
+  version "7.0.2"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@automapper/core/-/core-7.0.2.tgz#6da0b7fe35a06ec9cc5755fe1dcd5b95326eb223"
+  integrity sha1-baC3/jWgbsnMV1X+Hc1blTJusiM=
+
 "@babel/code-frame@7.12.11":
   version "7.12.11"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.12.11.tgz#f4ad435aa263db935b8f10f2c552d23fb716a63f"
