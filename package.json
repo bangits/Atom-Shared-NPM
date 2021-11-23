@@ -1,6 +1,6 @@
 {
   "name": "@atom/common",
-  "version": "2.1.4",
+  "version": "2.1.5",
   "main": "",
   "types": "./dist/atom-common.d.ts",
   "files": [
@@ -88,6 +88,7 @@
     "@atom/common": "1.9.3",
     "axios": "^0.23.0",
     "formik": "^2.2.9",
+    "query-string": "^7.0.1",
     "react": "^17.0.2",
     "rxjs": "^7.4.0",
     "single-spa": "^5.9.3",
