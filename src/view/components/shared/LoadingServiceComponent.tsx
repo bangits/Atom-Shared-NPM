@@ -1,4 +1,5 @@
 import { loadingService } from '@/common/services';
+import { LoadingPage } from '@atom/design-system';
 import { useEffect, useState } from 'react';
 
 export const LoadingServiceComponent = () => {
@@ -10,5 +11,5 @@ export const LoadingServiceComponent = () => {
 
   if (!isLoading) return null;
 
-  return <div>loading...</div>;
+  return <LoadingPage />;
 };
