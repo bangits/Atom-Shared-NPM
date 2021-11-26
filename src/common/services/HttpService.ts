@@ -1,4 +1,4 @@
-import { stringifyQuery } from '@/helpers';
+import { stringifyQuery } from '@/common/helpers';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
 import { enviromentService } from './EnviromentService';

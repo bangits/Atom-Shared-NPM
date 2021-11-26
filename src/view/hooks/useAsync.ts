@@ -1,4 +1,4 @@
-import { AsyncReturnType } from '@/types';
+import { AsyncReturnType } from '@/common/types';
 import { useEffect, useState } from 'react';
 
 export const useAsync = <T extends (...args: any[]) => Promise<any>, K = undefined>(

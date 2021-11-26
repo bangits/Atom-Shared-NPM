@@ -1,8 +1,8 @@
-import { AtomCommonContext } from '@/adapter/react-context';
-import { useContext, useEffect, useState } from 'react';
+import { loadingService } from '@/common/services';
+import { LoadingPage } from '@atom/design-system';
+import { useEffect, useState } from 'react';
 
 export const LoadingServiceComponent = () => {
-  const { loadingService } = useContext(AtomCommonContext);
   const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -11,5 +11,5 @@ export const LoadingServiceComponent = () => {
 
   if (!isLoading) return null;
 
-  return <div>loading...</div>;
+  return <LoadingPage />;
 };

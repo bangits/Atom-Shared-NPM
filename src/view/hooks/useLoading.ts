@@ -1,8 +1,5 @@
-import { AtomCommonContext } from '@/adapter/react-context';
-import { useContext } from 'react';
+import { loadingService } from '@/common/services';
 
 export const useLoading = () => {
-  const { loadingService } = useContext(AtomCommonContext);
-
   return loadingService.publish;
 };
