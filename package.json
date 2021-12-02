@@ -24,7 +24,7 @@
     "coverage": "cross-env BABEL_ENV=test jest --coverage",
     "start-app": "docker-compose up --build",
     "kill-app": "docker-compose down",
-    "pre-commit": "yarn format",
+    "pre-commit": "yarn format && yarn lint",
     "pre-push": "yarn format"
   },
   "devDependencies": {

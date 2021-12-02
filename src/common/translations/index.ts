@@ -10,7 +10,8 @@ export default {
     save: 'Save',
     cancel: 'Cancel',
     continue: 'Continue',
-    all: 'All'
+    all: 'All',
+    close: 'Close'
   },
   tables: {
     resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
@@ -62,6 +63,23 @@ export default {
     }
   },
   partners: {
+    add: {
+      form: {
+        title: 'Add Partner'
+      },
+      fields: {
+        legalEntity: 'Legal Entity',
+        legalName: 'Legal Name',
+        brandName: 'Brand Name',
+        businessActivity: 'Business Activity',
+        parentCompanyName: 'Parent Company',
+        companyType: 'Company Type',
+        companyLogoType: {
+          title: 'Company Logotype',
+          dragAndDrop: 'Drag and drop or Browse'
+        }
+      }
+    },
     businessActivities: {
       gameProvider: 'Game Provider',
       gamblingAndCasino: 'Gambling & Casino'
@@ -86,11 +104,22 @@ export default {
       terminated: 'Terminated'
     },
     list: {
-      title: 'Partners',
       addPartnerButton: 'Add Partner',
-
+      title: 'Partners',
       tableHeaders: {
-        providerId: 'Provider ID'
+        partnerId: 'Partner ID',
+        legalEntity: 'Legal Entity',
+        legalName: 'Legal Name',
+        brandName: 'Brand Name',
+        businessActivity: 'Business Activity',
+        companyType: 'Company type',
+        parentCompanyId: 'Parent Company ID',
+        parentCompanyName: 'Parent Company Name',
+        dateOfCreation: 'Date of Creation',
+        dateOfUpdate: 'Date of Update',
+        lastUpdateBy: 'Last Update By',
+        createdBy: 'Created By',
+        status: 'Status'
       }
     }
   },
@@ -141,6 +170,41 @@ export default {
         passportOrId: 'Passport/Id'
       },
       steps: { 'account-information': 'ACCOUNT INFORMATION', 'player-information': 'PLAYER INFORMATION' }
+    }
+  },
+  users: {
+    add: {
+      title: 'Add User',
+      fields: {
+        email: 'E-mail',
+        passwordHash: 'Password',
+        expirationDate: {
+          fieldName: 'Expiration Date',
+          forever: 'Forever',
+          temporary: 'Temporary'
+        },
+        defaultCurrency: 'Default Currency',
+        defaultLanguage: 'Default Language'
+      }
+    },
+    list: {
+      addUserButton: 'Add User',
+      title: 'Users',
+      tableHeaders: {
+        dateOfCreation: 'Date of Creation',
+        createdBy: 'Created By',
+        userId: 'User ID',
+        email: 'E-mail (Username)',
+        fullName: 'Full Name',
+        mobile: 'Mobile',
+        country: 'Country',
+        city: 'City',
+        language: 'Language',
+        currency: 'Currency',
+        lastUpdateDate: 'Last Update Date',
+        lastUpdateBy: 'Last Update By',
+        status: 'Status'
+      }
     }
   }
 };
