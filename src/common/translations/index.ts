@@ -9,7 +9,8 @@ export default {
   form: {
     save: 'Save',
     cancel: 'Cancel',
-    continue: 'Continue'
+    continue: 'Continue',
+    all: 'All'
   },
   tables: {
     resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
@@ -57,6 +58,39 @@ export default {
     add: {
       form: {
         title: 'Add Provider'
+      }
+    }
+  },
+  partners: {
+    businessActivities: {
+      gameProvider: 'Game Provider',
+      gamblingAndCasino: 'Gambling & Casino'
+    },
+    fields: {
+      partnerId: 'Partner ID',
+      legalName: 'Legal Name',
+      companyType: 'Company Type',
+      main: 'Main',
+      subsidiary: 'Subsidiary',
+      brandName: 'Brand Name',
+      businessActivity: 'Business Activity',
+      parentCompanyId: 'Parent Company ID',
+      parentCompanyName: 'Parent Company Name',
+      lastUpdateBy: 'Last Update By',
+      createdBy: 'Created By',
+      status: 'Status'
+    },
+    statuses: {
+      declared: 'Declared',
+      validated: 'Validated',
+      terminated: 'Terminated'
+    },
+    list: {
+      title: 'Partners',
+      addPartnerButton: 'Add Partner',
+
+      tableHeaders: {
+        providerId: 'Provider ID'
       }
     }
   },

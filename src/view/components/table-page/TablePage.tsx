@@ -3,7 +3,7 @@ import { useTranslation } from '@/view';
 import { DataTable, DataTableProps } from '@atom/design-system';
 import { useMemo } from 'react';
 
-export interface TablePageProps<T extends ObjectMock, K> extends DataTableProps<T, K> {
+export interface TablePageProps<T extends ObjectMock, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
   rowCount: number;
   defaultPageSizeValue?: number;
@@ -12,7 +12,7 @@ export interface TablePageProps<T extends ObjectMock, K> extends DataTableProps<
 
 export const TablePage = <T extends ObjectMock, K>({
   defaultPageSizeValue = 20,
-  pageSizeDividerValue = 20,
+  pageSizeDividerValue = 50,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
@@ -30,13 +30,18 @@ export const TablePage = <T extends ObjectMock, K>({
   );
 
   const pageSizeOptions = useMemo(
-    () =>
-      props.rowCount
+    () => [
+      {
+        value: defaultPageSizeValue,
+        label: defaultPageSizeValue.toString()
+      },
+      ...(props.rowCount
         ? new Array(Math.ceil(props.rowCount / pageSizeDividerValue)).fill(null).map((_, index) => ({
             value: (index + 1) * pageSizeDividerValue,
             label: ((index + 1) * pageSizeDividerValue).toString()
           }))
-        : [],
+        : [])
+    ],
     [pageSizeDividerValue, props.rowCount]
   );
 
@@ -44,20 +49,29 @@ export const TablePage = <T extends ObjectMock, K>({
     <>
       <DataTable
         {...props}
+        isShowedPagination={props.rowCount > defaultPageSizeValue}
+        rowCount={props.rowCount}
         paginationProps={{
           pageSizeSelect: {
             dropdownLabel: translations.get('tables.pagination.pageSizeLabel'),
             options: pageSizeOptions,
             defaultValue: defaultPageSizeValue
           },
-          totalPagesCount: props.rowCount,
           jumpToPage: {
             inputTitle: translations.get('tables.pagination.jumpToPageLabel')
           },
-          getTotalCountInfo: (pagination) =>
-            `${pagination.pageSize - pageSizeDividerValue + 1}-${
-              pagination.pageSize > props.rowCount ? props.rowCount : pagination.pageSize
-            } ${translations.get('tables.pagination.totalCountDivider')} ${props.rowCount}`
+          getTotalCountInfo: (pagination) => {
+            const currentPageFirstValue = pagination.pageSize * pagination.page - pagination.pageSize + 1;
+
+            const currentPageLastValue =
+              pagination.pageSize * pagination.page > props.rowCount
+                ? props.rowCount
+                : pagination.pageSize * pagination.page;
+
+            return `${currentPageFirstValue}-${currentPageLastValue} ${translations.get(
+              'tables.pagination.totalCountDivider'
+            )} ${props.rowCount}`;
+          }
         }}
         filterProps={filterProps}
       />
