@@ -14,7 +14,12 @@ export default {
   tables: {
     resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
     clear: 'Clear',
-    apply: 'Apply'
+    apply: 'Apply',
+    pagination: {
+      pageSizeLabel: 'Row per page: ',
+      jumpToPageLabel: 'Jump to page',
+      totalCountDivider: 'of'
+    }
   },
   statuses: {
     name: 'Status',

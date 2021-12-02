@@ -1,3 +1,4 @@
+import { DialogProvider } from '@atom/design-system';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
@@ -8,6 +9,8 @@ const App = () => {
   return (
     <AtomCommonProvider>
       <LoadingServiceComponent />
+
+      <DialogProvider />
     </AtomCommonProvider>
   );
 };
