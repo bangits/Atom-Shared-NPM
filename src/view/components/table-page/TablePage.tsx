@@ -8,11 +8,13 @@ export interface TablePageProps<T extends ObjectMock, K> extends DataTableProps<
   rowCount: number;
   defaultPageSizeValue?: number;
   pageSizeDividerValue?: number;
+  isEmpty?: boolean;
 }
 
 export const TablePage = <T extends ObjectMock, K>({
   defaultPageSizeValue = 20,
   pageSizeDividerValue = 20,
+  isEmpty = false,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();

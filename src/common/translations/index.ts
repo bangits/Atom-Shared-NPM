@@ -9,7 +9,8 @@ export default {
   form: {
     save: 'Save',
     cancel: 'Cancel',
-    continue: 'Continue'
+    continue: 'Continue',
+    close: 'Close'
   },
   tables: {
     resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
@@ -114,7 +115,7 @@ export default {
       addPartnerButton: 'Add Partner',
       title: 'Partners',
       tableHeaders: {
-        providerId: 'Provider ID',
+        partnerId: 'Partner ID',
         legalEntity: 'Legal Entity',
         legalName: 'Legal Name',
         brandName: 'Brand Name',
@@ -130,6 +131,9 @@ export default {
       }
     },
     add: {
+      form: {
+        title: 'Add Partner'
+      },
       fields: {
         legalEntity: 'Legal Entity',
         legalName: 'Legal Name',
@@ -138,14 +142,27 @@ export default {
         parentCompanyName: 'Parent Company',
         companyType: 'Company Type',
         companyLogoType: {
-          title:"'Company Logotype'",
-          dragAndDrop:'Drag and drop or Browse'
-        },
-
+          title: 'Company Logotype',
+          dragAndDrop: 'Drag and drop or Browse'
+        }
       }
     }
   },
   users: {
+    add: {
+      title: 'Add User',
+      fields: {
+        email: 'E-mail',
+        passwordHash: 'Password',
+        expirationDate: {
+          fieldName: 'Expiration Date',
+          forever: 'Forever',
+          temporary: 'Temporary'
+        },
+        defaultCurrency: 'Default Currency',
+        defaultLanguage: 'Default Language'
+      }
+    },
     list: {
       addUserButton: 'Add User',
       title: 'Users',
