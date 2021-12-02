@@ -103,5 +103,62 @@ export default {
       },
       steps: { 'account-information': 'ACCOUNT INFORMATION', 'player-information': 'PLAYER INFORMATION' }
     }
+  },
+  partners: {
+    list: {
+      addPartnerButton: 'Add Partner',
+      title: 'Partners',
+      tableHeaders: {
+        providerId: 'Provider ID',
+        legalEntity: 'Legal Entity',
+        legalName: 'Legal Name',
+        brandName: 'Brand Name',
+        businessActivity: 'Business Activity',
+        companyType: 'Company type',
+        parentCompanyId: 'Parent Company ID',
+        parentCompanyName: 'Parent Company Name',
+        dateOfCreation: 'Date of Creation',
+        dateOfUpdate: 'Date of Update',
+        lastUpdateBy: 'Last Update By',
+        createdBy: 'Created By',
+        status: 'Status'
+      }
+    },
+    add: {
+      fields: {
+        legalEntity: 'Legal Entity',
+        legalName: 'Legal Name',
+        brandName: 'Brand Name',
+        businessActivity: 'Business Activity',
+        parentCompanyName: 'Parent Company',
+        companyType: 'Company Type',
+        companyLogoType: {
+          title:"'Company Logotype'",
+          dragAndDrop:'Drag and drop or Browse'
+        },
+
+      }
+    }
+  },
+  users: {
+    list: {
+      addUserButton: 'Add User',
+      title: 'Users',
+      tableHeaders: {
+        dateOfCreation: 'Date of Creation',
+        createdBy: 'Created By',
+        userId: 'User ID',
+        email: 'E-mail (Username)',
+        fullName: 'Full Name',
+        mobile: 'Mobile',
+        country: 'Country',
+        city: 'City',
+        language: 'Language',
+        currency: 'Currency',
+        lastUpdateDate: 'Last Update Date',
+        lastUpdateBy: 'Last Update By',
+        status: 'Status'
+      }
+    }
   }
 };
