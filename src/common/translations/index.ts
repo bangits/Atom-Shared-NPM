@@ -1,6 +1,9 @@
 import { VALIDATION_CHANGED_VALUE } from '@/configs/constants';
 
 export default {
+  common: {
+    id: 'ID'
+  },
   validations: {
     required: 'Required field',
     max: `The maximum length is ${VALIDATION_CHANGED_VALUE}!`,
