@@ -63,6 +63,14 @@ export default {
     }
   },
   partners: {
+    dialogs: {
+      approve: {
+        title: 'Approve',
+        descirptionFirstPart: 'Do you want to approve the partnership with ',
+        descirptionLastPart: ' partners?',
+        submitButton: 'Approve'
+      }
+    },
     add: {
       form: {
         title: 'Add Partner'

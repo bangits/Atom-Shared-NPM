@@ -12,12 +12,12 @@
     rxjs "^7.4.0"
     single-spa "^5.9.3"
 
-"@atom/design-system@^1.10.2":
-  version "1.10.2"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.10.2.tgz#c3700269c1bee28c3be01123fbc58fdea437a87c"
-  integrity sha1-w3ACacG+4ow74BEj+8WP3qQ3qHw=
+"@atom/design-system@^1.10.6":
+  version "1.10.6"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.10.6.tgz#a842fd42c49a07ce8f6f3e978135df8829b7626d"
+  integrity sha1-qEL9QsSaB86Pbz6XgTXfiCm3Ym0=
   dependencies:
-    "@my-ui/core" "^2.17.9"
+    "@my-ui/core" "^2.18.5"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
@@ -1361,10 +1361,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.17.9":
-  version "2.17.9"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.17.9.tgz#bac5a90e1d2e3d96a50848df5ac1372b7871f94a"
-  integrity sha1-usWpDh0uPZalCEjfWsE3K3hx+Uo=
+"@my-ui/core@^2.18.5":
+  version "2.18.5"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.18.5.tgz#787533b208f4ca355f3afca835408957a92bc040"
+  integrity sha1-eHUzsgj0yjVfOvyoNUCJV6krwEA=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

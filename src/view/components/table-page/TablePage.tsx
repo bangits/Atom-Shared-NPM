@@ -1,9 +1,8 @@
-import { ObjectMock } from '@/common/types';
 import { useTranslation } from '@/view';
 import { DataTable, DataTableProps } from '@atom/design-system';
 import { useMemo } from 'react';
 
-export interface TablePageProps<T extends ObjectMock, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
+export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
   rowCount: number;
   defaultPageSizeValue?: number;
@@ -11,7 +10,7 @@ export interface TablePageProps<T extends ObjectMock, K> extends Omit<DataTableP
   isEmpty?: boolean;
 }
 
-export const TablePage = <T extends ObjectMock, K>({
+export const TablePage = <T extends {}, K>({
   defaultPageSizeValue = 20,
   pageSizeDividerValue = 50,
   isEmpty = false,
