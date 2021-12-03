@@ -12,15 +12,16 @@
     rxjs "^7.4.0"
     single-spa "^5.9.3"
 
-"@atom/design-system@^1.10.6":
-  version "1.10.6"
-  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.10.6.tgz#a842fd42c49a07ce8f6f3e978135df8829b7626d"
-  integrity sha1-qEL9QsSaB86Pbz6XgTXfiCm3Ym0=
+"@atom/design-system@^1.10.11":
+  version "1.10.11"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/@atom/design-system/-/design-system-1.10.11.tgz#9699a9b9f10b0262ab91a31d9587b3c17e34dbb8"
+  integrity sha1-lpmpufELAmKrkaMdlYezwX4027g=
   dependencies:
     "@my-ui/core" "^2.18.5"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
+    react-jss "^10.8.2"
 
 "@automapper/classes@^7.0.2":
   version "7.0.2"
@@ -7166,7 +7167,7 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-jss@^10.8.0:
+react-jss@^10.8.0, react-jss@^10.8.2:
   version "10.8.2"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/atom-common/npm/registry/react-jss/-/react-jss-10.8.2.tgz#b1bf1496daa47083b6073d1ef794f0645bec02c1"
   integrity sha1-sb8UltqkcIO2Bz0e95TwZFvsAsE=

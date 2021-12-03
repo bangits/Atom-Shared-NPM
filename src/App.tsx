@@ -1,4 +1,4 @@
-import { DialogProvider } from '@atom/design-system';
+import { AlertContainer, DialogProvider } from '@atom/design-system';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
@@ -9,6 +9,7 @@ const App = () => {
   return (
     <AtomCommonProvider>
       <LoadingServiceComponent />
+      <AlertContainer autoCloseDelay={2000} autoClose />
 
       <DialogProvider />
     </AtomCommonProvider>

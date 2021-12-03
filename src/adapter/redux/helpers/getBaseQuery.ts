@@ -27,7 +27,7 @@ export const getBaseQuery =
 
     const data = await method(...(methodArguments as any[]));
 
-    data[immerable] = true;
+    if (typeof data === 'object') data[immerable] = true;
 
     return { data };
   };
