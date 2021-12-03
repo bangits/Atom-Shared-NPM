@@ -21,7 +21,7 @@ export const createRenderInputs =
               <Component
                 {...field}
                 onChange={async (evt) => {
-                  await form.setFieldValue(name, fieldType === 'input' ? evt.target.value : evt);
+                  await form.setFieldValue(name, (fieldType === 'input' || fieldType === 'radio') ? evt.target.value : evt);
                   form.setFieldTouched(name, true);
                 }}
                 name={name}
