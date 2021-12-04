@@ -1362,10 +1362,24 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+<<<<<<< HEAD
 "@my-ui/core@^2.19.1":
   version "2.19.1"
   resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.19.1.tgz#dd7336d576137214ab4cdd7a9454fb89e790e80e"
   integrity sha1-3XM21XYTchSrTN16lFT7ieeQ6A4=
+=======
+<<<<<<< HEAD
+"@my-ui/core@^2.19.0":
+  version "2.19.0"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.19.0.tgz#f699ed92d6031d150dfaa211e766f18812e2378d"
+  integrity sha1-9pntktYDHRUN+qIR52bxiBLiN40=
+=======
+"@my-ui/core@^2.18.5":
+  version "2.18.5"
+  resolved "https://pkgs.dev.azure.com/bangitsgroup/Common/_packaging/ui-libs/npm/registry/@my-ui/core/-/core-2.18.5.tgz#787533b208f4ca355f3afca835408957a92bc040"
+  integrity sha1-eHUzsgj0yjVfOvyoNUCJV6krwEA=
+>>>>>>> 451393201bfd47a786b530fbe26a588e94ae7999
+>>>>>>> 96e6999d8142350756fe376a750947ce833e88f3
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
