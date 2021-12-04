@@ -1,6 +1,6 @@
-import { enviromentService } from '@/atom-common';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
+import { enviromentService } from './EnviromentService';
 
 export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;

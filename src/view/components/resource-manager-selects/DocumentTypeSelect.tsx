@@ -4,7 +4,7 @@ import { DocumentType } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const DocumentTypeSelect = (props: CustomSelectProps) => {
+export const DocumentTypeSelect = (props: Omit<CustomSelectProps, 'options'>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [documentTypes, setDocumentTypes] = useState<DocumentType[]>([]);

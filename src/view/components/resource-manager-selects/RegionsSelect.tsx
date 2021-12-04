@@ -4,7 +4,7 @@ import { Region } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export interface RegionSelectProps extends CustomSelectProps {
+export interface RegionSelectProps extends Omit<CustomSelectProps, 'options'> {
   countryId?: number;
 }
 
