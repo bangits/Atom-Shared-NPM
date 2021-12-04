@@ -1,7 +1,7 @@
+import { stringifyQuery } from '@/common/helpers';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
 import { enviromentService } from './EnviromentService';
-
 export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
   query?: T;
@@ -28,12 +28,9 @@ export class HttpService implements IHttpService {
   }
 
   static buildQuery(data: QueryType): string {
-    const parsedString = Object.entries(data).reduce(
-      (prevQuery, [key, value], index) => prevQuery + `${index ? '&' : ''}${key}=${value}`,
-      ''
-    );
+    const query = stringifyQuery(data)
 
-    return `?${parsedString}`;
+    return `/?${query}`;
   }
 
   async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {

@@ -1,22 +1,23 @@
+import { DI_CONSTANTS } from '@/di/constants';
 import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
-  FilterRequestModel,
-  RegionFilterRequestModel,
   CityVillageFilterRequestModel,
+  FilterRequestModel,
+  GetCityVillageResponseModel,
   GetCountriesResponseModel,
   GetCurrencyResponseModel,
-  GetLanguageResponseModel,
-  GetPhoneCodeResponseModel,
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
+  GetLanguageResponseModel,
+  GetPhoneCodeResponseModel,
   GetRegionResponseModel,
-  GetCityVillageResponseModel
+  RegionFilterRequestModel
 } from '../models';
 
 @injectable()
 export class ResourceManagerUseCase {
-  @inject('IResourceManagerRepository')
+  @inject(DI_CONSTANTS.ResourceManagerRepository)
   private readonly resourceManagerRepository: IResourceManagerRepository;
 
   getCountries = async (getCountriesRequestModel: FilterRequestModel): Promise<GetCountriesResponseModel> => {

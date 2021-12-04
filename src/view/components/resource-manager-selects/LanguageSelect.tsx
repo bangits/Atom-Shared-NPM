@@ -4,7 +4,7 @@ import { Language } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const LanguageSelect = (props: Omit<CustomSelectProps, 'options'>) => {
+export const LanguageSelect = (props: Partial<CustomSelectProps>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [languages, setLanguages] = useState<Language[]>([]);

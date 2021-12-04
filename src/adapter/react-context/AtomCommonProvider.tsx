@@ -1,6 +1,7 @@
+import { TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
+import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
-import { TranslationService } from '@/services';
 import { FC, useEffect, useState } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
 
@@ -19,17 +20,19 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   useEffect(() => {
     const containerInstance = new DiContainer();
 
-    containerInstance.configure(diFiles).then(async () => {
+    containerInstance.configure();
+
+    (async () => {
       if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get('TranslationService');
+        const translationService: TranslationService = containerInstance.diContainer.get(
+          DI_CONSTANTS.TranslationService
+        );
 
         await translationService.init(initLanguage);
       }
 
-      setTimeout(() => {
-        setContainerInstance(containerInstance);
-      }, 3000);
-    });
+      setContainerInstance(containerInstance);
+    })();
   }, []);
 
   if (!containerInstance) return null;
@@ -37,9 +40,15 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   return (
     <AtomCommonContext.Provider
       value={{
+<<<<<<< HEAD
         resourceManagerUseCase: containerInstance.diContainer.get('ResourceManagerUseCase'),
         translationService: containerInstance.diContainer.get('TranslationService'),
         localStorageService: containerInstance.diContainer.get('LocalStorageService'),
+=======
+        resourceManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ResourceManagerUseCase),
+        translationService: containerInstance.diContainer.get(DI_CONSTANTS.TranslationService),
+        localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService)
+>>>>>>> 451393201bfd47a786b530fbe26a588e94ae7999
       }}>
       {children}
     </AtomCommonContext.Provider>

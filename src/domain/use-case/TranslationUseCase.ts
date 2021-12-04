@@ -1,4 +1,4 @@
-import translations from '@/translations';
+import translations from '@/common/translations';
 import { injectable } from 'inversify';
 import { ITranslationUseCase } from '../boundaries';
 import { TranslationEntity } from '../entities';

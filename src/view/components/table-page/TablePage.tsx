@@ -1,58 +1,81 @@
-import { ObjectMock } from '@/types';
 import { useTranslation } from '@/view';
-import { DataTable } from '@atom/design-system';
-import { DataTableProps } from '@atom/design-system/dist/components/templates/data-table/DataTable';
+import { DataTable, DataTableProps } from '@atom/design-system';
 import { useMemo } from 'react';
 
-export interface TablePageProps<T extends ObjectMock, K> {
-  defaultOpened?: boolean;
-  isShowedFilters?: boolean;
-
-  fetchData: DataTableProps<T, K>['fetchData'];
-  data: DataTableProps<T, K>['tableProps']['data'];
-  columns: DataTableProps<T, K>['tableProps']['columns'];
-  filters: DataTableProps<T, K>['filterProps']['filters'];
-
-  checkboxFilters: DataTableProps<T, K>['filterProps']['checkboxFilters'];
-  initialFilterValues: DataTableProps<T, K>['filterProps']['initialValues'];
+export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
+  filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
+  rowCount: number;
+  defaultPageSizeValue?: number;
+  pageSizeDividerValue?: number;
+  isEmpty?: boolean;
 }
 
-export const TablePage = <T extends ObjectMock, K>({
-  data,
-  columns,
-  filters,
-  checkboxFilters,
-  initialFilterValues,
-  isShowedFilters,
-  defaultOpened,
+export const TablePage = <T extends {}, K>({
+  defaultPageSizeValue = 20,
+  pageSizeDividerValue = 50,
+  isEmpty = false,
+  ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
 
-  const tableProps = useMemo(
+  const filterProps = useMemo(
     () => ({
-      data,
-      columns
+      ...props.filterProps,
+      // resultLabel: props.rowCount
+      //   ? translations.get('tables.resultLabel').replace(VALIDATION_CHANGED_VALUE, props.rowCount.toString())
+      //   : null,
+      applyLabel: translations.get('tables.apply'),
+      clearLabel: translations.get('tables.clear')
     }),
-    [data, columns]
+    [translations, props.filterProps, props.rowCount]
   );
 
-  const filtersProps = useMemo(
-    () => ({
-      filters,
-      defaultOpened,
-      checkboxFilters,
-      initialValues: initialFilterValues,
-      resultLabel: translations.get('resultLabel'),
-      applyLabel: translations.get('apply'),
-      clearLabel: translations.get('clear')
-    }),
-    [translations, filters, defaultOpened, checkboxFilters, initialFilterValues]
+  const pageSizeOptions = useMemo(
+    () => [
+      {
+        value: defaultPageSizeValue,
+        label: defaultPageSizeValue.toString()
+      },
+      ...(props.rowCount
+        ? new Array(Math.ceil(props.rowCount / pageSizeDividerValue)).fill(null).map((_, index) => ({
+            value: (index + 1) * pageSizeDividerValue,
+            label: ((index + 1) * pageSizeDividerValue).toString()
+          }))
+        : [])
+    ],
+    [pageSizeDividerValue, props.rowCount]
   );
 
   return (
-    <div>
-      {/* @ts-ignore */}
-      <DataTable isShowedFilters={isShowedFilters} tableProps={tableProps} filtersProps={filtersProps} />
-    </div>
+    <>
+      <DataTable
+        {...props}
+        isShowedPagination={props.rowCount > defaultPageSizeValue}
+        rowCount={props.rowCount}
+        paginationProps={{
+          pageSizeSelect: {
+            dropdownLabel: translations.get('tables.pagination.pageSizeLabel'),
+            options: pageSizeOptions,
+            defaultValue: defaultPageSizeValue
+          },
+          jumpToPage: {
+            inputTitle: translations.get('tables.pagination.jumpToPageLabel')
+          },
+          getTotalCountInfo: (pagination) => {
+            const currentPageFirstValue = pagination.pageSize * pagination.page - pagination.pageSize + 1;
+
+            const currentPageLastValue =
+              pagination.pageSize * pagination.page > props.rowCount
+                ? props.rowCount
+                : pagination.pageSize * pagination.page;
+
+            return `${currentPageFirstValue}-${currentPageLastValue} ${translations.get(
+              'tables.pagination.totalCountDivider'
+            )} ${props.rowCount}`;
+          }
+        }}
+        filterProps={filterProps}
+      />
+    </>
   );
 };

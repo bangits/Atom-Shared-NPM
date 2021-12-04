@@ -1,7 +1,7 @@
 import { AtomCommonContext } from '@/adapter/react-context';
 import { TranslationModel } from '@/domain/models';
 import { LanguageType } from '@/domain/types';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useMemo, useState } from 'react';
 
 export interface UseTranslationReturnValue {
   init(defaultLanguageId: LanguageType): void;
@@ -24,9 +24,12 @@ export const useTranslation = (): UseTranslationReturnValue => {
     };
   }, []);
 
-  return {
-    init: (defaultLanguageId) => translationService?.init(defaultLanguageId),
-    changeLanguage: translationService?.changeLanguage,
-    get: translationService?.get
-  };
+  return useMemo(
+    () => ({
+      init: (defaultLanguageId) => translationService?.init(defaultLanguageId),
+      changeLanguage: translationService?.changeLanguage,
+      get: translationService?.get
+    }),
+    [translationService]
+  );
 };

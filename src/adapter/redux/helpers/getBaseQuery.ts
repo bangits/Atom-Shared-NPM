@@ -1,6 +1,7 @@
 import { DiContainer } from '@/di';
 import { BaseError } from '@/domain';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
+import { immerable } from 'immer';
 
 interface CreateBaseQueryArgument {
   useCaseName: string;
@@ -24,5 +25,9 @@ export const getBaseQuery =
 
     const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
 
-    return { data: await method(...(methodArguments as any[])) };
+    const data = await method(...(methodArguments as any[]));
+
+    if (typeof data === 'object') data[immerable] = true;
+
+    return { data };
   };

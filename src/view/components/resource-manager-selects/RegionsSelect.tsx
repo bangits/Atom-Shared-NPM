@@ -8,7 +8,7 @@ export interface RegionSelectProps extends Omit<CustomSelectProps, 'options'> {
   countryId?: number;
 }
 
-export const RegionSelect = ({ countryId, ...selectProps }: RegionSelectProps) => {
+export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelectProps>) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [regions, setRegions] = useState<Region[]>([]);
@@ -24,11 +24,11 @@ export const RegionSelect = ({ countryId, ...selectProps }: RegionSelectProps) =
         pageSize: MAX_PAGE_SIZE
       })
       .then((getRegionResponse) => setRegions(getRegionResponse.results));
-  }, []);
+  }, [countryId]);
 
   return (
     <>
       <CustomSelect {...selectProps} options={selectOption} />
     </>
-  );
+  ); 
 };

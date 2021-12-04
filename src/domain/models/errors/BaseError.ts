@@ -10,8 +10,5 @@ export class BaseError extends Error {
 
     this.name = name;
     this.errorVariant = errorVariant;
-
-    // @ts-ignore
-    Error.captureStackTrace(this);
   }
 }

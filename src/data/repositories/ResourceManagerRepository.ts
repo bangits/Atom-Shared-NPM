@@ -1,8 +1,7 @@
-import { controllerNames } from '@/configs';
-import { cachedFn } from '@/helpers';
-import { ICacheService, IHttpService } from '@/services';
-import { inject, injectable } from 'inversify';
-import { IResourceManagerRepository } from '../boundaries';
+import { cachedFn } from '@/common/helpers';
+import { ICacheService, IHttpService } from '@/common/services';
+import { DI_CONSTANTS } from '@/di/constants';
+import { IResourceManagerRepository } from '@/domain';
 import {
   CityVillageFilterRequestModel,
   FilterRequestModel,
@@ -15,20 +14,22 @@ import {
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   RegionFilterRequestModel
-} from '../models';
+} from '@/domain/models';
+import { inject, injectable } from 'inversify';
+import { API_ROUTES } from '..';
 
 @injectable()
 export class ResourceManagerRepository implements IResourceManagerRepository {
-  @inject('IHttpService')
+  @inject(DI_CONSTANTS.HttpService)
   private readonly httpService: IHttpService;
 
   // Dont delete this part as it used in cachedFn
-  @inject('ICacheService')
+  @inject(DI_CONSTANTS.CacheService)
   private readonly cacheService: ICacheService;
 
   getCountries = cachedFn('CachedCountries', async (getCountriesRequestModel: FilterRequestModel) => {
     const countries = await this.httpService.get<GetCountriesResponseModel, FilterRequestModel>({
-      url: controllerNames.Countries,
+      url: API_ROUTES.Countries,
       query: getCountriesRequestModel
     });
 
@@ -37,7 +38,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getCurrency = cachedFn('CachedCurrencies', async (getCurrencyRequestModel: FilterRequestModel) => {
     const currency = await this.httpService.get<GetCurrencyResponseModel, FilterRequestModel>({
-      url: controllerNames.Currencies,
+      url: API_ROUTES.Currencies,
       query: getCurrencyRequestModel
     });
 
@@ -46,7 +47,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getLanguage = cachedFn('CachedLanguages', async (getLanguageRequestModel: FilterRequestModel) => {
     const language = await this.httpService.get<GetLanguageResponseModel, FilterRequestModel>({
-      url: controllerNames.Languages,
+      url: API_ROUTES.Languages,
       query: getLanguageRequestModel
     });
 
@@ -55,7 +56,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getPhoneCode = cachedFn('CachedPhoneCodes', async (getPhoneCodeRequestModel: FilterRequestModel) => {
     const phoneCode = await this.httpService.get<GetPhoneCodeResponseModel, FilterRequestModel>({
-      url: controllerNames.PhoneCode,
+      url: API_ROUTES.PhoneCode,
       query: getPhoneCodeRequestModel
     });
 
@@ -64,7 +65,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getDocumentType = cachedFn('CachedDocumentTypes', async (getDocumentTypeRequestModel: FilterRequestModel) => {
     const documentType = await this.httpService.get<GetDocumentTypeResponseModel, FilterRequestModel>({
-      url: controllerNames.DocumentType,
+      url: API_ROUTES.DocumentType,
       query: getDocumentTypeRequestModel
     });
 
@@ -73,7 +74,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getGender = cachedFn('CachedGenders', async () => {
     const genderType = await this.httpService.get<GetGenderResponseModel, FilterRequestModel>({
-      url: controllerNames.Genders
+      url: API_ROUTES.Genders
     });
 
     return genderType;
@@ -81,7 +82,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getRegion = cachedFn('CachedRegions', async (getRegionRequestModel: RegionFilterRequestModel) => {
     const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
-      url: controllerNames.Region,
+      url: API_ROUTES.Region,
       query: getRegionRequestModel
     });
 
@@ -90,7 +91,7 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
   getCityVillage = cachedFn('CachedCityVillages', async (getCityVillageRequestModel: CityVillageFilterRequestModel) => {
     const cityVillage = await this.httpService.get<GetCityVillageResponseModel, CityVillageFilterRequestModel>({
-      url: controllerNames.CityVillage,
+      url: API_ROUTES.CityVillage,
       query: getCityVillageRequestModel
     });
 

@@ -4,7 +4,7 @@ import { CityVillage } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export interface CityVillageSelectProps extends Omit<CustomSelectProps, 'options'> {
+export interface CityVillageSelectProps extends Partial<CustomSelectProps> {
   regionId: number;
   isCity: boolean;
 }
