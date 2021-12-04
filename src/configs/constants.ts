@@ -1,1 +1,1 @@
-export const VALIDATION_CHANGED_VALUE = '$VALUE';
+export const TRANSLATION_CHANGED_VALUE = '$VALUE';

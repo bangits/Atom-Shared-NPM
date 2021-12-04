@@ -1,13 +1,14 @@
-import { VALIDATION_CHANGED_VALUE } from '@/configs/constants';
+import { TRANSLATION_CHANGED_VALUE } from '@/configs/constants';
 
 export default {
   common: {
-    id: 'ID'
+    id: 'ID',
+    connectionError: 'The connection to the server was lost ! Try later.'
   },
   validations: {
     required: 'Required field',
-    max: `The maximum length is ${VALIDATION_CHANGED_VALUE}!`,
-    min: `The minimum length is ${VALIDATION_CHANGED_VALUE}!`
+    max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
+    min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`
   },
   form: {
     save: 'Save',
@@ -17,7 +18,8 @@ export default {
     close: 'Close'
   },
   tables: {
-    resultLabel: `${VALIDATION_CHANGED_VALUE} users found`,
+    resultLabel: `${TRANSLATION_CHANGED_VALUE} users found`,
+    emptyValue: 'N/A',
     clear: 'Clear',
     apply: 'Apply',
     pagination: {
@@ -66,12 +68,29 @@ export default {
     }
   },
   partners: {
+    actions: {
+      approve: 'Approve',
+      terminate: 'Terminate'
+    },
+    alerts: {
+      successPartnersApprove: `The ${TRANSLATION_CHANGED_VALUE} Partnerships were successfully approved !`,
+      errorPartnersApprove: `The ${TRANSLATION_CHANGED_VALUE} of selected partnerships couldn't be approved !`,
+
+      successPartnersTerminate: `The ${TRANSLATION_CHANGED_VALUE} Partnerships were successfully terminated !`,
+      errorPartnersTerminate: `The ${TRANSLATION_CHANGED_VALUE} of selected partnerships couldn't be terminated !`
+    },
     dialogs: {
       approve: {
         title: 'Approve',
         descirptionFirstPart: 'Do you want to approve the partnership with ',
         descirptionLastPart: ' partners?',
         submitButton: 'Approve'
+      },
+      terminate: {
+        title: 'Terminate',
+        descirptionFirstPart: 'Do you want to  terminate the partnership with ',
+        descirptionLastPart: ' partners?',
+        submitButton: 'Terminate'
       }
     },
     add: {

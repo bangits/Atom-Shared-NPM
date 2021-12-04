@@ -3,13 +3,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import { AtomCommonProvider } from './atom-common';
+import { ALERT_CLOSE_DELAY } from './configs';
 import { LoadingServiceComponent } from './view';
 
 const App = () => {
   return (
     <AtomCommonProvider>
       <LoadingServiceComponent />
-      <AlertContainer autoCloseDelay={2000} autoClose />
+      <AlertContainer autoCloseDelay={ALERT_CLOSE_DELAY} autoClose />
 
       <DialogProvider />
     </AtomCommonProvider>

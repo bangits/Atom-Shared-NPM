@@ -1,5 +1,5 @@
 import { useTranslation } from '@/atom-common';
-import { VALIDATION_CHANGED_VALUE } from '@/configs/constants';
+import { TRANSLATION_CHANGED_VALUE } from '@/configs/constants';
 import { useMemo } from 'react';
 
 export interface UseValidationTranslationReturnValue {
@@ -14,8 +14,8 @@ export const useValidationTranslation = (): UseValidationTranslationReturnValue 
   return useMemo(
     () => ({
       required: () => t.get('validations.required'),
-      min: (value: number) => t.get('validations.min').replace(VALIDATION_CHANGED_VALUE, value.toString()),
-      max: (value: number) => t.get('validations.max').replace(VALIDATION_CHANGED_VALUE, value.toString())
+      min: (value: number) => t.get('validations.min').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
+      max: (value: number) => t.get('validations.max').replace(TRANSLATION_CHANGED_VALUE, value.toString())
     }),
     [t]
   );

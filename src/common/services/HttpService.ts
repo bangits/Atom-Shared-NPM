@@ -1,4 +1,5 @@
 import { stringifyQuery } from '@/common/helpers';
+import { serverErrorHandler } from '@/view/error-handlers';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
 import { enviromentService } from './EnviromentService';
@@ -25,10 +26,12 @@ export class HttpService implements IHttpService {
 
   constructor(config: AxiosRequestConfig) {
     this.instance = axios.create(config);
+
+    this.instance.interceptors.response.use(...serverErrorHandler);
   }
 
   static buildQuery(data: QueryType): string {
-    const query = stringifyQuery(data)
+    const query = stringifyQuery(data);
 
     return `/?${query}`;
   }

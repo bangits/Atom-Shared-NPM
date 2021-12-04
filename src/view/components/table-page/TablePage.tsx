@@ -22,7 +22,7 @@ export const TablePage = <T extends {}, K>({
     () => ({
       ...props.filterProps,
       // resultLabel: props.rowCount
-      //   ? translations.get('tables.resultLabel').replace(VALIDATION_CHANGED_VALUE, props.rowCount.toString())
+      //   ? translations.get('tables.resultLabel').replace(TRANSLATION_CHANGED_VALUE, props.rowCount.toString())
       //   : null,
       applyLabel: translations.get('tables.apply'),
       clearLabel: translations.get('tables.clear')
@@ -44,6 +44,14 @@ export const TablePage = <T extends {}, K>({
         : [])
     ],
     [pageSizeDividerValue, props.rowCount]
+  );
+
+  const tableProps = useMemo(
+    () => ({
+      ...(props.tableProps || {}),
+      emptyValue: translations.get('tables.emptyValue')
+    }),
+    [props.tableProps]
   );
 
   return (
@@ -75,6 +83,7 @@ export const TablePage = <T extends {}, K>({
           }
         }}
         filterProps={filterProps}
+        tableProps={tableProps}
       />
     </>
   );
