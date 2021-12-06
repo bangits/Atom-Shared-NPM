@@ -241,5 +241,55 @@ export default {
         status: 'Status'
       }
     }
+  },
+  games: {
+    add: {
+      title: 'Add Game',
+      forms: {}
+    },
+    list: {
+      title: 'Games',
+      addGameButton: 'Add Game',
+      tableHeaders: {
+        icon: 'Icon',
+        gameId: 'Game ID',
+        externalId: 'External ID',
+        providerName: 'Provider name',
+        providerId: 'Provider Id',
+        type: 'Type',
+        subtype: 'SubType',
+        volatility: 'Volatility',
+        rtp: 'RTP',
+        class: 'Class',
+        releaseDate: 'Release Date',
+        creationDate: 'Creation Date',
+        createdBy: 'Create By',
+        status: 'Status'
+      },
+      fields: {
+        gameId: 'Game ID',
+        externalId: 'External ID',
+        providerName: 'Provider',
+        gameName: 'Game Name',
+        type: 'Type',
+        subType: 'Subtype',
+        rtp: 'RTP',
+        releaseDate: 'Release date',
+        class: 'Class',
+        hasDemo: 'Has demo',
+        theme: 'Theme',
+        feature: 'Feature',
+        device: 'Device',
+        supportedCurrencies: 'Supported currencies ',
+        supportedBrowsers: 'Supported browsers',
+        certifiedCountries: 'Certified countries ',
+        restrictedCountries: 'Restricted countries',
+        volatility: 'Volatility',
+        uILanguages: 'UI languages ',
+        operatingLanguages: 'Operating languages',
+        creationDate: 'Creation date',
+        createdBy: 'Created by'
+      }
+    }
   }
 };
