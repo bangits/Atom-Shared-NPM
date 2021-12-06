@@ -4,6 +4,6 @@ export class SortModel {
   @AutoMap()
   sorting: {
     direction: number;
-    property: string;
+    propertyId: number;
   };
 }

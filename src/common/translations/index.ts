@@ -30,6 +30,7 @@ export default {
   },
   statuses: {
     name: 'Status',
+    all: 'All',
     active: 'Active',
     blocked: 'Blocked',
     inActive: 'Inactive',
@@ -103,7 +104,11 @@ export default {
         brandName: 'Brand Name',
         businessActivity: 'Business Activity',
         parentCompanyName: 'Parent Company',
-        companyType: 'Company Type',
+        companyType: {
+          title: 'Company Type',
+          main: 'Main',
+          subsidiary: 'Subsidiary'
+        },
         companyLogoType: {
           title: 'Company Logotype',
           dragAndDrop: 'Drag and drop or Browse'
