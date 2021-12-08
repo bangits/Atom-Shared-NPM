@@ -45,8 +45,14 @@ export default {
     'user-not-found': 'Invalid account'
   },
   providers: {
+    statuses: {
+      active: 'Active',
+      blocked: 'Blocked',
+      inActive: 'Inactive'
+    },
     fields: {
       providerId: 'Provider ID',
+      partnerId: 'Partner ID',
       gameCount: 'Game Count',
       gameCountFrom: 'Game Count From',
       gameCountTo: 'Game Count To',
@@ -251,8 +257,9 @@ export default {
       title: 'Games',
       addGameButton: 'Add Game',
       tableHeaders: {
-        icon: 'Icon',
+        logo: 'Logo',
         gameId: 'Game ID',
+        gameName: 'Game Name',
         externalId: 'External ID',
         providerName: 'Provider name',
         providerId: 'Provider Id',
@@ -267,13 +274,21 @@ export default {
         status: 'Status'
       },
       fields: {
+        statuses:{
+          yes:"Yes",
+          no:'No'
+        },
         gameId: 'Game ID',
         externalId: 'External ID',
         providerName: 'Provider',
         gameName: 'Game Name',
         type: 'Type',
         subType: 'Subtype',
-        rtp: 'RTP',
+        rtp: {
+          title: 'RTP',
+          from: 'RTP - From',
+          to: 'RTP - To'
+        },
         releaseDate: 'Release date',
         class: 'Class',
         hasDemo: 'Has demo',
