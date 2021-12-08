@@ -26,11 +26,17 @@ export class DiContainer {
           baseURL: 'http://52.188.141.27/api/v1'
         })
     );
+    this.diContainer.bind<IHttpService>(DI_CONSTANTS.FileManagerHttpService).toDynamicValue(
+      () =>
+        new HttpService({
+          baseURL: 'http://52.149.175.167/api/v1'
+        })
+    );
     this.diContainer.bind<ICacheService>(DI_CONSTANTS.CacheService).to(CacheService);
     this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
     this.diContainer.bind(DI_CONSTANTS.SessionStorageService).to(SessionStorageService);
     this.diContainer.bind(DI_CONSTANTS.TranslationService).to(TranslationService);
-    DI_CONSTANTS.FileManagerRepository;
+
     // Repositories
     this.diContainer.bind(DI_CONSTANTS.ResourceManagerRepository).to(ResourceManagerRepository);
     this.diContainer.bind(DI_CONSTANTS.FileManagerRepository).to(FileManagerRepository);

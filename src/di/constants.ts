@@ -1,5 +1,6 @@
 export const DI_CONSTANTS = {
   HttpService: 'HttpService',
+  FileManagerHttpService: 'FileManagerHttpService',
   CacheService: 'CacheService',
   TranslationService: 'TranslationService',
   StorageService: 'StorageService',

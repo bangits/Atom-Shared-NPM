@@ -2,19 +2,20 @@ import { IHttpService } from '@/common/services';
 import { DI_CONSTANTS } from '@/di/constants';
 import { IFileManagerRepository } from '@/domain';
 import { inject, injectable } from 'inversify';
+import { API_ROUTES } from '..';
 
 @injectable()
 export class FileManagerRepository implements IFileManagerRepository {
-  @inject(DI_CONSTANTS.HttpService)
+  @inject(DI_CONSTANTS.FileManagerHttpService)
   private readonly httpService: IHttpService;
 
   uploadFile = async (file: File, percentageCallback: (percent: number) => void): Promise<string> => {
     const formData = new FormData();
 
-    formData.append('File', file);
+    formData.append('Files', file);
 
     return await this.httpService.post<string, {}, {}>({
-      url: '/',
+      url: API_ROUTES.FileManager.Upload,
       config: {
         onUploadProgress: (progressEvent: ProgressEvent) => {
           const totalLength: number = progressEvent.total;

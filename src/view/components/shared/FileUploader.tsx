@@ -1,4 +1,5 @@
 import { AtomCommonContext } from '@/atom-common';
+import { TRANSLATION_CHANGED_VALUE } from '@/configs';
 import { useTranslation } from '@/view';
 import {
   FileUploader as DesignSystemFileUploader,
@@ -9,10 +10,21 @@ import { FC, useCallback, useContext, useMemo, useState } from 'react';
 
 export interface FileUploaderProps
   extends Omit<DesignSystemFileUploaderProps, 'loadingPercent' | 'onError' | 'onChange'> {
+  acceptError?: string;
+
   onChange?(url: string): void;
 }
 
-export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ...fileUploaderProps }) => {
+export const fileUploaderDefaultValues = {
+  minWidth: 40,
+  maxWidth: 2000,
+  minHeight: 40,
+  maxHeight: 2000,
+  minSize: 0,
+  maxSize: 1024 * 1024
+};
+
+export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, acceptError, ...fileUploaderProps }) => {
   const { fileManagerUseCase } = useContext(AtomCommonContext);
 
   const [loadingPercent, setLoadingPercent] = useState(0);
@@ -24,13 +36,43 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ..
 
   const errorMessagesTranslationConfig = useMemo<Record<FileUploaderErrors, string>>(
     () => ({
-      [FileUploaderErrors.MIN_SIZE]: 'Min size',
-      [FileUploaderErrors.MAX_SIZE]: 'Max size',
-      [FileUploaderErrors.MAX_HEIGHT]: 'Max height',
-      [FileUploaderErrors.MAX_WIDTH]: 'Max width',
-      [FileUploaderErrors.MIN_HEIGHT]: 'Max height',
-      [FileUploaderErrors.MIN_WIDTH]: 'Min width',
-      [FileUploaderErrors.TYPE]: 'Type'
+      [FileUploaderErrors.MIN_SIZE]: t
+        .get('fileUploader.minSize')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          ((fileUploaderProps?.minSize || fileUploaderDefaultValues.minSize) / 1024 / 1024).toString()
+        ),
+      [FileUploaderErrors.MAX_SIZE]: t
+        .get('fileUploader.maxSize')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          ((fileUploaderProps?.maxSize || fileUploaderDefaultValues.maxSize) / 1024 / 1024).toString()
+        ),
+      [FileUploaderErrors.MIN_HEIGHT]: t
+        .get('fileUploader.minHeight')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          (fileUploaderProps?.minHeight || fileUploaderDefaultValues.minHeight).toString()
+        ),
+      [FileUploaderErrors.MAX_HEIGHT]: t
+        .get('fileUploader.maxHeight')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          (fileUploaderProps?.maxHeight || fileUploaderDefaultValues.maxHeight).toString()
+        ),
+      [FileUploaderErrors.MIN_WIDTH]: t
+        .get('fileUploader.minWidth')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          (fileUploaderProps?.minWidth || fileUploaderDefaultValues.minWidth).toString()
+        ),
+      [FileUploaderErrors.MAX_WIDTH]: t
+        .get('fileUploader.maxWidth')
+        .replace(
+          TRANSLATION_CHANGED_VALUE,
+          (fileUploaderProps?.maxWidth || fileUploaderDefaultValues.maxWidth).toString()
+        ),
+      [FileUploaderErrors.TYPE]: acceptError || t.get('fileUploader.defaultExtensionError')
     }),
     [t]
   );
@@ -41,7 +83,11 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ..
 
       if (onChange) onChange('');
 
-      if (!file) return;
+      if (!file) {
+        setForceShowUploader(false);
+
+        return;
+      }
 
       setForceShowUploader(true);
 
@@ -53,7 +99,7 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ..
           if (onChange) onChange(fileUrl);
         })
         .catch(() => {
-          setUploadedFileError('Server error');
+          setUploadedFileError(t.get('fileUploader.serverError'));
 
           setForceShowUploader(false);
         });
@@ -64,6 +110,7 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ..
   return (
     <>
       <DesignSystemFileUploader
+        {...fileUploaderDefaultValues}
         {...fileUploaderProps}
         loadingPercent={loadingPercent}
         onError={(error) => setUploadedFileError(errorMessagesTranslationConfig[error.type])}

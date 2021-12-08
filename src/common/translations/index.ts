@@ -3,12 +3,24 @@ import { TRANSLATION_CHANGED_VALUE } from '@/configs/constants';
 export default {
   common: {
     id: 'ID',
-    connectionError: 'The connection to the server was lost ! Try later.'
+    connectionError: 'The connection to the server was lost ! Try later.',
+    optional: '(optional)'
   },
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`
+  },
+  fileUploader: {
+    serverError: 'Upload failed. A server error occurred while uploading the file.',
+    maxSize: `Upload failed. Allowed max. size is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minSize: `Upload failed. Allowed min. size is ${TRANSLATION_CHANGED_VALUE} KB.`,
+    maxWidth: `Upload failed. Allowed max. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minWidth: `Upload failed. Allowed min. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
+    defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
   form: {
     save: 'Save',
@@ -117,10 +129,7 @@ export default {
           main: 'Main',
           subsidiary: 'Subsidiary'
         },
-        companyLogoType: {
-          title: 'Company Logotype',
-          dragAndDrop: 'Drag and drop or Browse'
-        }
+        companyLogoType: 'Company Logotype'
       }
     },
     businessActivities: {
@@ -278,9 +287,9 @@ export default {
         status: 'Status'
       },
       fields: {
-        statuses:{
-          yes:"Yes",
-          no:'No'
+        statuses: {
+          yes: 'Yes',
+          no: 'No'
         },
         gameId: 'Game ID',
         externalId: 'External ID',

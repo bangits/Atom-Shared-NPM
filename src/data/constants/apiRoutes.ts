@@ -6,5 +6,8 @@ export const API_ROUTES = {
   DocumentType: '/DocumentType',
   Genders: '/Genders',
   Region: '/Region',
-  CityVillage: '/CityVillage'
+  CityVillage: '/CityVillage',
+  FileManager: {
+    Upload: '/Upload'
+  }
 };
