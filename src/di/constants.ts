@@ -1,5 +1,6 @@
 export const DI_CONSTANTS = {
   HttpService: 'HttpService',
+  FileManagerHttpService: 'FileManagerHttpService',
   CacheService: 'CacheService',
   TranslationService: 'TranslationService',
   StorageService: 'StorageService',
@@ -7,5 +8,7 @@ export const DI_CONSTANTS = {
   LocalStorageService: 'LocalStorageService',
   ResourceManagerRepository: 'ResourceManagerRepository',
   ResourceManagerUseCase: 'ResourceManagerUseCase',
+  FileManagerUseCase: 'FileManagerUseCase',
+  FileManagerRepository: 'FileManagerRepository',
   TranslationUseCase: 'TranslationUseCase'
 };

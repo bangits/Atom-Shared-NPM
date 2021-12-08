@@ -3,12 +3,24 @@ import { TRANSLATION_CHANGED_VALUE } from '@/configs/constants';
 export default {
   common: {
     id: 'ID',
-    connectionError: 'The connection to the server was lost ! Try later.'
+    connectionError: 'The connection to the server was lost ! Try later.',
+    optional: '(optional)'
   },
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`
+  },
+  fileUploader: {
+    serverError: 'Upload failed. A server error occurred while uploading the file.',
+    maxSize: `Upload failed. Allowed max. size is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minSize: `Upload failed. Allowed min. size is ${TRANSLATION_CHANGED_VALUE} KB.`,
+    maxWidth: `Upload failed. Allowed max. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minWidth: `Upload failed. Allowed min. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
+    defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
   form: {
     save: 'Save',
@@ -22,6 +34,8 @@ export default {
     emptyValue: 'N/A',
     clear: 'Clear',
     apply: 'Apply',
+    emptyResultFirstSentence: 'Sorry no data found!',
+    emptyResultSecondSentence: 'Please make a different filter selection.',
     pagination: {
       pageSizeLabel: 'Row per page: ',
       jumpToPageLabel: 'Jump to page',
@@ -45,8 +59,14 @@ export default {
     'user-not-found': 'Invalid account'
   },
   providers: {
+    statuses: {
+      active: 'Active',
+      blocked: 'Blocked',
+      inActive: 'Inactive'
+    },
     fields: {
       providerId: 'Provider ID',
+      partnerId: 'Partner ID',
       gameCount: 'Game Count',
       gameCountFrom: 'Game Count From',
       gameCountTo: 'Game Count To',
@@ -109,10 +129,7 @@ export default {
           main: 'Main',
           subsidiary: 'Subsidiary'
         },
-        companyLogoType: {
-          title: 'Company Logotype',
-          dragAndDrop: 'Drag and drop or Browse'
-        }
+        companyLogoType: 'Company Logotype'
       }
     },
     businessActivities: {
@@ -141,6 +158,8 @@ export default {
     list: {
       addPartnerButton: 'Add Partner',
       title: 'Partners',
+      emptyResultFirstSentence: 'You don’t have any partners added!',
+      emptyResultSecondSentence: 'Please add a partner.',
       tableHeaders: {
         partnerId: 'Partner ID',
         legalEntity: 'Legal Entity',
@@ -317,6 +336,65 @@ export default {
         lastUpdateDate: 'Last Update Date',
         lastUpdateBy: 'Last Update By',
         status: 'Status'
+      }
+    }
+  },
+  games: {
+    add: {
+      title: 'Add Game',
+      forms: {}
+    },
+    list: {
+      title: 'Games',
+      addGameButton: 'Add Game',
+      tableHeaders: {
+        logo: 'Logo',
+        gameId: 'Game ID',
+        gameName: 'Game Name',
+        externalId: 'External ID',
+        providerName: 'Provider name',
+        providerId: 'Provider Id',
+        type: 'Type',
+        subtype: 'SubType',
+        volatility: 'Volatility',
+        rtp: 'RTP',
+        class: 'Class',
+        releaseDate: 'Release Date',
+        creationDate: 'Creation Date',
+        createdBy: 'Create By',
+        status: 'Status'
+      },
+      fields: {
+        statuses: {
+          yes: 'Yes',
+          no: 'No'
+        },
+        gameId: 'Game ID',
+        externalId: 'External ID',
+        providerName: 'Provider',
+        gameName: 'Game Name',
+        type: 'Type',
+        subType: 'Subtype',
+        rtp: {
+          title: 'RTP',
+          from: 'RTP - From',
+          to: 'RTP - To'
+        },
+        releaseDate: 'Release date',
+        class: 'Class',
+        hasDemo: 'Has demo',
+        theme: 'Theme',
+        feature: 'Feature',
+        device: 'Device',
+        supportedCurrencies: 'Supported currencies ',
+        supportedBrowsers: 'Supported browsers',
+        certifiedCountries: 'Certified countries ',
+        restrictedCountries: 'Restricted countries',
+        volatility: 'Volatility',
+        uILanguages: 'UI languages ',
+        operatingLanguages: 'Operating languages',
+        creationDate: 'Creation date',
+        createdBy: 'Created by'
       }
     }
   }

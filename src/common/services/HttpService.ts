@@ -7,6 +7,7 @@ export interface HttpRequest<T extends QueryType, K = {}> {
   body?: K;
   query?: T;
   url: string;
+  config?: AxiosRequestConfig;
 }
 
 export interface IHttpService {
@@ -60,7 +61,8 @@ export class HttpService implements IHttpService {
     return (
       await this.instance[method](
         `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
-        httpRequest.body
+        httpRequest.body,
+        httpRequest.config
       )
     ).data;
   }
