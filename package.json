@@ -85,7 +85,6 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@atom/common": "1.9.3",
     "@automapper/classes": "^7.0.2",
     "@automapper/core": "^7.0.2",
     "axios": "^0.23.0",
