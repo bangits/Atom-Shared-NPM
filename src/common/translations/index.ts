@@ -115,6 +115,10 @@ export default {
       }
     },
     add: {
+      validationTexts: {
+        uniqueBrandName: 'Brand name is unique!',
+        uniqueLegalName: 'Legal name is unique!'
+      },
       form: {
         title: 'Add Partner'
       },
@@ -130,7 +134,8 @@ export default {
           subsidiary: 'Subsidiary'
         },
         companyLogoType: 'Company Logotype'
-      }
+      },
+      successMsg: 'The Partner was successfully created !'
     },
     businessActivities: {
       gameProvider: 'Game Provider',
@@ -292,8 +297,10 @@ export default {
           no: 'No'
         },
         gameId: 'Game ID',
+
         externalId: 'External ID',
         providerName: 'Provider',
+        gameTypes: 'Type',
         gameName: 'Game Name',
         type: 'Type',
         subType: 'Subtype',
@@ -302,11 +309,16 @@ export default {
           from: 'RTP - From',
           to: 'RTP - To'
         },
+        hasDemo: {
+          title: 'Has demo',
+          yes: 'Yes',
+          no: 'No',
+          all: 'All'
+        },
         releaseDate: 'Release date',
         class: 'Class',
-        hasDemo: 'Has demo',
-        theme: 'Theme',
-        feature: 'Feature',
+        gameThemes: 'Theme',
+        gameFeatures: 'Feature',
         device: 'Device',
         supportedCurrencies: 'Supported currencies ',
         supportedBrowsers: 'Supported browsers',
