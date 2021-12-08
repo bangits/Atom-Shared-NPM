@@ -32,6 +32,7 @@ export default {
   },
   statuses: {
     name: 'Status',
+    all: 'All',
     active: 'Active',
     blocked: 'Blocked',
     inActive: 'Inactive',
@@ -46,8 +47,14 @@ export default {
     'user-not-found': 'Invalid account'
   },
   providers: {
+    statuses: {
+      active: 'Active',
+      blocked: 'Blocked',
+      inActive: 'Inactive'
+    },
     fields: {
       providerId: 'Provider ID',
+      partnerId: 'Partner ID',
       gameCount: 'Game Count',
       gameCountFrom: 'Game Count From',
       gameCountTo: 'Game Count To',
@@ -105,7 +112,11 @@ export default {
         brandName: 'Brand Name',
         businessActivity: 'Business Activity',
         parentCompanyName: 'Parent Company',
-        companyType: 'Company Type',
+        companyType: {
+          title: 'Company Type',
+          main: 'Main',
+          subsidiary: 'Subsidiary'
+        },
         companyLogoType: {
           title: 'Company Logotype',
           dragAndDrop: 'Drag and drop or Browse'
@@ -238,6 +249,65 @@ export default {
         lastUpdateDate: 'Last Update Date',
         lastUpdateBy: 'Last Update By',
         status: 'Status'
+      }
+    }
+  },
+  games: {
+    add: {
+      title: 'Add Game',
+      forms: {}
+    },
+    list: {
+      title: 'Games',
+      addGameButton: 'Add Game',
+      tableHeaders: {
+        logo: 'Logo',
+        gameId: 'Game ID',
+        gameName: 'Game Name',
+        externalId: 'External ID',
+        providerName: 'Provider name',
+        providerId: 'Provider Id',
+        type: 'Type',
+        subtype: 'SubType',
+        volatility: 'Volatility',
+        rtp: 'RTP',
+        class: 'Class',
+        releaseDate: 'Release Date',
+        creationDate: 'Creation Date',
+        createdBy: 'Create By',
+        status: 'Status'
+      },
+      fields: {
+        statuses:{
+          yes:"Yes",
+          no:'No'
+        },
+        gameId: 'Game ID',
+        externalId: 'External ID',
+        providerName: 'Provider',
+        gameName: 'Game Name',
+        type: 'Type',
+        subType: 'Subtype',
+        rtp: {
+          title: 'RTP',
+          from: 'RTP - From',
+          to: 'RTP - To'
+        },
+        releaseDate: 'Release date',
+        class: 'Class',
+        hasDemo: 'Has demo',
+        theme: 'Theme',
+        feature: 'Feature',
+        device: 'Device',
+        supportedCurrencies: 'Supported currencies ',
+        supportedBrowsers: 'Supported browsers',
+        certifiedCountries: 'Certified countries ',
+        restrictedCountries: 'Restricted countries',
+        volatility: 'Volatility',
+        uILanguages: 'UI languages ',
+        operatingLanguages: 'Operating languages',
+        creationDate: 'Creation date',
+        createdBy: 'Created by'
       }
     }
   }
