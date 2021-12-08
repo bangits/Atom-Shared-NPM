@@ -7,5 +7,7 @@ export const DI_CONSTANTS = {
   LocalStorageService: 'LocalStorageService',
   ResourceManagerRepository: 'ResourceManagerRepository',
   ResourceManagerUseCase: 'ResourceManagerUseCase',
+  FileManagerUseCase: 'FileManagerUseCase',
+  FileManagerRepository: 'FileManagerRepository',
   TranslationUseCase: 'TranslationUseCase'
 };

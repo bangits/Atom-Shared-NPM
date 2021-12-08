@@ -7,8 +7,8 @@ import {
   SessionStorageService,
   TranslationService
 } from '@/common/services';
-import { ResourceManagerRepository } from '@/data';
-import { ResourceManagerUseCase, TranslationUseCase } from '@/domain';
+import { FileManagerRepository, ResourceManagerRepository } from '@/data';
+import { FileManagerUseCase, ResourceManagerUseCase, TranslationUseCase } from '@/domain';
 import { Container } from 'inversify';
 import { DI_CONSTANTS } from './constants';
 export class DiContainer {
@@ -30,12 +30,14 @@ export class DiContainer {
     this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
     this.diContainer.bind(DI_CONSTANTS.SessionStorageService).to(SessionStorageService);
     this.diContainer.bind(DI_CONSTANTS.TranslationService).to(TranslationService);
-
+    DI_CONSTANTS.FileManagerRepository;
     // Repositories
     this.diContainer.bind(DI_CONSTANTS.ResourceManagerRepository).to(ResourceManagerRepository);
+    this.diContainer.bind(DI_CONSTANTS.FileManagerRepository).to(FileManagerRepository);
 
     // Use Cases
     this.diContainer.bind(DI_CONSTANTS.ResourceManagerUseCase).to(ResourceManagerUseCase);
     this.diContainer.bind(DI_CONSTANTS.TranslationUseCase).to(TranslationUseCase);
+    this.diContainer.bind(DI_CONSTANTS.FileManagerUseCase).to(FileManagerUseCase);
   };
 }

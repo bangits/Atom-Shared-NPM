@@ -1,3 +1,4 @@
+export * from './useActionWithDialog';
 export * from './useAsync';
 export * from './useFirstValue';
 export * from './useLoading';

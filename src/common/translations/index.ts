@@ -22,6 +22,8 @@ export default {
     emptyValue: 'N/A',
     clear: 'Clear',
     apply: 'Apply',
+    emptyResultFirstSentence: 'Sorry no data found!',
+    emptyResultSecondSentence: 'Please make a different filter selection.',
     pagination: {
       pageSizeLabel: 'Row per page: ',
       jumpToPageLabel: 'Jump to page',
@@ -136,6 +138,8 @@ export default {
     list: {
       addPartnerButton: 'Add Partner',
       title: 'Partners',
+      emptyResultFirstSentence: 'You don’t have any partners added!',
+      emptyResultSecondSentence: 'Please add a partner.',
       tableHeaders: {
         partnerId: 'Partner ID',
         legalEntity: 'Legal Entity',
