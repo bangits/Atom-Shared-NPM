@@ -9,7 +9,8 @@ export default {
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
-    min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`
+    min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
+    textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!'
   },
   fileUploader: {
     serverError: 'Upload failed. A server error occurred while uploading the file.',

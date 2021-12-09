@@ -29,7 +29,7 @@ export class DiContainer {
     this.diContainer.bind<IHttpService>(DI_CONSTANTS.FileManagerHttpService).toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://20.102.30.132/api/v1'
+          baseURL: 'http://52.143.92.215/api/v1'
         })
     );
     this.diContainer.bind<ICacheService>(DI_CONSTANTS.CacheService).to(CacheService);
