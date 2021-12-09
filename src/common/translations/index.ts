@@ -269,7 +269,14 @@ export default {
   games: {
     add: {
       title: 'Add Game',
-      forms: {}
+      fields: {
+        externalId: 'External ID',
+        gameName: 'Game Name',
+        type: 'Type',
+        providerName: 'Provider',
+        subType: 'Subtype',
+
+      }
     },
     list: {
       title: 'Games',
