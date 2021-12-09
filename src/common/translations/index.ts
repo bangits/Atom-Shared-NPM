@@ -196,6 +196,7 @@ export default {
         providerInformation: "Provider Information",
       },
       common: {
+        brandName: "Brand Name",
         organizationDetails: "Organization Details",
         contactInformation: "Contact Information",
         bankInformation: "Bank Information",
