@@ -1,5 +1,4 @@
 import { DiContainer } from '@/di';
-import { BaseError } from '@/domain';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { immerable } from 'immer';
 
@@ -14,20 +13,26 @@ interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) =>
       methodArguments: Parameters<T[keyof T]>;
     },
     unknown,
-    BaseError
+    { message: string }
   > {}
 
 export const getBaseQuery =
   (containerInstance: DiContainer) =>
   <T extends {}>({ useCaseName }: CreateBaseQueryArgument): CreateBaseQueryReturnType<T> =>
   async ({ methodName, methodArguments }) => {
-    const useCase = containerInstance.diContainer.get(useCaseName);
+    try {
+      const useCase = containerInstance.diContainer.get(useCaseName);
 
-    const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
+      const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
 
-    const data = await method(...(methodArguments as any[]));
+      const data = await method(...(methodArguments as any[]));
 
-    if (typeof data === 'object') data[immerable] = true;
+      if (typeof data === 'object') data[immerable] = true;
 
-    return { data };
+      return { data };
+    } catch (error) {
+      if (error.response.data?.Status) return Promise.reject(error.response.data.Status);
+
+      return Promise.reject(error);
+    }
   };

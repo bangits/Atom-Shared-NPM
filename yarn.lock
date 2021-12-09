@@ -2,12 +2,28 @@
 # yarn lockfile v1
 
 
-"@atom/design-system@^1.13.1":
-  version "1.13.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-1.13.1.tgz#043bea450af57323389b67e2af02faca9ac212d2"
-  integrity sha1-BDvqRQr1cyM4m2firwL6yprCEtI=
+"@atom/common@^2.3.4":
+  version "2.3.6"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.3.6.tgz#3b88b24ce19f69eea335969f8e04058af1f2d1c8"
+  integrity sha1-O4iyTOGfae6jNZafjgQFivHy0cg=
   dependencies:
-    "@my-ui/core" "^2.22.10"
+    "@automapper/classes" "^7.0.2"
+    "@automapper/core" "^7.0.2"
+    axios "^0.23.0"
+    formik "^2.2.9"
+    moment "^2.29.1"
+    query-string "^7.0.1"
+    react "^17.0.2"
+    single-spa "^5.9.3"
+    single-spa-react "^4.6.0"
+
+"@atom/design-system@^1.13.4":
+  version "1.13.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-1.13.4.tgz#fbea7122108632b0b47a3f15cc0cd029e8ac678f"
+  integrity sha1-++pxIhCGMrC0ej8VzAzQKeisZ48=
+  dependencies:
+    "@atom/common" "^2.3.4"
+    "@my-ui/core" "^2.22.12"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
@@ -1371,10 +1387,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.22.10":
-  version "2.22.10"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.22.10.tgz#07129dcbbde957fbed11fd8ca8c92b3d75c19af7"
-  integrity sha1-BxKdy73pV/vtEf2MqMkrPXXBmvc=
+"@my-ui/core@^2.22.12":
+  version "2.22.13"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.22.13.tgz#0856288858351659c6f1bb96989181481f94be8b"
+  integrity sha1-CFYoiFg1FlnG8buWmJGBSB+Uvos=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
