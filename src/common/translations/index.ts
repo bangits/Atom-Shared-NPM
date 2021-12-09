@@ -9,7 +9,8 @@ export default {
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
-    min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`
+    min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
+    textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!'
   },
   fileUploader: {
     serverError: 'Upload failed. A server error occurred while uploading the file.',
@@ -80,7 +81,9 @@ export default {
     },
     list: {
       title: 'Providers',
-      addProviderButton: 'Add Provider'
+      addProviderButton: 'Add Provider',
+      emptyResultFirstSentence: 'You don’t have any providers added!',
+      emptyResultSecondSentence: 'Please add a provider.'
     },
     add: {
       form: {
@@ -179,6 +182,94 @@ export default {
         lastUpdateBy: 'Last Update By',
         createdBy: 'Created By',
         status: 'Status'
+      }
+    },
+
+    details: {
+      tabs: {
+        organizationDetails: "Organization Details",
+        projects: "Projects",
+        documents: "Documents",
+      },
+      subTab: {
+        mainInformation: "Main Information",
+        providerInformation: "Provider Information",
+      },
+      common: {
+        organizationDetails: "Organization Details",
+        contactInformation: "Contact Information",
+        bankInformation: "Bank Information",
+        managersContactInformation: "Managers Contact Information",
+        viewMore: "View More",
+        noData: "N/A",
+        status: "Status",
+        parentCompany: "Parent Company",
+        parentCompanyId: "Parent Company ID",
+        documentId: "Document ID",
+        type: "Type",
+        expirationDate: "Expiration Date",
+        breadCrumb: {
+          partnerManagement: "Partner Management",
+          partnerDetails: "Partner Details",
+        }
+      },
+      organizationDetails: {
+        businessActivity: "Business Activity",
+        legalEntity: 'Legal Entity',
+        legalName: 'Legal Name',
+        companyType: 'Company Type',
+        parentCompany: "Parent Company",
+        registrationCountry: "Registration Country",
+        region: "Region",
+        city: "City",
+        address: "Address",
+        postalAddress: "Postal Address",
+        zipCode: "Zip Code",
+        tin: "TIN",
+        vat: "VAT",
+        registrationNumber: "Registration Number",
+        registrationDate: "Registration Date",
+        website: "Website"
+      },
+      bankInformation: {
+        bankName: "Bank Name",
+        bankAddress: "Bank Address",
+        bankAccountNumber: "Bank Account Number",
+        correspondentNumber: "Correspondent Number",
+        iban: "IBAN",
+        bicSwift: "BiC/Swift",
+      },
+      contactInformation: {
+        telephone: "Telephone",
+        mobileNumber: "Mobile Number",
+        eMail: "E-mail",
+      },
+      managersContactInformation: {
+        owner: {
+          title: "Owner",
+          name: "Name",
+          eMail: "E-mail",
+          telephone: "Telephone",
+          mobileNumber: "Mobile Number",
+          ownershipCertificate: "Ownership Certificate",
+        },
+        companyDirectory: {
+          title: "Company Director",
+          name: "Name",
+          eMail: "E-mail",
+          telephone: "Telephone",
+          mobileNumber: "Mobile Number",
+          directorSResolution: "Director's Resolution",
+        },
+        confidant: {
+          title: "Confidant",
+          name: "Name",
+          position: "Position",
+          eMail: "E-mail",
+          telephone: "Telephone",
+          mobileNumber: "Mobile Number",
+          powerOfAttorney: "Power of Attorney"
+        }
       }
     }
   },

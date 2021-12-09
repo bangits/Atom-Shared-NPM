@@ -29,6 +29,17 @@
     react-dom "^17.0.2"
     react-jss "^10.8.2"
 
+"@atom/design-system@^1.13.2":
+  version "1.13.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-1.13.2.tgz#127902986e9bda7433e9d007daa096cb06fefde0"
+  integrity sha1-EnkCmG6b2nQz6dAH2qCWywb+/eA=
+  dependencies:
+    "@my-ui/core" "^2.22.11"
+    classnames "^2.3.1"
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-jss "^10.8.2"
+
 "@automapper/classes@^7.0.2":
   version "7.0.2"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@automapper/classes/-/classes-7.0.2.tgz#f50ce041938a23259f743d9e78c73c570a6deecd"
@@ -1380,6 +1391,21 @@
   version "2.22.13"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.22.13.tgz#0856288858351659c6f1bb96989181481f94be8b"
   integrity sha1-CFYoiFg1FlnG8buWmJGBSB+Uvos=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^2.22.11":
+  version "2.22.11"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.22.11.tgz#b6f6ae5bee9de3d8f47a7cc184c0d178aaed78f6"
+  integrity sha1-tvauW+6d49j0enzBhMDReKrtePY=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

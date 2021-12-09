@@ -14,7 +14,7 @@ export class FileManagerRepository implements IFileManagerRepository {
 
     formData.append('Files', file);
 
-    return await this.httpService.post<string, {}, {}>({
+    const uploadedFilesUrls = await this.httpService.post<string[], {}, {}>({
       url: API_ROUTES.FileManager.Upload,
       config: {
         onUploadProgress: (progressEvent: ProgressEvent) => {
@@ -28,5 +28,7 @@ export class FileManagerRepository implements IFileManagerRepository {
       },
       body: formData
     });
+
+    return uploadedFilesUrls[0];
   };
 }

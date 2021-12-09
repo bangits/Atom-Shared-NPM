@@ -5,5 +5,5 @@ export * from './dateConverter';
 export * from './delay';
 export * from './getObjectValueByKey';
 export * from './redirectToURL';
+export * from './regexLibrary';
 export * from './stringifyQuery';
-
