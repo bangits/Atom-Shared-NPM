@@ -178,6 +178,15 @@ export default {
     },
 
     details: {
+      tabs: {
+        organizationDetails: "Organization Details",
+        projects: "Projects",
+        documents: "Documents",
+      },
+      subTab: {
+        mainInformation: "Main Information",
+        providerInformation: "Provider Information",
+      },
       common: {
         organizationDetails: "Organization Details",
         contactInformation: "Contact Information",
@@ -197,6 +206,7 @@ export default {
         }
       },
       organizationDetails: {
+        businessActivity: "Business Activity",
         legalEntity: 'Legal Entity',
         legalName: 'Legal Name',
         companyType: 'Company Type',
