@@ -196,6 +196,7 @@ export default {
         providerInformation: "Provider Information",
       },
       common: {
+        brandName: "Brand Name",
         organizationDetails: "Organization Details",
         contactInformation: "Contact Information",
         bankInformation: "Bank Information",
@@ -360,7 +361,14 @@ export default {
   games: {
     add: {
       title: 'Add Game',
-      forms: {}
+      fields: {
+        externalId: 'External ID',
+        gameName: 'Game Name',
+        type: 'Type',
+        providerName: 'Provider',
+        subType: 'Subtype',
+
+      }
     },
     list: {
       title: 'Games',
