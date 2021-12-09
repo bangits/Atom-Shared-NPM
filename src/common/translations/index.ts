@@ -80,7 +80,9 @@ export default {
     },
     list: {
       title: 'Providers',
-      addProviderButton: 'Add Provider'
+      addProviderButton: 'Add Provider',
+      emptyResultFirstSentence: 'You don’t have any providers added!',
+      emptyResultSecondSentence: 'Please add a provider.'
     },
     add: {
       form: {
