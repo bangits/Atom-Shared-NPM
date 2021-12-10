@@ -17,6 +17,7 @@ export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelect
 
   useEffect(() => {
     if(!countryId) return;
+
     resourceManagerUseCase
       .getRegion({
         countryId,

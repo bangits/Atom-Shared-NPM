@@ -1,5 +1,5 @@
 import { useTranslation } from '@/view';
-import { CityVillageSelect, CountriesSelect, RegionSelect } from '@/view/components';
+import { CityVillageSelect, CountriesSelect, RegionSelect } from '@/view/components/resource-manager-selects';
 import { CustomSelectProps } from '@my-ui/core';
 import { FastField, FastFieldProps, Field } from 'formik';
 
