@@ -1,7 +1,7 @@
 import { useTranslation } from '@/view';
+import { CityVillageSelect, CountriesSelect, RegionSelect } from '@/view/components';
+import { CustomSelectProps } from '@my-ui/core';
 import { FastField, FastFieldProps, Field } from 'formik';
-import { CityVillageSelect, CountriesSelect, RegionSelect } from '.';
-import { CustomSelectProps } from '..';
 
 export function useGeolocationSelects({
   countryName,
@@ -17,7 +17,7 @@ export function useGeolocationSelects({
     CountrySelect: (props: CustomSelectProps) => {
       return (
         <FastField name={countryName}>
-          {({ form, field, meta }: FastFieldProps) => (
+          {({ form, field }: FastFieldProps) => (
             <CountriesSelect
               {...props}
               {...field}
