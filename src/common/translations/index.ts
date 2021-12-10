@@ -4,7 +4,12 @@ export default {
   common: {
     id: 'ID',
     connectionError: 'The connection to the server was lost ! Try later.',
-    optional: '(optional)'
+    optional: '(optional)',
+    geoFields: {
+      country: 'Country',
+      region: 'Region',
+      city: 'City',
+    }
   },
   validations: {
     required: 'Required field',

@@ -26,7 +26,7 @@ export const CityVillageSelect = ({ isCity, regionId, ...selectProps }: CityVill
         pageSize: MAX_PAGE_SIZE
       })
       .then((getCityVillageResponse) => setCitiesVillages(getCityVillageResponse.results));
-  }, []);
+  }, [regionId]);
 
   return (
     <>

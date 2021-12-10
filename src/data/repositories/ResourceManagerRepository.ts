@@ -80,21 +80,21 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     return genderType;
   }).bind(this);
 
-  getRegion = cachedFn('CachedRegions', async (getRegionRequestModel: RegionFilterRequestModel) => {
+  getRegion = async (getRegionRequestModel: RegionFilterRequestModel) => {
     const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
       url: API_ROUTES.Region,
       query: getRegionRequestModel
     });
 
     return region;
-  }).bind(this);
+  };
 
-  getCityVillage = cachedFn('CachedCityVillages', async (getCityVillageRequestModel: CityVillageFilterRequestModel) => {
+  getCityVillage = async (getCityVillageRequestModel: CityVillageFilterRequestModel) => {
     const cityVillage = await this.httpService.get<GetCityVillageResponseModel, CityVillageFilterRequestModel>({
       url: API_ROUTES.CityVillage,
       query: getCityVillageRequestModel
     });
 
     return cityVillage;
-  }).bind(this);
+  };
 }
