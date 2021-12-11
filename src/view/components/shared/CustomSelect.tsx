@@ -10,7 +10,7 @@ export function CustomSelect(props: CustomSelectProps) {
 
   return (
     <>
-      <Select {...props} selectAllLabel={t.get('form.all')} />
+      <Select {...props} selectAllLabel={t.get('all')} />
     </>
   );
 }

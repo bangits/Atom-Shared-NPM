@@ -22,7 +22,7 @@ export function useGeolocationSelects({
               {...props}
               {...field}
               fullWidth
-              inputLabel={t.get('common.geoFields.country')}
+              inputLabel={t.get('country')}
               onChange={(value) => {
                 form.setFieldValue(countryName, value);
                 form.setFieldTouched(countryName, true);
@@ -43,7 +43,7 @@ export function useGeolocationSelects({
               {...props}
               {...field}
               fullWidth
-              inputLabel={t.get('common.geoFields.region')}
+              inputLabel={t.get('region')}
               countryId={form.values[countryName]}
               onChange={(value) => {
                 form.setFieldValue(regionName, value);
@@ -64,7 +64,7 @@ export function useGeolocationSelects({
               {...props}
               {...field}
               fullWidth
-              inputLabel={t.get('common.geoFields.region')}
+              inputLabel={t.get('region')}
               isCity
               regionId={form.values[regionName]}
               onChange={(value) => {

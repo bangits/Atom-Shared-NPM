@@ -27,11 +27,8 @@ export const TablePage = <T extends {}, K>({
   const filterProps = useMemo(
     () => ({
       ...props.filterProps,
-      // resultLabel: props.rowCount
-      //   ? translations.get('tables.resultLabel').replace(TRANSLATION_CHANGED_VALUE, props.rowCount.toString())
-      //   : null,
-      applyLabel: translations.get('tables.apply'),
-      clearLabel: translations.get('tables.clear')
+      applyLabel: translations.get('apply'),
+      clearLabel: translations.get('clear')
     }),
     [translations, props.filterProps, props.rowCount]
   );
@@ -55,7 +52,7 @@ export const TablePage = <T extends {}, K>({
   const tableProps = useMemo(
     () => ({
       ...(props.tableProps || {}),
-      emptyValue: translations.get('tables.emptyValue')
+      emptyValue: translations.get('emptyValue')
     }),
     [props.tableProps]
   );
@@ -78,12 +75,12 @@ export const TablePage = <T extends {}, K>({
         rowCount={props.rowCount}
         paginationProps={{
           pageSizeSelect: {
-            dropdownLabel: translations.get('tables.pagination.pageSizeLabel'),
+            dropdownLabel: translations.get('pagination.pageSizeLabel'),
             options: pageSizeOptions,
             defaultValue: defaultPageSizeValue
           },
           jumpToPage: {
-            inputTitle: translations.get('tables.pagination.jumpToPageLabel')
+            inputTitle: translations.get('pagination.jumpToPageLabel')
           },
           getTotalCountInfo: (pagination) => {
             const currentPageFirstValue = pagination.pageSize * pagination.page - pagination.pageSize + 1;
@@ -94,7 +91,7 @@ export const TablePage = <T extends {}, K>({
                 : pagination.pageSize * pagination.page;
 
             return `${currentPageFirstValue}-${currentPageLastValue} ${translations.get(
-              'tables.pagination.totalCountDivider'
+              'pagination.totalCountDivider'
             )} ${props.rowCount}`;
           }
         }}

@@ -32,7 +32,7 @@ export const useActionWithDialog = <T>({
   const showErrorConnectionAlert = useCallback(
     () =>
       alert.error({
-        alertLabel: t.get('common.connectionError')
+        alertLabel: t.get('connectionError')
       }),
     []
   );
