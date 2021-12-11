@@ -5,3 +5,9 @@ export const convertDate = (date: string, format = 'DD/MM/YYYY HH:mm:ss') => {
 
   return dayJS(parsedDate).format(format);
 };
+
+export const convertDateForRequestModel = (date: Date) => {
+  const convertedDate = new Date(date);
+
+  return convertedDate.toISOString();
+};

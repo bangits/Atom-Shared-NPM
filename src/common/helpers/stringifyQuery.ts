@@ -17,7 +17,7 @@ const stringifyArray = (array: any[], objectKey: string): string => {
 export const stringifyQuery = (object: {}) => {
   return Object.entries(object).reduce(
     (acc, [key, value]) =>
-      value
+      value || value === false
         ? typeof value === 'object'
           ? Array.isArray(value)
             ? acc + stringifyArray(value, key)

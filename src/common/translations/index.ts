@@ -4,13 +4,19 @@ export default {
   common: {
     id: 'ID',
     connectionError: 'The connection to the server was lost ! Try later.',
-    optional: '(optional)'
+    optional: '(optional)',
+    geoFields: {
+      country: 'Country',
+      region: 'Region',
+      city: 'City',
+    }
   },
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
-    textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!'
+    textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
+    email: "Enter an E-mail address into correct format, example: someone@website.com"
   },
   fileUploader: {
     serverError: 'Upload failed. A server error occurred while uploading the file.',
@@ -369,6 +375,11 @@ export default {
   },
   games: {
     add: {
+      errorMsg: 'The internet connection was lost ! Try later.” And the system shouldn’t keep the change.',
+      successMsg: 'Successfully completed.!',
+      validationTexts: {
+        uniqueEmail: 'Legal name is unique! '
+      },
       title: 'Add Game',
       fields: {
         externalId: 'External ID',
@@ -379,6 +390,7 @@ export default {
       }
     },
     list: {
+      resultNotFound: 'You don’t have any users added!',
       title: 'Games',
       addGameButton: 'Add Game',
       tableHeaders: {
@@ -404,7 +416,6 @@ export default {
           no: 'No'
         },
         gameId: 'Game ID',
-
         externalId: 'External ID',
         providerName: 'Provider',
         gameTypes: 'Type',
@@ -412,9 +423,9 @@ export default {
         type: 'Type',
         subType: 'Subtype',
         rtp: {
-          title: 'RTP',
-          from: 'RTP - From',
-          to: 'RTP - To'
+          title: 'RTP %',
+          from: 'RTP % - From',
+          to: 'RTP % - To '
         },
         hasDemo: {
           title: 'Has demo',
