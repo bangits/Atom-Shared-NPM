@@ -187,89 +187,89 @@ export default {
 
     details: {
       tabs: {
-        organizationDetails: "Organization Details",
-        projects: "Projects",
-        documents: "Documents",
+        organizationDetails: 'Organization Details',
+        projects: 'Projects',
+        documents: 'Documents'
       },
       subTab: {
-        mainInformation: "Main Information",
-        providerInformation: "Provider Information",
+        mainInformation: 'Main Information',
+        providerInformation: 'Provider Information'
       },
       common: {
-        brandName: "Brand Name",
-        organizationDetails: "Organization Details",
-        contactInformation: "Contact Information",
-        bankInformation: "Bank Information",
-        managersContactInformation: "Managers Contact Information",
-        viewMore: "View More",
-        noData: "N/A",
-        status: "Status",
-        parentCompany: "Parent Company",
-        parentCompanyId: "Parent Company ID",
-        documentId: "Document ID",
-        type: "Type",
-        expirationDate: "Expiration Date",
+        brandName: 'Brand Name',
+        organizationDetails: 'Organization Details',
+        contactInformation: 'Contact Information',
+        bankInformation: 'Bank Information',
+        managersContactInformation: 'Managers Contact Information',
+        viewMore: 'View More',
+        noData: 'N/A',
+        status: 'Status',
+        parentCompany: 'Parent Company',
+        parentCompanyId: 'Parent Company ID',
+        documentId: 'Document ID',
+        type: 'Type',
+        expirationDate: 'Expiration Date',
         breadCrumb: {
-          partnerManagement: "Partner Management",
-          partnerDetails: "Partner Details",
+          partnerManagement: 'Partner Management',
+          partnerDetails: 'Partner Details'
         }
       },
       organizationDetails: {
-        businessActivity: "Business Activity",
+        businessActivity: 'Business Activity',
         legalEntity: 'Legal Entity',
         legalName: 'Legal Name',
         companyType: 'Company Type',
-        parentCompany: "Parent Company",
-        registrationCountry: "Registration Country",
-        region: "Region",
-        city: "City",
-        address: "Address",
-        postalAddress: "Postal Address",
-        zipCode: "Zip Code",
-        tin: "TIN",
-        vat: "VAT",
-        registrationNumber: "Registration Number",
-        registrationDate: "Registration Date",
-        website: "Website"
+        parentCompany: 'Parent Company',
+        registrationCountry: 'Registration Country',
+        region: 'Region',
+        city: 'City',
+        address: 'Address',
+        postalAddress: 'Postal Address',
+        zipCode: 'Zip Code',
+        tin: 'TIN',
+        vat: 'VAT',
+        registrationNumber: 'Registration Number',
+        registrationDate: 'Registration Date',
+        website: 'Website'
       },
       bankInformation: {
-        bankName: "Bank Name",
-        bankAddress: "Bank Address",
-        bankAccountNumber: "Bank Account Number",
-        correspondentNumber: "Correspondent Number",
-        iban: "IBAN",
-        bicSwift: "BiC/Swift",
+        bankName: 'Bank Name',
+        bankAddress: 'Bank Address',
+        bankAccountNumber: 'Bank Account Number',
+        correspondentNumber: 'Correspondent Number',
+        iban: 'IBAN',
+        bicSwift: 'BiC/Swift'
       },
       contactInformation: {
-        telephone: "Telephone",
-        mobileNumber: "Mobile Number",
-        eMail: "E-mail",
+        telephone: 'Telephone',
+        mobileNumber: 'Mobile Number',
+        eMail: 'E-mail'
       },
       managersContactInformation: {
         owner: {
-          title: "Owner",
-          name: "Name",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          ownershipCertificate: "Ownership Certificate",
+          title: 'Owner',
+          name: 'Name',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          ownershipCertificate: 'Ownership Certificate'
         },
         companyDirectory: {
-          title: "Company Director",
-          name: "Name",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          directorSResolution: "Director's Resolution",
+          title: 'Company Director',
+          name: 'Name',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          directorSResolution: "Director's Resolution"
         },
         confidant: {
-          title: "Confidant",
-          name: "Name",
-          position: "Position",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          powerOfAttorney: "Power of Attorney"
+          title: 'Confidant',
+          name: 'Name',
+          position: 'Position',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          powerOfAttorney: 'Power of Attorney'
         }
       }
     }
@@ -360,17 +360,22 @@ export default {
   },
   games: {
     add: {
+      errorMsg: 'The internet connection was lost ! Try later.” And the system shouldn’t keep the change.',
+      successMsg: 'Successfully completed.!',
+      validationTexts: {
+        uniqueEmail: 'Legal name is unique! '
+      },
       title: 'Add Game',
       fields: {
         externalId: 'External ID',
         gameName: 'Game Name',
         type: 'Type',
         providerName: 'Provider',
-        subType: 'Subtype',
-
+        subType: 'Subtype'
       }
     },
     list: {
+      resultNotFound: 'You don’t have any users added!',
       title: 'Games',
       addGameButton: 'Add Game',
       tableHeaders: {
@@ -396,7 +401,6 @@ export default {
           no: 'No'
         },
         gameId: 'Game ID',
-
         externalId: 'External ID',
         providerName: 'Provider',
         gameTypes: 'Type',
@@ -404,9 +408,9 @@ export default {
         type: 'Type',
         subType: 'Subtype',
         rtp: {
-          title: 'RTP',
-          from: 'RTP - From',
-          to: 'RTP - To'
+          title: 'RTP %',
+          from: 'RTP % - From',
+          to: 'RTP % - To '
         },
         hasDemo: {
           title: 'Has demo',
