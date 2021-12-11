@@ -1,6 +1,6 @@
-import { useTranslation } from '@/view';
+import { useLoading, useTranslation } from '@/view';
 import { DataTable, DataTableProps } from '@atom/design-system';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 
 export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
@@ -8,15 +8,21 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   defaultPageSizeValue?: number;
   pageSizeDividerValue?: number;
   isEmpty?: boolean;
+  isFetching?: boolean;
+  isFilteredData?: boolean;
 }
 
 export const TablePage = <T extends {}, K>({
   defaultPageSizeValue = 20,
   pageSizeDividerValue = 50,
   isEmpty = false,
+  isFetching,
+  isFilteredData,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
+
+  const changeLoading = useLoading();
 
   const filterProps = useMemo(
     () => ({
@@ -53,6 +59,16 @@ export const TablePage = <T extends {}, K>({
     }),
     [props.tableProps]
   );
+
+  useEffect(() => {
+    if (!isFilteredData) changeLoading(true);
+  }, []);
+
+  useEffect(() => {
+    if (!isFetching) changeLoading(false);
+  }, [isFetching]);
+
+  if (isFetching && !isFilteredData) return null;
 
   return (
     <>

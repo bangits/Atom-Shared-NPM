@@ -60,10 +60,15 @@ export default {
     'user-not-found': 'Invalid account'
   },
   providers: {
+    actions: {
+      activate: 'Activate',
+      inActivate: 'Inactivate'
+    },
     statuses: {
       active: 'Active',
       blocked: 'Blocked',
-      inActive: 'Inactive'
+      inActive: 'Inactive',
+      removed: 'Removed'
     },
     fields: {
       providerId: 'Provider ID',
@@ -147,6 +152,7 @@ export default {
     fields: {
       partnerId: 'Partner ID',
       legalName: 'Legal Name',
+      legalEntity: 'Legal Entity',
       companyType: 'Company Type',
       main: 'Main',
       subsidiary: 'Subsidiary',
@@ -156,7 +162,10 @@ export default {
       parentCompanyName: 'Parent Company Name',
       lastUpdateBy: 'Last Update By',
       createdBy: 'Created By',
-      status: 'Status'
+      status: 'Status',
+      dateOfCreationDatepickers: 'Date of Creation From - To',
+      dateOfCreationFrom: 'Date of Creation - From',
+      dateOfCreationTo: 'Date of Creation - To'
     },
     statuses: {
       declared: 'Declared',
@@ -187,89 +196,89 @@ export default {
 
     details: {
       tabs: {
-        organizationDetails: "Organization Details",
-        projects: "Projects",
-        documents: "Documents",
+        organizationDetails: 'Organization Details',
+        projects: 'Projects',
+        documents: 'Documents'
       },
       subTab: {
-        mainInformation: "Main Information",
-        providerInformation: "Provider Information",
+        mainInformation: 'Main Information',
+        providerInformation: 'Provider Information'
       },
       common: {
-        brandName: "Brand Name",
-        organizationDetails: "Organization Details",
-        contactInformation: "Contact Information",
-        bankInformation: "Bank Information",
-        managersContactInformation: "Managers Contact Information",
-        viewMore: "View More",
-        noData: "N/A",
-        status: "Status",
-        parentCompany: "Parent Company",
-        parentCompanyId: "Parent Company ID",
-        documentId: "Document ID",
-        type: "Type",
-        expirationDate: "Expiration Date",
+        brandName: 'Brand Name',
+        organizationDetails: 'Organization Details',
+        contactInformation: 'Contact Information',
+        bankInformation: 'Bank Information',
+        managersContactInformation: 'Managers Contact Information',
+        viewMore: 'View More',
+        noData: 'N/A',
+        status: 'Status',
+        parentCompany: 'Parent Company',
+        parentCompanyId: 'Parent Company ID',
+        documentId: 'Document ID',
+        type: 'Type',
+        expirationDate: 'Expiration Date',
         breadCrumb: {
-          partnerManagement: "Partner Management",
-          partnerDetails: "Partner Details",
+          partnerManagement: 'Partner Management',
+          partnerDetails: 'Partner Details'
         }
       },
       organizationDetails: {
-        businessActivity: "Business Activity",
+        businessActivity: 'Business Activity',
         legalEntity: 'Legal Entity',
         legalName: 'Legal Name',
         companyType: 'Company Type',
-        parentCompany: "Parent Company",
-        registrationCountry: "Registration Country",
-        region: "Region",
-        city: "City",
-        address: "Address",
-        postalAddress: "Postal Address",
-        zipCode: "Zip Code",
-        tin: "TIN",
-        vat: "VAT",
-        registrationNumber: "Registration Number",
-        registrationDate: "Registration Date",
-        website: "Website"
+        parentCompany: 'Parent Company',
+        registrationCountry: 'Registration Country',
+        region: 'Region',
+        city: 'City',
+        address: 'Address',
+        postalAddress: 'Postal Address',
+        zipCode: 'Zip Code',
+        tin: 'TIN',
+        vat: 'VAT',
+        registrationNumber: 'Registration Number',
+        registrationDate: 'Registration Date',
+        website: 'Website'
       },
       bankInformation: {
-        bankName: "Bank Name",
-        bankAddress: "Bank Address",
-        bankAccountNumber: "Bank Account Number",
-        correspondentNumber: "Correspondent Number",
-        iban: "IBAN",
-        bicSwift: "BiC/Swift",
+        bankName: 'Bank Name',
+        bankAddress: 'Bank Address',
+        bankAccountNumber: 'Bank Account Number',
+        correspondentNumber: 'Correspondent Number',
+        iban: 'IBAN',
+        bicSwift: 'BiC/Swift'
       },
       contactInformation: {
-        telephone: "Telephone",
-        mobileNumber: "Mobile Number",
-        eMail: "E-mail",
+        telephone: 'Telephone',
+        mobileNumber: 'Mobile Number',
+        eMail: 'E-mail'
       },
       managersContactInformation: {
         owner: {
-          title: "Owner",
-          name: "Name",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          ownershipCertificate: "Ownership Certificate",
+          title: 'Owner',
+          name: 'Name',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          ownershipCertificate: 'Ownership Certificate'
         },
         companyDirectory: {
-          title: "Company Director",
-          name: "Name",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          directorSResolution: "Director's Resolution",
+          title: 'Company Director',
+          name: 'Name',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          directorSResolution: "Director's Resolution"
         },
         confidant: {
-          title: "Confidant",
-          name: "Name",
-          position: "Position",
-          eMail: "E-mail",
-          telephone: "Telephone",
-          mobileNumber: "Mobile Number",
-          powerOfAttorney: "Power of Attorney"
+          title: 'Confidant',
+          name: 'Name',
+          position: 'Position',
+          eMail: 'E-mail',
+          telephone: 'Telephone',
+          mobileNumber: 'Mobile Number',
+          powerOfAttorney: 'Power of Attorney'
         }
       }
     }
@@ -366,8 +375,7 @@ export default {
         gameName: 'Game Name',
         type: 'Type',
         providerName: 'Provider',
-        subType: 'Subtype',
-
+        subType: 'Subtype'
       }
     },
     list: {
