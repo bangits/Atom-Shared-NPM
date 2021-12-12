@@ -1,5 +1,5 @@
 import { PrimaryKey } from '../types';
 
-export interface BaseEntity {
+export class BaseEntity {
   id: PrimaryKey;
 }
