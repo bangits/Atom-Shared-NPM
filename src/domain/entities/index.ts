@@ -7,3 +7,5 @@ export * from './DocumentTypeEntity';
 export * from './GenderEntity';
 export * from './RegionEntity';
 export * from './CityVillageEntity';
+export * from './MarketsEntity';
+export * from './LicensesEntity';
