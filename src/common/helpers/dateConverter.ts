@@ -1,7 +1,9 @@
 import dayJS from 'dayjs';
 
-export const convertDate = (date: string, format = 'DD/MM/YYYY HH:mm:ss') => {
-  const parsedDate = new Date(date);
+export const convertDate = (date: Date | string, format = 'DD/MM/YYYY HH:mm:ss') => {
+  if (!date) return null;
+
+  const parsedDate = typeof date === 'string' ? new Date(date) : date;
 
   const userTimezone = new Date().getTimezoneOffset() / -60;
 
@@ -11,6 +13,8 @@ export const convertDate = (date: string, format = 'DD/MM/YYYY HH:mm:ss') => {
 };
 
 export const convertDateForRequestModel = (date: Date) => {
+  if (!date) return null;
+
   const convertedDate = new Date(date);
 
   return convertedDate.toISOString();

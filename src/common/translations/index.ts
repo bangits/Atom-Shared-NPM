@@ -26,7 +26,8 @@ export default {
     maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
-    email: 'Enter an E-mail address into correct format, example: someone@website.com'
+    email: 'Enter an E-mail address into correct format, example: someone@website.com',
+    website: 'Enter an Website into correct format, example: https://www.website.com'
   },
   username: 'Email or Username',
   password: 'Password',
@@ -48,8 +49,6 @@ export default {
   providerManagement: 'Provider Management',
   novomaticDetails: 'Novomatic Details',
   approve: 'Approve',
-  partnerApproveDescirptionFirstPart: 'Do you want to approve the partnership with ',
-  partnerApproveDescirptionLastPart: 'Do you want to approve the partnership with ',
   save: 'Save',
   cancel: 'Cancel',
   continue: 'Continue',
@@ -70,8 +69,7 @@ export default {
   successAlertMessage: 'Successfully completed!',
   successMsg: 'The User was successfully created',
   successMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} actions were successfully completed !`,
-  errorMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} of actions couldn't be completed !`,
-
+  errorMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} actions couldn't be completed !`,
   logo: 'Logo',
   gameId: 'Game ID',
   providerId: 'Provider ID',
@@ -85,7 +83,9 @@ export default {
   },
   gameThemes: 'Theme',
   gameFeatures: 'Feature',
+  gameTypes: "Game Types",
   device: 'Device',
+  currencies: 'Currencies',
   supportedCurrencies: 'Supported currencies ',
   certifiedCountries: 'Certified countries ',
   restrictedCountries: 'Restricted countries',
@@ -130,13 +130,26 @@ export default {
   validated: 'Validated',
   terminated: 'Terminated',
   parentCompany: 'Parent Company',
+  parentCompanyName: 'Parent Company Name',
 
-  approvePartnershipFirstPart: 'Do you want to approve the partnership with ',
-  approvePartnershipLastPart: ' partners?',
   submitButton: 'Approve',
   terminate: 'Terminate',
   terminatePartnershipFirstPart: 'Do you want to  terminate the partnership with ',
   terminatePartnershipLastPart: ' partners?',
+  multipleTerminatePartnershipLastPart: ' partners?',
+
+  approvePartnershipFirstPart: 'Do you want to approve the partnership with ',
+  approvePartnershipLastPart: ' partners?',
+  multipleApprovePartnershipLastPart: ' partner?',
+
+  providerActivateDescirptionFirstPart: 'Do you want to activate ',
+  providerActivateDescirptionLastPart: ' provider?',
+  multipleProviderActivateDescirptionLastPart: ' providers?',
+
+  providerInActivateDescirptionFirstPart: 'Do you want to inactivate ',
+  providerInActivateDescirptionLastPart: ' provider?',
+  multipleProviderInActivateDescirptionLastPart: ' providers?',
+
   legalEntity: 'Legal Entity',
   legalName: 'Legal Name',
   brandName: 'Brand Name',
