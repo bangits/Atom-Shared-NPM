@@ -31,7 +31,7 @@ export const getBaseQuery =
 
       return { data };
     } catch (error) {
-      if (error.response.data?.Status) return Promise.reject(error.response.data.Status);
+      if (error.response?.data?.Status) return Promise.reject(error.response.data.Status);
 
       return Promise.reject(error);
     }
