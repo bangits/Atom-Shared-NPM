@@ -187,7 +187,6 @@ export default {
   viewMore: 'View More',
   noData: 'N/A',
   parentCompanyId: 'Parent Company ID',
-  parentCompanyName: 'Parent Company Name',
   expirationDate: 'Expiration Date',
   owner: 'Owner',
   name: 'Name',
