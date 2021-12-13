@@ -9,14 +9,18 @@ export interface TelephoneInputProps {
   phoneCodeDefaultValue?: PrimaryKey;
   phoneDefaultValue?: string;
   label?: string;
+  error?: string | false;
   onChange: (fullPhoneNumber: string, phoneCodeValue: PrimaryKey, phoneNuumber: string) => void;
+  onBlur?: () => void;
 }
 
 export const TelephoneInput = ({
-  phoneCodeDefaultValue = 1,
-  phoneDefaultValue = '1',
+  phoneCodeDefaultValue,
+  phoneDefaultValue,
   onChange,
-  label
+  label,
+  onBlur,
+  error
 }: TelephoneInputProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
@@ -33,9 +37,11 @@ export const TelephoneInput = ({
     () => ({
       options: selectOption,
       value: selectedPhoneCode?.id || null,
-      defaultValue: phoneCodeDefaultValue
+      defaultValue: phoneCodeDefaultValue,
+      onBlur,
+      color: error ? ('danger' as const) : undefined
     }),
-    [selectedPhoneCode, phoneCodeDefaultValue, selectOption]
+    [selectedPhoneCode, phoneCodeDefaultValue, selectOption, onBlur, error]
   );
 
   const inputProps = useMemo(
@@ -43,9 +49,12 @@ export const TelephoneInput = ({
       label,
       type: 'number',
       value: phoneNumber,
-      maxLength: INPUT_MAX_VALUES.PHONE_NUMBER - 3
+      maxLength: INPUT_MAX_VALUES.PHONE_NUMBER - 3,
+      onBlur,
+      color: error ? ('danger' as const) : undefined,
+      explanation: error || undefined
     }),
-    [phoneNumber, label]
+    [phoneNumber, label, onBlur, error]
   );
 
   const onPhoneCodeChange = useCallback(

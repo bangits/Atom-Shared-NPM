@@ -17,6 +17,8 @@ export const CityVillageSelect = ({ isCity, regionId, ...selectProps }: CityVill
   const selectOptions = useMemo(() => citiesVillages.map((c) => ({ value: c.id, label: c.name })), [citiesVillages]);
 
   useEffect(() => {
+    if (!regionId) return;
+
     resourceManagerUseCase
       .getCityVillage({
         regionId,
