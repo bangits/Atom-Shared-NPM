@@ -23,6 +23,7 @@ export default {
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
+    maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Enter an E-mail address into correct format, example: someone@website.com'
@@ -61,12 +62,13 @@ export default {
   rtp: 'RTP',
   rtpFrom: 'RTP % - From',
   rtpTo: 'RTP % - To',
-  hasDemo: 'Has demo',
+  hasDemo: 'Has Demo',
   yes: 'Yes',
   no: 'No',
   games: 'Games',
   addGame: 'Add Game',
   successAlertMessage: 'Successfully completed!',
+  successMsg: 'The User was successfully created',
   successMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} actions were successfully completed !`,
   errorMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} of actions couldn't be completed !`,
 
@@ -146,6 +148,7 @@ export default {
   addPartner: 'Add Partner',
   uniqueBrandName: 'Brand name is unique!',
   uniqueLegalName: 'Legal name is unique!',
+  uniqueEmail: 'Email already exists!',
   optional: 'Optional',
   partnerManagement: 'Partner Management',
   partnerDetails: 'Partner Details',
@@ -204,5 +207,5 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
-  users: 'Users',
+  users: 'Users'
 };
