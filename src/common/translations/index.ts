@@ -65,7 +65,8 @@ export default {
   no: 'No',
   games: 'Games',
   addGame: 'Add Game',
-  successAlertMessage: 'Successfully completed!',
+  successAlertMessage: 'Successfully completed !',
+  errorAlertMessage: "The action couldn't be completed !",
   successMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} actions were successfully completed !`,
   errorMultipleAlertMessage: `The ${TRANSLATION_CHANGED_VALUE} actions couldn't be completed !`,
   logo: 'Logo',
@@ -215,5 +216,5 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
-  users: 'Users',
+  users: 'Users'
 };

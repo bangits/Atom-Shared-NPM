@@ -53,15 +53,22 @@ export const useActionWithDialog = <T>({
             .then((changePartnerResults) => {
               if (changePartnerResults.successCount)
                 alert.success({
-                  alertLabel: successMsg.replace(
-                    TRANSLATION_CHANGED_VALUE,
-                    changePartnerResults.successCount.toString()
-                  )
+                  alertLabel:
+                    changePartnerResults.successCount > 1
+                      ? t
+                          .get('successMultipleAlertMessage')
+                          .replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.successCount.toString())
+                      : t.get('successAlertMessage')
                 });
 
               if (changePartnerResults.failsCount)
                 alert.error({
-                  alertLabel: errorMsg.replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.failsCount.toString())
+                  alertLabel:
+                    changePartnerResults.failsCount > 1
+                      ? t
+                          .get('errorMultipleAlertMessage')
+                          .replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.failsCount.toString())
+                      : t.get('errorAlertMessage')
                 });
 
               refetch();
