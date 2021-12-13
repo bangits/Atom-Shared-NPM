@@ -1,5 +1,5 @@
 import { useLoading, useTranslation } from '@/view';
-import { DataTable, DataTableProps } from '@atom/design-system';
+import { DataTable, DataTableProps, SelectProps } from '@atom/design-system';
 import { useEffect, useMemo } from 'react';
 
 export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
@@ -10,6 +10,7 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isEmpty?: boolean;
   isFetching?: boolean;
   isFilteredData?: boolean;
+  filtersDropdownProps: SelectProps<any, boolean, any>
 }
 
 export const TablePage = <T extends {}, K>({
@@ -18,6 +19,7 @@ export const TablePage = <T extends {}, K>({
   isEmpty = false,
   isFetching,
   isFilteredData,
+  filtersDropdownProps,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
@@ -73,6 +75,7 @@ export const TablePage = <T extends {}, K>({
         {...props}
         isShowedPagination={props.rowCount > defaultPageSizeValue}
         rowCount={props.rowCount}
+        filtersDropdownProps={filtersDropdownProps}
         paginationProps={{
           pageSizeSelect: {
             dropdownLabel: translations.get('pagination.pageSizeLabel'),
