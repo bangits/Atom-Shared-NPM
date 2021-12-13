@@ -59,7 +59,7 @@ export default {
   gameName: 'Game Name',
   subType: 'Subtype',
   releaseDate: 'Release Date',
-  rtp: 'RTP',
+  rtp: 'RTP %',
   rtpFrom: 'RTP % - From',
   rtpTo: 'RTP % - To',
   hasDemo: 'Has Demo',
@@ -74,7 +74,7 @@ export default {
 
   logo: 'Logo',
   gameId: 'Game ID',
-  providerId: 'Provider Id',
+  providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
   createdBy: 'Create By',
@@ -110,6 +110,7 @@ export default {
   emptyValue: 'N/A',
   clear: 'Clear',
   apply: 'Apply',
+  add: 'Add',
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
     emptyResultSecondSentence: 'Please make a different filter selection.'
@@ -173,6 +174,7 @@ export default {
   viewMore: 'View More',
   noData: 'N/A',
   parentCompanyId: 'Parent Company ID',
+  parentCompanyName: 'Parent Company Name',
   expirationDate: 'Expiration Date',
   owner: 'Owner',
   name: 'Name',
@@ -200,6 +202,7 @@ export default {
   addUser: 'Add User',
   defaultLanguage: 'Default Language',
   dateOfCreation: 'Date of Creation',
+  dateOfUpdate:'Date of Update',
   userId: 'User ID',
   email: 'E-mail (Username)',
   fullName: 'Full Name',
