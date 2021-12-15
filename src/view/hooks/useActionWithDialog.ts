@@ -10,8 +10,6 @@ export interface UseActionWithDialogParameters<T> {
   }) => void;
   t: UseTranslationReturnValue;
   actionFn: (partnerIds) => Promise<ActionResponseModel>;
-  successMsg: string;
-  errorMsg: string;
   isFetching: boolean;
   getColumnId: (column: T) => PrimaryKey;
   refetch: () => void;
@@ -22,8 +20,6 @@ export const useActionWithDialog = <T>({
   t,
   getColumnId,
   actionFn,
-  errorMsg,
-  successMsg,
   refetch,
   isFetching
 }: UseActionWithDialogParameters<T>): { openDialogFn: (column: T | T[]) => void; columnLoadingIds: PrimaryKey[] } => {
@@ -77,7 +73,7 @@ export const useActionWithDialog = <T>({
         }
       });
     },
-    [dialogFn, t, getColumnId, actionFn, errorMsg, successMsg, refetch]
+    [dialogFn, t, getColumnId, actionFn, refetch]
   );
 
   useEffect(() => {
