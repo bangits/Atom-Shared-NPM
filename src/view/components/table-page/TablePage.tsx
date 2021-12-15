@@ -1,5 +1,5 @@
 import { useLoading, useTranslation } from '@/view';
-import { DataTable, DataTableProps, SelectProps } from '@atom/design-system';
+import { DataTable, DataTableProps } from '@atom/design-system';
 import { useEffect, useMemo } from 'react';
 
 export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
@@ -10,7 +10,6 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isEmpty?: boolean;
   isFetching?: boolean;
   isFilteredData?: boolean;
-  filtersDropdownProps: SelectProps<any, boolean, any>
 }
 
 export const TablePage = <T extends {}, K>({
@@ -19,7 +18,6 @@ export const TablePage = <T extends {}, K>({
   isEmpty = false,
   isFetching,
   isFilteredData,
-  filtersDropdownProps,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
@@ -30,7 +28,13 @@ export const TablePage = <T extends {}, K>({
     () => ({
       ...props.filterProps,
       applyLabel: translations.get('apply'),
-      clearLabel: translations.get('clear')
+      clearLabel: translations.get('clear'),
+      selectProps: {
+        selectAll: true,
+        selectAllLabel: translations.get('all'),
+        clearButton: true,
+        clearButtonLabel: translations.get('clear')
+      }
     }),
     [translations, props.filterProps, props.rowCount]
   );
@@ -75,7 +79,13 @@ export const TablePage = <T extends {}, K>({
         {...props}
         isShowedPagination={props.rowCount > defaultPageSizeValue}
         rowCount={props.rowCount}
-        filtersDropdownProps={filtersDropdownProps}
+        filtersDropdownProps={{
+          selectAll: true,
+          selectAllLabel: translations.get('all'),
+          clearButton: true,
+          clearButtonLabel: translations.get('clear'),
+          color: 'primary'
+        }}
         paginationProps={{
           pageSizeSelect: {
             dropdownLabel: translations.get('pagination.pageSizeLabel'),
