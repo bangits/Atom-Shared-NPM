@@ -75,7 +75,7 @@ export default {
   providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
-  createdBy: 'Create By',
+  createdBy: 'Created By',
   status: 'Status',
   statuses: {
     yes: 'Yes',
@@ -159,7 +159,6 @@ export default {
   gameInActivateDescriptionLastPart: ' game?',
   multipleGameInActivateDescriptionLastPart: ' games?',
 
-
   legalEntity: 'Legal Entity',
   legalName: 'Legal Name',
   brandName: 'Brand Name',
@@ -218,7 +217,7 @@ export default {
   dateOfCreationDatepickers: 'Date of Creation From - To',
   dateOfCreationFrom: 'Date of Creation - From',
   dateOfCreationTo: 'Date of Creation - To',
-  lastUpdateBy: 'Last Update By',
+  lastUpdatedBy: 'Last Updated By',
   forever: 'Forever',
   temporary: 'Temporary',
   addUser: 'Add User',
@@ -234,8 +233,8 @@ export default {
   lastUpdateDate: 'Last Update Date',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
-  partnerOrBrandName:'Partner Brand Name',
-  lastUpdateDateTo:'Last Updated Date - To',
-  lastUpdateDateFrom:'Last Updated Date - From',
-  projects:'Projects'
+  partnerOrBrandName: 'Partner Brand Name',
+  lastUpdateDateTo: 'Last Updated Date - To',
+  lastUpdateDateFrom: 'Last Updated Date - From',
+  projects: 'Projects'
 };
