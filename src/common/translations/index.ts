@@ -108,6 +108,7 @@ export default {
   activate: 'Activate',
   inActivate: 'Inactivate',
   emptyValue: 'N/A',
+  notCompleted: 'Not Completed',
   clear: 'Clear',
   apply: 'Apply',
   add: 'Add',
@@ -142,13 +143,22 @@ export default {
   approvePartnershipLastPart: ' partners?',
   multipleApprovePartnershipLastPart: ' partner?',
 
-  providerActivateDescirptionFirstPart: 'Do you want to activate ',
+  providerActivateDescirptionFirstPart: 'Do you want to activate ?',
   providerActivateDescirptionLastPart: ' provider?',
   multipleProviderActivateDescirptionLastPart: ' providers?',
 
   providerInActivateDescirptionFirstPart: 'Do you want to inactivate ',
   providerInActivateDescirptionLastPart: ' provider?',
   multipleProviderInActivateDescirptionLastPart: ' providers?',
+
+  gameActivateDescriptionFirstPart: 'Do you want to activate ?',
+  gameActivateDescriptionLastPart: ' game?',
+  multipleGameActivateDescriptionLastPart: ' games?',
+
+  gameInActivateDescriptionFirstPart: 'Do you want to inactivate ',
+  gameInActivateDescriptionLastPart: ' game?',
+  multipleGameInActivateDescriptionLastPart: ' games?',
+
 
   legalEntity: 'Legal Entity',
   legalName: 'Legal Name',
