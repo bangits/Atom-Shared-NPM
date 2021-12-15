@@ -222,5 +222,10 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
-  users: 'Users'
+  users: 'Users',
+  emailOrUserName: 'E-mail/ User Name',
+  partnerOrBrandName:'Partner Brand Name',
+  lastUpdateDateTo:'Last Updated Date - To',
+  lastUpdateDateFrom:'Last Updated Date - From',
+  projects:'Projects'
 };
