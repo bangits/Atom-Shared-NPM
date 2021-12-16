@@ -173,7 +173,7 @@ export default {
   uniqueBrandName: 'Brand name is unique!',
   uniqueLegalName: 'Legal name is unique!',
   uniqueEmail: 'Email already exists!',
-  optional: 'Optional',
+  optional: '(Optional)',
   partnerManagement: 'Partner Management',
   partnerDetails: 'Partner Details',
   documentId: 'Document ID',
