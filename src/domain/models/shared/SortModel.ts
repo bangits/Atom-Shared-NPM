@@ -2,7 +2,7 @@ import { AutoMap } from '@automapper/classes';
 
 export class SortModel {
   @AutoMap()
-  sorting: {
+  sorting?: {
     direction: number;
     propertyId: string;
   };
