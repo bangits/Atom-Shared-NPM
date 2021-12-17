@@ -173,7 +173,7 @@ export default {
   uniqueBrandName: 'Brand name is unique!',
   uniqueLegalName: 'Legal name is unique!',
   uniqueEmail: 'Email already exists!',
-  optional: 'Optional',
+  optional: '(Optional)',
   partnerManagement: 'Partner Management',
   partnerDetails: 'Partner Details',
   documentId: 'Document ID',
@@ -240,5 +240,8 @@ export default {
   projects: 'Projects',
   providerDoesntHaveGames: "Provider doesn't have any game.",
   noDataFound: 'Sorry, no data found.',
-  search: 'Search'
+  search: 'Search',
+  blockedUser: 'The User is blocked. Please contact with support.',
+  accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
+  wrongUserNameOrPassword: 'Wrong Username of Password'
 };
