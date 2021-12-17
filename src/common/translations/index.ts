@@ -75,7 +75,7 @@ export default {
   providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
-  createdBy: 'Create By',
+  createdBy: 'Created By',
   status: 'Status',
   statuses: {
     yes: 'Yes',
@@ -217,7 +217,7 @@ export default {
   dateOfCreationDatepickers: 'Date of Creation From - To',
   dateOfCreationFrom: 'Date of Creation - From',
   dateOfCreationTo: 'Date of Creation - To',
-  lastUpdateBy: 'Last Update By',
+  lastUpdatedBy: 'Last Updated By',
   forever: 'Forever',
   temporary: 'Temporary',
   addUser: 'Add User',
