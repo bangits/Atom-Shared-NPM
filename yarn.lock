@@ -18,13 +18,13 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@^2.0.0":
-  version "2.0.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.0.0.tgz#83fc0aa5fa529424dd9dbce5f269c3a45a13120e"
-  integrity sha1-g/wKpfpSlCTdnbzl8mnDpFoTEg4=
+"@atom/design-system@^2.2.3":
+  version "2.2.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.3.tgz#b29c4fb69f9cdf4c062e3d89511871877ca062e3"
+  integrity sha1-spxPtp+c30wGLj2JURhxh3ygYuM=
   dependencies:
     "@atom/common" "^2.3.4"
-    "@my-ui/core" "^2.24.1"
+    "@my-ui/core" "^2.24.8"
     classnames "^2.3.1"
     react "^17.0.2"
     react-dom "^17.0.2"
@@ -1019,7 +1019,7 @@
     core-js-pure "^3.19.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.16.3", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.13.10", "@babel/runtime@^7.14.6", "@babel/runtime@^7.16.3", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.16.3"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
   integrity sha1-uG8NsCoEGHo8F8qnfeaYQBZdQtU=
@@ -1385,10 +1385,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.24.1":
-  version "2.24.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.24.1.tgz#643a5abd33c34461695b4efe871fa85835eda130"
-  integrity sha1-ZDpavTPDRGFpW07+hx+oWDXtoTA=
+"@my-ui/core@^2.24.8":
+  version "2.24.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.24.8.tgz#8ba476c242289eb0878d749c7af7b17fc1b61e43"
+  integrity sha1-i6R2wkIonrCHjXScevexf8G2HkM=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
