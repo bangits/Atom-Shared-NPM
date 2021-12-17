@@ -159,7 +159,6 @@ export default {
   gameInActivateDescriptionLastPart: ' game?',
   multipleGameInActivateDescriptionLastPart: ' games?',
 
-
   legalEntity: 'Legal Entity',
   legalName: 'Legal Name',
   brandName: 'Brand Name',
@@ -234,8 +233,11 @@ export default {
   lastUpdateDate: 'Last Update Date',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
-  partnerOrBrandName:'Partner Brand Name',
-  lastUpdateDateTo:'Last Updated Date - To',
-  lastUpdateDateFrom:'Last Updated Date - From',
-  projects:'Projects'
+  partnerOrBrandName: 'Partner Brand Name',
+  lastUpdateDateTo: 'Last Updated Date - To',
+  lastUpdateDateFrom: 'Last Updated Date - From',
+  projects: 'Projects',
+  blockedUser: 'The User is blocked. Please contact with support.',
+  accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
+  wrongUserNameOrPassword: 'Wrong Username of Password'
 };
