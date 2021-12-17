@@ -95,6 +95,7 @@ export default {
   blocked: 'Blocked',
   inActive: 'Inactive',
   removed: 'Removed',
+  expired: 'Expired',
   partnerId: 'Partner ID',
   gameCount: 'Game Count',
   gameCountFrom: 'Game Count From',
@@ -239,5 +240,6 @@ export default {
   projects: 'Projects',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
-  wrongUserNameOrPassword: 'Wrong Username of Password'
+  wrongUserNameOrPassword: 'Wrong Username of Password',
+  lastUpdate:'Last Update'
 };
