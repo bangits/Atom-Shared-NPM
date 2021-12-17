@@ -86,9 +86,9 @@ export default {
   gameTypes: 'Game Types',
   device: 'Device',
   currencies: 'Currencies',
-  supportedCurrencies: 'Supported currencies ',
-  certifiedCountries: 'Certified countries ',
-  restrictedCountries: 'Restricted countries',
+  supportedCurrencies: 'Supported Currencies ',
+  certifiedCountries: 'Certified Countries ',
+  restrictedCountries: 'Restricted Countries',
   uILanguages: 'UI languages ',
   operatingLanguages: 'Operating languages',
   active: 'Active',
@@ -244,5 +244,6 @@ export default {
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
-  wrongUserNameOrPassword: 'Wrong Username of Password'
+  wrongUserNameOrPassword: 'Wrong Username of Password',
+  lastUpdate:'Last Update'
 };
