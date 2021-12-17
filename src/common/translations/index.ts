@@ -15,8 +15,8 @@ export default {
     minSize: `Upload failed. Allowed min. size is ${TRANSLATION_CHANGED_VALUE} KB.`,
     maxWidth: `Upload failed. Allowed max. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
     minWidth: `Upload failed. Allowed min. width is ${TRANSLATION_CHANGED_VALUE} MB.`,
-    maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
-    minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE} MB.`,
+    maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE}px.`,
+    minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
@@ -93,6 +93,7 @@ export default {
   operatingLanguages: 'Operating languages',
   active: 'Active',
   blocked: 'Blocked',
+  expired: 'Expired',
   inActive: 'Inactive',
   removed: 'Removed',
   partnerId: 'Partner ID',
@@ -236,5 +237,8 @@ export default {
   partnerOrBrandName: 'Partner Brand Name',
   lastUpdateDateTo: 'Last Updated Date - To',
   lastUpdateDateFrom: 'Last Updated Date - From',
-  projects: 'Projects'
+  projects: 'Projects',
+  providerDoesntHaveGames: "Provider doesn't have any game.",
+  noDataFound: 'Sorry, no data found.',
+  search: 'Search'
 };
