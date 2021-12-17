@@ -96,7 +96,6 @@ export default {
   expired: 'Expired',
   inActive: 'Inactive',
   removed: 'Removed',
-  expired: 'Expired',
   partnerId: 'Partner ID',
   gameCount: 'Game Count',
   gameCountFrom: 'Game Count From',
