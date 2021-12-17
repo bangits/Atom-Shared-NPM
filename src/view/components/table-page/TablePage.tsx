@@ -1,3 +1,4 @@
+import { redirectToURL } from '@/atom-common';
 import { useLoading, useTranslation } from '@/view';
 import { DataTable, DataTableProps } from '@atom/design-system';
 import { useEffect, useMemo } from 'react';
@@ -10,6 +11,8 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isEmpty?: boolean;
   isFetching?: boolean;
   isFilteredData?: boolean;
+  getEditUrl?: (column: T) => string;
+  getViewUrl?: (column: T) => string;
 }
 
 export const TablePage = <T extends {}, K>({
@@ -18,6 +21,8 @@ export const TablePage = <T extends {}, K>({
   isEmpty = false,
   isFetching,
   isFilteredData,
+  getViewUrl,
+  getEditUrl,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
@@ -55,12 +60,41 @@ export const TablePage = <T extends {}, K>({
     [pageSizeDividerValue, props.rowCount]
   );
 
-  const tableProps = useMemo(
+  const tableProps = useMemo<typeof props.tableProps>(
     () => ({
       ...(props.tableProps || {}),
-      emptyValue: translations.get('emptyValue')
+      emptyValue: translations.get('emptyValue'),
+      actions: [
+        ...(props.tableProps.actions || []),
+        ...(getViewUrl
+          ? [
+              {
+                iconName: 'ViewIcon' as const,
+                onClick: (columns) => {
+                  if (Array.isArray(columns)) {
+                    columns.forEach((c) => window.open(getViewUrl(c), '_blank'));
+                  } else redirectToURL(getViewUrl(columns));
+                },
+                tooltipText: translations.get('view')
+              }
+            ]
+          : []),
+        ...(getViewUrl
+          ? [
+              {
+                iconName: 'EditIcon' as const,
+                onClick: (columns) => {
+                  if (Array.isArray(columns)) {
+                    columns.forEach((c) => window.open(getEditUrl(c), '_blank'));
+                  } else redirectToURL(getEditUrl(columns));
+                },
+                tooltipText: translations.get('edit')
+              }
+            ]
+          : [])
+      ]
     }),
-    [props.tableProps]
+    [props.tableProps, getViewUrl, getEditUrl]
   );
 
   useEffect(() => {

@@ -199,6 +199,7 @@ export default {
   parentCompanyId: 'Parent Company ID',
   expirationDate: 'Expiration Date',
   owner: 'Owner',
+  view: 'View',
   name: 'Name',
   ownershipCertificate: 'Ownership Certificate',
   companyDirector: 'Company Director',

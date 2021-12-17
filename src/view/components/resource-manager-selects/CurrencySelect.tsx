@@ -9,7 +9,7 @@ export const CurrencySelect = (props: Partial<CustomSelectProps>) => {
 
   const [currency, setCurrency] = useState<Currency[]>([]);
 
-  const selectOptions = useMemo(() => currency.map((c) => ({ value: c.id, label: c.name })), [currency]);
+  const selectOptions = useMemo(() => currency.map((c) => ({ value: c.id, label: c.code })), [currency]);
 
   useEffect(() => {
     resourceManagerUseCase
