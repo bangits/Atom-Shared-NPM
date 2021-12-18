@@ -75,6 +75,10 @@ export default {
   providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
+
+  creationDateFrom: 'Creation Date From',
+  creationDateTo: 'Creation Date To',
+
   createdBy: 'Created By',
   status: 'Status',
   statuses: {
