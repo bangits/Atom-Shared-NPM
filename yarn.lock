@@ -3,21 +3,44 @@
 
 
 "@atom/common@^2.3.4":
+<<<<<<< HEAD
   version "2.8.3"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
   integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
+=======
+<<<<<<< HEAD
+  version "2.8.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.2.tgz#e2fb7d82c46e211c2acf90dc9552849980fc7d92"
+  integrity sha1-4vt9gsRuIRwqz5DclVKEmYD8fZI=
+=======
+  version "2.8.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
+  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
+>>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
+>>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
   dependencies:
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     axios "^0.23.0"
     dayjs "^1.10.7"
     formik "^2.2.9"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    moment "^2.29.1"
+=======
+>>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
+>>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
     query-string "^7.0.1"
     react "^17.0.2"
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
+<<<<<<< HEAD
 "@atom/design-system@^2.2.6":
+=======
+"@atom/design-system@^2.2.3":
+>>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
   version "2.2.6"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.6.tgz#576519c87c1cd8c3372aea7e9cfcbbbb2a1d9bd1"
   integrity sha1-V2UZyHwc2MM3Kup+nPy7uyodm9E=

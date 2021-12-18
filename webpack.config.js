@@ -1,6 +1,7 @@
 const { merge } = require('webpack-merge');
 const singleSpaDefaults = require('webpack-config-single-spa-react-ts');
 const { configureSharedWebpack } = require('./webpack.shared');
+const packageJson = require('./package.json');
 
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
@@ -22,6 +23,6 @@ module.exports = (webpackConfigEnv, argv) => {
       hot: false,
       webSocketServer: false
     },
-    externals: [/^@atom/]
+    externals: [/^@atom/, ...packageJson.externalDeps]
   });
 };

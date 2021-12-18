@@ -75,6 +75,10 @@ export default {
   providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
+
+  creationDateFrom: 'Creation Date From',
+  creationDateTo: 'Creation Date To',
+
   createdBy: 'Created By',
   status: 'Status',
   statuses: {
@@ -98,6 +102,7 @@ export default {
   restrictedCountries: 'Restricted Countries',
   uILanguages: 'UI languages ',
   operatingLanguages: 'Operating languages',
+  selectDifferentDateTime: 'Please select a different date & time.',
   active: 'Active',
   blocked: 'Blocked',
   expired: 'Expired',
@@ -144,14 +149,14 @@ export default {
   submitButton: 'Approve',
   terminate: 'Terminate',
   terminatePartnershipFirstPart: 'Do you want to  terminate the partnership with ',
-  terminatePartnershipLastPart: ' partners?',
+  terminatePartnershipLastPart: ' partner?',
   multipleTerminatePartnershipLastPart: ' partners?',
 
   approvePartnershipFirstPart: 'Do you want to approve the partnership with ',
   approvePartnershipLastPart: ' partners?',
   multipleApprovePartnershipLastPart: ' partner?',
 
-  providerActivateDescirptionFirstPart: 'Do you want to activate ?',
+  providerActivateDescirptionFirstPart: 'Do you want to activate ',
   providerActivateDescirptionLastPart: ' provider?',
   multipleProviderActivateDescirptionLastPart: ' providers?',
 
@@ -241,6 +246,7 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
+  lastUpdateBy: 'Last Update By',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
   partnerOrBrandName: 'Partner Brand Name',
@@ -252,6 +258,6 @@ export default {
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
-  wrongUserNameOrPassword: 'Wrong Username of Password',
+  wrongUserNameOrPassword: 'Invalid User',
   lastUpdate: 'Last Update'
 };
