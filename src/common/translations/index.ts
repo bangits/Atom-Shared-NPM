@@ -233,7 +233,7 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
-  lastUpdateDateBy: 'Last Update Date By',
+  lastUpdateBy: 'Last Update By',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
   partnerOrBrandName: 'Partner Brand Name',
