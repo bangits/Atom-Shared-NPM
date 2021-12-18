@@ -137,14 +137,14 @@ export default {
   submitButton: 'Approve',
   terminate: 'Terminate',
   terminatePartnershipFirstPart: 'Do you want to  terminate the partnership with ',
-  terminatePartnershipLastPart: ' partners?',
+  terminatePartnershipLastPart: ' partner?',
   multipleTerminatePartnershipLastPart: ' partners?',
 
   approvePartnershipFirstPart: 'Do you want to approve the partnership with ',
   approvePartnershipLastPart: ' partners?',
   multipleApprovePartnershipLastPart: ' partner?',
 
-  providerActivateDescirptionFirstPart: 'Do you want to activate ?',
+  providerActivateDescirptionFirstPart: 'Do you want to activate ',
   providerActivateDescirptionLastPart: ' provider?',
   multipleProviderActivateDescirptionLastPart: ' providers?',
 
