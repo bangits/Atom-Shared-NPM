@@ -1,13 +1,14 @@
 import { redirectToURL } from '@/atom-common';
 import { useLoading, useTranslation } from '@/view';
 import { DataTable, DataTableProps } from '@atom/design-system';
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
   rowCount: number;
   defaultPageSizeValue?: number;
   pageSizeDividerValue?: number;
+  maxViewOrEditColumnsCount?: number;
   isEmpty?: boolean;
   isFetching?: boolean;
   isFilteredData?: boolean;
@@ -23,9 +24,12 @@ export const TablePage = <T extends {}, K>({
   isFilteredData,
   getViewUrl,
   getEditUrl,
+  maxViewOrEditColumnsCount = 50,
   ...props
 }: TablePageProps<T, K>) => {
   const translations = useTranslation();
+
+  const [selectedColumnsLength, setSelectedColumnsLength] = useState(0);
 
   const changeLoading = useLoading();
 
@@ -50,12 +54,20 @@ export const TablePage = <T extends {}, K>({
         value: defaultPageSizeValue,
         label: defaultPageSizeValue.toString()
       },
-      ...(props.rowCount
-        ? new Array(Math.ceil(props.rowCount / pageSizeDividerValue)).fill(null).map((_, index) => ({
-            value: (index + 1) * pageSizeDividerValue,
-            label: ((index + 1) * pageSizeDividerValue).toString()
-          }))
-        : [])
+      {
+        value: 50,
+        label: '50'
+      },
+      {
+        value: 100,
+        label: '100'
+      }
+      // ...(props.rowCount
+      //   ? new Array(Math.ceil(props.rowCount / pageSizeDividerValue)).fill(null).map((_, index) => ({
+      //       value: (index + 1) * pageSizeDividerValue,
+      //       label: ((index + 1) * pageSizeDividerValue).toString()
+      //     }))
+      //   : [])
     ],
     [pageSizeDividerValue, props.rowCount]
   );
@@ -66,7 +78,7 @@ export const TablePage = <T extends {}, K>({
       emptyValue: translations.get('emptyValue'),
       actions: [
         ...(props.tableProps.actions || []),
-        ...(getViewUrl
+        ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
           ? [
               {
                 iconName: 'ViewIcon' as const,
@@ -79,7 +91,7 @@ export const TablePage = <T extends {}, K>({
               }
             ]
           : []),
-        ...(getViewUrl
+        ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
           ? [
               {
                 iconName: 'EditIcon' as const,
@@ -93,9 +105,9 @@ export const TablePage = <T extends {}, K>({
             ]
           : [])
       ],
-      onSelectedColumnsChange: console.log
+      onSelectedColumnsChange: (columns) => setSelectedColumnsLength(columns.length)
     }),
-    [props.tableProps, getViewUrl, getEditUrl]
+    [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength]
   );
 
   useEffect(() => {
