@@ -233,6 +233,7 @@ export default {
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
+  lastUpdateDateBy: 'Last Update Date By',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
   partnerOrBrandName: 'Partner Brand Name',
@@ -244,6 +245,6 @@ export default {
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
-  wrongUserNameOrPassword: 'Wrong Username or Password',
-  lastUpdate:'Last Update'
+  wrongUserNameOrPassword: 'Invalid User',
+  lastUpdate: 'Last Update'
 };
