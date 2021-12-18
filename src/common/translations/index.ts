@@ -85,6 +85,13 @@ export default {
   gameFeatures: 'Feature',
   gameTypes: 'Game Types',
   device: 'Device',
+  devices: 'Devices',
+  desktop: "Desktop",
+  tablet: "Tablet",
+  uiLanguages: 'uiLanguages',
+  tableScreenMode: 'Table Screen Mode',
+  landscape: "Landscape",
+  portrait: 'Portrait',
   currencies: 'Currencies',
   supportedCurrencies: 'Supported Currencies ',
   certifiedCountries: 'Certified Countries ',
@@ -230,6 +237,7 @@ export default {
   email: 'E-mail (Username)',
   fullName: 'Full Name',
   mobile: 'Mobile',
+  mobileScreenMode: "Mobile Screen Mode",
   language: 'Language',
   currency: 'Currency',
   lastUpdateDate: 'Last Update Date',
@@ -245,5 +253,5 @@ export default {
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Wrong Username of Password',
-  lastUpdate:'Last Update'
+  lastUpdate: 'Last Update'
 };
