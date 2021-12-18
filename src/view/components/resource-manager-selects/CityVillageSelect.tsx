@@ -5,7 +5,7 @@ import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
 export interface CityVillageSelectProps extends Partial<CustomSelectProps> {
-  regionId: number;
+  regionId: number | number[];
   isCity: boolean;
 }
 
@@ -17,11 +17,11 @@ export const CityVillageSelect = ({ isCity, regionId, ...selectProps }: CityVill
   const selectOptions = useMemo(() => citiesVillages.map((c) => ({ value: c.id, label: c.name })), [citiesVillages]);
 
   useEffect(() => {
-    if (!regionId) return;
+    if (!regionId || (Array.isArray(regionId) && !regionId.length)) return;
 
     resourceManagerUseCase
       .getCityVillage({
-        regionId,
+        regionIds: Array.isArray(regionId) ? regionId : [regionId],
         isCity,
         filterName: null,
         pageNumber: 1,

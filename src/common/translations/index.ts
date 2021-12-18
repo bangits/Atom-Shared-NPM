@@ -75,6 +75,10 @@ export default {
   providerId: 'Provider ID',
   subtype: 'SubType',
   creationDate: 'Creation Date',
+
+  creationDateFrom: 'Creation Date From',
+  creationDateTo: 'Creation Date To',
+
   createdBy: 'Created By',
   status: 'Status',
   statuses: {
@@ -91,6 +95,7 @@ export default {
   restrictedCountries: 'Restricted Countries',
   uILanguages: 'UI languages ',
   operatingLanguages: 'Operating languages',
+  selectDifferentDateTime: 'Please select a different date & time.',
   active: 'Active',
   blocked: 'Blocked',
   expired: 'Expired',
