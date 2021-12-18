@@ -5,7 +5,7 @@ import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
 export interface RegionSelectProps extends Omit<CustomSelectProps, 'options'> {
-  countryId?: number;
+  countryId?: number | number[];
 }
 
 export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelectProps>) => {
@@ -13,14 +13,14 @@ export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelect
 
   const [regions, setRegions] = useState<Region[]>([]);
 
-  const selectOption = useMemo(() => regions.map((p) => ({ value: p.id, label: p.name })), [regions])
+  const selectOption = useMemo(() => regions.map((p) => ({ value: p.id, label: p.name })), [regions]);
 
   useEffect(() => {
-    if(!countryId) return;
+    if (!countryId || (Array.isArray(countryId) && !countryId.length)) return;
 
     resourceManagerUseCase
       .getRegion({
-        countryId,
+        countryIds: Array.isArray(countryId) ? countryId : [countryId],
         filterName: null,
         pageNumber: 1,
         pageSize: MAX_PAGE_SIZE
@@ -32,5 +32,5 @@ export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelect
     <>
       <CustomSelect {...selectProps} options={selectOption} />
     </>
-  ); 
+  );
 };

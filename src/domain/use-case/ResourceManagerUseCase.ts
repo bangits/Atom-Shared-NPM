@@ -2,6 +2,7 @@ import { DI_CONSTANTS } from '@/di/constants';
 import { inject, injectable } from 'inversify';
 import { IResourceManagerRepository } from '../boundaries';
 import {
+  CityFilterRequestModel,
   CityVillageFilterRequestModel,
   FilterRequestModel,
   GetCityVillageResponseModel,
@@ -20,7 +21,7 @@ export class ResourceManagerUseCase {
   @inject(DI_CONSTANTS.ResourceManagerRepository)
   private readonly resourceManagerRepository: IResourceManagerRepository;
 
-  getCountries = async (getCountriesRequestModel: FilterRequestModel): Promise<GetCountriesResponseModel> => {
+  getCountries = async (getCountriesRequestModel: CityFilterRequestModel): Promise<GetCountriesResponseModel> => {
     return this.resourceManagerRepository.getCountries(getCountriesRequestModel);
   };
 
