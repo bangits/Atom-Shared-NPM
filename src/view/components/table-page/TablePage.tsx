@@ -92,7 +92,8 @@ export const TablePage = <T extends {}, K>({
               }
             ]
           : [])
-      ]
+      ],
+      onSelectedColumnsChange: console.log
     }),
     [props.tableProps, getViewUrl, getEditUrl]
   );
