@@ -137,14 +137,14 @@ export default {
   submitButton: 'Approve',
   terminate: 'Terminate',
   terminatePartnershipFirstPart: 'Do you want to  terminate the partnership with ',
-  terminatePartnershipLastPart: ' partners?',
+  terminatePartnershipLastPart: ' partner?',
   multipleTerminatePartnershipLastPart: ' partners?',
 
   approvePartnershipFirstPart: 'Do you want to approve the partnership with ',
   approvePartnershipLastPart: ' partners?',
   multipleApprovePartnershipLastPart: ' partner?',
 
-  providerActivateDescirptionFirstPart: 'Do you want to activate ?',
+  providerActivateDescirptionFirstPart: 'Do you want to activate ',
   providerActivateDescirptionLastPart: ' provider?',
   multipleProviderActivateDescirptionLastPart: ' providers?',
 
@@ -245,5 +245,5 @@ export default {
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Wrong Username of Password',
-  lastUpdate:'Last Update'
+  lastUpdate: 'Last Update'
 };
