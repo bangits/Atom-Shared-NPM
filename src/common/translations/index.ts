@@ -95,6 +95,7 @@ export default {
   restrictedCountries: 'Restricted Countries',
   uILanguages: 'UI languages ',
   operatingLanguages: 'Operating languages',
+  selectDifferentDateTime: 'Please select a different date & time.',
   active: 'Active',
   blocked: 'Blocked',
   expired: 'Expired',
