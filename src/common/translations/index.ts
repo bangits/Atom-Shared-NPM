@@ -259,5 +259,7 @@ export default {
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Invalid User',
-  lastUpdate: 'Last Update'
+  lastUpdate: 'Last Update',
+  uniqueGameName:'Game already exists!'
+  
 };
