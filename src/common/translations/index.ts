@@ -125,7 +125,9 @@ export default {
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
   youDontHavePartnersAdded: 'You don’t have any partners added!',
+  youDontHaveUsersAdded: 'You don’t have any users added!',
   pleaseAddPartner: 'Please add a partner.',
+  pleaseAddUser: 'Please add a user.',
   pagination: {
     pageSizeLabel: 'Row per page: ',
     jumpToPageLabel: 'Jump to page',

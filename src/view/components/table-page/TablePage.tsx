@@ -124,7 +124,6 @@ export const TablePage = <T extends {}, K>({
     <>
       <DataTable
         {...props}
-        isShowedPagination={props.rowCount > defaultPageSizeValue}
         rowCount={props.rowCount}
         filtersDropdownProps={{
           selectAll: true,

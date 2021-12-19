@@ -13,21 +13,6 @@ const App = () => {
       <AlertContainer autoCloseDelay={ALERT_CLOSE_DELAY} autoClose />
 
       <DialogProvider />
-
-      {/* <FileUploader
-        tooltipProps={{
-          tooltipText: 'How?'
-        }}
-        dragFileText='Drag file here '
-        browseText='Browse'
-        errorMessage='Required field'
-        labelProps={{
-          text: 'File',
-          optional: true,
-          optionalText: '(optional)'
-        }}
-        onChange={console.log}
-      /> */}
     </AtomCommonProvider>
   );
 };
