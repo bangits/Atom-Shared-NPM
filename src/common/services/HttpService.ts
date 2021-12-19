@@ -1,4 +1,4 @@
-import { stringifyQuery } from '@/common/helpers';
+import { replaceEmptyStringsWithNull, stringifyQuery } from '@/common/helpers';
 import { serverErrorHandler } from '@/view/error-handlers';
 import axios, { AxiosInstance, AxiosRequestConfig, Method } from 'axios';
 import { injectable } from 'inversify';
@@ -58,6 +58,8 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
+    if (httpRequest.body) httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
+
     return (
       await this.instance[method](
         `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
