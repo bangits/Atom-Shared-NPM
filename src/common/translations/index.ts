@@ -136,7 +136,9 @@ export default {
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
   youDontHavePartnersAdded: 'You don’t have any partners added!',
+  youDontHaveUsersAdded: 'You don’t have any users added!',
   pleaseAddPartner: 'Please add a partner.',
+  pleaseAddUser: 'Please add a user.',
   pagination: {
     pageSizeLabel: 'Row per page: ',
     jumpToPageLabel: 'Jump to page',
@@ -264,5 +266,7 @@ export default {
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Invalid User',
-  lastUpdate: 'Last Update'
+  lastUpdate: 'Last Update',
+  uniqueGameName:'Game already exists!'
+  
 };
