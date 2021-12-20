@@ -4,6 +4,7 @@ export default {
   country: 'Country',
   countries: 'Countries',
   region: 'Region',
+  id: "ID",
   city: 'City',
   all: 'All',
   edit: 'Edit',
@@ -56,6 +57,9 @@ export default {
   copied: 'Copied!',
   externalId: 'External ID',
   gameName: 'Game Name',
+  maxWin: 'Max Win',
+  gameDetails: "Game Details",
+  gameManagement: 'Game Management',
   subType: 'Sub Type',
   releaseDate: 'Release Date',
   rtp: 'RTP %',
@@ -111,6 +115,7 @@ export default {
   partnerId: 'Partner ID',
   gameCount: 'Game Count',
   gameCountFrom: 'Game Count From',
+  gameInformation: 'Game Information',
   gameCountTo: 'Game Count To',
   totalGameCount: 'Total Game Count',
   totalMarket: 'Total Market',
@@ -124,6 +129,9 @@ export default {
   notCompleted: 'Not Completed',
   clear: 'Clear',
   apply: 'Apply',
+  assets: 'Assets',
+  play: 'Play',
+  playDemo: 'Play Demo',
   add: 'Add',
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
@@ -174,12 +182,14 @@ export default {
   gameInActivateDescriptionLastPart: ' game?',
   multipleGameInActivateDescriptionLastPart: ' games?',
 
+  compatibility: 'Compatibility',
   legalEntity: 'Legal Entity',
   legalName: 'Legal Name',
   brandName: 'Brand Name',
   businessActivity: 'Business Activity',
   companyType: 'Company Type',
   gamePlatforms: 'Device',
+  gameProperties: 'Game Properties',
   main: 'Main',
   subsidiary: 'Subsidiary',
   companyLogoType: 'Company Logotype',
@@ -209,6 +219,7 @@ export default {
   bankInformation: 'Bank Information',
   managersContactInformation: 'Managers Contact Information',
   viewMore: 'View More',
+  viewLess: 'View Less',
   noData: 'N/A',
   parentCompanyId: 'Parent Company ID',
   expirationDate: 'Expiration Date',
@@ -261,5 +272,7 @@ export default {
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Invalid User',
-  lastUpdate: 'Last Update'
+  lastUpdate: 'Last Update',
+  uniqueGameName:'Game already exists!'
+  
 };
