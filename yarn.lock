@@ -3,95 +3,24 @@
 
 
 "@atom/common@^2.3.4":
-<<<<<<< HEAD
   version "2.8.6"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.6.tgz#c234d252b6de66e64114df34f162e71ae4af8422"
   integrity sha1-wjTSUrbeZuZBFN808WLnGuSvhCI=
-=======
-<<<<<<< HEAD
-  version "2.8.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.6.tgz#c234d252b6de66e64114df34f162e71ae4af8422"
-  integrity sha1-wjTSUrbeZuZBFN808WLnGuSvhCI=
-=======
-<<<<<<< HEAD
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
-=======
-<<<<<<< HEAD
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
-=======
-<<<<<<< HEAD
-  version "2.8.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.2.tgz#e2fb7d82c46e211c2acf90dc9552849980fc7d92"
-  integrity sha1-4vt9gsRuIRwqz5DclVKEmYD8fZI=
-=======
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
->>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
->>>>>>> b9b2ba38481c45ff5509adab245bd64953d0cbd9
->>>>>>> 9c6131d39d3f367bafdeb8831503b5f20a55376d
   dependencies:
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     axios "^0.23.0"
     dayjs "^1.10.7"
     formik "^2.2.9"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    moment "^2.29.1"
-=======
->>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
->>>>>>> b9b2ba38481c45ff5509adab245bd64953d0cbd9
->>>>>>> 9c6131d39d3f367bafdeb8831503b5f20a55376d
     query-string "^7.0.1"
     react "^17.0.2"
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-<<<<<<< HEAD
-"@atom/design-system@^2.2.14":
+"@atom/design-system@^2.3.2":
   version "2.3.2"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.2.tgz#4c6638fee5b42c8f6ab7e3803583e92000f5d7cf"
   integrity sha1-TGY4/uW0LI9qt+OANYPpIAD1188=
-=======
-<<<<<<< HEAD
-"@atom/design-system@^2.2.17":
-  version "2.2.17"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.17.tgz#91ca72c9c00222beeecb1122ee602ea937570321"
-  integrity sha1-kcpyycACIr7uyxEi7mAuqTdXAyE=
-=======
-<<<<<<< HEAD
-"@atom/design-system@^2.2.14":
-  version "2.2.14"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.14.tgz#019a9fcf9a83bbdade74e7eb552eaff406c2245f"
-  integrity sha1-AZqfz5qDu9redOfrVS6v9AbCJF8=
-=======
-<<<<<<< HEAD
-"@atom/design-system@^2.2.6":
-=======
-"@atom/design-system@^2.2.3":
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
-  version "2.2.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.6.tgz#576519c87c1cd8c3372aea7e9cfcbbbb2a1d9bd1"
-  integrity sha1-V2UZyHwc2MM3Kup+nPy7uyodm9E=
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
->>>>>>> b9b2ba38481c45ff5509adab245bd64953d0cbd9
->>>>>>> 9c6131d39d3f367bafdeb8831503b5f20a55376d
   dependencies:
     "@atom/common" "^2.3.4"
     "@my-ui/core" "^2.26.22"
@@ -1460,10 +1389,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.26.22", "@my-ui/core@^2.26.23":
-  version "2.26.23"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.23.tgz#b21edfce74086fdb0d0c518801175b83f1ece807"
-  integrity sha1-sh7fznQIb9sNDFGIARdbg/Hs6Ac=
+"@my-ui/core@^2.26.22":
+  version "2.26.24"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.24.tgz#2e54dd270a51476a147073c59740cb2cfcf64927"
+  integrity sha1-LlTdJwpRR2oUcHPFl0DLLPz2SSc=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

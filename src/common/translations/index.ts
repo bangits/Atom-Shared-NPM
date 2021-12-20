@@ -96,7 +96,7 @@ export default {
   devices: 'Devices',
   desktop: "Desktop",
   tablet: "Tablet",
-  uiLanguages: 'uiLanguages',
+  uiLanguages: 'UI Languages',
   tableScreenMode: 'Table Screen Mode',
   landscape: "Landscape",
   portrait: 'Portrait',
