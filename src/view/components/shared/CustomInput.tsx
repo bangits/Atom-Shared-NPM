@@ -1,4 +1,4 @@
-import { TextInput, TextInputProps } from '@my-ui/core';
+import { TextInput, TextInputProps } from '@atom/design-system';
 
 export function CustomTextInput(props: TextInputProps) {
   return (

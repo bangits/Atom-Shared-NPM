@@ -3,81 +3,43 @@
 
 
 "@atom/common@^2.3.4":
-<<<<<<< HEAD
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
-=======
-<<<<<<< HEAD
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
-=======
-<<<<<<< HEAD
-  version "2.8.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.2.tgz#e2fb7d82c46e211c2acf90dc9552849980fc7d92"
-  integrity sha1-4vt9gsRuIRwqz5DclVKEmYD8fZI=
-=======
-  version "2.8.3"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.3.tgz#9a15eb84dab3b76e296ff3828f98bc935fa4690a"
-  integrity sha1-mhXrhNqzt24pb/OCj5i8k1+kaQo=
->>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
+  version "2.8.6"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/common/-/common-2.8.6.tgz#c234d252b6de66e64114df34f162e71ae4af8422"
+  integrity sha1-wjTSUrbeZuZBFN808WLnGuSvhCI=
   dependencies:
     "@automapper/classes" "^7.0.2"
     "@automapper/core" "^7.0.2"
     axios "^0.23.0"
     dayjs "^1.10.7"
     formik "^2.2.9"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    moment "^2.29.1"
-=======
->>>>>>> c9fc4fdccd07733f1053f88540afcbf2b0966e2f
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
     query-string "^7.0.1"
     react "^17.0.2"
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-<<<<<<< HEAD
 "@atom/design-system@^2.2.14":
-  version "2.2.14"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.14.tgz#019a9fcf9a83bbdade74e7eb552eaff406c2245f"
-  integrity sha1-AZqfz5qDu9redOfrVS6v9AbCJF8=
-=======
-<<<<<<< HEAD
-"@atom/design-system@^2.2.6":
-=======
-"@atom/design-system@^2.2.3":
->>>>>>> b0a950544b97e33704f7ee457c8e7f750fbf212e
-  version "2.2.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.2.6.tgz#576519c87c1cd8c3372aea7e9cfcbbbb2a1d9bd1"
-  integrity sha1-V2UZyHwc2MM3Kup+nPy7uyodm9E=
->>>>>>> cfa481ec03b91c431ffd800f139afb3a1e8be727
+  version "2.3.2"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.2.tgz#4c6638fee5b42c8f6ab7e3803583e92000f5d7cf"
+  integrity sha1-TGY4/uW0LI9qt+OANYPpIAD1188=
   dependencies:
     "@atom/common" "^2.3.4"
-    "@my-ui/core" "^2.26.18"
+    "@my-ui/core" "^2.26.22"
     classnames "^2.3.1"
     react "^17.0.2"
+    react-cropper "^2.1.8"
     react-dom "^17.0.2"
     react-jss "^10.8.2"
     react-sortable-hoc "^2.0.0"
 
 "@automapper/classes@^7.0.2":
-  version "7.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@automapper/classes/-/classes-7.0.2.tgz#f50ce041938a23259f743d9e78c73c570a6deecd"
-  integrity sha1-9QzgQZOKIyWfdD2eeMc8Vwpt7s0=
+  version "7.0.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@automapper/classes/-/classes-7.0.3.tgz#e29105ebb8f1248d04a20a3d6a2bf5c961c6d2b6"
+  integrity sha1-4pEF67jxJI0Eogo9aiv1yWHG0rY=
 
 "@automapper/core@^7.0.2":
-  version "7.0.2"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@automapper/core/-/core-7.0.2.tgz#6da0b7fe35a06ec9cc5755fe1dcd5b95326eb223"
-  integrity sha1-baC3/jWgbsnMV1X+Hc1blTJusiM=
+  version "7.0.3"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@automapper/core/-/core-7.0.3.tgz#5bc9f34d5d6b6721bc14613f94e3f1e0150abf88"
+  integrity sha1-W8nzTV1rZyG8FGE/lOPx4BUKv4g=
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
@@ -1427,10 +1389,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@my-ui/core@^2.26.18":
-  version "2.26.18"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.18.tgz#17ab69023d7db50d2dfd1c0a25b15a733a6b5ed2"
-  integrity sha1-F6tpAj19tQ0t/RwKJbFaczprXtI=
+"@my-ui/core@^2.26.22", "@my-ui/core@^2.26.23":
+  version "2.26.23"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.26.23.tgz#b21edfce74086fdb0d0c518801175b83f1ece807"
+  integrity sha1-sh7fznQIb9sNDFGIARdbg/Hs6Ac=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -1725,9 +1687,9 @@
   integrity sha1-7nceK6Sz3Fs3KTXVSf2WF780W4w=
 
 "@types/node@*":
-  version "17.0.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@types/node/-/node-17.0.0.tgz#62797cee3b8b497f6547503b2312254d4fe3c2bb"
-  integrity sha1-Ynl87juLSX9lR1A7IxIlTU/jwrs=
+  version "17.0.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
+  integrity sha1-iNUB6EthhfZIns7kup6Pzsfym7I=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -2755,9 +2717,9 @@ camelcase@^6.2.0:
   integrity sha1-JQ/TUM/VVdDSFgsdUVEOr4Mm6G4=
 
 caniuse-lite@^1.0.30001286:
-  version "1.0.30001289"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/caniuse-lite/-/caniuse-lite-1.0.30001289.tgz#d62a20175c4d9e740feda12a78b7c8df7866329e"
-  integrity sha1-1iogF1xNnnQP7aEqeLfI33hmMp4=
+  version "1.0.30001291"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/caniuse-lite/-/caniuse-lite-1.0.30001291.tgz#08a8d2cfea0b2cf2e1d94dd795942d0daef6108c"
+  integrity sha1-CKjSz+oLLPLh2U3XlZQtDa72EIw=
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3007,9 +2969,9 @@ concat-map@0.0.1:
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
 concurrently@^6.2.0:
-  version "6.5.0"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/concurrently/-/concurrently-6.5.0.tgz#57082bfe797f93cf4a437ce54742c56823a8ea05"
-  integrity sha1-Vwgr/nl/k89KQ3zlR0LFaCOo6gU=
+  version "6.5.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/concurrently/-/concurrently-6.5.1.tgz#4518c67f7ac680cf5c34d5adf399a2a2047edc8c"
+  integrity sha1-RRjGf3rGgM9cNNWt85miogR+3Iw=
   dependencies:
     chalk "^4.1.0"
     date-fns "^2.16.1"
@@ -3102,6 +3064,11 @@ cosmiconfig@^6.0.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.7.2"
+
+cropperjs@^1.5.12:
+  version "1.5.12"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/cropperjs/-/cropperjs-1.5.12.tgz#d9c0db2bfb8c0d769d51739e8f916bbc44e10f50"
+  integrity sha1-2cDbK/uMDXadUXOej5FrvEThD1A=
 
 cross-env@^7.0.3:
   version "7.0.3"
@@ -4848,9 +4815,9 @@ ignore@^4.0.3, ignore@^4.0.6:
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
 ignore@^5.1.4, ignore@^5.1.8:
-  version "5.1.9"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/ignore/-/ignore-5.1.9.tgz#9ec1a5cbe8e1446ec60d4420060d43aa6e7382fb"
-  integrity sha1-nsGly+jhRG7GDUQgBg1Dqm5zgvs=
+  version "5.2.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
+  integrity sha1-bTusj6f+DUXZ+b57rC/CeVd+NFo=
 
 immer@^9.0.7:
   version "9.0.7"
@@ -6629,9 +6596,9 @@ object-copy@^0.1.0:
     kind-of "^3.0.3"
 
 object-inspect@^1.11.0, object-inspect@^1.9.0:
-  version "1.11.1"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/object-inspect/-/object-inspect-1.11.1.tgz#d4bd7d7de54b9a75599f59a00bd698c1f1c6549b"
-  integrity sha1-1L19feVLmnVZn1mgC9aYwfHGVJs=
+  version "1.12.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/object-inspect/-/object-inspect-1.12.0.tgz#6e2c120e868fd1fd18cb4f18c31741d0d6e776f0"
+  integrity sha1-biwSDoaP0f0Yy08YwxdB0NbndvA=
 
 object-is@^1.0.1:
   version "1.1.5"
@@ -7173,6 +7140,13 @@ raw-body@2.4.2:
     http-errors "1.8.1"
     iconv-lite "0.4.24"
     unpipe "1.0.0"
+
+react-cropper@^2.1.8:
+  version "2.1.8"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/react-cropper/-/react-cropper-2.1.8.tgz#bf35a7de65769f8ad357e8ae884e791fe3fe9212"
+  integrity sha1-vzWn3mV2n4rTV+iuiE55H+P+khI=
+  dependencies:
+    cropperjs "^1.5.12"
 
 react-display-name@^0.2.4:
   version "0.2.5"
