@@ -58,7 +58,8 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    if (httpRequest.body) httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
+    if (httpRequest.body && !(httpRequest.body instanceof FormData))
+      httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
 
     return (
       await this.instance[method](
