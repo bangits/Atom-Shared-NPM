@@ -74,3 +74,5 @@ export class HttpService implements IHttpService {
 export const httpService = new HttpService({
   baseURL: enviromentService.get<string>('apiUrl')
 });
+
+export const setIdToken = (idToken: string) => (axios.defaults.headers.common['id_token'] = idToken);
