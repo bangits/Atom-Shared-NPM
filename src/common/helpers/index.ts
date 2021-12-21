@@ -1,6 +1,7 @@
 export * from './asyncForeach';
 export * from './cachedFn';
 export * from './cancellableRequest';
+export * from './convertToDecimalNumberFixed2';
 export * from './copyToClipboard';
 export * from './dateConverter';
 export * from './delay';
