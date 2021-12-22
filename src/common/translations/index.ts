@@ -21,6 +21,11 @@ export default {
     acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
+  upload: 'Upload',
+  rotate: 'Rotate',
+  gameBackground: 'Game background',
+  gameLogo: 'Game logo',
+  pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
@@ -112,6 +117,7 @@ export default {
   expired: 'Expired',
   inActive: 'Inactive',
   removed: 'Removed',
+  remove: 'Remove',
   partnerId: 'Partner ID',
   gameCount: 'Game Count',
   gameCountFrom: 'Game Count From',

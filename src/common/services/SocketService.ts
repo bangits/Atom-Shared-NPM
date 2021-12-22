@@ -1,4 +1,10 @@
-import { HubConnection, HubConnectionBuilder, HubConnectionState, LogLevel } from '@microsoft/signalr';
+import {
+  HttpTransportType,
+  HubConnection,
+  HubConnectionBuilder,
+  HubConnectionState,
+  LogLevel
+} from '@microsoft/signalr';
 
 export interface ISocketService {
   connect: (hubName: string) => Promise<void>;
@@ -46,7 +52,10 @@ export class SocketService implements ISocketService {
     if (this.socket && this.socket?.state !== HubConnectionState.Disconnected) return;
 
     const socket: HubConnection = new HubConnectionBuilder()
-      .withUrl(`${this.baseUrl}${hubName}`)
+      .withUrl(`${this.baseUrl}${hubName}`, {
+        skipNegotiation: true,
+        transport: HttpTransportType.WebSockets
+      })
       .withAutomaticReconnect()
       .configureLogging(LogLevel.Information)
       .build();
