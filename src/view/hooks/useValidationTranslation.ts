@@ -12,6 +12,7 @@ export interface UseValidationTranslationReturnValue {
   maxNumber(value: number): string;
   email(): string;
   website(): string;
+  phoneCodeRequired(): string;
 }
 
 export const useValidationTranslation = (): UseValidationTranslationReturnValue => {
@@ -26,7 +27,8 @@ export const useValidationTranslation = (): UseValidationTranslationReturnValue 
       maxNumber: (value: number) => t.get('validations.maxNumber').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       email: () => t.get('validations.email'),
       maxValue: (value: number) => t.get('validations.maxValue').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
-      website: () => t.get('validations.website')
+      website: () => t.get('validations.website'),
+      phoneCodeRequired: () => t.get('validations.phoneCodeRequired'),
     }),
     [t]
   );

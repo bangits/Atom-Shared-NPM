@@ -35,7 +35,8 @@ export default {
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Enter an E-mail address into correct format, example: someone@website.com',
-    website: 'Enter an Website into correct format, example: https://www.website.com'
+    website: 'Enter an Website into correct format, example: https://www.website.com',
+    phoneCodeRequired: "Phone Code Is Required"
   },
   username: 'Email or Username',
   password: 'Password',
