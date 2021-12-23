@@ -148,6 +148,8 @@ export default {
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
   youDontHavePartnersAdded: 'You don’t have any partners added!',
+  pleaseAddGame: 'Please add a game.',
+  youDontHaveGameAdded: 'You don’t have any games added!',
   youDontHaveUsersAdded: 'You don’t have any users added!',
   pleaseAddPartner: 'Please add a partner.',
   pleaseAddUser: 'Please add a user.',
@@ -302,6 +304,5 @@ export default {
   addressOfRegistration: 'Address Of Registration',
   countryOfRegistration: 'Country Of Registration',
   zipCodeOfRegistration: 'ZIP Code Of Registration',
-  cityVillage: 'City/Village',
-  
+  cityVillage: 'City/Village'
 };
