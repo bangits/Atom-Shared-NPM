@@ -186,9 +186,19 @@ export default {
   gameActivateDescriptionLastPart: ' game?',
   multipleGameActivateDescriptionLastPart: ' games?',
 
+
   gameInActivateDescriptionFirstPart: 'Do you want to inactivate ',
   gameInActivateDescriptionLastPart: ' game?',
   multipleGameInActivateDescriptionLastPart: ' games?',
+
+  //users
+  userBlockDescriptionFirstPart: 'Do you want to block ',
+  userBlockDescriptionLastPart: ' user?',
+  multipleUserBlockDescriptionLastPart: ' users?',
+
+  userUnBlockDescriptionFirstPart: 'Do you want to unBlock ',
+  userUnBlockDescriptionLastPart: ' user?',
+  multipleUserUnBlockDescriptionLastPart: ' users?',
 
   compatibility: 'Compatibility',
   legalEntity: 'Legal Entity',
@@ -218,7 +228,7 @@ export default {
   bankAccountNumber: 'Bank Account Number',
   correspondentNumber: 'Correspondent Number',
   iban: 'IBAN',
-  bicSwift: 'BiC/Swift',
+  bicSwift: 'BiC/SWIFT',
   telephone: 'Telephone',
   mobileNumber: 'Mobile Number',
   eMail: 'E-mail',
@@ -260,7 +270,10 @@ export default {
   dateOfCreation: 'Date of Creation',
   dateOfUpdate: 'Date of Update',
   userId: 'User ID',
-  email: 'E-mail (Username)',
+  uniqueUserId: 'The Unique/ User ID',
+
+  email: 'E-mail (User Name)',
+  onlyEmail: 'E-mail',
   fullName: 'Full Name',
   mobile: 'Mobile',
   mobileScreenMode: 'Mobile Screen Mode',
@@ -282,8 +295,8 @@ export default {
   wrongUserNameOrPassword: 'Invalid User',
   lastUpdate: 'Last Update',
   uniqueGameName: 'Game already exists!',
-  lastLoginDate: 'Last Login Date',
-  lastLoginIp: 'Last Login IP',
+  lastLoginDate: 'Last Login Date:',
+  lastLoginIp: 'Last Login IP:',
   registeredFromIp: 'Registered From IP',
   personalInformation: 'Personal Information',
   identityInformation: 'Identity Information',
@@ -295,6 +308,7 @@ export default {
   gender: 'Gender',
   dateOfBirth: 'Date Of Birth',
   documentType: 'Document Type',
+  passportIdNumber: 'Passport ID / Number',
   passport: 'Passport',
   idCard: 'ID Card',
   idIssuer: 'ID Issuer',
@@ -302,7 +316,9 @@ export default {
   validationLevel: 'Validation Level',
   addressOfRegistration: 'Address Of Registration',
   countryOfRegistration: 'Country Of Registration',
-  zipCodeOfRegistration: 'ZIP Code Of Registration',
+  zipCodeOfRegistration: 'Zip Of Registration',
   cityVillage: 'City/Village',
-  
+  registeredFormIp: 'Registered From IP:',
+  block: 'Block',
+  unBlock: 'Unblock'
 };

@@ -18,7 +18,9 @@ export const CityVillageSelect = ({ isCity, regionId, ...selectProps }: CityVill
 
   useEffect(() => {
     if (!regionId || (Array.isArray(regionId) && !regionId.length)) {
-      return setCitiesVillages([]);
+      setCitiesVillages([]);
+
+      return;
     }
 
     resourceManagerUseCase
