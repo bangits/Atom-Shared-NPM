@@ -294,6 +294,7 @@ export default {
   dateOfBirth: 'Date Of Birth',
   documentType: 'Document Type',
   passport: 'Passport',
+  idCard: 'ID Card',
   idIssuer: 'ID Issuer',
   idIssuerDate: 'ID Issue Date',
   validationLevel: 'Validation Level',
