@@ -25,6 +25,8 @@ export default {
   rotate: 'Rotate',
   gameBackground: 'Game background',
   gameLogo: 'Game logo',
+  providerLogo: 'Provider logo',
+  partnerLogo: 'Partner logo',
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
@@ -53,7 +55,7 @@ export default {
   providerName: 'Provider Name',
   provider: 'Provider',
   providerManagement: 'Provider Management',
-  novomaticDetails: 'Novomatic Details',
+  details: 'Details',
   approve: 'Approve',
   save: 'Save',
   cancel: 'Cancel',

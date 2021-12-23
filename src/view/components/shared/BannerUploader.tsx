@@ -1,4 +1,4 @@
-import { AtomCommonContext, convertBase64ToFile } from '@/atom-common';
+import { AtomCommonContext, convertBase64ToFile, optimizeBase64 } from '@/atom-common';
 import { useTranslation } from '@/view';
 import {
   BannerUploader as DesignSystemBannerUploader,
@@ -10,7 +10,9 @@ export interface BannerUploaderProps {
   onChange: (imageSrc: string) => void;
   minCropBoxHeight?: number;
   minCropBoxWidth?: number;
+  aspectRatio?: number;
   initialImage?: string;
+  accept?: string;
   title: string;
   children: DesignSystemBannerUploaderProps['children'];
 }
@@ -21,7 +23,9 @@ export const BannerUploader: FC<BannerUploaderProps> = ({
   minCropBoxWidth,
   initialImage,
   title,
-  children
+  children,
+  aspectRatio,
+  accept
 }) => {
   const { fileManagerUseCase } = useContext(AtomCommonContext);
 
@@ -45,7 +49,9 @@ export const BannerUploader: FC<BannerUploaderProps> = ({
         }}
         onDelete={() => onChange(null)}
         onSave={async (base64Source) => {
-          const file = await convertBase64ToFile(base64Source);
+          const optimizedBase64 = await optimizeBase64(base64Source);
+
+          const file = await convertBase64ToFile(optimizedBase64);
 
           fileManagerUseCase
             .uploadFile(file, console.log)
@@ -54,7 +60,9 @@ export const BannerUploader: FC<BannerUploaderProps> = ({
               // setUploadedFileError(t.get('fileUploader.serverError'));
               // setForceShowUploader(false);
             });
-        }}>
+        }}
+        aspectRatio={aspectRatio}
+        accept={accept}>
         {children}
       </DesignSystemBannerUploader>
     </>
