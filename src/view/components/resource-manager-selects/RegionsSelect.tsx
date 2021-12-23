@@ -16,7 +16,11 @@ export const RegionSelect = ({ countryId, ...selectProps }: Partial<RegionSelect
   const selectOption = useMemo(() => regions.map((p) => ({ value: p.id, label: p.name })), [regions]);
 
   useEffect(() => {
-    if (!countryId || (Array.isArray(countryId) && !countryId.length)) return;
+    if (!countryId || (Array.isArray(countryId) && !countryId.length)) {
+      setRegions([]);
+
+      return;
+    }
 
     resourceManagerUseCase
       .getRegion({
