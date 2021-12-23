@@ -75,4 +75,4 @@ export const httpService = new HttpService({
   baseURL: enviromentService.get<string>('apiUrl')
 });
 
-export const setIdToken = (idToken: string) => (axios.defaults.headers.common['id_token'] = idToken);
+export const setAccessToken = (accessToken: string) => (axios.defaults.headers.common.authorization = accessToken);
