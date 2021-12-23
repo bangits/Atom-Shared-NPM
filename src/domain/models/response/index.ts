@@ -6,3 +6,5 @@ export * from './GetGenderResponseModel';
 export * from './GetLanguageResponseModel';
 export * from './GetPhoneCodeResponseModel';
 export * from './GetRegionResponseModel';
+export * from './GetValidationLevelResponseModel';
+

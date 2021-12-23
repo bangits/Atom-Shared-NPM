@@ -9,3 +9,5 @@ export * from './LicensesEntity';
 export * from './PhoneCodeEntity';
 export * from './RegionEntity';
 export * from './TranslationEntity';
+export * from './ValidationLevelEntity';
+
