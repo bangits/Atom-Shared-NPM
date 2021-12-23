@@ -36,7 +36,7 @@ export default {
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Enter an E-mail address into correct format, example: someone@website.com',
     website: 'Enter an Website into correct format, example: https://www.website.com',
-    phoneCodeRequired: "Phone Code Is Required"
+    phoneCodeRequired: "Phone code is required!"
   },
   username: 'Email or Username',
   password: 'Password',
