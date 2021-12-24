@@ -82,18 +82,18 @@ export const TablePage = <T extends {}, K>({
         clearButton: true,
         clearButtonLabel: translations.get('clear')
       },
-      onSaveClick: (filters, showedFilters) => {
-        updateConfig(
-          filtersConfig.id,
-          filters.map((filter, index) => ({
-            Order: showedFilters.findIndex((f) => f.name === filter.name) + 1,
-            IsActive: !!showedFilters.find((f) => f.name === filter.name),
-            Name: filter.name
-          }))
-        );
-      },
-      ...(pageId
+      ...(pageId && userId
         ? {
+            onSaveClick: (filters, showedFilters) => {
+              updateConfig(
+                filtersConfig.id,
+                filters.map((filter) => ({
+                  Order: showedFilters.findIndex((f) => f.name === filter.name) + 1,
+                  IsActive: !!showedFilters.find((f) => f.name === filter.name),
+                  Name: filter.name
+                }))
+              );
+            },
             defaultFilters: filtersConfig.config?.filter((f) => f.IsActive).map((f) => f.Name),
             filters,
             showedFilters,
@@ -200,7 +200,7 @@ export const TablePage = <T extends {}, K>({
       });
   }, []);
 
-  if ((isFetching && !isFilteredData) || !tableConfig.config) return null;
+  if ((isFetching && !isFilteredData) || (pageId && userId && !tableConfig.config)) return null;
 
   return (
     <>
@@ -240,7 +240,7 @@ export const TablePage = <T extends {}, K>({
         tableProps={tableProps}
         onRefreshButtonClick={refetch}
         onTableConfigChange={(tableColumns, selectedColumns) => {
-          if (!pageId) return;
+          if (!pageId || !userId) return;
 
           updateConfig(
             tableConfig.id,
@@ -252,7 +252,7 @@ export const TablePage = <T extends {}, K>({
           );
         }}
         columnsConfigDefaultValue={
-          pageId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
+          pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
         }
       />
     </>
