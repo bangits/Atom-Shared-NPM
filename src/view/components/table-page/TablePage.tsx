@@ -167,7 +167,7 @@ export const TablePage = <T extends {}, K>({
   );
 
   const updateConfig = useCallback(
-    (configId: PrimaryKey, configJSON: string) => {
+    (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (tableConfigUpdateTimeout.current) return;
 
       pageConfigsUseCase.updatePageConfigs(configId, configJSON);
