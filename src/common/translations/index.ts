@@ -35,7 +35,8 @@ export default {
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Enter an E-mail address into correct format, example: someone@website.com',
-    website: 'Enter an Website into correct format, example: https://www.website.com'
+    website: 'Enter an Website into correct format, example: https://www.website.com',
+    phoneCodeRequired: 'Phone code is required!'
   },
   username: 'Email or Username',
   password: 'Password',
@@ -148,6 +149,8 @@ export default {
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
   youDontHavePartnersAdded: 'You don’t have any partners added!',
+  pleaseAddGame: 'Please add a game.',
+  youDontHaveGameAdded: 'You don’t have any games added!',
   youDontHaveUsersAdded: 'You don’t have any users added!',
   pleaseAddPartner: 'Please add a partner.',
   pleaseAddUser: 'Please add a user.',
@@ -185,7 +188,6 @@ export default {
   gameActivateDescriptionFirstPart: 'Do you want to activate ?',
   gameActivateDescriptionLastPart: ' game?',
   multipleGameActivateDescriptionLastPart: ' games?',
-
 
   gameInActivateDescriptionFirstPart: 'Do you want to inactivate ',
   gameInActivateDescriptionLastPart: ' game?',
@@ -316,7 +318,7 @@ export default {
   validationLevel: 'Validation Level',
   addressOfRegistration: 'Address Of Registration',
   countryOfRegistration: 'Country Of Registration',
-  zipCodeOfRegistration: 'Zip Of Registration',
+  zipCodeOfRegistration: 'ZIP Code Of Registration',
   cityVillage: 'City/Village',
   registeredFormIp: 'Registered From IP:',
   block: 'Block',

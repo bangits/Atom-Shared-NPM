@@ -75,4 +75,5 @@ export const httpService = new HttpService({
   baseURL: enviromentService.get<string>('apiUrl')
 });
 
-export const setAccessToken = (accessToken: string) => (axios.defaults.headers.common.authorization = accessToken);
+export const setAccessToken = (accessToken: string) =>
+  (axios.defaults.headers.common.authorization = `Bearer ${accessToken}`);

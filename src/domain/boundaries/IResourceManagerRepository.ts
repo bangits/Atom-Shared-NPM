@@ -8,8 +8,7 @@ import {
   GetGenderResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
-  GetRegionResponseModel,
-  RegionFilterRequestModel
+  GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
 } from '../models';
 
 export interface IResourceManagerRepository {
@@ -28,4 +27,6 @@ export interface IResourceManagerRepository {
   getRegion(getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel>;
 
   getCityVillage(getCityVillageRequestModel: CityVillageFilterRequestModel): Promise<GetCityVillageResponseModel>;
+
+  getValidationLevel(getValidationLevelRequestModel: FilterRequestModel): Promise<GetValidationLevelResponseModel>;
 }

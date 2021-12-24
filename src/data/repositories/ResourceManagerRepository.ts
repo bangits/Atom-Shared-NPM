@@ -11,9 +11,7 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel,
-  GetRegionResponseModel,
-  RegionFilterRequestModel
+  GetPhoneCodeResponseModel, GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
 } from '@/domain/models';
 import { inject, injectable } from 'inversify';
 import { API_ROUTES } from '..';
@@ -80,6 +78,15 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     return genderType;
   }).bind(this);
 
+  getValidationLevel = cachedFn('CachedValidationLevel', async (getValidationLevelRequestModel: FilterRequestModel) => {
+    const validationLevel = await this.httpService.get<GetValidationLevelResponseModel, FilterRequestModel>({
+      url: API_ROUTES.ValidationLevel,
+      query: getValidationLevelRequestModel
+    });
+
+    return validationLevel;
+  }).bind(this);
+
   getRegion = async (getRegionRequestModel: RegionFilterRequestModel) => {
     const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
       url: API_ROUTES.Region,
@@ -97,4 +104,5 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
     return cityVillage;
   };
+
 }
