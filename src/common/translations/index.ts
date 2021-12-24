@@ -322,5 +322,8 @@ export default {
   cityVillage: 'City/Village',
   registeredFormIp: 'Registered From IP:',
   block: 'Block',
-  unBlock: 'UnBlock'
+  unBlock: 'UnBlock',
+  other: 'Other',
+  makeDefault: 'Make as default',
+  default: 'Default'
 };

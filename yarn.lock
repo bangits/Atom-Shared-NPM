@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@atom/design-system@^2.3.35":
-  version "2.3.35"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.35.tgz#ab7987a7b8c97916d22e13f2dde1b97d3281558e"
-  integrity sha1-q3mHp7jJeRbSLhPy3eG5fTKBVY4=
+"@atom/design-system@^2.3.38":
+  version "2.3.38"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.3.38.tgz#fd270c5341a87f457c054244365849bdc3e0458f"
+  integrity sha1-/ScMU0Gof0V8BUJENlhJvcPgRY8=
   dependencies:
-    "@my-ui/core" "^2.28.11"
+    "@my-ui/core" "^2.28.18"
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -1397,10 +1397,10 @@
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@msgpack/msgpack/-/msgpack-2.7.1.tgz#f01954baadc502f3c82e9c3f72c740ce65eae1cc"
   integrity sha1-8BlUuq3FAvPILpw/csdAzmXq4cw=
 
-"@my-ui/core@^2.28.11":
-  version "2.28.11"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.28.11.tgz#b2ffe69ad1fdda6a613a304ab9b89624dba23d0f"
-  integrity sha1-sv/mmtH92mphOjBKubiWJNuiPQ8=
+"@my-ui/core@^2.28.18":
+  version "2.28.18"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-2.28.18.tgz#b23c401f732c4b994440af078f8249fe72346c22"
+  integrity sha1-sjxAH3MsS5lEQK8Hj4JJ/nI0bCI=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
