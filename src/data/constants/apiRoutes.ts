@@ -9,5 +9,6 @@ export const API_ROUTES = {
   CityVillage: '/CityVillage',
   FileManager: {
     Upload: '/Upload'
-  }
+  },
+  PageConfigs: '/PageConfigs'
 };

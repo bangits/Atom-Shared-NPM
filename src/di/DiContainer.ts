@@ -7,8 +7,14 @@ import {
   SessionStorageService,
   TranslationService
 } from '@/common/services';
-import { FileManagerRepository, ResourceManagerRepository } from '@/data';
-import { FileManagerUseCase, ResourceManagerUseCase, TranslationUseCase } from '@/domain';
+import { FileManagerRepository, PageConfigsRepository, ResourceManagerRepository } from '@/data';
+import {
+  FileManagerUseCase,
+  IPageConfigsRepository,
+  PageConfigsUseCase,
+  ResourceManagerUseCase,
+  TranslationUseCase
+} from '@/domain';
 import { Container } from 'inversify';
 import { DI_CONSTANTS } from './constants';
 export class DiContainer {
@@ -36,14 +42,22 @@ export class DiContainer {
     this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
     this.diContainer.bind(DI_CONSTANTS.SessionStorageService).to(SessionStorageService);
     this.diContainer.bind(DI_CONSTANTS.TranslationService).to(TranslationService);
+    this.diContainer.bind(DI_CONSTANTS.UserHttpService).toDynamicValue(
+      () =>
+        new HttpService({
+          baseURL: 'http://20.83.89.52/api/v1'
+        })
+    );
 
     // Repositories
     this.diContainer.bind(DI_CONSTANTS.ResourceManagerRepository).to(ResourceManagerRepository);
     this.diContainer.bind(DI_CONSTANTS.FileManagerRepository).to(FileManagerRepository);
+    this.diContainer.bind<IPageConfigsRepository>(DI_CONSTANTS.PageConfigsRepository).to(PageConfigsRepository);
 
     // Use Cases
     this.diContainer.bind(DI_CONSTANTS.ResourceManagerUseCase).to(ResourceManagerUseCase);
     this.diContainer.bind(DI_CONSTANTS.TranslationUseCase).to(TranslationUseCase);
     this.diContainer.bind(DI_CONSTANTS.FileManagerUseCase).to(FileManagerUseCase);
+    this.diContainer.bind(DI_CONSTANTS.PageConfigsUseCase).to(PageConfigsUseCase);
   };
 }
