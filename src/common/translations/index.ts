@@ -323,6 +323,7 @@ export default {
   registeredFormIp: 'Registered From IP:',
   block: 'Block',
   unBlock: 'UnBlock',
-  wallet: 'Wallet'
-  
+  wallet: 'Wallet',
+  userManagement: '  User Management',
+  userDetails: 'User Details'
 };
