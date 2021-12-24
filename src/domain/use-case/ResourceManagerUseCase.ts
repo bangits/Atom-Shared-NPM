@@ -11,8 +11,7 @@ import {
   GetGenderResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
-  GetRegionResponseModel,
-  RegionFilterRequestModel
+  GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
 } from '../models';
 
 @injectable()
@@ -52,5 +51,10 @@ export class ResourceManagerUseCase {
     getCityVillageRequestModel: CityVillageFilterRequestModel
   ): Promise<GetCityVillageResponseModel> => {
     return this.resourceManagerRepository.getCityVillage(getCityVillageRequestModel);
+  };
+  getValidationLevel = async (
+    getValidationLevelRequestModel: FilterRequestModel
+  ): Promise<GetValidationLevelResponseModel> => {
+    return this.resourceManagerRepository.getValidationLevel(getValidationLevelRequestModel)
   };
 }

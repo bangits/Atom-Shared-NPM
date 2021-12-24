@@ -7,3 +7,5 @@ export * from './GetLanguageResponseModel';
 export * from './GetPageConfigsResponseModel';
 export * from './GetPhoneCodeResponseModel';
 export * from './GetRegionResponseModel';
+export * from './GetValidationLevelResponseModel';
+

@@ -7,6 +7,7 @@ export const API_ROUTES = {
   Genders: '/Genders',
   Region: '/Region',
   CityVillage: '/CityVillage',
+  ValidationLevel: '/ValidationLevels',
   FileManager: {
     Upload: '/Upload'
   },

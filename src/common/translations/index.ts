@@ -322,5 +322,5 @@ export default {
   cityVillage: 'City/Village',
   registeredFormIp: 'Registered From IP:',
   block: 'Block',
-  unBlock: 'Unblock'
+  unBlock: 'UnBlock'
 };
