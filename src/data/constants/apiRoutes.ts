@@ -10,5 +10,6 @@ export const API_ROUTES = {
   ValidationLevel: '/ValidationLevels',
   FileManager: {
     Upload: '/Upload'
-  }
+  },
+  PageConfigs: '/PageConfigs'
 };

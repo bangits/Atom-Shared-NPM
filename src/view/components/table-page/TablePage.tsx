@@ -1,7 +1,9 @@
-import { redirectToURL } from '@/atom-common';
+import { AtomCommonContext, redirectToURL } from '@/atom-common';
+import { PageIdsEnum, PrimaryKey } from '@/domain';
 import { useLoading, useTranslation } from '@/view';
+import { PageConfigViewModel } from '@/view/models';
 import { DataTable, DataTableProps } from '@atom/design-system';
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 
 export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
@@ -12,8 +14,11 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isEmpty?: boolean;
   isFetching?: boolean;
   isFilteredData?: boolean;
+  pageId?: PageIdsEnum;
+  userId?: PageIdsEnum;
   getEditUrl?: (column: T) => string;
   getViewUrl?: (column: T) => string;
+  refetch?: () => void;
 }
 
 export const TablePage = <T extends {}, K>({
@@ -25,13 +30,46 @@ export const TablePage = <T extends {}, K>({
   getViewUrl,
   getEditUrl,
   maxViewOrEditColumnsCount = 50,
+  refetch,
+  pageId,
+  userId,
   ...props
 }: TablePageProps<T, K>) => {
+  const { pageConfigsUseCase } = useContext(AtomCommonContext);
+
   const translations = useTranslation();
+
+  const tableConfigUpdateTimeout = useRef(false);
+
+  const [filtersConfig, setFiltersConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
+    id: null,
+    config: null
+  });
+
+  const [tableConfig, setTableConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
+    id: null,
+    config: null
+  });
 
   const [selectedColumnsLength, setSelectedColumnsLength] = useState(0);
 
   const changeLoading = useLoading();
+
+  const filtersHashMap = useMemo(() => {
+    return props.filterProps.filters.reduce((acc, filter) => ({ ...acc, [filter.name]: filter }), {});
+  }, [props.filterProps.filters]);
+
+  const sortedFilters = useMemo(
+    () => filtersConfig.config?.sort((prev, next) => prev.Order - next.Order),
+    [filtersConfig.config]
+  );
+
+  const showedFilters = useMemo(
+    () => sortedFilters?.filter((f) => f.IsActive)?.map((f) => filtersHashMap[f.Name]),
+    [sortedFilters]
+  );
+
+  const filters = useMemo(() => sortedFilters?.map((f) => filtersHashMap[f.Name]), [sortedFilters]);
 
   const filterProps = useMemo(
     () => ({
@@ -43,9 +81,27 @@ export const TablePage = <T extends {}, K>({
         selectAllLabel: translations.get('all'),
         clearButton: true,
         clearButtonLabel: translations.get('clear')
-      }
+      },
+      ...(pageId && userId
+        ? {
+            onSaveClick: (filters, showedFilters) => {
+              updateConfig(
+                filtersConfig.id,
+                filters.map((filter) => ({
+                  Order: showedFilters.findIndex((f) => f.name === filter.name) + 1,
+                  IsActive: !!showedFilters.find((f) => f.name === filter.name),
+                  Name: filter.name
+                }))
+              );
+            },
+            defaultFilters: filtersConfig.config?.filter((f) => f.IsActive).map((f) => f.Name),
+            filters,
+            showedFilters,
+            saveLabel: translations.get('save')
+          }
+        : {})
     }),
-    [translations, props.filterProps, props.rowCount]
+    [translations, props.filterProps, props.rowCount, filters, pageId]
   );
 
   const pageSizeOptions = useMemo(
@@ -110,6 +166,17 @@ export const TablePage = <T extends {}, K>({
     [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength]
   );
 
+  const updateConfig = useCallback(
+    (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
+      if (tableConfigUpdateTimeout.current) return;
+
+      pageConfigsUseCase.updatePageConfigs(configId, configJSON);
+
+      setTimeout(() => (tableConfigUpdateTimeout.current = false), 700);
+    },
+    [tableConfigUpdateTimeout]
+  );
+
   useEffect(() => {
     if (!isFilteredData) changeLoading(true);
   }, []);
@@ -118,7 +185,22 @@ export const TablePage = <T extends {}, K>({
     if (!isFetching) changeLoading(false);
   }, [isFetching]);
 
-  if (isFetching && !isFilteredData) return null;
+  useEffect(() => {
+    if (pageId && userId)
+      pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) => {
+        setFiltersConfig({
+          id: config.filtersConfig.id,
+          config: config.filtersConfig.config || null
+        });
+
+        setTableConfig({
+          id: config.columnConfig.id,
+          config: config.columnConfig.config || null
+        });
+      });
+  }, []);
+
+  if ((isFetching && !isFilteredData) || (pageId && userId && !tableConfig.config)) return null;
 
   return (
     <>
@@ -156,6 +238,22 @@ export const TablePage = <T extends {}, K>({
         }}
         filterProps={filterProps}
         tableProps={tableProps}
+        onRefreshButtonClick={refetch}
+        onTableConfigChange={(tableColumns, selectedColumns) => {
+          if (!pageId || !userId) return;
+
+          updateConfig(
+            tableConfig.id,
+            tableColumns.map((column, index) => ({
+              Order: index + 1,
+              IsActive: selectedColumns.includes(column.value),
+              Name: column.value
+            }))
+          );
+        }}
+        columnsConfigDefaultValue={
+          pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
+        }
       />
     </>
   );

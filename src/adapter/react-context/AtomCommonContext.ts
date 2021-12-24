@@ -1,5 +1,5 @@
 import { LocalStorageService, TranslationService } from '@/common/services';
-import { FileManagerUseCase, ResourceManagerUseCase } from '@/domain/use-case';
+import { FileManagerUseCase, PageConfigsUseCase, ResourceManagerUseCase } from '@/domain/use-case';
 import { createContext } from 'react';
 
 export interface IAtomCommonContext {
@@ -7,6 +7,7 @@ export interface IAtomCommonContext {
   translationService: TranslationService;
   localStorageService: LocalStorageService;
   fileManagerUseCase: FileManagerUseCase;
+  pageConfigsUseCase: PageConfigsUseCase;
 }
 
 export const AtomCommonContext = createContext<IAtomCommonContext>(null);
