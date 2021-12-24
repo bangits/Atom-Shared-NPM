@@ -322,5 +322,7 @@ export default {
   cityVillage: 'City/Village',
   registeredFormIp: 'Registered From IP:',
   block: 'Block',
-  unBlock: 'UnBlock'
+  unBlock: 'UnBlock',
+  wallet: 'Wallet'
+  
 };
