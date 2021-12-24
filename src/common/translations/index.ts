@@ -325,5 +325,8 @@ export default {
   unBlock: 'UnBlock',
   other: 'Other',
   makeDefault: 'Make as default',
-  default: 'Default'
+  default: 'Default',
+  wallet: 'Wallet',
+  userManagement: '  User Management',
+  userDetails: 'User Details'
 };
