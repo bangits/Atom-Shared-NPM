@@ -24,6 +24,15 @@ export type QueryType = {};
 @injectable()
 export class HttpService implements IHttpService {
   private instance: AxiosInstance;
+  private static token: string;
+
+  static setAccessToken(accessToken: string) {
+    const tokenWithBearer = `Bearer ${accessToken}`;
+
+    axios.defaults.headers.common.authorization = tokenWithBearer;
+
+    HttpService.token = tokenWithBearer;
+  }
 
   constructor(config: AxiosRequestConfig) {
     this.instance = axios.create(config);
@@ -65,7 +74,10 @@ export class HttpService implements IHttpService {
       await this.instance[method](
         `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
         httpRequest.body,
-        httpRequest.config
+        {
+          ...httpRequest.config,
+          authorization: HttpService.token
+        }
       )
     ).data;
   }
@@ -74,6 +86,3 @@ export class HttpService implements IHttpService {
 export const httpService = new HttpService({
   baseURL: enviromentService.get<string>('apiUrl')
 });
-
-export const setAccessToken = (accessToken: string) =>
-  (axios.defaults.headers.common.authorization = `Bearer ${accessToken}`);

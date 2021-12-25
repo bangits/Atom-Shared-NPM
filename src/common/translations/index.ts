@@ -135,7 +135,6 @@ export default {
   activate: 'Activate',
   inActivate: 'Inactivate',
   emptyValue: 'N/A',
-  notCompleted: 'Not Completed',
   clear: 'Clear',
   apply: 'Apply',
   assets: 'Assets',
@@ -240,7 +239,6 @@ export default {
   managersContactInformation: 'Managers Contact Information',
   viewMore: 'View More',
   viewLess: 'View Less',
-  noData: 'N/A',
   parentCompanyId: 'Parent Company ID',
   expirationDate: 'Expiration Date',
   owner: 'Owner',
@@ -328,5 +326,7 @@ export default {
   default: 'Default',
   wallet: 'Wallet',
   userManagement: '  User Management',
-  userDetails: 'User Details'
+  userDetails: 'User Details',
+  correctDefaultBalance: 'Correct Default Balance',
+  balance: 'Balance'
 };
