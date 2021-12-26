@@ -324,7 +324,7 @@ export default {
   other: 'Other',
   makeDefault: 'Make as default',
   default: 'Default',
-  wallet: 'Wallet',
+  wallets: 'Wallets',
   userManagement: '  User Management',
   userDetails: 'User Details',
   correctDefaultBalance: 'Correct Default Balance',
