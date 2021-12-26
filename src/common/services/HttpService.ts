@@ -23,8 +23,15 @@ export type QueryType = {};
 
 @injectable()
 export class HttpService implements IHttpService {
-  private instance: AxiosInstance;
   private static token: string;
+
+  private instance: AxiosInstance;
+
+  constructor(config: AxiosRequestConfig) {
+    this.instance = axios.create(config);
+
+    this.instance.interceptors.response.use(...serverErrorHandler);
+  }
 
   static setAccessToken(accessToken: string) {
     const tokenWithBearer = `Bearer ${accessToken}`;
@@ -32,12 +39,6 @@ export class HttpService implements IHttpService {
     axios.defaults.headers.common.authorization = tokenWithBearer;
 
     HttpService.token = tokenWithBearer;
-  }
-
-  constructor(config: AxiosRequestConfig) {
-    this.instance = axios.create(config);
-
-    this.instance.interceptors.response.use(...serverErrorHandler);
   }
 
   static buildQuery(data: QueryType): string {
@@ -70,14 +71,14 @@ export class HttpService implements IHttpService {
     if (httpRequest.body && !(httpRequest.body instanceof FormData))
       httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
 
+    const headers = {
+      authorization: HttpService.token
+    };
+
     return (
       await this.instance[method](
         `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
-        httpRequest.body,
-        {
-          ...httpRequest.config,
-          authorization: HttpService.token
-        }
+        ...(method === 'GET' || method === 'get' ? [{ headers }] : [httpRequest.body, { headers }])
       )
     ).data;
   }

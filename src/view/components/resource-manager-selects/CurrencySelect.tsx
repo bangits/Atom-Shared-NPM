@@ -5,7 +5,7 @@ import { Currency } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const CurrencySelect = (props: Partial<CustomSelectProps> & { expectCurrenciesIds: PrimaryKey[] }) => {
+export const CurrencySelect = (props: Partial<CustomSelectProps> & { expectCurrenciesIds?: PrimaryKey[] }) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [currency, setCurrency] = useState<Currency[]>([]);
