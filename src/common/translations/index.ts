@@ -184,7 +184,7 @@ export default {
   providerInActivateDescirptionLastPart: ' provider?',
   multipleProviderInActivateDescirptionLastPart: ' providers?',
 
-  gameActivateDescriptionFirstPart: 'Do you want to activate ?',
+  gameActivateDescriptionFirstPart: 'Do you want to activate ',
   gameActivateDescriptionLastPart: ' game?',
   multipleGameActivateDescriptionLastPart: ' games?',
 
