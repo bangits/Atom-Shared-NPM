@@ -10,6 +10,8 @@ export default {
   edit: 'Edit',
   partners: 'Partners',
   connectionError: 'The connection to the server was lost ! Try later.',
+  networkConnectionError: 'The network connection was lost !',
+  networkConnectionSuccess: 'The network connection was successfully restored !',
   fileUploader: {
     serverError: 'Upload failed. A server error occurred while uploading the file.',
     maxSize: `Upload failed. Allowed max. size is ${TRANSLATION_CHANGED_VALUE} MB.`,
@@ -34,9 +36,10 @@ export default {
     maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
-    email: 'Enter an E-mail address into correct format, example: someone@website.com',
+    email: 'Invalid Email',
     website: 'Enter an Website into correct format, example: https://www.website.com',
-    phoneCodeRequired: 'Phone code is required!'
+    phoneCodeRequired: 'Phone code is required!',
+    password: 'Password must include both lower and upper case letters , numbers and symbols'
   },
   username: 'Email or Username',
   password: 'Password',

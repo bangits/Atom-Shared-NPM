@@ -4,13 +4,14 @@ import ReactDOM from 'react-dom';
 import singleSpaReact from 'single-spa-react';
 import { AtomCommonProvider } from './atom-common';
 import { ALERT_CLOSE_DELAY } from './configs';
-import { LoadingServiceComponent } from './view';
+import { LoadingServiceComponent, NetworkErrorComponent } from './view';
 
 const App = () => {
   return (
-    <AtomCommonProvider>
+    <AtomCommonProvider initializeLanguage>
       <LoadingServiceComponent />
       <AlertContainer autoCloseDelay={ALERT_CLOSE_DELAY} autoClose />
+      <NetworkErrorComponent />
 
       <DialogProvider />
     </AtomCommonProvider>

@@ -13,6 +13,7 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   maxViewOrEditColumnsCount?: number;
   isEmpty?: boolean;
   isFetching?: boolean;
+  isLoading?: boolean;
   isFilteredData?: boolean;
   pageId?: PageIdsEnum;
   userId?: PageIdsEnum;
@@ -26,6 +27,7 @@ export const TablePage = <T extends {}, K>({
   pageSizeDividerValue = 50,
   isEmpty = false,
   isFetching,
+  isLoading,
   isFilteredData,
   getViewUrl,
   getEditUrl,
@@ -131,6 +133,7 @@ export const TablePage = <T extends {}, K>({
   const tableProps = useMemo<typeof props.tableProps>(
     () => ({
       ...(props.tableProps || {}),
+      isLoading,
       emptyValue: translations.get('emptyValue'),
       actions: [
         ...(props.tableProps.actions || []),
@@ -163,7 +166,7 @@ export const TablePage = <T extends {}, K>({
       ],
       onSelectedColumnsChange: (columns) => setSelectedColumnsLength(columns.length)
     }),
-    [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength]
+    [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength, isLoading]
   );
 
   const updateConfig = useCallback(
