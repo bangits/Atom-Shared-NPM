@@ -31,7 +31,10 @@ export const TelephoneInput = ({
 
   const selectOption = useMemo(() => phoneCodes.map((p) => ({ value: p.id, label: p.name })), [phoneCodes]);
 
-  const dropdownInputProps = useMemo(() => ({ type: 'number' }), []);
+  const dropdownInputProps = useMemo(
+    () => ({ type: 'number', value: selectedPhoneCode?.name || null }),
+    [selectedPhoneCode]
+  );
 
   const dropdownProps = useMemo(
     () => ({
@@ -86,13 +89,15 @@ export const TelephoneInput = ({
         pageNumber: 1,
         pageSize: MAX_PAGE_SIZE
       })
-      .then((getPhoneCodeResponse) => setPhoneCodes(getPhoneCodeResponse.results));
-  }, []);
+      .then((getPhoneCodeResponse) => {
+        const phoneCodes = getPhoneCodeResponse.results;
 
-  useEffect(() => {
-    if (phoneCodeDefaultValue && phoneCodes.length)
-      setSelectedPhoneCode(phoneCodes.find((phoneCode) => phoneCode.id === phoneCodeDefaultValue));
-  }, [phoneCodes]);
+        if (phoneCodeDefaultValue && phoneCodes.length)
+          setSelectedPhoneCode(phoneCodes.find((phoneCode) => phoneCode.id === phoneCodeDefaultValue));
+
+        setPhoneCodes(getPhoneCodeResponse.results);
+      });
+  }, []);
 
   return (
     <InputWithDropdown
@@ -104,4 +109,3 @@ export const TelephoneInput = ({
     />
   );
 };
-
