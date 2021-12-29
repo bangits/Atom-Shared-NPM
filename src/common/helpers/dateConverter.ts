@@ -1,13 +1,15 @@
 import dayJS from 'dayjs';
 
-export const convertDate = (date: Date | string, format = 'MM/DD/YYYY HH:mm:ss') => {
+export const convertDate = (date: Date | string, format = 'MM/DD/YYYY HH:mm:ss', plusUserTimezone = true) => {
   if (!date) return null;
 
   const parsedDate = typeof date === 'string' ? new Date(date) : date;
 
-  const userTimezone = new Date().getTimezoneOffset() / -60;
+  if (plusUserTimezone) {
+    const userTimezone = new Date().getTimezoneOffset() / -60;
 
-  parsedDate.setHours(parsedDate.getHours() + userTimezone);
+    parsedDate.setHours(parsedDate.getHours() + userTimezone);
+  }
 
   return dayJS(parsedDate).format(format);
 };

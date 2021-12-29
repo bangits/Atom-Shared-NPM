@@ -17,17 +17,19 @@ export class FileManagerRepository implements IFileManagerRepository {
     const uploadedFilesUrls = await this.httpService.post<string[], {}, {}>({
       url: API_ROUTES.FileManager.Upload,
       config: {
-        onUploadProgress: (progressEvent: ProgressEvent) => {
-          const totalLength: number = progressEvent.total;
+        // onUploadProgress: (progressEvent: ProgressEvent) => {
+        //   const totalLength: number = progressEvent.total;
 
-          percentageCallback(Math.round((progressEvent.loaded * 100) / totalLength));
-        },
+        //   percentageCallback(Math.round((progressEvent.loaded * 100) / totalLength));
+        // },
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       },
       body: formData
     });
+
+    percentageCallback(100);
 
     return uploadedFilesUrls[0];
   };

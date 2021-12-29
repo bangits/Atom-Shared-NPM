@@ -84,6 +84,7 @@ export const TablePage = <T extends {}, K>({
         clearButton: true,
         clearButtonLabel: translations.get('clear')
       },
+      infoTooltipText: translations.get('filtersHelperText'),
       ...(pageId && userId
         ? {
             onSaveClick: (filters, showedFilters) => {
@@ -99,7 +100,7 @@ export const TablePage = <T extends {}, K>({
             defaultFilters: filtersConfig.config?.filter((f) => f.IsActive).map((f) => f.Name),
             filters,
             showedFilters,
-            saveLabel: translations.get('save')
+            saveLabel: translations.get('saveFilterChanges')
           }
         : {})
     }),

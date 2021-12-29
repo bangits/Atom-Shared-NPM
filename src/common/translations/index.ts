@@ -62,6 +62,7 @@ export default {
   details: 'Details',
   approve: 'Approve',
   save: 'Save',
+  saveFilterChanges: 'Save Filter Changes',
   cancel: 'Cancel',
   continue: 'Continue',
   close: 'Close',
@@ -107,7 +108,7 @@ export default {
   devices: 'Devices',
   desktop: 'Desktop',
   tablet: 'Tablet',
-  uiLanguages: 'uiLanguages',
+  uiLanguages: 'UI languages',
   tableScreenMode: 'Table Screen Mode',
   landscape: 'Landscape',
   portrait: 'Portrait',
@@ -115,7 +116,6 @@ export default {
   supportedCurrencies: 'Supported Currencies ',
   certifiedCountries: 'Certified Countries ',
   restrictedCountries: 'Restricted Countries',
-  uILanguages: 'UI languages ',
   operatingLanguages: 'Operating languages',
   selectDifferentDateTime: 'Please select a different date & time.',
   active: 'Active',
@@ -331,5 +331,6 @@ export default {
   userManagement: '  User Management',
   userDetails: 'User Details',
   correctDefaultBalance: 'Correct Default Balance',
-  balance: 'Balance'
+  balance: 'Balance',
+  filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration'
 };
