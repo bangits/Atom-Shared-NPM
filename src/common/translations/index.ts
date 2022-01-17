@@ -328,9 +328,11 @@ export default {
   makeDefault: 'Make as default',
   default: 'Default',
   wallets: 'Wallets',
-  userManagement: '  User Management',
+  userManagement: 'User Management',
   userDetails: 'User Details',
   correctDefaultBalance: 'Correct Default Balance',
   balance: 'Balance',
-  filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration'
+  filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration',
+  dashboard:"Dashboard",
+  
 };
