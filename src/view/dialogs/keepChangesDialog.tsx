@@ -4,10 +4,9 @@ import { dialog, Icons } from '@atom/design-system';
 export interface CustomFormDialogProperties {
   t: UseTranslationReturnValue;
   onSubmit: (cancelFn: () => void) => void;
-  column: string;
 }
 
-export const keepChangesDialog = ({ t, onSubmit, column }: CustomFormDialogProperties) => {
+export const keepChangesDialog = ({ t, onSubmit }: CustomFormDialogProperties) => {
   dialog.acceptionDialog({
     title: t.get('Warning!'),
     description: <>{t.get('Are You sure You want to leave?')}</>,

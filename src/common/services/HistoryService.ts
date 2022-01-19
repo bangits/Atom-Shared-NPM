@@ -6,7 +6,10 @@ export class HistoryService {
   block(conditionFn: (url: string) => boolean): () => void {
     this.conditionFn = conditionFn;
 
+    window.onpopstate = () => window.history.go(1);
+
     return () => {
+      window.onpopstate = null;
       this.conditionFn = null;
     };
   }
