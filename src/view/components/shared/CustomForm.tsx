@@ -7,9 +7,15 @@ import { FormikValuesChangeHandler } from './FormikValuesChangeHandler';
 
 export interface CustomFormProps<Values> {
   showKeepChangesModal?: boolean;
-  onSubmit: (values: Values, formikHelpers: FormikHelpers<Values>) => void | Promise<any>;
+  onSubmit: (
+    values: Values,
+    formikHelpers: FormikHelpers<Values>,
+    isValuesSameAsInitialValues: boolean
+  ) => void | Promise<any>;
 }
-export function CustomForm<Values extends FormikValues = FormikValues>(props: FormikConfig<Values> & CustomFormProps) {
+export function CustomForm<Values extends FormikValues = FormikValues>(
+  props: FormikConfig<Values> & CustomFormProps<Values>
+) {
   const formValues = useRef(null);
 
   const t = useTranslation();
