@@ -12,7 +12,7 @@ export const keepChangesDialog = ({ t, onSubmit }: CustomFormDialogProperties) =
     description: <>{t.get('Are You sure You want to leave?')}</>,
     cancelButtonText: t.get('no'),
     submitButtonText: t.get('yes'),
-    icon: <Icons.CheckPopupIcon />,
+    icon: <Icons.LeaveIcon />,
     onSubmit
   });
 };

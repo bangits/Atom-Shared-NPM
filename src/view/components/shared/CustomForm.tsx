@@ -14,7 +14,7 @@ export interface CustomFormProps<Values> {
   ) => void | Promise<any>;
 }
 export function CustomForm<Values extends FormikValues = FormikValues>(
-  props: FormikConfig<Values> & CustomFormProps<Values>
+  props: Omit<FormikConfig<Values>, 'onSubmit'> & CustomFormProps<Values>
 ) {
   const formValues = useRef(null);
 
@@ -23,7 +23,7 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
   useEffect(() => {
     if (!props.showKeepChangesModal) return;
 
-    const unblock = historyService.block(() => {
+    const unblock = historyService.block((url) => {
       const isValuesSameAsInitialValues =
         formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
 
@@ -31,19 +31,25 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
 
       keepChangesDialog({
         t,
-        onSubmit: () => historyService.redirectToURL(location.pathname)
+        onSubmit: () => historyService.redirectToURL(url)
       });
 
       return true;
     });
 
-    return () => unblock();
-  }, []);
+    return () => {
+      unblock();
+    };
+  }, [props.initialValues]);
+
+  console.log('initialValues', props.initialValues);
+  
 
   return (
     <Formik
       {...props}
       onSubmit={(...args) => {
+        console.log(formValues.current, props.initialValues)
         const isValuesSameAsInitialValues =
           formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
 
@@ -53,7 +59,12 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
         <>
           {typeof props.children === 'function' ? props.children(...args) : props.children}
 
-          <FormikValuesChangeHandler onChange={(values) => (formValues.current = values)} />
+          <FormikValuesChangeHandler onChange={(values) => {
+            console.log('values', values);
+            
+
+            formValues.current = values
+          }} />
         </>
       )}
     </Formik>

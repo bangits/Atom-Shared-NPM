@@ -262,9 +262,13 @@ export default {
   registrationNumber: 'Registration Number',
   registrationDate: 'Registration Date',
   website: 'Website',
+  dateOfUpdateDatepickers: 'Date of Update From - To',
+  dateOfUpdateFrom: 'Date of Update - From',
+  dateOfUpdateTo: 'Date of Update - To',
   dateOfCreationDatepickers: 'Date of Creation From - To',
   dateOfCreationFrom: 'Date of Creation - From',
   dateOfCreationTo: 'Date of Creation - To',
+
   lastUpdatedBy: 'Last Updated By',
   forever: 'Forever',
   temporary: 'Temporary',
@@ -333,6 +337,5 @@ export default {
   correctDefaultBalance: 'Correct Default Balance',
   balance: 'Balance',
   filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration',
-  dashboard:"Dashboard",
-  
+  dashboard: 'Dashboard'
 };
