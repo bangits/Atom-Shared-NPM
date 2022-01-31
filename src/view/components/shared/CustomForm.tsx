@@ -26,12 +26,14 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
     const unblock = historyService.block((url) => {
       const isValuesSameAsInitialValues =
         formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
-
       if (isValuesSameAsInitialValues) return false;
 
       keepChangesDialog({
         t,
-        onSubmit: () => historyService.redirectToURL(url)
+        onSubmit: () => {
+          historyService.unblock();
+          historyService.redirectToURL(url);
+        }
       });
 
       return true;
@@ -42,14 +44,10 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
     };
   }, [props.initialValues]);
 
-  console.log('initialValues', props.initialValues);
-  
-
   return (
     <Formik
       {...props}
       onSubmit={(...args) => {
-        console.log(formValues.current, props.initialValues)
         const isValuesSameAsInitialValues =
           formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
 
@@ -59,12 +57,7 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
         <>
           {typeof props.children === 'function' ? props.children(...args) : props.children}
 
-          <FormikValuesChangeHandler onChange={(values) => {
-            console.log('values', values);
-            
-
-            formValues.current = values
-          }} />
+          <FormikValuesChangeHandler onChange={(values) => (formValues.current = values)} />
         </>
       )}
     </Formik>
