@@ -278,6 +278,7 @@ export default {
   dateOfUpdate: 'Date of Update',
   userId: 'User ID',
   uniqueUserId: 'The Unique/ User ID',
+  passwordPolicy: 'Password Policy',
 
   email: 'E-mail (User Name)',
   onlyEmail: 'E-mail',
@@ -337,5 +338,15 @@ export default {
   correctDefaultBalance: 'Correct Default Balance',
   balance: 'Balance',
   filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration',
-  dashboard: 'Dashboard'
+  dashboard: 'Dashboard',
+  passwordChangeAfterLogin: 'Password Change After Login',
+  passwordControls: 'Password Controls',
+  choseNewPassword: 'Chose New Password',
+  currentPassword: 'Current Password',
+  confirmPassword: 'Confirm Password',
+  newPassword: 'New Password',
+  contactEmail: 'Contact Email',
+  projectId: 'Project ID',
+  projectName: 'Project Name',
+  updateBy: 'Update By',
 };

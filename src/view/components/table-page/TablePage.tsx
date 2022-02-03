@@ -15,6 +15,7 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isFetching?: boolean;
   isLoading?: boolean;
   isFilteredData?: boolean;
+  showFilters: boolean;
   pageId?: PageIdsEnum;
   userId?: PageIdsEnum;
   getEditUrl?: (column: T) => string;
@@ -26,6 +27,7 @@ export const TablePage = <T extends {}, K>({
   defaultPageSizeValue = 20,
   pageSizeDividerValue = 50,
   isEmpty = false,
+  showFilters = true,
   isFetching,
   isLoading,
   isFilteredData,
