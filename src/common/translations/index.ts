@@ -358,6 +358,5 @@ export default {
   newPassword: 'New Password',
   contactEmail: 'Contact Email',
   projectId: 'Project ID',
-  projectName: 'Project Name',
   updateBy: 'Update By',
 };
