@@ -1,5 +1,5 @@
 import { UseTranslationReturnValue } from '@/view';
-import { dialog, Icons } from '@atom/design-system';
+import { dialog } from '@atom/design-system';
 
 export interface CustomFormDialogProperties {
   t: UseTranslationReturnValue;
@@ -12,7 +12,7 @@ export const keepChangesDialog = ({ t, onSubmit }: CustomFormDialogProperties) =
     description: <>{t.get('Are You sure You want to leave?')}</>,
     cancelButtonText: t.get('no'),
     submitButtonText: t.get('yes'),
-    icon: <Icons.LeaveIcon />,
+    icon: null,
     onSubmit
   });
 };

@@ -1,6 +1,5 @@
 import { historyService } from '@/atom-common';
 import { useTranslation } from '@/view';
-import { keepChangesDialog } from '@/view/dialogs';
 import { Formik, FormikConfig, FormikHelpers, FormikValues } from 'formik';
 import { useEffect, useRef } from 'react';
 import { FormikValuesChangeHandler } from './FormikValuesChangeHandler';
@@ -24,17 +23,17 @@ export function CustomForm<Values extends FormikValues = FormikValues>(
     if (!props.showKeepChangesModal) return;
 
     const unblock = historyService.block((url) => {
-      const isValuesSameAsInitialValues =
-        formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
-      if (isValuesSameAsInitialValues) return false;
+      // const isValuesSameAsInitialValues =
+      //   formValues.current && JSON.stringify(formValues.current) === JSON.stringify(props.initialValues);
+      // if (isValuesSameAsInitialValues) return false;
 
-      keepChangesDialog({
-        t,
-        onSubmit: () => {
-          historyService.unblock();
-          historyService.redirectToURL(url);
-        }
-      });
+      // keepChangesDialog({
+      //   t,
+      //   onSubmit: () => {
+      //     historyService.unblock();
+      //     historyService.redirectToURL(url);
+      //   }
+      // });
 
       return true;
     });

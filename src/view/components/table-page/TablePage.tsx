@@ -15,7 +15,7 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isFetching?: boolean;
   isLoading?: boolean;
   isFilteredData?: boolean;
-  showFilters: boolean;
+  showFilters?: boolean;
   pageId?: PageIdsEnum;
   userId?: PageIdsEnum;
   getEditUrl?: (column: T) => string;
