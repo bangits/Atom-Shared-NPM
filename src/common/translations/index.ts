@@ -398,5 +398,11 @@ export default {
   betDate: 'Bet Date',
   betUpdateDate: 'Bet Update Date',
   deviceType: 'Device Type',
-  browser: 'Browser'
+  browser: 'Browser',
+  gameAggregator: 'Game Aggregator',
+  aggregator: 'Aggregator',
+  addProvider: 'Add Provider',
+  providerExternalId: 'Provider External Id',
+  pleaseFillFields: 'Please fill fields',
+  integrationType: 'Integration Type'
 };
