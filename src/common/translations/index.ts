@@ -404,5 +404,7 @@ export default {
   addProvider: 'Add Provider',
   providerExternalId: 'Provider External Id',
   pleaseFillFields: 'Please fill fields',
-  integrationType: 'Integration Type'
+  integrationType: 'Integration Type',
+  exchange: 'Exchange',
+  selected: 'Selected'
 };
