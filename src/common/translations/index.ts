@@ -401,5 +401,13 @@ export default {
   browser: 'Browser',
   sumOf: 'Sum Of',
   betUpdateDateFrom: 'Bet Update Date From',
-  betUpdateDateTo: 'Bet Update Date To'
+  betUpdateDateTo: 'Bet Update Date To',
+  gameAggregator: 'Game Aggregator',
+  aggregator: 'Aggregator',
+  addProvider: 'Add Provider',
+  providerExternalId: 'Provider External Id',
+  pleaseFillFields: 'Please fill fields',
+  integrationType: 'Integration Type',
+  exchange: 'Exchange',
+  selected: 'Selected'
 };
