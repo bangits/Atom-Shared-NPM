@@ -1,6 +1,6 @@
-import { UseTranslationReturnValue } from '@atom/common';
-import { dialog, Icons } from '@atom/design-system';
 
+import { dialog, Icons } from '@atom/design-system';
+import { UseTranslationReturnValue } from '@/view';
 export interface ChangePasswordDialogProperties {
   t: UseTranslationReturnValue;
   onSubmit: (cancelFn: () => void) => void;
