@@ -422,5 +422,6 @@ export default {
   integrationType: 'Integration Type',
   exchange: 'Exchange',
   selected: 'Selected',
-  selectCurrencyForExchange: 'Select the currency for exchange'
+  selectCurrencyForExchange: 'Select the currency for exchange',
+  betReports: 'Bet Reports'
 };
