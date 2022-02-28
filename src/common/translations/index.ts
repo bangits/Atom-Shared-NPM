@@ -375,6 +375,7 @@ export default {
   //Reports
   reportByPlayers: 'Report By Players',
   reportByProviders: 'Report By Providers',
+  betsSettleDate: 'betsSettleDates',
   betsSettleDateFrom: 'Bets Settle Date From',
   betsSettleDateTo: 'Bets Settle Date To',
   betCount: 'Bet Count',
