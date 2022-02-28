@@ -68,7 +68,7 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    if (httpRequest.body && !(httpRequest.body instanceof FormData))
+    if (httpRequest.body && !(httpRequest.body instanceof FormData) && !Array.isArray(httpRequest.body))
       httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
 
     const headers = {
