@@ -4,8 +4,10 @@ import { useLoading, useTranslation } from '@/view';
 import { PageConfigViewModel } from '@/view/models';
 import { DataTable, DataTableProps } from '@atom/design-system';
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { CurrencySelect } from '..';
 
-export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, K>, 'paginationProps'> {
+export interface TablePageProps<T extends {}, K>
+  extends Omit<DataTableProps<T, K>, 'paginationProps' | 'currencySelect' | 'currencyTranslations'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
   rowCount: number;
   defaultPageSizeValue?: number;
@@ -15,7 +17,7 @@ export interface TablePageProps<T extends {}, K> extends Omit<DataTableProps<T, 
   isFetching?: boolean;
   isLoading?: boolean;
   isFilteredData?: boolean;
-  showFilters: boolean;
+  showFilters?: boolean;
   pageId?: PageIdsEnum;
   userId?: PageIdsEnum;
   getEditUrl?: (column: T) => string;
@@ -260,6 +262,13 @@ export const TablePage = <T extends {}, K>({
         columnsConfigDefaultValue={
           pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
         }
+        currencySelect={CurrencySelect}
+        currencyTranslations={{
+          infoTooltipText: '',
+          exchange: translations.get('exchange'),
+          selected: translations.get('selected'),
+          search: translations.get('search')
+        }}
       />
     </>
   );
