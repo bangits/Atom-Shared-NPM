@@ -422,5 +422,6 @@ export default {
   integrationType: 'Integration Type',
   exchange: 'Exchange',
   selected: 'Selected',
-  playerId: 'Player ID'
+  playerId: 'Player ID',
+  selectCurrencyForExchange: 'Select the currency for exchange'
 };

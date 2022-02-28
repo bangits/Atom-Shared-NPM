@@ -264,7 +264,7 @@ export const TablePage = <T extends {}, K>({
         }
         currencySelect={CurrencySelect}
         currencyTranslations={{
-          infoTooltipText: '',
+          infoTooltipText: translations.get('selectCurrencyForExchange'),
           exchange: translations.get('exchange'),
           selected: translations.get('selected'),
           search: translations.get('search')
