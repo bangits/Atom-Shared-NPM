@@ -385,6 +385,7 @@ export default {
   winAmount: 'Win Amount',
   betsSettleDateFrom: 'Bets Settle Date From',
   betsSettleDateTo: 'Bets Settle Date To',
+  betsSettleDate: 'Bets Settle Date',
   betAmountFrom: 'Bet Amount From',
   betAmountTo: 'Bet Amount To',
 
@@ -403,7 +404,6 @@ export default {
   eCommerce: 'ECommerce',
   reportByPlayers: 'Report By Players',
   reportByProviders: 'Report By Providers',
-  betsSettleDate: 'betsSettleDates',
   winCount: 'Win Count',
   playerUserName: 'Player User Name',
   platformUserId: 'Platform User ID',
@@ -423,5 +423,6 @@ export default {
   exchange: 'Exchange',
   selected: 'Selected',
   selectCurrencyForExchange: 'Select the currency for exchange',
-  betReports: 'Bet Reports'
+  betReports: 'Bet Reports',
+  playerId: 'Player ID'
 };

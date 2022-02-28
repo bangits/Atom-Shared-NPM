@@ -19,10 +19,13 @@
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> a513639ee87e5c391a854077f53b6466c95395b3
 >>>>>>> edce0f2f5a5a7e8a936a2fed135b7a3d29b5f7d3
 >>>>>>> 7effe95c02c6b2bf6c81ecff1ed0405bc08fb1d1
 >>>>>>> ae75fc74992ef92af7dd6f45112e126357266283
+>>>>>>> 2aa88cf2a805c22cc996e6d9f8dd2bdfd3adc686
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -775,6 +778,12 @@
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-object-super/-/plugin-transform-object-super-7.16.7.tgz#ac359cf8d32cf4354d27a46867999490b6c32a94"
   integrity sha512-14J1feiQVWaGvRxj2WjyMuXS2jsBkgB3MdSN5HuC2G5nRspa5RK9COcs82Pwy5BuGcjb+fYaUj94mYcOj7rCvw==
+<<<<<<< HEAD
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.16.7"
+    "@babel/helper-replace-supers" "^7.16.7"
+=======
+>>>>>>> 2aa88cf2a805c22cc996e6d9f8dd2bdfd3adc686
 
 "@babel/plugin-transform-parameters@^7.16.7":
   version "7.16.7"
@@ -827,6 +836,11 @@
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.16.7.tgz#9e7576dc476cb89ccc5096fff7af659243b4adeb"
   integrity sha512-mF7jOgGYCkSJagJ6XCujSQg+6xC1M77/03K2oBmVJWoFGNUtnVJO4WHKJk3dnPC8HCcj4xBQP1Egm8DWh3Pb3Q==
+<<<<<<< HEAD
+  dependencies:
+    regenerator-transform "^0.14.2"
+=======
+>>>>>>> 2aa88cf2a805c22cc996e6d9f8dd2bdfd3adc686
 
 "@babel/plugin-transform-reserved-words@^7.16.7":
   version "7.16.7"
@@ -1458,6 +1472,8 @@
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 "@my-ui/core@^0.3.0":
   version "0.3.0"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.3.0.tgz#757e152f434892b0bf34fbc7b84e0d7bb8ed057d"
@@ -1488,6 +1504,7 @@
 =======
 >>>>>>> 7effe95c02c6b2bf6c81ecff1ed0405bc08fb1d1
 >>>>>>> ae75fc74992ef92af7dd6f45112e126357266283
+>>>>>>> 2aa88cf2a805c22cc996e6d9f8dd2bdfd3adc686
 "@my-ui/core@^0.3.0", "@my-ui/core@^2.28.18":
   version "0.3.1"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.3.1.tgz#c93384886a263b16ccef5f73bba4e624cb5f13a5"

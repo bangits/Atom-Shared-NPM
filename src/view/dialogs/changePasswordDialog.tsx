@@ -5,7 +5,6 @@ export interface ChangePasswordDialogProperties {
   onSubmit: (cancelFn: () => void) => void;
   column: any[];
 }
-
 export const showChangePasswordDialog = ({ t, onSubmit, column }: ChangePasswordDialogProperties) => {
   dialog.acceptionDialog({
     title: t.get('block'),
