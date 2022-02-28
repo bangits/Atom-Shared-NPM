@@ -398,5 +398,8 @@ export default {
   betDate: 'Bet Date',
   betUpdateDate: 'Bet Update Date',
   deviceType: 'Device Type',
-  browser: 'Browser'
+  browser: 'Browser',
+  sumOf: 'Sum Of',
+  betUpdateDateFrom: 'Bet Update Date From',
+  betUpdateDateTo: 'Bet Update Date To'
 };
