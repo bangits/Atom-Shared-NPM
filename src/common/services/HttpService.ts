@@ -23,6 +23,8 @@ export type QueryType = {};
 
 @injectable()
 export class HttpService implements IHttpService {
+  public static logoutCb: () => void;
+
   private static token: string;
 
   private instance: AxiosInstance;
@@ -39,6 +41,10 @@ export class HttpService implements IHttpService {
     axios.defaults.headers.common.authorization = tokenWithBearer;
 
     HttpService.token = tokenWithBearer;
+  }
+
+  static setLogoutCb(logoutCb: () => void) {
+    HttpService.logoutCb = logoutCb;
   }
 
   static buildQuery(data: QueryType): string {
