@@ -403,6 +403,7 @@ export default {
   eCommerce: 'ECommerce',
   reportByPlayers: 'Report By Players',
   reportByProviders: 'Report By Providers',
+  betsSettleDate: 'betsSettleDates',
   winCount: 'Win Count',
   playerUserName: 'Player User Name',
   platformUserId: 'Platform User ID',
