@@ -420,5 +420,6 @@ export default {
   pleaseFillFields: 'Please fill fields',
   integrationType: 'Integration Type',
   exchange: 'Exchange',
-  selected: 'Selected'
+  selected: 'Selected',
+  selectCurrencyForExchange: 'Select the currency for exchange'
 };
