@@ -405,7 +405,7 @@ export default {
   reportByPlayers: 'Report By Players',
   reportByProviders: 'Report By Providers',
   winCount: 'Win Count',
-  playerUserName: 'Player User Name',
+  playerUserName: 'Player Username',
   platformUserId: 'Platform User ID',
   platTransactionId: 'Plat Transaction ID',
   rgsTransactionId: 'RGS Transaction ID',
