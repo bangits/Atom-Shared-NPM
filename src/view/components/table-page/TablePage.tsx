@@ -268,7 +268,11 @@ export const TablePage = <T extends {}, K>({
         columnsConfigDefaultValue={
           pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
         }
-        currencySelect={userId && (props.currencyProperty || props.exchangeCurrencyProperty) && currencySelect}
+        currencySelect={
+          userId && (props.currencyProperty || props.exchangeCurrencyProperty) && tableProps.data?.length
+            ? currencySelect
+            : null
+        }
         currencyTranslations={{
           infoTooltipText: translations.get('selectCurrencyForExchange'),
           exchange: translations.get('exchange'),
