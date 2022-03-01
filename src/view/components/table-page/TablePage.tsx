@@ -2,10 +2,10 @@ import { AtomCommonContext, historyService } from '@/atom-common';
 import { PageIdsEnum, PrimaryKey } from '@/domain';
 import { useLoading, useTranslation } from '@/view';
 import { PageConfigViewModel } from '@/view/models';
-import { AccountManagementProvider, UserWalletsCurrencies } from '@atom/account-management';
 import { DataTable, DataTableProps } from '@atom/design-system';
-import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { CustomSelectProps } from '..';
+import { ExchangeCurrencySelect } from './ExchangeCurrencySelect';
 
 export interface TablePageProps<T extends {}, K>
   extends Omit<DataTableProps<T, K>, 'paginationProps' | 'currencySelect' | 'currencyTranslations'> {
@@ -187,11 +187,7 @@ export const TablePage = <T extends {}, K>({
   );
 
   const currencySelect = useCallback(
-    (props: CustomSelectProps) => (
-      <AccountManagementProvider>
-        <UserWalletsCurrencies {...props} userId={userId} />
-      </AccountManagementProvider>
-    ),
+    (props: CustomSelectProps) => <ExchangeCurrencySelect {...props} userId={userId} />,
     [userId]
   );
 
@@ -272,7 +268,6 @@ export const TablePage = <T extends {}, K>({
         columnsConfigDefaultValue={
           pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
         }
-        // TODO: need to import currencySelect lazy
         currencySelect={userId && (props.currencyProperty || props.exchangeCurrencyProperty) && currencySelect}
         currencyTranslations={{
           infoTooltipText: translations.get('selectCurrencyForExchange'),
