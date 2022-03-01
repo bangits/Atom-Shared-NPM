@@ -1,14 +1,10 @@
-
-import { dialog, Icons } from '@atom/design-system';
 import { UseTranslationReturnValue } from '@/view';
+import { dialog, Icons } from '@atom/design-system';
 export interface ChangePasswordDialogProperties {
   t: UseTranslationReturnValue;
   onSubmit: (cancelFn: () => void) => void;
   column: any[];
 }
-console.log(Icons.BlockButtonIcon);
-console.log(Icons.CameraIcon);
-
 export const showChangePasswordDialog = ({ t, onSubmit, column }: ChangePasswordDialogProperties) => {
   dialog.acceptionDialog({
     title: t.get('block'),
