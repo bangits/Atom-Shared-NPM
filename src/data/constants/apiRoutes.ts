@@ -11,5 +11,8 @@ export const API_ROUTES = {
   FileManager: {
     Upload: '/Upload'
   },
-  PageConfigs: '/PageConfigs'
+  PageConfigs: '/PageConfigs',
+  ExchangeManager: {
+    CompatibleCurrencies: '/ProjectExchangeRates/CompatibleCurrencies'
+  }
 };

@@ -187,7 +187,9 @@ export const TablePage = <T extends {}, K>({
   );
 
   const currencySelect = useCallback(
-    (props: CustomSelectProps) => <ExchangeCurrencySelect {...props} userId={userId} />,
+    (selectProps: CustomSelectProps) => (
+      <ExchangeCurrencySelect {...selectProps} defaultCurrencyCode={props.defaultCurrency?.label} userId={userId} />
+    ),
     [userId]
   );
 

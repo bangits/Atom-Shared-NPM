@@ -1,22 +1,28 @@
-import React from 'react';
-import { CustomSelectProps } from '..';
+import { AtomCommonContext } from '@/atom-common';
+import { useContext, useEffect, useMemo, useState } from 'react';
+import { CustomSelect, CustomSelectProps } from '..';
 
-const AccountManagementProvider = React.lazy(() => {
-  return System.import('@atom/account-management').then((module) => ({
-    default: module.AccountManagementProvider
-  }));
-});
+export const ExchangeCurrencySelect = (props: CustomSelectProps & { userId: number; defaultCurrencyCode: string }) => {
+  const { exchangeManagerUseCase } = useContext(AtomCommonContext);
 
-const UserWalletsCurrencies = React.lazy(() => {
-  return System.import('@atom/account-management').then((module) => ({
-    default: module.UserWalletsCurrencies
-  }));
-});
+  const [currencyCodes, setCurrencyCodes] = useState<string[]>([]);
 
-export const ExchangeCurrencySelect = (props: CustomSelectProps & { userId: number }) => (
-  <React.Suspense fallback={null}>
-    <AccountManagementProvider>
-      <UserWalletsCurrencies {...props} />
-    </AccountManagementProvider>
-  </React.Suspense>
-);
+  const selectOptions = useMemo(
+    () => currencyCodes.map((currencyCode) => ({ value: currencyCode, label: currencyCode })),
+    [currencyCodes]
+  );
+
+  useEffect(() => {
+    if (!props.defaultCurrencyCode) return;
+
+    exchangeManagerUseCase
+      .getExchangeCompatibleCurrencyCodes(props.defaultCurrencyCode)
+      .then((currencyCodes) => setCurrencyCodes([props.defaultCurrencyCode, ...currencyCodes]));
+  }, [props.defaultCurrencyCode]);
+
+  return (
+    <>
+      <CustomSelect {...props} options={selectOptions} />
+    </>
+  );
+};
