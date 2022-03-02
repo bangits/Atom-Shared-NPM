@@ -155,7 +155,8 @@ export default {
   add: 'Add',
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
-    emptyResultSecondSentence: 'Please make a different filter selection.'
+    emptyResultSecondSentence: 'Please make a different filter selection.',
+    thereAreNotAnyBets: 'There are no any bets made !'
   },
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
@@ -405,7 +406,7 @@ export default {
   reportByPlayers: 'Report By Players',
   reportByProviders: 'Report By Providers',
   winCount: 'Win Count',
-  playerUserName: 'Player User Name',
+  playerUserName: 'Player Username',
   platformUserId: 'Platform User ID',
   platTransactionId: 'Plat Transaction ID',
   rgsTransactionId: 'RGS Transaction ID',

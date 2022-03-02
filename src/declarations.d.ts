@@ -48,6 +48,7 @@ declare module '*.scss' {
 declare global {
   let diFiles: DiConfig[];
   let env: {};
+  let System: { import: <T extends Module>(moduleId: string, parentUrl?: string) => Promise<T> };
 }
 
 export default global;

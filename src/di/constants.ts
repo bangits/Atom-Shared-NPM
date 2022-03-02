@@ -1,5 +1,6 @@
 export const DI_CONSTANTS = {
   HttpService: 'HttpService',
+  ExchangeManagerHttpService: 'ExchangeManagerHttpService',
   FileManagerHttpService: 'FileManagerHttpService',
   UserHttpService: 'UserHttpService',
   CacheService: 'CacheService',
@@ -8,11 +9,13 @@ export const DI_CONSTANTS = {
   SessionStorageService: 'SessionStorageService',
   LocalStorageService: 'LocalStorageService',
   ResourceManagerRepository: 'ResourceManagerRepository',
+  ExchangeManagerRepository: 'ExchangeManagerRepository',
   ResourceManagerUseCase: 'ResourceManagerUseCase',
   FileManagerUseCase: 'FileManagerUseCase',
   FileManagerRepository: 'FileManagerRepository',
   TranslationUseCase: 'TranslationUseCase',
   PageConfigsUseCase: 'PageConfigsUseCase',
+  ExchangeManagerUseCase: 'ExchangeManagerUseCase',
   UserRepository: 'UserRepository',
   PageConfigsRepository: 'PageConfigsRepository'
 };

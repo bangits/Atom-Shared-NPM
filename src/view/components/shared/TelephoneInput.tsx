@@ -12,6 +12,7 @@ export interface TelephoneInputProps {
   error?: string | false;
   onChange: (fullPhoneNumber: string, phoneCodeValue: PrimaryKey, phoneNuumber: string) => void;
   onBlur?: () => void;
+  forceClear?: boolean;
 }
 
 export const TelephoneInput = ({
@@ -20,7 +21,8 @@ export const TelephoneInput = ({
   onChange,
   label,
   onBlur,
-  error
+  error,
+  forceClear
 }: TelephoneInputProps) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
@@ -32,14 +34,14 @@ export const TelephoneInput = ({
   const selectOption = useMemo(() => phoneCodes.map((p) => ({ value: p.id, label: p.name })), [phoneCodes]);
 
   const dropdownInputProps = useMemo(
-    () => ({ type: 'number', value: selectedPhoneCode?.name || null }),
+    () => ({ type: 'number', value: selectedPhoneCode?.name || '' }),
     [selectedPhoneCode]
   );
 
   const dropdownProps = useMemo(
     () => ({
       options: selectOption,
-      value: selectedPhoneCode?.id || null,
+      value: selectedPhoneCode?.id || '',
       defaultValue: phoneCodeDefaultValue,
       onBlur,
       color: error ? ('danger' as const) : undefined
@@ -98,6 +100,13 @@ export const TelephoneInput = ({
         setPhoneCodes(getPhoneCodeResponse.results);
       });
   }, []);
+
+  useEffect(() => {
+    if (forceClear) {
+      setPhoneNumber('');
+      setSelectedPhoneCode(null);
+    }
+  }, [forceClear]);
 
   return (
     <InputWithDropdown
