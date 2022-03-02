@@ -424,5 +424,6 @@ export default {
   selected: 'Selected',
   selectCurrencyForExchange: 'Select the currency for exchange',
   betReports: 'Bet Reports',
-  playerId: 'Player ID'
+  playerId: 'Player ID',
+  betsSettleDatepickers:"Bets Settle Date Pickers"
 };
