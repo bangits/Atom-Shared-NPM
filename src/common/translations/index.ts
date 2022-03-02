@@ -155,7 +155,8 @@ export default {
   add: 'Add',
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
-    emptyResultSecondSentence: 'Please make a different filter selection.'
+    emptyResultSecondSentence: 'Please make a different filter selection.',
+    thereAreNotAnyBets: 'There are no any bets made !'
   },
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
