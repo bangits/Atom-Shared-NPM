@@ -44,7 +44,8 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         translationService: containerInstance.diContainer.get(DI_CONSTANTS.TranslationService),
         localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService),
         fileManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.FileManagerUseCase),
-        pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase)
+        pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase),
+        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase)
       }}>
       {children}
     </AtomCommonContext.Provider>

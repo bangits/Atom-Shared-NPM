@@ -39,6 +39,8 @@ export class HttpService implements IHttpService {
     const tokenWithBearer = `Bearer ${accessToken}`;
 
     axios.defaults.headers.common.authorization = tokenWithBearer;
+    // @ts-expect-error TODO: This functional will be changed
+    axios.defaults.headers.common.projectId = 1;
 
     HttpService.token = tokenWithBearer;
   }
@@ -74,6 +76,11 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
+    // @ts-expect-error TODO: This functional will be changed
+    if (httpRequest.query) httpRequest.query.projectId = 1;
+    // @ts-expect-error TODO: This functional will be changed
+    if (httpRequest.body) httpRequest.body.projectId = 1;
+
     if (httpRequest.body && !(httpRequest.body instanceof FormData) && !Array.isArray(httpRequest.body))
       httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);
 
