@@ -9,12 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@atom/design-system@^2.8.4":
-  version "2.8.9"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.8.9.tgz#043e60566f9de2559ee0d8aca56246b2a0d5a873"
-  integrity sha1-BD5gVm+d4lWe4NispWJGsqDVqHM=
+"@atom/design-system@^2.9.6":
+  version "2.9.6"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.9.6.tgz#ff5b9c771626ae4ae0751f0d1acf09992f908271"
+  integrity sha1-/1ucdxYmrkrgdR8NGs8JmS+QgnE=
   dependencies:
-    "@my-ui/core" "^0.3.7"
+    "@my-ui/core" "^0.4.4"
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -1450,26 +1450,10 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
-"@my-ui/core@^0.3.7":
-  version "0.3.9"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.3.9.tgz#0628074c31bf970fcdea5ced8530a0e2510f3a9f"
-  integrity sha1-BigHTDG/lw/N6lzthTCg4lEPOp8=
-  dependencies:
-    "@my-ui/react-datepicker" "^1.5.0"
-    "@my-ui/react-select" "1.1.6"
-    "@my-ui/react-table" "1.3.0"
-    "@my-ui/scrollbar" "^1.0.2"
-    classnames "^2.3.1"
-    react-flip-move "^3.0.4"
-    react-jss "^10.8.0"
-    react-paginate "^7.1.5"
-    react-transition-group "^4.4.2"
-    throttle-debounce "^3.0.1"
-
-"@my-ui/core@^2.28.18":
-  version "0.3.15"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.3.15.tgz#2764f904b0b0aa846e9475f05be0e7edea1c100a"
-  integrity sha1-J2T5BLCwqoRulHXwW+Dn7eocEAo=
+"@my-ui/core@^0.4.4", "@my-ui/core@^2.28.18":
+  version "0.4.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.4.4.tgz#856dc76a3e122f08ec16119bce7217d2dd1472ef"
+  integrity sha1-hW3Haj4SLwjsFhGbznIX0t0Ucu8=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
