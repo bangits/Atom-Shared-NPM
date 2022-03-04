@@ -426,5 +426,7 @@ export default {
   selectCurrencyForExchange: 'Select the currency for exchange',
   betReports: 'Bet Reports',
   playerId: 'Player ID',
-  betsSettleDatepickers:"Bets Settle Date Pickers"
+  betsSettleDatepickers: 'Bets Settle Date Pickers',
+  calculateSum: 'Calculate sum',
+  recalculateSum: 'Recalculate sum'
 };
