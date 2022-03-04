@@ -1,6 +1,6 @@
 import dayJS from 'dayjs';
 
-export const convertDate = (date: Date | string, format = 'MM/DD/YYYY HH:mm:ss', plusUserTimezone = true) => {
+export const convertDate = (date: Date | string, format = 'DD/MM/YYYY HH:mm:ss', plusUserTimezone = true) => {
   if (!date) return null;
 
   const parsedDate = typeof date === 'string' ? new Date(date) : date;
