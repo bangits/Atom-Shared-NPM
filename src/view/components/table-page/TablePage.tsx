@@ -136,11 +136,27 @@ export const TablePage = <T extends {}, K>({
     [pageSizeDividerValue, props.rowCount]
   );
 
+  const tableColumnsOrdered = useMemo(() => {
+    const tableConfigHashMap = tableConfig.config?.reduce<Record<string, number>>(
+      (acc, config) => ({ ...acc, [config.Name]: config.Order }),
+      {}
+    );
+
+    if (!tableConfigHashMap) return props.tableProps.columns;
+
+    return props.tableProps.columns.sort(
+      (prevColumn, nextColumn) => tableConfigHashMap[prevColumn.accessor] - tableConfigHashMap[nextColumn.accessor]
+    );
+  }, [props.tableProps.columns, tableConfig.config]);
+
   const tableProps = useMemo<typeof props.tableProps>(
     () => ({
       ...(props.tableProps || {}),
       isLoading,
       emptyValue: translations.get('emptyValue'),
+      tableFooterGenerateText: translations.get('calculateSum'),
+      tableFooterRegenerateText: translations.get('recalculateSum'),
+      shouldShowtableFooterRegenerateButton: true,
       actions: [
         ...(props.tableProps.actions || []),
         ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
@@ -170,9 +186,10 @@ export const TablePage = <T extends {}, K>({
             ]
           : [])
       ],
+      columns: tableColumnsOrdered,
       onSelectedColumnsChange: (columns) => setSelectedColumnsLength(columns.length)
     }),
-    [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength, isLoading]
+    [props.tableProps, getViewUrl, getEditUrl, selectedColumnsLength, isLoading, tableColumnsOrdered]
   );
 
   const updateConfig = useCallback(
@@ -209,9 +226,13 @@ export const TablePage = <T extends {}, K>({
           config: config.filtersConfig.config || null
         });
 
+        console.log(tableProps.columns);
+
         setTableConfig({
           id: config.columnConfig.id,
-          config: config.columnConfig.config || null
+          config: config.columnConfig.config
+            ? config.columnConfig.config?.sort((prev, next) => prev.Order - next.Order)
+            : null
         });
       });
   }, []);
@@ -261,7 +282,7 @@ export const TablePage = <T extends {}, K>({
           updateConfig(
             tableConfig.id,
             tableColumns.map((column, index) => ({
-              Order: index + 1,
+              Order: column.index || index + 1,
               IsActive: selectedColumns.includes(column.value),
               Name: column.value
             }))

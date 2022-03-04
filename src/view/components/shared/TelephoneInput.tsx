@@ -33,10 +33,7 @@ export const TelephoneInput = ({
 
   const selectOption = useMemo(() => phoneCodes.map((p) => ({ value: p.id, label: p.name })), [phoneCodes]);
 
-  const dropdownInputProps = useMemo(
-    () => ({ type: 'number', value: selectedPhoneCode?.name || '' }),
-    [selectedPhoneCode]
-  );
+  const dropdownInputProps = useMemo(() => ({ type: 'number' }), [selectedPhoneCode]);
 
   const dropdownProps = useMemo(
     () => ({
