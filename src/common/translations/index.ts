@@ -156,7 +156,8 @@ export default {
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
     emptyResultSecondSentence: 'Please make a different filter selection.',
-    thereAreNotAnyBets: 'There are no any bets made !'
+    thereAreNotAnyBets: 'There are no any bets made !',
+    emptyResultTextReports: 'You don’t have any Reports!'
   },
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
@@ -426,5 +427,5 @@ export default {
   selectCurrencyForExchange: 'Select the currency for exchange',
   betReports: 'Bet Reports',
   playerId: 'Player ID',
-  betsSettleDatepickers:"Bets Settle Date Pickers"
+  betsSettleDatepickers: 'Bets Settle Date Pickers'
 };
