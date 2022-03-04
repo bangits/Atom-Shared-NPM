@@ -52,7 +52,7 @@ export default {
   'user-not-found': 'Invalid account',
   class: 'Class',
   feature: 'Feature',
-  supportedBrowsers: 'Supported browsers',
+  supportedBrowsers: 'Supported Browsers',
   licenses: 'Licenses',
   absoluteRealURL: 'Absolute Real URL',
   absoluteDemoURL: 'Absolute Demo URL',
