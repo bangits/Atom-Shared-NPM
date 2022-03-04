@@ -384,6 +384,12 @@ export default {
   ggrPercent: 'GGR (%)',
   betAmount: 'Bet Amount',
   winAmount: 'Win Amount',
+  win: 'Win',
+  bet: 'Bet',
+  lost: 'Lost',
+  new: 'New',
+  cancelled: 'Cancelled',
+  rollback: 'Rollback',
   betsSettleDateFrom: 'Bets Settle Date From',
   betsSettleDateTo: 'Bets Settle Date To',
   betsSettleDate: 'Bets Settle Date',
@@ -426,5 +432,5 @@ export default {
   selectCurrencyForExchange: 'Select the currency for exchange',
   betReports: 'Bet Reports',
   playerId: 'Player ID',
-  betsSettleDatepickers:"Bets Settle Date Pickers"
+  betsSettleDatepickers: 'Bets Settle Date Pickers'
 };
