@@ -436,7 +436,5 @@ export default {
   betsSettleDatepickers: 'Bets Settle Date Pickers',
   calculateSum: 'Calculate sum',
   recalculateSum: 'Recalculate sum',
-  new: 'New',
-  win: 'Win',
-  bet: 'Bet'
+  providerTransactionId: 'Provider Transaction ID'
 };
