@@ -52,7 +52,7 @@ export default {
   'user-not-found': 'Invalid account',
   class: 'Class',
   feature: 'Feature',
-  supportedBrowsers: 'Supported browsers',
+  supportedBrowsers: 'Supported Browsers',
   licenses: 'Licenses',
   absoluteRealURL: 'Absolute Real URL',
   absoluteDemoURL: 'Absolute Demo URL',
@@ -156,7 +156,8 @@ export default {
   tables: {
     emptyResultFirstSentence: 'Sorry no data found!',
     emptyResultSecondSentence: 'Please make a different filter selection.',
-    thereAreNotAnyBets: 'There are no any bets made !'
+    thereAreNotAnyBets: 'There are no any bets made !',
+    emptyResultTextReports: 'You don’t have any Reports!'
   },
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
@@ -384,6 +385,12 @@ export default {
   ggrPercent: 'GGR (%)',
   betAmount: 'Bet Amount',
   winAmount: 'Win Amount',
+  win: 'Win',
+  bet: 'Bet',
+  lost: 'Lost',
+  new: 'New',
+  cancelled: 'Cancelled',
+  rollback: 'Rollback',
   betsSettleDateFrom: 'Bets Settle Date From',
   betsSettleDateTo: 'Bets Settle Date To',
   betsSettleDate: 'Bets Settle Date',
