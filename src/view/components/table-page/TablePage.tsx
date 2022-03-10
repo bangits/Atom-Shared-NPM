@@ -24,6 +24,7 @@ export interface TablePageProps<T extends {}, K>
   getEditUrl?: (column: T) => string;
   getViewUrl?: (column: T) => string;
   refetch?: () => void;
+  onTableConfigChange?: (config: PageConfigViewModel[]) => void;
 }
 
 export const TablePage = <T extends {}, K>({
@@ -40,6 +41,7 @@ export const TablePage = <T extends {}, K>({
   refetch,
   pageId,
   userId,
+  onTableConfigChange,
   ...props
 }: TablePageProps<T, K>) => {
   const { pageConfigsUseCase } = useContext(AtomCommonContext);
@@ -198,6 +200,8 @@ export const TablePage = <T extends {}, K>({
 
       pageConfigsUseCase.updatePageConfigs(configId, configJSON);
 
+      onTableConfigChange?.(configJSON);
+
       setTimeout(() => (tableConfigUpdateTimeout.current = false), 700);
     },
     [tableConfigUpdateTimeout]
@@ -226,14 +230,16 @@ export const TablePage = <T extends {}, K>({
           config: config.filtersConfig.config || null
         });
 
-        console.log(tableProps.columns);
+        const tableConfig = config.columnConfig.config
+          ? config.columnConfig.config?.sort((prev, next) => prev.Order - next.Order)
+          : null;
 
         setTableConfig({
           id: config.columnConfig.id,
-          config: config.columnConfig.config
-            ? config.columnConfig.config?.sort((prev, next) => prev.Order - next.Order)
-            : null
+          config: tableConfig
         });
+
+        onTableConfigChange?.(tableConfig);
       });
   }, []);
 

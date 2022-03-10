@@ -35,7 +35,7 @@ export class PageConfigsUseCase {
     };
   };
 
-  updatePageConfigs = async (configId: PrimaryKey, configJson: {}): Promise<boolean> => {
+  updatePageConfigs = async (configId: PrimaryKey, configJson: PageConfigViewModel[]): Promise<boolean> => {
     return await this.pageConfigsRepository.updatePageConfig(configId, JSON.stringify(configJson));
   };
 }

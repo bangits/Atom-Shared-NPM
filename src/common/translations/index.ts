@@ -382,6 +382,7 @@ export default {
   ggrFrom: 'GGR From',
   ggrTo: 'GGR To',
   ggr: 'GGR',
+  ggrAmount: 'GGR Amount',
   ggrPercent: 'GGR (%)',
   betAmount: 'Bet Amount',
   winAmount: 'Win Amount',
@@ -435,8 +436,5 @@ export default {
   playerId: 'Player ID',
   betsSettleDatepickers: 'Bets Settle Date Pickers',
   calculateSum: 'Calculate sum',
-  recalculateSum: 'Recalculate sum',
-  new: 'New',
-  win: 'Win',
-  bet: 'Bet'
+  recalculateSum: 'Recalculate sum'
 };

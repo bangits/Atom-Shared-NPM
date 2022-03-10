@@ -1,5 +1,6 @@
 export * from './CacheService';
 export * from './EnviromentService';
+export * from './ExportLoadingService';
 export * from './HistoryService';
 export * from './HttpService';
 export * from './LoadingService';

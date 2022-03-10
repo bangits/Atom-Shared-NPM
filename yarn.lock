@@ -9,12 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@atom/design-system@^2.9.6":
-  version "2.9.6"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-2.9.6.tgz#ff5b9c771626ae4ae0751f0d1acf09992f908271"
-  integrity sha1-/1ucdxYmrkrgdR8NGs8JmS+QgnE=
+"@atom/design-system@^3.0.0":
+  version "3.0.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.0.0.tgz#4f905db87c8718b9e17e742de59d3a8496edf30c"
+  integrity sha1-T5BduHyHGLnhfnQt5Z06hJbt8ww=
   dependencies:
-    "@my-ui/core" "^0.4.4"
+    "@my-ui/core" "^0.5.0"
     classnames "^2.3.1"
     react "^17.0.2"
     react-cropper "^2.1.8"
@@ -1450,10 +1450,10 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
-"@my-ui/core@^0.4.4", "@my-ui/core@^2.28.18":
-  version "0.4.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.4.4.tgz#856dc76a3e122f08ec16119bce7217d2dd1472ef"
-  integrity sha1-hW3Haj4SLwjsFhGbznIX0t0Ucu8=
+"@my-ui/core@^0.5.0", "@my-ui/core@^2.28.18":
+  version "0.5.0"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.5.0.tgz#49295eda07005502415cb10dd24fb1c89558b9fd"
+  integrity sha1-SSle2gcAVQJBXLEN0k+xyJVYuf0=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"

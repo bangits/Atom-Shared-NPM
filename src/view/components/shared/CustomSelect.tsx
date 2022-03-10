@@ -5,7 +5,7 @@ export { SelectOptionType } from '@atom/design-system';
 
 export type CustomSelectProps = SelectProps<any, any, any>;
 
-export function CustomSelect(props: CustomSelectProps) {
+export const CustomSelect = (props: CustomSelectProps) => {
   const t = useTranslation();
 
   return (
@@ -13,4 +13,4 @@ export function CustomSelect(props: CustomSelectProps) {
       <Select {...props} selectAllLabel={t.get('all')} />
     </>
   );
-}
+};
