@@ -230,7 +230,7 @@ export default {
   uniqueBrandName: 'Brand name is unique!',
   uniqueLegalName: 'Legal name is unique!',
   uniqueEmail: 'Email already exists!',
-  optional: '(Optional)',
+  optional: 'Optional',
   partnerManagement: 'Partner Management',
   partnerDetails: 'Partner Details',
   documentId: 'Document ID',
@@ -437,5 +437,6 @@ export default {
   betsSettleDatepickers: 'Bets Settle Date Pickers',
   calculateSum: 'Calculate sum',
   recalculateSum: 'Recalculate sum',
-  providerTransactionId: 'Provider Transaction ID'
+  providerTransactionId: 'Provider Transaction ID',
+  export: 'Export',
 };

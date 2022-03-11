@@ -10,3 +10,4 @@ export * from './getTodayAndTomorrowDates';
 export * from './regexLibrary';
 export * from './replaceEmptyStringsWithNull';
 export * from './stringifyQuery';
+export * from './downloadURL';

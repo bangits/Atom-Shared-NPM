@@ -1,4 +1,5 @@
 import { exportLoadingService } from '@/atom-common';
+import { useTranslation } from '@/view';
 import {
   alert,
   ExportButton as DesignSystemExportButton,
@@ -13,6 +14,8 @@ export interface ExportButtonProps extends Omit<DesignSystemExportButtonProps, '
 export const ExportButton = (props: ExportButtonProps) => {
   const [exportButtonAlertId, setExportButtonAlertId] = useState(exportLoadingService.latestValue);
 
+  const t = useTranslation();
+
   const onExportButtonClick = useCallback(
     async (e) => {
       const alertId = alert.loading({
@@ -20,19 +23,24 @@ export const ExportButton = (props: ExportButtonProps) => {
         autoClose: false
       });
 
-      exportLoadingService.changeAlertId(alertId);
-      setExportButtonAlertId(alertId);
+      try {
+        exportLoadingService.changeAlertId(alertId);
+        setExportButtonAlertId(alertId);
 
-      await props.onClick(e);
+        await props.onClick(e);
 
-      setExportButtonAlertId(null);
-      exportLoadingService.changeAlertId(null);
-
-      alert.remove(alertId);
-
-      alert.success({
-        alertLabel: 'Successfully exported!'
-      });
+        alert.success({
+          alertLabel: 'Successfully exported!'
+        });
+      } catch {
+        alert.error({
+          alertLabel: 'Error!'
+        });
+      } finally {
+        setExportButtonAlertId(null);
+        exportLoadingService.changeAlertId(null);
+        alert.remove(alertId);
+      }
     },
     [props.onClick]
   );
@@ -41,5 +49,12 @@ export const ExportButton = (props: ExportButtonProps) => {
     exportLoadingService.subscribe((alertId) => setExportButtonAlertId(alertId));
   }, []);
 
-  return <DesignSystemExportButton {...props} disabled={!!exportButtonAlertId} onClick={onExportButtonClick} />;
+  return (
+    <DesignSystemExportButton
+      children={t.get('export')}
+      {...props}
+      disabled={!!exportButtonAlertId}
+      onClick={onExportButtonClick}
+    />
+  );
 };
