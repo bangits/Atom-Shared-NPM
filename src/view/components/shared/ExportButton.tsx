@@ -19,7 +19,7 @@ export const ExportButton = (props: ExportButtonProps) => {
   const onExportButtonClick = useCallback(
     async (e) => {
       const alertId = alert.loading({
-        alertLabel: 'Exporting the data...',
+        alertLabel: t.get('exportingData'),
         autoClose: false
       });
 
@@ -30,11 +30,11 @@ export const ExportButton = (props: ExportButtonProps) => {
         await props.onClick(e);
 
         alert.success({
-          alertLabel: 'Successfully exported!'
+          alertLabel: t.get('dataWasExported')
         });
       } catch {
         alert.error({
-          alertLabel: 'Error!'
+          alertLabel: t.get('connectionError')
         });
       } finally {
         setExportButtonAlertId(null);

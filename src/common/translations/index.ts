@@ -439,4 +439,6 @@ export default {
   recalculateSum: 'Recalculate sum',
   providerTransactionId: 'Provider Transaction ID',
   export: 'Export',
+  exportingData:'Exporting the data...',
+  dataWasExported: 'The .CSV file was successfully exported !',
 };
