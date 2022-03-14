@@ -1,5 +1,4 @@
-
-const downloadURL = (url: string, name: string) => {
+export const downloadURL = (url: string, name: string) => {
   let link: HTMLAnchorElement = document.createElement('a');
 
   link.download = name;
@@ -10,5 +9,3 @@ const downloadURL = (url: string, name: string) => {
 
   link = null;
 };
-
-export default downloadURL;
