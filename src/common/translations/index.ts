@@ -135,6 +135,7 @@ export default {
   partnerId: 'Partner ID',
   gameCount: 'Game Count',
   gamesCount: 'Games Count',
+  playedGames: 'Played Games',
   gameCountFrom: 'Game Count From',
   gameInformation: 'Game Information',
   gameCountTo: 'Game Count To',
@@ -439,6 +440,6 @@ export default {
   recalculateSum: 'Recalculate sum',
   providerTransactionId: 'Provider Transaction ID',
   export: 'Export',
-  exportingData:'Exporting the data...',
-  dataWasExported: 'The .CSV file was successfully exported !',
+  exportingData: 'Exporting the data...',
+  dataWasExported: 'The .CSV file was successfully exported !'
 };
