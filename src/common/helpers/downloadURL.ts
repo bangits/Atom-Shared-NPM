@@ -1,11 +1,19 @@
 export const downloadURL = (url: string, name: string) => {
-  let link: HTMLAnchorElement = document.createElement('a');
+  fetch(url)
+    .then((response) => response.blob())
+    .then((response) => {
+      const url = window.URL.createObjectURL(new Blob([response]));
 
-  link.download = name;
-  link.href = url;
-  document.body.appendChild(link);
-  link.click();
-  document.body.removeChild(link);
+      let link = document.createElement('a');
 
-  link = null;
+      link.href = url;
+
+      link.setAttribute('download', name);
+
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      link = null;
+    });
 };

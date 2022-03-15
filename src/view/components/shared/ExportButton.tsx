@@ -5,10 +5,10 @@ import {
   ExportButton as DesignSystemExportButton,
   ExportButtonProps as DesignSystemExportButtonProps
 } from '@atom/design-system';
-import { useCallback, useEffect, useState } from 'react';
+import { MouseEvent, useCallback, useEffect, useState } from 'react';
 
-export interface ExportButtonProps extends Omit<DesignSystemExportButtonProps, 'disabled'> {
-  onClick: (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => Promise<void>;
+export interface ExportButtonProps extends Omit<DesignSystemExportButtonProps, 'disabled' | 'onClick'> {
+  onClick: (e: MouseEvent<SVGSVGElement, MouseEvent>) => Promise<void>;
 }
 
 export const ExportButton = (props: ExportButtonProps) => {
@@ -51,8 +51,8 @@ export const ExportButton = (props: ExportButtonProps) => {
 
   return (
     <DesignSystemExportButton
-      children={t.get('export')}
       {...props}
+      tooltipText={t.get('export')}
       disabled={!!exportButtonAlertId}
       onClick={onExportButtonClick}
     />
