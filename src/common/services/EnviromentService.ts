@@ -8,7 +8,7 @@ class EnviromentService {
   }
 
   get<T>(key: string): T {
-    if (!this.env[key]) throw new Error('Invalid key found in EnviromentService');
+    if (this.env[key] === undefined) throw new Error('Invalid key found in EnviromentService');
 
     return this.env[key];
   }

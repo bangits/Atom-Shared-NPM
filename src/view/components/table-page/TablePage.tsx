@@ -161,19 +161,6 @@ export const TablePage = <T extends {}, K>({
       shouldShowtableFooterRegenerateButton: true,
       actions: [
         ...(props.tableProps.actions || []),
-        ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
-          ? [
-              {
-                iconName: 'ViewIcon' as const,
-                onClick: (columns) => {
-                  if (Array.isArray(columns)) {
-                    columns.forEach((c) => window.open(getViewUrl(c), '_blank'));
-                  } else historyService.redirectToURL(getViewUrl(columns));
-                },
-                tooltipText: translations.get('view')
-              }
-            ]
-          : []),
         ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
           ? [
               {
@@ -184,6 +171,19 @@ export const TablePage = <T extends {}, K>({
                   } else historyService.redirectToURL(getEditUrl(columns));
                 },
                 tooltipText: translations.get('edit')
+              }
+            ]
+          : []),
+        ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
+          ? [
+              {
+                iconName: 'ViewIcon' as const,
+                onClick: (columns) => {
+                  if (Array.isArray(columns)) {
+                    columns.forEach((c) => window.open(getViewUrl(c), '_blank'));
+                  } else historyService.redirectToURL(getViewUrl(columns));
+                },
+                tooltipText: translations.get('view')
               }
             ]
           : [])

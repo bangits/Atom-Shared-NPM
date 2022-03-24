@@ -1,5 +1,6 @@
 import {
   CacheService,
+  enviromentService,
   HttpService,
   ICacheService,
   IHttpService,
@@ -35,19 +36,19 @@ export class DiContainer {
     this.diContainer.bind<IHttpService>(DI_CONSTANTS.HttpService).toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://20.69.79.186/api/v1'
+          baseURL: enviromentService.get<{ resourceManager: string }>('apiUrlPaths').resourceManager
         })
     );
     this.diContainer.bind<IHttpService>(DI_CONSTANTS.FileManagerHttpService).toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://20.64.136.46//api/v1'
+          baseURL: enviromentService.get<{ fileManager: string }>('apiUrlPaths').fileManager
         })
     );
     this.diContainer.bind<IHttpService>(DI_CONSTANTS.ExchangeManagerHttpService).toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://20.115.248.6/api/v1'
+          baseURL: enviromentService.get<{ exchangeManager: string }>('apiUrlPaths').exchangeManager
         })
     );
     this.diContainer.bind<ICacheService>(DI_CONSTANTS.CacheService).to(CacheService);
@@ -57,7 +58,7 @@ export class DiContainer {
     this.diContainer.bind(DI_CONSTANTS.UserHttpService).toDynamicValue(
       () =>
         new HttpService({
-          baseURL: 'http://20.83.89.52/api/v1'
+          baseURL: enviromentService.get<{ userManager: string }>('apiUrlPaths').userManager
         })
     );
 
