@@ -21,7 +21,7 @@ export const getBaseQuery =
       const useCase = containerInstance.diContainer.get(useCaseName);
       const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
       const data = await method(...(methodArguments as any[]));
-      if (typeof data === 'object') data[immerable] = true;
+      if (data && typeof data === 'object') data[immerable] = true;
       return { data };
     } catch (error) {
       if (error.response?.data?.Status) return Promise.reject(error.response.data.Status);

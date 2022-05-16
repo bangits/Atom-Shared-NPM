@@ -215,14 +215,12 @@ export const TablePage = <T extends {}, K>({
   );
 
   useEffect(() => {
-    if (!isFilteredData) changeLoading(true);
-  }, []);
-
-  useEffect(() => {
     if (!isFetching) changeLoading(false);
   }, [isFetching]);
 
   useEffect(() => {
+    if (!isFilteredData) changeLoading(true);
+
     if (pageId && userId)
       pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) => {
         setFiltersConfig({

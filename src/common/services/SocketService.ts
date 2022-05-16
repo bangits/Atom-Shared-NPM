@@ -64,7 +64,7 @@ export class SocketService implements ISocketService {
 
     this.socket = socket;
 
-    this.socket.onclose = this.disconnect;
+    this.socket.onclose(this.disconnect);
 
     const originalOn = socket.on.bind(socket);
 
@@ -82,6 +82,6 @@ export class SocketService implements ISocketService {
     window.addEventListener('online', this.reconnect);
   }
 
-  on = <T>(event: string, cb: (response: T) => void) => this.socket.on(event, cb);
+  on = <T>(event: string, cb: (response: T) => void) => this.socket?.on(event, cb);
   off = (event: string) => this.socket.off(event);
 }

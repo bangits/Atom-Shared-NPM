@@ -360,6 +360,7 @@ export default {
   userDetails: 'User Details',
   correctDefaultBalance: 'Correct Default Balance',
   balance: 'Balance',
+  filters: 'Filters',
   filtersHelperText: 'Arrange filters by drag-and-drop and save the configuration',
   dashboard: 'Dashboard',
   passwordChangeAfterLogin: 'Password Change After Login',
@@ -398,7 +399,6 @@ export default {
   betsSettleDate: 'Bets Settle Date',
   betAmountFrom: 'Bet Amount From',
   betAmountTo: 'Bet Amount To',
-
   uniqueUsers: 'Unique Users',
   gameType: 'Game Type',
   gameClass: 'Game Class',
