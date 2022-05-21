@@ -11,7 +11,10 @@ import {
   GetGenderResponseModel,
   GetLanguageResponseModel,
   GetPhoneCodeResponseModel,
-  GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
+  GetRegionResponseModel,
+  GetTimeZoneResponseModel,
+  GetValidationLevelResponseModel,
+  RegionFilterRequestModel
 } from '../models';
 
 @injectable()
@@ -25,6 +28,9 @@ export class ResourceManagerUseCase {
 
   getCurrency = async (getCurrencyRequestModel: FilterRequestModel): Promise<GetCurrencyResponseModel> => {
     return this.resourceManagerRepository.getCurrency(getCurrencyRequestModel);
+  };
+  getTimeZone = async (getTimeZoneRequestModel: FilterRequestModel): Promise<GetTimeZoneResponseModel> => {
+    return this.resourceManagerRepository.getTimeZone(getTimeZoneRequestModel);
   };
 
   getLanguage = async (getLanguageRequestModel: FilterRequestModel): Promise<GetLanguageResponseModel> => {
@@ -55,6 +61,6 @@ export class ResourceManagerUseCase {
   getValidationLevel = async (
     getValidationLevelRequestModel: FilterRequestModel
   ): Promise<GetValidationLevelResponseModel> => {
-    return this.resourceManagerRepository.getValidationLevel(getValidationLevelRequestModel)
+    return this.resourceManagerRepository.getValidationLevel(getValidationLevelRequestModel);
   };
 }

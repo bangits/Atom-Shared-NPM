@@ -5,5 +5,5 @@ export * from './DocumentTypeSelect';
 export * from './GenderSelect';
 export * from './LanguageSelect';
 export * from './RegionsSelect';
+export * from './TimeZoneSelect';
 export * from './ValidationLevelSelect';
-
