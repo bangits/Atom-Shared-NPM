@@ -7,6 +7,7 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   GetTimeZoneResponseModel,
@@ -26,6 +27,8 @@ export interface IResourceManagerRepository {
   getLanguage(getLanguageRequestModel: FilterRequestModel): Promise<GetLanguageResponseModel>;
 
   getPhoneCode(getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel>;
+
+  getNationalities(getNationalityRequestModel: FilterRequestModel): Promise<GetNationalitiesResponseModel>;
 
   getDocumentType(getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel>;
 

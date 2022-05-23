@@ -10,6 +10,7 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   GetTimeZoneResponseModel,
@@ -39,6 +40,9 @@ export class ResourceManagerUseCase {
 
   getPhoneCode = async (getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel> => {
     return this.resourceManagerRepository.getPhoneCode(getPhoneCodeRequestModel);
+  };
+  getNationality = async (getNationalitiesRequestModel: FilterRequestModel): Promise<GetNationalitiesResponseModel> => {
+    return this.resourceManagerRepository.getNationalities(getNationalitiesRequestModel);
   };
 
   getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel> => {

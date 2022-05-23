@@ -11,6 +11,7 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   GetValidationLevelResponseModel,
@@ -46,10 +47,19 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     return currency;
   }).bind(this);
 
-  getTimeZone = cachedFn('CachedCurrencies', async (getTimeZoneRequestModel: FilterRequestModel) => {
+  getTimeZone = cachedFn('CachedTimeZones', async (getTimeZoneRequestModel: FilterRequestModel) => {
     const currency = await this.httpService.get<GetTimeZoneResponseModel, FilterRequestModel>({
       url: API_ROUTES.TimeZones,
       query: getTimeZoneRequestModel
+    });
+
+    return currency;
+  }).bind(this);
+
+  getNationalities = cachedFn('CachedNationalities', async (getNationalitiesRequestModel: FilterRequestModel) => {
+    const currency = await this.httpService.get<GetNationalitiesResponseModel, FilterRequestModel>({
+      url: API_ROUTES.Nationality,
+      query: getNationalitiesRequestModel
     });
 
     return currency;
