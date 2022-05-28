@@ -1,7 +1,7 @@
 import { cachedFn } from '@/common/helpers';
 import { ICacheService, IHttpService } from '@/common/services';
 import { DI_CONSTANTS } from '@/di/constants';
-import { IResourceManagerRepository } from '@/domain';
+import { GetTimeZoneResponseModel, IResourceManagerRepository } from '@/domain';
 import {
   CityVillageFilterRequestModel,
   FilterRequestModel,
@@ -11,7 +11,11 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
-  GetPhoneCodeResponseModel, GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
+  GetNationalitiesResponseModel,
+  GetPhoneCodeResponseModel,
+  GetRegionResponseModel,
+  GetValidationLevelResponseModel,
+  RegionFilterRequestModel
 } from '@/domain/models';
 import { inject, injectable } from 'inversify';
 import { API_ROUTES } from '..';
@@ -38,6 +42,24 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     const currency = await this.httpService.get<GetCurrencyResponseModel, FilterRequestModel>({
       url: API_ROUTES.Currencies,
       query: getCurrencyRequestModel
+    });
+
+    return currency;
+  }).bind(this);
+
+  getTimeZone = cachedFn('CachedTimeZones', async (getTimeZoneRequestModel: FilterRequestModel) => {
+    const currency = await this.httpService.get<GetTimeZoneResponseModel, FilterRequestModel>({
+      url: API_ROUTES.TimeZones,
+      query: getTimeZoneRequestModel
+    });
+
+    return currency;
+  }).bind(this);
+
+  getNationalities = cachedFn('CachedNationalities', async (getNationalitiesRequestModel: FilterRequestModel) => {
+    const currency = await this.httpService.get<GetNationalitiesResponseModel, FilterRequestModel>({
+      url: API_ROUTES.Nationality,
+      query: getNationalitiesRequestModel
     });
 
     return currency;
@@ -104,5 +126,4 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
     return cityVillage;
   };
-
 }

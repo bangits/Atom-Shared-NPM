@@ -6,8 +6,9 @@ export * from './DocumentTypeEntity';
 export * from './GenderEntity';
 export * from './LanguagesEntity';
 export * from './LicensesEntity';
+export * from './NationalitiesEntity';
 export * from './PhoneCodeEntity';
 export * from './RegionEntity';
+export * from './TimeZonesEntity';
 export * from './TranslationEntity';
 export * from './ValidationLevelEntity';
-

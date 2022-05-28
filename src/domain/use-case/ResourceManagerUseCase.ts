@@ -10,8 +10,12 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
-  GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
+  GetRegionResponseModel,
+  GetTimeZoneResponseModel,
+  GetValidationLevelResponseModel,
+  RegionFilterRequestModel
 } from '../models';
 
 @injectable()
@@ -26,6 +30,9 @@ export class ResourceManagerUseCase {
   getCurrency = async (getCurrencyRequestModel: FilterRequestModel): Promise<GetCurrencyResponseModel> => {
     return this.resourceManagerRepository.getCurrency(getCurrencyRequestModel);
   };
+  getTimeZone = async (getTimeZoneRequestModel: FilterRequestModel): Promise<GetTimeZoneResponseModel> => {
+    return this.resourceManagerRepository.getTimeZone(getTimeZoneRequestModel);
+  };
 
   getLanguage = async (getLanguageRequestModel: FilterRequestModel): Promise<GetLanguageResponseModel> => {
     return this.resourceManagerRepository.getLanguage(getLanguageRequestModel);
@@ -33,6 +40,9 @@ export class ResourceManagerUseCase {
 
   getPhoneCode = async (getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel> => {
     return this.resourceManagerRepository.getPhoneCode(getPhoneCodeRequestModel);
+  };
+  getNationality = async (getNationalitiesRequestModel: FilterRequestModel): Promise<GetNationalitiesResponseModel> => {
+    return this.resourceManagerRepository.getNationalities(getNationalitiesRequestModel);
   };
 
   getDocumentType = async (getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel> => {
@@ -55,6 +65,6 @@ export class ResourceManagerUseCase {
   getValidationLevel = async (
     getValidationLevelRequestModel: FilterRequestModel
   ): Promise<GetValidationLevelResponseModel> => {
-    return this.resourceManagerRepository.getValidationLevel(getValidationLevelRequestModel)
+    return this.resourceManagerRepository.getValidationLevel(getValidationLevelRequestModel);
   };
 }

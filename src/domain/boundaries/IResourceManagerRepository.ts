@@ -7,8 +7,12 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
-  GetRegionResponseModel, GetValidationLevelResponseModel, RegionFilterRequestModel
+  GetRegionResponseModel,
+  GetTimeZoneResponseModel,
+  GetValidationLevelResponseModel,
+  RegionFilterRequestModel
 } from '../models';
 
 export interface IResourceManagerRepository {
@@ -18,9 +22,13 @@ export interface IResourceManagerRepository {
 
   getCurrency(getCurrencyRequestModel: FilterRequestModel): Promise<GetCurrencyResponseModel>;
 
+  getTimeZone(getTimeZoneRequestModel: FilterRequestModel): Promise<GetTimeZoneResponseModel>;
+
   getLanguage(getLanguageRequestModel: FilterRequestModel): Promise<GetLanguageResponseModel>;
 
   getPhoneCode(getPhoneCodeRequestModel: FilterRequestModel): Promise<GetPhoneCodeResponseModel>;
+
+  getNationalities(getNationalityRequestModel: FilterRequestModel): Promise<GetNationalitiesResponseModel>;
 
   getDocumentType(getDocumentTypeRequestModel: FilterRequestModel): Promise<GetDocumentTypeResponseModel>;
 
