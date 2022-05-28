@@ -441,5 +441,10 @@ export default {
   providerTransactionId: 'Provider Transaction ID',
   export: 'Export',
   exportingData: 'Exporting the data...',
-  dataWasExported: 'The .CSV file was successfully exported !'
+  dataWasExported: 'The .CSV file was successfully exported !',
+  back: 'Back',
+  translation: 'Translation',
+  searchTranslation: 'Search translation',
+  searchLanguage: 'Search language',
+  playerManagement: 'Player Management'
 };
