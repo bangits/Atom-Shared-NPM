@@ -469,7 +469,7 @@ export default {
   cityOfResidence: 'City Of Residence',
   countryOfBirth: 'Country of Birth',
   countryOfResidence: 'Country Of Residence',
-  isTestPlayer: 'Test Player',
+  testPlayer: 'Test Player',
   registrationFromIp: 'Registration From IP',
   registeredDate: 'Registered Date',
   nationality: 'Nationality',
@@ -478,5 +478,12 @@ export default {
   regionOfBirth: 'Region Of Birth',
   regionOfResidence: 'Region Of Residence',
   taxCode: 'Tax Code',
-  timeZone: 'Time Zone'
+  timeZone: 'Time Zone',
+  state: 'State',
+  activateDescriptionFirstPart: 'Do you want to activate',
+  deActivateDescriptionFirstPart: 'Do you want to deactivate',
+  game: 'Game',
+  cmsManagement: 'Cms Management',
+  cms: 'CMS',
+  providersAndGames: 'Providers And Games'
 };
