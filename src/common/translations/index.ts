@@ -486,6 +486,7 @@ export default {
   state: 'State',
   activateDescriptionFirstPart: 'Do you want to activate',
   deActivateDescriptionFirstPart: 'Do you want to deactivate',
+  deActivate: 'Deactivate',
   game: 'Game',
   cmsManagement: 'Cms Management',
   cms: 'CMS',
