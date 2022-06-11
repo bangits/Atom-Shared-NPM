@@ -5,7 +5,9 @@ import { Currency } from '@/domain/entities';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
-export const CurrencySelect = (props: Partial<CustomSelectProps> & { expectCurrenciesIds?: PrimaryKey[] }) => {
+export const CurrencySelect = (
+  props: Omit<Partial<CustomSelectProps> & { expectCurrenciesIds?: PrimaryKey[]; valueProp?: 'code' | 'id' }, 'options'>
+) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [currency, setCurrency] = useState<Currency[]>([]);
@@ -13,7 +15,7 @@ export const CurrencySelect = (props: Partial<CustomSelectProps> & { expectCurre
   const selectOptions = useMemo(
     () =>
       currency
-        .map((c) => ({ value: c.id, label: c.code }))
+        .map((c) => ({ value: c[props.valueProp || 'value'], label: c.code }))
         .filter((currency) => (props.expectCurrenciesIds ? !props.expectCurrenciesIds.includes(currency.value) : true)),
     [currency, props.expectCurrenciesIds]
   );

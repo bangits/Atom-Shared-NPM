@@ -6,12 +6,17 @@ import { CustomSelect, CustomSelectProps } from '../shared';
 
 export interface CountrySelectProps extends Omit<CustomSelectProps, 'options'> {}
 
-export const CountriesSelect = (props: Partial<CountrySelectProps>) => {
+export const CountriesSelect = (
+  props: Omit<Partial<CountrySelectProps> & { valueProp?: 'id' | 'name' }, 'options'>
+) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
   const [countries, setCountries] = useState<Country[]>([]);
 
-  const selectOptions = useMemo(() => countries.map((c) => ({ value: c.id, label: c.name })), [countries]);
+  const selectOptions = useMemo(
+    () => countries.map((c) => ({ value: c[props.valueProp || 'name'], label: c.name })),
+    [countries]
+  );
 
   useEffect(() => {
     resourceManagerUseCase

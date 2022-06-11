@@ -1,1 +1,1 @@
-export type PrimaryKey = number;
+export type PrimaryKey = number | string;
