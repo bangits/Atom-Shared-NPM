@@ -490,5 +490,17 @@ export default {
   game: 'Game',
   cmsManagement: 'Cms Management',
   cms: 'CMS',
-  providersAndGames: 'Providers And Games'
+  providersAndGames: 'Providers And Games',
+  drivingLicense: 'Driving License',
+  verifiedDate: 'Verified Date',
+  createdDate: 'Created Date',
+  playerRejectDescriptionFirstPart: 'Do you want to Reject ',
+  playerVerifyDescriptionFirstPart: 'Do you want to Verify ',
+  reject: 'Reject',
+  verify: 'Verify',
+  document: 'Document',
+  correctionHistory: 'Correction History',
+  correctBalance: 'Correct Balance',
+  windrow: 'WithDraw',
+  deposit: 'Deposit'
 };
