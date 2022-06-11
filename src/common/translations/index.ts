@@ -482,5 +482,6 @@ export default {
   regionOfBirth: 'Region Of Birth',
   regionOfResidence: 'Region Of Residence',
   taxCode: 'Tax Code',
-  timeZone: 'Time Zone'
+  timeZone: 'Time Zone',
+  selectTranslationGroup: 'Select Translation Group...'
 };
