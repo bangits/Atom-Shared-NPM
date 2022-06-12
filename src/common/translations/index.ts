@@ -483,6 +483,7 @@ export default {
   regionOfResidence: 'Region Of Residence',
   taxCode: 'Tax Code',
   timeZone: 'Time Zone',
+  selectTranslationGroup: 'Select Translation Group...',
   state: 'State',
   activateDescriptionFirstPart: 'Do you want to activate',
   deActivateDescriptionFirstPart: 'Do you want to deactivate',
