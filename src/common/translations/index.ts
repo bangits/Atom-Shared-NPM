@@ -502,5 +502,8 @@ export default {
   correctionHistory: 'Correction History',
   correctBalance: 'Correct Balance',
   windrow: 'WithDraw',
-  deposit: 'Deposit'
+  deposit: 'Deposit',
+  updateWebContent: 'Update Web Content',
+  updateGameContent: 'Update Game Content',
+  updateProviderContent: 'Update Provider Content'
 };
