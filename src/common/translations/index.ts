@@ -291,6 +291,7 @@ export default {
   defaultLanguage: 'Default Language',
   dateOfCreation: 'Date of Creation',
   dateOfUpdate: 'Date of Update',
+  date: 'Date',
   userId: 'User ID',
   uniqueUserId: 'The Unique/ User ID',
   passwordPolicy: 'Password Policy',
@@ -503,5 +504,10 @@ export default {
   correctionHistory: 'Correction History',
   correctBalance: 'Correct Balance',
   windrow: 'WithDraw',
-  deposit: 'Deposit'
+  deposit: 'Deposit',
+  rgsId: 'RGS ID',
+  platId: 'Plat ID',
+  amount: 'Amount',
+  updateProviders: 'Update Providers',
+  updateGames: 'Update Games'
 };
