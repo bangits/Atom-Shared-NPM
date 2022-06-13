@@ -15,7 +15,7 @@ export const CurrencySelect = (
   const selectOptions = useMemo(
     () =>
       currency
-        .map((c) => ({ value: c[props.valueProp || 'value'], label: c.code }))
+        .map((c) => ({ value: c[props.valueProp || 'id'], label: c.code }))
         .filter((currency) => (props.expectCurrenciesIds ? !props.expectCurrenciesIds.includes(currency.value) : true)),
     [currency, props.expectCurrenciesIds]
   );
