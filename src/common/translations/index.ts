@@ -486,7 +486,7 @@ export default {
   selectTranslationGroup: 'Select Translation Group...',
   state: 'State',
   activateDescriptionFirstPart: 'Do you want to activate',
-  deActivateDescriptionFirstPart: 'Do you want to deactivate',
+  deActivateDescriptionFirstPart: 'Do you want to inactivate',
   deActivate: 'Deactivate',
   game: 'Game',
   cmsManagement: 'Cms Management',
@@ -506,5 +506,11 @@ export default {
   deposit: 'Deposit',
   updateWebContent: 'Update Web Content',
   updateGameContent: 'Update Game Content',
-  updateProviderContent: 'Update Provider Content'
+  updateProviderContent: 'Update Provider Content',
+  updateProviders: 'Update Providers',
+  updateGames: 'Update Games',
+  balanceAfter: 'Balance After',
+  balanceBefore: 'Balance Before',
+  correctedBy: 'Corrected By',
+  providerIsNotActive: 'This game provider is not active!'
 };
