@@ -512,5 +512,7 @@ export default {
   updateGames: 'Update Games',
   updateWebContent: 'Update Web Content',
   updateGameContent: 'Update Game Content',
-  updateProviderContent: 'Update Provider Content'
+  updateProviderContent: 'Update Provider Content',
+  balanceBefore: 'Balance Before',
+  balanceAfter: 'Balance After'
 };
