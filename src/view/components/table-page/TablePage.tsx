@@ -3,7 +3,7 @@ import { PageIdsEnum, PrimaryKey } from '@/domain';
 import { useLoading, useTranslation } from '@/view';
 import { PageConfigViewModel } from '@/view/models';
 import { DataTable, DataTableProps } from '@atom/design-system';
-import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { CustomSelectProps } from '..';
 import { ExchangeCurrencySelect } from './ExchangeCurrencySelect';
 
@@ -20,7 +20,7 @@ export interface TablePageProps<T extends {}, K>
   isFilteredData?: boolean;
   showFilters?: boolean;
   pageId?: PageIdsEnum;
-  userId?: PageIdsEnum;
+  userId?: PrimaryKey;
   getEditUrl?: (column: T) => string;
   getViewUrl?: (column: T) => string;
   refetch?: () => void;

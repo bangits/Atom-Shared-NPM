@@ -1,8 +1,10 @@
-import { AtomCommonContext } from '@/atom-common';
+import { AtomCommonContext, PrimaryKey } from '@/atom-common';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '..';
 
-export const ExchangeCurrencySelect = (props: CustomSelectProps & { userId: number; defaultCurrencyCode: string }) => {
+export const ExchangeCurrencySelect = (
+  props: CustomSelectProps & { userId: PrimaryKey; defaultCurrencyCode: string }
+) => {
   const { exchangeManagerUseCase } = useContext(AtomCommonContext);
 
   const [currencyCodes, setCurrencyCodes] = useState<string[]>([]);
