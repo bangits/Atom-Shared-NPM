@@ -509,5 +509,8 @@ export default {
   platId: 'Plat ID',
   amount: 'Amount',
   updateProviders: 'Update Providers',
-  updateGames: 'Update Games'
+  updateGames: 'Update Games',
+  updateWebContent: 'Update Web Content',
+  updateGameContent: 'Update Game Content',
+  updateProviderContent: 'Update Provider Content'
 };
