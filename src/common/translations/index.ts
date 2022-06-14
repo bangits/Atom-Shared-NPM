@@ -516,5 +516,7 @@ export default {
   balanceAfter: 'Balance After',
   balanceBefore: 'Balance Before',
   correctedBy: 'Corrected By',
-  providerIsNotActive: 'This game provider is not active!'
+  providerIsNotActive: 'This game provider is not active!',
+  documentVerificationDate: 'Document Verification Date',
+  isDocumentVerified: 'Document Verified'
 };
