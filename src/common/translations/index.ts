@@ -518,5 +518,8 @@ export default {
   correctedBy: 'Corrected By',
   providerIsNotActive: 'This game provider is not active!',
   documentVerificationDate: 'Document Verification Date',
-  isDocumentVerified: 'Document Verified'
+  isDocumentVerified: 'Document Verified',
+  youDontHavePlayersAdded: 'You don’t have any players added!',
+  pleaseAddPlayer: 'Please add a player.',
+  isTest: 'Is Test'
 };
