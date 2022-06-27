@@ -4,6 +4,7 @@ import { immerable } from 'immer';
 interface CreateBaseQueryArgument {
   useCaseName: string;
 }
+
 interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) => void>>
   extends BaseQueryFn<
     {
