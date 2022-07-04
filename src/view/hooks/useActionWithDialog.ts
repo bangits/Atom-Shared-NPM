@@ -64,6 +64,8 @@ export const useActionWithDialog = <T>({
                       ? t
                           .get('errorMultipleAlertMessage')
                           .replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.failsCount.toString())
+                      : changePartnerResults.errorCode === 1
+                      ? t.get('providerIsNotActive')
                       : t.get('errorAlertMessage')
                 });
 

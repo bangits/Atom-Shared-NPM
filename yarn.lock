@@ -1033,7 +1033,11 @@
 
 "@babel/runtime@^7.8.4":
   version "7.18.3"
+<<<<<<< HEAD
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+=======
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
+>>>>>>> 19465e1f205bac80df0a0ea13e475f5c7b3a150e
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
   dependencies:
     regenerator-runtime "^0.13.4"
@@ -1473,10 +1477,17 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
+<<<<<<< HEAD
 "@my-ui/core@^0.6.11":
   version "0.6.11"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.6.11.tgz#db6028ed243e98c8803386f4302e697d959296c0"
   integrity sha1-22Ao7SQ+mMiAM4b0MC5pfZWSlsA=
+=======
+"@my-ui/core@^2.28.18":
+  version "0.7.1"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.7.1.tgz#81e573f51578d453de5bde9fb45e8c9788a4f5fd"
+  integrity sha1-geVz9RV41FPeW96ftF6Ml4ik9f0=
+>>>>>>> 19465e1f205bac80df0a0ea13e475f5c7b3a150e
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -7675,7 +7686,7 @@ regenerator-runtime@^0.13.4:
 
 regenerator-transform@^0.14.2:
   version "0.14.5"
-  resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
+  resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
   dependencies:
     "@babel/runtime" "^7.8.4"

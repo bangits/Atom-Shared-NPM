@@ -26,6 +26,7 @@ export class HttpService implements IHttpService {
   public static logoutCb: () => void;
 
   private static token: string;
+  private static projectId: number;
 
   private instance: AxiosInstance;
 
@@ -43,6 +44,12 @@ export class HttpService implements IHttpService {
     axios.defaults.headers.common.projectId = 1;
 
     HttpService.token = tokenWithBearer;
+  }
+
+  static setProjectId(projectId: number) {
+    axios.defaults.headers.common.projectId = projectId.toString();
+
+    HttpService.projectId = projectId;
   }
 
   static setLogoutCb(logoutCb: () => void) {
@@ -76,10 +83,11 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    //  @ts-expect-error TODO: This functional will be changed
-    if (httpRequest.query) httpRequest.query.projectId = 1;
-    // @ts-expect-error TODO: This functional will be changed
-    if (httpRequest.body) httpRequest.body.projectId = 1;
+    if (httpRequest.query)
+      (httpRequest.query as unknown as Record<string, string | number>).projectId = HttpService.projectId;
+
+    if (httpRequest.body)
+      (httpRequest.body as unknown as Record<string, string | number>).projectId = HttpService.projectId;
 
     if (httpRequest.body && !(httpRequest.body instanceof FormData) && !Array.isArray(httpRequest.body))
       httpRequest.body = replaceEmptyStringsWithNull(httpRequest.body);

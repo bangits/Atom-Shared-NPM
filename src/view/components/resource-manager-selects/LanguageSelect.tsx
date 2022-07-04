@@ -15,8 +15,7 @@ export const LanguageSelect = (
   const selectOptions = useMemo(
     () =>
       languages
-        .map((c) => ({ value: c[props.valueProp || 'code'], label: c.name, code: c.code }))
-        //@ts-ignore
+        .map((c) => ({ value: c[props.valueProp || 'id'], label: c.name, code: c.code }))
         .filter((currency) => (props.expectLanguagesIds ? !props.expectLanguagesIds.includes(currency.value) : true)),
     [languages]
   );

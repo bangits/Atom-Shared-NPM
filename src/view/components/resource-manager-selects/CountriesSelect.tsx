@@ -14,7 +14,7 @@ export const CountriesSelect = (
   const [countries, setCountries] = useState<Country[]>([]);
 
   const selectOptions = useMemo(
-    () => countries.map((c) => ({ value: c[props.valueProp || 'name'], label: c.name })),
+    () => countries.map((c) => ({ value: c[props.valueProp || 'id'], label: c.name })),
     [countries]
   );
 

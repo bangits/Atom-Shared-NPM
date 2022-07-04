@@ -11,7 +11,10 @@ export const TimeZonesSelect = (props: Partial<TimeZoneSelectProps>) => {
 
   const [TimeZones, setTimeZones] = useState<TimeZones[]>([]);
 
-  const selectOptions = useMemo(() => TimeZones.map((c) => ({ value: c.id, label: c.gmT_offset })), [TimeZones]);
+  const selectOptions = useMemo(
+    () => TimeZones.map((c) => ({ value: c.id, label: `UTC ${c.gmT_offset} ${c.code} ` })),
+    [TimeZones]
+  );
 
   useEffect(() => {
     resourceManagerUseCase
