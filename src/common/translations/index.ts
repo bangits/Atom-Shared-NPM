@@ -490,5 +490,9 @@ export default {
   game: 'Game',
   cmsManagement: 'Cms Management',
   cms: 'CMS',
-  providersAndGames: 'Providers And Games'
+  providersAndGames: 'Providers And Games',
+  labels: 'Labels',
+  pages: 'Pages',
+  gameCategories: 'Game Categories',
+  sliderAndBanners: 'Slider And Banners'
 };

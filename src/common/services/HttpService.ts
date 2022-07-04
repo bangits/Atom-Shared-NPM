@@ -76,8 +76,8 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    // // @ts-expect-error TODO: This functional will be changed
-    // if (httpRequest.query) httpRequest.query.projectId = 1;
+    //  @ts-expect-error TODO: This functional will be changed
+    if (httpRequest.query) httpRequest.query.projectId = 1;
     // @ts-expect-error TODO: This functional will be changed
     if (httpRequest.body) httpRequest.body.projectId = 1;
 
