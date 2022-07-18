@@ -527,5 +527,6 @@ export default {
   pageType: 'Page Type',
   title: 'Title',
   urlSlug: 'URL Slug',
-  pages: 'Pages'
+  pages: 'Pages',
+  cashInOut: 'Cash-IN/OUT'
 };
