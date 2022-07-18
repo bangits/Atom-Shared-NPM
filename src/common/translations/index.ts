@@ -104,6 +104,7 @@ export default {
   creationDateTo: 'Creation Date To',
 
   createdBy: 'Created By',
+  updatedBy: 'Updated By',
   status: 'Status',
   statuses: {
     yes: 'Yes',
@@ -521,5 +522,10 @@ export default {
   isDocumentVerified: 'Document Verified',
   youDontHavePlayersAdded: 'You don’t have any players added!',
   pleaseAddPlayer: 'Please add a player.',
-  isTest: 'Is Test'
+  isTest: 'Is Test',
+  addPage: 'Add Page',
+  pageType: 'Page Type',
+  title: 'Title',
+  urlSlug: 'URL Slug',
+  pages: 'Pages'
 };
