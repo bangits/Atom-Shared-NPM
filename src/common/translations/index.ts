@@ -521,5 +521,20 @@ export default {
   isDocumentVerified: 'Document Verified',
   youDontHavePlayersAdded: 'You don’t have any players added!',
   pleaseAddPlayer: 'Please add a player.',
-  isTest: 'Is Test'
+  isTest: 'Is Test',
+  slidersAndBanners: 'Sliders And Banners',
+  gameCategories: 'Game Categories',
+  pages: 'Pages',
+  labels: 'Labels',
+  published: 'Published',
+  notPublished: 'Not published',
+  webSiteName: 'Web Site Name',
+  homepage: 'Home Page',
+  supportedCountries: 'Supported Countries',
+  supportedLanguages: 'Supported Languages',
+  navbarPages: 'Navbar Pages',
+  requested: 'Requested',
+  pending: 'Pending',
+  approved: 'Approved',
+  rejected: 'Rejected'
 };
