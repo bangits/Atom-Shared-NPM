@@ -104,6 +104,7 @@ export default {
   creationDateTo: 'Creation Date To',
 
   createdBy: 'Created By',
+  updatedBy: 'Updated By',
   status: 'Status',
   statuses: {
     yes: 'Yes',
@@ -536,5 +537,10 @@ export default {
   requested: 'Requested',
   pending: 'Pending',
   approved: 'Approved',
-  rejected: 'Rejected'
+  rejected: 'Rejected',
+  addPage: 'Add Page',
+  pageType: 'Page Type',
+  title: 'Title',
+  urlSlug: 'URL Slug',
+  cashInOut: 'Cash-IN/OUT'
 };
