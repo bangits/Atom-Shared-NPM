@@ -286,6 +286,7 @@ export default {
   dateOfCreationTo: 'Date of Creation - To',
 
   lastUpdatedBy: 'Last Updated By',
+  lastUpdatedDate: 'Last Updated Date',
   forever: 'Forever',
   temporary: 'Temporary',
   addUser: 'Add User',
@@ -528,5 +529,9 @@ export default {
   title: 'Title',
   urlSlug: 'URL Slug',
   pages: 'Pages',
-  cashInOut: 'Cash-IN/OUT'
+  cashInOut: 'Cash-IN/OUT',
+  sections: 'Sections',
+  categoryGroup: 'Category Group',
+  slider: 'Slider',
+  banner: 'Banner'
 };
