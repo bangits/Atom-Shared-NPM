@@ -542,5 +542,20 @@ export default {
   pageType: 'Page Type',
   title: 'Title',
   urlSlug: 'URL Slug',
-  cashInOut: 'Cash-IN/OUT'
+  cashInOut: 'Cash-IN/OUT',
+  sliderId: 'Slider ID',
+  sliderName: 'Slider Name',
+  youDontHaveBannersAdded: 'You don’t have any banners added!',
+  pleaseAddBanner: 'Please add a banner.',
+  banners: 'Banners',
+  sliders: 'Sliders',
+  youDontHaveSlidersAdded: 'You don’t have any sliders added!',
+  pleaseAddSlider: 'Please add a slider.',
+  bannerId: 'Banner ID',
+  bannerName: 'Banner Name',
+  duplicate: 'Duplicate',
+  duplicateDescriptionFirstPart: 'Do you want to duplicate',
+  duplicateText: 'Each banner can be duplicated one time only',
+  lastUpdateFrom: 'Last Update From',
+  lastUpdateTo: 'Last Update To'
 };
