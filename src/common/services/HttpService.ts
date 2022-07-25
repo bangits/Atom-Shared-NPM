@@ -82,8 +82,13 @@ export class HttpService implements IHttpService {
   }
 
   private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
-    if (httpRequest.query)
-      (httpRequest.query as unknown as Record<string, string | number>).projectId = HttpService.projectId;
+    let typedQuery = httpRequest.query as unknown as Record<string, string | number>;
+
+    if (!httpRequest.query) typedQuery = {};
+
+    typedQuery.projectId = HttpService.projectId;
+
+    httpRequest.query = typedQuery as unknown as T;
 
     if (httpRequest.body)
       (httpRequest.body as unknown as Record<string, string | number>).projectId = HttpService.projectId;
