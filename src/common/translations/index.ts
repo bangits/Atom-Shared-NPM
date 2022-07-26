@@ -524,7 +524,7 @@ export default {
   youDontHavePlayersAdded: 'You don’t have any players added!',
   pleaseAddPlayer: 'Please add a player.',
   isTest: 'Is Test',
-  slidersAndBanners: 'Sliders And Banners',
+  slidersAndBanners: 'Sliders and Banners',
   gameCategories: 'Game Categories',
   pages: 'Pages',
   labels: 'Labels',
@@ -562,5 +562,11 @@ export default {
   sections: 'Sections',
   categoryGroup: 'Category Group',
   slider: 'Slider',
-  banner: 'Banner'
+  banner: 'Banner',
+  addBanner: 'Add Banner',
+  image: 'Image',
+  addSlider: 'Add Slider',
+  groupsAndCategories: 'Groups and Categories',
+  groups: 'Groups',
+  categories: 'Categories'
 };
