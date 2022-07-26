@@ -286,6 +286,7 @@ export default {
   dateOfCreationTo: 'Date of Creation - To',
 
   lastUpdatedBy: 'Last Updated By',
+  lastUpdatedDate: 'Last Updated Date',
   forever: 'Forever',
   temporary: 'Temporary',
   addUser: 'Add User',
@@ -557,5 +558,9 @@ export default {
   duplicateDescriptionFirstPart: 'Do you want to duplicate',
   duplicateText: 'Each banner can be duplicated one time only',
   lastUpdateFrom: 'Last Update From',
-  lastUpdateTo: 'Last Update To'
+  lastUpdateTo: 'Last Update To',
+  sections: 'Sections',
+  categoryGroup: 'Category Group',
+  slider: 'Slider',
+  banner: 'Banner'
 };
