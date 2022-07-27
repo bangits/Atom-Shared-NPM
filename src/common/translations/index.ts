@@ -569,5 +569,6 @@ export default {
   groupsAndCategories: 'Groups and Categories',
   groups: 'Groups',
   categories: 'Categories',
-  groupTypes: 'Group Types'
+  groupTypes: 'Group Types',
+  InActive: 'Inactive'
 };
