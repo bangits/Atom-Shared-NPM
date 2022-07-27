@@ -570,5 +570,7 @@ export default {
   groups: 'Groups',
   categories: 'Categories',
   groupTypes: 'Group Types',
-  InActive: 'Inactive'
+  InActive: 'Inactive',
+  categoryId: 'Category ID',
+  categoryName: 'Category Name'
 };
