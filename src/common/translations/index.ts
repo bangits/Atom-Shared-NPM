@@ -568,5 +568,6 @@ export default {
   addSlider: 'Add Slider',
   groupsAndCategories: 'Groups and Categories',
   groups: 'Groups',
-  categories: 'Categories'
+  categories: 'Categories',
+  groupTypes: 'Group Types'
 };
