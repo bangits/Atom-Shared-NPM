@@ -7,7 +7,10 @@ import { CustomSelect, CustomSelectProps } from '../shared';
 export interface CountrySelectProps extends Omit<CustomSelectProps, 'options'> {}
 
 export const CountriesSelect = (
-  props: Omit<Partial<CountrySelectProps> & { valueProp?: 'id' | 'name' }, 'options'>
+  props: Omit<
+    Partial<CountrySelectProps> & { valueProp?: 'id' | 'name'; onCountriesGet?(countries: Country[]): void },
+    'options'
+  >
 ) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
@@ -25,7 +28,11 @@ export const CountriesSelect = (
         pageNumber: 1,
         pageSize: MAX_PAGE_SIZE
       })
-      .then((getCountriesResponse) => setCountries(getCountriesResponse.results));
+      .then((getCountriesResponse) => {
+        setCountries(getCountriesResponse.results);
+
+        props.onCountriesGet?.(getCountriesResponse.results);
+      });
   }, []);
 
   return (
