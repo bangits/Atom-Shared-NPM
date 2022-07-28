@@ -526,7 +526,7 @@ export default {
   youDontHavePlayersAdded: 'You don’t have any players added!',
   pleaseAddPlayer: 'Please add a player.',
   isTest: 'Is Test',
-  slidersAndBanners: 'Sliders And Banners',
+  slidersAndBanners: 'Sliders and Banners',
   gameCategories: 'Game Categories',
   pages: 'Pages',
   labels: 'Labels',
@@ -577,5 +577,15 @@ export default {
   addLogo: 'Add Logo',
   webSiteManagement: 'Web Site Management',
   webSiteDetails: 'Website Details',
-  urlAlreadyExists: 'Url Already Exists'
+  urlAlreadyExists: 'Url Already Exists',
+  addBanner: 'Add Banner',
+  image: 'Image',
+  addSlider: 'Add Slider',
+  groupsAndCategories: 'Groups and Categories',
+  groups: 'Groups',
+  categories: 'Categories',
+  groupTypes: 'Group Types',
+  InActive: 'Inactive',
+  categoryId: 'Category ID',
+  categoryName: 'Category Name'
 };
