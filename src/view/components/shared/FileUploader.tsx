@@ -6,7 +6,7 @@ import {
   FileUploaderErrors,
   FileUploaderProps as DesignSystemFileUploaderProps
 } from '@atom/design-system';
-import { FC, useCallback, useContext, useMemo, useState } from 'react';
+import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 export interface FileUploaderProps
   extends Omit<DesignSystemFileUploaderProps, 'loadingPercent' | 'onError' | 'onChange'> {
@@ -106,6 +106,10 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
     },
     [onChange]
   );
+
+  useEffect(() => {
+    if (fileUploaderProps.imageSrc) setLoadingPercent(100);
+  }, [fileUploaderProps.imageSrc]);
 
   return (
     <>

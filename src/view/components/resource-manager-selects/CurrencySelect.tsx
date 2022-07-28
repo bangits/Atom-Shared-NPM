@@ -6,7 +6,14 @@ import { useContext, useEffect, useMemo, useState } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
 export const CurrencySelect = (
-  props: Omit<Partial<CustomSelectProps> & { expectCurrenciesIds?: PrimaryKey[]; valueProp?: 'code' | 'id' }, 'options'>
+  props: Omit<
+    Partial<CustomSelectProps> & {
+      expectCurrenciesIds?: PrimaryKey[];
+      valueProp?: 'code' | 'id';
+      onCurrenciesGet?(data: Currency[]): void;
+    },
+    'options'
+  >
 ) => {
   const { resourceManagerUseCase } = useContext(AtomCommonContext);
 
@@ -27,7 +34,11 @@ export const CurrencySelect = (
         pageNumber: 1,
         pageSize: MAX_PAGE_SIZE
       })
-      .then((getCurrencyResponse) => setCurrency(getCurrencyResponse.results));
+      .then((getCurrencyResponse) => {
+        setCurrency(getCurrencyResponse.results);
+
+        props.onCurrenciesGet?.(getCurrencyResponse.results);
+      });
   }, []);
 
   return (
