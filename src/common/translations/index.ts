@@ -587,5 +587,7 @@ export default {
   groupTypes: 'Group Types',
   InActive: 'Inactive',
   categoryId: 'Category ID',
-  categoryName: 'Category Name'
+  categoryName: 'Category Name',
+  footer: 'Footer',
+  header: 'Header'
 };
