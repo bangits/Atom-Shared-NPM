@@ -572,5 +572,12 @@ export default {
   groupTypes: 'Group Types',
   InActive: 'Inactive',
   categoryId: 'Category ID',
-  categoryName: 'Category Name'
+  categoryName: 'Category Name',
+  category: 'Category',
+  addGroup: 'Add Group',
+  groupName: 'Group Name',
+  selectedIcon: 'Selected Icon',
+  icon: 'Icon',
+  addCategory: 'Add Category',
+  iconInfoText: 'Allowed extensions are: SVG, PNG'
 };
