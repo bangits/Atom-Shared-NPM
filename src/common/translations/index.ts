@@ -597,5 +597,7 @@ export default {
   addCategory: 'Add Category',
   iconInfoText: 'Allowed extensions are: SVG, PNG',
   footer: 'Footer',
-  header: 'Header'
+  header: 'Header',
+  groupNameAlreadyExist: 'Group Name already exists!',
+  categoriesAndGroups: 'Categories and Groups'
 };
