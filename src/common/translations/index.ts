@@ -23,6 +23,8 @@ export default {
     maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
+    acceptImagesOnAddCategoryError: 'Upload failed. The following extensions only are allowed: PNG,SVG.',
+
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
   upload: 'Upload',
@@ -588,6 +590,14 @@ export default {
   InActive: 'Inactive',
   categoryId: 'Category ID',
   categoryName: 'Category Name',
+  category: 'Category',
+  addGroup: 'Add Group',
+  groupName: 'Group Name',
+  selectedIcon: 'Selected Icon',
+  addCategory: 'Add Category',
+  iconInfoText: 'Allowed extensions are: SVG, PNG',
   footer: 'Footer',
-  header: 'Header'
+  header: 'Header',
+  groupNameAlreadyExist: 'Group Name already exists!',
+  categoriesAndGroups: 'Categories and Groups'
 };
