@@ -9,10 +9,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@atom/design-system@^3.9.21":
-  version "3.9.21"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.21.tgz#412cf23b810adac32d3bdadaac826356207acc8e"
-  integrity sha1-QSzyO4EK2sMtO9rarIJjViB6zI4=
+"@atom/design-system@^3.9.22":
+  version "3.9.22"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.22.tgz#2964c92f9aaa393a6e1bffc1fe9fa4055b214c71"
+  integrity sha1-KWTJL5qqOTpuG//B/p+kBVshTHE=
   dependencies:
     "@my-ui/core" "^0.8.7"
     classnames "^2.3.1"
@@ -7753,7 +7753,7 @@ regenerator-runtime@^0.13.4:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
-regenerator-transform@^0.14.2, regenerator-transform@^0.14.5:
+regenerator-transform@^0.14.5:
   version "0.14.5"
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==

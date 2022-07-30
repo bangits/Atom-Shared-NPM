@@ -599,5 +599,7 @@ export default {
   footer: 'Footer',
   header: 'Header',
   groupNameAlreadyExist: 'Group Name already exists!',
-  categoriesAndGroups: 'Categories and Groups'
+  categoriesAndGroups: 'Categories and Groups',
+  autoPlay: 'Auto Play',
+  animationSpeed: 'Animation Speed'
 };
