@@ -599,5 +599,19 @@ export default {
   footer: 'Footer',
   header: 'Header',
   groupNameAlreadyExist: 'Group Name already exists!',
-  categoriesAndGroups: 'Categories and Groups'
+  categoriesAndGroups: 'Categories and Groups',
+  reportByCashInOut: 'Report By Cash In/Out',
+  transactionId: 'Transaction ID',
+  dateFrom: 'Date From',
+  dateTo: 'Date To',
+  fromUser: 'From User',
+  toPlayer: 'To Player',
+  fromAmount: 'From Amount',
+  toAmount: 'To Amount',
+  fromAccountId: 'From Account ID',
+  toAccountId: 'To Account ID',
+  userBalanceBefore: 'User Balance Before',
+  userBalanceAfter: 'User Balance After',
+  playerBalanceBefore: 'Player Balance Before',
+  playerBalanceAfter: 'Player Balance After'
 };
