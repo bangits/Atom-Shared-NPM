@@ -613,5 +613,13 @@ export default {
   userBalanceBefore: 'User Balance Before',
   userBalanceAfter: 'User Balance After',
   playerBalanceBefore: 'Player Balance Before',
-  playerBalanceAfter: 'Player Balance After'
+  playerBalanceAfter: 'Player Balance After',
+  noAddedNavbars: 'There is no added navbars yet',
+  noAddedSocialMedias: 'There is no added social medias yet',
+  addNavbar: 'Add Navbar',
+  navbar: 'Navbar',
+  dndPagesToNavbar: 'Drag and Drop Pages to Navbar',
+  dragAndDropPosition: 'Drag and Drop position',
+  addLink: 'Add Link',
+  pageTitle: 'Page Title'
 };
