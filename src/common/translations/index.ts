@@ -600,6 +600,8 @@ export default {
   header: 'Header',
   groupNameAlreadyExist: 'Group Name already exists!',
   categoriesAndGroups: 'Categories and Groups',
+  autoPlay: 'Auto Play',
+  animationSpeed: 'Animation Speed',
   reportByCashInOut: 'Report By Cash In/Out',
   transactionId: 'Transaction ID',
   dateFrom: 'Date From',
@@ -621,5 +623,13 @@ export default {
   dndPagesToNavbar: 'Drag and Drop Pages to Navbar',
   dragAndDropPosition: 'Drag and Drop position',
   addLink: 'Add Link',
-  pageTitle: 'Page Title'
+  pageTitle: 'Page Title',
+  bannerTitle: 'Banner Title',
+  bannerDescription: 'Banner Description',
+  buttonUrl: 'Button URL (for Authorized)',
+  buttonUrlNotAuthorized: 'Button URL (for Non Authorized)',
+  buttonText: 'Button Text',
+  imageUrl: 'Image URL',
+  on: 'On',
+  off: 'Off'
 };
