@@ -615,5 +615,13 @@ export default {
   userBalanceBefore: 'User Balance Before',
   userBalanceAfter: 'User Balance After',
   playerBalanceBefore: 'Player Balance Before',
-  playerBalanceAfter: 'Player Balance After'
+  playerBalanceAfter: 'Player Balance After',
+  bannerTitle: 'Banner Title',
+  bannerDescription: 'Banner Description',
+  buttonUrl: 'Button URL (for Authorized)',
+  buttonUrlNotAuthorized: 'Button URL (for Non Authorized)',
+  buttonText: 'Button Text',
+  imageUrl: 'Image URL',
+  on: 'On',
+  off: 'Off'
 };
