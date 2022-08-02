@@ -623,5 +623,6 @@ export default {
   buttonText: 'Button Text',
   imageUrl: 'Image URL',
   on: 'On',
-  off: 'Off'
+  off: 'Off',
+  sliderNameAlreadyExists: 'Slider Name already exists!'
 };

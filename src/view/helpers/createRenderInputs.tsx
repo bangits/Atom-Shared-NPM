@@ -23,7 +23,11 @@ export const createRenderInputs =
                 onChange={async (evt) => {
                   await form.setFieldValue(
                     name,
-                    fieldType === 'input' || fieldType === 'radio' ? evt.target.value : evt
+                    fieldType === 'single-checkbox'
+                      ? evt.target.checked
+                      : fieldType === 'input' || fieldType === 'radio'
+                      ? evt.target.value
+                      : evt
                   );
                   form.setFieldTouched(name, true);
                 }}
