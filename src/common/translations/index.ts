@@ -617,6 +617,7 @@ export default {
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
   noAddedNavbars: 'There is no added navbars yet',
+  noAddedGroups: 'There is no added groups yet',
   noAddedSocialMedias: 'There is no added social medias yet',
   addNavbar: 'Add Navbar',
   navbar: 'Navbar',
@@ -631,5 +632,7 @@ export default {
   buttonText: 'Button Text',
   imageUrl: 'Image URL',
   on: 'On',
-  off: 'Off'
+  off: 'Off',
+  dndPagesToGroup: 'Drag and Drop Pages to Group',
+  nameYourGroup: 'Name Your Group'
 };
