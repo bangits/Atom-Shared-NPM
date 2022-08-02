@@ -616,6 +616,15 @@ export default {
   userBalanceAfter: 'User Balance After',
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
+  noAddedNavbars: 'There is no added navbars yet',
+  noAddedGroups: 'There is no added groups yet',
+  noAddedSocialMedias: 'There is no added social medias yet',
+  addNavbar: 'Add Navbar',
+  navbar: 'Navbar',
+  dndPagesToNavbar: 'Drag and Drop Pages to Navbar',
+  dragAndDropPosition: 'Drag and Drop position',
+  addLink: 'Add Link',
+  pageTitle: 'Page Title',
   bannerTitle: 'Banner Title',
   bannerDescription: 'Banner Description',
   buttonUrl: 'Button URL (for Authorized)',
@@ -624,5 +633,7 @@ export default {
   imageUrl: 'Image URL',
   on: 'On',
   off: 'Off',
-  sliderNameAlreadyExists: 'Slider Name already exists!'
+  sliderNameAlreadyExists: 'Slider Name already exists!',
+  dndPagesToGroup: 'Drag and Drop Pages to Group',
+  nameYourGroup: 'Name Your Group'
 };
