@@ -637,5 +637,6 @@ export default {
   dndPagesToGroup: 'Drag and Drop Pages to Group',
   nameYourGroup: 'Name Your Group',
   uniqueNameCategory: 'Category name already exists',
-  groupTitle: 'Group Title'
+  groupTitle: 'Group Title',
+  groupNameValidation: 'The minimum length is 2! The maximum length is 40!'
 };
