@@ -635,5 +635,6 @@ export default {
   off: 'Off',
   sliderNameAlreadyExists: 'Slider Name already exists!',
   dndPagesToGroup: 'Drag and Drop Pages to Group',
-  nameYourGroup: 'Name Your Group'
+  nameYourGroup: 'Name Your Group',
+  uniqueNameCategory: 'Category name already exists'
 };
