@@ -595,7 +595,7 @@ export default {
   groupName: 'Group Name',
   selectedIcon: 'Selected Icon',
   addCategory: 'Add Category',
-  iconInfoText: 'Allowed extensions are: SVG, PNG',
+  iconInfoText: 'Upload failed. Allowed extensions are PNG, SVG.',
   footer: 'Footer',
   header: 'Header',
   groupNameAlreadyExist: 'Group Name already exists!',
