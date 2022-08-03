@@ -640,5 +640,6 @@ export default {
   groupId: 'Group Id',
   groupTitle: 'Group Title',
   groupNameValidation: 'The minimum length is 2! The maximum length is 40!',
-  bannerNameAlreadyExists: 'Banner name already exists!'
+  bannerNameAlreadyExists: 'Banner name already exists!',
+  groupNameAlreadyExists: 'Group name already exists!'
 };
