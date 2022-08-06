@@ -23,7 +23,6 @@ export default {
     maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
-    acceptImagesOnAddCategoryError: 'Upload failed. The following extensions only are allowed: PNG,SVG.',
 
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
@@ -643,5 +642,8 @@ export default {
   bannerNameAlreadyExists: 'Banner name already exists!',
   groupNameAlreadyExists: 'Group name already exists!',
   conditions: 'Conditions',
-  withdraw: 'Withdraw'
+  withdraw: 'Withdraw',
+  noAssignedBanners: 'No assigned banners',
+  assignBanner: 'Assign banner',
+  allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.'
 };
