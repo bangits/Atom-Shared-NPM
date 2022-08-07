@@ -23,7 +23,6 @@ export default {
     maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
-    acceptImagesOnAddCategoryError: 'Upload failed. The following extensions only are allowed: PNG,SVG.',
 
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
@@ -616,9 +615,9 @@ export default {
   userBalanceAfter: 'User Balance After',
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
-  noAddedNavbars: 'There is no added navbars yet',
-  noAddedGroups: 'There is no added groups yet',
-  noAddedSocialMedias: 'There is no added social medias yet',
+  noAddedNavbars: 'There are no added navbars yet',
+  noAddedGroups: 'There are no added groups yet',
+  noAddedSocialMedias: 'There are no added social medias yet',
   addNavbar: 'Add Navbar',
   navbar: 'Navbar',
   dndPagesToNavbar: 'Drag and Drop Pages to Navbar',
@@ -643,7 +642,7 @@ export default {
   bannerNameAlreadyExists: 'Banner name already exists!',
   groupNameAlreadyExists: 'Group name already exists!',
   conditions: 'Conditions',
-  button: 'Button',
-  text: 'Text',
-  withdraw: 'Withdraw'
+  noAssignedBanners: 'No assigned banners',
+  assignBanner: 'Assign banner',
+  allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.'
 };

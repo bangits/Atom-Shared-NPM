@@ -81,9 +81,9 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
     (file: File | null) => {
       setUploadedFileError('');
 
-      if (onChange) onChange('');
-
       if (!file) {
+        if (onChange) onChange('');
+
         setForceShowUploader(false);
 
         return;

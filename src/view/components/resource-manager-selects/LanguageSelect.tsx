@@ -21,7 +21,7 @@ export const LanguageSelect = (
       languages
         .map((c) => ({ value: c[props.valueProp || 'id'], label: c.name, code: c.code }))
         .filter((currency) => (props.expectLanguagesIds ? !props.expectLanguagesIds.includes(currency.value) : true)),
-    [languages]
+    [languages, props.expectLanguagesIds]
   );
 
   useEffect(() => {
