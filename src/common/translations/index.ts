@@ -644,5 +644,6 @@ export default {
   groupNameAlreadyExists: 'Group name already exists!',
   conditions: 'Conditions',
   button: 'Button',
-  text: 'Text'
+  text: 'Text',
+  withdraw: 'Withdraw'
 };
