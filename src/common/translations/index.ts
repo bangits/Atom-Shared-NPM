@@ -644,5 +644,9 @@ export default {
   conditions: 'Conditions',
   noAssignedBanners: 'No assigned banners',
   assignBanner: 'Assign banner',
-  allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.'
+  allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
+  buttonUnAuthorizedUrl: 'Button URL (for Non Authorized)',
+  button: 'Button',
+  text: 'Text',
+  buttonAuthorizedUrl: 'Button URL (for Authorized)'
 };
