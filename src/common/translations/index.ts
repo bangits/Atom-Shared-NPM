@@ -626,7 +626,7 @@ export default {
   pageTitle: 'Page Title',
   bannerTitle: 'Banner Title',
   bannerDescription: 'Banner Description',
-  buttonUrl: 'Button URL (for Authorized)',
+  buttonUrl: 'Button URL for Authorized',
   buttonUrlNotAuthorized: 'Button URL (for Non Authorized)',
   buttonText: 'Button Text',
   imageUrl: 'Image URL',
@@ -645,8 +645,8 @@ export default {
   noAssignedBanners: 'No assigned banners',
   assignBanner: 'Assign banner',
   allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
-  buttonUnAuthorizedUrl: 'Button URL (for Non Authorized)',
+  buttonUnAuthorizedUrl: 'Button URL for Unauthorized',
   button: 'Button',
   text: 'Text',
-  buttonAuthorizedUrl: 'Button URL (for Authorized)'
+  buttonAuthorizedUrl: 'Button URL for Authorized'
 };
