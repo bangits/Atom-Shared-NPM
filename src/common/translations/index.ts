@@ -649,5 +649,6 @@ export default {
   addGames: 'Add Games',
   button: 'Button',
   text: 'Text',
-  buttonAuthorizedUrl: 'Button URL for Authorized'
+  buttonAuthorizedUrl: 'Button URL for Authorized',
+  group: 'Group'
 };
