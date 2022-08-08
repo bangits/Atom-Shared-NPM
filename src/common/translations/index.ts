@@ -642,9 +642,12 @@ export default {
   bannerNameAlreadyExists: 'Banner name already exists!',
   groupNameAlreadyExists: 'Group name already exists!',
   conditions: 'Conditions',
-  withdraw: 'Withdraw',
   noAssignedBanners: 'No assigned banners',
   assignBanner: 'Assign banner',
   allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
-  addGames: 'Add Games'
+  addGames: 'Add Games',
+  buttonUnAuthorizedUrl: 'Button URL (for Non Authorized)',
+  button: 'Button',
+  text: 'Text',
+  buttonAuthorizedUrl: 'Button URL (for Authorized)'
 };
