@@ -533,7 +533,6 @@ export default {
   labels: 'Labels',
   published: 'Published',
   notPublished: 'Not published',
-  webSiteName: 'Web Site Name',
   homepage: 'Home Page',
   supportedCountries: 'Supported Countries',
   supportedLanguages: 'Supported Languages',
@@ -615,6 +614,7 @@ export default {
   userBalanceAfter: 'User Balance After',
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
+  noAddedGames: 'There are no added games yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
   noAddedSocialMedias: 'There are no added social medias yet',
@@ -646,6 +646,7 @@ export default {
   assignBanner: 'Assign banner',
   allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
   buttonUnAuthorizedUrl: 'Button URL for Unauthorized',
+  addGames: 'Add Games',
   button: 'Button',
   text: 'Text',
   buttonAuthorizedUrl: 'Button URL for Authorized'
