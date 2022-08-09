@@ -161,19 +161,19 @@ export const TablePage = <T extends {}, K>({
       shouldShowtableFooterRegenerateButton: true,
       actions: [
         ...(props.tableProps.actions || []),
-        ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
-          ? [
-              {
-                iconName: 'EditIcon' as const,
-                onClick: (columns) => {
-                  if (Array.isArray(columns)) {
-                    columns.forEach((c) => window.open(getEditUrl(c), '_blank'));
-                  } else historyService.redirectToURL(getEditUrl(columns));
-                },
-                tooltipText: translations.get('edit')
-              }
-            ]
-          : []),
+        // ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
+        //   ? [
+        //       {
+        //         iconName: 'EditIcon' as const,
+        //         onClick: (columns) => {
+        //           if (Array.isArray(columns)) {
+        //             columns.forEach((c) => window.open(getEditUrl(c), '_blank'));
+        //           } else historyService.redirectToURL(getEditUrl(columns));
+        //         },
+        //         tooltipText: translations.get('edit')
+        //       }
+        //     ]
+        //   : []),
         ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
           ? [
               {

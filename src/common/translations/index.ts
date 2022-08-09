@@ -166,6 +166,8 @@ export default {
     emptyResultTextReports: 'You don’t have any Reports!'
   },
   youDontHaveGameCategoriesAdded: 'You don’t have any categories added!',
+  youDontHaveGameGroupsAdded: 'You don’t have any categories groups added!',
+  pleaseAddGameGroups: 'Please add a group.',
   pleaseAddGameCategory: 'Please add a category.',
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
@@ -313,7 +315,7 @@ export default {
   currency: 'Currency',
   currencyCode: 'Currency Code',
   currencyName: 'Currency Name',
-  lastUpdateDate: 'Last Update Date',
+  lastUpdateDate: 'Last Updated Date',
   lastUpdateBy: 'Last Update By',
   users: 'Users',
   emailOrUserName: 'E-mail/ User Name',
@@ -570,7 +572,7 @@ export default {
   socialMedia: 'Social Media',
   addSocialMedia: 'Add Social Media',
   icon: 'Icon',
-  url: 'Url',
+  url: 'URL',
   appShortcut: 'App Shortcut',
   favicon: 'Favicon',
   websiteName: 'Website Name',
@@ -657,5 +659,6 @@ export default {
   unselectAll: 'UnSelect All',
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
-  invalidPosition: 'Invalid position!'
+  invalidPosition: 'Invalid position!',
+  system: 'System'
 };
