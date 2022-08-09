@@ -165,6 +165,8 @@ export default {
     thereAreNotAnyBets: 'There are no any bets made !',
     emptyResultTextReports: 'You don’t have any Reports!'
   },
+  youDontHaveGameCategoriesAdded: 'You don’t have any categories added!',
+  pleaseAddGameCategory: 'Please add a category.',
   youDontHaveProvidersAdded: 'You don’t have any providers added!',
   pleaseAddProvider: 'Please add a provider.',
   youDontHavePartnersAdded: 'You don’t have any partners added!',
@@ -650,5 +652,10 @@ export default {
   button: 'Button',
   text: 'Text',
   buttonAuthorizedUrl: 'Button URL for Authorized',
-  group: 'Group'
+  group: 'Group',
+  selectAll: 'Select All',
+  unselectAll: 'UnSelect All',
+  changePosition: 'Change Position',
+  totalGamesCount: 'Total games count',
+  invalidPosition: 'Invalid position!'
 };
