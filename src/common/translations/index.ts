@@ -600,7 +600,7 @@ export default {
   header: 'Header',
   groupNameAlreadyExist: 'Group Name already exists!',
   categoriesAndGroups: 'Categories and Groups',
-  autoPlay: 'Auto Play',
+  autoPlay: 'Autoplay',
   animationSpeed: 'Animation Speed',
   reportByCashInOut: 'Report By Cash In/Out',
   transactionId: 'Transaction ID',
