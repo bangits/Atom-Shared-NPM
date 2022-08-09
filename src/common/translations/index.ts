@@ -651,6 +651,6 @@ export default {
   text: 'Text',
   buttonAuthorizedUrl: 'Button URL for Authorized',
   group: 'Group',
-  youDontHaveGameCategoriesAdded: 'You don’t have any providers added!',
+  youDontHaveGameCategoriesAdded: 'You don’t have any categories added!',
   pleaseAddCategories: 'Please add a category.'
 };
