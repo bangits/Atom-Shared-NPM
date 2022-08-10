@@ -42,6 +42,7 @@ export default {
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Invalid Email',
+    slug: 'Invalid Slug',
     website: 'Enter an Website into correct format, example: https://www.website.com',
     phoneCodeRequired: 'Phone code is required!',
     password: 'Password must include both lower and upper case letters , numbers and symbols',
