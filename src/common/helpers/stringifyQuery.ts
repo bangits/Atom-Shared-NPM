@@ -13,7 +13,10 @@ const stringifyNestedObject = (object: {}, objectKey: string): string => {
 };
 
 const stringifyArray = (array: any[], objectKey: string): string => {
-  return Object.values(array).reduce((acc, value) => (value ? acc + `${objectKey}=${encodeValue(value)}&` : acc), '');
+  return Object.values(array).reduce(
+    (acc, value) => (value !== null || value !== undefined ? acc + `${objectKey}=${encodeValue(value)}&` : acc),
+    ''
+  );
 };
 
 export const stringifyQuery = (object: {}) => {
