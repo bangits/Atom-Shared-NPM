@@ -665,5 +665,8 @@ export default {
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
   invalidPosition: 'Invalid position!',
-  system: 'System'
+  system: 'System',
+  removeGroup: 'Remove Group',
+  removeGroupDescription: 'Do you want to remove the group?',
+  assignToGroup: 'Assign to Group'
 };

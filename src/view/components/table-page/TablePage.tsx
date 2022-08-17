@@ -198,13 +198,13 @@ export const TablePage = <T extends {}, K>({
     (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (tableConfigUpdateTimeout.current) return;
 
-      pageConfigsUseCase.updatePageConfigs(configId, configJSON);
+      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON);
 
       onTableConfigChange?.(configJSON);
 
       setTimeout(() => (tableConfigUpdateTimeout.current = false), 700);
     },
-    [tableConfigUpdateTimeout]
+    [pageId, tableConfigUpdateTimeout]
   );
 
   const currencySelect = useCallback(
