@@ -661,7 +661,7 @@ export default {
   buttonAuthorizedUrl: 'Button URL (for authorized)',
   group: 'Group',
   selectAll: 'Select All',
-  unselectAll: 'UnSelect All',
+  unselectAll: 'Unselect All',
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
   invalidPosition: 'Invalid position!',
