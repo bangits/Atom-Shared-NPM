@@ -366,6 +366,7 @@ export default {
   other: 'Other',
   makeDefault: 'Make as default',
   default: 'Default',
+  defaultLower: 'default',
   supported: 'Supported',
   wallets: 'Wallets',
   userManagement: 'User Management',
@@ -668,5 +669,8 @@ export default {
   system: 'System',
   removeGroup: 'Remove Group',
   removeGroupDescription: 'Do you want to remove the group?',
-  assignToGroup: 'Assign to Group'
+  assignToGroup: 'Assign to Group',
+  content: 'Content',
+  selectedLanguages: 'Selected Languages',
+  selectedCategory: 'Selected Category'
 };

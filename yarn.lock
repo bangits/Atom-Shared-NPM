@@ -9,12 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@atom/design-system@3.9.39":
-  version "3.9.39"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.39.tgz#c9ccaafce7137beb20c5e4c16b98757719a73a60"
-  integrity sha1-ycyq/OcTe+sgxeTBa5h1dxmnOmA=
+"@atom/design-system@^3.9.54":
+  version "3.9.54"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.54.tgz#deb5d46809d08fb8046c6a2e14b933913c86f06a"
+  integrity sha1-3rXUaAnQj7gEbGouFLkzkTyG8Go=
   dependencies:
-    "@my-ui/core" "^0.9.4"
+    "@my-ui/core" "^0.9.12"
     classnames "^2.3.1"
     react "17.0.0"
     react-cropper "^2.1.8"
@@ -1460,10 +1460,10 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
-"@my-ui/core@^0.9.4":
-  version "0.9.4"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.4.tgz#f0b6fae20373c14270cb223b015773d71a4040d3"
-  integrity sha1-8Lb64gNzwUJwyyI7AVdz1xpAQNM=
+"@my-ui/core@^0.9.12":
+  version "0.9.12"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.12.tgz#03981cff980b7e7d71768c1bbe757cdbc2bdfe48"
+  integrity sha1-A5gc/5gLfn1xdowbvnV828K9/kg=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
@@ -7752,7 +7752,7 @@ regenerator-runtime@^0.13.4:
   resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
   integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
-regenerator-transform@^0.14.5:
+regenerator-transform@^0.14.2, regenerator-transform@^0.14.5:
   version "0.14.5"
   resolved "https://registry.npmjs.org/regenerator-transform/-/regenerator-transform-0.14.5.tgz#c98da154683671c9c4dcb16ece736517e1b7feb4"
   integrity sha512-eOf6vka5IO151Jfsw2NO9WpGX58W6wWmefK3I1zEGr0lOD0u8rwPaNqQL1aRxUaxLeKO3ArNh3VYg1KbaD+FFw==
