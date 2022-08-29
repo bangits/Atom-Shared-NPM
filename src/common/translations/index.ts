@@ -677,5 +677,8 @@ export default {
   removeGroupDescription: 'Do you want to remove the group?',
   content: 'Content',
   selectedLanguages: 'Selected Languages',
-  selectedCategory: 'Selected Category'
+  selectedCategory: 'Selected Category',
+  homePageDesktop: 'Home Page (Desktop)',
+  homePageTablet: 'Home Page Tablet',
+  homePageMobile: 'Home Page Mobile'
 };
