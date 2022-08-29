@@ -12,7 +12,7 @@ export const CustomSelect = (props: CustomSelectProps) => {
     <>
       <Select
         clearButtonLabel={t.get('clear')}
-        applyButtonLabel={t.get('apply')}
+        // applyButtonLabel={t.get('apply')}
         selectAllLabel={t.get('all')}
         dropdownSearchPlaceholder={t.get('search')}
         {...props}

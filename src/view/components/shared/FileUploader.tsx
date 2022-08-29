@@ -32,6 +32,7 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
   const [uploadedFileError, setUploadedFileError] = useState('');
   const [forceShowUploader, setForceShowUploader] = useState(false);
 
+  console.log(forceShowUploader);
   const t = useTranslation();
 
   const errorMessagesTranslationConfig = useMemo<Record<FileUploaderErrors, string>>(
@@ -109,6 +110,10 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
 
   useEffect(() => {
     if (fileUploaderProps.imageSrc) setLoadingPercent(100);
+  }, [fileUploaderProps.imageSrc]);
+
+  useEffect(() => {
+    if (!fileUploaderProps.imageSrc) setForceShowUploader(false);
   }, [fileUploaderProps.imageSrc]);
 
   return (
