@@ -532,7 +532,7 @@ export default {
   youDontHavePlayersAdded: 'You don’t have any players added!',
   pleaseAddPlayer: 'Please add a player.',
   isTest: 'Is Test',
-  slidersAndBanners: 'Sliders and Banners',
+  slidersAndBanners: 'Banners and Sliders',
   gameCategories: 'Game Categories',
   pages: 'Pages',
   labels: 'Labels',
@@ -665,5 +665,11 @@ export default {
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
   invalidPosition: 'Invalid position!',
-  system: 'System'
+  system: 'System',
+  viewGroup: 'View Group',
+  viewCategory: 'View Category',
+  viewBanner: 'View Banner',
+  viewSlider: 'View Slider',
+  assignToGroup: 'Assign to Group',
+  assignToSlider: 'Assign to Slider'
 };
