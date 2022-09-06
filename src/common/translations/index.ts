@@ -672,5 +672,7 @@ export default {
   assignToGroup: 'Assign to Group',
   content: 'Content',
   selectedLanguages: 'Selected Languages',
-  selectedCategory: 'Selected Category'
+  selectedCategory: 'Selected Category',
+  allProviderGamesWillBeActivated: '(Please note that all games will be activated)',
+  allProviderGamesWillBeInActivated: '(Please note that all games will be inactivated)'
 };
