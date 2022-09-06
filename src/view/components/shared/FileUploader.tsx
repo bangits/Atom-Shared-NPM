@@ -11,6 +11,7 @@ import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react
 export interface FileUploaderProps
   extends Omit<DesignSystemFileUploaderProps, 'loadingPercent' | 'onError' | 'onChange'> {
   acceptError?: string;
+  errorResetDeps?: unknown[];
 
   onChange?(url: string): void;
 }
@@ -24,13 +25,20 @@ export const fileUploaderDefaultValues = {
   maxSize: 1024 * 1024
 };
 
-export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, acceptError, ...fileUploaderProps }) => {
+export const FileUploader: FC<FileUploaderProps> = ({
+  errorMessage,
+  onChange,
+  acceptError,
+  errorResetDeps = [],
+  ...fileUploaderProps
+}) => {
   const { fileManagerUseCase } = useContext(AtomCommonContext);
 
   const [loadingPercent, setLoadingPercent] = useState(0);
 
   const [uploadedFileError, setUploadedFileError] = useState('');
   const [forceShowUploader, setForceShowUploader] = useState(false);
+  console.log('🚀 ~ file: FileUploader.tsx ~ line 41 ~ forceShowUploader', forceShowUploader);
 
   const t = useTranslation();
 
@@ -74,7 +82,7 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
         ),
       [FileUploaderErrors.TYPE]: acceptError || t.get('fileUploader.defaultExtensionError')
     }),
-    [t]
+    [t, fileUploaderProps, uploadedFileError]
   );
 
   const onFileChange = useCallback(
@@ -110,6 +118,14 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
   useEffect(() => {
     if (fileUploaderProps.imageSrc) setLoadingPercent(100);
   }, [fileUploaderProps.imageSrc]);
+
+  useEffect(() => {
+    if (!fileUploaderProps.imageSrc) setForceShowUploader(false);
+  }, [fileUploaderProps.imageSrc]);
+
+  useEffect(() => {
+    setUploadedFileError('');
+  }, errorResetDeps);
 
   return (
     <>
