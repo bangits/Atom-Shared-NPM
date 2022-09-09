@@ -680,5 +680,15 @@ export default {
   selectedCategory: 'Selected Category',
   homePageDesktop: 'Home Page (Desktop)',
   homePageTablet: 'Home Page Tablet',
-  homePageMobile: 'Home Page Mobile'
+  homePageMobile: 'Home Page Mobile',
+  static: 'Static',
+  automated: 'Automated',
+  crm: 'CRM',
+  bonusEngine: 'Bonus Engine',
+  rmt: 'RMT',
+  applyTo: 'Apply to',
+  addSegment: 'Add Segment',
+  description: 'Description',
+  automaticallyUpdate: 'Automatically update the segment on addition of new data',
+  segmentId: 'Segment Id'
 };
