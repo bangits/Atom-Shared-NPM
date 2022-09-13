@@ -711,5 +711,6 @@ export default {
   expirationDayFrom: 'Expiration Day from',
   expirationDayTo: 'Expiration Day to',
   expirationDays: 'Expiration Days',
-  expiryDate: 'Expiry Date'
+  expiryDate: 'Expiry Date',
+  playerCount: 'Player Count'
 };
