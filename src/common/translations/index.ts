@@ -712,5 +712,6 @@ export default {
   expirationDayTo: 'Expiration Day to',
   expirationDays: 'Expiration Days',
   expiryDate: 'Expiry Date',
-  playerCount: 'Player Count'
+  playerCount: 'Player Count',
+  staticSegmentDetails: 'Static Segment Details'
 };
