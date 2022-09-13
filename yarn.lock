@@ -9,12 +9,12 @@
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.0"
 
-"@atom/design-system@^3.9.54":
-  version "3.9.54"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.54.tgz#deb5d46809d08fb8046c6a2e14b933913c86f06a"
-  integrity sha1-3rXUaAnQj7gEbGouFLkzkTyG8Go=
+"@atom/design-system@3.9.55":
+  version "3.9.55"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.55.tgz#3f89f6b0025314ccc56df67815887cd99ee7f67f"
+  integrity sha1-P4n2sAJTFMzFbfZ4FYh82Z7n9n8=
   dependencies:
-    "@my-ui/core" "^0.9.12"
+    "@my-ui/core" "^0.9.17"
     classnames "^2.3.1"
     react "17.0.0"
     react-cropper "^2.1.8"
@@ -1455,10 +1455,26 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.7.2.tgz#f34b8aa0c49f0dd55eb7eba577081299cbf3f90b"
   integrity sha512-rYEi46+gIzufyYUAoHDnRzkWGxajpD9vVXFQ3g1vbjrBm6P7MBmm+s/fqPa46sxa+8FOUdEuRQKaugo5a4JWpw==
 
-"@my-ui/core@^0.9.12", "@my-ui/core@^0.9.14":
+"@my-ui/core@^0.9.14":
   version "0.9.14"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.14.tgz#1b8ac0474d64bf84c7cdff821f31639824be37bd"
   integrity sha1-G4rAR01kv4THzf+CHzFjmCS+N70=
+  dependencies:
+    "@my-ui/react-datepicker" "^1.5.0"
+    "@my-ui/react-select" "1.1.6"
+    "@my-ui/react-table" "1.3.0"
+    "@my-ui/scrollbar" "^1.0.2"
+    classnames "^2.3.1"
+    react-flip-move "^3.0.4"
+    react-jss "^10.8.0"
+    react-paginate "^7.1.5"
+    react-transition-group "^4.4.2"
+    throttle-debounce "^3.0.1"
+
+"@my-ui/core@^0.9.17":
+  version "0.9.17"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.9.17.tgz#60a9aee02ddc93b4bbae15bb440328e7ec62e160"
+  integrity sha1-YKmu4C3ck7S7rhW7RAMo5+xi4WA=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
