@@ -690,5 +690,7 @@ export default {
   addSegment: 'Add Segment',
   description: 'Description',
   automaticallyUpdate: 'Automatically update the segment on addition of new data',
-  segmentId: 'Segment Id'
+  segmentId: 'Segment Id',
+  channel: 'Channel',
+  userType: 'User Type'
 };
