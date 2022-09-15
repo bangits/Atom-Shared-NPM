@@ -728,5 +728,6 @@ export default {
   template: 'Template',
   applyToOptional: 'Apply To (Optional)',
   descriptionOptional: 'Description (Optional)',
-  playersPage: 'Players Page'
+  playersPage: 'Players Page',
+  autoUpdate: 'Automatically Update'
 };
