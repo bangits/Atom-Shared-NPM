@@ -718,5 +718,7 @@ export default {
     'Static segmentation, created on the basis of already existing data, can only be updated manually.',
   segmentName: 'Segment Name',
   channel: 'Channel',
-  userType: 'User Type'
+  userType: 'User Type',
+  playerAmountTo: 'Player Amount To',
+  playerAmountFrom: 'Player Amount From'
 };
