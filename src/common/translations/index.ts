@@ -714,6 +714,9 @@ export default {
   expiryDate: 'Expiry Date',
   playerCount: 'Player Count',
   staticSegmentDetails: 'Static Segment Details',
+  staticSegmentsIconInfo:
+    'Static segmentation, created on the basis of already existing data, can only be updated manually.',
+  segmentName: 'Segment Name',
   channel: 'Channel',
   userType: 'User Type',
   fromEmail: 'From Email',
