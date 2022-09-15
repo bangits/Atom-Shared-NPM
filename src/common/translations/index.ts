@@ -724,5 +724,7 @@ export default {
   fromEmail: 'From Email',
   emailSubject: 'Email Subject',
   emailText: 'Email Text',
-  template: 'Template'
+  template: 'Template',
+  applyToOptional: 'Apply To (Optional)',
+  descriptionOptional: 'Description (Optional)'
 };
