@@ -716,5 +716,7 @@ export default {
   staticSegmentDetails: 'Static Segment Details',
   staticSegmentsIconInfo:
     'Static segmentation, created on the basis of already existing data, can only be updated manually.',
-  segmentName: 'Segment Name'
+  segmentName: 'Segment Name',
+  channel: 'Channel',
+  userType: 'User Type'
 };

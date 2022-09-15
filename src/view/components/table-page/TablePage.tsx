@@ -192,7 +192,7 @@ export const TablePage = <T extends {}, K>({
       });
   }, []);
 
-  if ((isFetching && !isFilteredData) || (pageId && userId && !tableConfig.config)) return null;
+  if (/*(isFetching && !isFilteredData) ||*/ pageId && userId && !tableConfig.config) return null;
 
   return (
     <DataTable
