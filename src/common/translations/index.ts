@@ -720,5 +720,9 @@ export default {
   channel: 'Channel',
   userType: 'User Type',
   playerAmountTo: 'Player Amount To',
-  playerAmountFrom: 'Player Amount From'
+  playerAmountFrom: 'Player Amount From',
+  fromEmail: 'From Email',
+  emailSubject: 'Email Subject',
+  emailText: 'Email Text',
+  template: 'Template'
 };
