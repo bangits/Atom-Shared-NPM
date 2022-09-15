@@ -713,6 +713,7 @@ export default {
   expirationDays: 'Expiration Days',
   expiryDate: 'Expiry Date',
   playerCount: 'Player Count',
+  playersCount: 'Players Count',
   staticSegmentDetails: 'Static Segment Details',
   staticSegmentsIconInfo:
     'Static segmentation, created on the basis of already existing data, can only be updated manually.',
@@ -726,5 +727,6 @@ export default {
   emailText: 'Email Text',
   template: 'Template',
   applyToOptional: 'Apply To (Optional)',
-  descriptionOptional: 'Description (Optional)'
+  descriptionOptional: 'Description (Optional)',
+  playersPage: 'Players Page'
 };
