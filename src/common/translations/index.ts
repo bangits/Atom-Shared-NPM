@@ -715,5 +715,9 @@ export default {
   playerCount: 'Player Count',
   staticSegmentDetails: 'Static Segment Details',
   channel: 'Channel',
-  userType: 'User Type'
+  userType: 'User Type',
+  fromEmail: 'From Email',
+  emailSubject: 'Email Subject',
+  emailText: 'Email Text',
+  template: 'Template'
 };
