@@ -713,15 +713,22 @@ export default {
   expirationDays: 'Expiration Days',
   expiryDate: 'Expiry Date',
   playerCount: 'Player Count',
+  playersCount: 'Players Count',
   staticSegmentDetails: 'Static Segment Details',
   staticSegmentsIconInfo:
     'Static segmentation, created on the basis of already existing data, can only be updated manually.',
   segmentName: 'Segment Name',
   channel: 'Channel',
   userType: 'User Type',
+  playerAmountTo: 'Player Amount To',
+  playerAmountFrom: 'Player Amount From',
   fromEmail: 'From Email',
   emailSubject: 'Email Subject',
   emailText: 'Email Text',
   template: 'Template',
-  systemNotification: 'System Notification'
+  systemNotification: 'System Notification',
+  applyToOptional: 'Apply To (Optional)',
+  descriptionOptional: 'Description (Optional)',
+  playersPage: 'Players Page',
+  autoUpdate: 'Automatically Update'
 };
