@@ -737,5 +737,5 @@ export default {
   addSystemNotification: 'Add System Notification',
   attachTemplate: 'Attach Template',
   saveAsTemplate: 'Save as Template',
-  sendTestEmail: 'Send Test Email'
+  sendTestEmail: 'Send Test Email',
 };
