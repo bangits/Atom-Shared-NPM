@@ -729,5 +729,6 @@ export default {
   applyToOptional: 'Apply To (Optional)',
   descriptionOptional: 'Description (Optional)',
   playersPage: 'Players Page',
-  autoUpdate: 'Automatically Update'
+  autoUpdate: 'Automatically Update',
+  systemNotifications: 'System Notifications'
 };
