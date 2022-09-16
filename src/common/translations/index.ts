@@ -726,6 +726,7 @@ export default {
   emailSubject: 'Email Subject',
   emailText: 'Email Text',
   template: 'Template',
+  systemNotification: 'System Notification',
   applyToOptional: 'Apply To (Optional)',
   descriptionOptional: 'Description (Optional)',
   playersPage: 'Players Page',
