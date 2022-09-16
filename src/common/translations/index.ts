@@ -722,5 +722,6 @@ export default {
   fromEmail: 'From Email',
   emailSubject: 'Email Subject',
   emailText: 'Email Text',
-  template: 'Template'
+  template: 'Template',
+  systemNotification: 'System Notification'
 };
