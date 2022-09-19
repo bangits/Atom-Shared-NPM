@@ -740,5 +740,6 @@ export default {
   saveAsTemplate: 'Save as Template',
   sendTestEmail: 'Send Test Email',
   send: 'Send',
-  rules: 'Rules'
+  rules: 'Rules',
+  dynamic: 'Dynamic'
 };
