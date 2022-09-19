@@ -727,10 +727,17 @@ export default {
   emailText: 'Email Text',
   template: 'Template',
   systemNotification: 'System Notification',
+  systemNotifications: 'System Notifications',
   applyToOptional: 'Apply To (Optional)',
   descriptionOptional: 'Description (Optional)',
   playersPage: 'Players Page',
   autoUpdate: 'Automatically Update',
-  systemNotifications: 'System Notifications',
-  playerAmount: 'Player Amount'
+  playerAmount: 'Player Amount',
+  sms: 'SMS',
+  inbox: 'Inbox',
+  addSystemNotification: 'Add System Notification',
+  attachTemplate: 'Attach Template',
+  saveAsTemplate: 'Save as Template',
+  sendTestEmail: 'Send Test Email',
+  send: 'Send'
 };
