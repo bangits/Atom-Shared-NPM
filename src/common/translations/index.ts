@@ -731,5 +731,6 @@ export default {
   descriptionOptional: 'Description (Optional)',
   playersPage: 'Players Page',
   autoUpdate: 'Automatically Update',
-  systemNotifications: 'System Notifications'
+  systemNotifications: 'System Notifications',
+  playerAmount: 'Player Amount'
 };
