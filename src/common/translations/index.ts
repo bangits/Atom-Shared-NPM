@@ -745,7 +745,15 @@ export default {
   dynamicSegmentDetails: 'Dynamic Segment Details',
   dynamicSegmentsIconInfo:
     ' Automated segmentation created based on a user-defined condition and automatically updated when an object matching the specified conditions is detected in the system.',
+  youDontHaveRulesAdded: 'You don’t have any rules added!',
+  pleaseAddRule: 'Please Add Rule',
+  addRule: 'Add Rule',
+  ruleName: 'Rule Name',
+  ruleDetails: 'Rule Details',
+  unUsed: 'Unused',
+  currentState: 'Current State',
   testEmail: 'Test Email',
+  bonus: 'Bonus',
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
   pleaseAddSystemNotification: 'Please Add System Notification'
 };
