@@ -752,5 +752,6 @@ export default {
   ruleDetails: 'Rule Details',
   unUsed: 'Unused',
   currentState: 'Current State',
-  testEmail: 'Test Email'
+  testEmail: 'Test Email',
+  bonus: 'Bonus'
 };
