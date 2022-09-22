@@ -738,5 +738,6 @@ export default {
   attachTemplate: 'Attach Template',
   saveAsTemplate: 'Save as Template',
   sendTestEmail: 'Send Test Email',
-  send: 'Send'
+  send: 'Send',
+  testEmail: 'Test Email'
 };
