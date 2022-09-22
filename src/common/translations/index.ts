@@ -745,5 +745,7 @@ export default {
   dynamicSegmentDetails: 'Dynamic Segment Details',
   dynamicSegmentsIconInfo:
     ' Automated segmentation created based on a user-defined condition and automatically updated when an object matching the specified conditions is detected in the system.',
-  testEmail: 'Test Email'
+  testEmail: 'Test Email',
+  youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
+  pleaseAddSystemNotification: 'Please Add System Notification'
 };
