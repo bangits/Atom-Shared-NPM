@@ -732,6 +732,7 @@ export default {
   descriptionOptional: 'Description (Optional)',
   playersPage: 'Players Page',
   autoUpdate: 'Automatically Update',
+  playerAmount: 'Player Amount',
   sms: 'SMS',
   inbox: 'Inbox',
   addSystemNotification: 'Add System Notification',
@@ -739,5 +740,10 @@ export default {
   saveAsTemplate: 'Save as Template',
   sendTestEmail: 'Send Test Email',
   send: 'Send',
+  rules: 'Rules',
+  dynamic: 'Dynamic',
+  dynamicSegmentDetails: 'Dynamic Segment Details',
+  dynamicSegmentsIconInfo:
+    ' Automated segmentation created based on a user-defined condition and automatically updated when an object matching the specified conditions is detected in the system.',
   testEmail: 'Test Email'
 };
