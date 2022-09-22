@@ -751,5 +751,6 @@ export default {
   ruleName: 'Rule Name',
   ruleDetails: 'Rule Details',
   unUsed: 'Unused',
-  currentState: 'Current State'
+  currentState: 'Current State',
+  testEmail: 'Test Email'
 };
