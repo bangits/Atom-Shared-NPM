@@ -754,5 +754,7 @@ export default {
   currentState: 'Current State',
   testEmail: 'Test Email',
   bonus: 'Bonus',
-  ruleDisableButtonText: 'Rule in use and cannot be changed!'
+  ruleDisableButtonText: 'Rule in use and cannot be changed!',
+  youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
+  pleaseAddSystemNotification: 'Please Add System Notification'
 };
