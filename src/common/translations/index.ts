@@ -753,5 +753,6 @@ export default {
   unUsed: 'Unused',
   currentState: 'Current State',
   testEmail: 'Test Email',
-  bonus: 'Bonus'
+  bonus: 'Bonus',
+  ruleDisableButtonText: 'Rule in use and cannot be changed!'
 };
