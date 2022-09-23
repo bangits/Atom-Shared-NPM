@@ -756,5 +756,6 @@ export default {
   bonus: 'Bonus',
   ruleDisableButtonText: 'Rule in use and cannot be changed!',
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
-  pleaseAddSystemNotification: 'Please Add System Notification'
+  pleaseAddSystemNotification: 'Please Add System Notification',
+  player: 'Player'
 };
