@@ -755,5 +755,6 @@ export default {
   testEmail: 'Test Email',
   bonus: 'Bonus',
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
-  pleaseAddSystemNotification: 'Please Add System Notification'
+  pleaseAddSystemNotification: 'Please Add System Notification',
+  someParametersAreNull: 'Some Parameters Are Null'
 };
