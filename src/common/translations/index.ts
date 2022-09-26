@@ -769,5 +769,6 @@ export default {
   expirationType: 'Expiration Type',
   bonusStartDate: 'Bonus Start Date',
   startDate: 'Start Date',
-  endDate: 'End Date'
+  endDate: 'End Date',
+  cashback: 'Cashback'
 };
