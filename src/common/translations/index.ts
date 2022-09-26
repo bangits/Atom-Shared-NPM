@@ -758,5 +758,7 @@ export default {
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
   pleaseAddSystemNotification: 'Please Add System Notification',
   player: 'Player',
-  promotionalTools: 'Promotional Tools'
+  promotionalTools: 'Promotional Tools',
+  someParametersAreNull: 'Some Parameters Are Null',
+  systemNotificationDetails: 'System Notification Details'
 };
