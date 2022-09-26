@@ -760,5 +760,6 @@ export default {
   player: 'Player',
   promotionalTools: 'Promotional Tools',
   someParametersAreNull: 'Some Parameters Are Null',
-  systemNotificationDetails: 'System Notification Details'
+  systemNotificationDetails: 'System Notification Details',
+  t: 'T'
 };
