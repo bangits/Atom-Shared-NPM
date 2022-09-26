@@ -757,8 +757,10 @@ export default {
   ruleDisableButtonText: 'Rule in use and cannot be changed!',
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
   pleaseAddSystemNotification: 'Please Add System Notification',
-  someParametersAreNull: 'Some Parameters Are Null',
   player: 'Player',
   systemNotificationDetails: 'System Notification Details',
-  chooseChannel: 'Please choose a channel'
+  chooseChannel: 'Please choose a channel',
+  promotionalTools: 'Promotional Tools',
+  someParametersAreNull: 'Some Parameters Are Null',
+  t: 'T'
 };
