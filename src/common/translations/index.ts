@@ -770,5 +770,6 @@ export default {
   bonusStartDate: 'Bonus Start Date',
   startDate: 'Start Date',
   endDate: 'End Date',
-  cashback: 'Cashback'
+  cashback: 'Cashback',
+  bonuses: 'Bonuses'
 };
