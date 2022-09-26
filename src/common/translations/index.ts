@@ -761,5 +761,13 @@ export default {
   promotionalTools: 'Promotional Tools',
   someParametersAreNull: 'Some Parameters Are Null',
   systemNotificationDetails: 'System Notification Details',
-  t: 'T'
+  t: 'T',
+  bonusDetails: 'Bonus Details',
+  maxProvisionCount: 'Max Provision Count',
+  bonusStartDateTo: 'Bonus Start Date To',
+  bonusStartDateFrom: 'Bonus Start Date From',
+  expirationType: 'Expiration Type',
+  bonusStartDate: 'Bonus Start Date',
+  startDate: 'Start Date',
+  endDate: 'End Date'
 };
