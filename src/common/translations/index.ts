@@ -759,5 +759,6 @@ export default {
   pleaseAddSystemNotification: 'Please Add System Notification',
   someParametersAreNull: 'Some Parameters Are Null',
   player: 'Player',
-  systemNotificationDetails: 'System Notification Details'
+  systemNotificationDetails: 'System Notification Details',
+  chooseChannel: 'Please choose a channel'
 };
