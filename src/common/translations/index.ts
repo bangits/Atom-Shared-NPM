@@ -772,5 +772,12 @@ export default {
   endDate: 'End Date',
   cashback: 'Cashback',
   bonuses: 'Bonuses',
-  playerAnalyze: 'Player Analyze'
+  playerAnalyze: 'Player Analyze',
+  addPlayerToSegment: 'Add Player To Segment',
+  playerExternalId: 'Player External Id',
+  uploadFile: 'Upload File',
+  addPlayer: 'Add Player',
+  excelFile: 'Excel File',
+  allowedExtensionsAreEXELXLM: 'Allowed extensions are EXEL, XML.',
+  relatedDate: 'Related Date'
 };
