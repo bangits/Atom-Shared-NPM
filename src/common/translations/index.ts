@@ -771,5 +771,6 @@ export default {
   startDate: 'Start Date',
   endDate: 'End Date',
   cashback: 'Cashback',
-  bonuses: 'Bonuses'
+  bonuses: 'Bonuses',
+  playerAnalyze: 'Player Analyze'
 };
