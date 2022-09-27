@@ -779,5 +779,6 @@ export default {
   addPlayer: 'Add Player',
   excelFile: 'Excel File',
   allowedExtensionsAreEXELXLM: 'Allowed extensions are EXEL, XML.',
-  relatedDate: 'Related Date'
+  relatedDate: 'Related Date',
+  playerEmail: 'Player Email'
 };
