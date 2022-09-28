@@ -708,8 +708,8 @@ export default {
   used: 'Used',
   to: 'To',
   from: 'From',
-  expirationDayFrom: 'Expiration Day from',
-  expirationDayTo: 'Expiration Day to',
+  expirationDayFrom: 'Expiration Day From',
+  expirationDayTo: 'Expiration Day To',
   expirationDays: 'Expiration Days',
   expiryDate: 'Expiry Date',
   playerCount: 'Player Count',
@@ -780,6 +780,7 @@ export default {
   excelFile: 'Excel File',
   allowedExtensionsAreEXELXLM: 'Allowed extensions are EXEL, XML.',
   relatedDate: 'Related Date',
+  playerEmail: 'Player Email',
   excludePopUpText: 'Do you want to exclude selected player(s)',
   excludePlayer: 'Exclude Player'
 };
