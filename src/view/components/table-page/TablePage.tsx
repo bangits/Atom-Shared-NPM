@@ -11,6 +11,8 @@ import { ExchangeCurrencySelect } from './ExchangeCurrencySelect';
 export interface TablePageProps<T extends {}, K>
   extends Omit<DataTableProps<T, K>, 'paginationProps' | 'currencySelect' | 'currencyTranslations'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
+  isSynchronizeShown?: boolean;
+  isSynchronize?: boolean;
   rowCount: number;
   defaultPageSizeValue?: number;
   pageSizeDividerValue?: number;
@@ -26,6 +28,7 @@ export interface TablePageProps<T extends {}, K>
   getViewUrl?: (column: T) => string;
   refetch?: () => void;
   onTableConfigChange?: (config: PageConfigViewModel[]) => void;
+  onSynchronizeButtonClick?: () => void;
 }
 
 export const TablePage = <T extends {}, K>({
@@ -42,7 +45,10 @@ export const TablePage = <T extends {}, K>({
   refetch,
   pageId,
   userId,
+  isSynchronizeShown = false,
+  isSynchronize = false,
   onTableConfigChange,
+  onSynchronizeButtonClick,
   ...props
 }: TablePageProps<T, K>) => {
   const { pageConfigsUseCase } = useContext(AtomCommonContext);
@@ -196,7 +202,6 @@ export const TablePage = <T extends {}, K>({
 
   return (
     <DataTable
-      // @ts-expect-error Remove after design system version
       renderFilter={(dataTableFilterProps) => (
         <DataFilter
           {...dataTableFilterProps}
@@ -205,6 +210,7 @@ export const TablePage = <T extends {}, K>({
           filtersConfig={filtersConfig}
         />
       )}
+      isSynchronizeShown
       {...props}
       rowCount={props.rowCount}
       paginationProps={{
@@ -231,6 +237,9 @@ export const TablePage = <T extends {}, K>({
       }}
       tableProps={tableProps}
       onRefreshButtonClick={refetch}
+      // @ts-expect-error Remove after design system version
+      onSynchronizeButtonClick={onSynchronizeButtonClick}
+      isSynchronize={isSynchronize}
       onTableConfigChange={(tableColumns, selectedColumns) => {
         if (!pageId || !userId) return;
 

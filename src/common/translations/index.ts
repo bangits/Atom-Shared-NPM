@@ -779,5 +779,7 @@ export default {
   addPlayer: 'Add Player',
   excelFile: 'Excel File',
   allowedExtensionsAreEXELXLM: 'Allowed extensions are EXEL, XML.',
-  relatedDate: 'Related Date'
+  relatedDate: 'Related Date',
+  excludePopUpText: 'Do you want to exclude selected player(s)',
+  excludePlayer: 'Exclude Player'
 };
