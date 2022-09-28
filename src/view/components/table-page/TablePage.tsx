@@ -210,7 +210,7 @@ export const TablePage = <T extends {}, K>({
           filtersConfig={filtersConfig}
         />
       )}
-      isSynchronizeShown
+      isSynchronizeShown={isSynchronizeShown}
       {...props}
       rowCount={props.rowCount}
       paginationProps={{
