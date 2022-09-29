@@ -678,9 +678,9 @@ export default {
   content: 'Content',
   selectedLanguages: 'Selected Languages',
   selectedCategory: 'Selected Category',
-  homePageDesktop: 'Home Page (Desktop)',
-  homePageTablet: 'Home Page Tablet',
-  homePageMobile: 'Home Page Mobile',
+  homePageDesktop: 'Home Page(Desktop)',
+  homePageTablet: 'Home Page(Tablet)',
+  homePageMobile: 'Home Page(Mobile)',
   static: 'Static',
   automated: 'Automated',
   crm: 'CRM',
@@ -784,5 +784,6 @@ export default {
   excludePopUpText: 'Do you want to exclude selected player(s)',
   excludePlayer: 'Exclude Player',
   playerName: 'Player Name',
-  exclude: 'Exclude'
+  exclude: 'Exclude',
+  submarkLogo: 'Submark Logo'
 };
