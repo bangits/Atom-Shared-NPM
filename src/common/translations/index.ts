@@ -782,5 +782,7 @@ export default {
   relatedDate: 'Related Date',
   playerEmail: 'Player Email',
   excludePopUpText: 'Do you want to exclude selected player(s)',
-  excludePlayer: 'Exclude Player'
+  excludePlayer: 'Exclude Player',
+  playerName: 'Player Name',
+  exclude: 'Exclude'
 };
