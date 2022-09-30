@@ -785,5 +785,6 @@ export default {
   excludePlayer: 'Exclude Player',
   playerName: 'Player Name',
   exclude: 'Exclude',
-  submarkLogo: 'Submark Logo'
+  submarkLogo: 'Submark Logo',
+  confirm: 'Confirm'
 };
