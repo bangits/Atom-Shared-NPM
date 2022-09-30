@@ -787,6 +787,7 @@ export default {
   exclude: 'Exclude',
   submarkLogo: 'Submark Logo',
   confirm: 'Confirm',
+  bonusEndDate: 'Bonus End Date',
   systemNotificationId: 'System Notification ID',
   systemNotificationName: 'System Notification Name'
 };
