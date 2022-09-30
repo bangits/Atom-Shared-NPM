@@ -786,5 +786,7 @@ export default {
   playerName: 'Player Name',
   exclude: 'Exclude',
   submarkLogo: 'Submark Logo',
-  confirm: 'Confirm'
+  confirm: 'Confirm',
+  systemNotificationId: 'System Notification ID',
+  systemNotificationName: 'System Notification Name'
 };
