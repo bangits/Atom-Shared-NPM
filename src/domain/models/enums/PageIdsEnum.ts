@@ -18,5 +18,7 @@ export enum PageIdsEnum {
   CMS_GAMES,
   BONUS_PAGE,
   SEGMENT_PAGE,
-  CRM_PAGE
+  CRM_PAGE,
+  RULE_PAGE,
+  PLAYER_ANALYZE
 }
