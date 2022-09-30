@@ -786,5 +786,6 @@ export default {
   playerName: 'Player Name',
   exclude: 'Exclude',
   submarkLogo: 'Submark Logo',
-  confirm: 'Confirm'
+  confirm: 'Confirm',
+  bonusEndDate: 'Bonus End Date'
 };
