@@ -22,7 +22,7 @@ export default {
     minWidth: `Upload failed. Allowed min. width is ${TRANSLATION_CHANGED_VALUE} px.`,
     maxHeight: `Upload failed. Allowed max. height is ${TRANSLATION_CHANGED_VALUE}px.`,
     minHeight: `Upload failed. Allowed min. height is ${TRANSLATION_CHANGED_VALUE}px.`,
-    acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG,JPG,JPEG, SVG.',
+    acceptImagesError: 'Upload failed. The following extensions only are allowed: PNG, JPG, JPEG, SVG.',
 
     defaultExtensionError: 'Upload failed. Invalid file extension.'
   },
@@ -713,5 +713,28 @@ export default {
   expirationDays: 'Expiration Days',
   expiryDate: 'Expiry Date',
   playerCount: 'Player Count',
-  staticSegmentDetails: 'Static Segment Details'
+  staticSegmentDetails: 'Static Segment Details',
+  addCondition: 'Add Condition',
+  addCriteria: 'Add Criteria',
+  criterias: 'Criterias',
+  delete: 'Delete',
+  accountVerification: 'Account Verification',
+  betCurrency: 'Bet Currency',
+  depositAmount: 'Deposit Amount',
+  depositCurrency: 'Deposit Currency',
+  depositDate: 'Deposit Date',
+  emailVerification: 'Email Verification',
+  checkToPerform: 'Check To Perform',
+  value: 'Value',
+  false: 'False',
+  true: 'True',
+  or: 'Or',
+  and: 'And',
+  'operators-in': 'Is One Of',
+  'operators-not_in': "Isn't One Of",
+  'operators-equal': 'Equals (=)',
+  'operators-not_equal': "Doesn't Equal (!=)",
+  'operators-between': 'Range',
+  'operators-less': 'Less (<)',
+  'operators-greater': 'Greater (>)'
 };
