@@ -490,6 +490,7 @@ export default {
   registeredDate: 'Registered Date',
   nationality: 'Nationality',
   emailVerificationDate: 'Email Verification Date',
+  verificationDate: 'Verification Date',
   mobileNumberVerificationDate: 'Mobile Verification Date',
   regionOfBirth: 'Region Of Birth',
   regionOfResidence: 'Region Of Residence',
