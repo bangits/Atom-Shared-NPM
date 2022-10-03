@@ -738,6 +738,8 @@ export default {
   'operators-between': 'Range',
   'operators-less': 'Less (<)',
   'operators-greater': 'Greater (>)',
+  'operators-before': 'Before (<)',
+  'operators-after': 'After (>)',
   playersCount: 'Players Count',
   staticSegmentsIconInfo:
     'Static segmentation, created on the basis of already existing data, can only be updated manually.',
