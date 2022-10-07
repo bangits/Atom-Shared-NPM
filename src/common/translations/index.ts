@@ -790,4 +790,6 @@ export default {
   bonusEndDate: 'Bonus End Date',
   systemNotificationId: 'System Notification ID',
   systemNotificationName: 'System Notification Name'
+  ,templateId:'Template ID',
+  templateName: 'Template Name',
 };
