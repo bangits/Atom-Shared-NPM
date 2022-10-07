@@ -38,7 +38,6 @@ export const FileUploader: FC<FileUploaderProps> = ({
 
   const [uploadedFileError, setUploadedFileError] = useState('');
   const [forceShowUploader, setForceShowUploader] = useState(false);
-  console.log('🚀 ~ file: FileUploader.tsx ~ line 41 ~ forceShowUploader', forceShowUploader);
 
   const t = useTranslation();
 
