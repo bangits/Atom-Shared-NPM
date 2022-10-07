@@ -787,5 +787,6 @@ export default {
   exclude: 'Exclude',
   submarkLogo: 'Submark Logo',
   confirm: 'Confirm',
-  bonusEndDate: 'Bonus End Date'
+  bonusEndDate: 'Bonus End Date',
+  templates: 'Templates'
 };
