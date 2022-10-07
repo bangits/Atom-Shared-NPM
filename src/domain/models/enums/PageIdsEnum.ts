@@ -20,5 +20,6 @@ export enum PageIdsEnum {
   SEGMENT_PAGE,
   CRM_PAGE,
   RULE_PAGE,
-  PLAYER_ANALYZE
+  PLAYER_ANALYZE,
+  TEMPLATE
 }
