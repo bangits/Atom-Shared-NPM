@@ -815,7 +815,8 @@ export default {
   confirm: 'Confirm',
   bonusEndDate: 'Bonus End Date',
   systemNotificationId: 'System Notification ID',
-  systemNotificationName: 'System Notification Name'
-  ,templateId:'Template ID',
+  systemNotificationName: 'System Notification Name',
+  templateId: 'Template ID',
   templateName: 'Template Name',
+  templateIsActive: 'Template Is Active'
 };
