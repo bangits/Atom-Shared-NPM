@@ -818,5 +818,6 @@ export default {
   systemNotificationName: 'System Notification Name',
   templateId: 'Template ID',
   templateName: 'Template Name',
-  templateIsActive: 'Template Is Active'
+  templateIsActive: 'Template Is Active',
+  templateDetails: 'Template Details'
 };
