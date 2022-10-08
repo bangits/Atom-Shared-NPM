@@ -814,6 +814,7 @@ export default {
   submarkLogo: 'Submark Logo',
   confirm: 'Confirm',
   bonusEndDate: 'Bonus End Date',
+  templates: 'Templates',
   systemNotificationId: 'System Notification ID',
   systemNotificationName: 'System Notification Name',
   templateId: 'Template ID',
