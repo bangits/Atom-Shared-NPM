@@ -817,9 +817,16 @@ export default {
   templates: 'Templates',
   systemNotificationId: 'System Notification ID',
   systemNotificationName: 'System Notification Name',
+  galleryName: 'Gallery Name',
+  imageGallery: 'Image Gallery',
+  addGallery: 'Add Gallery',
+  galleryNameAlreadyExists: 'Gallery name already exists!',
+  selectAnImageToViewOrEdit: 'Select an image to view or edit it.',
+  addNew: 'Add New',
+  images: 'Images',
+  savePositions: 'Save Positions',
   templateId: 'Template ID',
   templateName: 'Template Name',
   templateIsActive: 'Template Is Active',
-  sliderTypes: 'Slider Types',
-  link: 'Link (View All)'
+  templateDetails: 'Template Details'
 };
