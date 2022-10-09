@@ -820,6 +820,7 @@ export default {
   systemNotificationName: 'System Notification Name',
   galleryName: 'Gallery Name',
   imageGallery: 'Image Gallery',
+  imageGalleries: 'Image Galleries',
   addGallery: 'Add Gallery',
   galleryNameAlreadyExists: 'Gallery name already exists!',
   selectAnImageToViewOrEdit: 'Select an image to view or edit it.',
