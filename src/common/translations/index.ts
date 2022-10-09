@@ -815,5 +815,13 @@ export default {
   confirm: 'Confirm',
   bonusEndDate: 'Bonus End Date',
   systemNotificationId: 'System Notification ID',
-  systemNotificationName: 'System Notification Name'
+  systemNotificationName: 'System Notification Name',
+  galleryName: 'Gallery Name',
+  imageGallery: 'Image Gallery',
+  addGallery: 'Add Gallery',
+  galleryNameAlreadyExists: 'Gallery name already exists!',
+  selectAnImageToViewOrEdit: 'Select an image to view or edit it.',
+  addNew: 'Add New',
+  images: 'Images',
+  savePositions: 'Save Positions'
 };
