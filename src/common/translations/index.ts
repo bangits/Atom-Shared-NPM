@@ -814,6 +814,7 @@ export default {
   submarkLogo: 'Submark Logo',
   confirm: 'Confirm',
   bonusEndDate: 'Bonus End Date',
+  templates: 'Templates',
   systemNotificationId: 'System Notification ID',
   systemNotificationName: 'System Notification Name',
   galleryName: 'Gallery Name',
@@ -823,5 +824,9 @@ export default {
   selectAnImageToViewOrEdit: 'Select an image to view or edit it.',
   addNew: 'Add New',
   images: 'Images',
-  savePositions: 'Save Positions'
+  savePositions: 'Save Positions',
+  templateId: 'Template ID',
+  templateName: 'Template Name',
+  templateIsActive: 'Template Is Active',
+  templateDetails: 'Template Details'
 };
