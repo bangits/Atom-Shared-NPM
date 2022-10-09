@@ -819,5 +819,7 @@ export default {
   systemNotificationName: 'System Notification Name',
   templateId: 'Template ID',
   templateName: 'Template Name',
-  templateIsActive: 'Template Is Active'
+  templateIsActive: 'Template Is Active',
+  sliderTypes: 'Slider Types',
+  link: 'Link (View All)'
 };
