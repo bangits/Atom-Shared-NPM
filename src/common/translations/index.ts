@@ -828,5 +828,7 @@ export default {
   templateId: 'Template ID',
   templateName: 'Template Name',
   templateIsActive: 'Template Is Active',
-  templateDetails: 'Template Details'
+  templateDetails: 'Template Details',
+  imageName: 'Image Name',
+  templateNameAlreadyExists: 'Template Name Already Exists'
 };
