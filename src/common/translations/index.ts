@@ -627,6 +627,7 @@ export default {
   noAddedSocialMedias: 'There are no added social medias yet',
   addNavbar: 'Add Navbar',
   navbar: 'Navbar',
+  dndPagesToArea: 'Drag and Drop Pages to Area',
   dndPagesToNavbar: 'Drag and Drop Pages to Navbar',
   dndBannersToSlider: 'Drag and Drop Banners to Slider',
   dndCategoriesToGroup: 'Drag and Drop Categories to Group',
@@ -819,6 +820,7 @@ export default {
   systemNotificationName: 'System Notification Name',
   galleryName: 'Gallery Name',
   imageGallery: 'Image Gallery',
+  imageGalleries: 'Image Galleries',
   addGallery: 'Add Gallery',
   galleryNameAlreadyExists: 'Gallery name already exists!',
   selectAnImageToViewOrEdit: 'Select an image to view or edit it.',
@@ -831,5 +833,8 @@ export default {
   templateDetails: 'Template Details',
   sliderType: 'Slider Type',
   viewAll: 'View All',
-  sliderTypes: 'Slider Types'
+  sliderTypes: 'Slider Types',
+  areaTitle: 'Area Title',
+  imageName: 'Image Name',
+  templateNameAlreadyExists: 'Template Name Already Exists'
 };
