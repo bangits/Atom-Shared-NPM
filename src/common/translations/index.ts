@@ -828,5 +828,8 @@ export default {
   templateId: 'Template ID',
   templateName: 'Template Name',
   templateIsActive: 'Template Is Active',
-  templateDetails: 'Template Details'
+  templateDetails: 'Template Details',
+  sliderType: 'Slider Type',
+  viewAll: 'View All',
+  sliderTypes: 'Slider Types'
 };
