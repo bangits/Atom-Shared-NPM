@@ -841,5 +841,6 @@ export default {
   cards: 'Cards',
   addCard: 'Add Card',
   card: 'Card',
-  cardId: 'Card ID'
+  cardId: 'Card ID',
+  lastUpdated: 'Last Updated'
 };
