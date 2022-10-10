@@ -831,5 +831,6 @@ export default {
   templateName: 'Template Name',
   templateIsActive: 'Template Is Active',
   templateDetails: 'Template Details',
-  areaTitle: 'Area Title'
+  areaTitle: 'Area Title',
+  media: 'Media'
 };
