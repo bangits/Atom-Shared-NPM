@@ -837,5 +837,8 @@ export default {
   areaTitle: 'Area Title',
   imageName: 'Image Name',
   templateNameAlreadyExists: 'Template Name Already Exists',
-  cards: 'Cards'
+  cards: 'Cards',
+  addCard: 'Add Card',
+  card: 'Card',
+  cardId: 'Card ID'
 };
