@@ -843,6 +843,7 @@ export default {
   card: 'Card',
   cardId: 'Card ID',
   lastUpdated: 'Last Updated',
+  assignToPlayer: 'Assign To Player',
   extensionsValidation: 'Extensions: PNG, SVG , JPG , JPEG',
   maxSize3mb: 'Max size: 3 MB'
 };
