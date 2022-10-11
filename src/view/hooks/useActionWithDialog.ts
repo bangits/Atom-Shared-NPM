@@ -9,7 +9,7 @@ export interface UseActionWithDialogParameters<T> {
     column: T | T[];
   }) => void;
   t: UseTranslationReturnValue;
-  actionFn: (ids: PrimaryKey[] | PrimaryKey) => Promise<ActionResponseModel>;
+  actionFn: (ids: PrimaryKey[]) => Promise<ActionResponseModel>;
   isFetching: boolean;
   getColumnId: (column: T) => PrimaryKey;
   refetch: () => void;
