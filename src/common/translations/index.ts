@@ -838,5 +838,9 @@ export default {
   sliderTypes: 'Slider Types',
   imageName: 'Image Name',
   templateNameAlreadyExists: 'Template Name Already Exists',
-  cards: 'Cards'
+  cards: 'Cards',
+  addCard: 'Add Card',
+  card: 'Card',
+  cardId: 'Card ID',
+  lastUpdated: 'Last Updated'
 };
