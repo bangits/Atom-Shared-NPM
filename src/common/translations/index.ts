@@ -832,6 +832,15 @@ export default {
   templateIsActive: 'Template Is Active',
   templateDetails: 'Template Details',
   areaTitle: 'Area Title',
+  media: 'Media',
+  sliderType: 'Slider Type',
+  viewAll: 'View All',
+  sliderTypes: 'Slider Types',
   imageName: 'Image Name',
-  templateNameAlreadyExists: 'Template Name Already Exists'
+  templateNameAlreadyExists: 'Template Name Already Exists',
+  cards: 'Cards',
+  addCard: 'Add Card',
+  card: 'Card',
+  cardId: 'Card ID',
+  lastUpdated: 'Last Updated'
 };
