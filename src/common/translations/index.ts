@@ -842,5 +842,7 @@ export default {
   addCard: 'Add Card',
   card: 'Card',
   cardId: 'Card ID',
-  lastUpdated: 'Last Updated'
+  lastUpdated: 'Last Updated',
+  extensionsValidation: 'Extensions: PNG, SVG , JPG , JPEG',
+  maxSize3mb: 'Max size: 3 MB'
 };
