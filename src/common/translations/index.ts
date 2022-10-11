@@ -842,5 +842,6 @@ export default {
   addCard: 'Add Card',
   card: 'Card',
   cardId: 'Card ID',
-  lastUpdated: 'Last Updated'
+  lastUpdated: 'Last Updated',
+  assignToPlayer: 'Assign To Player'
 };
