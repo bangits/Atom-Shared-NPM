@@ -849,5 +849,6 @@ export default {
   extensionsValidation: 'Extensions: PNG, SVG , JPG , JPEG',
   maxSize3mb: 'Max size: 3 MB',
   addProviders: 'Add Providers',
-  urlViewAll: 'URL(view all)'
+  urlViewAll: 'URL(view all)',
+  assignToSegment: 'Assign To Segment'
 };
