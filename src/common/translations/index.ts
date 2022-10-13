@@ -622,6 +622,7 @@ export default {
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
   noAddedGames: 'There are no added games yet',
+  noAddedProviders: 'There are no added providers yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
   noAddedSocialMedias: 'There are no added social medias yet',
@@ -667,6 +668,7 @@ export default {
   unselectAll: 'Unselect All',
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
+  totalProvidersCount: 'Total providers count',
   invalidPosition: 'Invalid position!',
   system: 'System',
   viewGroup: 'View Group',
@@ -850,5 +852,8 @@ export default {
   reportByMedia: 'Report By Media',
   reportByAffiliates: 'Report By Affiliates',
   commissionPlans: 'Commission Plans',
-  affiliateManagement: 'Affiliate Management'
+  affiliateManagement: 'Affiliate Management',
+  addProviders: 'Add Providers',
+  urlViewAll: 'URL(view all)',
+  assignToSegment: 'Assign To Segment'
 };
