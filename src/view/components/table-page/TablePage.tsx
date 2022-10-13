@@ -198,23 +198,6 @@ export const TablePage = <T extends {}, K>({
       });
   }, []);
 
-  console.log(
-    'filterProps.filters',
-    props.filterProps.filters?.map((f, index) => ({
-      Order: index + 1,
-      IsActive: true,
-      Name: f.name
-    }))
-  );
-  console.log(
-    'filterProps.tableConfig',
-    props.tableProps.columns?.map((c, index) => ({
-      Order: index + 1,
-      IsActive: true,
-      Name: c.accessor
-    }))
-  );
-
   if (/*(isFetching && !isFilteredData) ||*/ pageId && userId && !tableConfig.config) return null;
 
   return (

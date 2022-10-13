@@ -1,11 +1,11 @@
 import { DiContainer } from '@/di';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { immerable } from 'immer';
-interface CreateBaseQueryArgument {
+export interface CreateBaseQueryArgument {
   useCaseName: string;
 }
 
-interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) => void>>
+export interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) => void>>
   extends BaseQueryFn<
     {
       methodName: keyof T;
@@ -14,6 +14,7 @@ interface CreateBaseQueryReturnType<T extends Record<string, (...args: any[]) =>
     unknown,
     { message: string }
   > {}
+
 export const getBaseQuery =
   (containerInstance: DiContainer) =>
   <T extends {}>({ useCaseName }: CreateBaseQueryArgument): CreateBaseQueryReturnType<T> =>
