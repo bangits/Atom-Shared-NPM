@@ -850,5 +850,7 @@ export default {
   maxSize3mb: 'Max size: 3 MB',
   addProviders: 'Add Providers',
   urlViewAll: 'URL(view all)',
-  assignToSegment: 'Assign To Segment'
+  assignToSegment: 'Assign To Segment',
+  galleryImage: 'Gallery Image',
+  gallery: 'Gallery'
 };
