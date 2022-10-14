@@ -861,5 +861,7 @@ export default {
   subAffiliates: 'Sub Affiliates',
   commissionModel: 'Commission Model',
   revenueShare: 'Revenue Share',
-  cpa: 'CPA'
+  cpa: 'CPA',
+  galleryImage: 'Gallery Image',
+  gallery: 'Gallery'
 };
