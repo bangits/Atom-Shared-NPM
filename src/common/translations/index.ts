@@ -855,5 +855,11 @@ export default {
   affiliateManagement: 'Affiliate Management',
   addProviders: 'Add Providers',
   urlViewAll: 'URL(view all)',
-  assignToSegment: 'Assign To Segment'
+  assignToSegment: 'Assign To Segment',
+  addCommissionPlan: 'Add Commission Plan',
+  planFor: 'Plan for',
+  subAffiliates: 'Sub Affiliates',
+  commissionModel: 'Commission Model',
+  revenueShare: 'Revenue Share',
+  cpa: 'CPA'
 };
