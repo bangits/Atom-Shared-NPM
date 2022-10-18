@@ -863,5 +863,12 @@ export default {
   revenueShare: 'Revenue Share',
   cpa: 'CPA',
   galleryImage: 'Gallery Image',
-  gallery: 'Gallery'
+  gallery: 'Gallery',
+  expiredDateFrom: 'Expired Date From',
+  expiredDateTo: 'Expired Date To',
+  activationDateFrom: 'Activation Date From',
+  activationDateTo: 'Activation Date To',
+  commissionPlan: 'Commission Plan',
+  expiredDate: 'Expired Date',
+  activationDate: 'Activation Date'
 };
