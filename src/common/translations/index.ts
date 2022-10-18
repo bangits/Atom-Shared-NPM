@@ -870,5 +870,6 @@ export default {
   activationDateTo: 'Activation Date To',
   commissionPlan: 'Commission Plan',
   expiredDate: 'Expired Date',
-  activationDate: 'Activation Date'
+  activationDate: 'Activation Date',
+  tiers: 'Tiers'
 };
