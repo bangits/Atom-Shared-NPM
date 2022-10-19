@@ -872,8 +872,14 @@ export default {
   expiredDate: 'Expired Date',
   activationDate: 'Activation Date',
   tiers: 'Tiers',
-  linkId: 'Link Id',
+  linkId: 'Link ID',
   linkName: 'Link Name',
   relatedBy: 'Related By',
-  commissionPlanDetails: 'Commission Plan Details'
+  commissionPlanDetails: 'Commission Plan Details',
+  youDontHaveLinksAdded: 'You don’t have any links added!',
+  pleaseAddLink: 'Please add link.',
+  youDontHaveCommissionPlansAdded: 'You don’t have any commission plans added!',
+  pleaseAddCommissionPlan: 'Please add commission plan.',
+  affiliateName: 'Affiliate Name',
+  affiliateId: 'Affiliate ID'
 };
