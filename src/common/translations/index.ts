@@ -871,5 +871,9 @@ export default {
   commissionPlan: 'Commission Plan',
   expiredDate: 'Expired Date',
   activationDate: 'Activation Date',
-  tiers: 'Tiers'
+  tiers: 'Tiers',
+  linkId: 'Link Id',
+  linkName: 'Link Name',
+  relatedBy: 'Related By',
+  commissionPlanDetails: 'Commission Plan Details'
 };
