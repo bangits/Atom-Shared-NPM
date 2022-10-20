@@ -515,7 +515,7 @@ export default {
   document: 'Document',
   correctionHistory: 'Correction History',
   correctBalance: 'Correct Balance',
-  windrow: 'WithDraw',
+  windraw: 'WithDraw',
   deposit: 'Deposit',
   rgsId: 'RGS ID',
   platId: 'Plat ID',
@@ -886,5 +886,15 @@ export default {
   generateLink: 'Generate Link',
   link: 'Link',
   linkNameAlreadyExists: 'Link name already exists!',
-  generatedLink: 'Generate Link'
+  generatedLink: 'Generate Link',
+  expirtyDate: 'Expirty Date',
+  draft: 'Draft',
+  awaiting: 'Awaiting',
+  enabled: 'Enabled',
+  disabled: 'Disabled',
+  expiryDateFrom: 'Expiry Date From',
+  expiryDateTo: 'Expiry Date To',
+  disable: 'Disable',
+  disableBonusDescription: 'Do you want to disable the bonus ID:',
+  disableMultipleBonusDescription: 'Do you want to disable'
 };
