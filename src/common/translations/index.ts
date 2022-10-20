@@ -881,5 +881,9 @@ export default {
   youDontHaveCommissionPlansAdded: 'You don’t have any commission plans added!',
   pleaseAddCommissionPlan: 'Please add commission plan.',
   affiliateName: 'Affiliate Name',
-  affiliateId: 'Affiliate ID'
+  affiliateId: 'Affiliate ID',
+  generateLink: 'Generate Link',
+  link: 'Link',
+  linkNameAlreadyExists: 'Link name already exists!',
+  generatedLink: 'Generate Link'
 };
