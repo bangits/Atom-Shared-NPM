@@ -864,6 +864,7 @@ export default {
   cpa: 'CPA',
   galleryImage: 'Gallery Image',
   gallery: 'Gallery',
+  addTemplate: 'Add Template',
   expiredDateFrom: 'Expired Date From',
   expiredDateTo: 'Expired Date To',
   activationDateFrom: 'Activation Date From',
