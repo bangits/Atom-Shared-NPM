@@ -885,5 +885,7 @@ export default {
   generateLink: 'Generate Link',
   link: 'Link',
   linkNameAlreadyExists: 'Link name already exists!',
-  generatedLink: 'Generate Link'
+  generatedLink: 'Generate Link',
+  pageUrl: 'Page URL',
+  linkDetails: 'Link Details'
 };
