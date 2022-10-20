@@ -857,5 +857,6 @@ export default {
   urlViewAll: 'URL(view all)',
   assignToSegment: 'Assign To Segment',
   galleryImage: 'Gallery Image',
-  gallery: 'Gallery'
+  gallery: 'Gallery',
+  addTemplate: 'Add Template'
 };
