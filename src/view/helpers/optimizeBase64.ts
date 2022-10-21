@@ -13,7 +13,7 @@ export const optimizeBase64 = (base64: string): Promise<string> => {
 
       ctx.drawImage(image, 0, 0);
 
-      resolve(canvas.toDataURL('image/jpeg', 0.7));
+      resolve(canvas.toDataURL('image/png', 0.7));
     };
 
     image.src = base64;
