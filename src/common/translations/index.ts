@@ -896,5 +896,7 @@ export default {
   expiryDateTo: 'Expiry Date To',
   disable: 'Disable',
   disableBonusDescription: 'Do you want to disable the bonus ID:',
-  disableMultipleBonusDescription: 'Do you want to disable'
+  disableMultipleBonusDescription: 'Do you want to disable',
+  pageUrl: 'Page URL',
+  linkDetails: 'Link Details'
 };
