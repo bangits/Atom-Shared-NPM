@@ -1,3 +1,4 @@
+export * from './addHoursToDate';
 export * from './asyncForeach';
 export * from './cachedFn';
 export * from './cancellableRequest';

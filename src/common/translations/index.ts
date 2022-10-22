@@ -794,7 +794,7 @@ export default {
   bonusDetails: 'Bonus Details',
   maxProvisionCount: 'Max Provision Count',
   bonusStartDateTo: 'Bonus Start Date To',
-  bonusStartDateFrom: 'Bonus Start Date From',
+  bonusStartDateFrom: 'Bonus Start Date - From',
   expirationType: 'Expiration Type',
   bonusStartDate: 'Bonus Start Date',
   startDate: 'Start Date',
@@ -898,5 +898,10 @@ export default {
   disableBonusDescription: 'Do you want to disable the bonus ID:',
   disableMultipleBonusDescription: 'Do you want to disable',
   pageUrl: 'Page URL',
-  linkDetails: 'Link Details'
+  linkDetails: 'Link Details',
+  fromActivationDate: 'From Activation Date',
+  fromProvisionDate: 'From Provision Date',
+  mainDetails: 'Main Details',
+  bonusStartDateEnd: 'Bonus Start Date - To',
+  expiryDays: 'Expiry Days'
 };
