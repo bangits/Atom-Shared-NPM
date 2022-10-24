@@ -920,7 +920,7 @@ export default {
   mainDetails: 'Main Details',
   bonusStartDateEnd: 'Bonus Start Date - To',
   expiryDays: 'Expiry Days',
-  mediaId: 'Media Id',
+  mediaId: 'Media ID',
   reportByMedias: 'Report By Media',
   generateGGR: 'Generate GGR'
 };
