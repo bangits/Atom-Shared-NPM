@@ -919,5 +919,8 @@ export default {
   fromProvisionDate: 'From Provision Date',
   mainDetails: 'Main Details',
   bonusStartDateEnd: 'Bonus Start Date - To',
-  expiryDays: 'Expiry Days'
+  expiryDays: 'Expiry Days',
+  mediaId: 'Media Id',
+  reportByMedias: 'Report By Media',
+  generateGGR: 'Generate GGR'
 };
