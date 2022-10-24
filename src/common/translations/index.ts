@@ -905,6 +905,7 @@ export default {
   generateGGRFrom: 'Generate GGR From',
   generatedFTDAmountTo: 'Generate FTD Amount To',
   generatedFTDAmountFrom: 'Generate FTD Amount From',
+  generatedFTDAmount: 'Generate FTD Amount',
   generatedFTDCountTo: 'Generate FTD Count To',
   generatedFTDCountFrom: 'Generate FTD Count From',
   generatedFTDCount: 'Generate FTD Count',
@@ -922,5 +923,6 @@ export default {
   expiryDays: 'Expiry Days',
   mediaId: 'Media ID',
   reportByMedias: 'Report By Media',
-  generateGGR: 'Generate GGR'
+  generateGGR: 'Generate GGR',
+  mediaName: 'Media Name'
 };
