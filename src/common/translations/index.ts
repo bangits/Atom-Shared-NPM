@@ -888,5 +888,21 @@ export default {
   linkNameAlreadyExists: 'Link name already exists!',
   generatedLink: 'Generate Link',
   pageUrl: 'Page URL',
-  linkDetails: 'Link Details'
+  linkDetails: 'Link Details',
+  btag: 'Btag',
+  reportDate: 'Report Date',
+  generateGGRTo: 'Generate GGR To',
+  generateGGRFrom: 'Generate GGR From',
+  generatedFTDAmountTo: 'Generate FTD Amount To',
+  generatedFTDAmountFrom: 'Generate FTD Amount From',
+  generatedFTDCountTo: 'Generate FTD Count To',
+  generatedFTDCountFrom: 'Generate FTD Count From',
+  generatedFTDCount: 'Generate FTD Count',
+  generatedDepositAmountTo: 'Generate Deposit Amount To',
+  generatedDepositAmountFrom: 'Generate Deposit Amount From',
+  generatedDepositAmount: 'Generate Deposit Amount',
+  generatedDepositCountTo: 'Generate Deposit Count To',
+  generatedDepositCountFrom: 'Generate Deposit Count From',
+  generatedDepositCount: 'Generate Deposit Count',
+  affiliateUserName: 'Affiliate Username'
 };
