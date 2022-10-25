@@ -924,5 +924,7 @@ export default {
   mediaId: 'Media ID',
   reportByMedias: 'Report By Media',
   generateGGR: 'Generate GGR',
-  mediaName: 'Media Name'
+  mediaName: 'Media Name',
+  affiliateInformation: 'Affiliate Information'
+
 };
