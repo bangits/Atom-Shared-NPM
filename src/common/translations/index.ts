@@ -903,5 +903,19 @@ export default {
   fromProvisionDate: 'From Provision Date',
   mainDetails: 'Main Details',
   bonusStartDateEnd: 'Bonus Start Date - To',
-  expiryDays: 'Expiry Days'
+  expiryDays: 'Expiry Days',
+  currencySettings: 'Currency Settings',
+  wageringRequirement: 'Wagering Requirement',
+  winningTransactionType: 'Winning Transaction Type',
+  'percentage%': 'Percentage (%)',
+  fixedAmount: 'Fixed Amount',
+  maxPayoutType: 'Max Payout Type',
+  bonusAmountType: 'Bonus Amount Type',
+  withdrawalRestriction: 'Withdrawal Restriction',
+  fullwin: 'Full Win',
+  netwin: 'Net Win',
+  prizeAndConditions: 'Prize and Conditions',
+  maxPayout: 'Max Payout',
+  'bonusAmount%': 'Bonus Amount (%)',
+  'maxPayout%': 'Max Payout (%)'
 };
