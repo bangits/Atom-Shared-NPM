@@ -36,6 +36,8 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
+    lessThanMin: 'The value is less than minimum value',
+    moreThanMax: 'The value is more than maximum value',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     minValue: `The minimum value is ${TRANSLATION_CHANGED_VALUE}!`,
@@ -938,5 +940,12 @@ export default {
   mediaId: 'Media ID',
   reportByMedias: 'Report By Media',
   generateGGR: 'Generate GGR',
-  mediaName: 'Media Name'
+  mediaName: 'Media Name',
+  amountUpTo: 'Amount Up To',
+  minBet: 'Min Bet',
+  maxBet: 'Max Bet',
+  minDeposit: 'Min Deposit',
+  maxDeposit: 'Max Deposit',
+  depositWageringRequirement: 'Deposit Wagering Requirement',
+  fixedBonusAmount: 'Fixed Bonus Amount'
 };
