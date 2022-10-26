@@ -948,5 +948,7 @@ export default {
   maxDeposit: 'Max Deposit',
   depositWageringRequirement: 'Deposit Wagering Requirement',
   fixedBonusAmount: 'Fixed Bonus Amount',
-  affiliateInformation: 'Affiliate Information'
+  affiliateInformation: 'Affiliate Information',
+  bonusEditDisableText: 'Bonus is enabled!',
+  bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!'
 };
