@@ -947,5 +947,6 @@ export default {
   minDeposit: 'Min Deposit',
   maxDeposit: 'Max Deposit',
   depositWageringRequirement: 'Deposit Wagering Requirement',
-  fixedBonusAmount: 'Fixed Bonus Amount'
+  fixedBonusAmount: 'Fixed Bonus Amount',
+  affiliateInformation: 'Affiliate Information'
 };
