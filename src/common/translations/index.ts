@@ -738,5 +738,8 @@ export default {
   attachTemplate: 'Attach Template',
   saveAsTemplate: 'Save as Template',
   sendTestEmail: 'Send Test Email',
-  systemNotifications: 'System Notifications'
+  roles: 'Roles',
+  addRole: 'Add Role',
+  roleDescription: 'Role Description',
+  roleName: 'Role Name'
 };
