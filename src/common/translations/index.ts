@@ -950,5 +950,6 @@ export default {
   fixedBonusAmount: 'Fixed Bonus Amount',
   affiliateInformation: 'Affiliate Information',
   bonusEditDisableText: 'Bonus is enabled!',
-  bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!'
+  eligableGames: 'Eligable Games',
+  bonusEndDateTo: 'Bonus End Date - To'
 };
