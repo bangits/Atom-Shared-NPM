@@ -17,9 +17,9 @@ export interface FileUploaderProps
 }
 
 export const fileUploaderDefaultValues = {
-  minWidth: 40,
+  minWidth: 16,
   maxWidth: 2000,
-  minHeight: 40,
+  minHeight: 16,
   maxHeight: 2000,
   minSize: 0,
   maxSize: 1024 * 1024
@@ -38,7 +38,6 @@ export const FileUploader: FC<FileUploaderProps> = ({
 
   const [uploadedFileError, setUploadedFileError] = useState('');
   const [forceShowUploader, setForceShowUploader] = useState(false);
-  console.log('🚀 ~ file: FileUploader.tsx ~ line 41 ~ forceShowUploader', forceShowUploader);
 
   const t = useTranslation();
 
