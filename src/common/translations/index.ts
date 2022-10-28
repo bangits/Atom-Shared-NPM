@@ -954,5 +954,8 @@ export default {
   fixedBonusAmount: 'Fixed Bonus Amount',
   bonusEditDisableText: 'Bonus is enabled!',
   eligableGames: 'Eligable Games',
-  bonusEndDateTo: 'Bonus End Date - To'
+  bonusEndDateTo: 'Bonus End Date - To',
+  excludeComissionPlanText: 'Do you want to exclude selected Commission Plan(s)',
+  relatedDateFrom: 'Related Date From',
+  relatedDateTo: 'Related Date To'
 };
