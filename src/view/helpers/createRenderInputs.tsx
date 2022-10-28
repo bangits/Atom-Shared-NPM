@@ -7,7 +7,7 @@ export const createRenderInputs =
     Component: (props: any) => JSX.Element,
     name: string,
     fieldType: string,
-    fieldProps: { field: FormikFieldTypes }
+    fieldProps: { field: FormikFieldTypes; convertToNumber: boolean }
   ) => {
     const { field } = fieldProps || {};
 
@@ -21,14 +21,14 @@ export const createRenderInputs =
               <Component
                 {...field}
                 onChange={async (evt) => {
-                  await form.setFieldValue(
-                    name,
+                  const value =
                     fieldType === 'single-checkbox'
                       ? evt.target.checked
                       : fieldType === 'input' || fieldType === 'radio'
                       ? evt.target.value
-                      : evt
-                  );
+                      : evt;
+
+                  await form.setFieldValue(name, value && fieldProps?.convertToNumber ? +value : value);
                   form.setFieldTouched(name, true);
                 }}
                 name={name}

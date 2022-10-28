@@ -19,6 +19,8 @@ export const useValidationTranslation = () => {
       maxValue: (value: number) => t.get('validations.maxValue').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       website: () => t.get('validations.website'),
       phoneCodeRequired: () => t.get('validations.phoneCodeRequired'),
+      lessThanMin: () => t.get('validations.lessThanMin'),
+      moreThanMax: () => t.get('validations.moreThanMax'),
       selectDefaultOption: () => t.get('validations.selectDefaultOption')
     }),
     [t]
