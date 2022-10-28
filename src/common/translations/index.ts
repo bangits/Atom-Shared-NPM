@@ -957,5 +957,7 @@ export default {
   bonusEndDateTo: 'Bonus End Date - To',
   excludeComissionPlanText: 'Do you want to exclude selected Commission Plan(s)',
   relatedDateFrom: 'Related Date From',
-  relatedDateTo: 'Related Date To'
+  relatedDateTo: 'Related Date To',
+  attachCommissionPlan: 'Attach Commission Plan',
+  attachLink: 'Attach Link'
 };
