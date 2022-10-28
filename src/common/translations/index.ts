@@ -959,5 +959,8 @@ export default {
   relatedDateFrom: 'Related Date From',
   relatedDateTo: 'Related Date To',
   attachCommissionPlan: 'Attach Commission Plan',
-  attachLink: 'Attach Link'
+  attachLink: 'Attach Link',
+  commissionName: 'Commission Name',
+  youDontHaveLinksAttached: 'You don’t have any links attached!',
+  pleaseAttachLink: 'Please attach link'
 };
