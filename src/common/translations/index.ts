@@ -939,6 +939,8 @@ export default {
   reportByMedias: 'Report By Media',
   generateGGR: 'Generate GGR',
   mediaName: 'Media Name',
-  affiliateInformation: 'Affiliate Information'
-
+  affiliateInformation: 'Affiliate Information',
+  percentageSymbol: 'Percentage(%)',
+  percentage: 'Percentage',
+  addTier: 'Add Tier'
 };
