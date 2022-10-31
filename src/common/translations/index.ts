@@ -955,12 +955,13 @@ export default {
   bonusEditDisableText: 'Bonus is enabled!',
   eligableGames: 'Eligable Games',
   bonusEndDateTo: 'Bonus End Date - To',
-  excludeComissionPlanText: 'Do you want to exclude selected Commission Plan(s)',
+  excludeComissionPlanText: 'Do you want to exclude selected',
   relatedDateFrom: 'Related Date From',
   relatedDateTo: 'Related Date To',
   attachCommissionPlan: 'Attach Commission Plan',
   attachLink: 'Attach Link',
   commissionName: 'Commission Name',
   youDontHaveLinksAttached: 'You don’t have any links attached!',
-  pleaseAttachLink: 'Please attach link'
+  pleaseAttachLink: 'Please attach link',
+  excludeLinkText: 'Do you want to exclude'
 };
