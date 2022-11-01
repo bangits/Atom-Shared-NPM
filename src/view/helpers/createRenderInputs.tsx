@@ -24,7 +24,7 @@ export const createRenderInputs =
                   const value =
                     fieldType === 'single-checkbox'
                       ? evt.target.checked
-                      : fieldType === 'input' || fieldType === 'radio'
+                      : fieldType === 'input' || fieldType === 'radio' || fieldType === 'field'
                       ? evt.target.value
                       : evt;
 
