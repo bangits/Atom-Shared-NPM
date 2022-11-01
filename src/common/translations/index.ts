@@ -950,5 +950,15 @@ export default {
   fixedBonusAmount: 'Fixed Bonus Amount',
   affiliateInformation: 'Affiliate Information',
   bonusEditDisableText: 'Bonus is enabled!',
-  bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!'
+  bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!',
+  roleName: 'Role Name',
+  creationIP: 'Creation IP',
+  roleDetails: 'Role Details',
+  roles: 'Roles',
+  roleDescription: 'Role Description',
+  user: 'User',
+  permissions: 'Permissions',
+  addRole: 'Add Role',
+  infoSection: 'Info Section',
+  addInfoSection: 'Add Info Section'
 };
