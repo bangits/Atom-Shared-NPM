@@ -697,7 +697,7 @@ export default {
   description: 'Description',
   automaticallyUpdate: 'Automatically update the segment on addition of new data',
   segmentId: 'Segment Id',
-  freeBetAndWagering: 'Free Bet and Wagering',
+  freeBetAndWagering: 'Bonuses',
   bonusType: 'Bonus Type',
   usedFor: 'Used for',
   usedForOptional: 'Used for (Optional)',
