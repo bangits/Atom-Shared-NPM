@@ -977,5 +977,6 @@ export default {
   excludeLinkText: 'Do you want to exclude',
   linkIsActive: 'Link Is Active!',
   youDontHaveSegmentsAdded: 'You don’t have any segments added!',
-  pleaseAddSegment: 'Please Add Segment'
+  pleaseAddSegment: 'Please Add Segment',
+  amountOrPecentage: 'Amount or Percentage'
 };
