@@ -697,7 +697,7 @@ export default {
   description: 'Description',
   automaticallyUpdate: 'Automatically update the segment on addition of new data',
   segmentId: 'Segment Id',
-  freeBetAndWagering: 'Free Bet and Wagering',
+  freeBetAndWagering: 'Bonuses',
   bonusType: 'Bonus Type',
   usedFor: 'Used for',
   usedForOptional: 'Used for (Optional)',
@@ -975,5 +975,12 @@ export default {
   youDontHaveLinksAttached: 'You don’t have any links attached!',
   pleaseAttachLink: 'Please attach link',
   excludeLinkText: 'Do you want to exclude',
-  urlButton: 'Button URL'
+  urlButton: 'Button URL',
+  linkIsActive: 'Link Is Active!',
+  youDontHaveSegmentsAdded: 'You don’t have any segments added!',
+  pleaseAddSegment: 'Please Add Segment',
+  amountOrPecentage: 'Amount or Percentage',
+  taskType: 'Task Type',
+  tasks: 'Tasks',
+  configuration: 'Configuration'
 };
