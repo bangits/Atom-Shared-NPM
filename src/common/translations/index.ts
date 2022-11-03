@@ -978,5 +978,8 @@ export default {
   linkIsActive: 'Link Is Active!',
   youDontHaveSegmentsAdded: 'You don’t have any segments added!',
   pleaseAddSegment: 'Please Add Segment',
-  amountOrPecentage: 'Amount or Percentage'
+  amountOrPecentage: 'Amount or Percentage',
+  taskType: 'Task Type',
+  tasks: 'Tasks',
+  configuration: 'Configuration'
 };
