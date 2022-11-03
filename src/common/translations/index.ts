@@ -974,5 +974,6 @@ export default {
   commissionName: 'Commission Name',
   youDontHaveLinksAttached: 'You don’t have any links attached!',
   pleaseAttachLink: 'Please attach link',
-  excludeLinkText: 'Do you want to exclude'
+  excludeLinkText: 'Do you want to exclude',
+  urlButton: 'Button URL'
 };
