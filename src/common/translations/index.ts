@@ -981,5 +981,10 @@ export default {
   amountOrPecentage: 'Amount or Percentage',
   taskType: 'Task Type',
   tasks: 'Tasks',
-  configuration: 'Configuration'
+  configuration: 'Configuration',
+  addTask: 'Add Task',
+  daily: 'Daily',
+  weekly: 'Weekly',
+  monthly: 'Monthly',
+  yearly: 'Yearly'
 };
