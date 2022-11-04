@@ -991,5 +991,7 @@ export default {
   note: 'Note',
   notePopUpText:
     'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․',
-  okay: 'Okay'
+  okay: 'Okay',
+  playerCountFrom: 'Player Count From',
+  playerCountTo: 'Player Count To'
 };
