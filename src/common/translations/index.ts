@@ -987,5 +987,8 @@ export default {
   daily: 'Daily',
   weekly: 'Weekly',
   monthly: 'Monthly',
-  yearly: 'Yearly'
+  yearly: 'Yearly',
+  note: 'Note',
+  notePopUpText:
+    'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․'
 };
