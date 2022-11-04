@@ -990,5 +990,6 @@ export default {
   yearly: 'Yearly',
   note: 'Note',
   notePopUpText:
-    'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․'
+    'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․',
+  okay: 'Okay'
 };
