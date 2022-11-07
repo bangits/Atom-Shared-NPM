@@ -1001,5 +1001,6 @@ export default {
   timeUnit: 'Time Unit',
   day: 'Day',
   week: 'Week',
-  hour: 'Hour'
+  hour: 'Hour',
+  prioritization: 'Prioritization'
 };
