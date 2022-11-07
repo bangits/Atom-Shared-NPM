@@ -995,5 +995,11 @@ export default {
   playerCountFrom: 'Player Count From',
   playerCountTo: 'Player Count To',
   taskManagement: 'Task Management',
-  affilaiteIsUsed: 'Affiliate is Used'
+  affilaiteIsUsed: 'Affiliate is Used',
+  capacity: 'Capacity',
+  duration: 'Duration',
+  timeUnit: 'Time Unit',
+  day: 'Day',
+  week: 'Week',
+  hour: 'Hour'
 };
