@@ -993,5 +993,6 @@ export default {
     'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․',
   okay: 'Okay',
   playerCountFrom: 'Player Count From',
-  playerCountTo: 'Player Count To'
+  playerCountTo: 'Player Count To',
+  taskManagement: 'Task Management'
 };
