@@ -994,5 +994,6 @@ export default {
   okay: 'Okay',
   playerCountFrom: 'Player Count From',
   playerCountTo: 'Player Count To',
-  taskManagement: 'Task Management'
+  taskManagement: 'Task Management',
+  affilaiteIsUsed: 'Affiliate is Used'
 };
