@@ -1002,5 +1002,6 @@ export default {
   day: 'Day',
   week: 'Week',
   hour: 'Hour',
-  prioritization: 'Prioritization'
+  prioritization: 'Prioritization',
+  tiersTableErrorMessage: "The action couldn't be completed !” to “ “To” can not be equal (=) or less (<) than “From"
 };
