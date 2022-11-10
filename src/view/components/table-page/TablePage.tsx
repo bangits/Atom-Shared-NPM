@@ -5,11 +5,14 @@ import { PageConfigViewModel } from '@/view/models';
 import { DataTable, DataTableProps } from '@atom/design-system';
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { CustomSelectProps } from '..';
+import { DataFilter } from './DataFilter';
 import { ExchangeCurrencySelect } from './ExchangeCurrencySelect';
 
 export interface TablePageProps<T extends {}, K>
   extends Omit<DataTableProps<T, K>, 'paginationProps' | 'currencySelect' | 'currencyTranslations'> {
   filterProps: Omit<DataTableProps<T, K>['filterProps'], 'resultLabel' | 'applyLabel' | 'clearLabel'>;
+  isSynchronizeShown?: boolean;
+  isSynchronize?: boolean;
   rowCount: number;
   defaultPageSizeValue?: number;
   pageSizeDividerValue?: number;
@@ -25,6 +28,7 @@ export interface TablePageProps<T extends {}, K>
   getViewUrl?: (column: T) => string;
   refetch?: () => void;
   onTableConfigChange?: (config: PageConfigViewModel[]) => void;
+  onSynchronizeButtonClick?: () => void;
 }
 
 export const TablePage = <T extends {}, K>({
@@ -41,7 +45,10 @@ export const TablePage = <T extends {}, K>({
   refetch,
   pageId,
   userId,
+  isSynchronizeShown = false,
+  isSynchronize = false,
   onTableConfigChange,
+  onSynchronizeButtonClick,
   ...props
 }: TablePageProps<T, K>) => {
   const { pageConfigsUseCase } = useContext(AtomCommonContext);
@@ -50,12 +57,12 @@ export const TablePage = <T extends {}, K>({
 
   const tableConfigUpdateTimeout = useRef(false);
 
-  const [filtersConfig, setFiltersConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
+  const [tableConfig, setTableConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
     id: null,
     config: null
   });
 
-  const [tableConfig, setTableConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
+  const [filtersConfig, setFiltersConfig] = useState<{ id: PrimaryKey; config: PageConfigViewModel[] }>({
     id: null,
     config: null
   });
@@ -63,56 +70,6 @@ export const TablePage = <T extends {}, K>({
   const [selectedColumnsLength, setSelectedColumnsLength] = useState(0);
 
   const changeLoading = useLoading();
-
-  const filtersHashMap = useMemo(() => {
-    return props.filterProps.filters.reduce((acc, filter) => ({ ...acc, [filter.name]: filter }), {});
-  }, [props.filterProps.filters]);
-
-  const sortedFilters = useMemo(
-    () => filtersConfig.config?.sort((prev, next) => prev.Order - next.Order),
-    [filtersConfig.config]
-  );
-
-  const showedFilters = useMemo(
-    () => sortedFilters?.filter((f) => f.IsActive)?.map((f) => filtersHashMap[f.Name]),
-    [sortedFilters]
-  );
-
-  const filters = useMemo(() => sortedFilters?.map((f) => filtersHashMap[f.Name]), [sortedFilters]);
-
-  const filterProps = useMemo(
-    () => ({
-      ...props.filterProps,
-      applyLabel: translations.get('apply'),
-      clearLabel: translations.get('clear'),
-      selectProps: {
-        selectAll: true,
-        selectAllLabel: translations.get('all'),
-        clearButton: true,
-        clearButtonLabel: translations.get('clear')
-      },
-      infoTooltipText: translations.get('filtersHelperText'),
-      ...(pageId && userId
-        ? {
-            onSaveClick: (filters, showedFilters) => {
-              updateConfig(
-                filtersConfig.id,
-                filters.map((filter) => ({
-                  Order: showedFilters.findIndex((f) => f.name === filter.name) + 1,
-                  IsActive: !!showedFilters.find((f) => f.name === filter.name),
-                  Name: filter.name
-                }))
-              );
-            },
-            defaultFilters: filtersConfig.config?.filter((f) => f.IsActive).map((f) => f.Name),
-            filters,
-            showedFilters,
-            saveLabel: translations.get('saveFilterChanges')
-          }
-        : {})
-    }),
-    [translations, props.filterProps, props.rowCount, filters, pageId]
-  );
 
   const pageSizeOptions = useMemo(
     () => [
@@ -161,19 +118,19 @@ export const TablePage = <T extends {}, K>({
       shouldShowtableFooterRegenerateButton: true,
       actions: [
         ...(props.tableProps.actions || []),
-        ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
-          ? [
-              {
-                iconName: 'EditIcon' as const,
-                onClick: (columns) => {
-                  if (Array.isArray(columns)) {
-                    columns.forEach((c) => window.open(getEditUrl(c), '_blank'));
-                  } else historyService.redirectToURL(getEditUrl(columns));
-                },
-                tooltipText: translations.get('edit')
-              }
-            ]
-          : []),
+        // ...(getEditUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
+        //   ? [
+        //       {
+        //         iconName: 'EditIcon' as const,
+        //         onClick: (columns) => {
+        //           if (Array.isArray(columns)) {
+        //             columns.forEach((c) => window.open(getEditUrl(c), '_blank'));
+        //           } else historyService.redirectToURL(getEditUrl(columns));
+        //         },
+        //         tooltipText: translations.get('edit')
+        //       }
+        //     ]
+        //   : []),
         ...(getViewUrl && selectedColumnsLength <= maxViewOrEditColumnsCount
           ? [
               {
@@ -198,13 +155,13 @@ export const TablePage = <T extends {}, K>({
     (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (tableConfigUpdateTimeout.current) return;
 
-      pageConfigsUseCase.updatePageConfigs(configId, configJSON);
+      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON);
 
       onTableConfigChange?.(configJSON);
 
       setTimeout(() => (tableConfigUpdateTimeout.current = false), 700);
     },
-    [tableConfigUpdateTimeout]
+    [pageId, tableConfigUpdateTimeout]
   );
 
   const currencySelect = useCallback(
@@ -241,72 +198,74 @@ export const TablePage = <T extends {}, K>({
       });
   }, []);
 
-  if ((isFetching && !isFilteredData) || (pageId && userId && !tableConfig.config)) return null;
+  if (/*(isFetching && !isFilteredData) ||*/ pageId && userId && !tableConfig.config) return null;
 
   return (
-    <>
-      <DataTable
-        {...props}
-        rowCount={props.rowCount}
-        filtersDropdownProps={{
-          selectAll: true,
-          selectAllLabel: translations.get('all'),
-          clearButton: true,
-          clearButtonLabel: translations.get('clear'),
-          color: 'primary'
-        }}
-        paginationProps={{
-          pageSizeSelect: {
-            dropdownLabel: translations.get('pagination.pageSizeLabel'),
-            options: pageSizeOptions,
-            defaultValue: defaultPageSizeValue
-          },
-          jumpToPage: {
-            inputTitle: translations.get('pagination.jumpToPageLabel')
-          },
-          getTotalCountInfo: (pagination) => {
-            const currentPageFirstValue = pagination.pageSize * pagination.page - pagination.pageSize + 1;
+    <DataTable
+      renderFilter={(dataTableFilterProps) => (
+        <DataFilter
+          {...dataTableFilterProps}
+          {...(props.filterProps || {})}
+          shouldFetchPageConfig={false}
+          filtersConfig={filtersConfig}
+        />
+      )}
+      isSynchronizeShown={isSynchronizeShown}
+      {...props}
+      rowCount={props.rowCount}
+      paginationProps={{
+        pageSizeSelect: {
+          dropdownLabel: translations.get('pagination.pageSizeLabel'),
+          options: pageSizeOptions,
+          defaultValue: defaultPageSizeValue
+        },
+        jumpToPage: {
+          inputTitle: translations.get('pagination.jumpToPageLabel')
+        },
+        getTotalCountInfo: (pagination) => {
+          const currentPageFirstValue = pagination.pageSize * pagination.page - pagination.pageSize + 1;
 
-            const currentPageLastValue =
-              pagination.pageSize * pagination.page > props.rowCount
-                ? props.rowCount
-                : pagination.pageSize * pagination.page;
+          const currentPageLastValue =
+            pagination.pageSize * pagination.page > props.rowCount
+              ? props.rowCount
+              : pagination.pageSize * pagination.page;
 
-            return `${currentPageFirstValue}-${currentPageLastValue} ${translations.get(
-              'pagination.totalCountDivider'
-            )} ${props.rowCount}`;
-          }
-        }}
-        filterProps={filterProps}
-        tableProps={tableProps}
-        onRefreshButtonClick={refetch}
-        onTableConfigChange={(tableColumns, selectedColumns) => {
-          if (!pageId || !userId) return;
-
-          updateConfig(
-            tableConfig.id,
-            tableColumns.map((column, index) => ({
-              Order: column.index || index + 1,
-              IsActive: selectedColumns.includes(column.value),
-              Name: column.value
-            }))
-          );
-        }}
-        columnsConfigDefaultValue={
-          pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
+          return `${currentPageFirstValue}-${currentPageLastValue} ${translations.get(
+            'pagination.totalCountDivider'
+          )} ${props.rowCount}`;
         }
-        currencySelect={
-          userId && (props.currencyProperty || props.exchangeCurrencyProperty) && tableProps.data?.length
-            ? currencySelect
-            : null
-        }
-        currencyTranslations={{
-          infoTooltipText: translations.get('selectCurrencyForExchange'),
-          exchange: '',
-          selected: translations.get('selected'),
-          search: translations.get('search')
-        }}
-      />
-    </>
+      }}
+      tableProps={tableProps}
+      onRefreshButtonClick={refetch}
+      // @ts-expect-error Remove after design system version
+      onSynchronizeButtonClick={onSynchronizeButtonClick}
+      isSynchronize={isSynchronize}
+      onTableConfigChange={(tableColumns, selectedColumns) => {
+        if (!pageId || !userId) return;
+
+        updateConfig(
+          tableConfig.id,
+          tableColumns.map((column, index) => ({
+            Order: column.index || index + 1,
+            IsActive: selectedColumns.includes(column.value),
+            Name: column.value
+          }))
+        );
+      }}
+      columnsConfigDefaultValue={
+        pageId && userId && tableConfig.config?.filter((config) => config.IsActive)?.map((config) => config.Name)
+      }
+      currencySelect={
+        userId && (props.currencyProperty || props.exchangeCurrencyProperty) && tableProps.data?.length
+          ? currencySelect
+          : null
+      }
+      currencyTranslations={{
+        infoTooltipText: translations.get('selectCurrencyForExchange'),
+        exchange: '',
+        selected: translations.get('selected'),
+        search: translations.get('search')
+      }}
+    />
   );
 };

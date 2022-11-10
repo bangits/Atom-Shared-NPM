@@ -6,25 +6,32 @@ import {
   FileUploaderErrors,
   FileUploaderProps as DesignSystemFileUploaderProps
 } from '@atom/design-system';
-import { FC, useCallback, useContext, useMemo, useState } from 'react';
+import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 export interface FileUploaderProps
   extends Omit<DesignSystemFileUploaderProps, 'loadingPercent' | 'onError' | 'onChange'> {
   acceptError?: string;
+  errorResetDeps?: unknown[];
 
   onChange?(url: string): void;
 }
 
 export const fileUploaderDefaultValues = {
-  minWidth: 40,
+  minWidth: 16,
   maxWidth: 2000,
-  minHeight: 40,
+  minHeight: 16,
   maxHeight: 2000,
   minSize: 0,
   maxSize: 1024 * 1024
 };
 
-export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, acceptError, ...fileUploaderProps }) => {
+export const FileUploader: FC<FileUploaderProps> = ({
+  errorMessage,
+  onChange,
+  acceptError,
+  errorResetDeps = [],
+  ...fileUploaderProps
+}) => {
   const { fileManagerUseCase } = useContext(AtomCommonContext);
 
   const [loadingPercent, setLoadingPercent] = useState(0);
@@ -74,16 +81,16 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
         ),
       [FileUploaderErrors.TYPE]: acceptError || t.get('fileUploader.defaultExtensionError')
     }),
-    [t]
+    [t, fileUploaderProps, uploadedFileError]
   );
 
   const onFileChange = useCallback(
     (file: File | null) => {
       setUploadedFileError('');
 
-      if (onChange) onChange('');
-
       if (!file) {
+        if (onChange) onChange('');
+
         setForceShowUploader(false);
 
         return;
@@ -106,6 +113,18 @@ export const FileUploader: FC<FileUploaderProps> = ({ errorMessage, onChange, ac
     },
     [onChange]
   );
+
+  useEffect(() => {
+    if (fileUploaderProps.imageSrc) setLoadingPercent(100);
+  }, [fileUploaderProps.imageSrc]);
+
+  useEffect(() => {
+    if (!fileUploaderProps.imageSrc) setForceShowUploader(false);
+  }, [fileUploaderProps.imageSrc]);
+
+  useEffect(() => {
+    setUploadedFileError('');
+  }, errorResetDeps);
 
   return (
     <>

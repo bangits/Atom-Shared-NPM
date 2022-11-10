@@ -9,7 +9,7 @@ export interface UseActionWithDialogParameters<T> {
     column: T | T[];
   }) => void;
   t: UseTranslationReturnValue;
-  actionFn: (partnerIds) => Promise<ActionResponseModel>;
+  actionFn: (ids: PrimaryKey[]) => Promise<ActionResponseModel | void>;
   isFetching: boolean;
   getColumnId: (column: T) => PrimaryKey;
   refetch: () => void;
@@ -46,25 +46,27 @@ export const useActionWithDialog = <T>({
           closeFn();
 
           actionFn(columnIds)
-            .then((changePartnerResults) => {
-              if (changePartnerResults.successCount)
+            .then((actionResponseModel) => {
+              if (!actionResponseModel) return;
+
+              if (actionResponseModel.successCount)
                 alert.success({
                   alertLabel:
-                    changePartnerResults.successCount > 1
+                    actionResponseModel.successCount > 1
                       ? t
                           .get('successMultipleAlertMessage')
-                          .replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.successCount.toString())
+                          .replace(TRANSLATION_CHANGED_VALUE, actionResponseModel.successCount.toString())
                       : t.get('successAlertMessage')
                 });
 
-              if (changePartnerResults.failsCount)
+              if (actionResponseModel.failsCount)
                 alert.error({
                   alertLabel:
-                    changePartnerResults.failsCount > 1
+                    actionResponseModel.failsCount > 1
                       ? t
                           .get('errorMultipleAlertMessage')
-                          .replace(TRANSLATION_CHANGED_VALUE, changePartnerResults.failsCount.toString())
-                      : changePartnerResults.errorCode === 1
+                          .replace(TRANSLATION_CHANGED_VALUE, actionResponseModel.failsCount.toString())
+                      : actionResponseModel.errorCode === 1
                       ? t.get('providerIsNotActive')
                       : t.get('errorAlertMessage')
                 });

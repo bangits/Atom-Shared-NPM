@@ -9,7 +9,11 @@ export class PageConfigsUseCase {
   @inject(DI_CONSTANTS.PageConfigsRepository)
   private readonly pageConfigsRepository: IPageConfigsRepository;
 
+  private pageConfigCaches: Record<number, PageConfigsViewModel> = {};
+
   getPageConfigs = async (pageId: PageIdsEnum, userId: PrimaryKey): Promise<PageConfigsViewModel> => {
+    if (this.pageConfigCaches[pageId]) return this.pageConfigCaches[pageId];
+
     const getPageConfigsResponseModel = await this.pageConfigsRepository.getPageConfig(pageId, userId);
 
     const filtersConfig = getPageConfigsResponseModel.find(
@@ -19,7 +23,7 @@ export class PageConfigsUseCase {
       (config) => config.pageConfigTypeId === PageConfigTypesEnum.COLUMN
     );
 
-    return {
+    const pageConfigsViewModel = {
       filtersConfig: filtersConfig
         ? {
             id: filtersConfig.id,
@@ -33,9 +37,19 @@ export class PageConfigsUseCase {
           }
         : null
     };
+
+    this.pageConfigCaches[pageId] = pageConfigsViewModel;
+
+    return pageConfigsViewModel;
   };
 
-  updatePageConfigs = async (configId: PrimaryKey, configJson: PageConfigViewModel[]): Promise<boolean> => {
+  updatePageConfigs = async (
+    pageId: PageIdsEnum,
+    configId: PrimaryKey,
+    configJson: PageConfigViewModel[]
+  ): Promise<boolean> => {
+    this.pageConfigCaches[pageId] = null;
+
     return await this.pageConfigsRepository.updatePageConfig(configId, JSON.stringify(configJson));
   };
 }
