@@ -1008,5 +1008,7 @@ export default {
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
   playerRules: 'Player Rules',
   publicName:'Public Name',
-  aboutBonus:'About Bonus'
+  aboutBonus:'About Bonus',
+  bonusDisableButtonText: 'Bonus in use and cannot be changed!',
+
 };
