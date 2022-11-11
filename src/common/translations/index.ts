@@ -1006,5 +1006,7 @@ export default {
   prioritization: 'Prioritization',
   tiersTableErrorMessage: "The action couldn't be completed !” to “ “To” can not be equal (=) or less (<) than “From",
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
-  playerRules: 'Player Rules'
+  playerRules: 'Player Rules',
+  publicName:'Public Name',
+  aboutBonus:'About Bonus'
 };
