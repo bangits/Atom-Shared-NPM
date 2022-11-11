@@ -899,6 +899,12 @@ export default {
   disable: 'Disable',
   disableBonusDescription: 'Do you want to disable the bonus ID:',
   disableMultipleBonusDescription: 'Do you want to disable',
+
+  excludeGameDescriptionFirstPart: 'Do you want to exclude the game:',
+  excludeGameDescriptionSecondPart: ' from the list?',
+  excludeGamesDescriptionFirstPart: 'Do you want to exclude ',
+  excludeGamesDescriptionSecondPart: ' games?',
+
   pageUrl: 'Page URL',
   linkDetails: 'Link Details',
   btag: 'Btag',
@@ -975,5 +981,8 @@ export default {
   youDontHaveLinksAttached: 'You don’t have any links attached!',
   pleaseAttachLink: 'Please attach link',
   excludeLinkText: 'Do you want to exclude',
-  linkIsActive: 'Link Is Active!'
+  linkIsActive: 'Link Is Active!',
+  invalidPercentage: 'Invalid Percentage!',
+  setPosition: 'Set Position',
+  wageringReduce: 'Wagering Reduce'
 };
