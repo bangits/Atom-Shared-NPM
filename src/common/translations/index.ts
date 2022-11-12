@@ -900,6 +900,12 @@ export default {
   disable: 'Disable',
   disableBonusDescription: 'Do you want to disable the bonus ID:',
   disableMultipleBonusDescription: 'Do you want to disable',
+
+  excludeGameDescriptionFirstPart: 'Do you want to exclude the game:',
+  excludeGameDescriptionSecondPart: ' from the list?',
+  excludeGamesDescriptionFirstPart: 'Do you want to exclude ',
+  excludeGamesDescriptionSecondPart: ' games?',
+
   pageUrl: 'Page URL',
   linkDetails: 'Link Details',
   btag: 'Btag',
@@ -953,7 +959,8 @@ export default {
   maxDeposit: 'Max Deposit',
   depositWageringRequirement: 'Deposit Wagering Requirement',
   fixedBonusAmount: 'Fixed Bonus Amount',
-  bonusEditDisableText: 'Bonus is enabled!',
+  bonusIsEnabled: 'Bonus is enabled!',
+  bonusIsDisabled: 'Bonus is disabled!',
   bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!',
   roleName: 'Role Name',
   creationIP: 'Creation IP',
@@ -976,8 +983,11 @@ export default {
   youDontHaveLinksAttached: 'You don’t have any links attached!',
   pleaseAttachLink: 'Please attach link',
   excludeLinkText: 'Do you want to exclude',
-  urlButton: 'Button URL',
   linkIsActive: 'Link Is Active!',
+  invalidPercentage: 'Invalid Percentage!',
+  setPosition: 'Set Position',
+  wageringReduce: 'Wagering Reduce',
+  urlButton: 'Button URL',
   youDontHaveSegmentsAdded: 'You don’t have any segments added!',
   pleaseAddSegment: 'Please Add Segment',
   amountOrPecentage: 'Amount or Percentage',
@@ -1006,5 +1016,8 @@ export default {
   prioritization: 'Prioritization',
   tiersTableErrorMessage: "The action couldn't be completed !” to “ “To” can not be equal (=) or less (<) than “From",
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
-  playerRules: 'Player Rules'
+  playerRules: 'Player Rules',
+  publicName: 'Public Name',
+  aboutBonus: 'About Bonus',
+  bonusDisableButtonText: 'Bonus in use and cannot be changed!'
 };
