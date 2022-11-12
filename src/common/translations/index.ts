@@ -1019,5 +1019,9 @@ export default {
   playerRules: 'Player Rules',
   publicName: 'Public Name',
   aboutBonus: 'About Bonus',
-  bonusDisableButtonText: 'Bonus in use and cannot be changed!'
+  bonusDisableButtonText: 'Bonus in use and cannot be changed!',
+  provideBonus: 'Provide Bonus',
+  bonusAmount:'Bonus Amount',
+  provisionDate: 'Provision Date',
+  
 };
