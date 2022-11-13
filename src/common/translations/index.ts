@@ -1021,7 +1021,7 @@ export default {
   aboutBonus: 'About Bonus',
   bonusDisableButtonText: 'Bonus in use and cannot be changed!',
   provideBonus: 'Provide Bonus',
-  bonusAmount:'Bonus Amount',
+  bonusAmount: 'Bonus Amount',
   provisionDate: 'Provision Date',
-  
+  succsesfullyAddedRull: 'The Rule was added successfully!'
 };
