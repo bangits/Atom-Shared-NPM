@@ -1023,5 +1023,6 @@ export default {
   provideBonus: 'Provide Bonus',
   bonusAmount: 'Bonus Amount',
   provisionDate: 'Provision Date',
-  succsesfullyAddedRull: 'The Rule was added successfully!'
+  succsesfullyAddedRull: 'The Rule was added successfully!',
+  playerSegments:'Player Segments'
 };
