@@ -1017,7 +1017,10 @@ export default {
   tiersTableErrorMessage: "The action couldn't be completed !” to “ “To” can not be equal (=) or less (<) than “From",
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
   playerRules: 'Player Rules',
-  publicName:'Public Name',
-  aboutBonus:'About Bonus',
+  publicName: 'Public Name',
+  aboutBonus: 'About Bonus',
   bonusDisableButtonText: 'Bonus in use and cannot be changed!',
+  pleaseAddUserNameOrPlayerId: 'Please Type UserName Or PlayerID',
+  addPlayerOrUserName: 'Add Player Or UserName',
+  playerIdOrUserName: 'Player ID Or Username',
 };
