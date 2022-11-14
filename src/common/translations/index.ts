@@ -1043,5 +1043,11 @@ export default {
   available: 'Available',
   completed: 'Completed',
   paidAmount: 'Paid Amount',
-  maxPayoutPercentage: 'Max Payout %'
+  maxPayoutPercentage: 'Max Payout %',
+  pleaseAddUserNameOrPlayerId: 'Please Type UserName Or PlayerID',
+  addPlayerOrUserName: 'Add Player Or UserName',
+  playerIdOrUserName: 'Player ID Or Username',
+  provideBonus: 'Provide Bonus',
+  succsesfullyAddedRull: 'The Rule was added successfully!',
+  playerSegments: 'Player Segments'
 };
