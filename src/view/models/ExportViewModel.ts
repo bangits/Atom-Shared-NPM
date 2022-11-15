@@ -6,4 +6,7 @@ export class ExportViewModel {
 
   @AutoMap()
   exportedBy: string;
+
+  @AutoMap()
+  bonusId?: string;
 }
