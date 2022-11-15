@@ -1049,5 +1049,6 @@ export default {
   playerIdOrUserName: 'Player ID Or Username',
   provideBonus: 'Provide Bonus',
   succsesfullyAddedRull: 'The Rule was added successfully!',
-  playerSegments: 'Player Segments'
+  playerSegments: 'Player Segments',
+  welcomeOfferID: 'Welcome Offer ID'
 };
