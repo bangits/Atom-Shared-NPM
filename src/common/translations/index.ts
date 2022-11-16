@@ -1050,7 +1050,8 @@ export default {
   provideBonus: 'Provide Bonus',
   succsesfullyAddedRull: 'The Rule was added successfully!',
   playerSegments: 'Player Segments',
-  playerIdIsAlreadyExist:'Player ID is Already Exist!',
-  pleaseSelectPlayerIdOrPlayerSegment:'Please Select Player ID Or Player Segment',
-  welcomeOfferID: 'Welcome Offer ID'
+  playerIdIsAlreadyExist: 'Player ID is Already Exist!',
+  pleaseSelectPlayerIdOrPlayerSegment: 'Please Select Player ID Or Player Segment',
+  welcomeOfferID: 'Welcome Offer ID',
+  playerIsNotFound: 'Player Is Not Found!'
 };
