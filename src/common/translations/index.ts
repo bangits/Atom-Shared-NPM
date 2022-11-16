@@ -1027,5 +1027,7 @@ export default {
   bonusAmount: 'Bonus Amount',
   provisionDate: 'Provision Date',
   succsesfullyAddedRull: 'The Rule was added successfully!',
-  playerSegments: 'Player Segments'
+  playerSegments: 'Player Segments',
+  playerIdIsAlreadyExist:'Player ID is Already Exist!',
+  pleaseSelectPlayerIdOrPlayerSegment:'Please Select Player ID Or Player Segment'
 };
