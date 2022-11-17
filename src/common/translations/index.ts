@@ -1053,5 +1053,7 @@ export default {
   playerIdIsAlreadyExist: 'Player ID is Already Exist!',
   pleaseSelectPlayerIdOrPlayerSegment: 'Please Select Player ID Or Player Segment',
   welcomeOfferID: 'Welcome Offer ID',
-  playerIsNotFound: 'Player Is Not Found!'
+  playerIsNotFound: 'Player Is Not Found!',
+  excludeBonusRuleText: 'Do you want to exclude selected',
+
 };
