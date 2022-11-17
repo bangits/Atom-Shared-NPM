@@ -1055,5 +1055,6 @@ export default {
   pleaseSelectPlayerIdOrPlayerSegment: 'Please Select Player ID Or Player Segment',
   welcomeOfferID: 'Welcome Offer ID',
   playerIsNotFound: 'Player Is Not Found!',
-  excludeBonusRuleText: 'Do you want to exclude selected'
+  excludeBonusRuleText: 'Do you want to exclude selected',
+  maxProvisionCountRemaining: 'Provision Count Remaining'
 };
