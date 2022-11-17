@@ -941,7 +941,7 @@ export default {
   fullwin: 'Full Win',
   netwin: 'Net Win',
   prizeAndConditions: 'Prize and Conditions',
-  maxPayout: 'Max Payout',
+  maxPayout: 'Max Payout Amount',
   'bonusAmount%': 'Bonus Amount (%)',
   'maxPayout%': 'Max Payout (%)',
   mediaId: 'Media ID',
@@ -1021,7 +1021,7 @@ export default {
   aboutBonus: 'About Bonus',
   bonusDisableButtonText: 'Bonus in use and cannot be changed!',
   provideBonus: 'Provide Bonus',
-  bonusAmount:'Bonus Amount',
+  bonusAmount: 'Bonus Amount',
   provisionDate: 'Provision Date',
-  
+  startDateCannotBeLessThanCurrentDate: 'Start date cannot be less than current date!'
 };
