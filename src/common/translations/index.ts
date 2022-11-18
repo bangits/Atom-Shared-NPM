@@ -1056,5 +1056,6 @@ export default {
   welcomeOfferID: 'Welcome Offer ID',
   playerIsNotFound: 'Player Is Not Found!',
   excludeBonusRuleText: 'Do you want to exclude selected',
-  maxProvisionCountRemaining: 'Provision Count Remaining'
+  remainingProvision: 'Remaining Provision',
+
 };
