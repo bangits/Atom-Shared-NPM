@@ -14,6 +14,16 @@ export const convertDate = (date: Date | string, format = 'DD/MM/YYYY HH:mm:ss',
   return dayJS(parsedDate).format(format);
 };
 
+export const addUserTimeZoneHours = (date: Date) => {
+  if (!date) return null;
+
+  const userTimezone = new Date().getTimezoneOffset() / -60;
+
+  date.setHours(date.getHours() + userTimezone);
+
+  return date;
+};
+
 export const convertDateForRequestModel = (date: Date) => {
   if (!date) return null;
 

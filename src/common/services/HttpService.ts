@@ -13,7 +13,6 @@ export interface HttpRequest<T extends QueryType, K = {}> {
 export interface IHttpService {
   get<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
   delete<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
-
   post<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
   put<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
   patch<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
@@ -91,7 +90,7 @@ export class HttpService implements IHttpService {
 
     httpRequest.query = typedQuery as unknown as T;
 
-    if (httpRequest.body)
+    if (httpRequest.body && !Array.isArray(!httpRequest.body))
       (httpRequest.body as unknown as Record<string, string | number>).projectId = HttpService.projectId;
 
     if (httpRequest.body && !(httpRequest.body instanceof FormData) && !Array.isArray(httpRequest.body))
