@@ -1057,5 +1057,6 @@ export default {
   playerIsNotFound: 'Player Is Not Found!',
   excludeBonusRuleText: 'Do you want to exclude selected',
   maxProvisionCountRemaining: 'Provision Count Remaining',
-  atLeastOneEligibleGame: 'At least one eligible game must be in a bonus program!'
+  atLeastOneEligibleGame: 'At least one eligible game must be in a bonus program!',
+  remainingProvision: 'Remaining Provision'
 };
