@@ -972,7 +972,7 @@ export default {
   addRole: 'Add Role',
   infoSection: 'Info Section',
   addInfoSection: 'Add Info Section',
-  eligableGames: 'Eligable Games',
+  eligableGames: 'Eligible Games',
   bonusEndDateTo: 'Bonus End Date - To',
   excludeComissionPlanText: 'Do you want to exclude selected',
   relatedDateFrom: 'Related Date From',
@@ -1056,5 +1056,6 @@ export default {
   welcomeOfferID: 'Welcome Offer ID',
   playerIsNotFound: 'Player Is Not Found!',
   excludeBonusRuleText: 'Do you want to exclude selected',
-  maxProvisionCountRemaining: 'Provision Count Remaining'
+  maxProvisionCountRemaining: 'Provision Count Remaining',
+  atLeastOneEligibleGame: 'At least one eligible game must be in a bonus program!'
 };
