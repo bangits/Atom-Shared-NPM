@@ -1057,5 +1057,9 @@ export default {
   playerIsNotFound: 'Player Is Not Found!',
   excludeBonusRuleText: 'Do you want to exclude selected',
   remainingProvision: 'Remaining Provision',
+  addTaskType:'Add Task Type',
+  createdDateFrom: 'Created Date From',
+  createdDateTo: 'Created Date To',
+
 
 };
