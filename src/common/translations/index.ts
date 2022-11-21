@@ -972,7 +972,7 @@ export default {
   addRole: 'Add Role',
   infoSection: 'Info Section',
   addInfoSection: 'Add Info Section',
-  eligableGames: 'Eligable Games',
+  eligableGames: 'Eligible Games',
   bonusEndDateTo: 'Bonus End Date - To',
   excludeComissionPlanText: 'Do you want to exclude selected',
   relatedDateFrom: 'Related Date From',
@@ -1060,6 +1060,6 @@ export default {
   addTaskType:'Add Task Type',
   createdDateFrom: 'Created Date From',
   createdDateTo: 'Created Date To',
-
-
+  maxProvisionCountRemaining: 'Provision Count Remaining',
+  atLeastOneEligibleGame: 'At least one eligible game must be in a bonus program!',
 };
