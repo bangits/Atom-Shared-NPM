@@ -1062,4 +1062,9 @@ export default {
   createdDateTo: 'Created Date To',
   maxProvisionCountRemaining: 'Provision Count Remaining',
   atLeastOneEligibleGame: 'At least one eligible game must be in a bonus program!',
+  cycleConfiguration:'Cycle Configuration',
+  converter:'Converter',
+  commisionPlans:'Commision Plans',
+  commisionPlan:'Commision Plan',
+  
 };
