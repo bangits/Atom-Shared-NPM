@@ -1073,4 +1073,8 @@ export default {
   taskFor: 'Task For',
   repeatable: 'Repeatable',
   rate: 'Rate',
+  year: 'Year',
+  month: 'Month',
+  cycleConfigurationTooltipText:
+    'Configure Cycle Settings such as deciding cycle capacity (max number of points) and Cycle duration (Cycle Duration) for them to be applied on website.'
 };
