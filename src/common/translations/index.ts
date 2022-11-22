@@ -1072,5 +1072,5 @@ export default {
   priority: 'Priority',
   taskFor: 'Task For',
   repeatable: 'Repeatable',
-  rate: 'Rate'
+  rate: 'Rate',
 };
