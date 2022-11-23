@@ -1079,6 +1079,10 @@ export default {
     'Configure Cycle Settings such as deciding cycle capacity (max number of points) and Cycle duration (Cycle Duration) for them to be applied on website.',
   bunnyCoin: 'Bunny Coin',
   cycleEstimation: 'Cycle Estimation',
-  youDontHaveTaskTypes:'You don’t have any Task Types added!',
-  pleaseAddTaskType:'Please add Task Type.'
+  youDontHaveTaskTypes: 'You don’t have any Task Types added!',
+  pleaseAddTaskType: 'Please add Task Type.',
+  addTaskNotificationText:
+    'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․',
+  editConfigurationNoteText:
+    '“Please note that to make this change, the current cycle will be closed and a new one will be opened.'
 };
