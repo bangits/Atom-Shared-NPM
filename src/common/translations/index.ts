@@ -1084,5 +1084,6 @@ export default {
   addTaskNotificationText:
     'Please set the cycle and converter settings in the "Configurations" section and have at least one active task type․',
   editConfigurationNoteText:
-    '“Please note that to make this change, the current cycle will be closed and a new one will be opened.'
+    '“Please note that to make this change, the current cycle will be closed and a new one will be opened.',
+  exclamationNote: 'Note!'
 };
