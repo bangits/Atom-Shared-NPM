@@ -1076,5 +1076,6 @@ export default {
   year: 'Year',
   month: 'Month',
   cycleConfigurationTooltipText:
-    'Configure Cycle Settings such as deciding cycle capacity (max number of points) and Cycle duration (Cycle Duration) for them to be applied on website.'
+    'Configure Cycle Settings such as deciding cycle capacity (max number of points) and Cycle duration (Cycle Duration) for them to be applied on website.',
+  bunnyCoin: 'Bunny Coin'
 };
