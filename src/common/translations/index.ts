@@ -1093,5 +1093,7 @@ export default {
   completionRule: 'Completion Rule',
   maxTasksDisplayed: 'Maximum Tasks Displayed',
   time: 'Time',
-  timer: 'Timer'
+  timer: 'Timer',
+  youDontHaveTasksAdded: 'You don’t have any Task added!',
+  pleaseAddTask: 'Please Add Task.'
 };
