@@ -1087,7 +1087,15 @@ export default {
     '“Please note that to make this change, the current cycle will be closed and a new one will be opened.',
   exclamationNote: 'Note!',
   onePointValue: '1 Point Value',
+  uniqueTaskName: 'Task name is unique!',
   youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
   pleaseAddInfoSection: 'Please Add Info Section',
-  infoSectionDetails: 'Info Section Details'
+  infoSectionDetails: 'Info Section Details',
+  completionRule: 'Completion Rule',
+  maxTasksDisplayed: 'Maximum Tasks Displayed',
+  time: 'Time',
+  timer: 'Timer',
+  youDontHaveTasksAdded: 'You don’t have any Task added!',
+  pleaseAddTask: 'Please Add Task.',
+  uniqueTaskTypeName: 'Task Type title is unique !'
 };
