@@ -1087,7 +1087,7 @@ export default {
     '“Please note that to make this change, the current cycle will be closed and a new one will be opened.',
   exclamationNote: 'Note!',
   onePointValue: '1 Point Value',
-  uniqueTaskName: 'Task name is unique!',
+  uniqueTaskName: 'Task name already exists!',
   youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
   pleaseAddInfoSection: 'Please Add Info Section',
   completionRule: 'Completion Rule',
@@ -1096,5 +1096,5 @@ export default {
   timer: 'Timer',
   youDontHaveTasksAdded: 'You don’t have any Task added!',
   pleaseAddTask: 'Please Add Task.',
-  uniqueTaskTypeName: 'Task Type title is unique !'
+  uniqueTaskTypeName: 'Task Type title already exists!'
 };
