@@ -1090,4 +1090,5 @@ export default {
   uniqueTaskName: 'Task name is unique!',
   youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
   pleaseAddInfoSection: 'Please Add Info Section',
+  completionRule: 'Completion Rule'
 };
