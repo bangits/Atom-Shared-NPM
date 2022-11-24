@@ -1092,5 +1092,6 @@ export default {
   pleaseAddInfoSection: 'Please Add Info Section',
   completionRule: 'Completion Rule',
   maxTasksDisplayed: 'Maximum Tasks Displayed',
-  time: 'Time'
+  time: 'Time',
+  timer: 'Timer'
 };
