@@ -1096,5 +1096,12 @@ export default {
   timer: 'Timer',
   youDontHaveTasksAdded: 'You don’t have any Task added!',
   pleaseAddTask: 'Please Add Task.',
-  uniqueTaskTypeName: 'Task Type title already exists!'
+  uniqueTaskTypeName: 'Task Type title already exists!',
+  completionCount: 'Completion Count',
+  completionDateFrom: 'Completion Date From',
+  completionDateTo: 'Completion Date To',
+  displayDateFrom: 'Display Date From',
+  displayDateTo: 'Display Date To',
+  youDontHaveTaskAnalyzeAdded: 'The are no any  provided.',
+  pleaseProvideTask: 'Please provide Task !'
 };
