@@ -1104,5 +1104,6 @@ export default {
   displayDateFrom: 'Display Date From',
   displayDateTo: 'Display Date To',
   youDontHaveTaskAnalyzeAdded: 'The are no any  provided.',
-  theyAreNoPlayers: 'They are no players'
+  theyAreNoPlayers: 'They are no players',
+  completionDate: 'Completion Date'
 };
