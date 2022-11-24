@@ -1088,5 +1088,6 @@ export default {
   exclamationNote: 'Note!',
   onePointValue: '1 Point Value',
   uniqueTaskName: 'Task name is unique!',
-
+  youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
+  pleaseAddInfoSection: 'Please Add Info Section',
 };
