@@ -1089,4 +1089,5 @@ export default {
   onePointValue: '1 Point Value',
   youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
   pleaseAddInfoSection: 'Please Add Info Section',
+  infoSectionDetails: 'Info Section Details'
 };
