@@ -1090,6 +1090,7 @@ export default {
   uniqueTaskName: 'Task name already exists!',
   youDontHaveInfoSectionsAdded: 'You Dont Have Info Section Added',
   pleaseAddInfoSection: 'Please Add Info Section',
+  infoSectionDetails: 'Info Section Details',
   completionRule: 'Completion Rule',
   maxTasksDisplayed: 'Maximum Tasks Displayed',
   time: 'Time',
