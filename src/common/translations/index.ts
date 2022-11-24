@@ -1095,5 +1095,6 @@ export default {
   time: 'Time',
   timer: 'Timer',
   youDontHaveTasksAdded: 'You don’t have any Task added!',
-  pleaseAddTask: 'Please Add Task.'
+  pleaseAddTask: 'Please Add Task.',
+  uniqueTaskTypeName: 'Task Type title is unique !'
 };
