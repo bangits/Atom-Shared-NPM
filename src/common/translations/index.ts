@@ -1086,5 +1086,7 @@ export default {
   editConfigurationNoteText:
     '“Please note that to make this change, the current cycle will be closed and a new one will be opened.',
   exclamationNote: 'Note!',
-  onePointValue: '1 Point Value'
+  onePointValue: '1 Point Value',
+  uniqueTaskName: 'Task name is unique!',
+
 };
