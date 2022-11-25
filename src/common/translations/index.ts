@@ -1110,5 +1110,7 @@ export default {
   repeat: 'Repeat',
   expirationDateFrom: 'Expiration Date From',
   expirationDateTo: 'Expiration Date To',
-  holdUntilCompletion: 'Hold Until Completion'
+  holdUntilCompletion: 'Hold Until Completion',
+  repeatIonText: 'The task will be repeated in upcoming cycles according to its priority',
+  taskIsActive: 'Task is active!'
 };
