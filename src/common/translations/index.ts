@@ -1105,5 +1105,10 @@ export default {
   displayDateTo: 'Display Date To',
   youDontHaveTaskAnalyzeAdded: 'The are no any  provided.',
   theyAreNoPlayers: 'They are no players',
-  completionDate: 'Completion Date'
+  completionDate: 'Completion Date',
+  displayDate: 'Display Date',
+  repeat: 'Repeat',
+  expirationDateFrom: 'Expiration Date From',
+  expirationDateTo: 'Expiration Date To',
+  holdUntilCompletion: 'Hold Until Completion'
 };
