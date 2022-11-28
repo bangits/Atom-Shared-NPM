@@ -1119,5 +1119,7 @@ export default {
   allPlayers: 'All Players',
   displaySegment: 'Display Segment',
   rule: 'Rule',
-  displayRule: 'Display Rule'
+  displayRule: 'Display Rule',
+  pleaseFillField: 'Please fill in the required fields',
+  taskDisableButtonText: 'Task in use and cannot be changed!'
 };
