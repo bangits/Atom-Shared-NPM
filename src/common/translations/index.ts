@@ -1117,5 +1117,7 @@ export default {
   displayTo: 'Display To',
   reward: 'Reward',
   allPlayers: 'All Players',
-  displaySegment: 'Display Segment'
+  displaySegment: 'Display Segment',
+  rule: 'Rule',
+  displayRule: 'Display Rule'
 };
