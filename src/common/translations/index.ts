@@ -1121,5 +1121,5 @@ export default {
   rule: 'Rule',
   displayRule: 'Display Rule',
   pleaseFillField: 'Please fill in the required fields',
-  taskDisableButtonText: 'Task in use and cannot be changed!'
+  taskDisableButtonText: 'Task in active and cannot be changed!'
 };
