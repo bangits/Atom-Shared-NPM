@@ -1123,5 +1123,7 @@ export default {
   pleaseFillField: 'Please fill in the required fields',
   taskDisableButtonText: 'Task in active and cannot be changed!',
   selectedTaskWillBeRemoved: 'Selected task will be removed from the website.',
-  task: 'Task'
+  task: 'Task',
+  atLeastOneTask: 'At least one task must be in program!',
+
 };
