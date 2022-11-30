@@ -1125,5 +1125,5 @@ export default {
   selectedTaskWillBeRemoved: 'Selected task will be removed from the website.',
   task: 'Task',
   atLeastOneTask: 'At least one task must be in program!',
-
+  noAddedTasks: 'There are no added tasks yet'
 };
