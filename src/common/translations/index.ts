@@ -1076,7 +1076,7 @@ export default {
   year: 'Year',
   month: 'Month',
   cycleConfigurationTooltipText:
-    'Configure Cycle Settings such as deciding cycle capacity (max number of points) and Cycle duration (Cycle Duration) for them to be applied on website.',
+    'Configure Cycle Settings such as deciding Cycle Estimation (max number of points) and Cycle Duration for them to be applied on website.',
   bunnyCoin: 'Bunny Coin',
   cycleEstimation: 'Cycle Estimation',
   youDontHaveTaskTypes: 'You don’t have any Task Types added!',
@@ -1125,5 +1125,7 @@ export default {
   selectedTaskWillBeRemoved: 'Selected task will be removed from the website.',
   task: 'Task',
   atLeastOneTask: 'At least one task must be in program!',
-  noAddedTasks: 'There are no added tasks yet'
+  noAddedTasks: 'There are no added tasks yet',
+  selectedTaskTypeWillBeRemoved: 'Please note that all tasks of this type will immediately disappear from the website.',
+
 };
