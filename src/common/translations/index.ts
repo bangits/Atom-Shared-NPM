@@ -1104,7 +1104,7 @@ export default {
   displayDateFrom: 'Display Date From',
   displayDateTo: 'Display Date To',
   youDontHaveTaskAnalyzeAdded: 'The are no any  provided.',
-  theyAreNoPlayers: 'They are no players',
+  theyAreNoPlayers: 'No players have completed this task',
   completionDate: 'Completion Date',
   displayDate: 'Display Date',
   repeat: 'Repeat',
