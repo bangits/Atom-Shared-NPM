@@ -1169,5 +1169,6 @@ export default {
   crypto: 'Crypto',
   cash: 'Cash',
   cryPay: 'CRYPAY',
-  playerLastName:'Player Last Name'
+  playerLastName:'Player Last Name',
+
 };
