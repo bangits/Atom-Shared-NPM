@@ -1161,7 +1161,7 @@ export default {
   playerFirstName: 'Player First Name',
   withdrawal: 'Withdrawal',
   requestDate: 'Request Date',
-  playerFullName:'Player Full Name',
-  originalAmount:'Original Amount',
-
+  playerFullName: 'Player Full Name',
+  originalAmount: 'Original Amount',
+  successed: 'Successed'
 };
