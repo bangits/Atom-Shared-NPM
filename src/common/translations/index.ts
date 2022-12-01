@@ -1127,5 +1127,6 @@ export default {
   atLeastOneTask: 'At least one task must be in program!',
   noAddedTasks: 'There are no added tasks yet',
   selectedTaskTypeWillBeRemoved: 'Please note that all tasks of this type will immediately disappear from the website.',
+  uniqueName: 'The Name already exists!',
 
 };
