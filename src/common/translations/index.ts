@@ -1163,5 +1163,11 @@ export default {
   requestDate: 'Request Date',
   playerFullName: 'Player Full Name',
   originalAmount: 'Original Amount',
-  successed: 'Successed'
+  successed: 'Successed',
+  update: 'Update',
+  offline: 'Offline',
+  crypto: 'Crypto',
+  cash: 'Cash',
+  cryPay: 'CRYPAY',
+  playerLastName:'Player Last Name'
 };
