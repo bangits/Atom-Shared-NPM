@@ -1158,5 +1158,10 @@ export default {
   originalCurrency: 'Original Currency',
   originalAmountFrom: 'Original Amount From',
   originalAmountTo: 'Original Amount To',
-  playerFirstName: 'Player First Name'
+  playerFirstName: 'Player First Name',
+  withdrawal: 'Withdrawal',
+  requestDate: 'Request Date',
+  playerFullName:'Player Full Name',
+  originalAmount:'Original Amount',
+
 };
