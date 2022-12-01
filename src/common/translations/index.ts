@@ -1128,6 +1128,17 @@ export default {
   noAddedTasks: 'There are no added tasks yet',
   selectedTaskTypeWillBeRemoved: 'Please note that all tasks of this type will immediately disappear from the website.',
   uniqueName: 'The Name already exists!',
-  paymentRequests:'Payment Requests'
-
+  paymentRequests: 'Payment Requests',
+  manualDeposit: 'Manual Deposit',
+  requestType: 'Request Type',
+  paymentType: 'Payment Type',
+  paymentSystem: 'Payment System',
+  requestDateFrom: 'Request Date From',
+  requestDateTo: 'Request Date To',
+  amountFrom: 'Amount From',
+  amountTo: 'Amount To',
+  originalCurrency: 'Original Currency',
+  originalAmountFrom: 'Original Amount From',
+  originalAmountTo: 'Original Amount To',
+  playerFirstName: 'Player First Name'
 };
