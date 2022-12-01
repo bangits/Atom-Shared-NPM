@@ -1158,5 +1158,10 @@ export default {
   originalCurrency: 'Original Currency',
   originalAmountFrom: 'Original Amount From',
   originalAmountTo: 'Original Amount To',
-  playerFirstName: 'Player First Name'
+  playerFirstName: 'Player First Name',
+  emailAddress: 'Email Address',
+  paidAmountFrom:"Paid Amount From",
+  paidAmountTo:"Paid Amount To",
+  wageringAmountFrom:"Wagering Amount From",
+  wageringAmountTo:"Wagering Amount To",
 };
