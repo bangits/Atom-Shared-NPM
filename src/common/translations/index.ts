@@ -1180,5 +1180,8 @@ export default {
   depositWasPaid: 'Deposit was successfully paid!',
   paid: 'Paid',
   declined: 'Declined',
-  failed: 'Failed'
+  failed: 'Failed',
+  updateDeposit: 'Update Deposit',
+  requestStatus: 'Request Status',
+  decline: 'Decline'
 };
