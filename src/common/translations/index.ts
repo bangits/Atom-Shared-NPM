@@ -1177,5 +1177,8 @@ export default {
   playerLastName: 'Player Last Name',
   youDontHavePaymentsAdded: 'You don’t  have any payments requests',
   playerdoesntExsist: 'Player doesn’t exists',
-  depositWasPaid: 'Deposit was successfully paid!'
+  depositWasPaid: 'Deposit was successfully paid!',
+  paid: 'Paid',
+  declined: 'Declined',
+  failed: 'Failed'
 };
