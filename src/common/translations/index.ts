@@ -1175,5 +1175,7 @@ export default {
   cash: 'Cash',
   cryPay: 'CRYPAY',
   playerLastName: 'Player Last Name',
-  youDontHavePaymentsAdded: 'You don’t  have any payments requests'
+  youDontHavePaymentsAdded: 'You don’t  have any payments requests',
+  playerdoesntExsist: 'Player doesn’t exists',
+  depositWasPaid: 'Deposit was successfully paid!'
 };
