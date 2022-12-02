@@ -1183,5 +1183,6 @@ export default {
   failed: 'Failed',
   updateDeposit: 'Update Deposit',
   requestStatus: 'Request Status',
-  decline: 'Decline'
+  decline: 'Decline',
+  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!'
 };
