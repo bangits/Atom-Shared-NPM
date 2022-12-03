@@ -1186,5 +1186,9 @@ export default {
   updateDeposit: 'Update Deposit',
   requestStatus: 'Request Status',
   decline: 'Decline',
-  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!'
+  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!',
+  reportByPayments: 'Report By Payments',
+  reportByBalances: 'Report By Balances',
+  youDontHaveReports: 'You don’t have any data of payments requests data',
+  financicalReports: 'Financical Reports'
 };
