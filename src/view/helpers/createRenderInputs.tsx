@@ -16,6 +16,8 @@ export const createRenderInputs =
     return (
       <Field name={name}>
         {({ field, meta, form }: FieldProps) => {
+          const { value } = field;
+
           return (
             <>
               <Component
@@ -24,13 +26,14 @@ export const createRenderInputs =
                   const value =
                     fieldType === 'single-checkbox'
                       ? evt.target.checked
-                      : fieldType === 'input' || fieldType === 'radio'
+                      : fieldType === 'input' || fieldType === 'radio' || fieldType === 'field'
                       ? evt.target.value
                       : evt;
 
                   await form.setFieldValue(name, value && fieldProps?.convertToNumber ? +value : value);
                   form.setFieldTouched(name, true);
                 }}
+                value={value === 0 && fieldProps?.convertToNumber ? '0' : value}
                 name={name}
                 explanation={meta.touched && meta.error}
                 color={meta.error && meta.touched ? 'danger' : undefined}
