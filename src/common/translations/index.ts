@@ -1176,5 +1176,15 @@ export default {
   cryPay: 'CRYPAY',
   playerLastName: 'Player Last Name',
   activateEmailChannel: 'Activate Email Channel',
-  inActivateEmailChannel: 'Inactivate Email Channel'
+  inActivateEmailChannel: 'Inactivate Email Channel',
+  youDontHavePaymentsAdded: 'You don’t  have any payments requests',
+  playerdoesntExsist: 'Player doesn’t exists',
+  depositWasPaid: 'Deposit was successfully paid!',
+  paid: 'Paid',
+  declined: 'Declined',
+  failed: 'Failed',
+  updateDeposit: 'Update Deposit',
+  requestStatus: 'Request Status',
+  decline: 'Decline',
+  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!'
 };
