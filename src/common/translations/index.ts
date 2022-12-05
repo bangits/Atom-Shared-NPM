@@ -1195,5 +1195,17 @@ export default {
   withdrawCount: 'Withdraw Count',
   withdrawAmount: 'Withdraw Amount',
   depositorCount: 'Depositor Count',
-  withdrawerCount: 'Withdrawer Count'
+  withdrawerCount: 'Withdrawer Count',
+  balanceAfterTo: 'Balance After To',
+  balanceAfterFrom: 'Balance After From',
+  creditAmount: 'Credit Amount',
+  creditAmountFrom: 'Credit Amount From',
+  creditAmountTo: 'Credit Amount To',
+  debitAmount: 'Debit Amount',
+  debitAmountFrom: 'Debit Amount From',
+  debitAmountTo: 'Debit Amount To',
+  balanceBeforeFrom: 'Balance Before From',
+  balanceBeforeTo: 'Balance Before To',
+  accountId: 'Account ID',
+  accountBalanceType: 'Account Balance Type'
 };
