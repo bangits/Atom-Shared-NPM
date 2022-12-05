@@ -966,14 +966,10 @@ export default {
   bonusIsEnabled: 'Bonus is enabled!',
   bonusIsDisabled: 'Bonus is disabled!',
   bonusCurrencySettingsEditDisableText: 'You have already configured currency settings!',
-  roleName: 'Role Name',
   creationIP: 'Creation IP',
   roleDetails: 'Role Details',
-  roles: 'Roles',
-  roleDescription: 'Role Description',
   user: 'User',
   permissions: 'Permissions',
-  addRole: 'Add Role',
   infoSection: 'Info Section',
   addInfoSection: 'Add Info Section',
   eligableGames: 'Eligible Games',
@@ -1188,5 +1184,9 @@ export default {
   updateDeposit: 'Update Deposit',
   requestStatus: 'Request Status',
   decline: 'Decline',
-  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!'
+  requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!',
+  emailButtonText: 'Name button text for it to appear in in inbox text.',
+  emailButtonUrl: 'Enter button URL for users to redirect to the mentioned URL address.',
+  inActivateEmailChannel: 'Inactivate Email Channel',
+  activateEmailChannel: 'Activate Email Channel'
 };
