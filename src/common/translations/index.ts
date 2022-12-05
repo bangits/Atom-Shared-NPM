@@ -728,6 +728,7 @@ export default {
   accountVerification: 'Account Verification',
   betCurrency: 'Bet Currency',
   depositAmount: 'Deposit Amount',
+  depositCount: 'Deposit Count',
   depositCurrency: 'Deposit Currency',
   depositDate: 'Deposit Date',
   emailVerification: 'Email Verification',
@@ -1175,6 +1176,8 @@ export default {
   cash: 'Cash',
   cryPay: 'CRYPAY',
   playerLastName: 'Player Last Name',
+  activateEmailChannel: 'Activate Email Channel',
+  inActivateEmailChannel: 'Inactivate Email Channel',
   youDontHavePaymentsAdded: 'You don’t  have any payments requests',
   playerdoesntExsist: 'Player doesn’t exists',
   depositWasPaid: 'Deposit was successfully paid!',
@@ -1187,6 +1190,12 @@ export default {
   requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!',
   emailButtonText: 'Name button text for it to appear in in inbox text.',
   emailButtonUrl: 'Enter button URL for users to redirect to the mentioned URL address.',
-  inActivateEmailChannel: 'Inactivate Email Channel',
-  activateEmailChannel: 'Activate Email Channel'
+  reportByPayments: 'Report By Payments',
+  reportByBalances: 'Report By Balances',
+  youDontHaveReports: 'You don’t have any data of payments requests data',
+  financicalReports: 'Financical Reports',
+  withdrawCount: 'Withdraw Count',
+  withdrawAmount: 'Withdraw Amount',
+  depositorCount: 'Depositor Count',
+  withdrawerCount: 'Withdrawer Count'
 };
