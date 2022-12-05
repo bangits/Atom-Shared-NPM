@@ -1223,6 +1223,7 @@ export default {
   withdrawerAmountFrom: 'Withdrawer Amount From',
   withdrawerAmountTo: 'Withdrawer Amount To',
 
-  depositorAmountFrom: 'Depositor Amount From',
-  depositorAmountTo: 'Depositor Amount To'
+  depositorCountFrom: 'Depositor Count From',
+  depositorCountTo: 'Depositor Count To',
+
 };
