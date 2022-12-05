@@ -728,6 +728,7 @@ export default {
   accountVerification: 'Account Verification',
   betCurrency: 'Bet Currency',
   depositAmount: 'Deposit Amount',
+  depositCount: 'Deposit Count',
   depositCurrency: 'Deposit Currency',
   depositDate: 'Deposit Date',
   emailVerification: 'Email Verification',
@@ -1190,5 +1191,9 @@ export default {
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
   youDontHaveReports: 'You don’t have any data of payments requests data',
-  financicalReports: 'Financical Reports'
+  financicalReports: 'Financical Reports',
+  withdrawCount: 'Withdraw Count',
+  withdrawAmount: 'Withdraw Amount',
+  depositorCount: 'Depositor Count',
+  withdrawerCount: 'Withdrawer Count'
 };
