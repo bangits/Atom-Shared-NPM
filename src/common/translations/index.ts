@@ -1113,7 +1113,7 @@ export default {
   expirationDateTo: 'Expiration Date To',
   holdUntilCompletion: 'Hold Until Completion',
   repeatIonText: 'The task will be repeated in upcoming cycles according to its priority',
-  holdUntilIconText: 'Info Icon - The task will stay on website unless user completes it.',
+  holdUntilIconText: 'The task will stay on website unless user completes it.',
   taskIsActive: 'Task is active!',
   displayTo: 'Display To',
   reward: 'Reward',
