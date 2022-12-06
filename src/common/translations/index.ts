@@ -1015,7 +1015,7 @@ export default {
   week: 'Week',
   hour: 'Hour',
   prioritization: 'Prioritization',
-  tiersTableErrorMessage: "The action couldn't be completed !” to “ “To” can not be equal (=) or less (<) than “From",
+  tiersTableErrorMessage: "“To” can not be equal (=) or less (<) than “From",
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
   playerRules: 'Player Rules',
   publicName: 'Public Name',
