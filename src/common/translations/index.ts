@@ -1122,7 +1122,7 @@ export default {
   rule: 'Rule',
   displayRule: 'Display Rule',
   pleaseFillField: 'Please fill in the required fields',
-  taskDisableButtonText: 'Task in active and cannot be edited!',
+  taskDisableButtonText: 'Task is active and cannot be edited!',
   selectedTaskWillBeRemoved: 'Selected task will be removed from the website.',
   task: 'Task',
   atLeastOneTask: 'At least one task must be in program!',
