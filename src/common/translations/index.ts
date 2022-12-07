@@ -1226,4 +1226,5 @@ export default {
   depositorCountFrom: 'Depositor Count From',
   depositorCountTo: 'Depositor Count To',
 
+  promoCompaigns:'Promo Compaigns'
 };
