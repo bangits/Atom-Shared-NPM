@@ -9,6 +9,7 @@ export const useValidationTranslation = () => {
     () => ({
       required: () => t.get('validations.required'),
       textInput: () => t.get('validations.textInput'),
+      integer: () => t.get('validations.integer'),
       min: (value: number) => t.get('validations.min').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       max: (value: number) => t.get('validations.max').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       maxNumber: (value: number) => t.get('validations.maxNumber').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
