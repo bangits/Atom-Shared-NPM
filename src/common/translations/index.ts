@@ -1015,7 +1015,7 @@ export default {
   week: 'Week',
   hour: 'Hour',
   prioritization: 'Prioritization',
-  tiersTableErrorMessage: "“To” can not be equal (=) or less (<) than “From",
+  tiersTableErrorMessage: '“To” can not be equal (=) or less (<) than “From',
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
   playerRules: 'Player Rules',
   publicName: 'Public Name',
@@ -1226,5 +1226,6 @@ export default {
   depositorCountFrom: 'Depositor Count From',
   depositorCountTo: 'Depositor Count To',
 
-  promoCompaigns:'Promo Compaigns'
+  promoCompaigns: 'Promo Compaigns',
+  ok: 'Ok'
 };
