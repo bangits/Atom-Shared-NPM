@@ -1232,5 +1232,14 @@ export default {
   betsCount: 'Bets Count',
   totalCommission: 'Total Commission',
   commissionByGGR: 'Commission By GGR',
-  commissionByFTD: 'commission By FTD'
+  commissionByFTD: 'commission By FTD',
+  commissionByGGRFrom: 'Commission By GGR From',
+  commissionByGGRTo: 'Commission By GGR To',
+
+  ftdAmountFrom: 'FTD Amount From From',
+  ftdAmountTo: 'FTD Amount To To',
+
+  totalCommissionFrom: 'Total Commission From From',
+  totalCommissionTo: 'Total Commission To To',
+  
 };
