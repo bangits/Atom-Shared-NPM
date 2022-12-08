@@ -44,6 +44,7 @@ export default {
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Invalid Email',
+    integer: 'Sorry, only natural numbers are allowed!',
     slug: 'Invalid Slug',
     website: 'Enter an Website into correct format, example: https://www.website.com',
     phoneCodeRequired: 'Phone code is required!',
@@ -1110,5 +1111,17 @@ export default {
   repeat: 'Repeat',
   expirationDateFrom: 'Expiration Date From',
   expirationDateTo: 'Expiration Date To',
-  holdUntilCompletion: 'Hold Until Completion'
+  holdUntilCompletion: 'Hold Until Completion',
+  promocode:'Promo Code',
+  promoCampaign: "Promo Campaign",
+  addPromoCode: 'Add Promo Code',
+  codesquantity: 'Codes Quantity',
+  usageType: 'Usage Type',
+  limited: 'Limited',
+  usageCount: 'Usage Count',
+  unlimited: 'Unlimited',
+  promoCampaigns: "Promo Campaigns",
+  pleaseAddPromo: 'Please Add Promo Campaign',
+  disablePromoDescription: 'Do you want to disable the campaign ID',
+  disablePromoMultiDescription: 'Do you want to disable the campaign ID'
 };
