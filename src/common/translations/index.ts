@@ -1227,5 +1227,10 @@ export default {
   depositorCountTo: 'Depositor Count To',
 
   promoCompaigns: 'Promo Compaigns',
-  ok: 'Ok'
+  ok: 'Ok',
+  ftdAmount: 'FTD Amount',
+  betsCount: 'Bets Count',
+  totalCommission: 'Total Commission',
+  commissionByGGR: 'Commission By GGR',
+  commissionByFTD: 'commission By FTD'
 };
