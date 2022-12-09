@@ -44,6 +44,7 @@ export default {
     min: `The minimum length is ${TRANSLATION_CHANGED_VALUE}!`,
     textInput: 'Sorry, only letters, numbers, spaces, underscores and hyphens are allowed!',
     email: 'Invalid Email',
+    integer: 'Sorry, only natural numbers are allowed!',
     slug: 'Invalid Slug',
     website: 'Enter an Website into correct format, example: https://www.website.com',
     phoneCodeRequired: 'Phone code is required!',
@@ -1241,6 +1242,22 @@ export default {
 
   totalCommissionFrom: 'Total Commission From From',
   totalCommissionTo: 'Total Commission To To',
-
-  thereAreNoPlayers: 'The are no any players!'
+  thereAreNoPlayers: 'The are no any players!',
+  promocode: 'Promo Code',
+  promoCampaign: 'Promo Campaign',
+  addPromoCode: 'Add Promo Code',
+  codesQuantity: 'Codes Quantity',
+  usageType: 'Usage Type',
+  campaignDetails: 'Campaign Details',
+  promoCodes: 'Promo Codes',
+  usageHistory: 'Usage History',
+  limited: 'Limited',
+  usageLimitation: 'Usage Limitation',
+  codesquantity: 'Codes Quantity',
+  usageCount: 'Usage Count',
+  unlimited: 'Unlimited',
+  promoCampaigns: 'Promo Campaigns',
+  pleaseAddPromo: 'Please Add Promo Campaign',
+  disablePromoDescription: 'Do you want to disable the campaign ID',
+  disablePromoMultiDescription: 'Do you want to disable the campaign ID'
 };
