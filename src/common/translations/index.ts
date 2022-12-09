@@ -1241,5 +1241,6 @@ export default {
 
   totalCommissionFrom: 'Total Commission From From',
   totalCommissionTo: 'Total Commission To To',
-  
+
+  thereAreNoPlayers: 'The are no any players!'
 };
