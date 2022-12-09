@@ -1237,11 +1237,11 @@ export default {
   commissionByGGRFrom: 'Commission By GGR From',
   commissionByGGRTo: 'Commission By GGR To',
 
-  ftdAmountFrom: 'FTD Amount From From',
-  ftdAmountTo: 'FTD Amount To To',
+  ftdAmountFrom: 'FTD Amount From',
+  ftdAmountTo: 'FTD Amount To',
 
-  totalCommissionFrom: 'Total Commission From From',
-  totalCommissionTo: 'Total Commission To To',
+  totalCommissionFrom: 'Total Commission From',
+  totalCommissionTo: 'Total Commission To',
   thereAreNoPlayers: 'The are no any players!',
   promocode: 'Promo Code',
   promoCampaign: 'Promo Campaign',
