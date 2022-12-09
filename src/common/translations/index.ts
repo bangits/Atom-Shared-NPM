@@ -1259,5 +1259,7 @@ export default {
   promoCampaigns: 'Promo Campaigns',
   pleaseAddPromo: 'Please Add Promo Campaign',
   disablePromoDescription: 'Do you want to disable the campaign ID',
-  disablePromoMultiDescription: 'Do you want to disable the campaign ID'
+  disablePromoMultiDescription: 'Do you want to disable the campaign ID',
+  betsCountFrom: 'Bets Count From',
+  betsCountTo: 'Bets Count To'
 };
