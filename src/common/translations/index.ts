@@ -1261,5 +1261,7 @@ export default {
   disablePromoDescription: 'Do you want to disable the campaign ID',
   disablePromoMultiDescription: 'Do you want to disable the campaign ID',
   betsCountFrom: 'Bets Count From',
-  betsCountTo: 'Bets Count To'
+  betsCountTo: 'Bets Count To',
+  lastUpdatedDateTo: 'Last Updated Date To',
+  lastUpdatedDateFrom: 'Last Updated Date From'
 };
