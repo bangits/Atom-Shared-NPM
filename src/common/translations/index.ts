@@ -1243,6 +1243,8 @@ export default {
   totalCommissionFrom: 'Total Commission From From',
   totalCommissionTo: 'Total Commission To To',
   promocode:'Promo Code',
+  single: "Single",
+  multi: "Multi",
   thereAreNoUsedPromoCodesYet: 'There are no used promo codes yet!',
   promoCampaign: "Promo Campaign",
   thereAreNoPlayers: 'The are no any players!',
