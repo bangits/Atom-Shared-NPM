@@ -916,6 +916,7 @@ export default {
   linkDetails: 'Link Details',
   btag: 'Btag',
   reportDate: 'Report Date',
+  generateGGR: 'Generate GGR',
   generateGGRTo: 'Generate GGR To',
   generateGGRFrom: 'Generate GGR From',
   generatedFTDAmountTo: 'Generate FTD Amount To',
@@ -952,7 +953,6 @@ export default {
   'maxPayout%': 'Max Payout (%)',
   mediaId: 'Media ID',
   reportByMedias: 'Report By Media',
-  generateGGR: 'Generate GGR',
   mediaName: 'Media Name',
   affiliateInformation: 'Affiliate Information',
   percentageSymbol: 'Percentage(%)',
@@ -1263,5 +1263,8 @@ export default {
   betsCountFrom: 'Bets Count From',
   betsCountTo: 'Bets Count To',
   lastUpdatedDateTo: 'Last Updated Date To',
-  lastUpdatedDateFrom: 'Last Updated Date From'
+  lastUpdatedDateFrom: 'Last Updated Date From',
+  myCommission: 'My Commission',
+  commissionByFTDFrom: 'Commission By FTD From',
+  commissionByFTDTo: 'Commission By FTD To'
 };
