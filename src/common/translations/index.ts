@@ -1280,5 +1280,10 @@ export default {
   commissionByFTDFrom: 'Commission By FTD From',
   commissionByFTDTo: 'Commission By FTD To',
   myCommissionTo: 'My Commission To',
-  myCommissionFrom: 'My Commission From'
+  myCommissionFrom: 'My Commission From',
+  ftdCount: 'FTD Count',
+  myCommissionCount: 'My Commission Count',
+  ggrCount: 'GGR Count',
+  commissionByGgr: 'Commission By GGR',
+  commissionByFtd: 'Commission By FTD'
 };
