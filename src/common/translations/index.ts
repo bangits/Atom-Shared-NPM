@@ -1256,6 +1256,7 @@ export default {
   generationType: "Generation Type",
   generationCodes: "Generate Codes",
   bulk: 'Bulk',
+  addPromoCampaign: "Add Promo Campaign",
   standalone: 'Standalone',
   usageType: 'Usage Type',
   campaignDetails: 'Campaign Details',
