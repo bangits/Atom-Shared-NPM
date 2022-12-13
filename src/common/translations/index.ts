@@ -1240,8 +1240,8 @@ export default {
   ftdAmountFrom: 'FTD Amount From',
   ftdAmountTo: 'FTD Amount To',
 
-  totalCommissionFrom: 'Total Commission From From',
-  totalCommissionTo: 'Total Commission To To',
+  totalCommissionFrom: 'Total Commission From',
+  totalCommissionTo: 'Total Commission To',
   promocode: 'Promo Code',
   single: 'Single',
   multi: 'Multi',
