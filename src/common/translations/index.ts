@@ -1248,6 +1248,7 @@ export default {
   single: 'Single',
   multi: 'Multi',
   usedCode: "Used Codes",
+  generateCodes: "Generate Codes",
   unUsedCode: 'Unused Codes',
   thereAreNoUsedPromoCodesYet: 'There are no used promo codes yet!',
   promoCampaign: 'Promo Campaign',
