@@ -1313,5 +1313,9 @@ export default {
   promocodes: 'Promo Codes',
   sessionId: 'Session ID',
   usageDateFrom: 'Usage Date From',
-  usageDateTo: 'Usage Date To'
+  usageDateTo: 'Usage Date To',
+  shop: 'Shop',
+  items: 'Items',
+  orders: 'Orders',
+  addItem: 'Add Item'
 };
