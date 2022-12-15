@@ -1317,5 +1317,6 @@ export default {
   shop: 'Shop',
   items: 'Items',
   orders: 'Orders',
-  addItem: 'Add Item'
+  addItem: 'Add Item',
+  promoCampaignDisableText: 'Promo campaign is disabled!'
 };
