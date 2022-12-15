@@ -1318,5 +1318,6 @@ export default {
   items: 'Items',
   orders: 'Orders',
   addItem: 'Add Item',
-  promoCampaignDisableText: 'Promo campaign is disabled!'
+  promoCampaignDisableText: 'Promo campaign is disabled!',
+  promoCampaignEnabledText: 'Promo campaign is enabled!'
 };
