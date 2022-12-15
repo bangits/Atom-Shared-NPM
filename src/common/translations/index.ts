@@ -1295,5 +1295,10 @@ export default {
   myCommissionCount: 'My Commission Count',
   ggrCount: 'GGR Count',
   commissionByGgr: 'Commission By GGR',
-  commissionByFtd: 'Commission By FTD'
+  commissionByFtd: 'Commission By FTD',
+
+  shop: 'Shop',
+  items: 'Items',
+  orders: 'Orders',
+  addItem:'Add Item'
 };
