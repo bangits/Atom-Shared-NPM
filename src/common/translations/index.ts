@@ -1322,5 +1322,6 @@ export default {
   promoCampaignEnabledText: 'Promo campaign is enabled!',
   material: 'Material',
   digital: 'Digital',
-  package: 'Package'
+  package: 'Package',
+  reportByLinks: 'Report By Links'
 };
