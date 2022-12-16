@@ -1019,7 +1019,7 @@ export default {
   week: 'Week',
   hour: 'Hour',
   prioritization: 'Prioritization',
-  tiersTableErrorMessage: '“To” can not be equal (=) or less (<) than “From',
+  tiersTableErrorMessage: '“To” can`t be equal (=) or less (<) than “From” and “Percentage” can`t be more (>) than 100',
   tierInfoIconText: 'To” can not be equal (=) or less (<) than “From',
   playerRules: 'Player Rules',
   publicName: 'Public Name',
@@ -1319,5 +1319,8 @@ export default {
   orders: 'Orders',
   addItem: 'Add Item',
   promoCampaignDisableText: 'Promo campaign is disabled!',
-  promoCampaignEnabledText: 'Promo campaign is enabled!'
+  promoCampaignEnabledText: 'Promo campaign is enabled!',
+  material: 'Material',
+  digital: 'Digital',
+  package: 'Package'
 };
