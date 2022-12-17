@@ -1232,7 +1232,6 @@ export default {
 
   ams: 'AMS',
 
-  promoCompaigns: 'Promo Compaigns',
   ok: 'Ok',
   ftdAmount: 'FTD Amount',
   betsCount: 'Bets Count',
