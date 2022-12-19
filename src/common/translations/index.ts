@@ -1322,5 +1322,7 @@ export default {
   promoCampaignEnabledText: 'Promo campaign is enabled!',
   material: 'Material',
   digital: 'Digital',
-  package: 'Package'
+  package: 'Package',
+  reportByLinks:'Report By Links',
+  tiersAmoutOrPecentageValidation:'The "To" and/or "Amount or Percentage" fields are required!'
 };
