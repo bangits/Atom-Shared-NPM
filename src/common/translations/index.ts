@@ -1322,6 +1322,7 @@ export default {
   material: 'Material',
   digital: 'Digital',
   package: 'Package',
-  reportByLinks:'Report By Links',
-  tiersAmoutOrPecentageValidation:'The "To" and/or "Amount or Percentage" fields are required!',
+  reportByLinks: 'Report By Links',
+  tiersAmoutOrPecentageValidation: 'The "To" and/or "Amount or Percentage" fields are required!',
+  commissionPlanId: 'Commission Plan ID'
 };
