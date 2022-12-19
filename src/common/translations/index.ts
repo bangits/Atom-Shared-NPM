@@ -1232,7 +1232,6 @@ export default {
 
   ams: 'AMS',
 
-  promoCompaigns: 'Promo Compaigns',
   ok: 'Ok',
   ftdAmount: 'FTD Amount',
   betsCount: 'Bets Count',
@@ -1324,5 +1323,5 @@ export default {
   digital: 'Digital',
   package: 'Package',
   reportByLinks:'Report By Links',
-  tiersAmoutOrPecentageValidation:'The "To" and/or "Amount or Percentage" fields are required!'
+  tiersAmoutOrPecentageValidation:'The "To" and/or "Amount or Percentage" fields are required!',
 };

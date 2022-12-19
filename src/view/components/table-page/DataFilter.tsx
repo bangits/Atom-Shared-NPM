@@ -1,4 +1,4 @@
-import { AtomCommonContext, PageIdsEnum, PrimaryKey, useTranslation } from '@/atom-common';
+import { AtomCommonContext, PageConfigTypesEnum, PageIdsEnum, PrimaryKey, useTranslation } from '@/atom-common';
 import { PageConfigViewModel } from '@/view/models';
 import { Filters, FiltersProps } from '@atom/design-system';
 import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
@@ -34,7 +34,7 @@ export const DataFilter = <T,>({
     (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (filterConfigUpdateTimeout.current) return;
 
-      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON);
+      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON, PageConfigTypesEnum.FILTER);
 
       setTimeout(() => (filterConfigUpdateTimeout.current = false), 700);
     },
