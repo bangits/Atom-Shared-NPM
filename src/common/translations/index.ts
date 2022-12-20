@@ -1324,5 +1324,12 @@ export default {
   package: 'Package',
   reportByLinks: 'Report By Links',
   tiersAmoutOrPecentageValidation: 'The "To" and/or "Amount or Percentage" fields are required!',
-  commissionPlanId: 'Commission Plan ID'
+  commissionPlanId: 'Commission Plan ID',
+  groupsCount: 'Groups Count',
+  levelsCount: 'Levels Count',
+  rewardsCount: 'Rewards Count',
+  loyaltyPrograms: 'Loyalty Programs',
+  loyaltyProgram: 'Loyalty Program',
+  addLoyaltyProgram: 'Add Loyalty Program',
+  
 };
