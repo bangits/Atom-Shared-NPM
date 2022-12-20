@@ -45,5 +45,6 @@ export enum PageIdsEnum {
   PROMO_CODES_LIST,
   PROMO_CODES_USAGE_HISTORY, //45
   ITEMS_PAGE, //46
-  SALES_PAGE //47
+  SALES_PAGE, //47
+  LEADS //48
 }
