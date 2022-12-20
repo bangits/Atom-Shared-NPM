@@ -911,7 +911,7 @@ export default {
   expiryDateTo: 'Expiry Date To',
   disable: 'Disable',
   disableBonusDescription: 'Do you want to disable the bonus ID:',
-  disableMultipleBonusDescription: 'Do you want to disable',
+  disableMultipleBonusDescription: 'Do you want to disable the',
 
   excludeGameDescriptionFirstPart: 'Do you want to exclude the game:',
   excludeGameDescriptionSecondPart: ' from the list?',
@@ -1352,5 +1352,7 @@ export default {
   loyaltyPrograms: 'Loyalty Programs',
   loyaltyProgram: 'Loyalty Program',
   addLoyaltyProgram: 'Add Loyalty Program',
+  youDontHaveLoyaltyProgramsAdded: 'You don’t have any loyalty programs added!',
+  pleaseAddLoyaltyProgram: 'Please add a loyalty program.',
   
 };
