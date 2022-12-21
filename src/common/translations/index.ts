@@ -1354,5 +1354,7 @@ export default {
   addLoyaltyProgram: 'Add Loyalty Program',
   youDontHaveLoyaltyProgramsAdded: 'You don’t have any loyalty programs added!',
   pleaseAddLoyaltyProgram: 'Please add a loyalty program.',
-  
+  programDetails: 'Program Details',
+  loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
+  loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program'
 };
