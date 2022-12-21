@@ -1322,5 +1322,6 @@ export default {
   material: 'Material',
   digital: 'Digital',
   package: 'Package',
-  reportByLinks: 'Report By Links'
+  reportByLinks: 'Report By Links',
+  promoCodeUsageDate: 'Promo Code Usage Date'
 };
