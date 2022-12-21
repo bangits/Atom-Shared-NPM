@@ -1345,5 +1345,11 @@ export default {
   package: 'Package',
   reportByLinks: 'Report By Links',
   tiersAmoutOrPecentageValidation: 'The "To" and/or "Amount or Percentage" fields are required!',
-  commissionPlanId: 'Commission Plan ID'
+  commissionPlanId: 'Commission Plan ID',
+  inboxButtonText: 'Inbox Button Text',
+  inboxButtonURL: 'Inbox Button URL',
+  inboxButtonTooltipText:
+    'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
+  inboxButtonTooltipUrl:
+    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.'
 };
