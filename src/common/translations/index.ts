@@ -1358,5 +1358,11 @@ export default {
   programDetails: 'Program Details',
   loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
   loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program',
-  promoCodeUsageDate: 'Promo Code Usage Date'
+  promoCodeUsageDate: 'Promo Code Usage Date',
+  inboxButtonText: 'Inbox Button Text',
+  inboxButtonURL: 'Inbox Button URL',
+  inboxButtonTooltipText:
+    'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
+  inboxButtonTooltipUrl:
+    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.'
 };
