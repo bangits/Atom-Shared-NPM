@@ -1372,12 +1372,9 @@ export default {
     'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
   inboxButtonTooltipUrl:
     'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.',
-<<<<<<< HEAD
-  inProcess: 'In Process'
-=======
+  inProcess: 'In Process',
   runCode: 'Run Code',
   inboxSubject: 'Inbox Subject',
   inboxText: 'Inbox Text',
   codeEditor: 'Code Editor'
->>>>>>> 2889af844ad9346e6a8a4cec25fd017bf160a159
 };
