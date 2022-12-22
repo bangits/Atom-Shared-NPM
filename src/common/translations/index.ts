@@ -1206,6 +1206,8 @@ export default {
   withdrawAmount: 'Withdraw Amount',
   depositorCount: 'Depositor Count',
   withdrawerCount: 'Withdrawer Count',
+  withdrawerCountFrom: 'Withdrawer Count From',
+  withdrawerCountTo: 'Withdrawer Count To',
   balanceAfterTo: 'Balance After To',
   balanceAfterFrom: 'Balance After From',
   creditAmount: 'Credit Amount',
