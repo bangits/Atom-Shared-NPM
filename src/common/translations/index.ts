@@ -645,6 +645,7 @@ export default {
   bannerTitle: 'Banner Title',
   bannerDescription: 'Banner Description',
   buttonUrl: 'Button URL for Authorized',
+  buttonUrlNoAuthorized: 'Button URL',
   buttonUrlNotAuthorized: 'Button URL (for Non Authorized)',
   buttonText: 'Button Text',
   imageUrl: 'Image URL',
@@ -1296,10 +1297,12 @@ export default {
   betsCountTo: 'Bets Count To',
   lastUpdatedDateTo: 'Last Updated Date To',
   lastUpdatedDateFrom: 'Last Updated Date From',
-  leadId: 'Lead Id',
+  leadId: 'Lead ID',
   leadEmail: 'Lead Email',
   fileName: 'File Name',
   leads: 'Leads',
+  file: 'File',
+  import: 'Import',
   allowedExtensionsAreEXCEL: 'Allowed extensions are XLSX, XLSB, XLTX, CSV',
   importedFileName: 'Imported File Name',
   importFile: 'Import File',
@@ -1360,8 +1363,13 @@ export default {
   promoCodeUsageDate: 'Promo Code Usage Date',
   inboxButtonText: 'Inbox Button Text',
   inboxButtonURL: 'Inbox Button URL',
+  inActivateInboxChannel: 'Inactivate inbox channel',
   inboxButtonTooltipText:
     'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
   inboxButtonTooltipUrl:
-    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.'
+    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.',
+  runCode: 'Run Code',
+  inboxSubject: 'Inbox Subject',
+  inboxText: 'Inbox Text',
+  codeEditor: 'Code Editor'
 };
