@@ -142,6 +142,7 @@ export default {
   blocked: 'Blocked',
   expired: 'Expired',
   inActive: 'Inactive',
+  inactive: 'Inactive',
   removed: 'Removed',
   remove: 'Remove',
   partnerId: 'Partner ID',
