@@ -1375,5 +1375,8 @@ export default {
   runCode: 'Run Code',
   inboxSubject: 'Inbox Subject',
   inboxText: 'Inbox Text',
-  codeEditor: 'Code Editor'
+  codeEditor: 'Code Editor',
+  toLeads: 'To Leads',
+  toSegments: 'To Segments',
+  addCampaigns: 'Add Campaigns'
 };
