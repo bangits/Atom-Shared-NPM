@@ -1307,7 +1307,7 @@ export default {
   leads: 'Leads',
   file: 'File',
   import: 'Import',
-  allowedExtensionsAreEXCEL: 'Allowed extensions are XLSX, XLSB, XLTX, CSV',
+  allowedExtensionsAreEXCEL: 'Allowed extensions are XLS, XLSX, CSV',
   importedFileName: 'Imported File Name',
   importFile: 'Import File',
   nameAlreadyExist: 'The name already exists',
@@ -1379,5 +1379,9 @@ export default {
   codeEditor: 'Code Editor',
   toLeads: 'To Leads',
   toSegments: 'To Segments',
-  addCampaigns: 'Add Campaigns'
+  addCampaign: 'Add Campaign',
+  activeChannel: 'Active Channel',
+  scheduleDate: 'Schedule Date',
+  schedule: 'Schedule',
+  thereAreNoActiveChannels: 'There are no active channels!'
 };
