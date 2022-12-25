@@ -1143,8 +1143,20 @@ export default {
   editChannelToActivateIt: 'Edit Channel to activate it.',
   doYouWantToInactivateEmailChannel: 'Do you want to Inactivate Email Channel?',
   doYouWantToActivateEmailChannel: 'Do you want to Activate Email Channel?',
+  doYouWantToInactivateInboxChannel: 'Do you want to Inactivate Inbox Channel?',
+  doYouWantToInactivateInboxSystemNotification: 'Do you want to Inactivate Inbox System Notification?',
+  doYouWantToActivateInboxChannel: 'Do you want to Activate Inbox Channel?',
   channelInactivePopUp: '  If deactivated, system will stop sending system notification by email.',
   channelActivePopUp: 'If activated, system will send selected system notification by email.',
+  channelInactivePopUpSystemNotification: '  If deactivated, system will stop sending system notification by email.',
+  channelActivePopUpSystemNotification: 'If activated, system will send selected system notification by email.',
+  channelInactivePopUpEmailCampaign: 'If deactivated, system will stop sending campaign by email.',
+  channelActivePopUpEmailCampaign: 'If activated, system will send selected campaign by email.',
+  channelInactivePopUpInboxCampaign: 'If deactivated, system will stop sending campaign by inbox.',
+  channelInactivePopUpInboxSystemNotification: 'If deactivated, system will stop sending system notification by inbox.',
+  channelActivePopUpInboxCampaign: 'If activated, system will send selected campaign by inbox.',
+  channelActivePopUpInboxSystemNotification: 'If activated, system will send selected system notification by inbox.',
+  cancelSchedule: 'Do you want to cancel the Schedule?',
   gSuite: 'G Suite',
   yandex: 'Yandex',
   atomConstruct: 'Atom Construct',
@@ -1385,5 +1397,6 @@ export default {
   schedule: 'Schedule',
   thereAreNoActiveChannels: 'There are no active channels!',
   scheduleCampaign: 'Schedule Campaign',
-  inactiveSchedule: 'Do you want to cancel the Schedule?'
+  inactiveSchedule: 'Do you want to cancel the Schedule?',
+  subject: 'Subject'
 };
