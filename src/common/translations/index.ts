@@ -1383,5 +1383,7 @@ export default {
   activeChannel: 'Active Channel',
   scheduleDate: 'Schedule Date',
   schedule: 'Schedule',
-  thereAreNoActiveChannels: 'There are no active channels!'
+  thereAreNoActiveChannels: 'There are no active channels!',
+  scheduleCampaign: 'Schedule Campaign',
+  inactiveSchedule: 'Do you want to cancel the Schedule?'
 };
