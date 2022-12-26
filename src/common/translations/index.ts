@@ -1196,6 +1196,7 @@ export default {
   crypto: 'Crypto',
   cash: 'Cash',
   cryPay: 'CRYPAY',
+  scheduledDate: 'Scheduled Date',
   playerLastName: 'Player Last Name',
   activateEmailChannel: 'Activate Email Channel',
   inActivateEmailChannel: 'Inactivate Email Channel',
