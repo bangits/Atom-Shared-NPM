@@ -1400,6 +1400,7 @@ export default {
   messageId: 'Message Id',
   responseMessage: 'Response Message',
   deliveredDate: 'Delivered Date',
+  delivered: 'Delivered',
 
   deliveredDateFrom: 'Delivered Date - From',
   deliveredDateTo: 'Delivered Date - To',
@@ -1416,5 +1417,8 @@ export default {
   thereAreNoActiveChannels: 'There are no active channels!',
   scheduleCampaign: 'Schedule Campaign',
   inactiveSchedule: 'Do you want to cancel the Schedule?',
-  subject: 'Subject'
+  subject: 'Subject',
+  sentBy: 'Sent By',
+  failedMessages: 'Failed Messages',
+  deliveredMessages: 'Delivered Messages'
 };
