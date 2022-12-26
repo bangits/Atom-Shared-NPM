@@ -9,7 +9,7 @@ export interface UseActionWithDialogParameters<T> {
     column: T | T[];
   }) => void;
   t: UseTranslationReturnValue;
-  actionFn: (ids: PrimaryKey[]) => Promise<ActionResponseModel | void>;
+  actionFn: (ids: PrimaryKey[]) => Promise<unknown>;
   isFetching: boolean;
   getColumnId: (column: T) => PrimaryKey;
   refetch: () => void;
@@ -46,7 +46,7 @@ export const useActionWithDialog = <T>({
           closeFn();
 
           actionFn(columnIds)
-            .then((actionResponseModel) => {
+            .then((actionResponseModel: ActionResponseModel) => {
               if (!actionResponseModel) return;
 
               if (actionResponseModel.successCount)
