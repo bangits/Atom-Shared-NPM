@@ -1376,5 +1376,20 @@ export default {
   runCode: 'Run Code',
   inboxSubject: 'Inbox Subject',
   inboxText: 'Inbox Text',
-  codeEditor: 'Code Editor'
+  codeEditor: 'Code Editor',
+  reportsByChannels: 'Reports By Channels',
+  youDontHaveEmailReportsAdded: 'You Dont Have Email Reports Added',
+  youDontHaveInboxReportsAdded: 'You Dont Have Inbox Reports Added',
+  pleaseAddEmailReports: 'Please Add Email Reports',
+  pleaseAddInboxReports: 'Please Add Inbox Reports',
+  messageId: 'Message Id',
+  responseMessage: 'Response Message',
+  deliveredDate: 'Delivered Date',
+
+  deliveredDateFrom: 'Delivered Date - From',
+  deliveredDateTo: 'Delivered Date - To',
+
+  sentDate: 'Sent Date',
+  sentDateFrom: 'Sent Date - From',
+  sentDateTo: 'Sent Date - To'
 };
