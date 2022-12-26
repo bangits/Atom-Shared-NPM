@@ -799,7 +799,9 @@ export default {
   bonus: 'Bonus',
   ruleDisableButtonText: 'Rule in use and cannot be changed!',
   youDontHaveSystemNotificationsAdded: 'You Dont Have System Notifications Added',
+  youDontHaveTemplatesAdded: 'You Dont Have Templates Added',
   pleaseAddSystemNotification: 'Please Add System Notification',
+  pleaseAddTemplate: 'Please Add Template',
   youDontHaveCampaignsAdded: 'You Dont Have Campaigns Added',
   pleaseAddCampaign: 'Please Add Campaign',
 
