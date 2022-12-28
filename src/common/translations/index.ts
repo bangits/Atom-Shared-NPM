@@ -1401,5 +1401,7 @@ export default {
   thereAreNoActiveChannels: 'There are no active channels!',
   scheduleCampaign: 'Schedule Campaign',
   inactiveSchedule: 'Do you want to cancel the Schedule?',
-  subject: 'Subject'
+  subject: 'Subject',
+  rewards: 'Rewards',
+  youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.'
 };
