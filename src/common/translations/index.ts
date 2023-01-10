@@ -1379,6 +1379,8 @@ export default {
   programDetails: 'Program Details',
   loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
   loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program',
+  soldCount: 'Sold Count',
+  price: 'Price',
   promoCodeUsageDate: 'Promo Code Usage Date',
   inboxButtonText: 'Inbox Button Text',
   inboxButtonURL: 'Inbox Button URL',
@@ -1393,10 +1395,6 @@ export default {
   inboxText: 'Inbox Text',
   codeEditor: 'Code Editor',
   reportsByChannels: 'Reports By Channels',
-  youDontHaveEmailReportsAdded: 'You Dont Have Email Reports Added',
-  youDontHaveInboxReportsAdded: 'You Dont Have Inbox Reports Added',
-  pleaseAddEmailReports: 'Please Add Email Reports',
-  pleaseAddInboxReports: 'Please Add Inbox Reports',
   messageId: 'Message Id',
   responseMessage: 'Response Message',
   deliveredDate: 'Delivered Date',
@@ -1418,7 +1416,8 @@ export default {
   scheduleCampaign: 'Schedule Campaign',
   inactiveSchedule: 'Do you want to cancel the Schedule?',
   subject: 'Subject',
-  sentBy: 'Sent By',
+  rewards: 'Rewards',
+  youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.',
   failedMessages: 'Failed Messages',
   deliveredMessages: 'Delivered Messages',
   levelsAndGroups: 'Levels and Groups',
@@ -1430,5 +1429,8 @@ export default {
   maxCoin: 'Max Coin',
   emptyLoyalityLevelsFirstSentence: "You don't have any Levels added",
   emptyLoyalityLevelsSecondSentence: 'Please add a new Level',
-  levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!'
+  levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
+  rewardListTooltipText:
+    'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
+  attach: 'Attach'
 };
