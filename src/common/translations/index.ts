@@ -1422,6 +1422,5 @@ export default {
   deliveredMessages: 'Delivered Messages',
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
-  attach: 'Attach',
-
+  attach: 'Attach'
 };
