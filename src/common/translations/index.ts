@@ -1392,6 +1392,18 @@ export default {
   inboxSubject: 'Inbox Subject',
   inboxText: 'Inbox Text',
   codeEditor: 'Code Editor',
+  reportsByChannels: 'Reports By Channels',
+  messageId: 'Message Id',
+  responseMessage: 'Response Message',
+  deliveredDate: 'Delivered Date',
+  delivered: 'Delivered',
+
+  deliveredDateFrom: 'Delivered Date - From',
+  deliveredDateTo: 'Delivered Date - To',
+
+  sentDate: 'Sent Date',
+  sentDateFrom: 'Sent Date - From',
+  sentDateTo: 'Sent Date - To',
   toLeads: 'To Leads',
   toSegments: 'To Segments',
   addCampaign: 'Add Campaign',
@@ -1403,5 +1415,11 @@ export default {
   inactiveSchedule: 'Do you want to cancel the Schedule?',
   subject: 'Subject',
   rewards: 'Rewards',
-  youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.'
+  youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.',
+  failedMessages: 'Failed Messages',
+  deliveredMessages: 'Delivered Messages',
+  rewardListTooltipText:
+    'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
+  attach: 'Attach',
+
 };

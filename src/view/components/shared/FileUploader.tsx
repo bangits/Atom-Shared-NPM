@@ -47,37 +47,37 @@ export const FileUploader: FC<FileUploaderProps> = ({
         .get('fileUploader.minSize')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          ((fileUploaderProps?.minSize || fileUploaderDefaultValues.minSize) / 1024 / 1024).toString()
+          ((fileUploaderProps?.minSize ?? fileUploaderDefaultValues.minSize) / 1024 / 1024).toString()
         ),
       [FileUploaderErrors.MAX_SIZE]: t
         .get('fileUploader.maxSize')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          ((fileUploaderProps?.maxSize || fileUploaderDefaultValues.maxSize) / 1024 / 1024).toString()
+          ((fileUploaderProps?.maxSize ?? fileUploaderDefaultValues.maxSize) / 1024 / 1024).toString()
         ),
       [FileUploaderErrors.MIN_HEIGHT]: t
         .get('fileUploader.minHeight')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          (fileUploaderProps?.minHeight || fileUploaderDefaultValues.minHeight).toString()
+          (fileUploaderProps?.minHeight ?? fileUploaderDefaultValues.minHeight).toString()
         ),
       [FileUploaderErrors.MAX_HEIGHT]: t
         .get('fileUploader.maxHeight')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          (fileUploaderProps?.maxHeight || fileUploaderDefaultValues.maxHeight).toString()
+          (fileUploaderProps?.maxHeight ?? fileUploaderDefaultValues.maxHeight).toString()
         ),
       [FileUploaderErrors.MIN_WIDTH]: t
         .get('fileUploader.minWidth')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          (fileUploaderProps?.minWidth || fileUploaderDefaultValues.minWidth).toString()
+          (fileUploaderProps?.minWidth ?? fileUploaderDefaultValues.minWidth).toString()
         ),
       [FileUploaderErrors.MAX_WIDTH]: t
         .get('fileUploader.maxWidth')
         .replace(
           TRANSLATION_CHANGED_VALUE,
-          (fileUploaderProps?.maxWidth || fileUploaderDefaultValues.maxWidth).toString()
+          (fileUploaderProps?.maxWidth ?? fileUploaderDefaultValues.maxWidth).toString()
         ),
       [FileUploaderErrors.TYPE]: acceptError || t.get('fileUploader.defaultExtensionError')
     }),
