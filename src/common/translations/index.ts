@@ -1420,5 +1420,15 @@ export default {
   subject: 'Subject',
   sentBy: 'Sent By',
   failedMessages: 'Failed Messages',
-  deliveredMessages: 'Delivered Messages'
+  deliveredMessages: 'Delivered Messages',
+  levelsAndGroups: 'Levels and Groups',
+  tiersOfLevels: 'Tiers Of Levels',
+  loyalityLevelsTooltipText: "Please define the loyalty levels' maximum achievable coins for each level.",
+  addLevel: 'Add Level',
+  levels: 'Levels',
+  minCoin: 'Min Coin',
+  maxCoin: 'Max Coin',
+  emptyLoyalityLevelsFirstSentence: "You don't have any Levels added",
+  emptyLoyalityLevelsSecondSentence: 'Please add a new Level',
+  levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!'
 };
