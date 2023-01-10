@@ -1420,6 +1420,16 @@ export default {
   youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.',
   failedMessages: 'Failed Messages',
   deliveredMessages: 'Delivered Messages',
+  levelsAndGroups: 'Levels and Groups',
+  tiersOfLevels: 'Tiers Of Levels',
+  loyalityLevelsTooltipText: "Please define the loyalty levels' maximum achievable coins for each level.",
+  addLevel: 'Add Level',
+  levels: 'Levels',
+  minCoin: 'Min Coin',
+  maxCoin: 'Max Coin',
+  emptyLoyalityLevelsFirstSentence: "You don't have any Levels added",
+  emptyLoyalityLevelsSecondSentence: 'Please add a new Level',
+  levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
   attach: 'Attach'
