@@ -1427,10 +1427,20 @@ export default {
   levels: 'Levels',
   minCoin: 'Min Coin',
   maxCoin: 'Max Coin',
-  emptyLoyalityLevelsFirstSentence: "You don't have any Levels added",
-  emptyLoyalityLevelsSecondSentence: 'Please add a new Level',
+  emptyLoyaltyLevelsFirstSentence: "You don't have any Levels added",
+  emptyLoyaltyLevelsSecondSentence: 'Please add a new Level',
   levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
+  groupsMaxCountReached: 'The maximum count of groups should be $VALUE !!',
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
-  attach: 'Attach'
+  attach: 'Attach',
+  'from(Level)': 'From (Level)',
+  'to(Level)': 'To (Level)',
+  emptyLoyaltyGroupsFirstSentence: "You don't have any Groups added",
+  emptyLoyaltyGroupsSecondSentence: 'Please add a new Group',
+  loyalityGroupsTooltipText: 'Please make grouping for existing loyalty levels.',
+  tiersOfGroups: 'Tiers Of Groups',
+  emptyLoyaltyGroupLevelsFirstPart: 'Please',
+  emptyLoyaltyGroupLevelsSecondPart: 'to add a new Level for Grouping.',
+  loyaltyProgramIsDisabled: 'Loyalty Program is disabled!'
 };
