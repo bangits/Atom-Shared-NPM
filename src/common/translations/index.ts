@@ -1433,5 +1433,6 @@ export default {
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
   attach: 'Attach',
-  itemDetails: 'Item Details'
+  itemDetails: 'Item Details',
+  rewardType: 'Reward Type'
 };
