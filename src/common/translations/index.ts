@@ -1432,5 +1432,6 @@ export default {
   levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
-  attach: 'Attach'
+  attach: 'Attach',
+  itemDetails: 'Item Details'
 };
