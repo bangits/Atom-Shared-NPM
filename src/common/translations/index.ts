@@ -1442,5 +1442,7 @@ export default {
   tiersOfGroups: 'Tiers Of Groups',
   emptyLoyaltyGroupLevelsFirstPart: 'Please',
   emptyLoyaltyGroupLevelsSecondPart: 'to add a new Level for Grouping.',
-  loyaltyProgramIsDisabled: 'Loyalty Program is disabled!'
+  loyaltyProgramIsDisabled: 'Loyalty Program is disabled!',
+  itemDetails: 'Item Details',
+  rewardType: 'Reward Type'
 };
