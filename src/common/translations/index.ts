@@ -1456,5 +1456,5 @@ export default {
   itemDetails: 'Item Details',
   rewardType: 'Reward Type',
   itemNameAlreadyExists: 'Public Name Already Exists',
-
+  itemDisableButtonText: 'Item is Active!'
 };
