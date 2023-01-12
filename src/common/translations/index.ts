@@ -1444,5 +1444,19 @@ export default {
   emptyLoyaltyGroupLevelsSecondPart: 'to add a new Level for Grouping.',
   loyaltyProgramIsDisabled: 'Loyalty Program is disabled!',
   itemDetails: 'Item Details',
-  rewardType: 'Reward Type'
+  rewardType: 'Reward Type',
+  allLevels: 'All Levels',
+  loyaltyAllLevelsTooltipText:
+    'Current section is intended to distribute the coins values for each related earning rule.',
+  coinsDistributionEmptyLevelsFirstPart: 'There is no added ',
+  coinsDistributionEmptyLevelsSecondPart: ' yet. Please ',
+  coinsDistributionEmptyLevelsThirdPart: ' to add Level in ',
+  coinsDistributionEmptyLevelsFourthPart: 'tab',
+
+  coinsDistributionEmptyRulesFirstPart: 'There is no added ',
+  coinsDistributionEmptyRulesSecondPart: ' yet. Please ',
+  coinsDistributionEmptyRulesThirdPart: ' Rules from ',
+  coinsDistributionEmptyRulesFourthPart: 'tab',
+
+  groupsAndLevels: 'Groups And Levels'
 };
