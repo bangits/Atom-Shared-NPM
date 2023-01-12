@@ -1421,5 +1421,14 @@ export default {
   rewardListTooltipText:
     'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
   attach: 'Attach',
-
+  earningRules: 'Earning Rules',
+  rulesList: 'Rules List',
+  earningRewardsTooltipText: 'Please add rules and attach to loyalty levels for the  website users achievement',
+  addReward: 'Add Reward',
+  rewardsList: 'Rewards List',
+  loyaltyRuleEmptyText: 'Please add rules and attach to loyalty levels for the  website users achievement ',
+  rewardsSettings: 'Rewards Settings',
+  noAddedRules: 'There is no added Earning Rules yet. Please add Rules.',
+  attachedLevel: 'Attached Level',
+  excludeLoyaltyRule: 'Do you want to exclude the '
 };
