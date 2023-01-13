@@ -1487,5 +1487,9 @@ export default {
   emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
   emptyLevelRulesSecondPart: ' in “Rules” tab',
 
-  relate: 'Relate'
+  relate: 'Relate',
+
+  pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
+
+  sumOfDistributionMustBe100: 'Sum of Distribution must be 100!'
 };
