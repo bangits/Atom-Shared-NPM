@@ -1471,5 +1471,21 @@ export default {
   groupsAndLevels: 'Groups And Levels',
 
   itemNameAlreadyExists: 'Public Name Already Exists',
-  itemDisableButtonText: 'Item is Active!'
+  itemDisableButtonText: 'Item is Active!',
+
+  coinsDistribution: 'Coins Distribution',
+
+  coinsDistributionInfo:
+    'The whole related earning rules to each level should be completed by the website users for passing to the next level.',
+  maxCoins: 'Max Coins',
+  toAchieveForNextLevel: 'to achieve for next Level',
+  remainingForDistribute: 'Remaining for Distribute',
+
+  distribution: 'Distribution',
+  equivalentToCoins: 'Equivalent to Coins',
+
+  emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
+  emptyLevelRulesSecondPart: ' in “Rules” tab',
+
+  relate: 'Relate'
 };
