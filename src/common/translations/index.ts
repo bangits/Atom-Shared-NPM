@@ -1491,5 +1491,7 @@ export default {
 
   pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
 
-  sumOfDistributionMustBe100: 'Sum of Distribution must be 100!'
+  sumOfDistributionMustBe100: 'Sum of Distribution must be 100!',
+  doYouWantToExclude: 'Do you want to exclude',
+  level: 'Level'
 };
