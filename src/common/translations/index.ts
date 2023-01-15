@@ -1454,5 +1454,10 @@ export default {
   emptyLoyaltyGroupLevelsSecondPart: 'to add a new Level for Grouping.',
   loyaltyProgramIsDisabled: 'Loyalty Program is disabled!',
   itemDetails: 'Item Details',
-  rewardType: 'Reward Type'
+  rewardType: 'Reward Type',
+  mediaAndTerms: 'Media & Terms',
+  'media&PublicInformation': 'Media & Public Information',
+  mediaGroupEmptyText: 'There is no added groups yet. Please Click here add groups in “Groups and Levels” Tab',
+  frameColor: 'Frame Color',
+  groupPublicName: 'Group Public Name'
 };
