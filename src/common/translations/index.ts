@@ -1459,5 +1459,46 @@ export default {
   'media&PublicInformation': 'Media & Public Information',
   mediaGroupEmptyText: 'There is no added groups yet. Please Click here add groups in “Groups and Levels” Tab',
   frameColor: 'Frame Color',
-  groupPublicName: 'Group Public Name'
+  groupPublicName: 'Group Public Name',
+  allLevels: 'All Levels',
+  loyaltyAllLevelsTooltipText:
+    'Current section is intended to distribute the coins values for each related earning rule.',
+  coinsDistributionEmptyLevelsFirstPart: 'There is no added ',
+  coinsDistributionEmptyLevelsSecondPart: ' yet. Please ',
+  coinsDistributionEmptyLevelsThirdPart: ' to add Level in ',
+  coinsDistributionEmptyLevelsFourthPart: 'tab',
+
+  coinsDistributionEmptyRulesFirstPart: 'There is no added ',
+  coinsDistributionEmptyRulesSecondPart: ' yet. Please ',
+  coinsDistributionEmptyRulesThirdPart: ' Rules from ',
+  coinsDistributionEmptyRulesFourthPart: 'tab',
+
+  groupsAndLevels: 'Groups And Levels',
+
+  itemNameAlreadyExists: 'Public Name Already Exists',
+  itemDisableButtonText: 'Item is Active!',
+
+  coinsDistribution: 'Coins Distribution',
+
+  coinsDistributionInfo:
+    'The whole related earning rules to each level should be completed by the website users for passing to the next level.',
+  maxCoins: 'Max Coins',
+  toAchieveForNextLevel: 'to achieve for next Level',
+  remainingForDistribute: 'Remaining for Distribute',
+
+  distribution: 'Distribution',
+  equivalentToCoins: 'Equivalent to Coins',
+
+  emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
+  emptyLevelRulesSecondPart: ' in “Rules” tab',
+
+  relate: 'Relate',
+
+  pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
+
+  sumOfDistributionMustBe100: 'Sum of Distribution must be 100!',
+  doYouWantToExclude: 'Do you want to exclude',
+  level: 'Level',
+
+  rewardName: 'Reward Name'
 };
