@@ -1493,5 +1493,7 @@ export default {
 
   sumOfDistributionMustBe100: 'Sum of Distribution must be 100!',
   doYouWantToExclude: 'Do you want to exclude',
-  level: 'Level'
+  level: 'Level',
+
+  rewardName: 'Reward Name'
 };
