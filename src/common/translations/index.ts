@@ -1507,5 +1507,7 @@ export default {
   fromLoyaltyProgram: 'from Loyalty Program',
   attachReward: 'Attach Reward',
 
-  maxLevelsForRewardReached: 'The maximum rewards for one level reached!'
+  maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
+
+  attachLevelsOrGroups: 'Attach Levels or Groups'
 };
