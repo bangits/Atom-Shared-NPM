@@ -1427,6 +1427,8 @@ export default {
   levels: 'Levels',
   minCoin: 'Min Coin',
   maxCoin: 'Max Coin',
+  emptyLoyaltyRewardsFirstPart: 'There is no added ',
+  emptyLoyaltyRewardsSecondPart: ' yet. Please add Reward.',
   emptyLoyaltyLevelsFirstSentence: "You don't have any Levels added",
   emptyLoyaltyLevelsSecondSentence: 'Please add a new Level',
   levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
@@ -1443,6 +1445,7 @@ export default {
   rewardsSettings: 'Rewards Settings',
   noAddedRules: 'There is no added Earning Rules yet. Please add Rules.',
   attachedLevel: 'Attached Level',
+  attachedLevels: 'Attached Levels',
   excludeLoyaltyRule: 'Do you want to exclude the ',
   'from(Level)': 'From (Level)',
   'to(Level)': 'To (Level)',
@@ -1495,5 +1498,9 @@ export default {
   doYouWantToExclude: 'Do you want to exclude',
   level: 'Level',
 
-  rewardName: 'Reward Name'
+  rewardName: 'Reward Name',
+  fromLoyaltyProgram: 'from Loyalty Program',
+  attachReward: 'Attach Reward',
+
+  maxLevelsForRewardReached: 'The maximum rewards for one level reached!'
 };
