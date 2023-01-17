@@ -1509,5 +1509,16 @@ export default {
 
   maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
 
-  attachLevelsOrGroups: 'Attach Levels or Groups'
+  attachLevelsOrGroups: 'Attach Levels or Groups',
+
+  pleaseAddRules: 'There are no added Earning Rules yet.',
+
+  mediaListTooltipText:
+    'The whole filled information and styles will be published on website after Loyalty Program get enabled',
+
+  levelPublicName: 'Level Public Name',
+
+  shortPublicName: 'Short Public Name',
+
+  levelImage: 'Level Image'
 };
