@@ -36,7 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
-    lessThanMin: 'The value is less than minimum value',
+    lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
     positive: `${TRANSLATION_CHANGED_VALUE} must be a positive number!`,
@@ -1427,6 +1427,8 @@ export default {
   levels: 'Levels',
   minCoin: 'Min Coin',
   maxCoin: 'Max Coin',
+  emptyLoyaltyRewardsFirstPart: 'There is no added ',
+  emptyLoyaltyRewardsSecondPart: ' yet. Please add Reward.',
   emptyLoyaltyLevelsFirstSentence: "You don't have any Levels added",
   emptyLoyaltyLevelsSecondSentence: 'Please add a new Level',
   levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
@@ -1443,6 +1445,7 @@ export default {
   rewardsSettings: 'Rewards Settings',
   noAddedRules: 'There is no added Earning Rules yet. Please add Rules.',
   attachedLevel: 'Attached Level',
+  attachedLevels: 'Attached Levels',
   excludeLoyaltyRule: 'Do you want to exclude the ',
   'from(Level)': 'From (Level)',
   'to(Level)': 'To (Level)',
@@ -1473,6 +1476,11 @@ export default {
   coinsDistributionEmptyRulesThirdPart: ' Rules from ',
   coinsDistributionEmptyRulesFourthPart: 'tab',
 
+  rewardsSettingsEmptyRewardsFirstPart: 'There is no added ',
+  rewardsSettingsEmptyRewardsSecondPart: ' yet. Please ',
+  rewardsSettingsEmptyRewardsThirdPart: ' Rewards from ',
+  rewardsSettingsEmptyRewardsFourthPart: 'tab',
+
   groupsAndLevels: 'Groups And Levels',
 
   itemNameAlreadyExists: 'Public Name Already Exists',
@@ -1492,6 +1500,9 @@ export default {
   emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
   emptyLevelRulesSecondPart: ' in “Rules” tab',
 
+  emptyLevelRewardsFirstPart: 'There is no related Rewards to current Level. Please ',
+  emptyLevelRewardsSecondPart: ' in “Rewards List” tab',
+
   relate: 'Relate',
 
   pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
@@ -1506,5 +1517,25 @@ export default {
   itemName: 'Item Name',
   itemID: 'Item ID',
   itemType: 'Item Type',
-  orderDate: 'Order Date'
+  orderDate: 'Order Date',
+  fromLoyaltyProgram: 'from Loyalty Program',
+  attachReward: 'Attach Reward',
+
+  maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
+
+  attachLevelsOrGroups: 'Attach Levels or Groups',
+  rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
+
+  'cashback%': 'Cashback (%)',
+
+  pleaseAddRules: 'There are no added Earning Rules yet.',
+
+  mediaListTooltipText:
+    'The whole filled information and styles will be published on website after Loyalty Program get enabled',
+
+  levelPublicName: 'Level Public Name',
+
+  shortPublicName: 'Short Public Name',
+
+  levelImage: 'Level Image'
 };
