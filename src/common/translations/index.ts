@@ -1520,5 +1520,16 @@ export default {
   attachLevelsOrGroups: 'Attach Levels or Groups',
   rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
 
-  'cashback%': 'Cashback (%)'
+  'cashback%': 'Cashback (%)',
+
+  pleaseAddRules: 'There are no added Earning Rules yet.',
+
+  mediaListTooltipText:
+    'The whole filled information and styles will be published on website after Loyalty Program get enabled',
+
+  levelPublicName: 'Level Public Name',
+
+  shortPublicName: 'Short Public Name',
+
+  levelImage: 'Level Image'
 };
