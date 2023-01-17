@@ -1500,5 +1500,11 @@ export default {
   doYouWantToExclude: 'Do you want to exclude',
   level: 'Level',
 
-  rewardName: 'Reward Name'
+  rewardName: 'Reward Name',
+  orderName: 'Order Name',
+  orderId: 'Order ID',
+  itemName: 'Item Name',
+  itemID: 'Item ID',
+  itemType: 'Item Type',
+  orderDate: 'Order Date'
 };
