@@ -1537,5 +1537,9 @@ export default {
 
   shortPublicName: 'Short Public Name',
 
-  levelImage: 'Level Image'
+  levelImage: 'Level Image',
+  boostValue: 'Boost Value',
+  itemId: 'Item ID',
+  orderDateFrom: 'Order Date From',
+  orderDateTo: 'Order Date To'
 };
