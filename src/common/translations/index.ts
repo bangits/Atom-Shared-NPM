@@ -1538,13 +1538,27 @@ export default {
   shortPublicName: 'Short Public Name',
 
   levelImage: 'Level Image',
+
+  mediaRewardTooltipText: 'Please add the rewards public names for displaying on the website',
+
+  mediaRuleTooltipText: 'Please add the earning rules public names for displaying on the website.',
+
+  loyaltyProgramDisabled: 'Loyalty Program is disabled ',
+
   boostValue: 'Boost Value',
+
   itemId: 'Item ID',
+
   orderDateFrom: 'Order Date From',
+
   orderDateTo: 'Order Date To',
+
   canceled: 'Canceled',
+
   updateOrder: 'Update Order',
+
   activationPeriod: 'Activation Period',
+
   notes: 'Notes',
   orderDetails: 'Order Details',
   fromItem: 'from Item',
