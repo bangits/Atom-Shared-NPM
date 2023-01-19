@@ -1546,5 +1546,9 @@ export default {
   updateOrder: 'Update Order',
   activationPeriod: 'Activation Period',
   notes: 'Notes',
-  orderDetails: 'Order Details'
+  orderDetails: 'Order Details',
+  fromItem: 'from Item',
+  timerTooltipText: 'Specify the activation period of the packages',
+  itemRewardListTooltipText:
+    'Reward public names are at the right side , you can edit them comparing with the original names'
 };
