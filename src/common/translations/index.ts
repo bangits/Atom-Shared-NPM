@@ -36,7 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
-    lessThanMin: 'The value is less than minimum value',
+    lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
     positive: `${TRANSLATION_CHANGED_VALUE} must be a positive number!`,
@@ -1476,6 +1476,11 @@ export default {
   coinsDistributionEmptyRulesThirdPart: ' Rules from ',
   coinsDistributionEmptyRulesFourthPart: 'tab',
 
+  rewardsSettingsEmptyRewardsFirstPart: 'There is no added ',
+  rewardsSettingsEmptyRewardsSecondPart: ' yet. Please ',
+  rewardsSettingsEmptyRewardsThirdPart: ' Rewards from ',
+  rewardsSettingsEmptyRewardsFourthPart: 'tab',
+
   groupsAndLevels: 'Groups And Levels',
 
   itemNameAlreadyExists: 'Public Name Already Exists',
@@ -1495,6 +1500,9 @@ export default {
   emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
   emptyLevelRulesSecondPart: ' in “Rules” tab',
 
+  emptyLevelRewardsFirstPart: 'There is no related Rewards to current Level. Please ',
+  emptyLevelRewardsSecondPart: ' in “Rewards List” tab',
+
   relate: 'Relate',
 
   pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
@@ -1504,12 +1512,21 @@ export default {
   level: 'Level',
 
   rewardName: 'Reward Name',
+  orderName: 'Order Name',
+  orderId: 'Order ID',
+  itemName: 'Item Name',
+  itemID: 'Item ID',
+  itemType: 'Item Type',
+  orderDate: 'Order Date',
   fromLoyaltyProgram: 'from Loyalty Program',
   attachReward: 'Attach Reward',
 
   maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
 
   attachLevelsOrGroups: 'Attach Levels or Groups',
+  rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
+
+  'cashback%': 'Cashback (%)',
 
   pleaseAddRules: 'There are no added Earning Rules yet.',
 
@@ -1526,5 +1543,23 @@ export default {
 
   mediaRuleTooltipText: 'Please add the earning rules public names for displaying on the website.',
 
-  loyaltyProgramDisabled: 'Loyalty Program is disabled '
+  loyaltyProgramDisabled: 'Loyalty Program is disabled ',
+
+  boostValue: 'Boost Value',
+
+  itemId: 'Item ID',
+
+  orderDateFrom: 'Order Date From',
+
+  orderDateTo: 'Order Date To',
+
+  canceled: 'Canceled',
+
+  updateOrder: 'Update Order',
+
+  activationPeriod: 'Activation Period',
+
+  notes: 'Notes',
+
+  orderDetails: 'Order Details'
 };
