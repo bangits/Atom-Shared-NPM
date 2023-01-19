@@ -1541,5 +1541,10 @@ export default {
   boostValue: 'Boost Value',
   itemId: 'Item ID',
   orderDateFrom: 'Order Date From',
-  orderDateTo: 'Order Date To'
+  orderDateTo: 'Order Date To',
+  canceled: 'Canceled',
+  updateOrder: 'Update Order',
+  activationPeriod: 'Activation Period',
+  notes: 'Notes',
+  orderDetails: 'Order Details'
 };
