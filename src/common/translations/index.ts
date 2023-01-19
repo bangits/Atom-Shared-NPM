@@ -1520,5 +1520,11 @@ export default {
 
   shortPublicName: 'Short Public Name',
 
-  levelImage: 'Level Image'
+  levelImage: 'Level Image',
+
+  mediaRewardTooltipText: 'Please add the rewards public names for displaying on the website',
+
+  mediaRuleTooltipText: 'Please add the earning rules public names for displaying on the website.',
+
+  loyaltyProgramDisabled: 'Loyalty Program is disabled '
 };
