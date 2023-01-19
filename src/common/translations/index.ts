@@ -1545,6 +1545,8 @@ export default {
 
   loyaltyProgramDisabled: 'Loyalty Program is disabled ',
 
+  loyaltyProgramMediaDisabled: 'Loyalty Program in use and cannot be changed',
+
   boostValue: 'Boost Value',
 
   itemId: 'Item ID',
@@ -1561,5 +1563,43 @@ export default {
 
   notes: 'Notes',
 
-  orderDetails: 'Order Details'
+  orderDetails: 'Order Details',
+
+  coinsBalanceFrom: 'Coins Balance From',
+
+  coinsBalanceTo: 'Coins Balance To',
+
+  paidCoinsBalanceFrom: 'Paid Coins Balance From',
+
+  paidCoinsBalanceTo: 'Paid Coins Balance To',
+
+  groupsFrom: 'Groups From',
+
+  groupsTo: 'Groups To',
+
+  levelsFrom: 'Levels From',
+
+  levelsTo: 'Levels To',
+
+  levelUpdateDateFrom: 'Level Update Date From',
+
+  levelUpdateDateTo: 'Level Update Date To',
+
+  groupUpdateDateFrom: 'Group Update Date From',
+
+  groupUpdateDateTo: 'Group Update Date To',
+
+  joinedDateFrom: 'joined Date From',
+
+  joinedDateTo: 'joined Date To',
+
+  paidCoins: 'Paid Coins',
+
+  remainingCoinsForNextLevel: 'Remaining Coins For Next Level',
+
+  joinDate: 'Join Date',
+
+  levelUpdateDate: 'Level Update Date',
+
+  groupUpdateDate: 'Group Update Date'
 };
