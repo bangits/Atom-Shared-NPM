@@ -1523,6 +1523,8 @@ export default {
 
   maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
 
+  maxLevelsForRuleReached: 'The maximum rules for one level reached!',
+
   attachLevelsOrGroups: 'Attach Levels or Groups',
   rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
 
