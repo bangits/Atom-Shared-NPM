@@ -1608,5 +1608,10 @@ export default {
   fromItem: 'from Item',
   timerTooltipText: 'Specify the activation period of the packages',
   itemRewardListTooltipText:
-    'Reward public names are at the right side , you can edit them comparing with the original names'
+    'Reward public names are at the right side , you can edit them comparing with the original names',
+  calculationPeriod: 'Calculation Period',
+  provisionTime: 'Provision Time',
+  provisionModel: 'Provision Model',
+  nonTired: 'Non Tired',
+  tired: 'Tired'
 };
