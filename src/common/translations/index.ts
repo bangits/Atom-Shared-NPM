@@ -1591,9 +1591,9 @@ export default {
 
   groupUpdateDateTo: 'Group Update Date To',
 
-  joinedDateFrom: 'joined Date From',
+  joinedDateFrom: 'Joined Date From',
 
-  joinedDateTo: 'joined Date To',
+  joinedDateTo: 'Joined Date To',
 
   paidCoins: 'Paid Coins',
 
