@@ -36,7 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
-    lessThanMin: 'The value is less than minimum value',
+    lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
     positive: `${TRANSLATION_CHANGED_VALUE} must be a positive number!`,
@@ -1368,9 +1368,9 @@ export default {
   reportByLinks: 'Report By Links',
   tiersAmoutOrPecentageValidation: 'The "To" and/or "Amount or Percentage" fields are required!',
   commissionPlanId: 'Commission Plan ID',
-  groupsCount: 'Groups Count',
-  levelsCount: 'Levels Count',
-  rewardsCount: 'Rewards Count',
+  groupsCount: 'Groups',
+  levelsCount: 'Levels',
+  rewardsCount: 'Rewards',
   loyaltyPrograms: 'Loyalty Programs',
   loyaltyProgram: 'Loyalty Program',
   addLoyaltyProgram: 'Add Loyalty Program',
@@ -1379,6 +1379,8 @@ export default {
   programDetails: 'Program Details',
   loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
   loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program',
+  soldCount: 'Sold Count',
+  price: 'Price',
   promoCodeUsageDate: 'Promo Code Usage Date',
   inboxButtonText: 'Inbox Button Text',
   inboxButtonURL: 'Inbox Button URL',
@@ -1393,10 +1395,6 @@ export default {
   inboxText: 'Inbox Text',
   codeEditor: 'Code Editor',
   reportsByChannels: 'Reports By Channels',
-  youDontHaveEmailReportsAdded: 'You Dont Have Email Reports Added',
-  youDontHaveInboxReportsAdded: 'You Dont Have Inbox Reports Added',
-  pleaseAddEmailReports: 'Please Add Email Reports',
-  pleaseAddInboxReports: 'Please Add Inbox Reports',
   messageId: 'Message Id',
   responseMessage: 'Response Message',
   deliveredDate: 'Delivered Date',
@@ -1418,7 +1416,202 @@ export default {
   scheduleCampaign: 'Schedule Campaign',
   inactiveSchedule: 'Do you want to cancel the Schedule?',
   subject: 'Subject',
-  sentBy: 'Sent By',
+  rewards: 'Rewards',
+  youDontHaveEmailReportsAdded: 'There are no System Notifications or Campaigns sent.',
   failedMessages: 'Failed Messages',
-  deliveredMessages: 'Delivered Messages'
+  deliveredMessages: 'Delivered Messages',
+  levelsAndGroups: 'Levels and Groups',
+  tiersOfLevels: 'Tiers Of Levels',
+  loyalityLevelsTooltipText: "Please define the loyalty levels' maximum achievable coins for each level.",
+  addLevel: 'Add Level',
+  levels: 'Levels',
+  minCoin: 'Min Coin',
+  maxCoin: 'Max Coin',
+  emptyLoyaltyRewardsFirstPart: 'There is no added ',
+  emptyLoyaltyRewardsSecondPart: ' yet. Please add Reward.',
+  emptyLoyaltyLevelsFirstSentence: "You don't have any Levels added",
+  emptyLoyaltyLevelsSecondSentence: 'Please add a new Level',
+  levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
+  groupsMaxCountReached: 'The maximum count of groups should be $VALUE !!',
+  rewardListTooltipText:
+    'Please add a rewards and attach to loyalty levels for awardees by the achievers to the levels',
+  attach: 'Attach',
+  earningRules: 'Earning Rules',
+  rulesList: 'Rules List',
+  earningRewardsTooltipText: 'Please add rules and attach to loyalty levels for the  website users achievement',
+  addReward: 'Add Reward',
+  rewardsList: 'Rewards List',
+  loyaltyRuleEmptyText: 'Please add rules and attach to loyalty levels for the  website users achievement ',
+  rewardsSettings: 'Rewards Settings',
+  noAddedRules: 'There is no added Earning Rules yet. Please add Rules.',
+  attachedLevel: 'Attached Level',
+  attachedLevels: 'Attached Levels',
+  excludeLoyaltyRule: 'Do you want to exclude the ',
+  'from(Level)': 'From (Level)',
+  'to(Level)': 'To (Level)',
+  emptyLoyaltyGroupsFirstSentence: "You don't have any Groups added",
+  emptyLoyaltyGroupsSecondSentence: 'Please add a new Group',
+  loyalityGroupsTooltipText: 'Please make grouping for existing loyalty levels.',
+  tiersOfGroups: 'Tiers Of Groups',
+  emptyLoyaltyGroupLevelsFirstPart: 'Please',
+  emptyLoyaltyGroupLevelsSecondPart: 'to add a new Level for Grouping.',
+  loyaltyProgramIsDisabled: 'Loyalty Program is disabled!',
+  itemDetails: 'Item Details',
+  rewardType: 'Reward Type',
+  mediaAndTerms: 'Media & Terms',
+  'media&PublicInformation': 'Media & Public Information',
+  mediaGroupEmptyText: 'There is no added groups yet. Please Click here add groups in “Groups and Levels” Tab',
+  frameColor: 'Frame Color',
+  groupPublicName: 'Group Public Name',
+  allLevels: 'All Levels',
+  loyaltyAllLevelsTooltipText:
+    'Current section is intended to distribute the coins values for each related earning rule.',
+  coinsDistributionEmptyLevelsFirstPart: 'There is no added ',
+  coinsDistributionEmptyLevelsSecondPart: ' yet. Please ',
+  coinsDistributionEmptyLevelsThirdPart: ' to add Level in ',
+  coinsDistributionEmptyLevelsFourthPart: 'tab',
+
+  coinsDistributionEmptyRulesFirstPart: 'There is no added ',
+  coinsDistributionEmptyRulesSecondPart: ' yet. Please ',
+  coinsDistributionEmptyRulesThirdPart: ' Rules from ',
+  coinsDistributionEmptyRulesFourthPart: 'tab',
+
+  rewardsSettingsEmptyRewardsFirstPart: 'There is no added ',
+  rewardsSettingsEmptyRewardsSecondPart: ' yet. Please ',
+  rewardsSettingsEmptyRewardsThirdPart: ' Rewards from ',
+  rewardsSettingsEmptyRewardsFourthPart: 'tab',
+
+  groupsAndLevels: 'Groups And Levels',
+
+  itemNameAlreadyExists: 'Public Name Already Exists',
+  itemDisableButtonText: 'Item is Active!',
+
+  coinsDistribution: 'Coins Distribution',
+
+  coinsDistributionInfo:
+    'The whole related earning rules to each level should be completed by the website users for passing to the next level.',
+  maxCoins: 'Max Coins',
+  toAchieveForNextLevel: 'to achieve for next Level',
+  remainingForDistribute: 'Remaining for Distribute',
+
+  distribution: 'Distribution',
+  equivalentToCoins: 'Equivalent to Coins',
+
+  emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
+  emptyLevelRulesSecondPart: ' in “Rules” tab',
+
+  emptyLevelRewardsFirstPart: 'There is no related Rewards to current Level. Please ',
+  emptyLevelRewardsSecondPart: ' in “Rewards List” tab',
+
+  relate: 'Relate',
+
+  pleaseChangeDistributionPercentage: 'Please change the distribution percentage',
+
+  sumOfDistributionMustBe100: 'Sum of Distribution must be 100!',
+  doYouWantToExclude: 'Do you want to exclude',
+  level: 'Level',
+
+  rewardName: 'Reward Name',
+  orderName: 'Order Name',
+  orderId: 'Order ID',
+  itemName: 'Item Name',
+  itemID: 'Item ID',
+  itemType: 'Item Type',
+  orderDate: 'Order Date',
+  fromLoyaltyProgram: 'from Loyalty Program',
+  attachReward: 'Attach Reward',
+
+  maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
+
+  maxLevelsForRuleReached: 'The maximum rules for one level reached!',
+
+  attachLevelsOrGroups: 'Attach Levels or Groups',
+  rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
+
+  'cashback%': 'Cashback (%)',
+
+  pleaseAddRules: 'There are no added Earning Rules yet.',
+
+  mediaListTooltipText:
+    'The whole filled information and styles will be published on website after Loyalty Program get enabled',
+
+  levelPublicName: 'Level Public Name',
+
+  shortPublicName: 'Short Public Name',
+
+  levelImage: 'Level Image',
+
+  mediaRewardTooltipText: 'Please add the rewards public names for displaying on the website',
+
+  mediaRuleTooltipText: 'Please add the earning rules public names for displaying on the website.',
+
+  loyaltyProgramDisabled: 'Loyalty Program is disabled ',
+
+  loyaltyProgramMediaDisabled: 'Loyalty Program in use and cannot be changed',
+
+  boostValue: 'Boost Value',
+
+  itemId: 'Item ID',
+
+  orderDateFrom: 'Order Date From',
+
+  orderDateTo: 'Order Date To',
+
+  canceled: 'Canceled',
+
+  updateOrder: 'Update Order',
+
+  activationPeriod: 'Activation Period',
+
+  notes: 'Notes',
+
+  orderDetails: 'Order Details',
+
+  coinsBalanceFrom: 'Coins Balance From',
+
+  coinsBalanceTo: 'Coins Balance To',
+
+  paidCoinsBalanceFrom: 'Paid Coins Balance From',
+
+  paidCoinsBalanceTo: 'Paid Coins Balance To',
+
+  groupsFrom: 'Groups From',
+
+  groupsTo: 'Groups To',
+
+  levelsFrom: 'Levels From',
+
+  levelsTo: 'Levels To',
+
+  levelUpdateDateFrom: 'Level Update Date From',
+
+  levelUpdateDateTo: 'Level Update Date To',
+
+  groupUpdateDateFrom: 'Group Update Date From',
+
+  groupUpdateDateTo: 'Group Update Date To',
+
+  joinedDateFrom: 'Joined Date From',
+
+  joinedDateTo: 'Joined Date To',
+
+  paidCoins: 'Paid Coins',
+
+  remainingCoinsForNextLevel: 'Remaining Coins For Next Level',
+
+  joinDate: 'Join Date',
+
+  levelUpdateDate: 'Level Update Date',
+
+  groupUpdateDate: 'Group Update Date',
+
+  fromItem: 'from Item',
+  timerTooltipText: 'Specify the activation period of the packages',
+  itemRewardListTooltipText:
+    'Reward public names are at the right side , you can edit them comparing with the original names',
+  calculationPeriod: 'Calculation Period',
+  provisionTime: 'Provision Time',
+  provisionModel: 'Provision Model',
+  nonTired: 'Non Tired',
+  tired: 'Tired'
 };
