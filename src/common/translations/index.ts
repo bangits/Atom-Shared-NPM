@@ -36,6 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
+    negative: 'Sorry, only negative numbers are allowed!',
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
@@ -1523,6 +1524,8 @@ export default {
 
   maxLevelsForRewardReached: 'The maximum rewards for one level reached!',
 
+  maxLevelsForRuleReached: 'The maximum rules for one level reached!',
+
   attachLevelsOrGroups: 'Attach Levels or Groups',
   rewardSettingsInfo: 'Here you can define the rewards values which should be provided to the achievers of each level.',
 
@@ -1545,6 +1548,8 @@ export default {
 
   loyaltyProgramDisabled: 'Loyalty Program is disabled ',
 
+  loyaltyProgramMediaDisabled: 'Loyalty Program in use and cannot be changed',
+
   boostValue: 'Boost Value',
 
   itemId: 'Item ID',
@@ -1560,12 +1565,57 @@ export default {
   activationPeriod: 'Activation Period',
 
   notes: 'Notes',
+
   orderDetails: 'Order Details',
+
+  coinsBalanceFrom: 'Coins Balance From',
+
+  coinsBalanceTo: 'Coins Balance To',
+
+  paidCoinsBalanceFrom: 'Paid Coins Balance From',
+
+  paidCoinsBalanceTo: 'Paid Coins Balance To',
+
+  groupsFrom: 'Groups From',
+
+  groupsTo: 'Groups To',
+
+  levelsFrom: 'Levels From',
+
+  levelsTo: 'Levels To',
+
+  levelUpdateDateFrom: 'Level Update Date From',
+
+  levelUpdateDateTo: 'Level Update Date To',
+
+  groupUpdateDateFrom: 'Group Update Date From',
+
+  groupUpdateDateTo: 'Group Update Date To',
+
+  joinedDateFrom: 'Joined Date From',
+
+  joinedDateTo: 'Joined Date To',
+
+  paidCoins: 'Paid Coins',
+
+  remainingCoinsForNextLevel: 'Remaining Coins For Next Level',
+
+  joinDate: 'Join Date',
+
+  levelUpdateDate: 'Level Update Date',
+
+  groupUpdateDate: 'Group Update Date',
+
   fromItem: 'from Item',
   timerTooltipText: 'Specify the activation period of the packages',
   itemRewardListTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names',
   emptyItemRewardsFirstPart: 'There is no added ',
   youDontHaveItemsAdded: 'You Dont Have Items Added!',
-  pleaseAddItem: 'Please Add Item.'
+  pleaseAddItem: 'Please Add Item.',
+  calculationPeriod: 'Calculation Period',
+  provisionTime: 'Provision Time',
+  provisionModel: 'Provision Model',
+  nonTired: 'Non Tired',
+  tired: 'Tired'
 };
