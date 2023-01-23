@@ -1564,5 +1564,8 @@ export default {
   fromItem: 'from Item',
   timerTooltipText: 'Specify the activation period of the packages',
   itemRewardListTooltipText:
-    'Reward public names are at the right side , you can edit them comparing with the original names'
+    'Reward public names are at the right side , you can edit them comparing with the original names',
+  emptyItemRewardsFirstPart: 'There is no added ',
+  youDontHaveItemsAdded: 'You Dont Have Items Added!',
+  pleaseAddItem: 'Please Add Item.'
 };
