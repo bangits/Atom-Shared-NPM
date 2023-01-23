@@ -1379,7 +1379,7 @@ export default {
   pleaseAddLoyaltyProgram: 'Please add a loyalty program.',
   programDetails: 'Program Details',
   loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
-  loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program',
+  loyaltyProgramDateRangeError: 'Date range is crossed by another loyalty program',
   soldCount: 'Sold Count',
   price: 'Price',
   promoCodeUsageDate: 'Promo Code Usage Date',
