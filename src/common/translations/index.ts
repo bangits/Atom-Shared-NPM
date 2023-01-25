@@ -1618,5 +1618,6 @@ export default {
   provisionModel: 'Provision Model',
   nonTired: 'Non Tired',
   tired: 'Tired',
-  editReward: 'Edit Reward'
+  editReward: 'Edit Reward',
+  rewardUpdated:'Reward Succsessfuly Updated!'
 };
