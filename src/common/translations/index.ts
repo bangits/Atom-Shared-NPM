@@ -1617,5 +1617,6 @@ export default {
   provisionTime: 'Provision Time',
   provisionModel: 'Provision Model',
   nonTired: 'Non Tired',
-  tired: 'Tired'
+  tired: 'Tired',
+  editReward: 'Edit Reward'
 };
