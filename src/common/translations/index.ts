@@ -1619,5 +1619,6 @@ export default {
   nonTired: 'Non Tired',
   tired: 'Tired',
   editReward: 'Edit Reward',
-  rewardUpdated:'Reward Succsessfuly Updated!'
+  rewardUpdated: 'Reward Succsessfuly Updated!',
+  rewardTooltipText: 'Reward public names are at the right side , you can edit them comparing with the original names  '
 };
