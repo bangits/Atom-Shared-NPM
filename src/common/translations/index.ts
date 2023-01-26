@@ -1616,9 +1616,15 @@ export default {
   packages: 'Packages',
   itemRewardListTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names',
+  emptyItemRewardsFirstPart: 'There is no added ',
+  youDontHaveItemsAdded: 'You Dont Have Items Added!',
+  pleaseAddItem: 'Please Add Item.',
   calculationPeriod: 'Calculation Period',
   provisionTime: 'Provision Time',
   provisionModel: 'Provision Model',
   nonTired: 'Non Tired',
-  tired: 'Tired'
+  tired: 'Tired',
+  editReward: 'Edit Reward',
+  rewardUpdated: 'Reward Succsessfuly Updated!',
+  rewardTooltipText: 'Reward public names are at the right side , you can edit them comparing with the original names  '
 };
