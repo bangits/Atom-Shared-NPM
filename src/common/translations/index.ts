@@ -36,6 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
+    negative: 'Sorry, only negative numbers are allowed!',
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
@@ -630,6 +631,7 @@ export default {
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
   noAddedGames: 'There are no added games yet',
+  noAddedItems: 'There are no added items yet',
   noAddedProviders: 'There are no added providers yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
@@ -669,6 +671,8 @@ export default {
   allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
   buttonUnAuthorizedUrl: 'Button URL (for non authorized)',
   addGames: 'Add Games',
+  addItems: 'Add Items',
+  addPackages: 'Add Packages',
   button: 'Button',
   text: 'Text',
   buttonAuthorizedUrl: 'Button URL (for authorized)',
@@ -677,6 +681,7 @@ export default {
   unselectAll: 'Unselect All',
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
+  totalItemsCount: 'Total items count',
   totalProvidersCount: 'Total providers count',
   invalidPosition: 'Invalid position!',
   system: 'System',
@@ -1138,6 +1143,7 @@ export default {
   task: 'Task',
   atLeastOneTask: 'At least one task must be in program!',
   noAddedTasks: 'There are no added tasks yet',
+  noAddedPackages: 'There are no added packages yet',
   reply: 'Reply',
   noReply: 'No Reply',
   emailType: 'Email Type',
@@ -1378,7 +1384,7 @@ export default {
   pleaseAddLoyaltyProgram: 'Please add a loyalty program.',
   programDetails: 'Program Details',
   loyaltyProgramDisableButtonText: 'Loyalty Program is Active!',
-  loyaltyProgramDatRangeError: 'Date range is crossed by another loyalty program',
+  loyaltyProgramDateRangeError: 'Date range is crossed by another loyalty program',
   soldCount: 'Sold Count',
   price: 'Price',
   promoCodeUsageDate: 'Promo Code Usage Date',
@@ -1607,11 +1613,21 @@ export default {
 
   fromItem: 'from Item',
   timerTooltipText: 'Specify the activation period of the packages',
+  packages: 'Packages',
   itemRewardListTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names',
+  emptyItemRewardsFirstPart: 'There is no added ',
+  youDontHaveItemsAdded: 'You Dont Have Items Added!',
+  pleaseAddItem: 'Please Add Item.',
   calculationPeriod: 'Calculation Period',
   provisionTime: 'Provision Time',
   provisionModel: 'Provision Model',
   nonTired: 'Non Tired',
-  tired: 'Tired'
+  tired: 'Tired',
+  editReward: 'Edit Reward',
+  rewardUpdated: 'Reward Succsessfuly Updated!',
+  rewardTooltipText:
+    'Reward public names are at the right side , you can edit them comparing with the original names  ',
+
+  boost: 'boost'
 };
