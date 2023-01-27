@@ -1626,5 +1626,8 @@ export default {
   tired: 'Tired',
   editReward: 'Edit Reward',
   rewardUpdated: 'Reward Succsessfuly Updated!',
-  rewardTooltipText: 'Reward public names are at the right side , you can edit them comparing with the original names  '
+  rewardTooltipText:
+    'Reward public names are at the right side , you can edit them comparing with the original names  ',
+
+  boost: 'boost'
 };
