@@ -40,7 +40,7 @@ export default {
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
-    positive: `${TRANSLATION_CHANGED_VALUE} must be a positive number!`,
+    positive: 'Sorry, only positive numbers are allowed!',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     minValue: `The minimum value is ${TRANSLATION_CHANGED_VALUE}!`,
