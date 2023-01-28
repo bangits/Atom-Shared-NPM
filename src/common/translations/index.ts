@@ -1457,6 +1457,8 @@ export default {
   'to(Level)': 'To (Level)',
   emptyLoyaltyGroupsFirstSentence: "You don't have any Groups added",
   emptyLoyaltyGroupsSecondSentence: 'Please add a new Group',
+  emptyLoyaltyGroupsMediaSecondSentenceStart: 'Please ',
+  emptyLoyaltyGroupsMediaSecondSentenceEnd: ' a new Group',
   loyalityGroupsTooltipText: 'Please make grouping for existing loyalty levels.',
   tiersOfGroups: 'Tiers Of Groups',
   emptyLoyaltyGroupLevelsFirstPart: 'Please',
@@ -1629,5 +1631,7 @@ export default {
   rewardTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names  ',
 
-  boost: 'boost'
+  boost: 'boost',
+
+  groupNumber: 'Group Number'
 };
