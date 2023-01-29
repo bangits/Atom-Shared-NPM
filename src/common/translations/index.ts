@@ -903,6 +903,7 @@ export default {
   commissionPlanDetails: 'Commission Plan Details',
   youDontHaveLinksAdded: 'You don’t have any links added!',
   pleaseAddLink: 'Please add link.',
+  thereAreNoAnyOrdersMade: 'There are no any orders made !',
   youDontHaveCommissionPlansAdded: 'You don’t have any commission plans added!',
   pleaseAddCommissionPlan: 'Please add commission plan.',
   affiliateName: 'Affiliate Name',
