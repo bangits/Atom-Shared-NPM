@@ -40,7 +40,7 @@ export default {
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     moreThanMax: 'The value is more than maximum value',
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
-    positive: `${TRANSLATION_CHANGED_VALUE} must be a positive number!`,
+    positive: 'Sorry, only positive numbers are allowed!',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
     maxValue: `The maximum value is ${TRANSLATION_CHANGED_VALUE}!`,
     minValue: `The minimum value is ${TRANSLATION_CHANGED_VALUE}!`,
@@ -631,6 +631,7 @@ export default {
   playerBalanceBefore: 'Player Balance Before',
   playerBalanceAfter: 'Player Balance After',
   noAddedGames: 'There are no added games yet',
+  noAddedItems: 'There are no added items yet',
   noAddedProviders: 'There are no added providers yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
@@ -670,6 +671,8 @@ export default {
   allowedExtensionsArePNGSVG: 'Allowed extensions are PNG, SVG.',
   buttonUnAuthorizedUrl: 'Button URL (for non authorized)',
   addGames: 'Add Games',
+  addItems: 'Add Items',
+  addPackages: 'Add Packages',
   button: 'Button',
   text: 'Text',
   buttonAuthorizedUrl: 'Button URL (for authorized)',
@@ -678,6 +681,7 @@ export default {
   unselectAll: 'Unselect All',
   changePosition: 'Change Position',
   totalGamesCount: 'Total games count',
+  totalItemsCount: 'Total items count',
   totalProvidersCount: 'Total providers count',
   invalidPosition: 'Invalid position!',
   system: 'System',
@@ -899,6 +903,7 @@ export default {
   commissionPlanDetails: 'Commission Plan Details',
   youDontHaveLinksAdded: 'You don’t have any links added!',
   pleaseAddLink: 'Please add link.',
+  thereAreNoAnyOrdersMade: 'There are no any orders made !',
   youDontHaveCommissionPlansAdded: 'You don’t have any commission plans added!',
   pleaseAddCommissionPlan: 'Please add commission plan.',
   affiliateName: 'Affiliate Name',
@@ -1139,6 +1144,7 @@ export default {
   task: 'Task',
   atLeastOneTask: 'At least one task must be in program!',
   noAddedTasks: 'There are no added tasks yet',
+  noAddedPackages: 'There are no added packages yet',
   reply: 'Reply',
   noReply: 'No Reply',
   emailType: 'Email Type',
@@ -1452,6 +1458,8 @@ export default {
   'to(Level)': 'To (Level)',
   emptyLoyaltyGroupsFirstSentence: "You don't have any Groups added",
   emptyLoyaltyGroupsSecondSentence: 'Please add a new Group',
+  emptyLoyaltyGroupsMediaSecondSentenceStart: 'Please ',
+  emptyLoyaltyGroupsMediaSecondSentenceEnd: ' a new Group',
   loyalityGroupsTooltipText: 'Please make grouping for existing loyalty levels.',
   tiersOfGroups: 'Tiers Of Groups',
   emptyLoyaltyGroupLevelsFirstPart: 'Please',
@@ -1608,6 +1616,7 @@ export default {
 
   fromItem: 'from Item',
   timerTooltipText: 'Specify the activation period of the packages',
+  packages: 'Packages',
   itemRewardListTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names',
   emptyItemRewardsFirstPart: 'There is no added ',
@@ -1621,7 +1630,8 @@ export default {
   editReward: 'Edit Reward',
   rewardUpdated: 'Reward Succsessfuly Updated!',
   rewardTooltipText: 'Reward public names are at the right side , you can edit them comparing with the original names  ',
-
   youDontHaveOrdersAdded: 'You don’t have Orders added!',
-  pleaseAddOrder:'Please Add Order'
+  pleaseAddOrder:'Please Add Order',
+  boost: 'boost',
+  groupNumber: 'Group Number'
 };
