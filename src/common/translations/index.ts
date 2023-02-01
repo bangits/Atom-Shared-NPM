@@ -1631,7 +1631,8 @@ export default {
   rewardUpdated: 'Reward Succsessfuly Updated!',
   rewardTooltipText:
     'Reward public names are at the right side , you can edit them comparing with the original names  ',
-
+  youDontHaveOrdersAdded: 'You don’t have Orders added!',
+  pleaseAddOrder: 'Please Add Order',
   boost: 'boost',
 
   groupNumber: 'Group Number',
