@@ -1637,5 +1637,6 @@ export default {
 
   groupNumber: 'Group Number',
 
-  paymentMethod: 'Payment Method'
+  paymentMethod: 'Payment Method',
+  bitexPro: 'BitexPro'
 };
