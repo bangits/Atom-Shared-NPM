@@ -1634,5 +1634,7 @@ export default {
 
   boost: 'boost',
 
-  groupNumber: 'Group Number'
+  groupNumber: 'Group Number',
+
+  paymentMethod: 'Payment Method'
 };
