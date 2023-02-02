@@ -1642,4 +1642,6 @@ export default {
   slugName: 'Slug Name',
   permissionName: 'Permission Name',
   permissionSlug: 'Permission Slug',
+  tools: 'Tools',
+  addPermission:'Add Permission'
 };
