@@ -1638,5 +1638,8 @@ export default {
   groupNumber: 'Group Number',
 
   paymentMethod: 'Payment Method',
-  bitexPro: 'BitexPro'
+  bitexPro: 'BitexPro',
+  slugName: 'Slug Name',
+  permissionName: 'Permission Name',
+  permissionSlug: 'Permission Slug',
 };
