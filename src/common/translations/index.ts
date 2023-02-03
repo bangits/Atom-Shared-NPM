@@ -1643,5 +1643,8 @@ export default {
   permissionName: 'Permission Name',
   permissionSlug: 'Permission Slug',
   tools: 'Tools',
-  addPermission:'Add Permission'
+  addPermission: 'Add Permission',
+  tool: 'tool',
+  section: 'section',
+  permissionDetails:'Permission Details'
 };
