@@ -1649,7 +1649,7 @@ export default {
   permissionDetails: 'Permission Details',
   accountNumber: 'Account Number',
   accountOwnerName: 'Account Owner Name',
-  accountOwnerSurename: 'Account OwnerSurename',
+  accountOwnerSurname: 'Account OwnerSurname',
   bankCards: 'Bank Cards',
   eWallet: 'E-Wallet',
   advCash: 'AdvCash',
