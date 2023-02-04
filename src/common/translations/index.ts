@@ -1646,6 +1646,14 @@ export default {
   addPermission: 'Add Permission',
   tool: 'Tool',
   section: 'Section',
-  permissionDetails:'Permission Details',
-  
+  permissionDetails: 'Permission Details',
+  accountNumber: 'Account Number',
+  accountOwnerName: 'Account Owner Name',
+  accountOwnerSurename: 'Account OwnerSurename',
+  bankCards: 'Bank Cards',
+  eWallet: 'E-Wallet',
+  advCash: 'AdvCash',
+  visaMaster: 'Visa/Master',
+  advCashWallets: 'AdvCash Wallets',
+  cryptoPayments: 'Crypto Payments'
 };
