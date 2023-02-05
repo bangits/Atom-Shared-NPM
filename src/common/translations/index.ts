@@ -1190,5 +1190,7 @@ export default {
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
   youDontHaveReports: 'You don’t have any data of payments requests data',
-  financicalReports: 'Financical Reports'
+  financicalReports: 'Financical Reports',
+  youDontHaveRolesAdded: 'You Dont Have Roles Added!',
+  pleaseAddRole: 'Please Add Role.'
 };
