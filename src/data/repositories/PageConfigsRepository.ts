@@ -1,6 +1,6 @@
 import { IHttpService } from '@/atom-common';
 import { DI_CONSTANTS } from '@/di/constants';
-import { PrimaryKey } from '@/domain';
+import { PageConfigTypesEnum, PrimaryKey } from '@/domain';
 import { IPageConfigsRepository } from '@/domain/boundaries';
 import { GetPageConfigsResponseModel } from '@/domain/models';
 import { inject, injectable } from 'inversify';
@@ -21,11 +21,12 @@ export class PageConfigsRepository implements IPageConfigsRepository {
     });
   };
 
-  updatePageConfig = async (configId: PrimaryKey, configJson: string): Promise<boolean> => {
+  updatePageConfig = async (configId: PrimaryKey, configJson: string, type: PageConfigTypesEnum): Promise<boolean> => {
     return await this.userHttpService.put<boolean, {}, {}>({
       url: API_ROUTES.PageConfigs + `/${configId}`,
       body: {
-        configJson
+        configJson,
+        type
       }
     });
   };

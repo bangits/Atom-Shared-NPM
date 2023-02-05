@@ -46,10 +46,11 @@ export class PageConfigsUseCase {
   updatePageConfigs = async (
     pageId: PageIdsEnum,
     configId: PrimaryKey,
-    configJson: PageConfigViewModel[]
+    configJson: PageConfigViewModel[],
+    type: PageConfigTypesEnum
   ): Promise<boolean> => {
     this.pageConfigCaches[pageId] = null;
 
-    return await this.pageConfigsRepository.updatePageConfig(configId, JSON.stringify(configJson));
+    return await this.pageConfigsRepository.updatePageConfig(configId, JSON.stringify(configJson), type);
   };
 }

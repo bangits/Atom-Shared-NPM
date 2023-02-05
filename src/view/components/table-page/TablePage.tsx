@@ -1,5 +1,5 @@
 import { AtomCommonContext, historyService } from '@/atom-common';
-import { PageIdsEnum, PrimaryKey } from '@/domain';
+import { PageConfigTypesEnum, PageIdsEnum, PrimaryKey } from '@/domain';
 import { useLoading, useTranslation } from '@/view';
 import { PageConfigViewModel } from '@/view/models';
 import { DataTable, DataTableProps } from '@atom/design-system';
@@ -155,7 +155,7 @@ export const TablePage = <T extends {}, K>({
     (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (tableConfigUpdateTimeout.current) return;
 
-      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON);
+      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON, PageConfigTypesEnum.COLUMN);
 
       onTableConfigChange?.(configJSON);
 
