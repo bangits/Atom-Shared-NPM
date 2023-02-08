@@ -1658,5 +1658,8 @@ export default {
   cryptoPayments: 'Crypto Payments',
   youDontHaveRolesAdded: 'You Dont Have Roles Added!',
   pleaseAddRole: 'Please Add Role.',
-  addPermissions:'Add Permissions'
+  addPermissions: 'Add Permissions',
+  bankTransfer: 'Bank Transfer',
+  etPay: 'Etpay',
+  pleaseAddPayment: 'Please Add Payment'
 };
