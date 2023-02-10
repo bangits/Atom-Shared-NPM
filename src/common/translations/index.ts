@@ -1661,5 +1661,7 @@ export default {
   addPermissions: 'Add Permissions',
   bankTransfer: 'Bank Transfer',
   etPay: 'Etpay',
-  pleaseAddPayment: 'Please Add Payment'
+  pleaseAddPayment: 'Please Add Payment',
+  permissionId: 'Permission ID',
+  advCashVisaMaster:'AdvCash Visa/Master'
 };
