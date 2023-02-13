@@ -1663,5 +1663,7 @@ export default {
   etPay: 'Etpay',
   pleaseAddPayment: 'Please Add Payment',
   permissionId: 'Permission ID',
-  advCashVisaMaster:'AdvCash Visa/Master'
+  advCashVisaMaster: 'AdvCash Visa/Master',
+  youDontHavePermissions: 'You Dont Have Permissions!',
+  pleaseAddPermission: 'Please Add Permission.'
 };
