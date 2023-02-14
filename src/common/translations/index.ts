@@ -1489,23 +1489,17 @@ export default {
   rewardsSettingsEmptyRewardsSecondPart: ' yet. Please ',
   rewardsSettingsEmptyRewardsThirdPart: ' Rewards from ',
   rewardsSettingsEmptyRewardsFourthPart: 'tab',
-
   groupsAndLevels: 'Groups And Levels',
-
   itemNameAlreadyExists: 'Public Name Already Exists',
   itemDisableButtonText: 'Item is Active!',
-
   coinsDistribution: 'Coins Distribution',
-
   coinsDistributionInfo:
     'The whole related earning rules to each level should be completed by the website users for passing to the next level.',
   maxCoins: 'Max Coins',
   toAchieveForNextLevel: 'to achieve for next Level',
   remainingForDistribute: 'Remaining for Distribute',
-
   distribution: 'Distribution',
   equivalentToCoins: 'Equivalent to Coins',
-
   emptyLevelRulesFirstPart: 'There is no related Rules to current Level. Please ',
   emptyLevelRulesSecondPart: ' in “Rules” tab',
 
@@ -1656,5 +1650,16 @@ export default {
   visaMaster: 'Visa/Master',
   advCashWallets: 'AdvCash Wallets',
   cryptoPayments: 'Crypto Payments',
-  updateRequest: 'Update Request'
+  updateRequest: 'Update Request',
+  youDontHaveRolesAdded: 'You Dont Have Roles Added!',
+  pleaseAddRole: 'Please Add Role.',
+  addPermissions: 'Add Permissions',
+  bankTransfer: 'Bank Transfer',
+  etPay: 'Etpay',
+  pleaseAddPayment: 'Please Add Payment',
+  permissionId: 'Permission ID',
+  advCashVisaMaster: 'AdvCash Visa/Master',
+  youDontHavePermissions: 'You Dont Have Permissions!',
+  pleaseAddPermission: 'Please Add Permission.',
+  thereAreNoRelatedUsers: 'There are no related users yet!'
 };
