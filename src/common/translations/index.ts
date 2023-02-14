@@ -1655,5 +1655,6 @@ export default {
   advCash: 'AdvCash',
   visaMaster: 'Visa/Master',
   advCashWallets: 'AdvCash Wallets',
-  cryptoPayments: 'Crypto Payments'
+  cryptoPayments: 'Crypto Payments',
+  updateRequest: 'Update Request'
 };
