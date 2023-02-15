@@ -1651,6 +1651,7 @@ export default {
   advCashWallets: 'AdvCash Wallets',
   cryptoPayments: 'Crypto Payments',
   updateRequest: 'Update Request',
+  updateWithdraw: 'Update Withdraw',
   youDontHaveRolesAdded: 'You Dont Have Roles Added!',
   pleaseAddRole: 'Please Add Role.',
   addPermissions: 'Add Permissions',
