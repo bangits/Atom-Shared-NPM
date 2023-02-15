@@ -1650,6 +1650,7 @@ export default {
   visaMaster: 'Visa/Master',
   advCashWallets: 'AdvCash Wallets',
   cryptoPayments: 'Crypto Payments',
+  updateRequest: 'Update Request',
   youDontHaveRolesAdded: 'You Dont Have Roles Added!',
   pleaseAddRole: 'Please Add Role.',
   addPermissions: 'Add Permissions',
