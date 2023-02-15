@@ -1215,7 +1215,7 @@ export default {
   paid: 'Paid',
   declined: 'Declined',
   failed: 'Failed',
-  updateDeposit: 'Update Deposit',
+  updateDeposit: 'Update - Deposit',
   requestStatus: 'Request Status',
   decline: 'Decline',
   requestWasSuccesfulyUpdated: 'Request(s) was successfully updated!',
@@ -1651,6 +1651,7 @@ export default {
   advCashWallets: 'AdvCash Wallets',
   cryptoPayments: 'Crypto Payments',
   updateRequest: 'Update Request',
+  updateWithdraw: 'Update - Withdraw',
   youDontHaveRolesAdded: 'You Dont Have Roles Added!',
   pleaseAddRole: 'Please Add Role.',
   addPermissions: 'Add Permissions',
@@ -1661,5 +1662,7 @@ export default {
   advCashVisaMaster: 'AdvCash Visa/Master',
   youDontHavePermissions: 'You Dont Have Permissions!',
   pleaseAddPermission: 'Please Add Permission.',
-  thereAreNoRelatedUsers: 'There are no related users yet!'
+  thereAreNoRelatedUsers: 'There are no related users yet!',
+  roleAndPermission: 'Role And Permission',
+  addRoles: 'Add Roles',
 };
