@@ -1660,5 +1660,6 @@ export default {
   advCashVisaMaster: 'AdvCash Visa/Master',
   youDontHavePermissions: 'You Dont Have Permissions!',
   pleaseAddPermission: 'Please Add Permission.',
-  thereAreNoRelatedUsers: 'There are no related users yet!'
+  thereAreNoRelatedUsers: 'There are no related users yet!',
+  roleAndPermission:'Role And Permission'
 };
