@@ -1662,5 +1662,6 @@ export default {
   youDontHavePermissions: 'You Dont Have Permissions!',
   pleaseAddPermission: 'Please Add Permission.',
   thereAreNoRelatedUsers: 'There are no related users yet!',
-  roleAndPermission:'Role And Permission'
+  roleAndPermission: 'Role And Permission',
+  addRoles: 'AddRoles',
 };
