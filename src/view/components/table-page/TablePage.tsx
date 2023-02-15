@@ -176,7 +176,7 @@ export const TablePage = <T extends {}, K>({
   }, [isFetching]);
 
   useEffect(() => {
-    if (!isFilteredData) changeLoading(true);
+    if (!isFilteredData && isFetching) changeLoading(true);
 
     if (pageId && userId)
       pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) => {
