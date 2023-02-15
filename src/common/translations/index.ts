@@ -1663,5 +1663,5 @@ export default {
   pleaseAddPermission: 'Please Add Permission.',
   thereAreNoRelatedUsers: 'There are no related users yet!',
   roleAndPermission: 'Role And Permission',
-  addRoles: 'AddRoles',
+  addRoles: 'Add Roles',
 };
