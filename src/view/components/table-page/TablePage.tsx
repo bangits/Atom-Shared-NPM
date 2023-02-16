@@ -1,4 +1,4 @@
-import { AtomCommonContext, historyService } from '@/atom-common';
+import { AtomCommonContext } from '@/atom-common';
 import { PageConfigTypesEnum, PageIdsEnum, PrimaryKey } from '@/domain';
 import { useLoading, useTranslation } from '@/view';
 import { PageConfigViewModel } from '@/view/models';
@@ -138,7 +138,7 @@ export const TablePage = <T extends {}, K>({
                 onClick: (columns) => {
                   if (Array.isArray(columns)) {
                     columns.forEach((c) => window.open(getViewUrl(c), '_blank'));
-                  } else historyService.redirectToURL(getViewUrl(columns));
+                  } else window.open(getViewUrl(columns), '_blank');
                 },
                 tooltipText: translations.get('view')
               }
