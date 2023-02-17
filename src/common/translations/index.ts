@@ -559,6 +559,7 @@ export default {
   rejected: 'Rejected',
   addPage: 'Add Page',
   pageType: 'Page Type',
+  pageTypeId: 'Page Type ID',
   title: 'Title',
   urlSlug: 'URL Slug',
   cashInOut: 'Cash-IN/OUT',
@@ -1664,5 +1665,5 @@ export default {
   pleaseAddPermission: 'Please Add Permission.',
   thereAreNoRelatedUsers: 'There are no related users yet!',
   roleAndPermission: 'Role And Permission',
-  addRoles: 'Add Roles',
+  addRoles: 'Add Roles'
 };
