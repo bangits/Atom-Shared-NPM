@@ -1665,4 +1665,7 @@ export default {
   thereAreNoRelatedUsers: 'There are no related users yet!',
   roleAndPermission: 'Role And Permission',
   addRoles: 'Add Roles',
+  youDontHaveBonusAdded: 'You Don`t Have Bonus Added!',
+  pleaseAddBonus: 'Please Add Bonus.',
+  viewPermissions: 'View Permissions'
 };
