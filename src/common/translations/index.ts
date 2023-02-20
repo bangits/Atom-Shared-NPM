@@ -1670,5 +1670,7 @@ export default {
   pleaseAddBonus: 'Please Add Bonus.',
   viewPermissions: 'View Permissions',
   excludeRoleText: 'Do you want to exclude selected Roles',
+  excludePermissionRuleText: 'Do you want to exclude selected Permission',
+   
 
 };
