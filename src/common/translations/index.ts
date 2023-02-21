@@ -1224,7 +1224,7 @@ export default {
   emailButtonUrl: 'Enter button URL for users to redirect to the mentioned URL address.',
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
-  youDontHaveReports: 'You don’t have any data of payments requests data',
+  youDontHaveReports: 'You don’t have anypayments requests',
   financicalReports: 'Financical Reports',
   withdrawCount: 'Withdraw Count',
   withdrawAmount: 'Withdraw Amount',
