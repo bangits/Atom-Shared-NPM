@@ -1393,10 +1393,8 @@ export default {
   inboxButtonText: 'Inbox Button Text',
   inboxButtonURL: 'Inbox Button URL',
   inActivateInboxChannel: 'Inactivate inbox channel',
-  inboxButtonTooltipText:
-    'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
-  inboxButtonTooltipUrl:
-    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.',
+  inboxButtonTooltipText: 'Name button text for it to appear in inbox text.',
+  inboxButtonTooltipUrl: 'Enter button URL to redirect users to the mentioned URL address.',
   inProcess: 'In Process',
   runCode: 'Run Code',
   inboxSubject: 'Inbox Subject',
@@ -1670,7 +1668,5 @@ export default {
   pleaseAddBonus: 'Please Add Bonus.',
   viewPermissions: 'View Permissions',
   excludeRoleText: 'Do you want to exclude selected Roles',
-  excludePermissionRuleText: 'Do you want to exclude selected Permission',
-   
-
+  excludePermissionRuleText: 'Do you want to exclude selected Permission'
 };
