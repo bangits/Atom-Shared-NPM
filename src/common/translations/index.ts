@@ -1224,7 +1224,7 @@ export default {
   emailButtonUrl: 'Enter button URL for users to redirect to the mentioned URL address.',
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
-  youDontHaveReports: 'You don’t have any data of payments requests data',
+  youDontHaveReports: 'You don’t have anypayments requests',
   financicalReports: 'Financical Reports',
   withdrawCount: 'Withdraw Count',
   withdrawAmount: 'Withdraw Amount',
@@ -1393,10 +1393,8 @@ export default {
   inboxButtonText: 'Inbox Button Text',
   inboxButtonURL: 'Inbox Button URL',
   inActivateInboxChannel: 'Inactivate inbox channel',
-  inboxButtonTooltipText:
-    'Name button text for it to appear in inbox text. Please note, button text in Inbox template should be replaced with {@buttontext} variable.',
-  inboxButtonTooltipUrl:
-    'Enter button URL for it to appear in inbox text. Please note, button URL in Inbox template should be replaced with {@buttonurl} variable.',
+  inboxButtonTooltipText: 'Name button text for it to appear in inbox text.',
+  inboxButtonTooltipUrl: 'Enter button URL to redirect users to the mentioned URL address.',
   inProcess: 'In Process',
   runCode: 'Run Code',
   inboxSubject: 'Inbox Subject',
@@ -1671,5 +1669,5 @@ export default {
   viewPermissions: 'View Permissions',
   excludeRoleText: 'Do you want to exclude selected Roles',
   excludePermissionRuleText: 'Do you want to exclude selected Permission',
-  permission: 'Permission'
+  permission: 'Permission',
 };
