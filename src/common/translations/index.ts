@@ -1671,6 +1671,5 @@ export default {
   viewPermissions: 'View Permissions',
   excludeRoleText: 'Do you want to exclude selected Roles',
   excludePermissionRuleText: 'Do you want to exclude selected Permission',
-   
-
+  permission: 'Permission'
 };
