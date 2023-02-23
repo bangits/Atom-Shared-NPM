@@ -1673,5 +1673,6 @@ export default {
   commissionByDepositFrom: 'Commission By Deposit From',
   commissionByDepositTo: 'Commission By Deposit To',
   depostAmountFrom: 'Depost Amount From',
-  depostAmountTo: 'Depost Amount To'
+  depostAmountTo: 'Depost Amount To',
+  permission: 'Permission'
 };
