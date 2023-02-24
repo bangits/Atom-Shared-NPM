@@ -1676,4 +1676,10 @@ export default {
   commissionByDepositTo: 'Commission By Deposit To',
   depostAmountFrom: 'Depost Amount From',
   depostAmountTo: 'Depost Amount To',
+  successfullyActivated: 'Successfully activated ',
+  successfullyInActivated: 'Successfully inactivated ',
+  permissionsDoth: 'Permission (s)',
+  notActivated: 'not activated!',
+  deactivated: 'deactivated!',
+  rolesDoth: 'Role (s)',
 };
