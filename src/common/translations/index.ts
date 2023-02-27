@@ -1682,4 +1682,5 @@ export default {
   notActivated: 'not activated!',
   deactivated: 'deactivated!',
   rolesDoth: 'Role (s)',
+  download: 'Download'
 };
