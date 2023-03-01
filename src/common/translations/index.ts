@@ -1682,5 +1682,6 @@ export default {
   notActivated: 'not activated!',
   deactivated: 'deactivated!',
   rolesDoth: 'Role (s)',
-  download: 'Download'
+  download: 'Download',
+  permissionIsAlreadyAttached:'That Permission (s) is already attached!'
 };
