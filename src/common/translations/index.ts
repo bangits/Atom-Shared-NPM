@@ -1683,5 +1683,8 @@ export default {
   deactivated: 'deactivated!',
   rolesDoth: 'Role (s)',
   download: 'Download',
-  permissionIsAlreadyAttached:'That Permission (s) is already attached!'
+  permissionIsAlreadyAttached:'That Permission (s) is already attached!',
+  reportByCompetitions:'Report By Competitions',
+  sportId:'Sport Id',
+  competition:'Competition',
 };
