@@ -1717,5 +1717,9 @@ export default {
   sportId: 'Sport Id',
   competition: 'Competition',
   marketType: 'Market Type',
-  reportByMarkets: 'Report By Markets'
+  reportByMarkets: 'Report By Markets',
+  rut: 'Rut',
+  emailWithoutUserName: 'Email',
+  bank: 'Bank',
+  accountType: 'Account Type'
 };
