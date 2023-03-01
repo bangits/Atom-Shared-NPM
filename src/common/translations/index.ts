@@ -1224,7 +1224,7 @@ export default {
   emailButtonUrl: 'Enter button URL for users to redirect to the mentioned URL address.',
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
-  youDontHaveReports: 'You don’t have anypayments requests',
+  youDontHaveReports: 'You don’t have any requests',
   financicalReports: 'Financical Reports',
   withdrawCount: 'Withdraw Count',
   withdrawAmount: 'Withdraw Amount',
@@ -1683,8 +1683,10 @@ export default {
   deactivated: 'deactivated!',
   rolesDoth: 'Role (s)',
   download: 'Download',
-  permissionIsAlreadyAttached:'That Permission (s) is already attached!',
-  reportByCompetitions:'Report By Competitions',
-  sportId:'Sport Id',
-  competition:'Competition',
+  permissionIsAlreadyAttached: 'That Permission (s) is already attached!',
+  reportByCompetitions: 'Report By Competitions',
+  sportId: 'Sport Id',
+  competition: 'Competition',
+  marketType: 'Market Type',
+  reportByMarkets: 'Report By Markets'
 };
