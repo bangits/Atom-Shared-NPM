@@ -1722,5 +1722,8 @@ export default {
   emailWithoutUserName: 'Email',
   bank: 'Bank',
   accountType: 'Account Type',
-  sportReports: 'Sport Reports'
+  sportReports: 'Sport Reports',
+  reportBySports: 'Report By Sports',
+  sportType: 'Sport Type',
+  match: 'Match'
 };
