@@ -1721,5 +1721,8 @@ export default {
   rut: 'Rut',
   emailWithoutUserName: 'Email',
   bank: 'Bank',
-  accountType: 'Account Type'
+  accountType: 'Account Type',
+  reportBySports: 'Report By Sports',
+  sportType: 'Sport Type',
+  match: 'Match'
 };
