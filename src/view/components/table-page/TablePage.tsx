@@ -208,6 +208,8 @@ export const TablePage = <T extends {}, K>({
           {...(props.filterProps || {})}
           shouldFetchPageConfig={false}
           filtersConfig={filtersConfig}
+          filters={props.filterProps.filters}
+          initialValues={props.filterProps.initialValues}
         />
       )}
       isSynchronizeShown={isSynchronizeShown}
@@ -237,7 +239,6 @@ export const TablePage = <T extends {}, K>({
       }}
       tableProps={tableProps}
       onRefreshButtonClick={refetch}
-      // @ts-expect-error Remove after design system version
       onSynchronizeButtonClick={onSynchronizeButtonClick}
       isSynchronize={isSynchronize}
       onTableConfigChange={(tableColumns, selectedColumns) => {

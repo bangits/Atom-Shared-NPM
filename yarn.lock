@@ -233,23 +233,6 @@
     single-spa "^5.9.3"
     single-spa-react "^4.6.0"
 
-"@atom/design-system@3.9.55":
-  version "3.9.55"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-3.9.55.tgz#3f89f6b0025314ccc56df67815887cd99ee7f67f"
-  integrity sha1-P4n2sAJTFMzFbfZ4FYh82Z7n9n8=
-  dependencies:
-    "@my-ui/core" "^0.9.17"
-    classnames "^2.3.1"
-    react "17.0.0"
-    react-cropper "^2.1.8"
-    react-dnd "15.1.2"
-    react-dnd-html5-backend "^16.0.1"
-    react-dom "17.0.0"
-    react-jss "^10.8.2"
-    react-sortable-hoc "^2.0.0"
-    react-transition-group "^4.4.2"
-    regenerator-transform "^0.14.5"
-
 "@atom/design-system@4.5.8":
   version "4.5.8"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.8.tgz#f2a8a1ad575b593cf6dbd4abce9d2558ccceb375"
@@ -301,7 +284,7 @@
     react-transition-group "^4.4.2"
     regenerator-transform "^0.14.5"
 
-"@atom/design-system@^4.1.41", "@atom/design-system@^4.1.55", "@atom/design-system@^4.2.1", "@atom/design-system@^4.2.8", "@atom/design-system@^4.5.0", "@atom/design-system@^4.5.33", "@atom/design-system@^4.5.35":
+"@atom/design-system@^4.1.41", "@atom/design-system@^4.1.55", "@atom/design-system@^4.2.1", "@atom/design-system@^4.2.8", "@atom/design-system@^4.5.0", "@atom/design-system@^4.5.33", "@atom/design-system@^4.5.35", "@atom/design-system@^4.5.45":
   version "4.5.45"
   resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.5.45.tgz#1b7d08ff3f7c5d33ea3adfd9fb826a04e52411c4"
   integrity sha1-G30I/z98XTPqOt/Z+4JqBOUkEcQ=
