@@ -113,7 +113,7 @@ export const DataFilter = <T,>({
       saveLabel={t.get('saveFilterChanges')}
       showedFilters={showedFilters}
       filters={filters}
-      defaultFilters={defaultFilters}
+      // defaultFilters={defaultFilters}
       onSaveClick={onSaveClick}
       selectProps={filtersDropdownProps}
     />
