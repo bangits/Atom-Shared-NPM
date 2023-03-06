@@ -1726,5 +1726,8 @@ export default {
   reportBySports: 'Report By Sports',
   sportType: 'Sport Type',
   match: 'Match',
-  winRollback: 'Win Rollback'
+  winRollback: 'Win Rollback',
+  sentBy: 'Sent By',
+  campaignName: 'Campaign Name',
+  campaignId: 'Campaign ID'
 };
