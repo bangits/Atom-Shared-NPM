@@ -1725,5 +1725,6 @@ export default {
   sportReports: 'Sport Reports',
   reportBySports: 'Report By Sports',
   sportType: 'Sport Type',
-  match: 'Match'
+  match: 'Match',
+  winRollback: 'Win Rollback'
 };
