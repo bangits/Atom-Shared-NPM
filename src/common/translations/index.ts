@@ -1729,5 +1729,6 @@ export default {
   winRollback: 'Win Rollback',
   sentBy: 'Sent By',
   campaignName: 'Campaign Name',
-  campaignId: 'Campaign ID'
+  campaignId: 'Campaign ID',
+  accountOwnerMiddleName: 'Account Owner Middle Name'
 };
