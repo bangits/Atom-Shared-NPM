@@ -527,6 +527,7 @@ export default {
   document: 'Document',
   correctionHistory: 'Correction History',
   correctBalance: 'Correct Balance',
+  correctCasinoBalance: 'Corrent Casino Balance',
   windraw: 'WithDraw',
   deposit: 'Deposit',
   rgsId: 'RGS ID',
