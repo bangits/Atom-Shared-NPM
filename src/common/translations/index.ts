@@ -1737,4 +1737,6 @@ export default {
   remainsforWager:'Remains For Wager',
   remainsForDepositWager:'Remains For Deposit Wager',
   depositWagerAmount:'Deposit Wager Amount',
+
+  
 };
