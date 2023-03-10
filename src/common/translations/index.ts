@@ -1733,10 +1733,10 @@ export default {
   campaignId: 'Campaign ID',
   accountOwnerMiddleName: 'Account Owner Middle Name',
   mainBonusId: 'Main Bonus ID',
-  updateDate:'Update Date',
-  remainsforWager:'Remains For Wager',
-  remainsForDepositWager:'Remains For Deposit Wager',
-  depositWagerAmount:'Deposit Wager Amount',
+  updateDate: 'Update Date',
+  remainsforWager: 'Remains For Wager',
+  remainsForDepositWager: 'Remains For Deposit Wager',
+  depositWagerAmount: 'Deposit Wager Amount',
 
-  
+
 };
