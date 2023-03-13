@@ -1737,6 +1737,14 @@ export default {
   remainsforWager: 'Remains For Wager',
   remainsForDepositWager: 'Remains For Deposit Wager',
   depositWagerAmount: 'Deposit Wager Amount',
-
-
+  bonusAmountTo: 'Bonus Amount To',
+  bonusAmountFrom: 'Bonus Amount From',
+  remainsForDepositWagerFrom: 'Remains For Deposit Wager From',
+  remainsForDepositWagerTo: 'Remains For Deposit Wager To',
+  remainsforWagerTo: 'Remains For Wager To',
+  remainsforWagerFrom: 'Remains For Wager From',
+  depositWagerAmountFrom: 'Deposit Wager Amount From',
+  depositWagerAmountTo: 'Deposit Wager Amount To',
+  updateDateFrom: 'Update Date From',
+  updateDateTo: 'Update Date To',
 };
