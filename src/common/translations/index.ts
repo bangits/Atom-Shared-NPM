@@ -1747,5 +1747,5 @@ export default {
   depositWagerAmountTo: 'Deposit Wager Amount To',
   updateDateFrom: 'Update Date From',
   updateDateTo: 'Update Date To',
-  doYouWantToRemoveTheImage: 'Do You Want To Remove The Image ?'
+  doYouWantToRemoveTheImage: 'Do you want to remove the image ?'
 };
