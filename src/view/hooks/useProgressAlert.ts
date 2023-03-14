@@ -24,7 +24,6 @@ export const useProgressAlert = () => {
         return;
       }
 
-      // @ts-expect-error remove after ds version
       alert.updateAlert(alertIdRef.current, {
         alertLabel
       });
