@@ -1729,5 +1729,12 @@ export default {
   winRollback: 'Win Rollback',
   sentBy: 'Sent By',
   campaignName: 'Campaign Name',
-  campaignId: 'Campaign ID'
+  campaignId: 'Campaign ID',
+  pleaseMakeFiltration: 'Please make a filtration.',
+  saveSelection: 'Save selection',
+  saveAll: 'Save all',
+  uncompletedAction: "The action couldn't be completed. There is uncompleted action.",
+  actionInProgress: 'The action is in progress $VALUE %',
+  clearSelection: 'Clear Selection',
+  found: 'Found'
 };

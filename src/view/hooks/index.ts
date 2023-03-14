@@ -5,6 +5,7 @@ export * from './useFirstValue';
 export * from './useGeolocationSelects';
 export * from './useLoading';
 export * from './useLocation';
+export * from './useProgressAlert';
 export * from './useQueryString';
 export * from './useTranslation';
 export * from './useValidationTranslation';

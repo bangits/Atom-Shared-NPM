@@ -15,6 +15,8 @@ export interface ISocketService {
 }
 
 export class SocketService implements ISocketService {
+  private static token: string;
+
   private socket: HubConnection | null = null;
   private baseUrl: string;
   private methods: {
@@ -24,6 +26,12 @@ export class SocketService implements ISocketService {
 
   constructor(baseUrl: string) {
     this.baseUrl = baseUrl;
+  }
+
+  static setAccessToken(accessToken: string) {
+    const tokenWithBearer = `Bearer ${accessToken}`;
+
+    SocketService.token = tokenWithBearer;
   }
 
   disconnect = async () => {
@@ -54,9 +62,9 @@ export class SocketService implements ISocketService {
     const socket: HubConnection = new HubConnectionBuilder()
       .withUrl(`${this.baseUrl}${hubName}`, {
         skipNegotiation: true,
-        transport: HttpTransportType.WebSockets
+        transport: HttpTransportType.WebSockets,
+        accessTokenFactory: () => SocketService.token.split('Bearer')[1].trim()
       })
-      .withAutomaticReconnect()
       .configureLogging(LogLevel.Information)
       .build();
 

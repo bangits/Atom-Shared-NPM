@@ -26,7 +26,10 @@ export const getBaseQuery =
       if (data && typeof data === 'object') data[immerable] = true;
       return { data };
     } catch (error) {
-      if (error.response?.data?.Status) return Promise.reject(error.response.data.Status);
+      const errorStatus = error.response?.data?.Status || error.response?.data?.status;
+
+      if (errorStatus) return Promise.reject(errorStatus);
+
       return Promise.reject(error);
     }
   };
