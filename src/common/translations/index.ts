@@ -1736,7 +1736,7 @@ export default {
   saveAll: 'Save all',
   uncompletedAction: "The action couldn't be completed. There is uncompleted action.",
   actionInProgress: 'The action is in progress $VALUE %',
-  clearSelection: 'Clear Selection',
+  clearSelection: 'Clear selection',
   found: 'Found',
   accountOwnerMiddleName: 'Account Owner Middle Name',
   mainBonusId: 'Main Bonus ID',
@@ -1754,5 +1754,12 @@ export default {
   depositWagerAmountTo: 'Deposit Wager Amount To',
   updateDateFrom: 'Update Date From',
   updateDateTo: 'Update Date To',
-  doYouWantToRemoveTheImage: 'Do you want to remove the image ?'
+  doYouWantToRemoveTheImage: 'Do you want to remove the image ?',
+  replaceWith: 'Replace With',
+  deleteAll: 'Delete all',
+  deleteSelection: 'Delete selection',
+  unselectPage: 'Unselect page',
+  selectPage: 'Select page',
+  doYouWantToDelete: 'Do you want to delete',
+  doYouWantToDeleteThe: 'Do you want to delete the'
 };
