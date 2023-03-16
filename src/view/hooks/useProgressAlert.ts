@@ -2,24 +2,37 @@ import { alert } from '@atom/design-system';
 import { useCallback, useRef } from 'react';
 import { useTranslation } from './useTranslation';
 
-export const useProgressAlert = () => {
+export const useProgressAlert = ({ onSuccess }: { onSuccess?: () => void } = {}) => {
   const alertIdRef = useRef<string | null>(null);
 
   const t = useTranslation();
 
   return useCallback(
     (progress: number) => {
-      if (!alertIdRef.current && progress === 100) return;
+      if (progress === 100) {
+        alert.success({
+          alertLabel: t.get('successAlertMessage')
+        });
+
+        onSuccess?.();
+
+        if (alertIdRef.current)
+          setTimeout(() => {
+            alert.remove(alertIdRef.current);
+
+            alertIdRef.current = null;
+          }, 500);
+
+        return;
+      }
 
       const alertLabel = t.get('actionInProgress').replace('$VALUE', progress.toString());
 
       if (!alertIdRef.current) {
-        const alertId = alert.loading({
+        alertIdRef.current = alert.loading({
           alertLabel,
           autoClose: false
         });
-
-        alertIdRef.current = alertId;
 
         return;
       }
@@ -27,19 +40,7 @@ export const useProgressAlert = () => {
       alert.updateAlert(alertIdRef.current, {
         alertLabel
       });
-
-      if (progress === 100 && alertIdRef.current) {
-        alert.success({
-          alertLabel: t.get('successAlertMessage')
-        });
-
-        setTimeout(() => {
-          alert.remove(alertIdRef.current);
-
-          alertIdRef.current = null;
-        }, 500);
-      }
     },
-    [t]
+    [t, onSuccess]
   );
 };

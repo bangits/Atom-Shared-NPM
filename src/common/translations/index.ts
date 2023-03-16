@@ -1761,5 +1761,6 @@ export default {
   unselectPage: 'Unselect page',
   selectPage: 'Select page',
   doYouWantToDelete: 'Do you want to delete',
-  doYouWantToDeleteThe: 'Do you want to delete the'
+  doYouWantToDeleteThe: 'Do you want to delete the',
+  allowedRange: 'Allowed range'
 };
