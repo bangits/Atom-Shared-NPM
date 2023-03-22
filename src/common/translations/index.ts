@@ -1048,6 +1048,7 @@ export default {
   analyze: 'Analyze',
   playerBonusId: 'Player Bonus ID',
   wageringAmount: 'Wagering Amount',
+  wagerReduce: 'Wager Reduce',
   maxPayoutAmount: 'Max Payout Amount',
   remainingForWager: 'Remains for Wager',
   claimingDate: 'Claiming Date',
