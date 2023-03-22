@@ -1007,6 +1007,7 @@ export default {
   invalidPercentage: 'Invalid Percentage!',
   setPosition: 'Set Position',
   wageringReduce: 'Wagering Reduce',
+  reduce: 'Reduce',
   urlButton: 'Button URL',
   youDontHaveSegmentsAdded: 'You don’t have any segments added!',
   pleaseAddSegment: 'Please Add Segment',
