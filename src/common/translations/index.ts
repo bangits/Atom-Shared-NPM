@@ -1764,5 +1764,6 @@ export default {
   selectPage: 'Select page',
   doYouWantToDelete: 'Do you want to delete',
   doYouWantToDeleteThe: 'Do you want to delete the',
-  allowedRange: 'Allowed range'
+  allowedRange: 'Allowed range',
+  banking: 'Banking'
 };
