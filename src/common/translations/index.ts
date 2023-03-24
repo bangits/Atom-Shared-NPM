@@ -1151,6 +1151,7 @@ export default {
   noAddedPackages: 'There are no added packages yet',
   reply: 'Reply',
   noReply: 'No Reply',
+  noros: 'NOROS',
   emailType: 'Email Type',
   activateInboxChannel: 'Activate Inbox Channel',
   editChannelToActivateIt: 'Edit Channel to activate it.',
