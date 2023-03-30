@@ -1766,5 +1766,10 @@ export default {
   doYouWantToDelete: 'Do you want to delete',
   doYouWantToDeleteThe: 'Do you want to delete the',
   allowedRange: 'Allowed range',
-  banking: 'Banking'
+  banking: 'Banking',
+  correct: "Correct",
+  real: "Real",
+  promotional: "Promotional",
+  noCorrectionsFirstSentence: "The are no corrections made",
+  noCorrectionsSecondSentence: "Just one correction should be done for history view."
 };
