@@ -1771,5 +1771,8 @@ export default {
   real: "Real",
   promotional: "Promotional",
   noCorrectionsFirstSentence: "The are no corrections made",
-  noCorrectionsSecondSentence: "Just one correction should be done for history view."
+  noCorrectionsSecondSentence: "Just one correction should be done for history view.",
+  addNote: "Add note",
+  viewNote: "View note",
+  removeNote: "Remove note"
 };
