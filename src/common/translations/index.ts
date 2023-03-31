@@ -1067,6 +1067,7 @@ export default {
   available: 'Available',
   completed: 'Completed',
   paidAmount: 'Paid Amount',
+  paidAmountOfBonus: "Paid Amount of Bonus",
   maxPayoutPercentage: 'Max Payout %',
   pleaseAddUserNameOrPlayerId: 'Please Type UserName Or PlayerID',
   addPlayerOrUserName: 'Add Player Or UserName',
@@ -1774,5 +1775,9 @@ export default {
   noCorrectionsSecondSentence: "Just one correction should be done for history view.",
   addNote: "Add note",
   viewNote: "View note",
-  removeNote: "Remove note"
+  removeNote: "Remove note",
+  reportByCorrections: "Report By Corrections",
+  reason: 'Reason',
+  totalCorrectionsDecrese: "Total Correction +",
+  totalCorrectionsIncrese: "Total Correction -"
 };
