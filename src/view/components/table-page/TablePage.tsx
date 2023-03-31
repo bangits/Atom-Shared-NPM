@@ -180,10 +180,12 @@ export const TablePage = <T extends {}, K>({
 
     if (pageId && userId)
       pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) => {
-        setFiltersConfig({
-          id: config.filtersConfig.id,
-          config: config.filtersConfig.config || null
-        });
+        if (config.filtersConfig) {
+          setFiltersConfig({
+            id: config.filtersConfig.id,
+            config: config.filtersConfig.config || null
+          });
+        }
 
         const tableConfig = config.columnConfig.config
           ? config.columnConfig.config?.sort((prev, next) => prev.Order - next.Order)

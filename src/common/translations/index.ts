@@ -1779,5 +1779,6 @@ export default {
   reportByCorrections: "Report By Corrections",
   reason: 'Reason',
   totalCorrectionsDecrese: "Total Correction +",
-  totalCorrectionsIncrese: "Total Correction -"
+  totalCorrectionsIncrese: "Total Correction -",
+  account: "Account"
 };
