@@ -1777,8 +1777,13 @@ export default {
   viewNote: "View note",
   removeNote: "Remove note",
   reportByCorrections: "Report By Corrections",
-  reason: 'Reason',
+  reason: "Reason",
   totalCorrectionsDecrese: "Total Correction +",
   totalCorrectionsIncrese: "Total Correction -",
-  account: "Account"
+  account: "Account",
+  correctionType: "Correction Type",
+  correctionReason: "Correction Reason",
+  attachment: "Attachment",
+  correctionIncrese: "Correction Up (+)",
+  correctionDecrese: "Correction Up (-)",
 };
