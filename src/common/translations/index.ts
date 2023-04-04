@@ -1336,6 +1336,7 @@ export default {
   file: 'File',
   import: 'Import',
   allowedExtensionsAreEXCEL: 'Allowed extensions are XLS, XLSX, CSV',
+  allowedExtensionsAreIMAGES: "Allowed extensions are PNG, JPG, JPEG, SVG",
   importedFileName: 'Imported File Name',
   importFile: 'Import File',
   nameAlreadyExist: 'The name already exists',
@@ -1786,4 +1787,7 @@ export default {
   attachment: "Attachment",
   correctionIncrese: "Correction Up (+)",
   correctionDecrese: "Correction Up (-)",
+  removeNoteFirstSentence: 'Do you want to remove ',
+  removeNoteSecondSentence: 'the note & attachment ',
+  removeNoteThirdSentence: 'from the correction ?',
 };
