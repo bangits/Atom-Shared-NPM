@@ -1101,6 +1101,7 @@ export default {
   cycleConfigurationTooltipText:
     'Configure Cycle Settings such as deciding Cycle Estimation (max number of points) and Cycle Duration for them to be applied on website.',
   bunnyCoin: 'Bunny Coin',
+  coin: 'Coin',
   cycleEstimation: 'Cycle Estimation',
   youDontHaveTaskTypes: 'You don’t have any Task Types added!',
   pleaseAddTaskType: 'Please add Task Type.',
