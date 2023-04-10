@@ -1337,6 +1337,7 @@ export default {
   file: 'File',
   import: 'Import',
   allowedExtensionsAreEXCEL: 'Allowed extensions are XLS, XLSX, CSV',
+  allowedExtensionsAreIMAGES: 'Allowed extensions are PNG, JPG, JPEG, SVG',
   importedFileName: 'Imported File Name',
   importFile: 'Import File',
   nameAlreadyExist: 'The name already exists',
@@ -1774,9 +1775,9 @@ export default {
   promotional: 'Promotional',
   noCorrectionsFirstSentence: 'The are no corrections made',
   noCorrectionsSecondSentence: 'Just one correction should be done for history view.',
-  addNote: 'Add note',
-  viewNote: 'View note',
-  removeNote: 'Remove note',
+  addNote: 'Add Note',
+  viewNote: 'View Note',
+  removeNote: 'Remove Note',
   reportByCorrections: 'Report By Corrections',
   reason: 'Reason',
   totalCorrectionsDecrese: 'Total Correction +',
@@ -1785,6 +1786,9 @@ export default {
   correctionType: 'Correction Type',
   correctionReason: 'Correction Reason',
   attachment: 'Attachment',
-  correctionIncrese: 'Correction Up (+)',
-  correctionDecrese: 'Correction Up (-)'
+  correctionIncrese: 'Correction (+)',
+  correctionDecrese: 'Correction (-)',
+  removeNoteFirstSentence: 'Do you want to remove ',
+  removeNoteSecondSentence: 'the note & attachment ',
+  removeNoteThirdSentence: 'from the correction ?'
 };
