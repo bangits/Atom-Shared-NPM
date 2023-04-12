@@ -1176,7 +1176,7 @@ export default {
   gSuite: 'G Suite',
   yandex: 'Yandex',
   atomConstruct: 'Atom Construct',
-  remainingForDepositWager: 'Remains for Wager',
+  remainingForDepositWager: 'Remains For Deposit Wager',
   depositWageringAmount: 'Deposit Wagering Amount',
   remainingForDepositWagerFrom: 'Remaining For Deposit Wager From',
   remainingForDepositWagerTo: 'Remaining For Deposit Wager To',
