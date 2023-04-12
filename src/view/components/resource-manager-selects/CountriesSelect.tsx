@@ -12,7 +12,7 @@ export const CountriesSelect = ({
   ...props
 }: Omit<
   Partial<CountrySelectProps> & {
-    valueProp?: 'id' | 'name';
+    valueProp?: 'id' | 'name' | 'isoCode';
     expectCountriesIds?: PrimaryKey[];
     onCountriesGet?(countries: Country[]): void;
   },
