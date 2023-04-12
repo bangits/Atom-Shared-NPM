@@ -1790,5 +1790,6 @@ export default {
   correctionDecrese: 'Correction (-)',
   removeNoteFirstSentence: 'Do you want to remove ',
   removeNoteSecondSentence: 'the note & attachment ',
-  removeNoteThirdSentence: 'from the correction ?'
+  removeNoteThirdSentence: 'from the correction ?',
+  count: 'Count'
 };
