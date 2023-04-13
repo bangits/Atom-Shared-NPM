@@ -1793,5 +1793,10 @@ export default {
   removeNoteThirdSentence: 'from the correction ?',
   count: 'Count',
   totalDeposits: 'Total Deposits',
-  totalWithdrawals: 'Total Withdrawals'
+  totalWithdrawals: 'Total Withdrawals',
+  period: 'Period',
+  generationPeriodOfGgr: 'Generation Period Of GGR',
+  annual: 'Annual',
+  quarterly: 'Quarterly',
+  semiAnnual: 'Semi Annual'
 };
