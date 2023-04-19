@@ -4,7 +4,7 @@ export enum ProjectsEnum {
   Kingbet = 3,
   BlackSoftTech = 4,
   BetRabbit = 5,
-  Mi7 = 5,
+  Mi7 = 6,
   Revolucion = 7,
   PingWin = 8,
   BetCesar = 9
