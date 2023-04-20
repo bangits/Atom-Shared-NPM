@@ -1798,5 +1798,6 @@ export default {
   generationPeriodOfGgr: 'Generation Period Of GGR',
   annual: 'Annual',
   quarterly: 'Quarterly',
-  semiAnnual: 'Semi Annual'
+  semiAnnual: 'Semi Annual',
+  reportByBets: 'Report By Bets'
 };
