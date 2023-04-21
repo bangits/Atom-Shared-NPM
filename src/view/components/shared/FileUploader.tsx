@@ -1,3 +1,4 @@
+import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { AtomCommonContext } from '@/atom-common';
 import { TRANSLATION_CHANGED_VALUE } from '@/configs';
 import { useTranslation } from '@/view';
@@ -6,7 +7,6 @@ import {
   FileUploaderErrors,
   FileUploaderProps as DesignSystemFileUploaderProps
 } from '@atom/design-system';
-import { FC, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
 export interface FileUploaderProps
   extends Omit<DesignSystemFileUploaderProps, 'loadingPercent' | 'onError' | 'onChange'> {
@@ -139,3 +139,5 @@ export const FileUploader: FC<FileUploaderProps> = ({
     </>
   );
 };
+
+export { FileUploaderVariants } from '@atom/design-system';
