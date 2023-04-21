@@ -90,14 +90,12 @@ export const FileUploader: FC<FileUploaderProps> = ({
 
       if (!file) {
         if (onChange) onChange('');
-
         setForceShowUploader(false);
 
         return;
       }
 
       setForceShowUploader(true);
-
       setLoadingPercent(0);
 
       fileManagerUseCase

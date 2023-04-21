@@ -13,3 +13,4 @@ export * from './getUserTimeZone';
 export * from './regexLibrary';
 export * from './replaceEmptyStringsWithNull';
 export * from './stringifyQuery';
+export * from './pickNameFromUrl';
