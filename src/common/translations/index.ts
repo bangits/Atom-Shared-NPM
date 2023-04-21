@@ -1799,5 +1799,6 @@ export default {
   annual: 'Annual',
   quarterly: 'Quarterly',
   semiAnnual: 'Semi Annual',
-  reportByBets: 'Report By Bets'
+  reportByBets: 'Report By Bets',
+  casinoReports: 'Casino Reports'
 };
