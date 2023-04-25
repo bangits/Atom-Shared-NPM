@@ -1800,5 +1800,7 @@ export default {
   quarterly: 'Quarterly',
   semiAnnual: 'Semi Annual',
   reportByBets: 'Report By Bets',
-  casinoReports: 'Casino Reports'
+  casinoReports: 'Casino Reports',
+  frameTitle:'Iframe',
+  gameIdDoesntExist:'Game Doesn’t Exist',
 };
