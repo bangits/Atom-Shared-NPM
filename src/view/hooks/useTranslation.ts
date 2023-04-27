@@ -12,7 +12,7 @@ export interface UseTranslationReturnValue {
 export const useTranslation = (): UseTranslationReturnValue => {
   const containerInstance = useContext(AtomCommonContext);
 
-  const [currentTranslations, setCurrentTranslations] = useState<TranslationModel>({});
+  const [, setCurrentTranslations] = useState<TranslationModel>({});
 
   const [translationService] = useState(containerInstance.translationService);
 

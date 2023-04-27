@@ -2,6 +2,7 @@ import { TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
 import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
+import { Container } from 'inversify';
 import { FC, useEffect, useState } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
 
@@ -15,7 +16,7 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   initLanguage = 'en',
   initializeLanguage
 }) => {
-  const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
+  const [containerInstance, setContainerInstance] = useState<Container>(null);
 
   useEffect(() => {
     const containerInstance = new DiContainer();
@@ -24,14 +25,12 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
 
     (async () => {
       if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get(
-          DI_CONSTANTS.TranslationService
-        );
+        const translationService: TranslationService = DiContainer.instance.get(DI_CONSTANTS.TranslationService);
 
         await translationService.init(initLanguage);
       }
 
-      setContainerInstance(containerInstance);
+      setContainerInstance(DiContainer.instance);
     })();
   }, []);
 
@@ -40,12 +39,12 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   return (
     <AtomCommonContext.Provider
       value={{
-        resourceManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ResourceManagerUseCase),
-        translationService: containerInstance.diContainer.get(DI_CONSTANTS.TranslationService),
-        localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService),
-        fileManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.FileManagerUseCase),
-        pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase),
-        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase)
+        resourceManagerUseCase: containerInstance.get(DI_CONSTANTS.ResourceManagerUseCase),
+        translationService: containerInstance.get(DI_CONSTANTS.TranslationService),
+        localStorageService: containerInstance.get(DI_CONSTANTS.LocalStorageService),
+        fileManagerUseCase: containerInstance.get(DI_CONSTANTS.FileManagerUseCase),
+        pageConfigsUseCase: containerInstance.get(DI_CONSTANTS.PageConfigsUseCase),
+        exchangeManagerUseCase: containerInstance.get(DI_CONSTANTS.ExchangeManagerUseCase)
       }}>
       {children}
     </AtomCommonContext.Provider>

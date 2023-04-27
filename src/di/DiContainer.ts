@@ -25,12 +25,18 @@ import {
 import { Container } from 'inversify';
 import { DI_CONSTANTS } from './constants';
 export class DiContainer {
+  static instance: Container;
+
   public diContainer: Container;
 
   public configure = () => {
+    if (DiContainer.instance) return;
+
     this.diContainer = new Container({
       defaultScope: 'Singleton'
     });
+
+    DiContainer.instance = this.diContainer;
 
     // Services
     this.diContainer.bind<IHttpService>(DI_CONSTANTS.HttpService).toDynamicValue(

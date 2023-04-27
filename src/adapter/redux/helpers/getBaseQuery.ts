@@ -1,4 +1,7 @@
+import { TranslationService } from '@/atom-common';
 import { DiContainer } from '@/di';
+import { DI_CONSTANTS } from '@/di/constants';
+import { alert } from '@atom/design-system';
 import { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { immerable } from 'immer';
 export interface CreateBaseQueryArgument {
@@ -24,6 +27,13 @@ export const getBaseQuery =
       const method = useCase[methodName] as (...args: any[]) => Promise<unknown>;
       const data = await method(...(methodArguments as any[]));
       if (data && typeof data === 'object') data[immerable] = true;
+
+      const translationService = DiContainer.instance.get<TranslationService>(DI_CONSTANTS.TranslationService);
+
+      alert.error({
+        alertLabel: translationService.get('add')
+      });
+
       return { data };
     } catch (error) {
       const errorStatus = error.response?.data?.Status || error.response?.data?.status;
