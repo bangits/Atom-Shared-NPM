@@ -1813,5 +1813,7 @@ export default {
   betCountFrom: 'Bet Count From',
   betCountTo: 'Bet Count To',
   averageBetAmountFrom: 'Avr. Bet Amount From',
-  averageBetAmountTo: 'Avr. Bet Amount To'
+  averageBetAmountTo: 'Avr. Bet Amount To',
+  eventStartDate: 'Event Start Date',
+  eventResult: 'Event Result'
 };
