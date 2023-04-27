@@ -1811,5 +1811,7 @@ export default {
   rollbacked: 'Rollbacked',
   averageBetAmount: 'Avr. Bet Amount',  
   betCountFrom: 'Bet Count From',
-  betCountTo: 'Bet Count To'
+  betCountTo: 'Bet Count To',
+  averageBetAmountFrom: 'Avr. Bet Amount From',
+  averageBetAmountTo: 'Avr. Bet Amount To',
 };
