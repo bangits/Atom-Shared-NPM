@@ -1809,5 +1809,7 @@ export default {
   gameIdDoesntExist: 'Game Doesn’t Exist',
   notCalculated: 'Not Calculated',
   rollbacked: 'Rollbacked',
-  averageBetAmount: 'Avr. Bet Amount'
+  averageBetAmount: 'Avr. Bet Amount',  
+  betCountFrom: 'Bet Count From',
+  betCountTo: 'Bet Count To'
 };
