@@ -1804,15 +1804,14 @@ export default {
   annual: 'Annual',
   quarterly: 'Quarterly',
   semiAnnual: 'Semi Annual',
-  reportByBets: 'Report By Bets',
   casinoReports: 'Casino Reports',
   frameTitle: 'Iframe',
   gameIdDoesntExist: 'Game Doesn’t Exist',
   notCalculated: 'Not Calculated',
   rollbacked: 'Rollbacked',
-  averageBetAmount: 'Avr. Bet Amount',  
+  averageBetAmount: 'Avr. Bet Amount',
   betCountFrom: 'Bet Count From',
   betCountTo: 'Bet Count To',
   averageBetAmountFrom: 'Avr. Bet Amount From',
-  averageBetAmountTo: 'Avr. Bet Amount To',
+  averageBetAmountTo: 'Avr. Bet Amount To'
 };
