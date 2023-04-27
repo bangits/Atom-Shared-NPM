@@ -1730,6 +1730,7 @@ export default {
   bank: 'Bank',
   accountType: 'Account Type',
   sportReports: 'Sport Reports',
+  reportByBets: 'Report By Bets',
   reportBySports: 'Report By Sports',
   sportType: 'Sport Type',
   match: 'Match',
