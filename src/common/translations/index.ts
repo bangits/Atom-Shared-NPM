@@ -1808,5 +1808,6 @@ export default {
   frameTitle: 'Iframe',
   gameIdDoesntExist: 'Game Doesn’t Exist',
   notCalculated: 'Not Calculated',
-  rollbacked: 'Rollbacked'
+  rollbacked: 'Rollbacked',
+  averageBetAmount: 'Avr. Bet Amount'
 };
