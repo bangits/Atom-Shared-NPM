@@ -1183,6 +1183,8 @@ export default {
   depositWageringAmount: 'Deposit Wagering Amount',
   remainingForDepositWagerFrom: 'Remains For Deposit Wager From',
   remainingForDepositWagerTo: 'Remains For Deposit Wager To',
+  remainingForWagerFrom: 'Remains For Wager From',
+  remainingForWagerTo: 'Remains For Wager To',
   depositWageringAmountFrom: 'Deposit Wagering Amount From',
   depositWageringAmountTo: 'Deposit Wagering Amount To',
   selectedTaskTypeWillBeRemoved: 'Please note that all tasks of this type will immediately disappear from the website.',
