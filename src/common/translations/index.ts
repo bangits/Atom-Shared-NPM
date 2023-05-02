@@ -1815,5 +1815,6 @@ export default {
   averageBetAmountFrom: 'Avr. Bet Amount From',
   averageBetAmountTo: 'Avr. Bet Amount To',
   eventStartDate: 'Event Start Date',
-  eventResult: 'Event Result'
+  eventResult: 'Event Result',
+  event: 'Event'
 };
