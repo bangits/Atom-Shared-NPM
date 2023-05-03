@@ -9,3 +9,5 @@ export * from './useProgressAlert';
 export * from './useQueryString';
 export * from './useTranslation';
 export * from './useValidationTranslation';
+export * from './usePermission';
+export * from './useHasPermission';
