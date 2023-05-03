@@ -29,6 +29,10 @@ export const projects: Record<
     name: 'Revolucion',
     logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/10892c41-2dc8-459a-b5f3-4f56e49a78ee_Group%2048099446.png'
   },
+  [ProjectsEnum.FortunaCash]: {
+    name: 'Revolucion',
+    logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/10892c41-2dc8-459a-b5f3-4f56e49a78ee_Group%2048099446.png'
+  },
   [ProjectsEnum.PingWin]: { name: 'PingWin', logo: 'https://storageaccountatom.blob.core.windows.net/mfe/bingwin.svg' },
   [ProjectsEnum.BetCesar]: {
     name: 'Bet Cesar',
