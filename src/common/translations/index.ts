@@ -1720,7 +1720,7 @@ export default {
   successfullyInActivated: 'Successfully inactivated ',
   permissionsDoth: 'Permission (s)',
   notActivated: 'not activated!',
-  deactivated: 'deactivated!',
+  notDeactivated: 'not deactivated!',
   rolesDoth: 'Role (s)',
   download: 'Download',
   permissionIsAlreadyAttached: 'That Permission (s) is already attached!',
