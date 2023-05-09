@@ -5,6 +5,7 @@ import {
   ICacheService,
   IHttpService,
   LocalStorageService,
+  PermissionService,
   SessionStorageService,
   TranslationService
 } from '@/common/services';
@@ -55,6 +56,7 @@ export class DiContainer {
     this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
     this.diContainer.bind(DI_CONSTANTS.SessionStorageService).to(SessionStorageService);
     this.diContainer.bind(DI_CONSTANTS.TranslationService).to(TranslationService);
+    this.diContainer.bind(DI_CONSTANTS.PermissionService).to(PermissionService);
     this.diContainer.bind(DI_CONSTANTS.UserHttpService).toDynamicValue(
       () =>
         new HttpService({

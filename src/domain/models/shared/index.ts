@@ -7,3 +7,4 @@ export * from './SortModel';
 export * from './SortTypesEnum';
 export * from './TranslationModel';
 export * from './TreeModel';
+export * from './PermissionModel';

@@ -1,26 +1,24 @@
-import { useCallback, useEffect, useState } from 'react';
-import { hasPermissionResultType, useHasPermission } from './useHasPermission';
-
-export type SlugType = number | string | number[] | string[];
+import { AtomCommonContext } from '@/atom-common';
+import { SlugType } from '@/domain';
+import { useCallback, useContext, useEffect, useState } from 'react';
 
 export const usePermission = (slugId: SlugType) => {
-  const [result, setResult] = useState<SlugType | hasPermissionResultType>([]);
-  const hasPermission = useHasPermission();
+  const containerInstance = useContext(AtomCommonContext);
 
-  const checkSlugIsExist = useCallback(() => {
-    if (slugId || slugId === 0) {
-      const data = Array.isArray(slugId)
-        ? [...Object.values(hasPermission(slugId))]
-        : hasPermission(slugId);
+  const [currentPermissions, setCurrentPermissions] = useState<boolean | boolean[]>();
 
-      setResult(data);
-    }
-  }, [slugId, hasPermission]);
+  const [permissionService] = useState(containerInstance.permissionService);
+
+  const checkSlugIsExist = useCallback(
+    () => setCurrentPermissions(permissionService.hasPermission(slugId)),
+    [slugId, permissionService.hasPermission]
+  );
 
   useEffect(() => {
     checkSlugIsExist();
+
+    permissionService.subscribe(checkSlugIsExist);
   }, []);
 
-  return result;
+  return currentPermissions;
 };
-

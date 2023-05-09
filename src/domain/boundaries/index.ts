@@ -3,3 +3,4 @@ export * from './IFileManagerRepository';
 export * from './IPageConfigsRepository';
 export * from './IResourceManagerRepository';
 export * from './ITranslationUseCase';
+export * from './IPermissionRepository';

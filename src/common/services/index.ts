@@ -10,3 +10,4 @@ export * from './SocketService';
 export * from './StorageService';
 export * from './Subscribable';
 export * from './TranslationService';
+export * from './PermissionService';

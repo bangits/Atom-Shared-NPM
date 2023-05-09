@@ -17,5 +17,7 @@ export const DI_CONSTANTS = {
   PageConfigsUseCase: 'PageConfigsUseCase',
   ExchangeManagerUseCase: 'ExchangeManagerUseCase',
   UserRepository: 'UserRepository',
-  PageConfigsRepository: 'PageConfigsRepository'
+  PageConfigsRepository: 'PageConfigsRepository',
+  PermissionService: 'PermissionService',
+  PermissionUseCase: 'PermissionUseCase'
 };
