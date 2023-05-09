@@ -54,6 +54,7 @@ export const BannerUploader: FC<BannerUploaderProps> = ({
           const file = await convertBase64ToFile(optimizedBase64);
 
           fileManagerUseCase
+            // eslint-disable-next-line no-console
             .uploadFile(file, console.log)
             .then(onChange)
             .catch(() => {
