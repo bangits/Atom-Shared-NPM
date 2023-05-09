@@ -1,4 +1,4 @@
-export const pickNameFromUrl = (url: string, guidCharsCount: number = 37) => {
+export const pickNameFromUrl = (url: string, guidCharsCount = 37) => {
   if (!url) {
     return '';
   }
