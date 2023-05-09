@@ -27,15 +27,11 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         const translationService: TranslationService = containerInstance.diContainer.get(
           DI_CONSTANTS.TranslationService
         );
-        const permissionService: PermissionService = containerInstance.diContainer.get(
-          DI_CONSTANTS.PermissionService
-        );
+        const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
         await permissionService.init();
         await translationService.init(initLanguage);
       }
-
-
 
       setContainerInstance(containerInstance);
     })();
@@ -52,7 +48,7 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         fileManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.FileManagerUseCase),
         pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase),
         exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase),
-        permissionService:containerInstance.diContainer.get(DI_CONSTANTS.PermissionService),
+        permissionService: containerInstance.diContainer.get(DI_CONSTANTS.PermissionService)
       }}>
       {children}
     </AtomCommonContext.Provider>

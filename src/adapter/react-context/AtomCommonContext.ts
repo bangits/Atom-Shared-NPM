@@ -14,7 +14,7 @@ export interface IAtomCommonContext {
   localStorageService: LocalStorageService;
   fileManagerUseCase: FileManagerUseCase;
   pageConfigsUseCase: PageConfigsUseCase;
-  permissionService:PermissionService;
+  permissionService: PermissionService;
 }
 
 export const AtomCommonContext = createContext<IAtomCommonContext>(null);
