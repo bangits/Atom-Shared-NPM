@@ -1,16 +1,14 @@
 import { AtomCommonContext } from '@/atom-common';
-import { useContext, useEffect, useState } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 
 export const useHasPermission = () => {
   const containerInstance = useContext(AtomCommonContext);
 
-  const [updated, setUpdated] = useState(null);
+  const [, setUpdated] = useState(null);
 
   const [permissionService] = useState(containerInstance.permissionService);
 
-  const forceUpdate = () => {
-    setUpdated({});
-  };
+  const forceUpdate = useCallback(() => setUpdated({}), []);
 
   useEffect(() => {
     permissionService.subscribe(forceUpdate);

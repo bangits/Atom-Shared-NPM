@@ -1,8 +1,8 @@
 import { AtomCommonContext } from '@/atom-common';
-import { SlugType } from '@/domain';
+import { PermissionSlugs } from '@/domain';
 import { useCallback, useContext, useEffect, useState } from 'react';
 
-export const usePermission = (slugId: SlugType) => {
+export const usePermission = (slugId: PermissionSlugs | PermissionSlugs[]) => {
   const containerInstance = useContext(AtomCommonContext);
 
   const [currentPermissions, setCurrentPermissions] = useState<boolean | boolean[]>();

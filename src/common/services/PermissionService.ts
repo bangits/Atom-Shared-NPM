@@ -1,5 +1,5 @@
 import { injectable } from 'inversify';
-import { PermissionSlugs, SlugType } from '@/domain/models';
+import { PermissionSlugs } from '@/domain/models';
 import { Subscribable } from './Subscribable';
 import { IPermissionRepository } from '@/domain/boundaries/IPermissionRepository';
 
@@ -26,9 +26,9 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
     this.publish(userPermissions);
   };
 
-  checkIsExist = (value: SlugType) => Object.values(this.permissions).some((item) => item === value);
+  checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) => Object.values(this.permissions).some((item) => item === value);
 
-  hasPermission = (permissionsForCheck: SlugType) => {
+  hasPermission = (permissionsForCheck: PermissionSlugs | PermissionSlugs[]) => {
     if (!this.permissions.length) return false;
 
     return !Array.isArray(permissionsForCheck)

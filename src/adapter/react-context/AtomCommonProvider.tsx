@@ -29,8 +29,7 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         );
         const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
-        await permissionService.init();
-        await translationService.init(initLanguage);
+        await Promise.all([permissionService.init(), translationService.init(initLanguage)]);
       }
 
       setContainerInstance(containerInstance);
