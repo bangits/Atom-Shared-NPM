@@ -9,7 +9,7 @@ import { StorageService } from './StorageService';
 @injectable()
 export class PermissionService extends Subscribable<PermissionSlugs[]> {
   private static initialized = false;
-  private permissions: PermissionSlugs[] = [];
+  private static permissions: PermissionSlugs[] = [];
 
   @inject(DI_CONSTANTS.PermissionRepository)
   private permissionsRepository: IPermissionRepository;
@@ -36,19 +36,21 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
     const userPermissions = await this.permissionsRepository.getPermissions();
 
     this.permissionsRepository.subscribeForUpdate((updatedTranslations) => {
-      this.permissions = updatedTranslations;
+      PermissionService.permissions = updatedTranslations;
       this.publish(updatedTranslations);
     });
 
-    this.permissions = userPermissions;
+    PermissionService.permissions = userPermissions;
     this.publish(userPermissions);
   };
 
-  checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) =>
-    Object.values(this.permissions).some((item) => item === value);
+  checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) => {
+    return Object.values(PermissionService.permissions).some((item) => item === value);
+  }
+    
 
   hasPermission = (permissionsForCheck: PermissionSlugs | PermissionSlugs[]) => {
-    if (!this.permissions.length) return false;
+    if (!PermissionService.permissions.length) return false;
 
     return !Array.isArray(permissionsForCheck)
       ? this.checkIsExist(permissionsForCheck)
