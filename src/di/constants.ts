@@ -19,5 +19,6 @@ export const DI_CONSTANTS = {
   UserRepository: 'UserRepository',
   PageConfigsRepository: 'PageConfigsRepository',
   PermissionService: 'PermissionService',
-  PermissionUseCase: 'PermissionUseCase'
+  PermissionRepository: 'PermissionRepository',
+  PermissionSocketService: 'PermissionSocketService',
 };

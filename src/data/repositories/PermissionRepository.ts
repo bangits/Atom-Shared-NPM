@@ -1,10 +1,27 @@
-import { IPermissionRepository } from '@/domain';
-import { injectable } from 'inversify';
+import { ISocketService } from '@/atom-common';
+import { DI_CONSTANTS } from '@/di/constants';
+import { IPermissionRepository, PermissionSlugs } from '@/domain';
+import { injectable, inject } from 'inversify';
 
 @injectable()
 export class PermissionRepository implements IPermissionRepository {
-  getPermissions = async () => [];
+  @inject(DI_CONSTANTS.PermissionSocketService)
+  private readonly socketService: ISocketService;
 
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  subscribeForUpdate = async () => {};
+  connectToHub = async (): Promise<boolean> => {
+    try {
+      await this.socketService.connect('/rolepermissionhub');
+
+      return true;
+    } catch (error) {
+      return false;
+    }
+  };
+
+  getPermissions = () =>
+    new Promise<PermissionSlugs[]>((resolve) => {
+      this.socketService.on('GetPermissions', resolve);
+    });
+
+  subscribeForUpdate = (cb: (data: PermissionSlugs[]) => void) => this.socketService.on('GetPermissions', cb);
 }

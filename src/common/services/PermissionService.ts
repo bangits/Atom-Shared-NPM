@@ -1,19 +1,37 @@
-import { injectable } from 'inversify';
-import { PermissionSlugs } from '@/domain/models';
+/* eslint-disable no-console */
+import { injectable, inject } from 'inversify';
+import { PermissionSlugs } from '@/domain';
 import { Subscribable } from './Subscribable';
-import { IPermissionRepository } from '@/domain/boundaries/IPermissionRepository';
-
+import { IPermissionRepository } from '@/domain';
+import { DI_CONSTANTS } from '@/di/constants';
+import { SocketService } from './SocketService';
+import { StorageService } from './StorageService';
 @injectable()
 export class PermissionService extends Subscribable<PermissionSlugs[]> {
-  private initialized = false;
+  private static initialized = false;
   private permissions: PermissionSlugs[] = [];
 
+  @inject(DI_CONSTANTS.PermissionRepository)
   private permissionsRepository: IPermissionRepository;
 
-  init = async () => {
-    if (this.initialized) return;
+  @inject(DI_CONSTANTS.LocalStorageService)
+  private localStorageService: StorageService;
 
-    this.initialized = true;
+  init = async () => {
+    if (PermissionService.initialized) {
+      return;
+    }
+
+    PermissionService.initialized = true;
+
+    // TODO: Move this to constants
+    const accessToken = this.localStorageService.getItem<string>('token');
+
+    if (!accessToken) return;
+
+    SocketService.setAccessToken(accessToken);
+
+    await this.permissionsRepository.connectToHub();
 
     const userPermissions = await this.permissionsRepository.getPermissions();
 
@@ -26,7 +44,8 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
     this.publish(userPermissions);
   };
 
-  checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) => Object.values(this.permissions).some((item) => item === value);
+  checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) =>
+    Object.values(this.permissions).some((item) => item === value);
 
   hasPermission = (permissionsForCheck: PermissionSlugs | PermissionSlugs[]) => {
     if (!this.permissions.length) return false;

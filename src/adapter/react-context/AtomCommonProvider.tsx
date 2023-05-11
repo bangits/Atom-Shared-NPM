@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { PermissionService, TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
 import { DI_CONSTANTS } from '@/di/constants';
@@ -12,8 +13,7 @@ export interface AtomCommonProviderProps {
 
 export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   children,
-  initLanguage = 'en',
-  initializeLanguage
+  initLanguage = 'en'
 }) => {
   const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
 
@@ -23,15 +23,17 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
     containerInstance.configure();
 
     (async () => {
-      if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get(
-          DI_CONSTANTS.TranslationService
-        );
-        const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
+      const translationService: TranslationService = containerInstance.diContainer.get(
+        DI_CONSTANTS.TranslationService
+      );
+      
+      const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
-        await Promise.all([permissionService.init(), translationService.init(initLanguage)]);
-      }
-
+      await Promise.all([
+        permissionService.init(),
+        translationService.init(initLanguage)
+      ]);
+      
       setContainerInstance(containerInstance);
     })();
   }, []);
