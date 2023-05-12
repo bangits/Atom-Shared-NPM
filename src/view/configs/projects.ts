@@ -41,5 +41,13 @@ export const projects: Record<
   [ProjectsEnum.BetCesar]: {
     name: 'Bet Cesar',
     logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/14d7406e-534c-4f55-9507-386d4d62b513_Vector.png'
+  },
+  [ProjectsEnum.Harembet]: {
+    name: 'Harem Bet',
+    logo: 'https://atom-cdn.azureedge.net/mfe/harembet.svg'
+  },
+  [ProjectsEnum.WinGrade]: {
+    name: 'Win Grade',
+    logo: 'https://atom-cdn.azureedge.net/mfe/wingrade.svg'
   }
 };

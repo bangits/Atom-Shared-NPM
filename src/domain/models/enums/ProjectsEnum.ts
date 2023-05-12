@@ -9,5 +9,7 @@ export enum ProjectsEnum {
   PingWin = 8,
   BetCesar = 9,
   FortunaCash = 10,
-  RubyPalace = 11
+  RubyPalace = 11,
+  WinGrade = 12,
+  Harembet = 13
 }
