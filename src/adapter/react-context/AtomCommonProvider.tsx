@@ -1,4 +1,5 @@
-import { TranslationService } from '@/common/services';
+/* eslint-disable no-console */
+import { PermissionService, TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
 import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
@@ -12,8 +13,7 @@ export interface AtomCommonProviderProps {
 
 export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   children,
-  initLanguage = 'en',
-  initializeLanguage
+  initLanguage = 'en'
 }) => {
   const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
 
@@ -23,14 +23,17 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
     containerInstance.configure();
 
     (async () => {
-      if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get(
-          DI_CONSTANTS.TranslationService
-        );
+      const translationService: TranslationService = containerInstance.diContainer.get(
+        DI_CONSTANTS.TranslationService
+      );
+      
+      const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
-        await translationService.init(initLanguage);
-      }
-
+      await Promise.all([
+        permissionService.init(),
+        translationService.init(initLanguage)
+      ]);
+      
       setContainerInstance(containerInstance);
     })();
   }, []);
@@ -45,7 +48,8 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService),
         fileManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.FileManagerUseCase),
         pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase),
-        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase)
+        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase),
+        permissionService: containerInstance.diContainer.get(DI_CONSTANTS.PermissionService)
       }}>
       {children}
     </AtomCommonContext.Provider>

@@ -1,4 +1,4 @@
-import { LocalStorageService, TranslationService } from '@/common/services';
+import { LocalStorageService, PermissionService, TranslationService } from '@/common/services';
 import {
   ExchangeManagerUseCase,
   FileManagerUseCase,
@@ -14,6 +14,7 @@ export interface IAtomCommonContext {
   localStorageService: LocalStorageService;
   fileManagerUseCase: FileManagerUseCase;
   pageConfigsUseCase: PageConfigsUseCase;
+  permissionService: PermissionService;
 }
 
 export const AtomCommonContext = createContext<IAtomCommonContext>(null);
