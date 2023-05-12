@@ -11,17 +11,15 @@ export interface AtomCommonProviderProps {
   initializeLanguage?: boolean;
 }
 
+const containerInstance = new DiContainer();
+
+containerInstance.configure();
+
 export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
   children,
   initLanguage = 'en'
 }) => {
-  const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
-
   useEffect(() => {
-    const containerInstance = new DiContainer();
-
-    containerInstance.configure();
-
     (async () => {
       const translationService: TranslationService = containerInstance.diContainer.get(
         DI_CONSTANTS.TranslationService
@@ -33,8 +31,6 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         permissionService.init(),
         translationService.init(initLanguage)
       ]);
-      
-      setContainerInstance(containerInstance);
     })();
   }, []);
 
