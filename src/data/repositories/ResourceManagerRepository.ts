@@ -22,13 +22,6 @@ import { API_ROUTES } from '..';
 
 @injectable()
 export class ResourceManagerRepository implements IResourceManagerRepository {
-  @inject(DI_CONSTANTS.HttpService)
-  private readonly httpService: IHttpService;
-
-  // Dont delete this part as it used in cachedFn
-  @inject(DI_CONSTANTS.CacheService)
-  private readonly cacheService: ICacheService;
-
   getCountries = cachedFn('CachedCountries', async (getCountriesRequestModel: FilterRequestModel) => {
     const countries = await this.httpService.get<GetCountriesResponseModel, FilterRequestModel>({
       url: API_ROUTES.Countries,
@@ -108,6 +101,13 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
 
     return validationLevel;
   }).bind(this);
+
+  @inject(DI_CONSTANTS.HttpService)
+  private readonly httpService: IHttpService;
+
+  // Dont delete this part as it used in cachedFn
+  @inject(DI_CONSTANTS.CacheService)
+  private readonly cacheService: ICacheService;
 
   getRegion = async (getRegionRequestModel: RegionFilterRequestModel) => {
     const region = await this.httpService.get<GetRegionResponseModel, RegionFilterRequestModel>({
