@@ -50,7 +50,7 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
     
 
   hasPermission = (permissionsForCheck: PermissionSlugs | PermissionSlugs[]) => {
-    if (!PermissionService.permissions.length) return false;
+    if (!PermissionService.permissions?.length) return false;
 
     return !Array.isArray(permissionsForCheck)
       ? this.checkIsExist(permissionsForCheck)
