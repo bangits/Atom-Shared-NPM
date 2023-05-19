@@ -1818,5 +1818,6 @@ export default {
   averageBetAmountTo: 'Avr. Bet Amount To',
   eventStartDate: 'Event Start Date',
   eventResult: 'Event Result',
-  event: 'Event'
+  event: 'Event',
+  freeSpin:'Free Spin',
 };
