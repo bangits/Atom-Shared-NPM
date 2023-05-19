@@ -7,5 +7,9 @@ export enum ProjectsEnum {
   Mi7 = 6,
   Revolucion = 7,
   PingWin = 8,
-  BetCesar = 9
+  BetCesar = 9,
+  FortunaCash = 10,
+  RubyPalace = 11,
+  WinGrade = 12,
+  Harembet = 13
 }

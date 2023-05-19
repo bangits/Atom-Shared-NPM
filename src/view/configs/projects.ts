@@ -29,9 +29,25 @@ export const projects: Record<
     name: 'Revolucion',
     logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/10892c41-2dc8-459a-b5f3-4f56e49a78ee_Group%2048099446.png'
   },
+  [ProjectsEnum.FortunaCash]: {
+    name: 'Revolucion',
+    logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/10892c41-2dc8-459a-b5f3-4f56e49a78ee_Group%2048099446.png'
+  },
+  [ProjectsEnum.RubyPalace]: {
+    name: 'Ruby Palace',
+    logo: 'https://storageaccountatom.blob.core.windows.net/mfe/ruby.svg'
+  },
   [ProjectsEnum.PingWin]: { name: 'PingWin', logo: 'https://storageaccountatom.blob.core.windows.net/mfe/bingwin.svg' },
   [ProjectsEnum.BetCesar]: {
     name: 'Bet Cesar',
     logo: 'https://storageaccountatom.blob.core.windows.net/staging-storage/projects/14d7406e-534c-4f55-9507-386d4d62b513_Vector.png'
+  },
+  [ProjectsEnum.Harembet]: {
+    name: 'Harem Bet',
+    logo: 'https://atom-cdn.azureedge.net/mfe/harembet.svg'
+  },
+  [ProjectsEnum.WinGrade]: {
+    name: 'Win Grade',
+    logo: 'https://atom-cdn.azureedge.net/mfe/wingrade.svg'
   }
 };
