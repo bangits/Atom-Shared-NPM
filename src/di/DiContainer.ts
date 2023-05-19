@@ -56,7 +56,9 @@ export class DiContainer {
         })
     );
 
-    this.diContainer.bind<ISocketService>(DI_CONSTANTS.PermissionSocketService).toDynamicValue(() => new SocketService('/rm'));
+    this.diContainer
+      .bind<ISocketService>(DI_CONSTANTS.PermissionSocketService)
+      .toDynamicValue(() => new SocketService('/rm'));
 
     this.diContainer.bind<ICacheService>(DI_CONSTANTS.CacheService).to(CacheService);
     this.diContainer.bind(DI_CONSTANTS.LocalStorageService).to(LocalStorageService);
