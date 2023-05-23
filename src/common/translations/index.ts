@@ -1828,4 +1828,9 @@ export default {
   activateProvider: 'provider',
   activateProviderPlural: 'provider',
   freeSpinsCount: 'Free Spins Count',
+  'win/bet': 'Win / Bet',
+  consistentRepetitionOfWins: 'Consistent Repetition of Wins',
+  consistentRepetitionOfLoss: 'Consistent Repetition of Loss',
+  ggrCurrency: 'GGR currency',
+  usePromoCode: 'Use Promo Code'
 };
