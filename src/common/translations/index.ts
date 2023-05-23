@@ -1724,6 +1724,7 @@ export default {
   notActivated: 'not activated!',
   notInactivated: 'not inactivated!',
   rolesDoth: 'Role (s)',
+  providersAlert: 'Provider(s)',
   download: 'Download',
   permissionIsAlreadyAttached: 'That Permission (s) is already attached!',
   reportByCompetitions: 'Report By Competitions',
@@ -1819,5 +1820,11 @@ export default {
   eventStartDate: 'Event Start Date',
   eventResult: 'Event Result',
   event: 'Event',
-  freeSpin:'Free Spin'
+  freeSpin: 'Free Spin',
+  paymentsCount: 'Payments Count',
+  directly: 'Directly',
+  byAggregator: 'By Aggregator',
+  noPaymentProviders: 'You don’t have any payment providers added! Please add a provider.',
+  activateProvider: 'provider',
+  activateProviderPlural: 'provider'
 };
