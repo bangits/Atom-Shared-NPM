@@ -1819,5 +1819,6 @@ export default {
   eventStartDate: 'Event Start Date',
   eventResult: 'Event Result',
   event: 'Event',
-  freeSpin: 'Free Spin'
+  freeSpin: 'Free Spin',
+  freeSpinsCount:'Free Spins Count',
 };
