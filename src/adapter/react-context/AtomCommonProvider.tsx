@@ -15,22 +15,14 @@ const containerInstance = new DiContainer();
 
 containerInstance.configure();
 
-export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
-  children,
-  initLanguage = 'en'
-}) => {
+export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, initLanguage = 'en' }) => {
   useEffect(() => {
     (async () => {
-      const translationService: TranslationService = containerInstance.diContainer.get(
-        DI_CONSTANTS.TranslationService
-      );
-      
+      const translationService: TranslationService = containerInstance.diContainer.get(DI_CONSTANTS.TranslationService);
+
       const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
-      await Promise.all([
-        permissionService.init(),
-        translationService.init(initLanguage)
-      ]);
+      await Promise.all([permissionService.init(), translationService.init(initLanguage)]);
     })();
   }, []);
 

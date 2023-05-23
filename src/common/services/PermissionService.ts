@@ -46,8 +46,7 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
 
   checkIsExist = (value: PermissionSlugs | PermissionSlugs[]) => {
     return Object.values(PermissionService.permissions).some((item) => item === value);
-  }
-    
+  };
 
   hasPermission = (permissionsForCheck: PermissionSlugs | PermissionSlugs[]) => {
     if (!PermissionService.permissions?.length) return false;
