@@ -1826,5 +1826,6 @@ export default {
   byAggregator: 'By Aggregator',
   noPaymentProviders: 'You don’t have any payment providers added! Please add a provider.',
   activateProvider: 'provider',
-  activateProviderPlural: 'provider'
+  activateProviderPlural: 'provider',
+  freeSpinsCount: 'freeSpinsCount',
 };
