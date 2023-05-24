@@ -1832,5 +1832,6 @@ export default {
   consistentRepetitionOfWins: 'Consistent Repetition of Wins',
   consistentRepetitionOfLoss: 'Consistent Repetition of Loss',
   ggrCurrency: 'GGR currency',
-  usePromoCode: 'Use Promo Code'
+  usePromoCode: 'Use Promo Code',
+  'gameId/name': 'Game ID/Name'
 };
