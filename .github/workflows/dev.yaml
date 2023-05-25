@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ['develop','new-page-id']
+    branches: ['develop']
   pull_request:
-    branches: ['develop','new-page-id']
+    branches: ['develop']
 
   workflow_dispatch:
 
