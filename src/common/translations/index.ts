@@ -1643,6 +1643,7 @@ export default {
   groupNumber: 'Group Number',
 
   paymentMethod: 'Payment Method',
+  paymentMethods: 'Payment Methods',
   bitexPro: 'BitexPro',
   slugName: 'Slug Name',
   permissionName: 'Permission Name',
@@ -1725,6 +1726,7 @@ export default {
   notInactivated: 'not inactivated!',
   rolesDoth: 'Role (s)',
   providersAlert: 'Provider(s)',
+  paymentMethodsAlert: 'Payment Methods(s)',
   download: 'Download',
   permissionIsAlreadyAttached: 'That Permission (s) is already attached!',
   reportByCompetitions: 'Report By Competitions',
@@ -1825,6 +1827,7 @@ export default {
   directly: 'Directly',
   byAggregator: 'By Aggregator',
   noPaymentProviders: 'You don’t have any payment providers added! Please add a provider.',
+  noPaymentMethod: 'You don’t have any payment methods added! Please add a method',
   activateProvider: 'provider',
   activateProviderPlural: 'provider',
   freeSpinsCount: 'Free Spins Count',
@@ -1836,5 +1839,14 @@ export default {
   'gameId/name': 'Game ID/Name',
   freeSpinApiSupport: 'Free Spin API Support',
   isFreeSpinApiSupport: 'Is Freespin API Support',
-  reportByCountries: 'Report By Countries'
+  reportByCountries: 'Report By Countries',
+  activatePaymentMethod: 'payment method',
+  activatePaymentMethodPlural: 'payment methods',
+  paymentName: 'Payment Name',
+  paymentReason: 'Payment Reason',
+  paymentId: 'Payment ID',
+  eVaucher: 'E-Voucher',
+  bankCard: 'Bank Card',
+  depositAndWithdraw: 'Deposit & Withdraw',
+  addPayment: 'Add Payment'
 };
