@@ -11,3 +11,4 @@ export * from './NetworkErrorComponent';
 export * from './Stepper';
 export * from './TelephoneInput';
 export * from './TelephoneInputField';
+export * from './InputWithSwitchField';
