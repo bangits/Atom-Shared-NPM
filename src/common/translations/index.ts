@@ -1835,5 +1835,6 @@ export default {
   usePromoCode: 'Use Promo Code',
   'gameId/name': 'Game ID/Name',
   freeSpinApiSupport: 'Free Spin API Support',
-  isFreeSpinApiSupport: 'Is Freespin API Support'
+  isFreeSpinApiSupport: 'Is Freespin API Support',
+  reportByCountries: 'Report By Countries'
 };
