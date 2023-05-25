@@ -1,4 +1,4 @@
-import { ActionResponseModel, PrimaryKey, TRANSLATION_CHANGED_VALUE, UseTranslationReturnValue } from '@/atom-common';
+import { ActionResponseModel, PrimaryKey, UseTranslationReturnValue, useBulkActionAlert } from '@/atom-common';
 import { alert } from '@atom/design-system';
 import { useCallback, useEffect, useState } from 'react';
 
@@ -23,6 +23,8 @@ export const useActionWithDialog = <T>({
   refetch,
   isFetching
 }: UseActionWithDialogParameters<T>): { openDialogFn: (column: T | T[]) => void; columnLoadingIds: PrimaryKey[] } => {
+  const bulkActionAlert = useBulkActionAlert();
+
   const [columnLoadingIds, setColumnLoadingIds] = useState<PrimaryKey[]>([]);
 
   const showErrorConnectionAlert = useCallback(
@@ -47,29 +49,7 @@ export const useActionWithDialog = <T>({
 
           actionFn(columnIds)
             .then((actionResponseModel: ActionResponseModel) => {
-              if (!actionResponseModel) return;
-
-              if (actionResponseModel.successCount)
-                alert.success({
-                  alertLabel:
-                    actionResponseModel.successCount > 1
-                      ? t
-                          .get('successMultipleAlertMessage')
-                          .replace(TRANSLATION_CHANGED_VALUE, actionResponseModel.successCount.toString())
-                      : t.get('successAlertMessage')
-                });
-
-              if (actionResponseModel.failsCount)
-                alert.error({
-                  alertLabel:
-                    actionResponseModel.failsCount > 1
-                      ? t
-                          .get('errorMultipleAlertMessage')
-                          .replace(TRANSLATION_CHANGED_VALUE, actionResponseModel.failsCount.toString())
-                      : actionResponseModel.errorCode === 1
-                      ? t.get('providerIsNotActive')
-                      : t.get('errorAlertMessage')
-                });
+              bulkActionAlert(actionResponseModel);
 
               refetch();
             })
@@ -77,7 +57,7 @@ export const useActionWithDialog = <T>({
         }
       });
     },
-    [dialogFn, t, getColumnId, actionFn, refetch]
+    [dialogFn, t, bulkActionAlert, getColumnId, actionFn, refetch]
   );
 
   useEffect(() => {

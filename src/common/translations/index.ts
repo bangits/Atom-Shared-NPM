@@ -1833,5 +1833,7 @@ export default {
   consistentRepetitionOfLoss: 'Consistent Repetition of Loss',
   ggrCurrency: 'GGR currency',
   usePromoCode: 'Use Promo Code',
-  'gameId/name': 'Game ID/Name'
+  'gameId/name': 'Game ID/Name',
+  freeSpinApiSupport: 'Free Spin API Support',
+  isFreeSpinApiSupport: 'Is Freespin API Support'
 };
