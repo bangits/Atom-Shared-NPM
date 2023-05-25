@@ -1836,6 +1836,5 @@ export default {
   'gameId/name': 'Game ID/Name',
   freeSpinApiSupport: 'Free Spin API Support',
   isFreeSpinApiSupport: 'Is Freespin API Support',
-  reportByCountries: 'Report By Countries',
-  activateProviderPlural: 'provider'
+  reportByCountries: 'Report By Countries'
 };
