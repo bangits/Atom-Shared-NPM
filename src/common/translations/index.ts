@@ -1848,5 +1848,7 @@ export default {
   eVaucher: 'E-Voucher',
   bankCard: 'Bank Card',
   depositAndWithdraw: 'Deposit & Withdraw',
-  addPayment: 'Add Payment'
+  addPayment: 'Add Payment',
+  providerDetails: 'Provider Details',
+  paymentMethodFor: 'Payment Method For'
 };
