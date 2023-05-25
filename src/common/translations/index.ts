@@ -1836,5 +1836,11 @@ export default {
   'gameId/name': 'Game ID/Name',
   freeSpinApiSupport: 'Free Spin API Support',
   isFreeSpinApiSupport: 'Is Freespin API Support',
-  reportByCountries: 'Report By Countries'
+  reportByCountries: 'Report By Countries',
+  paymentMethodsTooltipText:
+    'At least one payment method must be activated from the list to activate the current provider.',
+  paymentMethodsEmptyText: 'There are no added Payment Methods yet. Please add a method.',
+  payments: 'Payments',
+  payment: 'Payment',
+  paymentMethods: 'Payment Methods'
 };
