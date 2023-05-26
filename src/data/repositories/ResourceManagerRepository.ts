@@ -1,7 +1,12 @@
 import { cachedFn } from '@/common/helpers';
 import { ICacheService, IHttpService } from '@/common/services';
 import { DI_CONSTANTS } from '@/di/constants';
-import { GetTimeZoneResponseModel, IResourceManagerRepository } from '@/domain';
+import {
+  GetLicensesResponseModel,
+  GetTimeZoneResponseModel,
+  IResourceManagerRepository,
+  LicensesRequestModel
+} from '@/domain';
 import {
   CityVillageFilterRequestModel,
   FilterRequestModel,
@@ -125,5 +130,12 @@ export class ResourceManagerRepository implements IResourceManagerRepository {
     });
 
     return cityVillage;
+  };
+
+  getLicenses = async (licensesRequestModel: LicensesRequestModel): Promise<GetLicensesResponseModel> => {
+    return await this.httpService.get<GetLicensesResponseModel, LicensesRequestModel>({
+      url: API_ROUTES.License,
+      query: licensesRequestModel
+    });
   };
 }

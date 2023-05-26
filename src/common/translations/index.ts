@@ -1855,5 +1855,7 @@ export default {
   depositAndWithdraw: 'Deposit & Withdraw',
   addPayment: 'Add Payment',
   providerDetails: 'Provider Details',
-  paymentMethodFor: 'Payment Method For'
+  paymentMethodFor: 'Payment Method For',
+  supportedLangagues: 'Supported Countries',
+  isBonusBet: 'Is Bonus Bet'
 };
