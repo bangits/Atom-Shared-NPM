@@ -1856,5 +1856,6 @@ export default {
   addPayment: 'Add Payment',
   providerDetails: 'Provider Details',
   paymentMethodFor: 'Payment Method For',
-  supportedLangagues: 'Supported Countries'
+  supportedLangagues: 'Supported Countries',
+  isBonusBet: 'Is Bonus Bet'
 };
