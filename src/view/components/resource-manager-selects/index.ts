@@ -8,3 +8,4 @@ export * from './NationalitySelect';
 export * from './RegionsSelect';
 export * from './TimeZoneSelect';
 export * from './ValidationLevelSelect';
+export * from './LicensesSelect';

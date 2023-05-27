@@ -7,15 +7,19 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetLicensesResponseModel,
   GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   GetTimeZoneResponseModel,
   GetValidationLevelResponseModel,
+  LicensesRequestModel,
   RegionFilterRequestModel
 } from '../models';
 
 export interface IResourceManagerRepository {
+  getLicenses(licensesRequestModel: LicensesRequestModel): Promise<GetLicensesResponseModel>;
+
   getGender(): Promise<GetGenderResponseModel>;
 
   getCountries(getCountriesRequestModel: FilterRequestModel): Promise<GetCountriesResponseModel>;

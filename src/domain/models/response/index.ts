@@ -10,3 +10,4 @@ export * from './GetPhoneCodeResponseModel';
 export * from './GetRegionResponseModel';
 export * from './GetTimeZoneResponseModel';
 export * from './GetValidationLevelResponseModel';
+export * from './GetLicensesResponseModel';
