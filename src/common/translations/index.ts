@@ -1855,5 +1855,8 @@ export default {
   depositAndWithdraw: 'Deposit & Withdraw',
   addPayment: 'Add Payment',
   providerDetails: 'Provider Details',
-  paymentMethodFor: 'Payment Method For'
+  paymentMethodFor: 'Payment Method For',
+  freeSpinGameExistTooltip: 'Please delete the game to add a new one!',
+  eligibleGameInfo: 'At least one eligible game should be added for the bonus activation.',
+  eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.'
 };
