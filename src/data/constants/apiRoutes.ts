@@ -10,6 +10,7 @@ export const API_ROUTES = {
   Region: '/Region',
   CityVillage: '/CityVillage',
   ValidationLevel: '/ValidationLevels',
+  License: '/license',
   FileManager: {
     Upload: '/Upload'
   },

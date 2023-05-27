@@ -10,11 +10,13 @@ import {
   GetDocumentTypeResponseModel,
   GetGenderResponseModel,
   GetLanguageResponseModel,
+  GetLicensesResponseModel,
   GetNationalitiesResponseModel,
   GetPhoneCodeResponseModel,
   GetRegionResponseModel,
   GetTimeZoneResponseModel,
   GetValidationLevelResponseModel,
+  LicensesRequestModel,
   RegionFilterRequestModel
 } from '../models';
 
@@ -55,6 +57,10 @@ export class ResourceManagerUseCase {
 
   getRegion = async (getRegionRequestModel: RegionFilterRequestModel): Promise<GetRegionResponseModel> => {
     return this.resourceManagerRepository.getRegion(getRegionRequestModel);
+  };
+
+  getLicenses = async (licensesRequestModel: LicensesRequestModel): Promise<GetLicensesResponseModel> => {
+    return this.resourceManagerRepository.getLicenses(licensesRequestModel);
   };
 
   getCityVillage = async (
