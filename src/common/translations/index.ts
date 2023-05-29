@@ -1860,5 +1860,6 @@ export default {
   eligibleGameInfo: 'At least one eligible game should be added for the bonus activation.',
   eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.',
   supportedLangagues: 'Supported Countries',
-  isBonusBet: 'Is Bonus Bet'
+  isBonusBet: 'Is Bonus Bet',
+  freeSpinsValue:'Free Spin Value'
 };
