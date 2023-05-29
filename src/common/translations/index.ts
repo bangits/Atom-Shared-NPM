@@ -1866,4 +1866,5 @@ export default {
   freeSpinsValueTo:'Free Spins Value To',
   freeSpinsCountFrom: 'Free Spins Count From',
   freeSpinsCountTo: 'Free Spins Count To',
+  withWageringRequirement:'With Wagering Requirement',
 };
