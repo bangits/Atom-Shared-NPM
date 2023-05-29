@@ -1861,9 +1861,9 @@ export default {
   eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.',
   supportedLangagues: 'Supported Countries',
   isBonusBet: 'Is Bonus Bet',
-  freeSpinsValue:'Free Spins Value',
-  freeSpinsValueFrom:'Free Spins Value From',
-  freeSpinsValueTo:'Free Spins Value To',
+  freeSpinsValue: 'Free Spins Value',
+  freeSpinsValueFrom: 'Free Spins Value From',
+  freeSpinsValueTo: 'Free Spins Value To',
   freeSpinsCountFrom: 'Free Spins Count From',
-  freeSpinsCountTo: 'Free Spins Count To',
+  freeSpinsCountTo: 'Free Spins Count To'
 };
