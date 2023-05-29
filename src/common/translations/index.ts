@@ -1866,5 +1866,13 @@ export default {
   freeSpinsValueFrom: 'Free Spins Value From',
   freeSpinsValueTo: 'Free Spins Value To',
   freeSpinsCountFrom: 'Free Spins Count From',
-  freeSpinsCountTo: 'Free Spins Count To'
+  freeSpinsCountTo: 'Free Spins Count To',
+  withWageringRequirement: 'With Wagering Requirement',
+  paymentMethodDetails: 'Payment Details',
+  paymentMethodLogo: 'Payment Method Logo',
+  paymentInformation: 'Payment Information',
+  limitationPeriodTypes: 'Limitation Period Types',
+  depositSupportedLanguages: 'Supported Currencies - Deposit ',
+  withdrawSupportedLanguages: 'Supported Currencies - Withdraw ',
+  regionalSettings: 'Regional & Currency Settings'
 };
