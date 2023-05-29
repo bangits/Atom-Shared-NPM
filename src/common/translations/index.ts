@@ -1863,6 +1863,7 @@ export default {
   supportedLangagues: 'Supported Countries',
   isBonusBet: 'Is Bonus Bet',
   freeSpinsValue: 'Free Spins Value',
+  freeSpinValueOneUnit: 'Free Spin Value (One Unit)',
   freeSpinsValueFrom: 'Free Spins Value From',
   freeSpinsValueTo: 'Free Spins Value To',
   freeSpinsCountFrom: 'Free Spins Count From',
