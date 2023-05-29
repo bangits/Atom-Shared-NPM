@@ -3,8 +3,9 @@ import { PermissionService, TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
 import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
+import DesignSystemProvider from './DesignSystemProvider';
 
 export interface AtomCommonProviderProps {
   initLanguage?: LanguageType;
@@ -39,7 +40,7 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, init
         exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase),
         permissionService: containerInstance.diContainer.get(DI_CONSTANTS.PermissionService)
       }}>
-      {children}
+      <DesignSystemProvider>{children}</DesignSystemProvider>
     </AtomCommonContext.Provider>
   );
 };

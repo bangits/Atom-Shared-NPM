@@ -1048,6 +1048,7 @@ export default {
   bonusAmount: 'Bonus Amount',
   provisionDate: 'Provision Date',
   startDateCannotBeLessThanCurrentDate: 'Start date cannot be less than current date!',
+  startDateCannotBeMoreThanEndDate: 'Start date cannot be more than end date!',
   analyze: 'Analyze',
   playerBonusId: 'Player Bonus ID',
   wageringAmount: 'Wagering Amount',
@@ -1861,9 +1862,9 @@ export default {
   eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.',
   supportedLangagues: 'Supported Countries',
   isBonusBet: 'Is Bonus Bet',
-  freeSpinsValue:'Free Spins Value',
-  freeSpinsValueFrom:'Free Spins Value From',
-  freeSpinsValueTo:'Free Spins Value To',
+  freeSpinsValue: 'Free Spins Value',
+  freeSpinsValueFrom: 'Free Spins Value From',
+  freeSpinsValueTo: 'Free Spins Value To',
   freeSpinsCountFrom: 'Free Spins Count From',
-  freeSpinsCountTo: 'Free Spins Count To',
+  freeSpinsCountTo: 'Free Spins Count To'
 };
