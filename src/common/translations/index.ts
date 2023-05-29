@@ -1861,5 +1861,5 @@ export default {
   eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.',
   supportedLangagues: 'Supported Countries',
   isBonusBet: 'Is Bonus Bet',
-  freeSpinsValue:'Free Spin Value'
+  freeSpinsValue:'Free Spins Value'
 };
