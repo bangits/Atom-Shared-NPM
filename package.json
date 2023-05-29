@@ -84,9 +84,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@atom/design-system": "^4.7.16",
     "@atom/authorization": "^0.1.7",
     "@atom/cms-management": "^0.2.12",
+    "@atom/design-system": "^4.7.22",
     "@automapper/classes": "^7.0.2",
     "@automapper/core": "^7.0.2",
     "@microsoft/signalr": "^6.0.1",
