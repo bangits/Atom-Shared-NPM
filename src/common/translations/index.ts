@@ -1875,5 +1875,7 @@ export default {
   limitationPeriodTypes: 'Limitation Period Types',
   depositSupportedLanguages: 'Supported Currencies - Deposit ',
   withdrawSupportedLanguages: 'Supported Currencies - Withdraw ',
-  regionalSettings: 'Regional & Currency Settings'
+  regionalSettings: 'Regional & Currency Settings',
+  paymentProvider: 'Payment Provider',
+  paymentAggregator: 'Payment Aggregator'
 };
