@@ -1887,5 +1887,6 @@ export default {
   supportedCurrenciesOptional: 'Supported Currencies (Optional)',
   avrBetAmountFrom: 'Avr. Bet Amount From',
   avrBetAmountTo: 'Avr. Bet Amount To',
-  avrBetAmount: 'Avr. Bet Amount'
+  avrBetAmount: 'Avr. Bet Amount',
+  categoryType:'Category Type'
 };
