@@ -37,5 +37,5 @@ export const LicensesSelect = ({
       });
   }, []);
 
-  return <CustomSelect {...props} options={options} inputLabel={t.get('licenses')}></CustomSelect>;
+  return <CustomSelect inputLabel={t.get('licenses')} {...props} options={options}></CustomSelect>;
 };

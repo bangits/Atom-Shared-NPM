@@ -1873,7 +1873,12 @@ export default {
   paymentMethodLogo: 'Payment Method Logo',
   paymentInformation: 'Payment Information',
   limitationPeriodTypes: 'Limitation Period Types',
-  depositSupportedLanguages: 'Supported Currencies - Deposit ',
-  withdrawSupportedLanguages: 'Supported Currencies - Withdraw ',
-  regionalSettings: 'Regional & Currency Settings'
+  depositSupportedCurrencies: 'Supported Currencies - Deposit ',
+  withdrawSupportedCurrencies: 'Supported Currencies - Withdraw ',
+  regionalSettings: 'Regional & Currency Settings',
+  supportedCountriesOptional: 'Supported Countries (Optional)',
+  licensesOptinal: 'Licenses (Optional)',
+  supportedLanguagesOptional: 'Supported Languages (Optional)',
+  supportedDevicesOptional: 'Supported Devices (Optional)',
+  supportedCurrenciesOptional: 'Supported Currencies (Optional)'
 };
