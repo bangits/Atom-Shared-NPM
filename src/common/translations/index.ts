@@ -1888,5 +1888,6 @@ export default {
   avrBetAmountFrom: 'Avr. Bet Amount From',
   avrBetAmountTo: 'Avr. Bet Amount To',
   avrBetAmount: 'Avr. Bet Amount',
-  categoryType: 'Category Type'
+  categoryType: 'Category Type',
+  paymentsInventory: 'Payments Inventory'
 };

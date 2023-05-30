@@ -6,6 +6,7 @@ export * from './useExportLoading';
 export * from './useFirstValue';
 export * from './useGeolocationSelects';
 export * from './useHasPermission';
+export * from './useItemsList';
 export * from './useLoading';
 export * from './useLocation';
 export * from './usePermission';
