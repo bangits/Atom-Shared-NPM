@@ -1873,13 +1873,21 @@ export default {
   paymentMethodLogo: 'Payment Method Logo',
   paymentInformation: 'Payment Information',
   limitationPeriodTypes: 'Limitation Period Types',
+  depositSupportedLanguages: 'Supported Currencies - Deposit ',
+  withdrawSupportedLanguages: 'Supported Currencies - Withdraw ',
+  regionalSettings: 'Regional & Currency Settings',
+  paymentProvider: 'Payment Provider',
+  paymentAggregator: 'Payment Aggregator',
   depositSupportedCurrencies: 'Supported Currencies - Deposit ',
   withdrawSupportedCurrencies: 'Supported Currencies - Withdraw ',
-  regionalSettings: 'Regional & Currency Settings',
   supportedCountriesOptional: 'Supported Countries (Optional)',
   licensesOptinal: 'Licenses (Optional)',
   supportedLanguagesOptional: 'Supported Languages (Optional)',
   supportedDevicesOptional: 'Supported Devices (Optional)',
   supportedDevices: 'Supported Devices',
-  supportedCurrenciesOptional: 'Supported Currencies (Optional)'
+  supportedCurrenciesOptional: 'Supported Currencies (Optional)',
+  avrBetAmountFrom: 'Avr. Bet Amount From',
+  avrBetAmountTo: 'Avr. Bet Amount To',
+  avrBetAmount: 'Avr. Bet Amount',
+  categoryType: 'Category Type'
 };
