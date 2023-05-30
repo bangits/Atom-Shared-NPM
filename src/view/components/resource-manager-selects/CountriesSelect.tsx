@@ -1,8 +1,7 @@
-import { AtomCommonContext } from '@/adapter/react-context';
-import { MAX_PAGE_SIZE } from '@/configs';
+import { useCountries } from '@/atom-common';
 import { PrimaryKey } from '@/domain';
 import { Country } from '@/domain/entities';
-import { useContext, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo } from 'react';
 import { CustomSelect, CustomSelectProps } from '../shared';
 
 export interface CountrySelectProps extends Omit<CustomSelectProps, 'options'> {}
@@ -18,9 +17,7 @@ export const CountriesSelect = ({
   },
   'options'
 >) => {
-  const { resourceManagerUseCase } = useContext(AtomCommonContext);
-
-  const [countries, setCountries] = useState<Country[]>([]);
+  const countries = useCountries();
 
   const selectOptions = useMemo(
     () =>
@@ -31,18 +28,8 @@ export const CountriesSelect = ({
   );
 
   useEffect(() => {
-    resourceManagerUseCase
-      .getCountries({
-        filterName: null,
-        pageNumber: 1,
-        pageSize: MAX_PAGE_SIZE
-      })
-      .then((getCountriesResponse) => {
-        setCountries(getCountriesResponse.results);
-
-        props.onCountriesGet?.(getCountriesResponse.results);
-      });
-  }, []);
+    if (countries.length) props.onCountriesGet?.(countries);
+  }, [countries]);
 
   return (
     <>
