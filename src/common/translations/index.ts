@@ -1884,6 +1884,7 @@ export default {
   licensesOptinal: 'Licenses (Optional)',
   supportedLanguagesOptional: 'Supported Languages (Optional)',
   supportedDevicesOptional: 'Supported Devices (Optional)',
+  supportedDevices: 'Supported Devices',
   supportedCurrenciesOptional: 'Supported Currencies (Optional)',
   avrBetAmountFrom: 'Avr. Bet Amount From',
   avrBetAmountTo: 'Avr. Bet Amount To',
