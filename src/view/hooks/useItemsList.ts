@@ -39,6 +39,7 @@ export const useItemsList = () => {
 
   return {
     selectedItemIds,
+    selectedItemsHashMap,
     setSelectedItemIds,
     viewSelectedItems,
     createToggleItem,
