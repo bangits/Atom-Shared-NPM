@@ -1877,5 +1877,15 @@ export default {
   withdrawSupportedLanguages: 'Supported Currencies - Withdraw ',
   regionalSettings: 'Regional & Currency Settings',
   paymentProvider: 'Payment Provider',
-  paymentAggregator: 'Payment Aggregator'
+  paymentAggregator: 'Payment Aggregator',
+  depositSupportedCurrencies: 'Supported Currencies - Deposit ',
+  withdrawSupportedCurrencies: 'Supported Currencies - Withdraw ',
+  supportedCountriesOptional: 'Supported Countries (Optional)',
+  licensesOptinal: 'Licenses (Optional)',
+  supportedLanguagesOptional: 'Supported Languages (Optional)',
+  supportedDevicesOptional: 'Supported Devices (Optional)',
+  supportedCurrenciesOptional: 'Supported Currencies (Optional)',
+  avrBetAmountFrom: 'Avr. Bet Amount From',
+  avrBetAmountTo: 'Avr. Bet Amount To',
+  avrBetAmount: 'Avr. Bet Amount'
 };
