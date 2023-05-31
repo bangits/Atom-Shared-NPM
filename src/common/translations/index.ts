@@ -1895,5 +1895,16 @@ export default {
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`,
   addToGroup: 'Add to Group',
-  groupType: 'Group Type'
+  groupType: 'Group Type',
+  requestedAmount: 'Requested Amount',
+  'fee%': 'Fee (%)',
+  feeAmount: 'Fee Amount',
+  finalAmount: 'Final Amount',
+  eVouncher: 'E-Vouncher',
+  requestedAmountFrom: 'Requested Amount From',
+  requestedAmountTo: 'Requested Amount To',
+  feeAmountFrom: 'Fee Amount From',
+  feeAmountTo: 'Fee Amount To',
+  finalAmountFrom: 'Final Amount From',
+  finalAmountTo: 'Final Amount To'
 };
