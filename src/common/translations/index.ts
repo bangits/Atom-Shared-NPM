@@ -1862,7 +1862,7 @@ export default {
   freeSpinGameExistTooltip: 'Please delete the game to add a new one!',
   eligibleGameInfo: 'At least one eligible game should be added for the bonus activation.',
   eiigibleGameEmptyText: 'There are no added Eligible Games in current Bonus.',
-  supportedLangagues: 'Supported Countries',
+  supportedLangagues: 'Supported Languages',
   isBonusBet: 'Is Bonus Bet',
   freeSpinsValue: 'Free Spins Value',
   freeSpinValueOneUnit: 'Free Spin Value (One Unit)',
@@ -1895,5 +1895,18 @@ export default {
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`,
   addToGroup: 'Add to Group',
-  groupType: 'Group Type'
+  groupType: 'Group Type',
+  emptyWithReaseFirstSentence: 'There are no added ',
+  emptyWithReaseSecondSentence: ' yet. ',
+  emptyWithReaseThirdSentence: 'Please ',
+  limitationPeriods: 'Limitation Periods',
+  periods: 'periods',
+  minAmountPerTransaction: 'Min Amount Per Transaction',
+  maxAmountPerTransaction: 'Max Amount Per Transaction',
+  maxTransactionAmountDaily: 'Max Transaction Amount ( Daily )',
+  maxTransactionAmountWeekly: 'Max Transaction Amount (Weekly)',
+  maxTransactionAmountMonthly: 'Max Transaction Amount ( Monthly )',
+  maxCountPerAccountDaily: 'Max Count Per Account (Daily)',
+  maxCountPerAccountWeekly: 'Max Count Per Account (Weekly)',
+  maxCountPerAccountMonthly: 'Max Count Per Account (Monthly)'
 };
