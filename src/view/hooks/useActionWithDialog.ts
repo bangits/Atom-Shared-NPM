@@ -43,21 +43,27 @@ export const useActionWithDialog = <T>({
         onSubmit: (closeFn) => {
           const columnIds = Array.isArray(column) ? column.map(getColumnId) : [getColumnId(column)];
 
-          setColumnLoadingIds(columnIds);
+          setColumnLoadingIds((prevColumnIds) => {
+            if (prevColumnIds.length) return prevColumnIds;
 
-          closeFn();
+            closeFn();
 
-          actionFn(columnIds)
-            .then((actionResponseModel: ActionResponseModel) => {
-              bulkActionAlert(actionResponseModel);
+            actionFn(columnIds)
+              .then((actionResponseModel: ActionResponseModel) => {
+                bulkActionAlert(actionResponseModel);
 
-              refetch();
-            })
-            .catch(showErrorConnectionAlert);
+                setColumnLoadingIds([]);
+
+                refetch();
+              })
+              .catch(showErrorConnectionAlert);
+
+            return columnIds;
+          });
         }
       });
     },
-    [dialogFn, t, bulkActionAlert, getColumnId, actionFn, refetch]
+    [dialogFn, t, columnLoadingIds, bulkActionAlert, getColumnId, actionFn, refetch]
   );
 
   useEffect(() => {

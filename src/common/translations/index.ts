@@ -1892,5 +1892,6 @@ export default {
   avrBetAmountTo: 'Avr. Bet Amount To',
   avrBetAmount: 'Avr. Bet Amount',
   categoryType: 'Category Type',
-  paymentsInventory: 'Payments Inventory'
+  paymentsInventory: 'Payments Inventory',
+  paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`
 };
