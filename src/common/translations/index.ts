@@ -1908,5 +1908,6 @@ export default {
   maxTransactionAmountMonthly: 'Max Transaction Amount ( Monthly )',
   maxCountPerAccountDaily: 'Max Count Per Account (Daily)',
   maxCountPerAccountWeekly: 'Max Count Per Account (Weekly)',
-  maxCountPerAccountMonthly: 'Max Count Per Account (Monthly)'
+  maxCountPerAccountMonthly: 'Max Count Per Account (Monthly)',
+  financialSettings: 'Financial Settings'
 };
