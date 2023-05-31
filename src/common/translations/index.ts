@@ -1895,7 +1895,5 @@ export default {
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`,
   addToGroup: 'Add to Group',
-  groupType: 'Group Type',
-  addToGroup: 'Add to Group',
   groupType: 'Group Type'
 };
