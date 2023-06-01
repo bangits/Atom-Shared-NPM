@@ -1929,5 +1929,6 @@ export default {
   playedFeeAmountFrom: 'Played Fee Amount From',
   playedFeeAmountTo: 'Played Fee Amount To',
   withdrawals: 'Withdrawals',
-  emailVerificationCode: 'Email Verification Code'
+  emailVerificationCode: 'Email Verification Code',
+  requests: 'Requests'
 };
