@@ -1928,5 +1928,6 @@ export default {
   unplayedFeeAmount: 'Unplayed Fee Amount',
   playedFeeAmountFrom: 'Played Fee Amount From',
   playedFeeAmountTo: 'Played Fee Amount To',
-  withdrawals: 'Withdrawals'
+  withdrawals: 'Withdrawals',
+  emailVerificationCode: 'Email Verification Code'
 };
