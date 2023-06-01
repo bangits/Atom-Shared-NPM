@@ -1920,5 +1920,13 @@ export default {
   maxCountPerAccountDaily: 'Max Count Per Account (Daily)',
   maxCountPerAccountWeekly: 'Max Count Per Account (Weekly)',
   maxCountPerAccountMonthly: 'Max Count Per Account (Monthly)',
-  financialSettings: 'Financial Settings'
+  financialSettings: 'Financial Settings',
+  deposits: 'Deposits',
+  'playedFee%': 'Played Fee (%)',
+  'unplayedFee%': 'Unplayed Fee (%)',
+  playedFeeAmount: 'Played Fee Amount',
+  unplayedFeeAmount: 'Unplayed Fee Amount',
+  playedFeeAmountFrom: 'Played Fee Amount From',
+  playedFeeAmountTo: 'Played Fee Amount To',
+  withdrawals: 'Withdrawals'
 };
