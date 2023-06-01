@@ -6,6 +6,7 @@ export interface InputWithSwitchFieldProps<T> {
   options: { id: number; label: string }[];
   form: FormikProps<T>;
   label: string;
+  inputProps: TextInputProps;
   variantName: string;
   inputName: string;
   onSwitchChange?: (value: number, e: MouseEvent<SVGSVGElement>) => void;
@@ -18,6 +19,7 @@ export const InputWithSwitchField = <T,>({
   label,
   variantName,
   inputName,
+  inputProps,
   onSwitchChange,
   onInputChange
 }: InputWithSwitchFieldProps<T>) => {
@@ -37,7 +39,7 @@ export const InputWithSwitchField = <T,>({
     [form.setFieldValue, variantName]
   );
 
-  const inputProps: TextInputProps = useMemo(
+  const defaultInputProps: TextInputProps = useMemo(
     () => ({
       label,
       type: 'number',
@@ -49,7 +51,7 @@ export const InputWithSwitchField = <T,>({
 
   return (
     <InputWithSwitch
-      inputProps={inputProps}
+      inputProps={{ ...defaultInputProps, ...inputProps }}
       inputValue={form.values[inputName]}
       switchValue={form.values[variantName]}
       switchOptions={options}

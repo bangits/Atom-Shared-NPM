@@ -1929,5 +1929,11 @@ export default {
   playedFeeAmountFrom: 'Played Fee Amount From',
   playedFeeAmountTo: 'Played Fee Amount To',
   withdrawals: 'Withdrawals',
-  emailVerificationCode: 'Email Verification Code'
+  emailVerificationCode: 'Email Verification Code',
+  monthlyFee: 'Monthly Fee',
+  successfulTransactionFee: 'Successful Transaction Fee',
+  declinedTransactionFee: 'Declined Transaction Fee',
+  refundFee: 'Refund Fee',
+  fixed: 'fixed',
+  percent: '%'
 };
