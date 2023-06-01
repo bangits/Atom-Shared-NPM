@@ -17,7 +17,7 @@ export interface DeleteDialogProps {
 
 export const deleteDialog = ({ t, column, pluralLabel, label, onSubmit }: DeleteDialogProps) => {
   dialog.acceptionDialog({
-    title: t.get('activate'),
+    title: t.get('delete'),
     description: (
       <>
         {t.get('doYouWantToDelete')}
