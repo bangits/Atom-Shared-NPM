@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: ['staging','delete-common-functionality']
+    branches: ['staging']
   pull_request:
-    branches: ['staging','delete-common-functionality']
+    branches: ['staging']
 
   workflow_dispatch:
 
