@@ -390,13 +390,13 @@
     react-transition-group "^4.4.5"
     regenerator-transform "^0.14.5"
 
-"@atom/design-system@^4.7.22":
-  version "4.7.22"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.7.22.tgz#a6409db679630fcf9aef6cc1dc9acc63199633cf"
-  integrity sha1-pkCdtnljD8+a72zB3JrMYxmWM88=
+"@atom/design-system@^4.8.4":
+  version "4.8.4"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-4.8.4.tgz#9fb445c20044fa395dab3b75a967830e64586b60"
+  integrity sha1-n7RFwgBE+jldqzt1qWeDDmRYa2A=
   dependencies:
     "@atom/common" "^2.4.6"
-    "@my-ui/core" "^0.11.7"
+    "@my-ui/core" "^0.11.14"
     classnames "^2.3.1"
     codemirror "^5.65.10"
     draft-js "^0.11.7"
@@ -2333,10 +2333,10 @@
   resolved "https://registry.npmjs.org/@msgpack/msgpack/-/msgpack-2.8.0.tgz#4210deb771ee3912964f14a15ddfb5ff877e70b9"
   integrity sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==
 
-"@my-ui/core@^0.11.7":
-  version "0.11.7"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.7.tgz#7eb630e34c62f21cd183956752d9d4d70b137959"
-  integrity sha1-frYw40xi8hzRg5VnUtnU1wsTeVk=
+"@my-ui/core@^0.11.14":
+  version "0.11.15"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.15.tgz#cf8e7df012ef8e4eef287c8e69f81671562594cd"
+  integrity sha1-z4598BLvjk7vKHyOafgWcVYllM0=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
