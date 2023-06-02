@@ -13,6 +13,11 @@ export const useValidationTranslation = () => {
       min: (value: number) => t.get('validations.min').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       max: (value: number) => t.get('validations.max').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       maxNumber: (value: number) => t.get('validations.maxNumber').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
+      range: (rangeStart: number, rangeEnd: number) =>
+        t
+          .get('validations.range')
+          .replace(TRANSLATION_CHANGED_VALUE, rangeStart.toString())
+          .replace(TRANSLATION_CHANGED_VALUE, rangeEnd.toString()),
       email: () => t.get('validations.email'),
       slug: () => t.get('validations.slug'),
       password: () => t.get('validations.password'),
@@ -22,6 +27,8 @@ export const useValidationTranslation = () => {
       maxValue: (value: number) => t.get('validations.maxValue').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       website: () => t.get('validations.website'),
       phoneCodeRequired: () => t.get('validations.phoneCodeRequired'),
+      lessOrEqual: (value: number) =>
+        t.get('validations.lessOrEqual').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       lessThanMin: () => t.get('validations.lessThanMin'),
       moreThanMax: () => t.get('validations.moreThanMax'),
       negative: () => t.get('validations.negative'),
