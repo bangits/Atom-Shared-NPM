@@ -1947,5 +1947,6 @@ export default {
   moreThanMaxTransactionAmounntWeekly: 'Value should be more than Max Amount Per Transaction (Weekly)',
   fillMaxTransactionAmountDaily: 'Please fill Max Transaction Amount (Daily)',
   fillMaxTransactionAmountWeekly: 'Please fill Max Transaction Amount (Weekly)',
-  fillMaxTransactionAmountMonthly: 'Please fill Max Transaction Amount (Monthly)'
+  fillMaxTransactionAmountMonthly: 'Please fill Max Transaction Amount (Monthly)',
+  successfullyDeleted: ' Successfully deleted!',
 };
