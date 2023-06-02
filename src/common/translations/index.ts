@@ -1896,6 +1896,7 @@ export default {
   categoryType: 'Category Type',
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`,
+  paymentMethodActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} payment method(s). Please check the payments details.`,
   addToGroup: 'Add to Group',
   groupType: 'Group Type',
   requestedAmount: 'Requested Amount',
