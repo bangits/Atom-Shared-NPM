@@ -4,7 +4,6 @@ import { dialog, Icons } from '@atom/design-system';
 
 export interface DeleteDialogColumn {
   id: PrimaryKey;
-  name: string;
 }
 
 export interface DeleteDialogProps {
@@ -13,16 +12,17 @@ export interface DeleteDialogProps {
   label: string;
   pluralLabel: string;
   onSubmit: (cancelFn: () => void) => void;
+  key?: PrimaryKey;
 }
 
-export const deleteDialog = ({ t, column, pluralLabel, label, onSubmit }: DeleteDialogProps) => {
+export const deleteDialog = ({ t, column, pluralLabel, label, onSubmit, key = 'name' }: DeleteDialogProps) => {
   dialog.acceptionDialog({
     title: t.get('delete'),
     description: (
       <>
         {t.get('doYouWantToDelete')}
 
-        <strong> {Array.isArray(column) ? column.length : `"${column.name}"`} </strong>
+        <strong> {Array.isArray(column) ? column.length : `"${column[key]}"`} </strong>
 
         {Array.isArray(column) ? pluralLabel.toLowerCase() : label.toLowerCase()}
       </>
