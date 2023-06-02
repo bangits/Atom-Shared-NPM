@@ -30,6 +30,6 @@ export const showActivateDialog = ({ t, column, pluralLabel, label, onSubmit }: 
     cancelButtonText: t.get('cancel'),
     submitButtonText: t.get('activate'),
     icon: <Icons.CheckPopupIcon />,
-    onSubmit,
+    onSubmit
   });
 };
