@@ -36,6 +36,7 @@ export default {
   pleaseUploadThePhoto: 'Please upload the photo for editing',
   validations: {
     required: 'Required field',
+    duplicate: 'The value already exists',
     negative: 'Sorry, only negative numbers are allowed!',
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     lessOrEqual: `Value should be less or equal ${TRANSLATION_CHANGED_VALUE}`,
@@ -1454,6 +1455,8 @@ export default {
   emptyLoyaltyRewardsSecondPart: ' yet. Please add Reward.',
   emptyLoyaltyLevelsFirstSentence: "You don't have any Levels added",
   emptyLoyaltyLevelsSecondSentence: 'Please add a new Level',
+  emptyButtonsFirstSentence: "You don't have any Buttons added.",
+  emptyButtonsSecondSentence: 'Please add a new Buttons',
   levelsMaxCountReached: 'The maximum count of levels should be $VALUE !!',
   groupsMaxCountReached: 'The maximum count of groups should be $VALUE !!',
   rewardListTooltipText:
@@ -1947,5 +1950,11 @@ export default {
   moreThanMaxTransactionAmounntWeekly: 'Value should be more than Max Amount Per Transaction (Weekly)',
   fillMaxTransactionAmountDaily: 'Please fill Max Transaction Amount (Daily)',
   fillMaxTransactionAmountWeekly: 'Please fill Max Transaction Amount (Weekly)',
-  fillMaxTransactionAmountMonthly: 'Please fill Max Transaction Amount (Monthly)'
+  fillMaxTransactionAmountMonthly: 'Please fill Max Transaction Amount (Monthly)',
+  activities: 'Activities',
+  values: 'Values',
+  addButton: 'Add Button',
+  fastActionButtons: 'Fast Action Buttons',
+  fastActionButtonsTooltip: 'The added buttons will be displayed for the selected currencies and activities on Website',
+  'deposit&Withdraw': 'Deposit & Withdraw'
 };

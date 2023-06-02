@@ -20,6 +20,7 @@ export const useValidationTranslation = () => {
           .replace(TRANSLATION_CHANGED_VALUE, rangeEnd.toString()),
       email: () => t.get('validations.email'),
       slug: () => t.get('validations.slug'),
+      duplicate: () => t.get('validations.duplicate'),
       password: () => t.get('validations.password'),
       positive: () => t.get('validations.positive'),
       noSpace: () => t.get('validations.noSpace'),
