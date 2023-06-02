@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, useCallback, useMemo, useState } from 'react';
 
-const useToggle = (defaultValue = false) => {
+export const useToggle = (defaultValue = false) => {
   const [booleanValue, setBooleanValue] = useState(defaultValue);
 
   const toggler = useCallback(() => setBooleanValue((prevValue) => !prevValue), []);
@@ -10,5 +10,3 @@ const useToggle = (defaultValue = false) => {
     [booleanValue]
   );
 };
-
-export default useToggle;
