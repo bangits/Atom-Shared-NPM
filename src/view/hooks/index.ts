@@ -12,5 +12,6 @@ export * from './useLocation';
 export * from './usePermission';
 export * from './useProgressAlert';
 export * from './useQueryString';
+export * from './useToggle';
 export * from './useTranslation';
 export * from './useValidationTranslation';

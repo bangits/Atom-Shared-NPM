@@ -38,7 +38,9 @@ export default {
     required: 'Required field',
     negative: 'Sorry, only negative numbers are allowed!',
     lessThanMin: "Maximum value can't be equal or less than minimum value",
+    lessOrEqual: `Value should be less or equal ${TRANSLATION_CHANGED_VALUE}`,
     moreThanMax: 'The value is more than maximum value',
+    range: `Value should be min. ${TRANSLATION_CHANGED_VALUE} and max. ${TRANSLATION_CHANGED_VALUE}`,
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
     positive: 'Sorry, only positive numbers are allowed!',
     max: `The maximum length is ${TRANSLATION_CHANGED_VALUE}!`,
@@ -1894,6 +1896,7 @@ export default {
   categoryType: 'Category Type',
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} providers. At lease one method should be activated!`,
+  paymentMethodActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} payment method(s). Please check the payments details.`,
   addToGroup: 'Add to Group',
   groupType: 'Group Type',
   requestedAmount: 'Requested Amount',
@@ -1936,5 +1939,13 @@ export default {
   declinedTransactionFee: 'Declined Transaction Fee',
   refundFee: 'Refund Fee',
   fixed: 'fixed',
-  percent: '%'
+  percent: '%',
+  moreThanMinAmountPerTransaction: 'Value should be more than Min Amount Per Transaction.',
+  moreThanMaxMinAmountPerTransaction: 'Value should be more than Min & Max Amount Per Transactions.',
+  moreThanMaxAmountPerTransaction: 'Value should be more than Max Amount Per Transaction.',
+  moreThanMaxTransactionAmounntDaily: 'Value should be more than Max Transaction Amount (Daily)',
+  moreThanMaxTransactionAmounntWeekly: 'Value should be more than Max Amount Per Transaction (Weekly)',
+  fillMaxTransactionAmountDaily: 'Please fill Max Transaction Amount (Daily)',
+  fillMaxTransactionAmountWeekly: 'Please fill Max Transaction Amount (Weekly)',
+  fillMaxTransactionAmountMonthly: 'Please fill Max Transaction Amount (Monthly)'
 };
