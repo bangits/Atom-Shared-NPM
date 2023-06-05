@@ -1957,5 +1957,6 @@ export default {
   fastActionButtons: 'Fast Action Buttons',
   fastActionButtonsTooltip: 'The added buttons will be displayed for the selected currencies and activities on Website',
   'deposit&Withdraw': 'Deposit & Withdraw',
-  successfullyDeleted: 'Successfully deleted!'
+  successfullyDeleted: 'Successfully deleted!',
+  updatePaymentMethods: 'Update Payment Methods'
 };
