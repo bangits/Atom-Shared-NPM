@@ -21,10 +21,8 @@ export const deleteDialog = ({ t, column, pluralLabel, label, onSubmit, key = 'n
     description: (
       <>
         {t.get('doYouWantToDelete')}
-
         <strong> {Array.isArray(column) ? column.length : `"${column[key]}"`} </strong>
-
-        {Array.isArray(column) ? pluralLabel.toLowerCase() : label.toLowerCase()}
+        {Array.isArray(column) ? pluralLabel.toLowerCase() : label.toLowerCase()} ?
       </>
     ),
     cancelButtonText: t.get('cancel'),

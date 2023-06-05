@@ -21,10 +21,8 @@ export const showActivateDialog = ({ t, column, pluralLabel, label, onSubmit }: 
     description: (
       <>
         {t.get('doYouWantToActivate')}
-
         <strong> {Array.isArray(column) ? column.length : `"${column.name}"`} </strong>
-
-        {Array.isArray(column) ? pluralLabel.toLowerCase() : label.toLowerCase()}
+        {Array.isArray(column) ? pluralLabel.toLowerCase() : label.toLowerCase()} ?
       </>
     ),
     cancelButtonText: t.get('cancel'),
