@@ -7,7 +7,7 @@ import { useTranslation } from '@/view';
 export interface InputWithTimeFiledProps<T> {
   form: FormikProps<T>;
   label: string;
-  inputProps: TextInputProps;
+  inputProps?: TextInputProps;
   variantName: string;
   inputName: string;
   onSwitchChange?: (value: number, e: MouseEvent<SVGSVGElement>) => void;

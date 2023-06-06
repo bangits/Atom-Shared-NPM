@@ -6,7 +6,7 @@ export interface InputWithSwitchFieldProps<T> {
   options: { id: number; label: string }[];
   form: FormikProps<T>;
   label: string;
-  inputProps: TextInputProps;
+  inputProps?: TextInputProps;
   variantName: string;
   inputName: string;
   onSwitchChange?: (value: number, e: MouseEvent<SVGSVGElement>) => void;
@@ -19,7 +19,7 @@ export const InputWithSwitchField = <T,>({
   label,
   variantName,
   inputName,
-  inputProps,
+  inputProps = {},
   onSwitchChange,
   onInputChange
 }: InputWithSwitchFieldProps<T>) => {
