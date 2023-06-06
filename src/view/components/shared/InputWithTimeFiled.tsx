@@ -14,7 +14,7 @@ export interface InputWithTimeFiledProps<T> {
   onInputChange?: (value: string, e: ChangeEvent) => void;
 }
 
-export const InputWithTimeFiled = ({
+export const InputWithTimeFiled = <T,>({
   form,
   label,
   variantName,
@@ -22,7 +22,7 @@ export const InputWithTimeFiled = ({
   inputProps = {},
   onSwitchChange,
   onInputChange
-}) => {
+}: InputWithTimeFiledProps<T>) => {
   const t = useTranslation();
 
   const handleInputChange = useCallback(
