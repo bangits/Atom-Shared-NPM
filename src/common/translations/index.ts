@@ -1974,5 +1974,7 @@ export default {
   minutesShort: 'Min.',
   minutes: 'Minutes',
   days: 'Days',
-  hours: 'Hours'
+  hours: 'Hours',
+  byCurrencies: 'By Currencies',
+  buttonsByCurrencies: 'Buttons by currencies'
 };
