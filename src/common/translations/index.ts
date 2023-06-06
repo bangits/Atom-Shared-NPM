@@ -1964,5 +1964,15 @@ export default {
   activity: 'Activity',
   attachedCurrencies: 'Attached Currencies',
   websiteCurrencies: 'Website Currencies',
-  currencyFrom: 'Currency From'
+  currencyFrom: 'Currency From',
+  paymentSetup: 'Payment Setup',
+  paymentSetupTooltip:
+    'The payment method should be visible for the selected Activity in Display For Activities option',
+  displayForActivities: 'Display for Activities',
+  processTimeDeposit: 'Process Time (Deposit)',
+  processTimeWithdraw: 'Process Time (Withdraw)',
+  minutesShort: 'Min.',
+  minutes: 'Minutes',
+  days: 'Days',
+  hours: 'Hours'
 };
