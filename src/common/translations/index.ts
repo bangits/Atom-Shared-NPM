@@ -1981,5 +1981,7 @@ export default {
   depositFee: 'Deposit Fee',
   maxRequestsPerDay: 'Max Requests Per Day',
   pendingMaxCount: 'Pending Max Count',
-  paymentManagement: 'Payment Management'
+  paymentManagement: 'Payment Management',
+  unPlayedAmountWithdrawalFee: 'Unplayed Amount Withdrawal Fee',
+  playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee'
 };
