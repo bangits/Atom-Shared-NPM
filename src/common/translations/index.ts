@@ -1976,5 +1976,9 @@ export default {
   days: 'Days',
   hours: 'Hours',
   byCurrencies: 'By Currencies',
-  buttonsByCurrencies: 'Buttons by currencies'
+  buttonsByCurrencies: 'Buttons by currencies',
+  minMaxLimits: 'Min/Max Limits',
+  depositFee: 'Deposit Fee',
+  maxRequestsPerDay: 'Max Requests Per Day',
+  pendingMaxCount: 'Pending Max Count'
 };
