@@ -1958,5 +1958,11 @@ export default {
   fastActionButtonsTooltip: 'The added buttons will be displayed for the selected currencies and activities on Website',
   'deposit&Withdraw': 'Deposit & Withdraw',
   successfullyDeleted: 'Successfully deleted!',
-  updatePaymentMethods: 'Update Payment Methods'
+  updatePaymentMethods: 'Update Payment Methods',
+  currencySettingsTooltipText: 'The payment will be displayed for the selected available currencies on Website',
+  addCurrencies: 'Add Currencies',
+  activity: 'Activity',
+  attachedCurrencies: 'Attached Currencies',
+  websiteCurrencies: 'Website Currencies',
+  currencyFrom: 'Currency From'
 };
