@@ -1974,5 +1974,9 @@ export default {
   minutesShort: 'Min.',
   minutes: 'Minutes',
   days: 'Days',
-  hours: 'Hours'
+  hours: 'Hours',
+  minMaxLimits: 'Min/Max Limits',
+  depositFee: 'Deposit Fee',
+  maxRequestsPerDay: 'Max Requests Per Day',
+  pendingMaxCount: 'Pending Max Count',
 };
