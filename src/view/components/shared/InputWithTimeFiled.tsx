@@ -1,9 +1,10 @@
-import { useCallback, useMemo, MouseEvent, ChangeEvent } from 'react';
 import { FormikProps } from 'formik';
+import { useCallback, useMemo, MouseEvent, ChangeEvent } from 'react';
 import { InputWithSwitch, TextInputProps } from '@atom/design-system';
+import { TimeUnits } from '@/domain';
+import { useTranslation } from '@/view';
 
-export interface InputWithSwitchFieldProps<T> {
-  options: { id: number; label: string }[];
+export interface InputWithTimeFiledProps<T> {
   form: FormikProps<T>;
   label: string;
   inputProps?: TextInputProps;
@@ -13,8 +14,7 @@ export interface InputWithSwitchFieldProps<T> {
   onInputChange?: (value: string, e: ChangeEvent) => void;
 }
 
-export const InputWithSwitchField = <T,>({
-  options,
+export const InputWithTimeFiled = <T,>({
   form,
   label,
   variantName,
@@ -22,7 +22,9 @@ export const InputWithSwitchField = <T,>({
   inputProps = {},
   onSwitchChange,
   onInputChange
-}: InputWithSwitchFieldProps<T>) => {
+}: InputWithTimeFiledProps<T>) => {
+  const t = useTranslation();
+
   const handleInputChange = useCallback(
     (value: string, e: ChangeEvent) => {
       onInputChange?.(value, e);
@@ -47,6 +49,24 @@ export const InputWithSwitchField = <T,>({
       explanation: form.errors[inputName] || ''
     }),
     [label, form.errors, inputName]
+  );
+
+  const options = useMemo(
+    () => [
+      {
+        id: TimeUnits.Minute,
+        label: t.get('minutesShort')
+      },
+      {
+        id: TimeUnits.Hour,
+        label: t.get('hours')
+      },
+      {
+        id: TimeUnits.Day,
+        label: t.get('days')
+      }
+    ],
+    [t]
   );
 
   return (
