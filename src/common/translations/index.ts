@@ -1980,5 +1980,6 @@ export default {
   minMaxLimits: 'Min/Max Limits',
   depositFee: 'Deposit Fee',
   maxRequestsPerDay: 'Max Requests Per Day',
-  pendingMaxCount: 'Pending Max Count'
+  pendingMaxCount: 'Pending Max Count',
+  paymentManagement: 'Payment Management'
 };
