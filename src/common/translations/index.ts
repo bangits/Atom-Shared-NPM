@@ -1958,5 +1958,15 @@ export default {
   fastActionButtonsTooltip: 'The added buttons will be displayed for the selected currencies and activities on Website',
   'deposit&Withdraw': 'Deposit & Withdraw',
   successfullyDeleted: 'Successfully deleted!',
-  updatePaymentMethods: 'Update Payment Methods'
+  paymentSetup: 'Payment Setup',
+  paymentSetupTooltip:
+    'The payment method should be visible for the selected Activity in Display For Activities option',
+  displayForActivities: 'Display for Activities',
+  processTimeDeposit: 'Process Time (Deposit)',
+  processTimeWithdraw: 'Process Time (Withdraw)',
+  updatePaymentMethods: 'Update Payment Methods',
+  minutesShort: 'Min.',
+  minutes: 'Minutes',
+  days: 'Days',
+  hours: 'Hours'
 };

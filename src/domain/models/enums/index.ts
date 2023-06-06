@@ -5,3 +5,4 @@ export * from './SupportedBrowsersEnum';
 export * from './TimeUnitsEnum';
 export * from './PermissionSlugs';
 export * from './LicenseTypesEnum';
+export * from './TimeUnits';
