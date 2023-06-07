@@ -642,6 +642,7 @@ export default {
   noAddedGames: 'There are no added games yet',
   noAddedItems: 'There are no added items yet',
   noAddedProviders: 'There are no added providers yet',
+  noAddedPaymentMethods: 'There are no added payment methods yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
   noAddedSocialMedias: 'There are no added social medias yet',
@@ -1983,5 +1984,6 @@ export default {
   pendingMaxCount: 'Pending Max Count',
   paymentManagement: 'Payment Management',
   unPlayedAmountWithdrawalFee: 'Unplayed Amount Withdrawal Fee',
-  playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee'
+  playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee',
+  addPayments: 'Add Payments'
 };
