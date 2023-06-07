@@ -1983,5 +1983,11 @@ export default {
   pendingMaxCount: 'Pending Max Count',
   paymentManagement: 'Payment Management',
   unPlayedAmountWithdrawalFee: 'Unplayed Amount Withdrawal Fee',
-  playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee'
+  playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee',
+  geoSettings: 'GEO Settings',
+  geoSettingsTooltip: 'The payment will be displayed for the selected allowed countries on Website',
+  allowedCountries: 'Allowed Countries',
+  addCountries: 'Add Countries',
+  byLocations: 'By Locations',
+  countryFrom: 'Country From'
 };
