@@ -1994,5 +1994,13 @@ export default {
   allowedCountries: 'Allowed Countries',
   addCountries: 'Add Countries',
   byLocations: 'By Locations',
-  countryFrom: 'Country From'
+  countryFrom: 'Country From',
+  limitationsAndFees: 'Limitation and Fees',
+  limitationsAndFeesTooltip:
+    'The Limits and Fees will be displayed and calculated for the selected available currencies on Website',
+  minAmount: 'Min Amount',
+  maxAmount: 'Max Amount',
+  feePercent: 'Fee (%)',
+  feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
+  feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)'
 };
