@@ -1938,6 +1938,8 @@ export default {
   'unplayedFee%': 'Unplayed Fee (%)',
   playedFeeAmount: 'Played Fee Amount',
   unplayedFeeAmount: 'Unplayed Fee Amount',
+  unplayedFeeAmountFrom: 'Unplayed Fee Amount From',
+  unplayedFeeAmountTo: 'Unplayed Fee Amount To',
   playedFeeAmountFrom: 'Played Fee Amount From',
   playedFeeAmountTo: 'Played Fee Amount To',
   withdrawals: 'Withdrawals',
