@@ -2008,4 +2008,5 @@ export default {
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
   page:'Page',
+  thePublicNameAndDescriptionTooltipText:'The public name and description should be displayed on Website.',
 };
