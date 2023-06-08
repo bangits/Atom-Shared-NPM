@@ -1,37 +1,29 @@
-import { TranslationService } from '@/common/services';
+/* eslint-disable no-console */
+import { PermissionService, TranslationService } from '@/common/services';
 import { DiContainer } from '@/di';
 import { DI_CONSTANTS } from '@/di/constants';
 import { LanguageType } from '@/domain';
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect } from 'react';
 import { AtomCommonContext } from './AtomCommonContext';
+import DesignSystemProvider from './DesignSystemProvider';
 
 export interface AtomCommonProviderProps {
   initLanguage?: LanguageType;
   initializeLanguage?: boolean;
 }
 
-export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
-  children,
-  initLanguage = 'en',
-  initializeLanguage
-}) => {
-  const [containerInstance, setContainerInstance] = useState<DiContainer>(null);
+const containerInstance = new DiContainer();
 
+containerInstance.configure();
+
+export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({ children, initLanguage = 'en' }) => {
   useEffect(() => {
-    const containerInstance = new DiContainer();
-
-    containerInstance.configure();
-
     (async () => {
-      if (initializeLanguage) {
-        const translationService: TranslationService = containerInstance.diContainer.get(
-          DI_CONSTANTS.TranslationService
-        );
+      const translationService: TranslationService = containerInstance.diContainer.get(DI_CONSTANTS.TranslationService);
 
-        await translationService.init(initLanguage);
-      }
+      const permissionService: PermissionService = containerInstance.diContainer.get(DI_CONSTANTS.PermissionService);
 
-      setContainerInstance(containerInstance);
+      await Promise.all([permissionService.init(), translationService.init(initLanguage)]);
     })();
   }, []);
 
@@ -45,9 +37,10 @@ export const AtomCommonProvider: FC<AtomCommonProviderProps> = ({
         localStorageService: containerInstance.diContainer.get(DI_CONSTANTS.LocalStorageService),
         fileManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.FileManagerUseCase),
         pageConfigsUseCase: containerInstance.diContainer.get(DI_CONSTANTS.PageConfigsUseCase),
-        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase)
+        exchangeManagerUseCase: containerInstance.diContainer.get(DI_CONSTANTS.ExchangeManagerUseCase),
+        permissionService: containerInstance.diContainer.get(DI_CONSTANTS.PermissionService)
       }}>
-      {children}
+      <DesignSystemProvider>{children}</DesignSystemProvider>
     </AtomCommonContext.Provider>
   );
 };
