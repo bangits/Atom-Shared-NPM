@@ -2004,5 +2004,6 @@ export default {
   maxAmount: 'Max Amount',
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
-  feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)'
+  feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
+  page:'Page',
 };
