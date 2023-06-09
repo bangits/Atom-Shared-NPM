@@ -2015,5 +2015,6 @@ export default {
   paymentMethodSettingsDepositText:
     'The Enable or Disable of these parameters will apply to all payment methods which supports deposit requests.',
   paymentMethodSettingsWithdrawText:
-    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.'
+    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.',
+  moreThanMinAmount: 'Value should be more than Min Amount.'
 };
