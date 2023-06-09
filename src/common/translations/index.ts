@@ -642,6 +642,7 @@ export default {
   noAddedGames: 'There are no added games yet',
   noAddedItems: 'There are no added items yet',
   noAddedProviders: 'There are no added providers yet',
+  noAddedPaymentMethods: 'There are no added payment methods yet',
   noAddedNavbars: 'There are no added navbars yet',
   noAddedGroups: 'There are no added groups yet',
   noAddedSocialMedias: 'There are no added social medias yet',
@@ -1937,6 +1938,8 @@ export default {
   'unplayedFee%': 'Unplayed Fee (%)',
   playedFeeAmount: 'Played Fee Amount',
   unplayedFeeAmount: 'Unplayed Fee Amount',
+  unplayedFeeAmountFrom: 'Unplayed Fee Amount From',
+  unplayedFeeAmountTo: 'Unplayed Fee Amount To',
   playedFeeAmountFrom: 'Played Fee Amount From',
   playedFeeAmountTo: 'Played Fee Amount To',
   withdrawals: 'Withdrawals',
@@ -1989,6 +1992,7 @@ export default {
   paymentManagement: 'Payment Management',
   unPlayedAmountWithdrawalFee: 'Unplayed Amount Withdrawal Fee',
   playedAmountWithdrawalFee: 'Played Amount Withdrawal Fee',
+  addPayments: 'Add Payments',
   geoSettings: 'GEO Settings',
   geoSettingsTooltip: 'The payment will be displayed for the selected allowed countries on Website',
   allowedCountries: 'Allowed Countries',
@@ -2003,5 +2007,13 @@ export default {
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
-  valueCantBeZero: "The value can't be 0."
+  valueCantBeZero: "The value can't be 0.",
+  page: 'Page',
+  thePublicNameAndDescriptionTooltipText: 'The public name and description should be displayed on Website.',
+  paymentMethodMinMaxLimitsYes: 'You’ll be able to set for each payment customized limits.',
+  paymentMethodMinMaxLimitsNo: 'The system should check by default limits of the payments.',
+  paymentMethodSettingsDepositText:
+    'The Enable or Disable of these parameters will apply to all payment methods which supports deposit requests.',
+  paymentMethodSettingsWithdrawText:
+    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.'
 };
