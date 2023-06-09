@@ -2007,8 +2007,12 @@ export default {
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
-  page:'Page',
-  thePublicNameAndDescriptionTooltipText:'The public name and description should be displayed on Website.',
-  paymentMethodMinMaxLimitsYes:'You’ll be able to set for each payment customized limits.',
-  paymentMethodMinMaxLimitsNo:'The system should check by default limits of the payments.',
+  page: 'Page',
+  thePublicNameAndDescriptionTooltipText: 'The public name and description should be displayed on Website.',
+  paymentMethodMinMaxLimitsYes: 'You’ll be able to set for each payment customized limits.',
+  paymentMethodMinMaxLimitsNo: 'The system should check by default limits of the payments.',
+  paymentMethodSettingsDepositText:
+    'The Enable or Disable of these parameters will apply to all payment methods which supports deposit requests.',
+  paymentMethodSettingsWithdrawText:
+    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.'
 };
