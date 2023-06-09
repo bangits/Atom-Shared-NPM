@@ -1838,7 +1838,7 @@ export default {
   noPaymentProviders: 'You don’t have any payment providers added! Please add a provider.',
   noPaymentMethod: 'You don’t have any payment methods added! Please add a method',
   activateProvider: 'provider',
-  activateProviderPlural: 'provider',
+  activateProviderPlural: 'providers',
   freeSpinsCount: 'Free Spins Count',
   'win/bet': 'Win / Bet',
   consistentRepetitionOfWins: 'Consistent Repetition of Wins',
