@@ -2009,4 +2009,6 @@ export default {
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
   page:'Page',
   thePublicNameAndDescriptionTooltipText:'The public name and description should be displayed on Website.',
+  paymentMethodMinMaxLimitsYes:'You’ll be able to set for each payment customized limits.',
+  paymentMethodMinMaxLimitsNo:'The system should check by default limits of the payments.',
 };
