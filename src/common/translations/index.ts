@@ -2016,5 +2016,13 @@ export default {
     'The Enable or Disable of these parameters will apply to all payment methods which supports deposit requests.',
   paymentMethodSettingsWithdrawText:
     'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.',
-  moreThanMinAmount: 'Value should be more than Min Amount.'
+  editSettingsDisabledFirstSentance: 'The',
+  editSettingsDisabledSecondSentance: 'and',
+  editSettingsDisabledThirdSentance: 'functions are disabled.',
+  editSettingsDisabledFourthSentance: 'For activity should be checked by default limits.',
+  editSettingsDisabledFifthSentance: 'Please activate them from Payments Inventory ',
+  editSettingsDisabledSixthSentance: ' for  the values customization.',
+  moreThanMinAmount: 'Value should be more than Min Amount.',
+  limitation: 'Limitation',
+  feeCaluclation: 'Fee Calculation'
 };
