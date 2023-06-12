@@ -1900,7 +1900,7 @@ export default {
   categoryType: 'Category Type',
   paymentsInventory: 'Payments Inventory',
   paymentProviderActivationSuccess: `Successfully activated ${TRANSLATION_CHANGED_VALUE} provider(s)!`,
-  paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} provider(s). At lease one method should be activated!`,
+  paymentProviderActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} provider(s). At least one method should be activated!`,
   paymentMethodActivationFails: `Failed to activate ${TRANSLATION_CHANGED_VALUE} payment method(s). Please check the payments details.`,
   paymentMethodSingleActivateError: 'Please, fill in the required fields to make the method active.',
   paymentMethodInActivationFails: `Failed to inactivate ${TRANSLATION_CHANGED_VALUE} payment method(s).`,
