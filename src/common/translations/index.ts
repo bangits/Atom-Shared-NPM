@@ -1838,7 +1838,7 @@ export default {
   noPaymentProviders: 'You don’t have any payment providers added! Please add a provider.',
   noPaymentMethod: 'You don’t have any payment methods added! Please add a method',
   activateProvider: 'provider',
-  activateProviderPlural: 'provider',
+  activateProviderPlural: 'providers',
   freeSpinsCount: 'Free Spins Count',
   'win/bet': 'Win / Bet',
   consistentRepetitionOfWins: 'Consistent Repetition of Wins',
@@ -2007,6 +2007,7 @@ export default {
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
+  valueCantBeZero: "The value can't be 0.",
   page: 'Page',
   thePublicNameAndDescriptionTooltipText: 'The public name and description should be displayed on Website.',
   paymentMethodMinMaxLimitsYes: 'You’ll be able to set for each payment customized limits.',
@@ -2014,5 +2015,14 @@ export default {
   paymentMethodSettingsDepositText:
     'The Enable or Disable of these parameters will apply to all payment methods which supports deposit requests.',
   paymentMethodSettingsWithdrawText:
-    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.'
+    'The Enable or Disable of these parameters will apply to all payment methods which supports withdraw requests.',
+  editSettingsDisabledFirstSentance: 'The',
+  editSettingsDisabledSecondSentance: 'and',
+  editSettingsDisabledThirdSentance: 'functions are disabled.',
+  editSettingsDisabledFourthSentance: 'For activity should be checked by default limits.',
+  editSettingsDisabledFifthSentance: 'Please activate them from Payments Inventory ',
+  editSettingsDisabledSixthSentance: ' for  the values customization.',
+  moreThanMinAmount: 'Value should be more than Min Amount.',
+  limitation: 'Limitation',
+  feeCaluclation: 'Fee Calculation'
 };
