@@ -2027,5 +2027,7 @@ export default {
   limitation: 'Limitation',
   feeCaluclation: 'Fee Calculation',
   supportedCurrenciesDeposit: 'Supported Currencies Deposit',
-  supportedCurrenciesWithdraw: 'Supported Currencies Withdraw'
+  supportedCurrenciesWithdraw: 'Supported Currencies Withdraw',
+  authorized: 'Authorized',
+  notAuthorized: 'Not Authorized'
 };

@@ -12,7 +12,6 @@ export const INPUT_MAX_VALUES = {
   EMAIL: 320
 };
 
-
 export const SELECT_CONFIGS = {
   SINGLE_SELECT_ALL_VALUES: ' '
-}
+};

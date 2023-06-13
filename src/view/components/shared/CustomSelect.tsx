@@ -15,12 +15,12 @@ export const CustomSelect = (props: CustomSelectProps) => {
       ...(props.selectAll && !props.isMulti
         ? [
             {
-              label: t.get('All'),
-              value: SELECT_CONFIGS.SINGLE_SELECT_ALL_VALUES,
+              label: t.get('all'),
+              value: SELECT_CONFIGS.SINGLE_SELECT_ALL_VALUES
             },
-            ...props.options
+            ...(props.options || [])
           ]
-        : [...props.options])
+        : props.options || [])
     ],
     [props.options, props.selectAll, props.isMulti]
   );
@@ -29,11 +29,10 @@ export const CustomSelect = (props: CustomSelectProps) => {
     <>
       <Select
         clearButtonLabel={t.get('clear')}
-        // applyButtonLabel={t.get('apply')}
         selectAllLabel={t.get('all')}
         dropdownSearchPlaceholder={t.get('search')}
-        options={options}
         {...props}
+        options={options}
       />
     </>
   );
