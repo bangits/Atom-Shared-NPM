@@ -1,3 +1,4 @@
+import { SELECT_CONFIGS } from '@/configs';
 import { useTranslation } from '@/view';
 import { Select, SelectProps } from '@atom/design-system';
 import { useMemo } from 'react';
@@ -15,11 +16,11 @@ export const CustomSelect = (props: CustomSelectProps) => {
         ? [
             {
               label: t.get('All'),
-              value: ' '
+              value: SELECT_CONFIGS.SINGLE_SELECT_ALL_VALUES,
             },
-            ...props.options
+            ...(props.options || [])
           ]
-        : [...props.options])
+        : props.options || [])
     ],
     [props.options, props.selectAll, props.isMulti]
   );

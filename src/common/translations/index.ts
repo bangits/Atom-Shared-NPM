@@ -2008,9 +2008,9 @@ export default {
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
-  valueCantBeZero: "The value can't be 0.",
   page: 'Page',
   thePublicNameAndDescriptionTooltipText: 'The public name and description should be displayed on Website.',
+  valueCantBeZero: "The value can't be 0.",
   paymentMethodMinMaxLimitsYes: 'You’ll be able to set for each payment customized limits.',
   paymentMethodMinMaxLimitsNo: 'The system should check by default limits of the payments.',
   paymentMethodSettingsDepositText:
