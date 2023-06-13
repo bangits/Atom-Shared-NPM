@@ -17,9 +17,9 @@ export const CustomSelect = (props: CustomSelectProps) => {
               label: t.get('All'),
               value: ' '
             },
-            ...props.options
+            ...(props.options || [])
           ]
-        : [...props.options])
+        : props.options || [])
     ],
     [props.options, props.selectAll, props.isMulti]
   );
