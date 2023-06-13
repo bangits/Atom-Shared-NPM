@@ -2025,5 +2025,7 @@ export default {
   editSettingsDisabledSixthSentance: ' for  the values customization.',
   moreThanMinAmount: 'Value should be more than Min Amount.',
   limitation: 'Limitation',
-  feeCaluclation: 'Fee Calculation'
+  feeCaluclation: 'Fee Calculation',
+  supportedCurrenciesDeposit: 'Supported Currencies Deposit',
+  supportedCurrenciesWithdraw: 'Supported Currencies Withdraw'
 };
