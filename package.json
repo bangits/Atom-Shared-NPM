@@ -1,6 +1,6 @@
 {
   "name": "@atom/common",
-  "version": "2.8.7",
+  "version": "2.8.8",
   "main": "",
   "types": "./dist/atom-common.d.ts",
   "files": [
