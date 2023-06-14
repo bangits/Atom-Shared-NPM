@@ -342,6 +342,7 @@ export default {
   projectDetails: 'Project Details',
   providerDoesntHaveGames: "Provider doesn't have any game.",
   noDataFound: 'Sorry, no data found.',
+  noDataFoundPleaseMakeFilter: 'Sorry no data was found! Please make a different filter selection.',
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
@@ -2008,9 +2009,9 @@ export default {
   feePercent: 'Fee (%)',
   feeForPlayedAmountPercent: 'Fee For Played Amount (%)',
   feeForUnPlayedAmountPercent: 'Fee For Unplayed Amount (%)',
-  valueCantBeZero: "The value can't be 0.",
   page: 'Page',
   thePublicNameAndDescriptionTooltipText: 'The public name and description should be displayed on Website.',
+  valueCantBeZero: "The value can't be 0.",
   paymentMethodMinMaxLimitsYes: 'You’ll be able to set for each payment customized limits.',
   paymentMethodMinMaxLimitsNo: 'The system should check by default limits of the payments.',
   paymentMethodSettingsDepositText:
