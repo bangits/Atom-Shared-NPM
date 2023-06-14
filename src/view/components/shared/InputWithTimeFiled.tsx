@@ -1,11 +1,10 @@
-import { FormikProps } from 'formik';
+import { useFormikContext } from 'formik';
 import { useCallback, useMemo, MouseEvent, ChangeEvent } from 'react';
 import { InputWithSwitch, TextInputProps } from '@atom/design-system';
 import { TimeUnits } from '@/domain';
 import { useTranslation } from '@/view';
 
 export interface InputWithTimeFiledProps<T> {
-  form: FormikProps<T>;
   label: string;
   inputProps?: TextInputProps;
   variantName: string;
@@ -15,7 +14,6 @@ export interface InputWithTimeFiledProps<T> {
 }
 
 export const InputWithTimeFiled = <T,>({
-  form,
   label,
   variantName,
   inputName,
@@ -23,6 +21,7 @@ export const InputWithTimeFiled = <T,>({
   onSwitchChange,
   onInputChange
 }: InputWithTimeFiledProps<T>) => {
+  const form = useFormikContext();
   const t = useTranslation();
 
   const handleInputChange = useCallback(

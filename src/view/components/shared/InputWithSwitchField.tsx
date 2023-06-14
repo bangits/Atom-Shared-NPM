@@ -1,10 +1,9 @@
 import { useCallback, useMemo, MouseEvent, ChangeEvent } from 'react';
-import { FormikProps } from 'formik';
+import { useFormikContext } from 'formik';
 import { InputWithSwitch, TextInputProps } from '@atom/design-system';
 
 export interface InputWithSwitchFieldProps<T> {
   options: { id: number; label: string }[];
-  form: FormikProps<T>;
   label: string;
   inputProps?: TextInputProps;
   variantName: string;
@@ -15,7 +14,6 @@ export interface InputWithSwitchFieldProps<T> {
 
 export const InputWithSwitchField = <T,>({
   options,
-  form,
   label,
   variantName,
   inputName,
@@ -23,6 +21,7 @@ export const InputWithSwitchField = <T,>({
   onSwitchChange,
   onInputChange
 }: InputWithSwitchFieldProps<T>) => {
+  const form = useFormikContext();
   const handleInputChange = useCallback(
     (value: string, e: ChangeEvent) => {
       onInputChange?.(value, e);
