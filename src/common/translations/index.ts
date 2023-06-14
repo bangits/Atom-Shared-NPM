@@ -342,6 +342,7 @@ export default {
   projectDetails: 'Project Details',
   providerDoesntHaveGames: "Provider doesn't have any game.",
   noDataFound: 'Sorry, no data found.',
+  noDataFoundPleaseMakeFilter: 'Sorry no data was found! Please make a different filter selection.',
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',

@@ -54,7 +54,7 @@ export const useActionWithDialog = <T>({
 
                 setColumnLoadingIds([]);
 
-                refetch();
+                if (actionResponseModel.successCount) refetch();
               })
               .catch(showErrorConnectionAlert);
 
