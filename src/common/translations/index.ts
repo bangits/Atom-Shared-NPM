@@ -1954,7 +1954,7 @@ export default {
   successfulTransactionFee: 'Successful Transaction Fee',
   declinedTransactionFee: 'Declined Transaction Fee',
   refundFee: 'Refund Fee',
-  fixed: 'fixed',
+  fixed: 'Fixed',
   percent: '%',
   moreThanMinAmountPerTransaction: 'Value should be more than Min Amount Per Transaction.',
   moreThanMaxMinAmountPerTransaction: 'Value should be more than Min & Max Amount Per Transactions.',
