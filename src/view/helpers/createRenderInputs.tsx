@@ -22,6 +22,7 @@ export const createRenderInputs =
             <>
               <Component
                 {...field}
+                onBlur={() => setTimeout(() => form.setFieldTouched(name, true))}
                 onChange={async (evt) => {
                   const value =
                     fieldType === 'single-checkbox'

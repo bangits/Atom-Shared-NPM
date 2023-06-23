@@ -2034,5 +2034,11 @@ export default {
   supportedCurrenciesDeposit: 'Supported Currencies Deposit',
   supportedCurrenciesWithdraw: 'Supported Currencies Withdraw',
   authorized: 'Authorized',
-  notAuthorized: 'Not Authorized'
+  notAuthorized: 'Not Authorized',
+  ngr: 'NGR',
+  transferFundsTo: 'Transfer Funds To',
+  realWallet: 'Real Wallet',
+  bonusWallet: 'Bonus Wallet',
+  withWagering: 'With Waggering',
+  fromTheList: 'from the list'
 };
