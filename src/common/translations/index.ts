@@ -2040,5 +2040,8 @@ export default {
   realWallet: 'Real Wallet',
   bonusWallet: 'Bonus Wallet',
   withWagering: 'With Waggering',
-  fromTheList: 'from the list'
+  fromTheList: 'from the list',
+  minGGRorNGR:'Min GGR / Min NGR',
+  maxGGRorNGR:'Max GGR / Max NGR',
+
 };
