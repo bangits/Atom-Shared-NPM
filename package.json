@@ -86,7 +86,7 @@
   "dependencies": {
     "@atom/authorization": "^0.1.7",
     "@atom/cms-management": "^0.2.12",
-    "@atom/design-system": "^4.9.6",
+    "@atom/design-system": "^4.9.8",
     "@automapper/classes": "^7.0.2",
     "@automapper/core": "^7.0.2",
     "@microsoft/signalr": "^6.0.1",
