@@ -2034,5 +2034,6 @@ export default {
   supportedCurrenciesDeposit: 'Supported Currencies Deposit',
   supportedCurrenciesWithdraw: 'Supported Currencies Withdraw',
   authorized: 'Authorized',
-  notAuthorized: 'Not Authorized'
+  notAuthorized: 'Not Authorized',
+  p2p: 'P2P'
 };
