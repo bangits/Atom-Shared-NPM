@@ -1,7 +1,7 @@
 import { alert } from '@atom/design-system';
-import { ActionResponseModel } from '../../../dist/domain';
 import { useTranslation } from './useTranslation';
 import { TRANSLATION_CHANGED_VALUE } from '@/configs';
+import { ActionResponseModel } from '@/domain';
 
 export interface useActionAlertProps {
   refetch?: () => void;
