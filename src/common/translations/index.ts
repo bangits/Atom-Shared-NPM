@@ -2043,5 +2043,5 @@ export default {
   fromTheList: 'from the list',
   minGGRorNGR: 'Min GGR / Min NGR',
   maxGGRorNGR: 'Max GGR / Max NGR',
-  manualClaimAmount: 'Manual Claim Amount',
+  manualClaimAmount: 'Manual Claim Amount ( % )',
 };
