@@ -2044,5 +2044,7 @@ export default {
   minGGRorNGR: 'Min GGR / Min NGR',
   maxGGRorNGR: 'Max GGR / Max NGR',
   manualClaimAmount: 'Manual Claim Amount ( % )',
-  mediaTabMessageRealWallet: 'The Media and Public information is required only for the Cash Back bonuses with'
+  mediaTabMessageRealWallet: 'The Media and Public information is required only for the Cash Back bonuses with',
+  mediaTabTooltipTextRealWallet:
+    'The whole filled information and media file will be published on Website after Bonus Program get enabled.'
 };
