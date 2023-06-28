@@ -2041,7 +2041,7 @@ export default {
   bonusWallet: 'Bonus Wallet',
   withWagering: 'With Waggering',
   fromTheList: 'from the list',
-  minGGRorNGR:'Min GGR / Min NGR',
-  maxGGRorNGR:'Max GGR / Max NGR',
-
+  minGGRorNGR: 'Min GGR / Min NGR',
+  maxGGRorNGR: 'Max GGR / Max NGR',
+  manualClaimAmount: 'Manual Claim Amount',
 };
