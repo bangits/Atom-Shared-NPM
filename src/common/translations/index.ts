@@ -1976,7 +1976,7 @@ export default {
   currencySettingsTooltipText: 'The payment will be displayed for the selected available currencies on Website',
   addCurrencies: 'Add Currencies',
   activity: 'Activity',
-  attachedCurrencies: 'Attached Currencies',
+  availableCurrencies: 'Available Currencies',
   websiteCurrencies: 'Website Currencies',
   currencyFrom: 'Currency From',
   paymentSetup: 'Payment Setup',
@@ -2035,5 +2035,19 @@ export default {
   supportedCurrenciesWithdraw: 'Supported Currencies Withdraw',
   authorized: 'Authorized',
   notAuthorized: 'Not Authorized',
-  p2p: 'P2P'
+  p2p: 'P2P',
+  ngr: 'NGR',
+  transferFundsTo: 'Transfer Funds To',
+  realWallet: 'Real Wallet',
+  bonusWallet: 'Bonus Wallet',
+  withWagering: 'With Waggering',
+  fromTheList: 'from the list',
+  manualClaimAmount: 'Manual Claim Amount ( % )',
+  mediaTabMessageRealWallet: 'The Media and Public information is required only for the Cash Back bonuses with',
+  mediaTabTooltipTextRealWallet:
+    'The whole filled information and media file will be published on Website after Bonus Program get enabled.',
+  minGGR: 'Min GGR',
+  maxGGR: 'Max GGR',
+  minNGR: 'Min NGR',
+  maxNGR: 'Max NGR'
 };
