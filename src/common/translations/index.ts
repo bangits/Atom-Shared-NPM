@@ -1976,7 +1976,7 @@ export default {
   currencySettingsTooltipText: 'The payment will be displayed for the selected available currencies on Website',
   addCurrencies: 'Add Currencies',
   activity: 'Activity',
-  attachedCurrencies: 'Attached Currencies',
+  availableCurrencies: 'Available Currencies',
   websiteCurrencies: 'Website Currencies',
   currencyFrom: 'Currency From',
   paymentSetup: 'Payment Setup',
