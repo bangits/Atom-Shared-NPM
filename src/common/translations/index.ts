@@ -2050,5 +2050,7 @@ export default {
   minNGR: 'Min NGR',
   maxNGR: 'Max NGR',
   total: 'Total',
-  labelType:'Label Type',
+  labelType: 'Label Type',
+  reportByPlayerBonuses: 'Report By Player Bonuses',
+  reportByCalculations: 'Report by Calculations'
 };
