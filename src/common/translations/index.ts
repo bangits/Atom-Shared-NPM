@@ -2049,5 +2049,6 @@ export default {
   maxGGR: 'Max GGR',
   minNGR: 'Min NGR',
   maxNGR: 'Max NGR',
-  total: 'Total'
+  total: 'Total',
+  labelType:'Label Type',
 };
