@@ -2048,5 +2048,6 @@ export default {
   minGGR: 'Min GGR',
   maxGGR: 'Max GGR',
   minNGR: 'Min NGR',
-  maxNGR: 'Max NGR'
+  maxNGR: 'Max NGR',
+  total: 'Total',
 };
