@@ -2052,5 +2052,21 @@ export default {
   total: 'Total',
   labelType: 'Label Type',
   reportByPlayerBonuses: 'Report By Player Bonuses',
-  reportByCalculations: 'Report by Calculations'
+  reportByCalculations: 'Report by Calculations',
+  calculationId: 'Calculation ID',
+  calculationStart: 'Calculation Start',
+  calculationStartFrom: 'Calculation Start From',
+  calculationStartTo: 'Calculation Start To',
+  calculationEnd: 'Calculation End',
+  calculationEndFrom: 'Calculation End From',
+  calculationEndTo: 'Calculation End To',
+  calculationAmount: 'Calculation Amount',
+  calculationAmountFrom: 'Calculation Amount From',
+  calculationAmountTo: 'Calculation Amount To',
+  bonusAmountPercentage: 'Bonus Amount (%)',
+  bonusAmountPercentageFrom: 'Bonus Amount (%) From',
+  bonusAmountPercentageTo: 'Bonus Amount (%) To',
+  ggrNgr: 'GGR/NGR',
+  ggrNgrFrom: 'GGR/NGR - From',
+  ggrNgrTo: 'GGR/NGR - To'
 };
