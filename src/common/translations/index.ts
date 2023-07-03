@@ -2070,5 +2070,10 @@ export default {
   ggrNgrFrom: 'GGR/NGR - From',
   ggrNgrTo: 'GGR/NGR - To',
   textColor: 'Text Color',
-  bodyColor: 'Body Color'
+  bodyColor: 'Body Color',
+  calculationStartDate: 'Calculation Start Date',
+  calculationEndDate: 'Calculation End Date',
+  calculating: 'Calculating',
+  notPayable: 'Not Payable',
+  payable: 'Payable'
 };
