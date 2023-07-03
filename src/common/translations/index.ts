@@ -2068,5 +2068,7 @@ export default {
   bonusAmountPercentageTo: 'Bonus Amount (%) To',
   ggrNgr: 'GGR/NGR',
   ggrNgrFrom: 'GGR/NGR - From',
-  ggrNgrTo: 'GGR/NGR - To'
+  ggrNgrTo: 'GGR/NGR - To',
+  textColor: 'Text Color',
+  bodyColor: 'Body Color'
 };
