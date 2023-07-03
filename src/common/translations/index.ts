@@ -2052,5 +2052,7 @@ export default {
   total: 'Total',
   labelType: 'Label Type',
   reportByPlayerBonuses: 'Report By Player Bonuses',
-  reportByCalculations: 'Report by Calculations'
+  reportByCalculations: 'Report by Calculations',
+  textColor:'Text Color',
+  bodyColor:'Body Color',
 };
