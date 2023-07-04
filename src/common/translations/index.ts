@@ -2075,5 +2075,6 @@ export default {
   calculationEndDate: 'Calculation End Date',
   calculating: 'Calculating',
   notPayable: 'Not Payable',
-  payable: 'Payable'
+  payable: 'Payable',
+  color: 'Color'
 };
