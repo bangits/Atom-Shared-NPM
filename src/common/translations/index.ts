@@ -2077,5 +2077,6 @@ export default {
   notPayable: 'Not Payable',
   payable: 'Payable',
   color: 'Color',
-  style: 'Style'
+  style: 'Style',
+  wrongFormatColor: 'Wrong format of'
 };
