@@ -2088,5 +2088,6 @@ export default {
   deleteLabels: 'Delete Labels',
   labelsMaxCountTooltip: `You can add up to ${TRANSLATION_CHANGED_VALUE} label(s).`,
   noAvailableLabels: 'No labels are available.',
-  noLabelsFound: 'No labels were found.'
+  noLabelsFound: 'No labels were found.',
+  chooseColor: 'Choose Color',
 };
