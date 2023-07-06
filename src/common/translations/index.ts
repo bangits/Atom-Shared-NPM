@@ -2078,5 +2078,6 @@ export default {
   payable: 'Payable',
   color: 'Color',
   style: 'Style',
-  wrongFormat: 'Wrong format of'
+  wrongFormat: 'Wrong format of',
+  labelName:'Label Name',
 };
