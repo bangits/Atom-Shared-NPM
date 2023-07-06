@@ -2083,4 +2083,5 @@ export default {
   label: 'Label',
   addLabel: 'Add Label',
   editLabel: 'Edit Label',
+  setColor: 'Set Color',
 };
