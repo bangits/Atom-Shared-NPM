@@ -2075,5 +2075,11 @@ export default {
   calculationEndDate: 'Calculation End Date',
   calculating: 'Calculating',
   notPayable: 'Not Payable',
-  payable: 'Payable'
+  payable: 'Payable',
+  providerRoundId: 'Provider Round Id',
+  finalBalance: 'Final Balance',
+  transactionType: 'Transaction Type',
+  finalBalanceFrom: 'Final Balance From',
+  finalBalanceTo: 'Final Balance To',
+  success: 'Success'
 };
