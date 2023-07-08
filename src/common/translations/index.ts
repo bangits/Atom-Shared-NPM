@@ -2081,5 +2081,19 @@ export default {
   transactionType: 'Transaction Type',
   finalBalanceFrom: 'Final Balance From',
   finalBalanceTo: 'Final Balance To',
-  success: 'Success'
+  success: 'Success',
+  color: 'Color',
+  style: 'Style',
+  wrongFormat: 'Wrong format of',
+  labelName: 'Label Name',
+  label: 'Label',
+  addLabel: 'Add Label',
+  editLabel: 'Edit Label',
+  setColor: 'Set Color',
+  addLabels: 'Add Labels',
+  deleteLabels: 'Delete Labels',
+  labelsMaxCountTooltip: `You can add up to ${TRANSLATION_CHANGED_VALUE} label(s).`,
+  noAvailableLabels: 'No labels are available.',
+  noLabelsFound: 'No labels were found.',
+  chooseColor: 'Choose Color'
 };
