@@ -2096,10 +2096,7 @@ export default {
   labelsMaxCountTooltip: `You can add up to ${TRANSLATION_CHANGED_VALUE} label(s).`,
   noAvailableLabels: 'No labels are available.',
   noLabelsFound: 'No labels were found.',
-<<<<<<< HEAD
   forced: 'Forced',
-  recomended: 'Recomended'
-=======
+  recomended: 'Recomended',
   chooseColor: 'Choose Color'
->>>>>>> 85e60b2817300c5fe69f3d6cdb52f33485aa1f65
 };
