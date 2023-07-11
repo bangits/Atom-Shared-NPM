@@ -394,6 +394,7 @@ export default {
   choseNewPassword: 'Chose New Password',
   currentPassword: 'Current Password',
   confirmPassword: 'Confirm Password',
+  confirmNewPassword: 'Confirm New Password',
   newPassword: 'New Password',
   contactEmail: 'Contact Email',
   projectId: 'Project ID',
@@ -2097,5 +2098,7 @@ export default {
   noLabelsFound: 'No labels were found.',
   chooseColor: 'Choose Color',
   ngrFrom: 'Ngr From',
-  ngrTo: 'Ngr To'
+  ngrTo: 'Ngr To',
+  forced: 'Forced',
+  recomended: 'Recomended'
 };
