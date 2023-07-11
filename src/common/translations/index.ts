@@ -2077,6 +2077,12 @@ export default {
   calculating: 'Calculating',
   notPayable: 'Not Payable',
   payable: 'Payable',
+  providerRoundId: 'Provider Round Id',
+  finalBalance: 'Final Balance',
+  transactionType: 'Transaction Type',
+  finalBalanceFrom: 'Final Balance From',
+  finalBalanceTo: 'Final Balance To',
+  success: 'Success',
   color: 'Color',
   style: 'Style',
   wrongFormat: 'Wrong format of',
@@ -2090,6 +2096,10 @@ export default {
   labelsMaxCountTooltip: `You can add up to ${TRANSLATION_CHANGED_VALUE} label(s).`,
   noAvailableLabels: 'No labels are available.',
   noLabelsFound: 'No labels were found.',
+<<<<<<< HEAD
   forced: 'Forced',
   recomended: 'Recomended'
+=======
+  chooseColor: 'Choose Color'
+>>>>>>> 85e60b2817300c5fe69f3d6cdb52f33485aa1f65
 };
