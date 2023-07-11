@@ -394,6 +394,7 @@ export default {
   choseNewPassword: 'Chose New Password',
   currentPassword: 'Current Password',
   confirmPassword: 'Confirm Password',
+  confirmNewPassword: 'Confirm New Password',
   newPassword: 'New Password',
   contactEmail: 'Contact Email',
   projectId: 'Project ID',
@@ -2095,5 +2096,7 @@ export default {
   labelsMaxCountTooltip: `You can add up to ${TRANSLATION_CHANGED_VALUE} label(s).`,
   noAvailableLabels: 'No labels are available.',
   noLabelsFound: 'No labels were found.',
+  forced: 'Forced',
+  recomended: 'Recomended',
   chooseColor: 'Choose Color'
 };
