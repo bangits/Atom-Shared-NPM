@@ -2097,8 +2097,8 @@ export default {
   noAvailableLabels: 'No labels are available.',
   noLabelsFound: 'No labels were found.',
   chooseColor: 'Choose Color',
-  ngrFrom: 'Ngr From',
-  ngrTo: 'Ngr To',
+  ngrFrom: 'NGR From',
+  ngrTo: 'NGR To',
   forced: 'Forced',
   recomended: 'Recomended'
 };
