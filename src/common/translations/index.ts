@@ -2100,5 +2100,7 @@ export default {
   ngrFrom: 'NGR From',
   ngrTo: 'NGR To',
   forced: 'Forced',
-  recomended: 'Recomended'
+  recomended: 'Recomended',
+  changePasswordBelow: 'Please change your password below.',
+  passwordChangedSuccess: 'The Password was successfully changed !!'
 };
