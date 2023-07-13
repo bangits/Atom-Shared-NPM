@@ -56,7 +56,8 @@ export default {
     website: 'Enter an Website into correct format, example: https://www.website.com',
     phoneCodeRequired: 'Phone code is required!',
     password: 'Password must include both lower and upper case letters , numbers and symbols',
-    selectDefaultOption: 'Select default option!'
+    selectDefaultOption: 'Select default option!',
+    passwordsDontMatch: 'Passwords must be same.'
   },
   username: 'Username',
   onlyUsername: 'Username',
