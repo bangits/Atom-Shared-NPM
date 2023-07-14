@@ -756,7 +756,7 @@ export default {
   depositCurrency: 'Deposit Currency',
   depositDate: 'Deposit Date',
   emailVerification: 'Email Verification',
-  checkToPerform: 'Check To Perform',
+  operation: 'Operation',
   value: 'Value',
   false: 'False',
   true: 'True',
@@ -1818,6 +1818,8 @@ export default {
   totalWithdrawals: 'Total Withdrawals',
   period: 'Period',
   generationPeriodOfGgr: 'Generation Period Of GGR',
+  generationPeriodOfNgr: 'Generation Period Of NGR',
+  ngrAmount: 'NGR Amount',
   annual: 'Annual',
   quarterly: 'Quarterly',
   semiAnnual: 'Semi Annual',
@@ -2104,5 +2106,7 @@ export default {
   recomended: 'Recomended',
   changePasswordBelow: 'Please change your password below.',
   passwordChangedSuccess: 'The Password was successfully changed !!',
-  incorrectPassword: 'Current password is oncorrect.'
+  incorrectPassword: 'Current password is oncorrect.',
+  instantly: 'Instantly',
+  hourly: 'Hourly'
 };
