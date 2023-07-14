@@ -392,7 +392,7 @@ export default {
   dashboard: 'Dashboard',
   passwordChangeAfterLogin: 'Password Change After Login',
   passwordControls: 'Password Controls',
-  choseNewPassword: 'Chose New Password',
+  choseNewPassword: 'Choose New Password',
   currentPassword: 'Current Password',
   confirmPassword: 'Confirm Password',
   confirmNewPassword: 'Confirm New Password',
@@ -2103,5 +2103,6 @@ export default {
   forced: 'Forced',
   recomended: 'Recomended',
   changePasswordBelow: 'Please change your password below.',
-  passwordChangedSuccess: 'The Password was successfully changed !!'
+  passwordChangedSuccess: 'The Password was successfully changed !!',
+  incorrectPassword: 'Current password is oncorrect.'
 };
