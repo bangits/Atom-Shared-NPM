@@ -30,15 +30,26 @@ export const DataFilter = <T,>({
     config: null
   });
 
+  const getConfigs = useCallback(() => {
+    pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) =>
+      setFiltersConfig({
+        id: config.filtersConfig.id,
+        config: config.filtersConfig.config || null
+      })
+    );
+  }, [pageId, userId]);
+
   const updateConfig = useCallback(
     (configId: PrimaryKey, configJSON: PageConfigViewModel[]) => {
       if (filterConfigUpdateTimeout.current) return;
 
-      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON, PageConfigTypesEnum.FILTER);
+      pageConfigsUseCase.updatePageConfigs(pageId, configId, configJSON, PageConfigTypesEnum.FILTER).then(() => {
+        getConfigs();
+      });
 
       setTimeout(() => (filterConfigUpdateTimeout.current = false), 700);
     },
-    [pageId, filterConfigUpdateTimeout, pageId]
+    [pageId, filterConfigUpdateTimeout, pageId, getConfigs]
   );
 
   const filtersHashMap = useMemo(
@@ -82,20 +93,15 @@ export const DataFilter = <T,>({
           Name: filter.name
         }))
       );
-
       onSaveClickProp?.(filters, showedFilters, e);
     },
     [filtersConfig, onSaveClickProp]
   );
 
   useEffect(() => {
-    if (pageId && userId && shouldFetchPageConfig)
-      pageConfigsUseCase.getPageConfigs(pageId, userId).then((config) =>
-        setFiltersConfig({
-          id: config.filtersConfig.id,
-          config: config.filtersConfig.config || null
-        })
-      );
+    if (pageId && userId && shouldFetchPageConfig) {
+      getConfigs();
+    }
   }, [pageId, userId, shouldFetchPageConfig]);
 
   useEffect(() => {

@@ -210,6 +210,8 @@ export const TablePage = <T extends {}, K>({
         <DataFilter
           {...dataTableFilterProps}
           {...(props.filterProps || {})}
+          pageId={pageId}
+          userId={userId}
           shouldFetchPageConfig={false}
           filtersConfig={filtersConfig}
           filters={props.filterProps.filters}
