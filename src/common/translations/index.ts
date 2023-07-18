@@ -56,7 +56,8 @@ export default {
     website: 'Enter an Website into correct format, example: https://www.website.com',
     phoneCodeRequired: 'Phone code is required!',
     password: 'Password must include both lower and upper case letters , numbers and symbols',
-    selectDefaultOption: 'Select default option!'
+    selectDefaultOption: 'Select default option!',
+    passwordsDontMatch: 'Passwords must be same.'
   },
   username: 'Username',
   onlyUsername: 'Username',
@@ -391,7 +392,7 @@ export default {
   dashboard: 'Dashboard',
   passwordChangeAfterLogin: 'Password Change After Login',
   passwordControls: 'Password Controls',
-  choseNewPassword: 'Chose New Password',
+  choseNewPassword: 'Choose New Password',
   currentPassword: 'Current Password',
   confirmPassword: 'Confirm Password',
   confirmNewPassword: 'Confirm New Password',
@@ -755,7 +756,7 @@ export default {
   depositCurrency: 'Deposit Currency',
   depositDate: 'Deposit Date',
   emailVerification: 'Email Verification',
-  checkToPerform: 'Check To Perform',
+  operation: 'Operation',
   value: 'Value',
   false: 'False',
   true: 'True',
@@ -1817,6 +1818,8 @@ export default {
   totalWithdrawals: 'Total Withdrawals',
   period: 'Period',
   generationPeriodOfGgr: 'Generation Period Of GGR',
+  generationPeriodOfNgr: 'Generation Period Of NGR',
+  ngrAmount: 'NGR Amount',
   annual: 'Annual',
   quarterly: 'Quarterly',
   semiAnnual: 'Semi Annual',
@@ -2100,5 +2103,10 @@ export default {
   ngrFrom: 'NGR From',
   ngrTo: 'NGR To',
   forced: 'Forced',
-  recomended: 'Recomended'
+  recomended: 'Recomended',
+  changePasswordBelow: 'Please change your password below.',
+  passwordChangedSuccess: 'The Password was successfully changed !!',
+  incorrectPassword: 'Current password is oncorrect.',
+  instantly: 'Instantly',
+  hourly: 'Hourly'
 };
