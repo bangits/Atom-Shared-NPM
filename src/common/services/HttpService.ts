@@ -11,11 +11,11 @@ export interface HttpRequest<T extends QueryType, K = {}> {
 }
 
 export interface IHttpService {
-  get<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
-  delete<T, K extends QueryType>(request: HttpRequest<K>): Promise<T>;
-  post<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
-  put<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
-  patch<T, K extends QueryType, D>(request: HttpRequest<K, D>): Promise<T>;
+  get<T, K extends QueryType>(request: HttpRequest<K>, options?: AxiosRequestConfig): Promise<T>;
+  delete<T, K extends QueryType>(request: HttpRequest<K>, options?: AxiosRequestConfig): Promise<T>;
+  post<T, K extends QueryType, D>(request: HttpRequest<K, D>, options?: AxiosRequestConfig): Promise<T>;
+  put<T, K extends QueryType, D>(request: HttpRequest<K, D>, options?: AxiosRequestConfig): Promise<T>;
+  patch<T, K extends QueryType, D>(request: HttpRequest<K, D>, options?: AxiosRequestConfig): Promise<T>;
 }
 
 export type QueryType = {};
@@ -61,27 +61,40 @@ export class HttpService implements IHttpService {
     return `/?${query}`;
   }
 
-  async get<T, K = {}>(request: HttpRequest<K>): Promise<T> {
-    return this.fetch<T>('get', request);
+  async get<T, K = {}>(request: HttpRequest<K>, options?: AxiosRequestConfig): Promise<T> {
+    return this.fetch<T>('get', request, options);
   }
 
-  async post<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
-    return this.fetch<T>('post', request);
+  async post<T, K extends QueryType = QueryType, D = {}>(
+    request: HttpRequest<K, D>,
+    options?: AxiosRequestConfig
+  ): Promise<T> {
+    return this.fetch<T>('post', request, options);
   }
 
-  async put<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
-    return this.fetch<T>('put', request);
+  async put<T, K extends QueryType = QueryType, D = {}>(
+    request: HttpRequest<K, D>,
+    options?: AxiosRequestConfig
+  ): Promise<T> {
+    return this.fetch<T>('put', request, options);
   }
 
-  async patch<T, K extends QueryType = QueryType, D = {}>(request: HttpRequest<K, D>): Promise<T> {
-    return this.fetch<T>('patch', request);
+  async patch<T, K extends QueryType = QueryType, D = {}>(
+    request: HttpRequest<K, D>,
+    options?: AxiosRequestConfig
+  ): Promise<T> {
+    return this.fetch<T>('patch', request, options);
   }
 
-  async delete<T, K extends QueryType = QueryType>(request: HttpRequest<K>): Promise<T> {
-    return this.fetch<T>('delete', request);
+  async delete<T, K extends QueryType = QueryType>(request: HttpRequest<K>, options?: AxiosRequestConfig): Promise<T> {
+    return this.fetch<T>('delete', request, options);
   }
 
-  private async fetch<R, T = {}, K = {}>(method: Method, httpRequest: HttpRequest<T, K>): Promise<R> {
+  private async fetch<R, T = {}, K = {}>(
+    method: Method,
+    httpRequest: HttpRequest<T, K>,
+    options: AxiosRequestConfig = {}
+  ): Promise<R> {
     let typedQuery = httpRequest.query as unknown as Record<string, string | number>;
 
     if (!httpRequest.query) typedQuery = {};
@@ -103,7 +116,9 @@ export class HttpService implements IHttpService {
     return (
       await this.instance[method](
         `${httpRequest.url}${httpRequest.query ? HttpService.buildQuery(httpRequest.query) : ''}`,
-        ...(method === 'GET' || method === 'get' ? [{ headers }] : [httpRequest.body, { headers }])
+        ...(method === 'GET' || method === 'get'
+          ? [{ ...options, headers }]
+          : [httpRequest.body, { ...options, headers }])
       )
     ).data;
   }

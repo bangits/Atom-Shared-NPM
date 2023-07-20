@@ -2108,5 +2108,8 @@ export default {
   passwordChangedSuccess: 'The Password was successfully changed !!',
   incorrectPassword: 'Current password is oncorrect.',
   instantly: 'Instantly',
-  hourly: 'Hourly'
+  hourly: 'Hourly',
+  logs: 'Logs',
+  request: 'Request',
+  response: 'Response'
 };
