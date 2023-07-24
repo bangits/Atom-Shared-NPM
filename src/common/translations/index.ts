@@ -2111,5 +2111,7 @@ export default {
   hourly: 'Hourly',
   logs: 'Logs',
   request: 'Request',
-  response: 'Response'
+  response: 'Response',
+  black: 'Black',
+  white: 'White'
 };
