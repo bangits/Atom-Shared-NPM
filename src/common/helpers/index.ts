@@ -11,6 +11,7 @@ export * from './getObjectValueByKey';
 export * from './getTodayAndTomorrowDates';
 export * from './getUserTimeZone';
 export * from './pickNameFromUrl';
+export * from './queryStringToJSON';
 export * from './regexLibrary';
 export * from './replaceEmptyStringsWithNull';
 export * from './stringifyQuery';

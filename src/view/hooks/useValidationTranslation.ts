@@ -33,7 +33,8 @@ export const useValidationTranslation = () => {
       lessThanMin: () => t.get('validations.lessThanMin'),
       moreThanMax: () => t.get('validations.moreThanMax'),
       negative: () => t.get('validations.negative'),
-      selectDefaultOption: () => t.get('validations.selectDefaultOption')
+      selectDefaultOption: () => t.get('validations.selectDefaultOption'),
+      passwordsDontMatch: () => t.get('validations.passwordsDontMatch')
     }),
     [t]
   );

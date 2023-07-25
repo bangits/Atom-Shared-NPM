@@ -188,7 +188,9 @@ export const TablePage = <T extends {}, K>({
         }
 
         const tableConfig = config.columnConfig.config
-          ? config.columnConfig.config?.sort((prev, next) => prev.Order - next.Order)
+          ? config.columnConfig.config
+              ?.sort((prev, next) => prev.Order - next.Order)
+              .filter((c) => tableColumnsOrdered.find((tc) => tc.accessor === c.Name))
           : null;
 
         setTableConfig({
@@ -208,6 +210,8 @@ export const TablePage = <T extends {}, K>({
         <DataFilter
           {...dataTableFilterProps}
           {...(props.filterProps || {})}
+          pageId={pageId}
+          userId={userId}
           shouldFetchPageConfig={false}
           filtersConfig={filtersConfig}
           filters={props.filterProps.filters}

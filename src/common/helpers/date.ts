@@ -24,14 +24,16 @@ export const addUserTimeZoneHours = (date: Date) => {
   return date;
 };
 
-export const minusUserTimeZoneHours = (date: Date) => {
-  if (!date) return null;
+export const minusUserTimeZoneHours = (hour: number) => {
+  const date = new Date();
 
-  const userTimezone = new Date().getTimezoneOffset() / -60;
+  const userTimezone = date.getTimezoneOffset() / -60;
+
+  date.setHours(hour);
 
   date.setHours(date.getHours() - userTimezone);
 
-  return date;
+  return date.getHours();
 };
 
 export const convertDateForRequestModel = (date: Date) => {
