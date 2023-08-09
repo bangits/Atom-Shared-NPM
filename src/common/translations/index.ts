@@ -2134,5 +2134,8 @@ export default {
   playedBalanceTo: 'Played Balance To',
   hasDocument: 'Has Document',
   checked: 'Checked',
-  fake: 'Fake'
+  fake: 'Fake',
+  depositHistory: 'Deposit History',
+  withdrawalHistory: 'Withdrawal History',
+  inProcess: 'In Process'
 };
