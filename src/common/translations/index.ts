@@ -2132,5 +2132,6 @@ export default {
   playedBalanceFrom: 'Played Balance From',
   playedBalanceTo: 'Played Balance To',
   hasDocument: 'Has Document',
-  checked: 'Checked'
+  checked: 'Checked',
+  fake: 'Fake'
 };
