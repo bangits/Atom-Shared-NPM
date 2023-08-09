@@ -2132,5 +2132,6 @@ export default {
   playedBalance: 'Played Balance',
   playedBalanceFrom: 'Played Balance From',
   playedBalanceTo: 'Played Balance To',
-  hasDocument: 'Has Document'
+  hasDocument: 'Has Document',
+  balance: 'Balance',
 };
