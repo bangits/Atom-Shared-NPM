@@ -35,27 +35,26 @@ export const useLoadMore = <DataModel, FilterModel>({
     updateData(data);
   }, [currentData, updateData, action]);
 
+  const makeFilter = useCallback(async (newFilters) => {
+    setIsFiltering(true);
+    const { data } = await action(newFilters);
+    setPage(1);
+    setIsFiltering(false);
+    setAreAllGamesLoaded(false);
+    setFilters(newFilters);
+    updateData(data);
+  }, []);
+
   const onFiltersChange = useCallback(
     async (updatedFilters: ActionRequest<FilterModel>) => {
-      setIsFiltering(true);
-      const { data } = await action(updatedFilters);
-      setPage(1);
-      setIsFiltering(false);
-      setAreAllGamesLoaded(false);
-      setFilters(updatedFilters);
-      updateData(data);
+      makeFilter(updatedFilters);
     },
-    [updateData, action]
+    [makeFilter]
   );
 
   const onFiltersClear = useCallback(async () => {
-    setIsFiltering(true);
-    const { data } = await action(initialFilters);
-    setAreAllGamesLoaded(false);
-    setPage(1);
-    setIsFiltering(false);
-    updateData(data);
-  }, [updateData, action]);
+    makeFilter(initialFilters);
+  }, [initialFilters, makeFilter]);
 
   const loadMore = useCallback(async () => {
     setIsLoadingMore(true);
