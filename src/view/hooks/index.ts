@@ -16,3 +16,4 @@ export * from './useToggle';
 export * from './useTranslation';
 export * from './useValidationTranslation';
 export * from './useActionsMessagesHandler';
+export * from './useLoadMore';
