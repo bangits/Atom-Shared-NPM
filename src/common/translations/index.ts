@@ -2137,5 +2137,5 @@ export default {
   fake: 'Fake',
   depositHistory: 'Deposit History',
   withdrawalHistory: 'Withdrawal History',
-  inProcess: 'In Process'
+  balances: 'Balances'
 };
