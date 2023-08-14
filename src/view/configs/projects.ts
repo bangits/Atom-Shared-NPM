@@ -49,5 +49,9 @@ export const projects: Record<
   [ProjectsEnum.WinGrade]: {
     name: 'Win Grade',
     logo: 'https://atom-cdn.azureedge.net/mfe/wingrade.svg'
+  },
+  [ProjectsEnum.BonusBoo]: {
+    name: 'Bonus Boo',
+    logo: 'https://atom-cdn.azureedge.net/mfe/bonusboo.svg'
   }
 };
