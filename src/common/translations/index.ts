@@ -346,6 +346,7 @@ export default {
   noDataFoundPleaseMakeFilter: 'Sorry no data was found! Please make a different filter selection.',
   search: 'Search',
   blockedUser: 'The User is blocked. Please contact with support.',
+  playerIsBlocked: 'The Player is blocked!',
   accessDenied: 'Аccess is Denied. You don’t have access to the system. Please Login as a different user',
   wrongUserNameOrPassword: 'Invalid User',
   lastUpdate: 'Last Update',
