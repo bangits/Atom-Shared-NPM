@@ -2138,5 +2138,7 @@ export default {
   fake: 'Fake',
   depositHistory: 'Deposit History',
   withdrawalHistory: 'Withdrawal History',
-  balances: 'Balances'
+  balances: 'Balances',
+  paymentDoesntSupportTheCurrency: "Payment doesn't support the currency",
+  playerDoesntExist: "Player doesn't exist"
 };
