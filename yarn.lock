@@ -523,13 +523,13 @@
     regenerator-transform "^0.14.5"
     vite-plugin-svgr "^2.4.0"
 
-"@atom/design-system@^5.3.7":
-  version "5.3.7"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.3.7.tgz#e99e86a387b615ab1f37d6fc68e060912002c858"
-  integrity sha1-6Z6Go4e2FasfN9b8aOBgkSACyFg=
+"@atom/design-system@^5.6.17":
+  version "5.6.17"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@atom/design-system/-/design-system-5.6.17.tgz#aefcf5910a64efa068b9ec4564d0963950ab55a4"
+  integrity sha1-rvz1kQpk76BouexFZNCWOVCrVaQ=
   dependencies:
     "@atom/common" "^2.4.6"
-    "@my-ui/core" "^0.11.72"
+    "@my-ui/core" "^0.11.83"
     classnames "^2.3.1"
     codemirror "^5.65.10"
     draft-js "^0.11.7"
@@ -2623,10 +2623,10 @@
     react-transition-group "^4.4.2"
     throttle-debounce "^3.0.1"
 
-"@my-ui/core@^0.11.72":
-  version "0.11.72"
-  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.72.tgz#b0a808e8ac339e910ff12edd528e250afafe1737"
-  integrity sha1-sKgI6KwznpEP8S7dUo4lCvr+Fzc=
+"@my-ui/core@^0.11.83":
+  version "0.11.84"
+  resolved "https://pkgs.dev.azure.com/bangitsllc/Common/_packaging/Bangits.Atom.Common/npm/registry/@my-ui/core/-/core-0.11.84.tgz#2f36c2573084ca3e9bcfa6b91a6712c3fe237c63"
+  integrity sha1-LzbCVzCEyj6bz6a5GmcSw/4jfGM=
   dependencies:
     "@my-ui/react-datepicker" "^1.5.0"
     "@my-ui/react-select" "1.1.6"
