@@ -2138,5 +2138,8 @@ export default {
   fake: 'Fake',
   depositHistory: 'Deposit History',
   withdrawalHistory: 'Withdrawal History',
-  balances: 'Balances'
+  balances: 'Balances',
+  isChecked: 'Is Checked',
+  check: 'Check',
+  markedAsCheckedSuccess: 'Request(s) was successfully checked!'
 };
