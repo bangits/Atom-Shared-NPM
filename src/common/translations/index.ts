@@ -2141,5 +2141,7 @@ export default {
   balances: 'Balances',
   isChecked: 'Is Checked',
   check: 'Check',
-  markedAsCheckedSuccess: 'Request(s) was successfully checked!'
+  markedAsCheckedSuccess: 'Request(s) was successfully checked!',
+  autoConfirmationLimit: 'Auto-Confirmation Limit',
+  autoConfirmationLimitTooltip: "Determines automatic approval amount in site's default currency for online requests"
 };
