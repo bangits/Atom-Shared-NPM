@@ -2139,6 +2139,8 @@ export default {
   depositHistory: 'Deposit History',
   withdrawalHistory: 'Withdrawal History',
   balances: 'Balances',
+  paymentDoesntSupportTheCurrency: "Payment doesn't support the currency",
+  playerDoesntExist: "Player doesn't exist",
   isChecked: 'Is Checked',
   check: 'Check',
   markedAsCheckedSuccess: 'Request(s) was successfully checked!',
