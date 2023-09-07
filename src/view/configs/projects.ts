@@ -53,5 +53,13 @@ export const projects: Record<
   [ProjectsEnum.BonusBoo]: {
     name: 'Bonus Boo',
     logo: 'https://atom-cdn.azureedge.net/mfe/bonusboo.svg'
+  },
+  [ProjectsEnum.OneRapidPlay]: {
+    logo: '',
+    name: 'OneRapid Play'
+  },
+  [ProjectsEnum.MostBet]: {
+    logo: '',
+    name: 'Most Bet'
   }
 };
