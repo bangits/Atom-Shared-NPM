@@ -2143,5 +2143,11 @@ export default {
   playerDoesntExist: "Player doesn't exist",
   isChecked: 'Is Checked',
   check: 'Check',
-  markedAsCheckedSuccess: 'Request(s) was successfully checked!'
+  markedAsCheckedSuccess: 'Request(s) was successfully checked!',
+  autoConfirmationLimit: 'Auto-Confirmation Limit',
+  autoConfirmationLimitTooltip: "Determines automatic approval amount in site's default currency for online requests",
+  next: 'Next',
+  prev: 'Prev',
+  isFtd: 'Is FTD',
+  attachmentSuccess: 'File(s) was successfully attached!'
 };
