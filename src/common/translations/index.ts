@@ -2147,5 +2147,7 @@ export default {
   autoConfirmationLimit: 'Auto-Confirmation Limit',
   autoConfirmationLimitTooltip: "Determines automatic approval amount in site's default currency for online requests",
   next: 'Next',
-  prev: 'Prev'
+  prev: 'Prev',
+  isFtd: 'Is FTD',
+  attachmentSuccess: 'File(s) was successfully attached!'
 };
