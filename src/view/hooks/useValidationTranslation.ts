@@ -32,6 +32,7 @@ export const useValidationTranslation = () => {
         t.get('validations.lessOrEqual').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       lessThanMin: () => t.get('validations.lessThanMin'),
       moreThanMax: () => t.get('validations.moreThanMax'),
+      moreThan: (value: number) => t.get('validations.moreThan').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       negative: () => t.get('validations.negative'),
       selectDefaultOption: () => t.get('validations.selectDefaultOption'),
       passwordsDontMatch: () => t.get('validations.passwordsDontMatch')

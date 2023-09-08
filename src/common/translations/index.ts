@@ -41,6 +41,7 @@ export default {
     lessThanMin: "Maximum value can't be equal or less than minimum value",
     lessOrEqual: `Value should be less or equal ${TRANSLATION_CHANGED_VALUE}`,
     moreThanMax: 'The value is more than maximum value',
+    moreThan: `Value should be more than ${TRANSLATION_CHANGED_VALUE}`,
     range: `Value should be min. ${TRANSLATION_CHANGED_VALUE} and max. ${TRANSLATION_CHANGED_VALUE}`,
     maxNumber: `The maximum value should be ${TRANSLATION_CHANGED_VALUE} value !`,
     positive: 'Sorry, only positive numbers are allowed!',
@@ -2149,5 +2150,6 @@ export default {
   next: 'Next',
   prev: 'Prev',
   isFtd: 'Is FTD',
-  attachmentSuccess: 'File(s) was successfully attached!'
+  attachmentSuccess: 'File(s) was successfully attached!',
+  ipAddress: 'Ip Address'
 };
