@@ -12,5 +12,7 @@ export enum ProjectsEnum {
   RubyPalace = 11,
   WinGrade = 12,
   Harembet = 13,
-  BonusBoo = 14
+  BonusBoo = 14,
+  MostBet = 20,
+  OneRapidPlay = 21
 }
