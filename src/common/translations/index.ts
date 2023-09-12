@@ -2151,5 +2151,5 @@ export default {
   prev: 'Prev',
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
-  ipAddress: 'Ip Address'
+  ipAddress: 'Reg. IP Address'
 };
