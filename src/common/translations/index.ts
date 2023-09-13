@@ -2151,5 +2151,6 @@ export default {
   prev: 'Prev',
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
-  ipAddress: 'Reg. IP Address'
+  ipAddress: 'Reg. IP Address',
+  gameCategory: 'Game Category'
 };
