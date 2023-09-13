@@ -2046,7 +2046,7 @@ export default {
   transferFundsTo: 'Transfer Funds To',
   realWallet: 'Real Wallet',
   bonusWallet: 'Bonus Wallet',
-  withWagering: 'With Waggering',
+  withWagering: 'With Wagering',
   fromTheList: 'from the list',
   manualClaimAmount: 'Manual Claim Amount ( % )',
   mediaTabMessageRealWallet: 'The Media and Public information is required only for the Cash Back bonuses with',
