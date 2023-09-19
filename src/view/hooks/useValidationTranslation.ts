@@ -13,7 +13,7 @@ export const useValidationTranslation = () => {
       min: (value: number) => t.get('validations.min').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       max: (value: number) => t.get('validations.max').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       maxNumber: (value: number) => t.get('validations.maxNumber').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
-      range: (rangeStart: number, rangeEnd: number) =>
+      range: (rangeStart: number | string, rangeEnd: number | string) =>
         t
           .get('validations.range')
           .replace(TRANSLATION_CHANGED_VALUE, rangeStart.toString())
@@ -32,6 +32,7 @@ export const useValidationTranslation = () => {
         t.get('validations.lessOrEqual').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       lessThanMin: () => t.get('validations.lessThanMin'),
       moreThanMax: () => t.get('validations.moreThanMax'),
+      moreThan: (value: number) => t.get('validations.moreThan').replace(TRANSLATION_CHANGED_VALUE, value.toString()),
       negative: () => t.get('validations.negative'),
       selectDefaultOption: () => t.get('validations.selectDefaultOption'),
       passwordsDontMatch: () => t.get('validations.passwordsDontMatch')
