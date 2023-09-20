@@ -2152,5 +2152,6 @@ export default {
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
   ipAddress: 'Reg. IP Address',
-  gameCategory: 'Game Category'
+  gameCategory: 'Game Category',
+  addPageType: 'Add Page Type'
 };
