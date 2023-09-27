@@ -2153,5 +2153,8 @@ export default {
   attachmentSuccess: 'File(s) was successfully attached!',
   ipAddress: 'Reg. IP Address',
   gameCategory: 'Game Category',
-  addPageType: 'Add Page Type'
+  addPageType: 'Add Page Type',
+  uniqueSlug: "The name already exists",
+  seoSlug: "SEO Slug",
+  seoSlugTooltipText: "SEO slug is what appears after the backslash at the end part of a URL"
 };
