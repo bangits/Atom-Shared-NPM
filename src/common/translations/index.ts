@@ -2154,19 +2154,16 @@ export default {
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
   ipAddress: 'Reg. IP Address',
-<<<<<<< HEAD
   widget: 'Widget',
   widgets: 'Widgets',
   widgetName: 'Widget Name',
   widgetLogos: 'Widget Logos',
   widgetNameAlreadyExists: 'Widget Name already exists!',
   addWidget: 'Add Widget',
-  backgroundImage: 'Background Image'
-=======
+  backgroundImage: 'Background Image',
   gameCategory: 'Game Category',
   addPageType: 'Add Page Type',
-  uniqueSlug: "The name already exists",
-  seoSlug: "SEO Slug",
-  seoSlugTooltipText: "SEO slug is what appears after the backslash at the end part of a URL"
->>>>>>> b8b29bd8fc17049c765d4eb13fc6c40f781fc48e
+  uniqueSlug: 'The name already exists',
+  seoSlug: 'SEO Slug',
+  seoSlugTooltipText: 'SEO slug is what appears after the backslash at the end part of a URL'
 };
