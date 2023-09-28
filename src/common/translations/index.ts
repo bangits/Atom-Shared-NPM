@@ -584,6 +584,8 @@ export default {
   sliders: 'Sliders',
   youDontHaveSlidersAdded: 'You don’t have any sliders added!',
   pleaseAddSlider: 'Please add a slider.',
+  youDontHaveWidgetsAdded: 'You don’t have any widgets added!',
+  pleaseAddWidget: 'Please add a widget.',
   bannerId: 'Banner ID',
   bannerName: 'Banner Name',
   duplicate: 'Duplicate',
@@ -2148,8 +2150,15 @@ export default {
   autoConfirmationLimit: 'Auto-Confirmation Limit',
   autoConfirmationLimitTooltip: "Determines automatic approval amount in site's default currency for online requests",
   next: 'Next',
-  prev: 'Prev',
+  prev: 'Previous',
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
-  ipAddress: 'Reg. IP Address'
+  ipAddress: 'Reg. IP Address',
+  widget: 'Widget',
+  widgets: 'Widgets',
+  widgetName: 'Widget Name',
+  widgetLogos: 'Widget Logos',
+  widgetNameAlreadyExists: 'Widget Name already exists!',
+  addWidget: 'Add Widget',
+  backgroundImage: 'Background Image'
 };
