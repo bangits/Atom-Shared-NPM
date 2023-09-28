@@ -2048,7 +2048,7 @@ export default {
   transferFundsTo: 'Transfer Funds To',
   realWallet: 'Real Wallet',
   bonusWallet: 'Bonus Wallet',
-  withWagering: 'With Waggering',
+  withWagering: 'With Wagering',
   fromTheList: 'from the list',
   manualClaimAmount: 'Manual Claim Amount ( % )',
   mediaTabMessageRealWallet: 'The Media and Public information is required only for the Cash Back bonuses with',
@@ -2154,6 +2154,7 @@ export default {
   isFtd: 'Is FTD',
   attachmentSuccess: 'File(s) was successfully attached!',
   ipAddress: 'Reg. IP Address',
+<<<<<<< HEAD
   widget: 'Widget',
   widgets: 'Widgets',
   widgetName: 'Widget Name',
@@ -2161,4 +2162,11 @@ export default {
   widgetNameAlreadyExists: 'Widget Name already exists!',
   addWidget: 'Add Widget',
   backgroundImage: 'Background Image'
+=======
+  gameCategory: 'Game Category',
+  addPageType: 'Add Page Type',
+  uniqueSlug: "The name already exists",
+  seoSlug: "SEO Slug",
+  seoSlugTooltipText: "SEO slug is what appears after the backslash at the end part of a URL"
+>>>>>>> b8b29bd8fc17049c765d4eb13fc6c40f781fc48e
 };
