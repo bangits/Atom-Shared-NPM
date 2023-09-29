@@ -728,6 +728,7 @@ export default {
   segmentId: 'Segment Id',
   freeBetAndWagering: 'Bonuses',
   bonusType: 'Bonus Type',
+  bonusTypes: 'Bonus Types',
   usedFor: 'Used for',
   usedForOptional: 'Used for (Optional)',
   productType: 'Product Type',
@@ -2165,5 +2166,14 @@ export default {
   addPageType: 'Add Page Type',
   uniqueSlug: 'The name already exists',
   seoSlug: 'SEO Slug',
-  seoSlugTooltipText: 'SEO slug is what appears after the backslash at the end part of a URL'
+  seoSlugTooltipText: 'SEO slug is what appears after the backslash at the end part of a URL',
+  numberOfFreeSpins: 'Number Of Freespins',
+  wageringBonusAmount: 'Wagering Bonus Amount',
+  wageringPercentageValue: 'Wagering Percentage Value',
+  wageringFixedValue: 'Wagering Fixed amount',
+  generalSettings: 'General Settings',
+  freebetBonusAmount: 'Freebet Bonus Amount',
+  freebetPercentageValue: 'Freebet Percentage Value',
+  freebetFixedValue: 'Freebet Fixed amount',
+  cashbackPercentageValue: 'Cashback Percentage Value'
 };
