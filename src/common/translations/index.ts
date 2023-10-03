@@ -2175,5 +2175,7 @@ export default {
   freebetBonusAmount: 'Freebet Bonus Amount',
   freebetPercentageValue: 'Freebet Percentage Value',
   freebetFixedValue: 'Freebet Fixed amount',
-  cashbackPercentageValue: 'Cashback Percentage Value'
+  cashbackPercentageValue: 'Cashback Percentage Value',
+  widgetForWebsite: 'Widget For Website',
+  hasWidget: 'Has Widget'
 };
