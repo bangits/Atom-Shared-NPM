@@ -23,14 +23,14 @@ export default defineConfig({
       fileName: () => 'atom-common.js'
     },
     rollupOptions: {
-      external: [ 
-        "@atom/design-system",
+      external: [
+        '@atom/design-system',
         '@atom/cms-management',
-        "@automapper/classes",
-        "@automapper/core",
-        "formik",
-        "react",
-        "query-string"
+        '@automapper/classes',
+        '@automapper/core',
+        'formik',
+        'react',
+        'query-string'
       ],
       output: {
         intro: `const process = {env: ${JSON.stringify(process.env)}}`
