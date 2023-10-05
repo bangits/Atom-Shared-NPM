@@ -53,6 +53,6 @@ export class PermissionService extends Subscribable<PermissionSlugs[]> {
 
     return !Array.isArray(permissionsForCheck)
       ? this.checkIsExist(permissionsForCheck)
-      : permissionsForCheck.map(this.checkIsExist);
+      : permissionsForCheck.map(this.checkIsExist).some((i) => !!i);
   };
 }
