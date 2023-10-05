@@ -1,4 +1,5 @@
 import './index';
+import './index.css';
 export * from './adapter/react-context';
 export * from './adapter/redux';
 export * from './App';

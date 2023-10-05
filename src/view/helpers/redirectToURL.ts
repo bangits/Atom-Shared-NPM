@@ -1,3 +1,3 @@
-import singleSpa from 'single-spa';
+import { navigateToUrl } from 'single-spa';
 
-export const redirectToURL = (url: string) => singleSpa.navigateToUrl(url);
+export const redirectToURL = (url: string) => navigateToUrl(url);
