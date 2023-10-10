@@ -1,4 +1,4 @@
-import singleSpa from 'single-spa';
+import { navigateToUrl } from 'single-spa';
 
 export class HistoryService {
   private conditionFn: (url: string) => boolean;
@@ -18,7 +18,7 @@ export class HistoryService {
   redirectToURL(url: string) {
     if (this.conditionFn && this.conditionFn(url)) return;
 
-    singleSpa.navigateToUrl(url);
+    navigateToUrl(url);
   }
 }
 
