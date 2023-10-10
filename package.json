@@ -1,6 +1,6 @@
 {
   "name": "@atom/common",
-  "version": "3.2.2",
+  "version": "3.2.7",
   "main": "",
   "types": "./dist/atom-common.d.ts",
   "files": [
@@ -38,24 +38,25 @@
     "eslint-plugin-prettier": "^3.4.0",
     "husky": "^6.0.0",
     "inversify": "^5.1.1",
+    "postcss": "^8.4.31",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
     "redux-logger": "^3.0.6",
     "reflect-metadata": "^0.1.13",
+    "single-spa": "^5.9.3",
+    "single-spa-react": "^4.6.0",
     "tsconfig-paths": "^3.11.0",
     "tscpaths": "^0.0.9",
     "typescript": "^4.3.4",
-    "single-spa": "^5.9.3",
-    "single-spa-react": "^4.6.0",
-    "vite": "^4.4.10",
-    "postcss": "^8.4.31"
+    "vite": "^4.4.10"
   },
   "dependencies": {
     "@atom/authorization": "^0.1.7",
     "@atom/cms-management": "^0.3.0",
-    "@atom/design-system": "^5.6.18",
+    "@atom/design-system": "^5.6.35",
     "@automapper/classes": "^7.0.2",
     "@automapper/core": "^7.0.2",
+    "@hookform/resolvers": "3.3.0",
     "@microsoft/signalr": "^6.0.1",
     "@microsoft/signalr-protocol-msgpack": "^6.0.1",
     "@pandacss/dev": "^0.15.5",
@@ -64,6 +65,7 @@
     "dayjs": "^1.10.7",
     "formik": "^2.2.9",
     "query-string": "^7.0.1",
-    "react": "^17.0.2"
+    "react": "^17.0.2",
+    "react-hook-form": "^7.47.0"
   }
 }
