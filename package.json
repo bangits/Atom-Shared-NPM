@@ -81,12 +81,12 @@
     "webpack-config-single-spa-react-ts": "^3.0.0",
     "webpack-config-single-spa-ts": "^3.0.0",
     "webpack-dev-server": "^4.0.0-rc.0",
-    "webpack-merge": "^5.8.0"
-  },
-  "dependencies": {
     "@atom/authorization": "^0.1.7",
     "@atom/cms-management": "^0.3.0",
     "@atom/design-system": "^5.6.18",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
     "@automapper/classes": "^7.0.2",
     "@automapper/core": "^7.0.2",
     "@microsoft/signalr": "^6.0.1",
@@ -105,5 +105,10 @@
     "@automapper/core",
     "formik",
     "query-string"
-  ]
+  ],
+  "resolutions": {
+    "@atom/authorization": "^0.1.7",
+    "@atom/cms-management": "^0.3.0",
+    "@atom/design-system": "^5.6.18"
+  }
 }
