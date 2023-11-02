@@ -1251,7 +1251,7 @@ export default {
   reportByPayments: 'Report By Payments',
   reportByBalances: 'Report By Balances',
   youDontHaveReports: 'You don’t have any requests',
-  financicalReports: 'Financical Reports',
+  financialReports: 'Financial Reports',
   withdrawCount: 'Withdraw Count',
   withdrawAmount: 'Withdraw Amount',
   depositorCount: 'Depositor Count',
